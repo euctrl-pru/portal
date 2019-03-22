@@ -1,6 +1,5 @@
 ---
 title: Dashboard - Performance Areas
----
 aliases:
     - /graphic/
 ---

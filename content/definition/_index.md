@@ -4,5 +4,4 @@ categories:
   - metadata
   - definition
 type: definition
-slug: _index
 ---
