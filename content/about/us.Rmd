@@ -1,0 +1,28 @@
+---
+title: "About us"
+---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
+
+The PRU is responsible for monitoring and reviewing the performance of the Pan-European ANS system
+across a number of key performance areas.
+
+As part of the EUROCONTROL Agency, the PRU supports the independent
+[Performance Review Commission (PRC)](http://www.eurocontrol.int/ansperformance/)
+in running the EUROCONTROL Performance Review System and executing the associated PRC
+work programme with the appropriate level of independence.
+
+The PRU also provides support to the European Commission (EC) on the SES Performance
+and Charging Schemes.
+
+In performing its tasks, the PRU maintains transparent working arrangements with service providers,
+airspace user organisations and the industry.
+
+Although the PRU is independent, it is administratively reporting to the Directorate European Civil-Military Aviation (DECMA).
+
+For feedback or questions please contact us at:
+[Performance Review Unit](mailto:PRU-Support@eurocontrol.int)
+(PRU-Support@eurocontrol.int).

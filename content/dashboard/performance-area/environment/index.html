@@ -1,0 +1,64 @@
+---
+title: Environment
+extrajs: [
+  "/javascript/crt_hfe_YY.js",
+  "/javascript/crt_hfe_MM.js",
+  "/javascript/tbl_hfe_YY.js"
+]
+---
+
+<h3 id="hfe">Horizontal En-route Flight Efficiency (<a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'>HFE</a>)</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>Period</th>
+         <th>Area</th>
+         <th>Update rate</th>
+         <th>Last update</th>
+         <th>Source(s)</th>
+         <th>Methodology</th>
+         <th>Data</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class = "active">
+         <td>Jan-Feb 2019</td>
+         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
+         <td>Monthly</td>
+         <td>22-Mar-2019</td>
+          <td><a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
+              <a href='{{< relref "/acronym/pru.md" >}}'>PRU</a>
+          </td>
+		 <td><a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'><i class="fas fa-info-circle"></i></a></td>
+         <td><a href="/data/"><i class="fas fa-download"></i></a></td>
+      </tr>
+   </tbody>
+</table>
+
+
+<div class="row">
+    <div class="col-sm-6">
+        <h4>Evolution over time (EUROCONTROL level)</h4>
+        <div id="crt_hfe_YY"></div><br>
+        <div class="card bg-light ">
+          <div class="card-body">
+            Technical Report on Impact of <b>Shortest Constrained Route</b> on
+            Horizontal Flight Efficiency available for
+            <a href="http://ansperformance.eu/library/impact-scr-on-hfe.pdf">download</a>.
+          </div>
+        </div>
+        <div id="crt_hfe_MM"></div>
+    </div>
+    <div class="col-sm-6">
+        <h4>Results by entity (Jan-Feb 2019)</h4>
+        <div id="tbl_hfe_YY"></div>
+    </div>
+</div>
+
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+ // load the visualisation API
+ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>

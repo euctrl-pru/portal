@@ -1,0 +1,284 @@
+#------- LOCAL DEVELOPMENT/TESTING -------
+# remember ending '/'
+baseurl = "/"
+# see .Rprofile for publishDir, i.e. the place
+# where generated HTML is put (the "public" dir in hugo parlance)
+#-----------------------------------------
+
+
+#--------------- PRODUCTION ---------------
+# remember ending '/'
+# baseurl = "http://ansperformance.eu/"
+# publishDir = "public/"
+#-----------------------------------------
+
+
+
+languageCode = "en-us"
+title = "PRU Portal"
+theme = "pru-theme"
+googleAnalytics = ""
+summaryLength = 10
+
+customCSS = ["css/supplement.css"]
+
+
+ignoreFiles = [
+  "\\.Rmd$",
+  "\\.Rmarkdown$",
+  "_files$",
+  "_cache$",
+  "src$"
+]
+
+# Uncomment below to enable syntax highlighting
+# pygmentsCodefences = true
+# pygmentsCodefencesGuessSyntax = true
+# See https://xyproto.github.io/splash/docs/all.html for more styles
+# pygmentsStyle = "pygments"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+  [[menu.main]]
+    name = "News"
+    identifier = "news"
+    pre = ""
+    url = "/post/"
+    weight = 5
+  [[menu.main]]
+    name = "Analysis"
+    identifier = "dashboard"
+    pre = ""
+    url = "/dashboard/"
+    weight = 10
+  [[menu.main]]
+    name = "PRC Quarterly"
+    url = "/prcq/"
+    identifier = "prcq"
+    parent = "dashboard"
+    weight = 1
+  [[menu.main]]
+    name = "divider-prcq"
+    parent = "dashboard"
+    weight = 4
+  [[menu.main]]
+    name = "Safety"
+    url = "/dashboard/performance-area/safety/"
+    identifier = "safety"
+    parent = "dashboard"
+    weight = 5
+  [[menu.main]]
+    name = "Traffic"
+    url = "/dashboard/performance-area/traffic/"
+    identifier = "traffic"
+    parent = "dashboard"
+    weight = 10
+  [[menu.main]]
+    name = "Capacity"
+    url = "/dashboard/performance-area/capacity/"
+    identifier = "capacity"
+    parent = "dashboard"
+    weight = 15
+  [[menu.main]]
+    name = "Environment"
+    url = "/dashboard/performance-area/environment/"
+    identifier = "environment"
+    parent = "dashboard"
+    weight = 20
+  [[menu.main]]
+    name = "divider-eco"
+    parent = "dashboard"
+    weight = 21
+  [[menu.main]]
+    name = "ACE dashboard"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
+    identifier = "ace-dashboard"
+    parent = "dashboard"
+    weight = 25
+  [[menu.main]]
+    name = "SU dashboard"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/"
+    identifier = "su-dashboard"
+    parent = "dashboard"
+    weight = 30
+  [[menu.main]]
+    name = "SES Portal"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/prudata/dashboard/vis/2018/"
+    identifier = "ses-portal"
+    parent = "dashboard"
+    weight = 35
+
+  [[menu.main]]
+    name = "Online Reporting"
+    pre = ""
+    url = "/otools/"
+    weight = 20
+  [[menu.main]]
+    name = "Data"
+    pre = ""
+    url = "/data/"
+    weight = 30
+
+  [[menu.main]]
+    name = "References"
+    pre = ""
+    url = "/reference/"
+    identifier = "references"
+    weight = 40
+  [[menu.main]]
+    name = "PRR"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-0"
+    identifier = "prr"
+    parent = "references"
+    weight = 1
+  [[menu.main]]
+    name = "ACE"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-1"
+    identifier = "ace"
+    parent = "references"
+    weight = 2
+  [[menu.main]]
+    name = "Studies"
+    url = "/study/"
+    identifier = "study"
+    parent = "references"
+    weight = 3
+  [[menu.main]]
+    name = "divider1"
+    parent = "references"
+    weight = 4
+  [[menu.main]]
+    name = "Methodology"
+    url = "/methodology/"
+    identifier = "methodology"
+    parent = "references"
+    weight = 5
+  [[menu.main]]
+    name = "Acronyms"
+    url = "/acronym/"
+    parent = "references"
+    weight = 7
+  [[menu.main]]
+    name = "Definitions"
+    url = "/definition/"
+    parent = "references"
+    weight = 9
+  [[menu.main]]
+    name = "Bibliography"
+    url = "/bibliography/"
+    parent = "references"
+    weight = 11
+  [[menu.main]]
+    name = "divider2"
+    parent = "references"
+    weight = 15
+  [[menu.main]]
+    name = "ICAO GANP"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www4.icao.int/ganpportal/"
+    parent = "references"
+    weight = 17
+
+  [[menu.main]]
+    name = "About"
+    identifier= "about"
+    url = "/about/"
+    weight = 50
+  [[menu.main]]
+    name = "About PRU"
+    url = "/about/us/"
+    identifier = "pru"
+    parent = "about"
+    weight = 1
+  [[menu.main]]
+    name = "About PRC"
+    url = "/about/prc/"
+    identifier = "prc"
+    parent = "about"
+    weight = 4
+  [[menu.main]]
+    name = "Disclaimer"
+    url = "/about/disclaimer/"
+    identifier = "disclaimer"
+    parent = "about"
+    weight = 10
+
+
+[[menu.sidenav]]
+    name = "Overview"
+    url = "/prcq/"
+    identifier= "overview"
+    weight = 10
+[[menu.sidenav]]
+    name = "Traffic"
+    url = "/prcq/traffic/"
+    identifier= "traffic"
+    weight = 20
+[[menu.sidenav]]
+    name = "Safety"
+    url = "/prcq/safety/"
+    identifier= "safety"
+    weight = 30
+[[menu.sidenav]]
+    name = "Ops En-route"
+    url = "/prcq/ops-en-route/"
+    identifier= "ops-en-route"
+    weight = 40
+[[menu.sidenav]]
+    name = "Ops Airport"
+    url = "/prcq/ops-airport/"
+    identifier= "ops-airport"
+    weight = 50
+[[menu.sidenav]]
+    name = "Economics"
+    url = "/prcq/economics/"
+    identifier= "economics"
+    weight = 60
+
+
+
+
+
+
+[params]
+  includeBootstrapJs = false
+  showActiveNav = true
+  containerMaxWidth = "960px"
+  dateFormat = "Jan 2, 2006"
+  hideFooter = false
+  sitetosearch = "ansperformance.eu"
+
+  [params.logo]
+    url = "images/euctrl-logo-noname.png"
+    height = 30
+    alt = "PRU"
+
+  [params.owner]
+    name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
+    shortname = "EUROCONTROL"
+    location = "Brussels, Belgium"
+    twitter = "eurocontrol"
+    github =  "euctrl-pru"
+    email = "PRU-Support@eurocontrol.int"
+
+
+# see https://matjaz.it/hugo-power-user-make-it-web-friendly-1/
+enableRobotsTXT = true
+
+# see https://matjaz.it/hugo-power-user-make-it-web-friendly-1/
+# TODO: set Google Webmaster tools
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
