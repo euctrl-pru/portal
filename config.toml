@@ -1,6 +1,6 @@
 #------- LOCAL DEVELOPMENT/TESTING -------
 # remember ending '/'
-baseurl = "/"
+# baseurl = "/"
 # see .Rprofile for publishDir, i.e. the place
 # where generated HTML is put (the "public" dir in hugo parlance)
 #-----------------------------------------
@@ -8,7 +8,7 @@ baseurl = "/"
 
 #--------------- PRODUCTION ---------------
 # remember ending '/'
-# baseurl = "http://ansperformance.eu/"
+baseurl = "http://www.ansperformance.eu/"
 # publishDir = "public/"
 #-----------------------------------------
 
