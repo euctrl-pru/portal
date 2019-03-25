@@ -17,7 +17,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "PRU Portal"
 theme = "pru-theme"
-googleAnalytics = ""
+googleAnalytics = "UA-62697169-2"
 summaryLength = 10
 
 customCSS = ["css/supplement.css"]
