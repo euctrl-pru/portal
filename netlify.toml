@@ -27,3 +27,9 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
 [[redirects]]
   from = "/references/*"
   to = "/:splat"
+
+[[redirects]]
+  from = "/nvctr/*"
+  to = "https://nvctr.ansperformance.eu/:splat"
+  status = 301
+  
