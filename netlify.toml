@@ -35,5 +35,11 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
   
 [[redirects]]
   from = "/definition/atfm_slot_adherence.html"
-  to = "https://ansperformance.eu/definition/atfm-slot-adherence/"
+  to = "/definition/atfm-slot-adherence/"
   status = 301
+
+[[redirects]]
+  from = "/definition/eurocontrol_area.html"
+  to = "/definition/eurocontrol-area/"
+  status = 301
+
