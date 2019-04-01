@@ -67,3 +67,10 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
   from = "/definition/atc_pre-departure_delay.html"
   to = "/definition/atc-pre-departure-delay/"
   status = 301
+
+
+[[redirects]]
+  from = "/definition//definition/composite_flight_hour.html"
+  to = "/definition//definition/composite-flight-hour/"
+  status = 301
+
