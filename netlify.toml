@@ -70,7 +70,7 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
 
 
 [[redirects]]
-  from = "/definition//definition/composite_flight_hour.html"
+  from = "/definition/composite_flight_hour.html"
   to = "/definition//definition/composite-flight-hour/"
   status = 301
 
