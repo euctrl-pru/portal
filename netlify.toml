@@ -34,12 +34,36 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
   status = 301
   
 [[redirects]]
+  from = "/definition/eurocontrol_area.html"
+  to = "/definition/eurocontrol-area/"
+  status = 301
+
+[[redirects]]
+  from = "/definition/atfm_delay_codes.html"
+  to = "/definition/atfm-delay-codes/"
+  status = 301
+
+[[redirects]]
+  from = "/definition/atfm_delay.html"
+  to = "/definition/atfm-delay/"
+  status = 301
+
+[[redirects]]
+  from = "/definition/additional_asma_time.html"
+  to = "/definition/additional-asma-time/"
+  status = 301
+
+[[redirects]]
   from = "/definition/atfm_slot_adherence.html"
   to = "/definition/atfm-slot-adherence/"
   status = 301
 
 [[redirects]]
-  from = "/definition/eurocontrol_area.html"
-  to = "/definition/eurocontrol-area/"
+  from = "/definition/additional_taxi-out_time.html"
+  to = "/definition/additional-taxi-out-time/"
   status = 301
 
+[[redirects]]
+  from = "/definition/atc_pre-departure_delay.html"
+  to = "/definition/atc-pre-departure-delay/"
+  status = 301
