@@ -5,6 +5,8 @@ categories:
   - definition
 type: definition
 slug: eurocontrol-area
+aliases:
+    - /definition/eurocontrol_area.html
 ---
 
 The EUROCONTROL area consists of the [41 EUROCONTROL Member States (2016)][ectl_ms].

@@ -33,3 +33,7 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
   to = "https://nvctr.ansperformance.eu/:splat"
   status = 301
   
+[[redirects]]
+  from = "/definition/atfm_slot_adherence.html"
+  to = "https://ansperformance.eu/definition/atfm-slot-adherence/"
+  status = 301
