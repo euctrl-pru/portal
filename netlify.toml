@@ -30,7 +30,7 @@ HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
 
 [[redirects]]
   from = "/graphs/*"
-  to = "/dashboard/:splat"
+  to = "/dashboard/performance-area/:splat"
 
 [[redirects]]
   from = "/nvctr/*"
