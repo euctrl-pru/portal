@@ -25,7 +25,7 @@ Horizontal en-route flight efficiency compares the length of actual or planned f
 to the corresponding “achieved” distance.
 
 The achieved distance apportions the
-[Great Circle Distance](/reference/acronym/gcd/)
+[Great Circle Distance](`r htmltools::HTML("{{< relref \"/acronym/gcd.md\" >}}")`)
 between two points within the European airspace (reference area).
 If the origin/destination airport is located outside of European airspace, the
 entry/exit point into the reference area is used for the calculation.
@@ -33,12 +33,12 @@ entry/exit point into the reference area is used for the calculation.
 The planned trajectory is derived from the flight plans submitted by airspace
 users to the Network Manager.
 The actual flown trajectory is based on processed radar track data (a.k.a. correlated
-position reports or [CPR](/reference/acronym/cpr/)) submitted by ANSPs
+position reports or [CPR](`r htmltools::HTML("{{< relref \"/acronym/cpr.md\" >}}")`)) submitted by ANSPs
 to the EUROCONTROL Enhanced Tactical Flow Management System
-([ETFMS](/reference/acronym/etfms/)).
+([ETFMS](`r htmltools::HTML("{{< relref \"/acronym/etfms.md\" >}}")`)).
 
-**[KEP](/reference/acronym/kep/)** and
-**[KEA](/reference/acronym/kea/)** are performance indicators measuring
+**[KEP](`r htmltools::HTML("{{< relref \"/acronym/kep.md\" >}}")`)** and
+**[KEA](`r htmltools::HTML("{{< relref \"/acronym/kea.md\" >}}")`)** are performance indicators measuring
 horizontal en-route flight inefficiency in flight plans (KEP) and in actual
 flown trajectories (KEA) over a period of 12 months.
 **Please note that the values are NOT monthly averages but the average over the
@@ -53,7 +53,7 @@ the ten worst days (for each measured area) are excluded from the computation.
 
 ## Methodology
 
-[Horizontal en-route flight efficiency methodology](/reference/methodology/horizontal-flight-efficiency-pi/)
+[Horizontal en-route flight efficiency methodology](`r htmltools::HTML("{{< relref \"/methodology/horizontal-flight-efficiency-pi\" >}}")`)
 is fully consistent with the Single European Sky (SES) Performance Scheme
 [see [@pru-hfe-pi] ].
 
@@ -75,12 +75,10 @@ is fully consistent with the Single European Sky (SES) Performance Scheme
 | DIST_DIRECT_KM   | Network Manager | DIST_DIRECT_KM   | Sum of direct flown distances in kilometre                                     | 8405033   |
 | DIST_ACHIEVED_KM | Network Manager | DIST_ACHIEVED_KM | Sum of achieved distances in kilometre                                         | 8255220   |
 
-(*) The experimental [CSV files](/data/csv/) and
-[HFE filter and csv download `r blogdown::shortcode("fltr_i")` `r blogdown::shortcode("ndwk_i")`][HFEcsv]
+(*) The  [HFE CSV files](`r htmltools::HTML("{{< relref \"/csv.md\" >}}")`)
 use [ISO 8601][iso8601] date time format, i.e. `2017-01-02T00:00:00Z`
 
 
-[HFEcsv]: /data/set/hfe/horizontal_flight_efficiency/ "HFE (CSV)"
 [iso8601]: https://en.wikipedia.org/wiki/ISO_8601 "Wikipedia: ISO 8601"
 
 

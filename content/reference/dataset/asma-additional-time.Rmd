@@ -13,14 +13,14 @@ source(here::here("_common.R"))
 
 
 ## Data description
-The [additional ASMA time](/reference/definition/additional-asma-time/)
+The [additional ASMA time](`r htmltools::HTML("{{< relref \"/definition/additional-asma-time.html\" >}}")`)
 is a proxy for the average arrival runway queuing time on the inbound traffic flow,
 during congestion periods at airports.
 
 It is the difference between the actual
-[ASMA](/reference/acronym/asma/)
+[ASMA](`r htmltools::HTML("{{< relref \"/acronym/asma.md\" >}}")`)
 time of a flight and a statistically determined
-[unimpeded ASMA time](/reference/definition/unimpeded-asma-time/)
+[unimpeded ASMA time](`r htmltools::HTML("{{< relref \"/definition/unimpeded-asma-time.md\" >}}")`)
 based on ASMA times in periods of low traffic demand.
 
 When monitoring ASMA performance at airports, it is important to note that the

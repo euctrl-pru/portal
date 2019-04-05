@@ -12,20 +12,20 @@ introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology [click here][atfm_dly_rea].
 
-[atfm_dly_rea]: /reference/methodology/atfm-delay-calculation/ "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: {{< relref "/methodology/atfm-delay-calculation.md" >}} "ATFM Delay calculation changes due to REA"
 
 
 ## Data description
 
-The [en-route ATFM delay](/reference/definition/en-route-atfm-delay/)
+The [en-route ATFM delay]({{< relref "/definition/en-route-atfm-delay.md" >}})
 provides an indication of ATFM delays on the ground due to constraints en-route.
 
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
-([ATC](/reference/acronym/atc/)) units may request the local Flow
-Management Position ([FMP](/reference/acronym/fmp/)) to instigate an Air
+([ATC]({{< relref "/acronym/atc.md" >}})) units may request the local Flow
+Management Position ([FMP]({{< relref "/acronym/fmp.md" >}})) to instigate an Air
 Traffic Flow Management (ATFM) measure, or
-[regulation](/reference/definition/regulation/).
+[regulation]({{< relref "/definition/regulation.md" >}}).
 Aircraft expected to arrive during a period of congestion are given ATFM delay
 at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained

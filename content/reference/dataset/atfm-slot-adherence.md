@@ -9,14 +9,14 @@ slug: atfm-slot-adherence
 
 ## Data description
 
-[ATFM departure slots](/reference/definition/departure-slot/)
+[ATFM departure slots]({{< relref "/definition/departure-slot.html" >}})
 are allocated
 centrally by the European Network Manager upon the request of the local Flow
-Management Position ([FMP](/reference/acronym/fmp/)), when an imbalance
+Management Position ([FMP]({{< relref "/acronym/fmp.md" >}})), when an imbalance
 between demand and capacity is foreseen at airports and/or en-route. The purpose
 of such regulation is to hold aircraft on the ground.
 
-An [ATFM slot tolerance window](/reference/definition/slot-tolerance-window/)
+An [ATFM slot tolerance window]({{< relref "/definition/slot-tolerance-window.md" >}})
 is available to ATC to sequence departures.
 The standard slot tolerance window is [-5 minutes, +10 minutes].
 ATC at the departure airport has a joint responsibility with aircraft operators
@@ -48,3 +48,4 @@ down-stream ATFM measures.
 | FLT_DEP_OUT_EARLY_1 | Network Manager | Regulated departures (early)                   | Regulated departures before the slot tolerance window (Early Take-Off Traffic)  | 7                        |
 | FLT_DEP_IN_1        | Network Manager | Regulated departures (within departure window) | Regulated departures within the slot tolerance window [-5 minutes, +10 minutes] | 140                      |
 | FLT_DEP_OUT_LATE_1  | Network Manager | Regulated departures (late)                    | Regulated departures after the slot tolerance window (Late Take-Off Traffic)    | 8                        |
+

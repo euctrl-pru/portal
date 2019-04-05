@@ -12,22 +12,22 @@ introduced a change to improve the accuracy of the ATFM delay calculation for
 operational purposes.
 For more information on the change in methodology [click here][atfm_dly_rea].
 
-[atfm_dly_rea]: /reference/methodology/ATFM_delay_calculation/ "ATFM Delay calculation changes due to REA"
+[atfm_dly_rea]: {{< relref "/methodology/atfm-delay-calculation.md" >}} "ATFM Delay calculation changes due to REA"
 
 
 ## Data description
 
 The *Airport Arrival ATFM Delay* provides an indication of
-[ATFM delays](/reference/definition/atfm_delay/)
+[ATFM delays]({{< relref "/definition/atfm-delay.html" >}})
 on the ground due to constraints at airports.
 
 In Europe, when traffic demand is anticipated to exceed the available capacity
 in en route centres or at airports, Air Traffic Control
-([ATC](/reference/acronym/atc/)) units may request
-the local Flow Management Position ([FMP](/reference/acronym/fmp/)) to
+([ATC]({{< relref "/acronym/atc.md" >}})) units may request
+the local Flow Management Position ([FMP]({{< relref "/acronym/fmp.md" >}})) to
 instigate an Air Traffic Flow Management
-([ATFM](/reference/acronym/atfm/)) measure, or
-[regulation](/reference/definition/regulation/).
+([ATFM]({{< relref "/acronym/atfm.md" >}})) measure, or
+[regulation]({{< relref "/definition/regulation.md" >}}).
 Aircraft expected to arrive during a period of congestion are given ATFM delay
 at their departure airport, under the authority of the
 Network Manager, in order to regulate the flow of traffic into the constrained
@@ -76,9 +76,8 @@ airport capacity shortfalls since 2009.
 | FLT_ARR_1_DLY_15 | Network Manager | FLT_ARR_1_DLY_15                     |                      | Number of airport ATFM arrival delayed arrivals (>15 min.)                            | 0           |
 
 
-(*) The experimental [CSV files](/download/) and
-[APT DLY filter and csv download <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i>][APTDLYcsv] use [ISO 8601][iso8601] date time format,
+(*) The [Airport Arrival ATFM Delay CSV files]({{< relref "/csv.md" >}})
+use [ISO 8601][iso8601] date time format,
 i.e. `2017-01-02T00:00:00Z`
 
-[APTDLYcsv]: /data/set/apt_dly/airport_arrival_atfm_delay/ "APT DLY (CSV)"
 [iso8601]: https://en.wikipedia.org/wiki/ISO_8601 "Wikipedia: ISO 8601"
