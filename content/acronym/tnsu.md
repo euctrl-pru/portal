@@ -14,4 +14,4 @@ The costs for the provision of terminal air navigation services.
 * [Terminal ANS Unit Rate][tur] definition.
 
 
-[tur]: /reference/definition/terminal-ans-unit-rate/ "Terminal ANS Unit Rate definition"
+[tur]: /definition/terminal-ans-unit-rate/ "Terminal ANS Unit Rate definition"
