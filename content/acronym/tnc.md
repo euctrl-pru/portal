@@ -14,4 +14,4 @@ Given the risk for potential misunderstanding, it is useful to differentiate bet
 * [Terminal ANS Unit Rate][tur] definition.
 
 
-[tur]: /reference/definition/terminal-ans-unit-rate/ "Terminal ANS Unit Rate definition"
+[tur]: /definition/terminal-ans-unit-rate/ "Terminal ANS Unit Rate definition"

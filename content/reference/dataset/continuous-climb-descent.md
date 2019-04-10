@@ -41,4 +41,3 @@ in the relevant [methodology page][cdo_cco_meth].
 
 
 [cdo_cco_meth]: {{< relref "/methodology/cd-vertical-flight-efficiency-pi.html" >}} "Vertical flight efficiency during climb and descent methodology"
-
