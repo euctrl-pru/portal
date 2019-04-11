@@ -88,16 +88,17 @@ all <- csvs %>%
   map(get_ert_flt) %>%
   bind_rows()
 
-all %>%
+all <- all %>%
   filter(YEAR >= prev_year, MONTH_NUM >=1, MONTH_NUM <= curr_month) %>%
   rename(entity = ENTITY_NAME) %>%
   group_by(YEAR, entity) %>%
   summarise(flt = sum(FLT_ERT_1)) %>%
-  ungroup() %>%
+  ungroup()
+
+all %>%
+  # IMPORTANT because order matters for percentance change
   arrange(entity, YEAR) %>%
-  mutate(flt_prev = lag(flt)) %>%
-  filter(YEAR == curr_year) %>%
-  select(-YEAR) %>%
-  mutate(prc_change = round(100 *(flt - flt_prev) / flt_prev, digits = 2)) %>%
-  set_names(c("entity", as.character(curr_year), as.character(prev_year), "prc_change")) %>%
+  spread(YEAR, flt) %>% 
+  filter(!entity %in% c("NAV Portugal")) %>% 
+  mutate(prc_change = round(100 *((.[[3]]) - (.[[2]])) / (.[[2]]), digits = 2)) %>%
   write_tsv(here::here("content", "graphic", "percent-movement-change", "ert-flt-ansp.tsv"))

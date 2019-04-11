@@ -11,12 +11,15 @@ Arguments:
   TIL  date till when to export data, format YYYY-MM-DD (non-inclusive)
 " -> doc
 
-suppressMessages(library(docopt))
+suppressWarnings(suppressMessages(library(docopt)))
 
 # retrieve the command-line arguments
 opts <- docopt(doc)
 
-suppressMessages(library(lubridate))
+suppressWarnings(suppressMessages(library(lubridate)))
+suppressWarnings(suppressMessages(library('ROracle')))
+suppressWarnings(suppressMessages(library(dplyr)))
+suppressWarnings(suppressMessages(library(readr)))
 
 wef <- ymd(opts$WEF, quiet = TRUE)
 til <- ymd(opts$TIL, quiet = TRUE)
@@ -40,10 +43,6 @@ if (usr == "") {
   cat("Error: you should at least set your DB user via PRU_DEV_USR")
   q(status = -1)
 }
-
-suppressMessages(library('ROracle'))
-suppressMessages(library(dplyr))
-suppressMessages(library(readr))
 
 
 # NOTE: to be set before you create your ROracle connection!

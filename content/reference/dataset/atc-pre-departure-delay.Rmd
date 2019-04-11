@@ -16,12 +16,12 @@ source(here::here("_common.R"))
 ## Data description
 
 The
-[ATC pre-departure delay](/reference/definition/atc-pre-departure-delay/)
+[ATC pre-departure delay](`r htmltools::HTML("{{< relref \"/definition/atc-pre-departure-delay.html\" >}}")`)
 is a proxy for ATC induced delays at the departure stand to avoid queuing at the
 departure runway.
 
 The data is based on
-[IATA delay code 89](/reference/definition/iata-code-89/)
+[IATA delay code 89](`r htmltools::HTML("{{< relref \"/definition/iata-code-89.html\" >}}")`)
 [see [@iata:delaycodes] ] which, besides delays caused by
 local ATC constraints, also includes delays due to late push-back approval and some other
 reasons which may introduce a certain level of bias.

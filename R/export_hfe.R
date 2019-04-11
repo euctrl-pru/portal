@@ -7,7 +7,10 @@ Usage: export_hfe [-h]
   -h --help             show this help text
 " -> doc
 
-suppressMessages(library(docopt))
+suppressWarnings(suppressMessages(library(docopt)))
+suppressWarnings(suppressMessages(library('ROracle')))
+suppressWarnings(suppressMessages(library(dplyr)))
+suppressWarnings(suppressMessages(library(readr)))
 
 # retrieve the command-line arguments
 opts <- docopt(doc)
@@ -22,9 +25,6 @@ if (usr == "") {
   q(status = -1)
 }
 
-suppressMessages(library('ROracle'))
-suppressMessages(library(dplyr))
-suppressMessages(library(readr))
 
 
 # NOTE: to be set before you create your ROracle connection!

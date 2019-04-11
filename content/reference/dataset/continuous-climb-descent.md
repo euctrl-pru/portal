@@ -40,4 +40,4 @@ in the relevant [methodology page][cdo_cco_meth].
 | PERC_CCO_FLIGHTS       | PRU             | PERC_CCO_FLIGHTS       | Percentage of flights that are considered CCO (and don't have any considered level flight) | 75.6%    |
 
 
-[cdo_cco_meth]: </methodology/cd-vertical-flight-efficiency-pi/ "Vertical flight efficiency during climb and descent methodology"
+[cdo_cco_meth]: {{< relref "/methodology/cd-vertical-flight-efficiency-pi.html" >}} "Vertical flight efficiency during climb and descent methodology"
