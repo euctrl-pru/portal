@@ -8,7 +8,7 @@ Usage: export_ert_dly [-h] [-t TYPE] WEF TIL
   -t TYPE, --type=TYPE  the TYPE of entity; one of ansp, fir [default: ansp]
 " -> doc
 
-suppressMessages(library(docopt))
+suppressWarnings(suppressMessages(library(docopt)))
 
 # retrieve the command-line arguments
 opts <- docopt(doc)
@@ -23,8 +23,12 @@ if (!(opts$type %in% types)) {
   type <- opts$type
 }
 
-suppressMessages(library(lubridate))
-suppressMessages(library(purrr))
+suppressWarnings(suppressMessages(library(lubridate)))
+suppressWarnings(suppressMessages(library(purrr)))
+suppressWarnings(suppressMessages(library('ROracle')))
+suppressWarnings(suppressMessages(library(stringr)))
+suppressWarnings(suppressMessages(library(dplyr)))
+suppressWarnings(suppressMessages(library(readr)))
 
 safe_ymd <- safely(ymd)
 wef <- safe_ymd(opts$WEF, quiet = TRUE)
@@ -48,10 +52,6 @@ if (usr == "") {
   q(status = -1)
 }
 
-suppressMessages(library('ROracle'))
-suppressMessages(library(stringr))
-suppressMessages(library(dplyr))
-suppressMessages(library(readr))
 
 
 # NOTE: to be set before you create your ROracle connection!
