@@ -11,6 +11,8 @@ In order to encourage collaboration, transparency and reproducibility of perform
 please find below methodological information related to the computation of the indicators used
 in our website:
 
+* Safety
+  * [Composite Risk Index][cri-pi]
 * En-route
   * [ATFM delay computation][atfmdelay]
   * [Horizontal Flight Efficiency performance indicators][hfe]
@@ -31,6 +33,7 @@ in our website:
 [atfmdelay]: /methodology/atfm-delay-calculation/ "ATFM delay computation"
 [hfe]: /methodology/horizontal-flight-efficiency-pi/ "Horizontal Flight Efficiency performance indicators"
 [ervfe]: /methodology/en-route-vertical-flight-efficiency-pi/ "En-route Vertical Flight Efficiency"
+[cri-pi]: /methodology/cri-pi/ "Composite Risk Index"
 
 [uasma]: /methodology/unimpeded-asma-time "Unimpeded ASMA Time metric"
 [aasma]: /methodology/additional-asma-time-pi/ "Additional ASMA Time performance indicator"

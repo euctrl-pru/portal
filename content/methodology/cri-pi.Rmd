@@ -6,7 +6,6 @@ categories:
 type: methodology
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
-slug: CRI-pi
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}
 # run setup script
@@ -18,7 +17,7 @@ This document provides a technical description of the methodology used to calcul
 
 The process is visualised in Figure \@ref(fig:cri-data-input).
 
-(ref:cri-data-input) 
+(ref:cri-data-input) Composite Risk Index process.
 
 ```{r cri-data-input, out.width=c('800px', '400px'), fig.cap ='(ref:cri-data-input)'}
 knitr::include_graphics("/images/cri-data-input.png")
@@ -59,9 +58,9 @@ Detailed data description is at the end of this page.
 
 To take into account the local conditions within each Entity, the total number of flight hours within each Entiry is used as an additional input (CRI normalised results).
 
-Figure shows all components of proposed CRI index.
+Figure \@ref(fig:cri-components) shows all components of proposed CRI index.
 
-(ref:cri-components) 
+(ref:cri-components) Composite Risk Index components.
 
 ```{r cri-components, out.width=c('800px', '400px'), fig.cap ='(ref:cri-components)'}
 knitr::include_graphics("/images/cri-components.png")
@@ -75,7 +74,7 @@ The probability of occurrence being assigned to specific severity category is ca
  
 Figure shows how unassessed occurences (severity D) are distributed into other severity groups.
 
-(ref:cri-sevD) 
+(ref:cri-sevD) Distribution of unassessed occurences (severity D) into other severity groups.
 
 ```{r cri-sevD, out.width=c('800px', '400px'), fig.cap ='(ref:cri-sevD)'}
 knitr::include_graphics("/images/cri-sevD.png")
