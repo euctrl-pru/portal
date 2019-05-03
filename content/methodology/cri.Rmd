@@ -1,0 +1,194 @@
+---
+title: Composite Risk Index Methodology
+categories:
+  - metadata
+  - methodology
+type: methodology
+bibliography: ["../../static/bib/aviation.bib"]
+link-citations: true
+slug: CRI-pi
+---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
+
+This document provides a technical description of the methodology used to calculate Composite Risk Index (CRI). CRI represents a cumulative risk value calculated aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.
+
+The process is visualised in Figure \@ref(fig:cri-data-input).
+
+(ref:cri-data-input) 
+
+```{r cri-data-input, out.width=c('800px', '400px'), fig.cap ='(ref:cri-data-input)'}
+knitr::include_graphics("/images/cri-data-input.png")
+```
+
+
+## Acronyms and terminology
+
+Table: (\#tab:acronyms) Acronyms and terminology
+
+| Term             | Definition                                                               |
+|------------------|--------------------------------------------------------------------------|
+| [CRI]       | Composite Risk Index                                                     |
+| [CRInorm]| Composite Risk Index normalised by flight hours                         |
+| [RI]         | Runway Incursion                                                         |
+| [UPA]       | Unauthorised Penetration of Airspace                                     |
+| [SMI]       | Separation Minima Infringement                                           |
+
+
+## Methodology
+
+As a proxy of safety risk within certain airspace, State, or any Entity, the concept of exposure to risk, based on reported / historical safety information was proposed. 
+
+In order to calculate composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data). 
+
+Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements.
+
+The CRI calculations are based on the following information:
+•	Accidents,
+•	Operation occurrences (high/medium risk incidents with Severity A to C):
+o	runway incursions, 
+o	separation minima infringements, 
+o	unauthorized penetrations of airspace,
+•	Other operational occurrences;
+•	Technical occurrences (high/medium risk incidents with Severity AA/A to C).
+
+Detailed data description is at the end of this page.
+
+To take into account the local conditions within each Entity, the total number of flight hours within each Entiry is used as an additional input (CRI normalised results).
+
+Figure shows all components of proposed CRI index.
+
+(ref:cri-components) 
+
+```{r cri-components, out.width=c('800px', '400px'), fig.cap ='(ref:cri-components)'}
+knitr::include_graphics("/images/cri-components.png")
+```
+
+
+### Occurrences with no severity classification
+All severity unclassified/not assessed events (Severity Category D) are distributed into groups A to E, based on historical distribution (determined using the all available safety data). 
+
+The probability of occurrence being assigned to specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions. 
+ 
+Figure shows how unassessed occurences (severity D) are distributed into other severity groups.
+
+(ref:cri-sevD) 
+
+```{r cri-sevD, out.width=c('800px', '400px'), fig.cap ='(ref:cri-sevD)'}
+knitr::include_graphics("/images/cri-sevD.png")
+```
+
+### Estimated numbers of occurrences
+The formula how the total numbers of occurrences of specific type were after distribution of unclassified occurrences done is presented below.
+      
+N〖o_occ_est〗_i=((N〖o_D〗_i* P_i )+N〖o_occ〗_i  )
+N〖o_occ_est〗_i – estimated number of safety occurrence type i
+N〖o_D〗_i – number of reported occurrences of Severity Classification D (not determined) for occurrence type i
+P_i – probability of safety occurrence type i 
+N〖o_occ〗_i  - number of reported safety occurrences of type i
+
+Probability of each type of occurrence is calculated using the simple principle:
+
+P_i=  〖No_occ〗_i/〖Total No_occ〗_i 
+〖No_occ〗_i– number of reported safety occurrences type i in a year
+〖Total No_occ〗_i - total number of reported safety occurrences type i in a group in all years
+
+### CRI calculation using human perception of risk
+Using the estimated total number of occurrences for each type and adding to it the human perception of their risk it is possible to calculate CRI  for each Entity separately. The simple formula to calculate CRI is presented below. 
+
+CRI_i=No_(occ_est_i)*w_i
+CRI= ∑_i▒(CRI_i)/〖Total N〗_occ 
+CRI_i – CRI index for occurrence type i
+Wi – weight (based on severity and human perception) assigned to specific type of safety occurrence
+〖Total N〗_occ – total number of all occurrences in a year
+
+In the formula above Weights added to each equation represent additional human perception of risk for specific event, introduced so that CRI can at the end consider the human perception of equivalent risk. 
+
+Introduction of Weights to express severity of event allows their description in non-monetary terms which have meaningful and easy understandable explanation in human perception.
+
+Each weight value for specific Severity category is determined using optimisation technique, with the aim to select combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.
+
+Due to a large number of variables involved and enormous number of combination possible, optimisation and selection of Weights combination is done in stages:
+*	Selection of Weights for accident, all OPS occurrences and TECH occurrences;
+*	Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1;
+*	Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2.
+
+In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report  [LINK]
+
+
+### CRI normalisation
+To allow applicability of CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:
+
+CRInorm =CRI/(Number of Flight Hours)
+
+
+## Data
+
+In order to calculate composite risk, each historical, reported occurrence had to have assigned severity and probability. 
+
+The safety data, included occurrence category (accident or incident) and its severity reported and calculated using severity classification risk assessment methodology (RAT). 
+
+Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as below:
+
+| Variable         | Description                                                              |
+|------------------|--------------------------------------------------------------------------|
+| Entity | the name of Entity within State, ANSP, or department |
+| accident | safety occurrence where: a person is fatally or seriously injured; the aircraft sustains  damage or structural failure; the aircraft is missing or is completely inaccessible” |
+| total_no_of_ops_occurrences | the sum of safety occurrences (incidents) related to OPS |
+| ri_a | runway incursions severity A |
+| smi_a | separation minima infringments severity A |
+| upa_a | unauthorised penetration of airspace severity A |
+| ri_b | runway incursions severity B |
+| smi_b | separation minima infringments severity B |
+| upa_b | unauthorised penetration of airspace severity B |
+| ri_c | runway incursions severity C |
+| smi_c | separation minima infringments severity C |
+| upa_c | unauthorised penetration of airspace severity C |
+| ri_d | runway incursions severity D |
+| smi_d | separation minima infringments severity D |
+| upa_d | unauthorised penetration of airspace severity D |
+| ri_e | runway incursions severity E |
+| smi_e | separation minima infringments severity E |
+| upa_e | unauthorised penetration of airspace severity E 
+| total_no_of_tech_occurrences | the sum of safety occurrences related to technical reasons |
+| t_aa | technical occurrences severity AA |
+| t_a | techechnical occurrences severity A |
+| t_b | techchnical occurrences severity B |
+| t_c | techechnical occurrences severity C |
+| t_d | techechnical occurrences severity D |
+| t_e | techechnical occurrences severity E |
+| total_number_of_all_reported_occurrences | sum of all OPS and TECH occurences |
+| year | year |
+| flight_hours | sum of flight hours in Entity for year n |
+
+*Note that in case of personal use, e.g. in case of application of CRI methodology per single State or ANSP, the first column State could refer to separate ANSPs or separate functions within ANSP.*
+
+### Severity
+The classification scheme for safety occurrences in ATM specifies six severity categories for ATM related occurrences impacting the safe operations of the aircraft. 
+
+Severity classification used is as per ESARR2, and they are as follows.
+
+Severity | Description
+-------------|--------------
+    A | serious incident
+    B | major incident
+    C | significant incident
+    D | not determined
+    E | no safety effect
+
+### Frequency
+The RAT classification scheme specifies five qualitative frequency categories (repeatability). However, these values are not commonly reported through the AST. Moreover, each State/Entity in principle should develop their own quantitative boundaries, which should consider national traffic volumes and specific operating conditions of the national ATM system. 
+
+Therefore, the occurrence probability is calculated using historical data from al available years separately for each Entity in order to simulate/take into consideration local conditions.
+
+
+## Further Information
+
+For further information please refer also to detailed report explaining development methodology. [LINK]
+
+
+
+## References
