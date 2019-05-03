@@ -85,14 +85,57 @@ Figure 3: Distribution of unassessed occurences (severity D) into other severity
 <div id="estimated-numbers-of-occurrences" class="section level3">
 <h3>Estimated numbers of occurrences</h3>
 <p>The formula how the total numbers of occurrences of specific type were after distribution of unclassified occurrences done is presented below.</p>
-<p>N〖o_occ_est〗_i=((N〖o_D〗_i* P_i )+N〖o_occ〗_i ) N〖o_occ_est〗_i – estimated number of safety occurrence type i N〖o_D〗_i – number of reported occurrences of Severity Classification D (not determined) for occurrence type i P_i – probability of safety occurrence type i N〖o_occ〗_i - number of reported safety occurrences of type i</p>
-<p>Probability of each type of occurrence is calculated using the simple principle:</p>
-<p>P_i= 〖No_occ〗_i/〖Total No_occ〗_i 〖No_occ〗_i– number of reported safety occurrences type i in a year 〖Total No_occ〗_i - total number of reported safety occurrences type i in a group in all years</p>
+<p><span class="math display">\[
+\text{No_occ_est}_i = ((\text{No_D}_i * P_i) + \text{No_occ}_i)
+\]</span></p>
+<p>where</p>
+<dl>
+<dt><span class="math inline">\(\text{No_occ_est}_i\)</span></dt>
+<dd>estimated number of safety occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
+<dd>number of reported occurrences of Severity Classification D (not determined) for occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(P_i\)</span></dt>
+<dd>probability of safety occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
+<dd>number of reported safety occurrences of type <span class="math inline">\(i\)</span>
+</dd>
+</dl>
+<p>The probability of each type of occurrence is calculated using the simple principle:</p>
+<p><span class="math display">\[
+P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
+\]</span></p>
+<dl>
+<dt><span class="math inline">\(\text{No_occ}_i\)</span></dt>
+<dd>number of reported safety occurrences type <span class="math inline">\(i\)</span> in a year
+</dd>
+<dt><span class="math inline">\(\text{Total No}_{{occ}_i}\)</span></dt>
+<dd>total number of reported safety occurrences type <span class="math inline">\(i\)</span> in a group in all years
+</dd>
+</dl>
 </div>
 <div id="cri-calculation-using-human-perception-of-risk" class="section level3">
 <h3>CRI calculation using human perception of risk</h3>
-<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk it is possible to calculate CRI for each Entity separately. The simple formula to calculate CRI is presented below.</p>
-<p>CRI_i=No_(occ_est_i)*w_i CRI= ∑_i▒(CRI_i)/〖Total N〗_occ CRI_i – CRI index for occurrence type i Wi – weight (based on severity and human perception) assigned to specific type of safety occurrence 〖Total N〗_occ – total number of all occurrences in a year</p>
+<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk it is possible to calculate CRI<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> for each Entity separately. The simple formula to calculate CRI is presented below.</p>
+<span class="math display">\[\begin{align}
+\text{CRI}_i &amp; = \text{No}_{\text{occ_est_i}} * w_i \\
+
+\text{CRI}  &amp; = \sum_{i}^{} \frac{\text{CRI}_i}{\text{Total No}_{{occ}}}
+\end{align}\]</span>
+<p>where</p>
+<dl>
+<dt><span class="math inline">\(\text{CRI}_i\)</span></dt>
+<dd>CRI index for occurrence type <span class="math inline">\(i\)</span>
+</dd>
+<dt><span class="math inline">\(w_i\)</span></dt>
+<dd>weight (based on severity and human perception) assigned to specific type of safety occurrence
+</dd>
+<dt><span class="math inline">\(\text{Total No}_{{occ}}\)</span></dt>
+<dd>total number of all occurrences in a year
+</dd>
+</dl>
 <p>In the formula above Weights added to each equation represent additional human perception of risk for specific event, introduced so that CRI can at the end consider the human perception of equivalent risk.</p>
 <p>Introduction of Weights to express severity of event allows their description in non-monetary terms which have meaningful and easy understandable explanation in human perception.</p>
 <p>Each weight value for specific Severity category is determined using optimisation technique, with the aim to select combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.</p>
@@ -284,4 +327,10 @@ Figure 3: Distribution of unassessed occurences (severity D) into other severity
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Note that CRI can be calculated for any given entity, provider or the State.<a href="#fnref1">↩</a></p></li>
+</ol>
 </div>
