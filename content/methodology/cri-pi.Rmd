@@ -15,12 +15,12 @@ source(here::here("_common.R"))
 
 This document provides a technical description of the methodology used to calculate Composite Risk Index (CRI). CRI represents a cumulative risk value calculated aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.
 
-The process is visualised in Figure \@ref(fig:cri-data-input).
+Figure \@ref(fig:cri-components) shows all components of proposed CRI index.
 
-(ref:cri-data-input) Composite Risk Index process.
+(ref:cri-components) Composite Risk Index components.
 
-```{r cri-data-input, out.width=c('800px', '400px'), fig.cap ='(ref:cri-data-input)'}
-knitr::include_graphics("/images/cri-data-input.png")
+```{r cri-components, out.width=c('800px', '400px'), fig.cap ='(ref:cri-components)'}
+knitr::include_graphics("/images/cri-components.png")
 ```
 
 
@@ -46,24 +46,24 @@ In order to calculate composite risk, each historical, reported occurrence had t
 Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements.
 
 The CRI calculations are based on the following information:
-•	Accidents,
-•	Operation occurrences (high/medium risk incidents with Severity A to C):
-o	runway incursions, 
-o	separation minima infringements, 
-o	unauthorized penetrations of airspace,
-•	Other operational occurrences;
-•	Technical occurrences (high/medium risk incidents with Severity AA/A to C).
+*	Accidents,
+*	Operation occurrences (high/medium risk incidents with Severity A to C):
+**	runway incursions, 
+**	separation minima infringements, 
+**	unauthorized penetrations of airspace,
+*	Other operational occurrences;
+*	Technical occurrences (high/medium risk incidents with Severity AA/A to C).
 
 Detailed data description is at the end of this page.
 
 To take into account the local conditions within each Entity, the total number of flight hours within each Entiry is used as an additional input (CRI normalised results).
 
-Figure \@ref(fig:cri-components) shows all components of proposed CRI index.
+The process is visualised in Figure \@ref(fig:cri-data-input).
 
-(ref:cri-components) Composite Risk Index components.
+(ref:cri-data-input) Composite Risk Index process.
 
-```{r cri-components, out.width=c('800px', '400px'), fig.cap ='(ref:cri-components)'}
-knitr::include_graphics("/images/cri-components.png")
+```{r cri-data-input, out.width=c('800px', '400px'), fig.cap ='(ref:cri-data-input)'}
+knitr::include_graphics("/images/cri-data-input.png")
 ```
 
 
