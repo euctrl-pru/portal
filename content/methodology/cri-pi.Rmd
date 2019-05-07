@@ -242,5 +242,15 @@ Therefore, the occurrence probability is calculated using historical data from a
 ## Further Information
 For further information please refer also to detailed report explaining development methodology [@performancereviewcommissionCompositeRiskIndex2019].
 
+## Working example
+Script calculating CRI using explained methodology and sample data are available for testing purposes [here]
+[crizip].
+
+[crizip]: /static/download/other/CRI-External.zip
+
+
+Please feel free to use sample data provided to get familiar with the methodology.
+
+User guide how to set up the environment can be found at 'README.pdf' file within repository.
 
 ## References
