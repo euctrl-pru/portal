@@ -181,7 +181,7 @@ CRInorm =CRI/(Number of Flight Hours)
 ## Data
 For CRI calculation, each historical, reported occurrence besides classification, has to have assigned severity and probability. 
 
-Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the Risk Assessment Methodology [RAT][rat].
+Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the Risk Assessment Methodology [rat].
 
 | Variable         | Description                                                              |
 |------------------|--------------------------------------------------------------------------|
@@ -237,10 +237,10 @@ Therefore, the occurrence probability is calculated using historical data from a
 [upa]: /acronym/upa/ "UPA"
 [smi]: /acronym/smi/ "SMI"
 [atms]: /acronym/atms/ "TECH"
-[rat]: /acronym/atms/ "RAT"
+[rat]: /acronym/rat/ "RAT"
 
 ## Further Information
-For further information please refer also to detailed report explaining development methodology. [LINK]
+For further information please refer also to detailed report explaining development methodology [@performancereviewcommissionCompositeRiskIndex2019].
 
 
 ## References
