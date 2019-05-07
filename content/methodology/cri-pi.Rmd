@@ -169,7 +169,7 @@ Due to a large number of variables involved and enormous number of combination p
 3. Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2
 
 
-In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report [@]
+In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report [@performancereviewcommissionCompositeRiskIndex2019]
 
 
 ### CRI normalisation
@@ -181,7 +181,7 @@ CRInorm =CRI/(Number of Flight Hours)
 ## Data
 For CRI calculation, each historical, reported occurrence besides classification, has to have assigned severity and probability. 
 
-Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the Risk Assessment Methodology [rat].
+Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the [Risk Assessment Methodology] [rat].
 
 | Variable         | Description                                                              |
 |------------------|--------------------------------------------------------------------------|
