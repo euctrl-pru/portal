@@ -15,3 +15,6 @@ the human perception of equivalent risk.
 
 ## See Also
 
+* [CRI][cri] in the [Methodology](/methodology/) section.
+
+[cri]: /methodology/cri-pi/ "CRI methodology"

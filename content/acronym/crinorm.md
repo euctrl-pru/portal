@@ -1,5 +1,5 @@
 ---
-  title: CRI - Composite Risk Index normalised
+  title: CRInorm - Composite Risk Index normalised
 categories:
   - metadata
 - acronym
@@ -11,4 +11,6 @@ slug: crinorm
 
 
 ## See Also
-CRI definition
+* CRI definition [CRI][cri]
+
+[cri]: {{< relref "cri.md" >}} "CRI"
