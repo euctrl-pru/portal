@@ -6,6 +6,7 @@ categories:
 type: methodology
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
+output: html_document
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}
 # run setup script
@@ -30,11 +31,12 @@ Table: (\#tab:acronyms) Acronyms and terminology
 
 | Term             | Definition                                                               |
 |------------------|--------------------------------------------------------------------------|
-| [CRI]       | Composite Risk Index                                                     |
-| [CRInorm]| Composite Risk Index normalised by flight hours                         |
-| [RI]         | Runway Incursion                                                         |
-| [UPA]       | Unauthorised Penetration of Airspace                                     |
-| [SMI]       | Separation Minima Infringement                                           |
+| [CRI][cri]       | Composite Risk Index                                                     |
+| [CRInorm][crinorm]| Composite Risk Index normalised by flight hours                         |
+| [RI][ri]         | Runway Incursion                                                         |
+| [UPA][upa]       | Unauthorised Penetration of Airspace                                     |
+| [SMI][smi]       | Separation Minima Infringement                                           |
+| [TECH][atms]       | ATM Specific / Technical occurrences                                   |
 
 
 ## Methodology
@@ -228,6 +230,15 @@ Severity | Description
 The RAT classification scheme specifies five qualitative frequency categories (repeatability). However, these values are not commonly reported through the AST. Moreover, each State/Entity in principle should develop their own quantitative boundaries, which should consider national traffic volumes and specific operating conditions of the national ATM system. 
 
 Therefore, the occurrence probability is calculated using historical data from al available years separately for each Entity in order to simulate/take into consideration local conditions.
+
+
+
+[cri]: /acronym/cri/ "CRI"
+[crinorm]: /acronym/crinorm/ "CRInorm"
+[ri]: /acronym/ri/ "RI"
+[upa]: /acronym/upa/ "UPA"
+[smi]: /acronym/smi/ "SMI"
+[atms]: /acronym/atms/ "TECH"
 
 
 ## Further Information
