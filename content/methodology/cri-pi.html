@@ -6,17 +6,20 @@ categories:
 type: methodology
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
+output: html_document
 ---
 
 
 
-<p>This document provides a technical description of the methodology used to calculate Composite Risk Index (CRI). CRI represents a cumulative risk value calculated aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.</p>
-<p>The process is visualised in Figure <a href="#fig:cri-data-input">1</a>.</p>
+<p>This document provides a technical description of the methodology used to calculate the Composite Risk Index (CRI).</p>
+<p>The CRI represents a cumulative risk value aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.</p>
+<p>Note that CRI can be calculated for any given entity, provider or the State.</p>
+<p>Figure <a href="#fig:cri-components">1</a> shows all components of proposed CRI index.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:cri-data-input"></span>
-<img src="/images/cri-data-input.png" alt="Composite Risk Index process." width="800px" />
+<div class="figure" style="text-align: center"><span id="fig:cri-components"></span>
+<img src="/images/cri-components.png" alt="Composite Risk Index components." width="800px" />
 <p class="caption">
-Figure 1: Composite Risk Index process.
+Figure 1: Composite Risk Index components.
 </p>
 </div>
 <div id="acronyms-and-terminology" class="section level2">
@@ -31,24 +34,28 @@ Figure 1: Composite Risk Index process.
 </thead>
 <tbody>
 <tr class="odd">
-<td>[CRI]</td>
+<td><a href="/acronym/cri/" title="CRI">CRI</a></td>
 <td>Composite Risk Index</td>
 </tr>
 <tr class="even">
-<td>[CRInorm]</td>
+<td><a href="/acronym/crinorm/" title="CRInorm">CRInorm</a></td>
 <td>Composite Risk Index normalised by flight hours</td>
 </tr>
 <tr class="odd">
-<td>[RI]</td>
+<td><a href="/acronym/ri/" title="RI">RI</a></td>
 <td>Runway Incursion</td>
 </tr>
 <tr class="even">
-<td>[UPA]</td>
+<td><a href="/acronym/upa/" title="UPA">UPA</a></td>
 <td>Unauthorised Penetration of Airspace</td>
 </tr>
 <tr class="odd">
-<td>[SMI]</td>
+<td><a href="/acronym/smi/" title="SMI">SMI</a></td>
 <td>Separation Minima Infringement</td>
+</tr>
+<tr class="even">
+<td><a href="/acronym/atms/" title="TECH">TECH</a></td>
+<td>ATM Specific / Technical occurrences</td>
 </tr>
 </tbody>
 </table>
@@ -56,24 +63,35 @@ Figure 1: Composite Risk Index process.
 <div id="methodology" class="section level2">
 <h2>Methodology</h2>
 <p>As a proxy of safety risk within certain airspace, State, or any Entity, the concept of exposure to risk, based on reported / historical safety information was proposed.</p>
-<p>In order to calculate composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data).</p>
+<p>In order to calculate the composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data).</p>
 <p>Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements.</p>
-<p>The CRI calculations are based on the following information: • Accidents, • Operation occurrences (high/medium risk incidents with Severity A to C): o runway incursions, o separation minima infringements, o unauthorized penetrations of airspace, • Other operational occurrences; • Technical occurrences (high/medium risk incidents with Severity AA/A to C).</p>
-<p>Detailed data description is at the end of this page.</p>
-<p>To take into account the local conditions within each Entity, the total number of flight hours within each Entiry is used as an additional input (CRI normalised results).</p>
-<p>Figure <a href="#fig:cri-components">2</a> shows all components of proposed CRI index.</p>
+<p>The CRI calculations are based on the following information:</p>
+<ul>
+<li>Accidents</li>
+<li>Operation occurrences (high/medium risk incidents with Severity A to C):
+<ul>
+<li>runway incursions (RI)</li>
+<li>separation minima infringements (SMI)</li>
+<li>unauthorized penetrations of airspace (UPA)</li>
+</ul></li>
+<li>Other operational occurrences</li>
+<li>Technical occurrences (high/medium risk incidents with Severity AA/A to C)</li>
+</ul>
+<p>A detailed data description can be found at the end of this page.</p>
+<p>To take into account the local conditions within each Entity, exposure data, i.e. the total number of flight hours within each Entity is used as an additional input (CRI normalised results).</p>
+<p>The process is visualised in Figure <a href="#fig:cri-data-input">2</a>.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:cri-components"></span>
-<img src="/images/cri-components.png" alt="Composite Risk Index components." width="800px" />
+<div class="figure" style="text-align: center"><span id="fig:cri-data-input"></span>
+<img src="/images/cri-data-input.png" alt="Composite Risk Index process." width="800px" />
 <p class="caption">
-Figure 2: Composite Risk Index components.
+Figure 2: Composite Risk Index process.
 </p>
 </div>
 <div id="occurrences-with-no-severity-classification" class="section level3">
 <h3>Occurrences with no severity classification</h3>
 <p>All severity unclassified/not assessed events (Severity Category D) are distributed into groups A to E, based on historical distribution (determined using the all available safety data).</p>
-<p>The probability of occurrence being assigned to specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions.</p>
-<p>Figure shows how unassessed occurences (severity D) are distributed into other severity groups.</p>
+<p>The probability of occurrence being assigned to a specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions.</p>
+<p>Figure <a href="#fig:cri-sevD">3</a> shows how unassessed occurences (severity D) are distributed into other severity groups.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:cri-sevD"></span>
 <img src="/images/cri-sevD.png" alt="Distribution of unassessed occurences (severity D) into other severity groups." width="800px" />
@@ -84,7 +102,7 @@ Figure 3: Distribution of unassessed occurences (severity D) into other severity
 </div>
 <div id="estimated-numbers-of-occurrences" class="section level3">
 <h3>Estimated numbers of occurrences</h3>
-<p>The formula how the total numbers of occurrences of specific type were after distribution of unclassified occurrences done is presented below.</p>
+<p>The formula how the total numbers of specific type of occurrence were determined using distribution based on probability of unclassified occurrences is presented below.</p>
 <p><span class="math display">\[
 \text{No_occ_est}_i = ((\text{No_D}_i * P_i) + \text{No_occ}_i)
 \]</span></p>
@@ -118,7 +136,7 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="cri-calculation-using-human-perception-of-risk" class="section level3">
 <h3>CRI calculation using human perception of risk</h3>
-<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk it is possible to calculate CRI<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> for each Entity separately. The simple formula to calculate CRI is presented below.</p>
+<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk it is possible to calculate the CRI for each Entity separately. The simple formula to calculate the CRI is presented below.</p>
 <span class="math display">\[\begin{align}
 \text{CRI}_i &amp; = \text{No}_{\text{occ_est_i}} * w_i \\
 
@@ -136,11 +154,16 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 <dd>total number of all occurrences in a year
 </dd>
 </dl>
-<p>In the formula above Weights added to each equation represent additional human perception of risk for specific event, introduced so that CRI can at the end consider the human perception of equivalent risk.</p>
+<p>In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event, introduced so that the CRI can at the end consider the human perception of equivalent risk.</p>
 <p>Introduction of Weights to express severity of event allows their description in non-monetary terms which have meaningful and easy understandable explanation in human perception.</p>
 <p>Each weight value for specific Severity category is determined using optimisation technique, with the aim to select combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.</p>
-<p>Due to a large number of variables involved and enormous number of combination possible, optimisation and selection of Weights combination is done in stages: * Selection of Weights for accident, all OPS occurrences and TECH occurrences; * Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1; * Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2.</p>
-<p>In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report [LINK]</p>
+<p>Due to a large number of variables involved and enormous number of combination possible, optimisation and selection of Weights combination is done in stages:</p>
+<ol style="list-style-type: decimal">
+<li><p>Selection of Weights for accident, all OPS occurrences and TECH occurrences</p></li>
+<li><p>Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1</p></li>
+<li><p>Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2</p></li>
+</ol>
+<p>In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report <span class="citation">(Performance Review Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span></p>
 </div>
 <div id="cri-normalisation" class="section level3">
 <h3>CRI normalisation</h3>
@@ -150,9 +173,8 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="data" class="section level2">
 <h2>Data</h2>
-<p>In order to calculate composite risk, each historical, reported occurrence had to have assigned severity and probability.</p>
-<p>The safety data, included occurrence category (accident or incident) and its severity reported and calculated using severity classification risk assessment methodology (RAT).</p>
-<p>Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as below:</p>
+<p>For CRI calculation, each historical, reported occurrence besides classification, has to have assigned severity and probability.</p>
+<p>Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the <a href="/acronym/rat/" title="RAT">Risk Assessment Methodology</a>.</p>
 <table>
 <colgroup>
 <col width="20%" />
@@ -279,11 +301,9 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </tr>
 </tbody>
 </table>
-<p><em>Note that in case of personal use, e.g. in case of application of CRI methodology per single State or ANSP, the first column State could refer to separate ANSPs or separate functions within ANSP.</em></p>
 <div id="severity" class="section level3">
 <h3>Severity</h3>
-<p>The classification scheme for safety occurrences in ATM specifies six severity categories for ATM related occurrences impacting the safe operations of the aircraft.</p>
-<p>Severity classification used is as per ESARR2, and they are as follows.</p>
+<p>The classification scheme for safety occurrences in ATM specifies six severity categories for ATM related occurrences impacting the safe operations of the aircraft (as per ESARR2).</p>
 <table>
 <thead>
 <tr class="header">
@@ -317,20 +337,25 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="frequency" class="section level3">
 <h3>Frequency</h3>
-<p>The RAT classification scheme specifies five qualitative frequency categories (repeatability). However, these values are not commonly reported through the AST. Moreover, each State/Entity in principle should develop their own quantitative boundaries, which should consider national traffic volumes and specific operating conditions of the national ATM system.</p>
-<p>Therefore, the occurrence probability is calculated using historical data from al available years separately for each Entity in order to simulate/take into consideration local conditions.</p>
+<p>The RAT classification scheme specifies five qualitative frequency categories (repeatability). However, these values are not commonly reported through the AST. Each State/Entity in principle should develop their own quantitative boundaries, which should consider national traffic volumes and specific operating conditions of the national ATM system.</p>
+<p>Therefore, the occurrence probability is calculated using historical data from all available years separately for each Entity in order to simulate/take into consideration the local conditions.</p>
 </div>
 </div>
 <div id="further-information" class="section level2">
 <h2>Further Information</h2>
-<p>For further information please refer also to detailed report explaining development methodology. [LINK]</p>
+<p>For further information please refer also to detailed report explaining development methodology <span class="citation">(Performance Review Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span>.</p>
 </div>
-<div id="references" class="section level2">
+<div id="working-example" class="section level2">
+<h2>Working example</h2>
+<p>Script calculating CRI using explained methodology and sample data are available for testing purposes <a href="/static/download/other/CRI-External.zip">here</a>.</p>
+<p>Please feel free to use sample data provided to get familiar with the methodology.</p>
+<p>User guide how to set up the environment can be found at ‘README.pdf’ file within repository.</p>
+</div>
+<div id="references" class="section level2 unnumbered">
 <h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-performancereviewcommissionCompositeRiskIndex2019">
+<p>Performance Review Commission. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://anspeformance.eu/library/composite_risk_index_methodology.pdf" class="uri">https://anspeformance.eu/library/composite_risk_index_methodology.pdf</a>.</p>
 </div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Note that CRI can be calculated for any given entity, provider or the State.<a href="#fnref1">↩</a></p></li>
-</ol>
+</div>
 </div>

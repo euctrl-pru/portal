@@ -15,9 +15,9 @@ source(here::here("_common.R"))
 
 
 
-This document provides a technical description of the methodology used to calculate Composite Risk Index (CRI). 
+This document provides a technical description of the methodology used to calculate the Composite Risk Index (CRI). 
 
-CRI represents a cumulative risk value calculated aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.
+The CRI represents a cumulative risk value aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.
 
 Note that CRI can be calculated for any given entity, provider or the State.
 
@@ -48,7 +48,7 @@ Table: (\#tab:acronyms) Acronyms and terminology
 
 As a proxy of safety risk within certain airspace, State, or any Entity, the concept of exposure to risk, based on reported / historical safety information was proposed. 
 
-In order to calculate composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data). 
+In order to calculate the composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data). 
 
 Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements.
 
@@ -63,7 +63,7 @@ The CRI calculations are based on the following information:
 * Technical occurrences (high/medium risk incidents with Severity AA/A to C)
 
 
-Detailed data description is at the end of this page.
+A detailed data description can be found at the end of this page.
 
 To take into account the local conditions within each Entity, exposure data, i.e. the total number of flight hours within each Entity is used as an additional input (CRI normalised results).
 
@@ -79,7 +79,7 @@ knitr::include_graphics("/images/cri-data-input.png")
 ### Occurrences with no severity classification
 All severity unclassified/not assessed events (Severity Category D) are distributed into groups A to E, based on historical distribution (determined using the all available safety data). 
 
-The probability of occurrence being assigned to specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions. 
+The probability of occurrence being assigned to a specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions. 
  
 Figure \@ref(fig:cri-sevD) shows how unassessed occurences (severity D) are distributed into other severity groups.
 
@@ -90,7 +90,7 @@ knitr::include_graphics("/images/cri-sevD.png")
 ```
 
 ### Estimated numbers of occurrences
-The formula how the total numbers of occurrences of specific type were after distribution of unclassified occurrences done is presented below.
+The formula how the total numbers of specific type of occurrence were determined using the distribution based on probability of unclassified occurrences is presented below.
 
 $$
 \text{No_occ_est}_i = ((\text{No_D}_i * P_i) + \text{No_occ}_i)
@@ -130,9 +130,9 @@ $\text{Total No}_{{occ}_i}$
 
 ### CRI calculation using human perception of risk
 Using the estimated total number of occurrences for each type and adding to it
-the human perception of their risk it is possible to calculate
+the human perception of their risk, it is possible to calculate the
 CRI for each Entity separately.
-The simple formula to calculate CRI is presented below. 
+The simple formula to calculate the CRI is presented below. 
 
 
 \begin{align}
@@ -154,13 +154,13 @@ $w_i$
 $\text{Total No}_{{occ}}$
 : total number of all occurrences in a year
 
-In the formula above Weights added to each equation represent additional human perception of risk for specific event, introduced so that CRI can at the end consider the human perception of equivalent risk. 
+In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event so that the CRI can at the end consider the human perception of equivalent risk. 
 
-Introduction of Weights to express severity of event allows their description in non-monetary terms which have meaningful and easy understandable explanation in human perception.
+Introduction of Weights to express the severity of the event allows their description in non-monetary terms which have a meaningful and understandable explanation in human perception.
 
-Each weight value for specific Severity category is determined using optimisation technique, with the aim to select combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.
+Each weight value for specific Severity category is determined by using the optimisation technique, with the aim to select a combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, the optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.
 
-Due to a large number of variables involved and enormous number of combination possible, optimisation and selection of Weights combination is done in stages:
+Due to a large number of variables involved and the enormous number of combinations possible, the optimisation and selection of the Weights combination is done in stages:
 
 1. Selection of Weights for accident, all OPS occurrences and TECH occurrences
 
@@ -169,11 +169,11 @@ Due to a large number of variables involved and enormous number of combination p
 3. Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2
 
 
-In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report [@performancereviewcommissionCompositeRiskIndex2019]
+In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report [@performancereviewcommissionCompositeRiskIndex2019]
 
 
 ### CRI normalisation
-To allow applicability of CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:
+To allow the applicability of the CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:
 
 CRInorm =CRI/(Number of Flight Hours)
 
@@ -240,10 +240,10 @@ Therefore, the occurrence probability is calculated using historical data from a
 [rat]: /acronym/rat/ "RAT"
 
 ## Further Information
-For further information please refer also to detailed report explaining development methodology [@performancereviewcommissionCompositeRiskIndex2019].
+For further information please refer also to the detailed report explaining the development of the methodology [@performancereviewcommissionCompositeRiskIndex2019].
 
 ## Working example
-Script calculating CRI using explained methodology and sample data are available for testing purposes [here]
+Script calculating the CRI using the explained methodology and sample data are available for testing purposes [here]
 [crizip].
 
 [crizip]: /static/download/other/CRI-External.zip
