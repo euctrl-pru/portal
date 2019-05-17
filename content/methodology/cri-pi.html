@@ -102,7 +102,7 @@ Figure 3: Distribution of unassessed occurences (severity D) into other severity
 </div>
 <div id="estimated-numbers-of-occurrences" class="section level3">
 <h3>Estimated numbers of occurrences</h3>
-<p>The formula how the total numbers of specific type of occurrence were determined using distribution based on probability of unclassified occurrences is presented below.</p>
+<p>The formula how the total numbers of specific type of occurrence were determined using the distribution based on probability of unclassified occurrences is presented below.</p>
 <p><span class="math display">\[
 \text{No_occ_est}_i = ((\text{No_D}_i * P_i) + \text{No_occ}_i)
 \]</span></p>
@@ -136,7 +136,7 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="cri-calculation-using-human-perception-of-risk" class="section level3">
 <h3>CRI calculation using human perception of risk</h3>
-<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk it is possible to calculate the CRI for each Entity separately. The simple formula to calculate the CRI is presented below.</p>
+<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk, it is possible to calculate the CRI for each Entity separately. The simple formula to calculate the CRI is presented below.</p>
 <span class="math display">\[\begin{align}
 \text{CRI}_i &amp; = \text{No}_{\text{occ_est_i}} * w_i \\
 
@@ -154,20 +154,20 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 <dd>total number of all occurrences in a year
 </dd>
 </dl>
-<p>In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event, introduced so that the CRI can at the end consider the human perception of equivalent risk.</p>
-<p>Introduction of Weights to express severity of event allows their description in non-monetary terms which have meaningful and easy understandable explanation in human perception.</p>
-<p>Each weight value for specific Severity category is determined using optimisation technique, with the aim to select combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.</p>
-<p>Due to a large number of variables involved and enormous number of combination possible, optimisation and selection of Weights combination is done in stages:</p>
+<p>In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event so that the CRI can at the end consider the human perception of equivalent risk.</p>
+<p>Introduction of Weights to express the severity of the event allows their description in non-monetary terms which have a meaningful and understandable explanation in human perception.</p>
+<p>Each weight value for specific Severity category is determined by using the optimisation technique, with the aim to select a combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, the optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.</p>
+<p>Due to a large number of variables involved and the enormous number of combinations possible, the optimisation and selection of the Weights combination is done in stages:</p>
 <ol style="list-style-type: decimal">
 <li><p>Selection of Weights for accident, all OPS occurrences and TECH occurrences</p></li>
 <li><p>Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1</p></li>
 <li><p>Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2</p></li>
 </ol>
-<p>In addition, each type of weight selection has predefined weight ranges, to allow for incremental Severity classification order based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See details in the full methodology report <span class="citation">(Performance Review Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span></p>
+<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span></p>
 </div>
 <div id="cri-normalisation" class="section level3">
 <h3>CRI normalisation</h3>
-<p>To allow applicability of CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:</p>
+<p>To allow the applicability of the CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:</p>
 <p>CRInorm =CRI/(Number of Flight Hours)</p>
 </div>
 </div>
@@ -343,11 +343,11 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="further-information" class="section level2">
 <h2>Further Information</h2>
-<p>For further information please refer also to detailed report explaining development methodology <span class="citation">(Performance Review Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span>.</p>
+<p>For further information please refer also to the detailed report explaining the development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span>.</p>
 </div>
 <div id="working-example" class="section level2">
 <h2>Working example</h2>
-<p>Script calculating CRI using explained methodology and sample data are available for testing purposes <a href="/static/download/other/CRI-External.zip">here</a>.</p>
+<p>Script calculating the CRI using the explained methodology and sample data are available for testing purposes <a href="/download/other/CRI-External.zip">here</a>.</p>
 <p>Please feel free to use sample data provided to get familiar with the methodology.</p>
 <p>User guide how to set up the environment can be found at ‘README.pdf’ file within repository.</p>
 </div>
@@ -355,7 +355,7 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 <h2>References</h2>
 <div id="refs" class="references">
 <div id="ref-performancereviewcommissionCompositeRiskIndex2019">
-<p>Performance Review Commission. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://anspeformance.eu/library/composite_risk_index_methodology.pdf" class="uri">https://anspeformance.eu/library/composite_risk_index_methodology.pdf</a>.</p>
+<p>Commission, Performance Review. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf" class="uri">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.</p>
 </div>
 </div>
 </div>

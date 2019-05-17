@@ -39,7 +39,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [ATFMdelay]: /definition/atfm-delay/ "ATFM Delay definition"
 
 [ERT-DLY-AUAxlsx]: /download/xls/En-Route_ATFM_Delay_AUA.xlsx "ERT-DLY (Excel)"
-[ERT-DLY-AUA-postxlsx]: /download/xls/En-Route_ATFM_Delay_AUA_post_ops.xlsm "ERT-DLY-PO (Excel)"
+[ERT-DLY-AUA-postxlsx]: /download/xls/En-Route_ATFM_Delay_AUA_post_ops.xlsx "ERT-DLY-PO (Excel)"
 
 [ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsx "ERT-DLY (Excel)"
 [ERT-DLY-FIR-postxlsx]: /download/xls/En-Route_ATFM_Delay_FIR_post_ops.xlsm "ERT-DLY-PO (Excel)"
@@ -83,7 +83,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [ATCpredepdelay]:   /definition/atc-pre-departure-delay/ "ATC Pre-departure Delay definition"
 
 [APT-FLTxlsx]:      /download/xls/Airport_Traffic.xlsx "APT-FLT (Excel)"
-[APT-DLY-postxlsx]: /download/xls/Airport_Arrival_ATFM_Delay_post_ops.xlsm "APT-DLY-PO (Excel)"
+[APT-DLY-postxlsx]: /download/xls/Airport_Arrival_ATFM_Delay_post_ops.xlsx "APT-DLY-PO (Excel)"
 [APT-FLTcsv]:       /404/ "APT-FLT (CSV)"
 [APT-FLTmeta]:      /reference/dataset/airport-traffic/  "APT-FLT (Meta)"
 
