@@ -122,3 +122,5 @@ AUTHORS text
 
 *.xlsm binary
 *.xls binary
+*.xlsx binary
+

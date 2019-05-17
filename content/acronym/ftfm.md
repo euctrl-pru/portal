@@ -4,7 +4,6 @@ categories:
   - metadata
   - acronym
 type: acronym
-slug: ftfm
 ---
 
 A mathematical model containing a point and airspace volume profile created in 
@@ -13,6 +12,12 @@ are received from Network Operations.
 
 ## See Also
 
+* [CPF]({{< relref "cpf.md" >}}).
+* [Current Tactical Flight Model]({{< relref "ctfm.md" >}}).
+* [Correlated Position Report][cpr].
 * [ETFMS][etfms].
+* [Flight Models][fm].
 
-[etfms]: /acronym/etfms/ "ETFMS"
+[etfms]: {{< relref "etfms.md" >}} "ETFMS"
+[cpr]: {{< relref "cpr.md" >}} "CPR"
+[fm]: {{< relref "flight-models.md" >}} "Flight Models"

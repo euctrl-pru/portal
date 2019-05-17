@@ -38,10 +38,10 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 [ATFMdelay]: /definition/atfm-delay/ "ATFM Delay definition"
 
-[ERT-DLY-AUAxlsx]: /download/xls/En-Route_ATFM_Delay_AUA.xlsm "ERT-DLY (Excel)"
+[ERT-DLY-AUAxlsx]: /download/xls/En-Route_ATFM_Delay_AUA.xlsx "ERT-DLY (Excel)"
 [ERT-DLY-AUA-postxlsx]: /download/xls/En-Route_ATFM_Delay_AUA_post_ops.xlsm "ERT-DLY-PO (Excel)"
 
-[ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsm "ERT-DLY (Excel)"
+[ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsx "ERT-DLY (Excel)"
 [ERT-DLY-FIR-postxlsx]: /download/xls/En-Route_ATFM_Delay_FIR_post_ops.xlsm "ERT-DLY-PO (Excel)"
 
 
@@ -49,7 +49,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [ERT-DLY-AUA-meta]: /reference/dataset/en-route-atfm-delay-aua/ "ERT-DLY (Meta)"
 [ERT-DLY-FIR-meta]: /reference/dataset/en-route-atfm-delay-fir/ "ERT-DLY (Meta)"
 
-[HFExlsx]: /download/xls/Horizontal_Flight_Efficiency.xlsm "HFE (Excel)"
+[HFExlsx]: /download/xls/Horizontal_Flight_Efficiency.xlsx "HFE (Excel)"
 [HFEcsv]: {{< relref "csv.md" >}} "HFE (CSV)"
 [HFEmeta]: /reference/dataset/horizontal-flight-efficiency/ "HFE (Meta)"
 
@@ -82,31 +82,31 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [TX-OUTunimpeded]:  /definition/unimpeded-taxi-out-time/ "Taxi-out Unimpeded Time definition"
 [ATCpredepdelay]:   /definition/atc-pre-departure-delay/ "ATC Pre-departure Delay definition"
 
-[APT-FLTxlsx]:      /download/xls/Airport_Traffic.xlsm "APT-FLT (Excel)"
+[APT-FLTxlsx]:      /download/xls/Airport_Traffic.xlsx "APT-FLT (Excel)"
 [APT-DLY-postxlsx]: /download/xls/Airport_Arrival_ATFM_Delay_post_ops.xlsm "APT-DLY-PO (Excel)"
 [APT-FLTcsv]:       /404/ "APT-FLT (CSV)"
 [APT-FLTmeta]:      /reference/dataset/airport-traffic/  "APT-FLT (Meta)"
 
-[APT-DLYxlsx]: /download/xls/Airport_Arrival_ATFM_Delay.xlsm "APT-DLY (Excel)"
+[APT-DLYxlsx]: /download/xls/Airport_Arrival_ATFM_Delay.xlsx "APT-DLY (Excel)"
 [APT-DLYcsv]:  {{< relref "csv.md" >}} "APT-DLY (CSV)"
 [APT-DLYmeta]: /reference/dataset/airport-arrival-atfm-delay/ "APT-DLY (Meta)"
 
-[ASMAxlsx]: /download/xls/ASMA_Additional_Time.xlsm "ASMA (Excel)"
+[ASMAxlsx]: /download/xls/ASMA_Additional_Time.xlsx "ASMA (Excel)"
 [ASMAcsv]: /404/ "ASMA (CSV)"
 [ASMAmeta]: /reference/dataset/asma-additional-time/ "ASMA (Meta)"
 
-[CDOxlsx]: /download/xls/Vertical_Flight_Efficiency_cdo_cco.xlsm "CDO/CCO (Excel)"
+[CDOxlsx]: /download/xls/Vertical_Flight_Efficiency_cdo_cco.xlsx "CDO/CCO (Excel)"
 [CDOcsv]:  /404/ "CDO/CCO (CSV)"
 [CDOmeta]: /reference/dataset/continuous-climb-descent/ "CDO/CCO (Meta)"
 
-[TX-OUTxlsx]: /download/xls/Taxi-Out_Additional_Time.xlsm "TX-OUT (Excel)"
+[TX-OUTxlsx]: /download/xls/Taxi-Out_Additional_Time.xlsx "TX-OUT (Excel)"
 [TX-OUTcsv]:  /404/ "TX-OUT (CSV)"
 [TX-OUTmeta]: /reference/dataset/taxi-out-additional-time/ "TX-OUT (Meta)"
 
-[ATC-PRExlsx]: /download/xls/ATC_Pre-Departure_Delay.xlsm "ATC-PRE (Excel)"
+[ATC-PRExlsx]: /download/xls/ATC_Pre-Departure_Delay.xlsx "ATC-PRE (Excel)"
 [ATC-PREmeta]: /reference/dataset/atc-pre-departure-delay/  "ATC-PRE (Meta)"
 
-[SLT-ADHxlsx]: /download/xls/ATFM_Slot_Adherence.xlsm "SLT-ADH (Excel)"
+[SLT-ADHxlsx]: /download/xls/ATFM_Slot_Adherence.xlsx "SLT-ADH (Excel)"
 [SLT-ADHmeta]: /reference/dataset/atfm-slot-adherence/ "SLT-ADH (Meta)"
 
 
@@ -134,7 +134,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------|-----|--------------------------------|------------------------------------|
 | ACE operational data<br><small>Monthly ACE operational data</small>  | {{% getdata "dwnld" "ace_opt_beg" %}} - {{% getdata "dwnld" "ace_opt_end" %}}  | [{{% dwnld_i %}}][ACExlsx]        |     | [{{% info_i %}}][ACEurl] |                                    |
 
-[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xlsm "ACE (Excel)"
+[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xlsx "ACE (Excel)"
 [ACEcsv]:  /404/ "ACE (CSV)"
 [ACEmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE (Meta)"
 [ACEurl]:  http://www.eurocontrol.int/documents/economic-information-disclosure-specification "ACE specs"

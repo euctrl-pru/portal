@@ -1,5 +1,5 @@
 ---
-title: RAT - Risk Analysis Tool for safety
+title: RAT - Risk Analysis Tool Methodology
 categories:
   - metadata
   - acronym
@@ -7,7 +7,7 @@ type: acronym
 slug: rat
 ---
 
-The Risk Analysis Tool is a methodology used to classify safety
+The Risk Analysis Tool (RAT) methodology used to classify safety
 related occurrences in the ATM domain.
 
 ## See Also
