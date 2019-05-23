@@ -42,7 +42,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [ERT-DLY-AUA-postxlsx]: /download/xls/En-Route_ATFM_Delay_AUA_post_ops.xlsx "ERT-DLY-PO (Excel)"
 
 [ERT-DLY-FIRxlsx]: /download/xls/En-Route_ATFM_Delay_FIR.xlsx "ERT-DLY (Excel)"
-[ERT-DLY-FIR-postxlsx]: /download/xls/En-Route_ATFM_Delay_FIR_post_ops.xlsm "ERT-DLY-PO (Excel)"
+[ERT-DLY-FIR-postxlsx]: /download/xls/En-Route_ATFM_Delay_FIR_post_ops.xlsx "ERT-DLY-PO (Excel)"
 
 
 [ERT-DLYcsv]: /404/ "ERT-DLY (CSV)"
