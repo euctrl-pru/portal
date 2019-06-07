@@ -62,14 +62,23 @@ on the effects of different factors:
 
 ## See Also
 
-* [CPF][cpf].
-* [CPR][cpr].
-* [CTFM][ctfm].
-* [FTFM][ftfm].
+* [CDR][cdr]
+* [CPF][cpf]
+* [CPR][cpr]
+* [CTFM][ctfm]
+* [DCT][dct]
+* [FTFM][ftfm]
+* [SCR][scr]
+* [SRR][srr]
+* [SUR][sur]
 
-
+[cdr]: {{< relref "cdr.md" >}} "CDR"
 [cpf]: {{< relref "cpf.md" >}} "CPF"
 [cpr]: {{< relref "cpr.md" >}} "CPR"
 [ctfm]: {{< relref "ctfm.md" >}} "CTFM"
+[dct]: {{< relref "dct.md" >}} "DCT"
 [ftfm]: {{< relref "ftfm.md" >}} "FTFM"
+[scr]: {{< relref "scr.md" >}} "SCR"
+[srr]: {{< relref "srr.md" >}} "SRR"
+[sur]: {{< relref "sur.md" >}} "SUR"
 
