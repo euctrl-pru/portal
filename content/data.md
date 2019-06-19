@@ -120,7 +120,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 | Complexity (based on [BADA][CPLXbada] version 3.13.1) <br><small>Complexity by ANSP</small> | {{% getdata "dwnld" "cplx_beg_bada_3_13_1" %}} - {{% getdata "dwnld" "cplx_end_bada_3_13_1" %}} | [{{% dwnld_i %}}][CPLX1xlsx]       |     | [{{% info_i %}}][CPLXmeta] |                                    |
 
 [CPLXxlsx]:  /download/xls/Traffic_Complexity_Scores_1.xlsm "CPLX (Excel)"
-[CPLX1xlsx]: /download/xls/Traffic_Complexity_Scores_2.xlsm "CPLX (Excel)"
+[CPLX1xlsx]: /download/xls/Traffic_Complexity_Scores_2.xlsx "CPLX (Excel)"
 [CPLXcsv]:   /404/ "CPLX (CSV)"
 [CPLXmeta]:  /reference/dataset/traffic-complexity-score/ "CPLX (Meta)"
 [CPLXbada]:  /acronym/bada/ "Base of Aircraft Data"
