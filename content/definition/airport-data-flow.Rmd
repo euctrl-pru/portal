@@ -4,10 +4,10 @@ categories:
   - metadata
   - definition
 type: definition
-slug: airport-operator-data-flow
+slug: airport-data-flow
 ---
 
-The Airport operator data flow (APDF) supports the regular operational ANS performance monitoring under the EUROCONTROL Performance Review System established under the ECAC Institutional Strategy for Air Traffic Management (1997) and the Single European Sky Performance Scheme established under Implementing Regulation (EU) No 390/2013.
+The Airport operator data flow (APDF) supports the regular operational ANS performance monitoring under the EUROCONTROL Performance Review System established under the ECAC Institutional Strategy for Air Traffic Management (1997) and the Single European Sky Performance Scheme established under Implementing Regulation (EU) No 390 / 2013.
 
 [The EUROCONTROL Specification for Operational ANS Performance Monitoring - Airport Operator Data Flow (APDF)][apdf] details the data exchange requirements between reporting entities and EUROCONTROL and subsequent data handling processes.
 
