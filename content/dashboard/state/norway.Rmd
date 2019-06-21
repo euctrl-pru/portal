@@ -1,0 +1,10 @@
+---
+title: Norway
+link-citations: true
+---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+
+# Section
