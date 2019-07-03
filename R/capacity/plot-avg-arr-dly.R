@@ -26,7 +26,7 @@ apt_arrival_dly <- function(airport, since, to){
   apt_arr_dly_plot <- g + 
     geom_bar(stat = "identity") +
     theme_pru() +
-    scale_fill_manual(values = c("#fed976", "#41ab5d", "#cb181d", "#bdbdbd"),
+    scale_fill_manual(values = c("#FBC294", "#92D24A", "#C0504E", "#BFBFBF"),
                       #values = pru_pal()(9)[c(2,4,7,9)],
                       name = "",
                       breaks = c("ATC attributed", "W", "G", "Other"),
