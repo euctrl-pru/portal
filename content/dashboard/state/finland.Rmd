@@ -4,7 +4,65 @@ link-citations: true
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}
 # run setup script
-source(here::here("_common.R"))
+source(here::here("R/_common.R"))
 ```
 
-# Section
+```{r echo = FALSE, message = FALSE}
+# En-route ATFM delay
+
+state_under_review <- "ANS Finland"
+
+# choose a date =>
+year_start <- "2015-01-01"
+# choose a date <=
+year_end <- "2019-01-31"
+
+# year of the average en route ATFM delay per flight (ECTL area)
+year_input <- "2018"
+# reference year 
+ref_year <- "2017"
+
+# Airport arrival ATFM delays
+
+airport <- "Helsinki/ Vantaa"
+since <- "2014"
+to <- "2019"
+
+```
+
+# Capacity
+
+### En-route ATFM delays 
+
+(ref:average-delay-grouped) Average en route ATFM delay per flight (EUROCONTROL area). 
+
+```{r average-delay-grouped, fig.cap='(ref:average-delay-grouped)'}
+library(dplyr)
+library(ggplot2)
+library(viridis)
+
+source(here::here("R/capacity/state-read-ert-dly.R"))
+source(here::here("R/capacity/plot-avg-grouped-dly-flt.R"))
+
+avg_delay_grouped(year_input, ref_year)
+
+```
+
+### Airport arrival ATFM delays
+
+(ref:avg-arriv-delay) Airport arrival ATFM delays (`r airport`). 
+
+```{r avg-arriv-delay, fig.cap='(ref:avg-arriv-delay)'}
+library(dplyr)
+library(ggplot2)
+library(viridis)
+library(ectrlplot)
+
+source(here::here("R/capacity/state-read-apt-dly.R"))
+source(here::here("R/capacity/plot-avg-arr-dly.R"))
+
+apt_arrival_dly(airport, since, to)
+
+```
+
+> With the exception of 2015, airport ATFM arrival delays at Helsinki Vantaa airport are moderate and mainly related to adverse weather.
