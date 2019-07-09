@@ -64,7 +64,7 @@ avg_delay_grouped <- function (year_input, ref_year){
   ert_dly_yyyy_plot <- g + coord_flip() +
     geom_bar(stat = "identity") + facet_grid(entity_group ~ ., scales = "free_y", space = "free") +
     theme(strip.text.y = element_text(angle = 0)) +
-    scale_fill_viridis(discrete = TRUE,
+    scale_fill_manual(values = c("#92D24A", "#FBC294", "#e6b8b7", "#C0504E", "#BFBFBF"),
                        name = "",
                        breaks = c("W", "Da", "Sa", "Ca", "Other"),
                        labels = c(
@@ -74,13 +74,13 @@ avg_delay_grouped <- function (year_input, ref_year){
                          "ATC Capacity [C]",
                          "Other [all other codes]")) +
     geom_errorbar(aes(y = new, ymin = new, ymax = new, col = ref_year), linetype = 1, size = 1) + 
-    scale_colour_manual(name='', values="#ef3b2c", guide ="legend") +
+    scale_colour_manual(name='', values="#2E5D8C", guide ="legend") +
     guides(col = guide_legend(override.aes = list(linetype=1), title = "")) + 
     labs(
       x = "",
       y = "En-route ATFM delay (min/flight)",
       title = paste("Average en-route ATFM delay per flight -", year_input, "(min)"),
-      subtitle = "Split per delay group") +
+      subtitle = "Split per delay group") + 
     theme(legend.position="bottom")
   
   ert_dly_yyyy_plot

@@ -27,7 +27,6 @@ apt_arrival_dly <- function(airport, since, to){
     geom_bar(stat = "identity") +
     theme_pru() +
     scale_fill_manual(values = c("#FBC294", "#92D24A", "#C0504E", "#BFBFBF"),
-                      #values = pru_pal()(9)[c(2,4,7,9)],
                       name = "",
                       breaks = c("ATC attributed", "W", "G", "Other"),
                       labels = c(
@@ -39,7 +38,6 @@ apt_arrival_dly <- function(airport, since, to){
          y = "Avg. airport ATFM arrival delay per arrival (min)",
          title = paste("Average airport arrival ATFM delay -", airport, "airport"),
          subtitle = "") +
-    #ylim(0,1) +
     theme(legend.position = "bottom")
   
   apt_arr_dly_plot
