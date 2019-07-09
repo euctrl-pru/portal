@@ -28,6 +28,11 @@ airport <- "Helsinki/ Vantaa"
 since <- "2014"
 to <- "2019"
 
+# Horizontal flight efficieny
+# year for hfe
+state <- "Finland"
+year_input_start <- "2014"
+
 ```
 
 # Capacity
@@ -66,3 +71,23 @@ apt_arrival_dly(airport, since, to)
 ```
 
 > With the exception of 2015, airport ATFM arrival delays at Helsinki Vantaa airport are moderate and mainly related to adverse weather.
+
+# Environment
+
+## Horizontal flight efficiency
+
+(ref:hfe-year) Horizontal en-route flight efficiency - (`r state`). 
+
+```{r hfe-year, fig.cap='(ref:hfe-year)'}
+
+library(dplyr)
+library(ggplot2)
+library(viridis)
+library(lubridate)
+library(scales)
+
+source(here::here("R/environment/state-read-hfe.R"))
+source(here::here("R/environment/plot-hfe-year.R"))
+
+hfe_year(year_input_start, year_input, state)
+```
