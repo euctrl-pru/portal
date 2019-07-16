@@ -16,7 +16,7 @@ function drawVisualization()
  var crt_ertfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=flts&range=A1:E12',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1PM1HWwOut0Nya08kMmhyzoiF_kib6RolQslWn303fXE/edit?usp=sharing&sheet=flts&range=A1:E13',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -32,7 +32,7 @@ function drawVisualization()
                 titleTextStyle : {color: '#C0504D', fontSize: 12}, textStyle:{color:'#C0504D'}}
             }
         },
-    view: {columns: [0,1,2], rows: [3,4,5,6,7,8,9,10]}
+    view: {columns: [0,1,2], rows: [4,5,6,7,8,9,10,11]}
   }); crt_ertfltsYY.draw();
 
 
@@ -40,7 +40,7 @@ function drawVisualization()
  var crt_ertsuYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertsuYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=flts&range=A1:E12',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1PM1HWwOut0Nya08kMmhyzoiF_kib6RolQslWn303fXE/edit?usp=sharing&sheet=flts&range=A1:E13',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -56,14 +56,14 @@ function drawVisualization()
                 titleTextStyle : {color: '#C0504D', fontSize: 12}, textStyle:{color:'#C0504D'}}
             }
         },
-    view: {columns: [0,3,4], rows: [3,4,5,6,7,8,9,10]}
+    view: {columns: [0,3,4], rows: [4,5,6,7,8,9,10,11]}
   }); crt_ertsuYY.draw();
 
 // Flight type - YY - CHART -
   var crt_flttypeYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_flttypeYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=flts&range=G1:J4&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1PM1HWwOut0Nya08kMmhyzoiF_kib6RolQslWn303fXE/edit?usp=sharing&sheet=flts&range=G1:J4&hl=en_GB',
     options:{
           //width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -74,7 +74,7 @@ function drawVisualization()
               titleTextStyle : {color: '#5D7CBA', fontSize: 12},
               textStyle:{color: '#5D7CBA'}}
         },
-    view: {'columns': [0,3], rows: [1,2,3]}
+    view: {'columns': [0,3], rows: [0,1,2]}
   }); crt_flttypeYY.draw();
 
 
@@ -82,7 +82,7 @@ function drawVisualization()
   var crt_segYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_segYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1PM1HWwOut0Nya08kMmhyzoiF_kib6RolQslWn303fXE/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
     options:{
          // width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -93,7 +93,7 @@ function drawVisualization()
               titleTextStyle : {color: '#5D7CBA', fontSize: 12},
               textStyle:{color: '#5D7CBA'}}
         },
-    view: {'columns': [0,3], rows: [1,2,3,4,5]}
+    view: {'columns': [0,3], rows: [0,1,2,3,4,5]}
   }); crt_segYY.draw();
 
 
@@ -101,7 +101,7 @@ function drawVisualization()
  var crt_anspfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_anspfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=flts&range=Q1:T43',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1PM1HWwOut0Nya08kMmhyzoiF_kib6RolQslWn303fXE/edit?usp=sharing&sheet=flts&range=Q1:T43',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -117,7 +117,7 @@ function drawVisualization()
                 titleTextStyle : {color: '#C0504D', fontSize: 11}, textStyle:{color:'#C0504D'}}
             },
         hAxis: {
-          title: 'ANSPs sorted by change in absolute flights (2018)',
+          title: 'ANSPs sorted by change in absolute flights (2019)',
           titleTextStyle: {color: 'grey', fontSize: 10},
           textStyle: {color: 'grey', fontSize: 11},
           slantedText: true,
@@ -132,7 +132,7 @@ function drawVisualization()
  var crt_apt3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1Tba2bYjXvy09-nvxM2BR7r2BYhSWR63F6NJroFmE8G4/edit?usp=sharing&sheet=flts&range=V2:Y31',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1PM1HWwOut0Nya08kMmhyzoiF_kib6RolQslWn303fXE/edit?usp=sharing&sheet=flts&range=V2:Y31',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -149,7 +149,7 @@ function drawVisualization()
             },
             hAxis: {
               slantedTextAngle: 90,
-              title: 'Airports sorted by movements (* A-CDM airport)',
+              title: 'Airports sorted by movements (2019)',
               titleTextStyle: {color: 'grey', fontSize: 10},
               textStyle: {color: 'grey', fontSize: 11}}
         },
@@ -174,10 +174,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Dec</td>
+         <td>Jan-Jun</td>
          <td><a href='{{< relref "/definition/esra-2008-area.md" >}}'>ECAC area</a></td>
          <td>Quarterly</td>
-         <td>22-Mar-2019</td>
+         <td>15-Jul-2019</td>
          <td>
           <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
           <a href='{{< relref "/acronym/crco.md" >}}'>CRCO</a>,
@@ -203,25 +203,25 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="card bg-light "><div class="card-body">
-Air traffic in the <a href={{< relref "/definition/ecac-area.md" >}}>(ECAC)</a> area continued to grow for the fifth consecutive year in 2018.
-On average IFR flights increased by 3.8% over 2017 which was slightly above the baseline scenario forecast by STATFOR in the February 2018 forecast. 
+In the first half of 2019, air traffic in the <a href={{< relref "/definition/ecac-area.md" >}}>(ECAC)</a> grew on average by 1.7% which corresponds to 495 
+additional flights per day.
 
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="card bg-light"><div class="card-body">
-As in previous years, flight hours and distance (+4.9% vs. 2017) grew at a higher rate than IFR flights which - together with the further increase of the average take-off weight (+1.3% vs. 2017) - led again to a higher en-route service unit growth in 2018 (+6.1% vs. 2017).
+Average daily en-route service units (SU) grew by X.X% between January and June 2019, compared to the same period in 2018. 
 </div></div></div>
 </div>
-
+<br>
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Change by flight type</h4>
-    <span class="text-muted">2018 vs. 2017</span>
+    <span class="text-muted">2019 vs. 2018</span>
     <div id="crt_flttypeYY"></div>
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Change by traffic segment</h4>
-    <span class="text-muted">2018 vs. 2017</span>
+    <span class="text-muted">2019 vs. 2018</span>
     <div id="crt_segYY"></div>
 </div>
 </div>
@@ -231,39 +231,32 @@ As in previous years, flight hours and distance (+4.9% vs. 2017) grew at a highe
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>Traffic variation by <a href={{< relref "/acronym/ansp.md" >}}>ANSP</a></h4>
-    <span class="text-muted">2018 (Jan-Sep) vs. 2017 (Jan-Sep)</span>
+    <span class="text-muted">2019 (Jan-Jun) vs. 2018 (Jan-Jun)</span>
     <div id="crt_anspfltsYY"></div>
 </div>
 </div><br><br>
 
 <div class="card bg-light">
   <div class="card-body">
-   All of the 41 Air Navigation Service Providers (ANSPs) included in the analysis reported
-   a traffic increase compared to 2017.<br>
-   In absolute terms, DFS (Germany), DHMI (Turkey), ENAIRE (Spain), HungaroControl (Hungary),
-   ENAV (Italy) and BULATSA (Bulgaria) showed the highest year on year growth in 2018. 
+  Between January and June 2019, 31 of the Air Navigation Service Providers (ANSPs) included in the analysis reported
+  a traffic increase compared to 2018. In absolute terms, DSNA, ENAV, ENAIRE, Croatia Control, Austro Control and HCAA (Greece) showed the highest year on year growth in the first half of 2019. 
   </div>
 </div>
-
+<br>
 <div class="row placeholders">
   <div class="col-sm-12 ">
     <h4>Traffic variation at the top 30 airports in terms of traffic</h4>
-    <span class="text-muted">2018 vs. 2017</span>
+    <span class="text-muted">2019 (Jan-Jun) vs. 2018 (Jan-Jun)</span>
     <div id="crt_apt3"></div>
   </div>
 </div>
 
 <div class="card bg-light">
   <div class="card-body">
-    Following the increase in declared capacity and associated traffic (+7.7% vs 2017),
-    Frankfurt (FRA) replaced Amsterdam Schiphol (AMS) as the busiest airport in Europe.
+    Frankfurt remained the airport with the highest number of commercial movements in the EUROCONTROL area in 2019 (Jan-Jun).
     <br>
-    Antalya (AYT), with a significant traffic increase of +20.9% vs 2017 joins the top 30
-    while Geneva (GVA) is no longer among the top 30 airports in 2018. 
+    Overall, 22 of the top 30 airports reported a traffic growth in the first half of 2019. 
     <br>
-    Thirteen of the top 30 airports reported a traffic growth above 5% in 2018. 
-    <br>
-    Five airports reported a reduction in traffic levels in 2018: Stockholm (ARN),
-    Brussels (BRU), Manchester (MAN), Düsseldorf (DUS) and London Gatwick (LGW).  
+    Vienna (LOWW), Berlin (EDDT), Paris (LFPG), and Milan (LIMC) showed the highest absolute growth between January and June 2019.
   </div>
 </div>
