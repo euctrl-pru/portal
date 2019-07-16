@@ -227,11 +227,6 @@ ignoreFiles = [
     identifier= "traffic"
     weight = 20
 [[menu.sidenav]]
-    name = "Safety"
-    url = "/prcq/safety/"
-    identifier= "safety"
-    weight = 30
-[[menu.sidenav]]
     name = "Ops En-route"
     url = "/prcq/ops-en-route/"
     identifier= "ops-en-route"
@@ -241,11 +236,6 @@ ignoreFiles = [
     url = "/prcq/ops-airport/"
     identifier= "ops-airport"
     weight = 50
-[[menu.sidenav]]
-    name = "Economics"
-    url = "/prcq/economics/"
-    identifier= "economics"
-    weight = 60
 
 
 
