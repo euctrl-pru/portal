@@ -18,7 +18,3 @@ by reducing the overall fuel burn and CO2 emissions.
 Less airborne congestion in terminal areas will also contribute to improving
 operational safety by reducing pilot/ controller workload and to reducing noise
 for the communities living beneath the stacks.
-
-## See Also
-
-* {{% a_blank_ectrl "XMAN" "http://www.eurocontrol.int/articles/xman" %}}

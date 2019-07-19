@@ -13,5 +13,5 @@ while enabling airlines to operate safe and efficient flights.
 
 ## See Also
 
-* {{% a_blank_ectrl "ATFCM" "http://www.eurocontrol.int/articles/air-traffic-flow-and-capacity-management" %}}
+* {{% a_blank_ectrl "ATFCM" "https://www.eurocontrol.int/publication/atfcm-operations-manual" %}}
 * {{% a_blank_lexicon "ATFCM" "https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_and_Capacity_Management" %}}

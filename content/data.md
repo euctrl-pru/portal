@@ -59,7 +59,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [DefKEP]: /acronym/kep/ "Key performance Environment indicator based on last filed flight Plan"
 [DefKEA]: /acronym/kea/ "Key performance Environment indicator based on Actual trajectory"
 
-[PostOps]: http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process "Post ops adjustment process"
+[PostOps]: https://www.eurocontrol.int/service/post-operations-performance-adjustment "Post ops adjustment process"
 
 
 ## <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> Operations at Airports

@@ -20,4 +20,4 @@ and Rules of Procedure.
 
 ## See Also
 
-* {{% a_blank_ectrl "PRC" "http://www.eurocontrol.int/articles/about-european-ans-performance-review" %}}
+* {{% a_blank_ectrl "PRC" "https://www.eurocontrol.int/air-navigation-services-performance-review" %}}

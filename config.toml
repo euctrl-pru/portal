@@ -138,14 +138,14 @@ ignoreFiles = [
   [[menu.main]]
     name = "PRR"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-0"
+    url = "https://www.eurocontrol.int/publication/performance-review-report-prr-2018"
     identifier = "prr"
     parent = "references"
     weight = 1
   [[menu.main]]
     name = "ACE"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/prc/publications#field-tabs-tab-1"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
     identifier = "ace"
     parent = "references"
     weight = 2

@@ -11,7 +11,7 @@ The PRU is responsible for monitoring and reviewing the performance of the Pan-E
 across a number of key performance areas.
 
 As part of the EUROCONTROL Agency, the PRU supports the independent
-[Performance Review Commission (PRC)](http://www.eurocontrol.int/ansperformance/)
+[Performance Review Commission (PRC)](https://www.eurocontrol.int/air-navigation-services-performance-review/)
 in running the EUROCONTROL Performance Review System and executing the associated PRC
 work programme with the appropriate level of independence.
 

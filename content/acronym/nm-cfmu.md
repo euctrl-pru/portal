@@ -16,4 +16,4 @@ cost-effectiveness.
 
 ## See Also
 
-* {{% a_blank_ectrl "NM" "http://www.eurocontrol.int/network-manager" %}}
+* {{% a_blank_ectrl "NM" "https://www.eurocontrol.int/network-manager" %}}

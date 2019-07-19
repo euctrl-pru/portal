@@ -15,4 +15,4 @@ performance.
 
 ## See Also
 
-* {{% a_blank_ectrl "CODA" "https://www.eurocontrol.int/articles/central-office-delay-analysis-coda" %}}
+* {{% a_blank_ectrl "CODA" "https://www.eurocontrol.int/network-performance" %}}

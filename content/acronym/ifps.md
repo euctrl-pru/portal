@@ -17,5 +17,4 @@ operationally.
 
 ## See Also
 
-* {{% a_blank_ectrl "Flight planning domain" "http://www.eurocontrol.int/nm-services/183" %}}
-* {{% a_blank_ectrl "Flight plan filing and management" "http://www.eurocontrol.int/service/flight-plan-filing-and-management" %}}
+* {{% a_blank_ectrl "IFPS" "https://ext.eurocontrol.int/lexicon/index.php/Integrated_Initial_Flight_Plan_Processing_System" %}}

@@ -12,4 +12,4 @@ and to monitor and analyse the evolution of the Air Transport Industry.
 
 ## See Also
 
-* {{% a_blank_ectrl "STATFOR" "http://www.eurocontrol.int/statfor" %}}
+* {{% a_blank_ectrl "STATFOR" "https://www.eurocontrol.int/forecasting" %}}

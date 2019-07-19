@@ -17,4 +17,4 @@ principles of the Network Strategic Plan.
 ## See Also
 
 * {{% a_blank_lexicon "NOP" "https://ext.eurocontrol.int/lexicon/index.php/Network_Operations_Plan" %}}
-* {{% a_blank_ectrl "NOP" "http://www.eurocontrol.int/operations-planning" %}}
+* {{% a_blank_ectrl "NOP" "https://www.eurocontrol.int/network-operations-planning" %}}

@@ -15,5 +15,5 @@ from all services the Agency provides.
 
 For the data and analysis provided in this site, they are not yet included in any analysis.
 
-[ectl_ms]: https://www.eurocontrol.int/about/member-states "EUROCONTROL Member States"
-[ca]: https://www.eurocontrol.int/about/member-states#comprehensive-member-states "Comprehensive Agreement States"
+[ectl_ms]: https://www.eurocontrol.int/about-us#member-states "EUROCONTROL Member States"
+[ca]: https://www.eurocontrol.int/about-us#member-states "Comprehensive Agreement States"

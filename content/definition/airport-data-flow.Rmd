@@ -20,4 +20,4 @@ The PRU engages with the airport operators on a one by one case to facilitate th
 knitr::include_graphics("/images/apdf_progress.png")
 ```
 
-[apdf]: https://www.eurocontrol.int/publications/eurocontrol-specification-ans-performance-monitoring-airport-operator-data-flow-apdf "EUROCONTROL Specification for ANS Performance Monitoring - Airport Operator Data Flow (APDF)"
+[apdf]: https://www.eurocontrol.int/publication/eurocontrol-specification-operational-ans-performance-monitoring "EUROCONTROL Specification for ANS Performance Monitoring - Airport Operator Data Flow (APDF)"

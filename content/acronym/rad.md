@@ -26,8 +26,7 @@ requirements.
 
 ## See Also
 
-* {{% a_blank_ectrl "Route availability coordination and implementation" "http://www.eurocontrol.int/service/route-availability-coordination-and-implementation" %}}
-* {{% a_blank_ectrl "RAD implementation" "http://www.eurocontrol.int/services/rad-implementation" %}}
+* {{% a_blank_ectrl "Airspace utilisation" "https://www.eurocontrol.int/function/airspace-utilisation" %}}
 * [ATFCM][atfcm].
 
 

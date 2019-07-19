@@ -27,7 +27,7 @@ The ETFMS system has two main functions:
 ## See Also
 
 * {{% a_blank_ectrl "ETFMS" "http://www.eurocontrol.int/articles/enhanced-tactical-flow-management-system-etfms" %}}
-* {{% a_blank_lexicon "ETFMS" "https://ext.eurocontrol.int/lexicon/index.php/Enhanced_Tactical_Flow_Management_System" %}}
+* {{% a_blank_lexicon "ETFMS" "https://www.eurocontrol.int/system/enhanced-tactical-flow-management-system" %}}
 * [IFPS](/acronym/ifps/).
 
 

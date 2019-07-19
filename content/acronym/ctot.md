@@ -13,5 +13,4 @@ at which a flight is required to become airborne.
 
 ## See Also
 
-* {{% a_blank_ectrl "CTOT" "http://www.eurocontrol.int/articles/calculated-take-time-ctottarget-time-arrival-tta" %}}
 * {{% a_blank_lexicon "CTOT" "https://ext.eurocontrol.int/lexicon/index.php/Calculated_Take-Off_Time" %}}

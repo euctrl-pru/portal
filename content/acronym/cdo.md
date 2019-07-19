@@ -16,4 +16,4 @@ approach fix/final approach point.
 
 * [Continuous Descent Approach]({{< relref "cda.md" >}}).
 * {{% a_blank_lexicon "CDO" "https://ext.eurocontrol.int/lexicon/index.php/Continuous_descent_operation" %}}
-* {{% a_blank_ectrl "CCO and CDO" "http://www.eurocontrol.int/service/continuous-climb-and-descend-operations" %}}
+* {{% a_blank_ectrl "CCO and CDO" "https://www.eurocontrol.int/concept/continuous-climb-and-descent-operations" %}}

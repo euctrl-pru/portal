@@ -18,4 +18,4 @@ the Network Strategy Plan.
 
 ## See Also
 
-* {{% a_blank_ectrl "ERNIP" "http://www.eurocontrol.int/ernip" %}}
+* {{% a_blank_ectrl "ERNIP" "https://www.eurocontrol.int/function/route-network-and-airspace-design" %}}

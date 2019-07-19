@@ -59,4 +59,4 @@ Should you have further questions regarding the online reporting tools or if we 
 else then please do not hesitate to contact us.
 
 
-[vfews]: https://www.eurocontrol.int/events/vertical-flight-efficiency-workshop "Vertical Flight Efficiency workshop, Nov 2018"
+[vfews]: https://www.eurocontrol.int/news/reducing-vertical-flight-inefficiency-vfe-improve-network-performance "Vertical Flight Efficiency workshop, Nov 2018"

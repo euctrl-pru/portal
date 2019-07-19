@@ -12,4 +12,4 @@ alerting service are provided.
 
 ## See Also
 
-* {{% a_blank_lexicon "FIR" "http://www.eurocontrol.int/lexicon/lexicon/en/index.php/Flight_Information_Region" %}}
+* {{% a_blank_lexicon "FIR" "https://ext.eurocontrol.int/lexicon/index.php/Flight_Information_Region" %}}

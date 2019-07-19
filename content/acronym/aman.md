@@ -17,4 +17,3 @@ the required spacing for flights arriving to the runway and other criteria.
 
 * {{% a_blank_skybrary "AMAN" "http://www.skybrary.aero/index.php/Arrival_Manager_(AMAN)" %}}
 * {{% a_blank_lexicon "AMAN" "https://ext.eurocontrol.int/lexicon/index.php/Arrival_Manager" %}}
-* {{% a_blank_ectrl "AMAN" "http://www.eurocontrol.int/services/arrival-manager-aman" %}}

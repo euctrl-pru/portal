@@ -12,7 +12,7 @@ European Air Traffic Management System.
 
 ## See Also
 
-* {{% a_blank_ectrl "PRC Publications" "http://www.eurocontrol.int/prc/publications" %}}
+* {{% a_blank_ectrl "PRC Publications" "https://www.eurocontrol.int/air-navigation-services-performance-review" %}}
 
 [prc]: /acronym/prc/ "Air Traffic Control"
 

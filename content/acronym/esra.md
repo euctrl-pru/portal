@@ -14,9 +14,6 @@ It is used for high-level reports from EUROCONTROL, when referring to
 _total Europe_.
 
 
-## See Also
-
-* {{% a_blank_ectrl "ESRA" "http://www.eurocontrol.int/faq/what-esra-eurocontrol-statistical-reference-area" %}}
 
 [crco]: /acronym/crco/ "CRCO"
 [nm]: /acronym/nm/ "NM"

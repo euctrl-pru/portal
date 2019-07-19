@@ -11,4 +11,4 @@ The ATM Cost Effectiveness (ACE) reports present yearly factual data and analysi
 
 The analysis focuses primarily on costs that are under ANSPs' direct control and responsibility, namely the ATM/CNS provision costs.
 
-The reports are available on the {{% a_blank "EUROCONTROL PRC website" "http://www.eurocontrol.int/prc/publications" %}}.
+The reports are available on the {{% a_blank "EUROCONTROL PRC website" "https://www.eurocontrol.int/air-navigation-services-performance-review" %}}.

@@ -18,5 +18,5 @@ ASBUs outline the air and ground equipment and timelines for standards and proce
 
 ## See Also
 
-* {{% a_blank_ectrl "ASBU" "http://www.eurocontrol.int/articles/icao-asbu" %}}
+* {{% a_blank_ectrl "ASBU" "https://www.eurocontrol.int/publication/aviation-system-block-upgrade-asbu-implementation-monitoring-report-2017" %}}
 * {{% a_blank_icao "ASBU" "http://www.icao.int/sustainability/Pages/ASBU-Framework.aspx" %}}
