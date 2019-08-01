@@ -4,8 +4,8 @@ aliases:
     - /graphic/
 ---
 
-* [Safety](/dashboard/perf-area/safety/)
-* [Traffic](/dashboard/perf-area/traffic/)
-* [Capacity]( /dashboard/perf-area/capacity/)
-* [Environment](/dashboard/perf-area/environment/)
-* [Cost Efficiency](/dashboard/perf-area/cost-efficiency/)
+* [Safety](/dashboard/performance-area/safety/)
+* [Traffic](/dashboard/performance-area/traffic/)
+* [Capacity]( /dashboard/performance-area/capacity/)
+* [Environment](/dashboard/performance-area/environment/)
+* [Cost Efficiency](/dashboard/performance-area/cost-efficiency/)
