@@ -8,86 +8,53 @@ extrajs: [
 ---
 
 <style type="text/css">
-   .img-responsive {
-       margin: 0 auto;
-       max-width: 50%
-   }
    
    .resp-container {
        position: relative;
        overflow: hidden;
-       padding-top: 100.0%;
+       padding-top: 140.0%;
    }
    
    .resp-iframe {
        position: absolute;
        top: 0;
        left: 0;
-       width: 100%;
+       width: 90%;
        height: 110%;
        border: 0;
    }
    </style>
 
-<div>The analysis may take a view moments to load and is best viewed in Google Chrome which also allows pdf downloads on right clicking.</div><br>
+<table class = "table">
+  <thead>
+     <tr>
+        <th>Period</th>
+        <th>Area</th>
+        <th>Update rate</th>
+        <th>Last update</th>
+        <th>Source(s)</th>
+        <th>Methodology</th>
+        <th>Data</th>
+     </tr>
+  </thead>
+  <tbody>
+     <tr class = "active">
+        <td>Jan-Jun 2019</td>
+        <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
+        <td>Monthly</td>
+        <td>16-Jul-2019</td>
+         <td><a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
+             <a href='{{< relref "/acronym/pru.md" >}}'>PRU</a>
+         </td>
+    <td><a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'><i class="fas fa-info-circle"></i></a></td>
+        <td><a href="/data/"><i class="fas fa-download"></i></a></td>
+     </tr>
+  </tbody>
+</table>
+
+<div>The analysis may take a view moments to load and is best viewed in Google Chrome.</div>
 
 <div class="resp-container">
     <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/1dwQtc8pjOg2ZSPiH3Cumbx7qU2uYODZr/page/fg9v" frameborder="0" style="border:0" allowfullscreen>
     </iframe>
   </div>
-
-
-<h3 id="hfe">Horizontal En-route Flight Efficiency (<a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'>HFE</a>)</h3>
-
-<table class = "table">
-   <thead>
-      <tr>
-         <th>Period</th>
-         <th>Area</th>
-         <th>Update rate</th>
-         <th>Last update</th>
-         <th>Source(s)</th>
-         <th>Methodology</th>
-         <th>Data</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr class = "active">
-         <td>Jan-Jun 2019</td>
-         <td><a href='{{< relref "/definition/eurocontrol-area.md" >}}'>EUROCONTROL area</a></td>
-         <td>Monthly</td>
-         <td>16-Jul-2019</td>
-          <td><a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
-              <a href='{{< relref "/acronym/pru.md" >}}'>PRU</a>
-          </td>
-		 <td><a href='{{< relref "/methodology/horizontal-flight-efficiency-pi.html" >}}'><i class="fas fa-info-circle"></i></a></td>
-         <td><a href="/data/"><i class="fas fa-download"></i></a></td>
-      </tr>
-   </tbody>
-</table>
-
-<div class="row">
-    <div class="col-sm-6">
-        <h4>Evolution over time (EUROCONTROL level)</h4>
-        <div id="crt_hfe_YY"></div><br>
-        <div class="card bg-light ">
-          <div class="card-body">
-            Technical Report on Impact of <b>Shortest Constrained Route</b> on
-            Horizontal Flight Efficiency available for
-            <a href="http://ansperformance.eu/library/impact-scr-on-hfe.pdf">download</a>.
-          </div>
-        </div>
-        <div id="crt_hfe_MM"></div>
-    </div>
-    <div class="col-sm-6">
-        <h4>Results by entity (Jan-Jun 2019)</h4>
-        <div id="tbl_hfe_YY"></div>
-    </div>
-</div>
-
-
-<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
- // load the visualisation API
- google.load('visualization', '1', { packages: ['corechart', 'controls'] });
-</script>
