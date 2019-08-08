@@ -41,6 +41,12 @@ The web page is updated monthly and aims to:
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/1x_bHPU8eiVryoPZlYhtzcU2q3QL7nzhk/page/OJbw" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
+<div class="container text-center">
+<img src="/images/ert_dly_jan_jul_19.jpg" class="img-fluid" alt="Overview - proportion of en-route ATFM delays (Jan-Jul 2019)" style="max-width: 100%;">
+</div>
+<br>
+
+
 <br>
 To get informed about our monthly updates please subscribe to our mailing list by clicking on the blue button below.
 
