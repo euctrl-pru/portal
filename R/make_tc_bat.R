@@ -2,10 +2,12 @@
 
 "Generate .bat script for calculation of Traffic Complexity.
 
-Usage: make_tc_bat [-h] WEF TIL [-a APP] TRAFDIR BADAVER BADADIR ASDIR OUTDIR INI BAT
+Usage: make_tc_bat [-h] WEF TIL [-a APP] [-t TPFX] [-p OPFX] TRAFDIR BADAVER BADADIR ASDIR OUTDIR INI BAT
 
 -h --help  show this help text
--a APP     the location of TC exe [default: 'C:/PruComplexity1.3/Application']
+-a APP     the location of TC exe [default: C:/PruComplexity1.3/Application]
+-t TPFX    the prefix for the traffic file [default: TRAFFIC]
+-p OPFX    the prefix for the output file [default: complexity]
 
 Arguments:
   WEF      date from, format YYYY-MM-DD
@@ -24,14 +26,11 @@ suppressMessages(library(docopt))
 # retrieve the command-line arguments
 opts <- docopt(doc)
 
-opts
-
 suppressMessages(library(stringr))
 suppressMessages(library(tibble))
 suppressMessages(library(trrrj))
 suppressMessages(library(lubridate))
 suppressMessages(library(dplyr))
-
 
 
 # wef <- '2019-01-01'
@@ -63,18 +62,21 @@ ndays <- length(dates)
 strings <- tibble(
   date          = dates,
   airac_cfmu    = dates %>% cfmu_airac(),
-  app_dir       = rep(opts$a, ndays),
-  airspace_dir  = rep(opts$ASDIR, ndays),
+  app_dir       = rep(opts$a,       ndays),
+  airspace_dir  = rep(opts$ASDIR,   ndays),
   traffic_dir   = rep(opts$TRAFDIR, ndays),
+  traffic_prfx  = rep(opts$t,       ndays),
   bada_base_dir = rep(opts$BADADIR, ndays),
   bada_ver      = rep(opts$BADAVER, ndays),
-  output_dir    = rep(opts$OUTDIR, ndays),
-  ini_file      = rep(opts$INI, ndays)
+  output_dir    = rep(opts$OUTDIR,  ndays),
+  output_prfx   = rep(opts$p,       ndays),
+  ini_file      = rep(opts$INI,     ndays)
 ) %>%
   mutate(
     yymmdd   = format(date, "%y%m%d"),
     yyyymmdd = format(date, "%Y%m%d")
   )
+
 
 if (fs::file_exists(opts$BAT)) {
   message(paste0(opts$BAT, " already exist, please choose another filename."))
@@ -88,7 +90,7 @@ f <- fs::file_create(opts$BAT)
 # print(str_glue('cd "{APPDIR}"', APPDIR = opts$a))
 
 strings %>%
-  str_glue_data('call {app_dir}/pruciMain.exe {yymmdd}  "{traffic_dir}/TRAFFIC_{yyyymmdd}.so6" "{airspace_dir}/airspace_prisme_{airac_cfmu}.prisme" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_PERF.txt" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_TYPE.txt"  "{output_dir}" "{ini_file}"  -o "complexity_{yymmdd}_bada_{bada_ver}.csv"') %>%
+  str_glue_data('call {app_dir}/pruciMain.exe {yymmdd}  "{traffic_dir}/{traffic_prfx}_{yyyymmdd}.so6" "{airspace_dir}/airspace_prisme_{airac_cfmu}.prisme" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_PERF.txt" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_TYPE.txt"  "{output_dir}" "{ini_file}"  -o "{output_prfx}_{yyyymmdd}_bada_{bada_ver}.csv"') %>%
   writeLines(f)
 cat("pause", file = f, append = TRUE)
 
