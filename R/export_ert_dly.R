@@ -6,6 +6,10 @@ Usage: export_ert_dly [-h] [-t TYPE] WEF TIL
 
   -h --help             show this help text
   -t TYPE, --type=TYPE  the TYPE of entity; one of ansp, fir [default: ansp]
+
+Arguments:
+  WEF  date from when to export data, format YYYY-MM-DD
+  TIL  date till when to export data, format YYYY-MM-DD (non-inclusive)
 " -> doc
 
 suppressWarnings(suppressMessages(library(docopt)))
