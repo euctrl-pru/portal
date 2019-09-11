@@ -41,8 +41,8 @@ The web page is updated monthly and aims to:
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/1x_bHPU8eiVryoPZlYhtzcU2q3QL7nzhk/page/OJbw" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 <br>
-<img align="left" src="/images/ert_dly_jan_aug_19.jpg" width="50%" alt="Overview - proportion of en-route ATFM delays (Jan-Jul 2019)"/>
-<img align="left" src="/images/apt_dly_jan_aug_19.jpg" width="50%" alt="Overview - proportion of airport ATFM delays (Jan-Jul 2019)"/>
+<img align="left" src="/images/ert_dly_jan_aug_19.jpg" width="50%" alt="Overview - proportion of en-route ATFM delays (Jan-Aug 2019)"/>
+<img align="left" src="/images/apt_dly_jan_aug_19.jpg" width="50%" alt="Overview - proportion of airport ATFM delays (Jan-Aug 2019)"/>
 
 <br>
 To get informed about our monthly updates please subscribe to our mailing list by clicking on the blue button below.
