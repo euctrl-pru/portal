@@ -19,3 +19,8 @@ blogdown
 public
 Thumbs.db
 resources/
+data-config/ansp-ace.geojson
+data-config/ansp_q_facts.rds
+data-config/tbl_admin.rds
+data-config/tbl_main.rds
+data-config/world-capitals.rds
