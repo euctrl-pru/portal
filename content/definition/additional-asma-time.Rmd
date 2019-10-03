@@ -38,7 +38,7 @@ as the difference between the actual ASMA transit time $\textrm{AcASMA}(f(c))$ o
 flight and the unimpeded ASMA time $\textrm{UASMA}(c)$:
 
 $$
-\textrm{AdASAM}(f(c)) = \textrm{AcASMA}(f(c)) - \textrm{UASMA}(c)
+\textrm{AdASMA}(f(c)) = \textrm{AcASMA}(f(c)) - \textrm{UASMA}(c)
 $$
 
 The additional ASMA time, $\textrm{AdASMA}(c)$, for a given combination $c$ is the
