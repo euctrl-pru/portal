@@ -16,14 +16,11 @@ title: "Overview - January-September 2019"
 
 ## <img src="/images/prcq-traffic.png" width="40" height="40" alt="Traffic"> [Traffic][traffic]
 
-In the first half of 2019, air traffic in the EUROCONTROL area [(ECAC)][ecac] grew on average by 1.7% which corresponds to 495 additional flights per day. 
+In the first three quarters of 2019, air traffic in the EUROCONTROL area [(ECAC)][ecac] grew on average by 1.3% which corresponds to 388 additional flights per day. 
 
-The main drivers of the observed traffic growth in 2019 (Jan-Jun) were charter flights and the continued growth in the low cost traffic segment.
+Between January and September 2019, 26 of the [Air Navigation Service Providers (ANSPs)][ansp] included in the analysis reported a traffic increase compared to 2018.<br>
 
-Between January and June 2019, 31 of the [Air Navigation Service Providers (ANSPs)][ansp] included in the analysis reported a traffic increase compared to 2018.<br>
-
-In absolute terms, DSNA (France), ENAV (Italy), ENAIRE (Spain), Croatia Control (Croatia), Austro Control (Austria) 
-and HCAA (Greece) showed the highest year on year growth in the first half of 2019. 
+In absolute terms, ENAV, DSNA, Croatia Control, ENAIRE, HCAA (Greece) and SMATSA (Serbia and Montenegro) showed the highest year on year growth. 
 
 
 ## <img src="/images/prcq-safety.png" width="40" height="40" alt="Safety"> [Safety][safety]
@@ -34,25 +31,26 @@ More information can be found in Chapter 2 of the latest [Performance Review Rep
 
 ## <img src="/images/prcq-operations-enroute.png" width="40" height="40" alt="Operations En-route"> [Operations En-route][ops_ert]
 
-In the first half of 2019, total en-route ATFM delays in the EUROCONTROL area decreased by 10.1% compared to the same period in 2018. 
-As a result, average en-route ATFM delay per flight decreased from 1.49 in 2018 to 1.32 in 2019. 
+Between January and September 2019, total en-route ATFM delays in the EUROCONTROL area decreased by 10.2% compared to the same period in 2018. 
+As a result, average en-route ATFM delay per flight decreased from 2.02 in 2018 to 1.79 in 2019.  
 
-Compared to the first half of 2018, the decrease is mainly due to less adverse weather and less strikes. 
+Compared to 2018, the decrease is mainly due to less adverse weather and less strikes. 
 Delays attributed to ATC Capacity and Staffing continued to increase compared to the same period in 2018.
 
-Although the average en-route ATFM delay per flight decreased, the share of en-route ATFM delayed flights increased further (+0.5 percent points) 
-to reach 8.4%.
+Although the average en-route ATFM delay per flight decreased, the share of en-route ATFM delayed flights increased further (+0.4 percent points) 
+to reach 11.1%.
 
-Average en-route delay per flight in the first half of 2019 was highest in DFS/Germany (1.55 min), followed by Austro Control/ Austria (1.50 min),
-HungaroControl (1.19 min) and skeyes (1.15 min).
+In the first three quarters of 2019, average en-route delay per flight was highest in HungaroControl (2.05 min) followed by Austro Control/ Austria (1.97 min), 
+DFS/Germany (1.65 min) and skeyes/Belgium (1.16 min).
 
-The efficiency of actual trajectories decreased slightly to 97.2% between January and June 2019 while the efficiency in the filed flight plans remained unchanged at 95.6%. 
+The efficiency of actual trajectories decreased slightly to 97.2% between January and September 2019 while the efficiency in the filed flight plans remained unchanged at 95.6%. 
 
 ##  <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> [Operations Airport][ops_apt]
 
-Average airport ATFM delays at the top 30 European airports increased from 1.05 to 1.25 minutes per arrival in the first half of 2019, mainly due to airport capacity issues. The highest average airport ATFM delay was observed at Amsterdam Schiphol, followed by Lissbon and Athens. 
+Average airport ATFM delays at the top 30 European airports increased from 1.06 to 1.21 minutes per arrival in the first nine months of 2019, 
+mainly due to airport capacity issues. The highest average airport ATFM delay was observed at Amsterdam Schiphol, Athens, Lisbon and London Gatwick airport. 
 
-<a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a> at the top 30 airports increased compared to the first half of 2018 while <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a> remained at a similar level as in 2018. 
+<a href='{{"/references/definition/additional_asma_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional ASMA time</a> and <a href='{{"/references/definition/additional_taxi-out_time.html"| prepend: site.baseurl | prepend: site.url }}'>Additional taxi-out time</a> at the top 30 airports increased in 2019 compared to the same period in 2018. 
 
 
 ## <img src="/images/prcq-economics.png" width="40" height="40" alt="Economics"> [Economics][economics]
