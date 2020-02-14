@@ -90,7 +90,7 @@ f <- fs::file_create(opts$BAT)
 # print(str_glue('cd "{APPDIR}"', APPDIR = opts$a))
 
 strings %>%
-  str_glue_data('call {app_dir}/pruciMain.exe {yymmdd}  "{traffic_dir}/{traffic_prfx}_{yyyymmdd}.so6" "{airspace_dir}/airspace_prisme_{airac_cfmu}.prisme" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_PERF.txt" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_TYPE.txt"  "{output_dir}" "{ini_file}"  -o "{output_prfx}_{yyyymmdd}_bada_{bada_ver}.csv"') %>%
+  str_glue_data('call {app_dir}/pruciMain.exe {yymmdd}  "{traffic_dir}/{traffic_prfx}_{yyyymmdd}.so6" "{airspace_dir}/airspace_prisme_{airac_cfmu}.prisme" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_PERF.txt" "{bada_base_dir}/{bada_ver}/TB_OGIS_BADA_AIRCRAFT_TYPE.txt"  "{output_dir}" "{ini_file}"  -o "{output_prfx}_{yyyymmdd}_bada_{bada_ver}.csv"\n ren pruci.log pruci-{yyyymmdd}.log') %>%
   writeLines(f)
 cat("pause", file = f, append = TRUE)
 

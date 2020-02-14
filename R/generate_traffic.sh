@@ -28,7 +28,8 @@ do
     Rscript $(dirname $(dirname $(realpath $0)) )/R/export_trajectories_so6.R \
 	    -o TRAFFIC_${model}_${start}.so6 \
 	    -m ${model} \
-	    \"$(date -d"$start" +"%Y-%m-%d")\" \"$(date -d"$next" +"%Y-%m-%d")\"
+	    \"$(date -d"$start" +"%Y-%m-%d")\" \"$(date -d"$next" +"%Y-%m-%d")\" \
+	    -b 1 -a 1
 
     # increment by 1 day
     start=$next
