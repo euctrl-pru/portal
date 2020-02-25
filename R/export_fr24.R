@@ -48,7 +48,7 @@ pwd <- Sys.getenv("PRU_FR24_PWD")
 dbn <- Sys.getenv("PRU_FR24_DBNAME")
 
 if (usr == "") {
-  cat("Error: you should at least set your DB user via PRU_DEV_USR")
+  cat("Error: you should at least set your DB user via PRU_FR24_USR")
   q(status = -1)
 }
 

@@ -38,7 +38,7 @@ pwd <- Sys.getenv("PRU_ATMAP_PWD")
 dbn <- Sys.getenv("PRU_ATMAP_DBNAME")
 
 if (usr == "") {
-  cat("Error: you should at least set your DB user via PRU_DEV_USR")
+  cat("Error: you should at least set your DB user via PRU_ATMAP_USR")
   q(status = -1)
 }
 
