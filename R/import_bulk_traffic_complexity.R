@@ -6,12 +6,18 @@
 # * the second field of the filenames (eparated by '_' ) is the day the TC is calculated for,
 #    i.e. '20181231' in 'complexity_20181231_bada_3_15_201912.csv'
 #
+library(lubridate)
+library(stringr)
+library(fs)
+library(dplyr)
+library(readr)
+library(purrr)
 
 
 base_dir    <- "G:/HQ/dgof-pru/Data/Application/Complexity_version_C/Data/Output"
 
 # NOTE: CHANGE HERE *********************************************
-files_regex <- "complexity_2019.*_bada_3_15_201912.csv"
+files_regex <- "complexity_2018.*_bada_3_15_201912.csv"
 
 # ...and HERE: version/... info
 tbl  <- "AUA_COMPLEXITY_3_15"
@@ -22,12 +28,6 @@ upd  <- lubridate::now() %>% lubridate::as_date()
 # upd  <- lubridate::as_date("2020-01-30")
 #****************************************************************
 
-library(lubridate)
-library(stringr)
-library(fs)
-library(dplyr)
-library(readr)
-library(purrr)
 
 ifiles      <- fs::dir_ls(base_dir, regexp = files_regex)
 
