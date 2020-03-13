@@ -47,107 +47,138 @@ ignoreFiles = [
 # The value of pre is the icon name
 [menu]
   [[menu.main]]
-    name = "News"
-    identifier = "news"
+    name = "COVID-19"
+    identifier = "covid19"
     pre = ""
-    url = "/post/"
+    url = "/covid/"
     weight = 5
 
   [[menu.main]]
-    name = "Analysis"
+    name = "PRC"
+    identifier = "prc"  
+    pre = ""
+    url = "/prc/"
+    weight = 10
+  [[menu.main]]
+    name = "Latest PRC news"
+    url = "/prc/"
+    identifier = "PRC news"
+    parent = "prc"
+    weight = 1
+  [[menu.main]]
+    name = "PRR 2019 (Final draft)"
+    url = "/prcq/"
+    identifier = "prcq"
+    parent = "prc"
+    weight = 2
+  [[menu.main]]
+    name = "PRR 2018"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/publication/performance-review-report-prr-2018"
+    identifier = "prr"
+    parent = "prc"
+    weight = 3
+   [[menu.main]]
+    name = "About the PRC"
+    url = "/prc/prc/"
+    identifier = "prc_about"
+    parent = "prc"
+    weight = 4
+
+  [[menu.main]]
+    name = "Performance area"
     identifier = "dashboard"
     pre = ""
     url = "/dashboard/"
-    weight = 10
-  [[menu.main]]
-    name = "PRC Quarterly"
-    url = "/prcq/"
-    identifier = "prcq"
-    parent = "dashboard"
-    weight = 1
-  [[menu.main]]
-    name = "divider-prcq"
-    parent = "dashboard"
-    weight = 2
+    weight = 15
   [[menu.main]]
     name = "Safety"
     url = "/dashboard/performance-area/safety/"
     identifier = "safety"
     parent = "dashboard"
-    weight = 3
+    weight = 1
   [[menu.main]]
     name = "Traffic"
     url = "/dashboard/performance-area/traffic/"
     identifier = "traffic"
     parent = "dashboard"
-    weight = 4
+    weight = 2
   [[menu.main]]
     name = "Capacity"
     url = "/dashboard/performance-area/capacity/"
     identifier = "capacity"
     parent = "dashboard"
-    weight = 5
+    weight = 3
   [[menu.main]]
     name = "Environment"
     url = "/dashboard/performance-area/environment/"
     identifier = "environment"
     parent = "dashboard"
-    weight = 6
+    weight = 4
   [[menu.main]]
     name = "divider-otools"
     parent = "dashboard"
-    weight = 7
-  [[menu.main]]
-    name = "Online reporting tools"
-    url = "/otools/"
-    identifier = "cco-cdo reporting"
-    parent = "dashboard"
-    weight = 8
+    weight = 5
   [[menu.main]]
     name = "divider-eco"
     parent = "dashboard"
-    weight = 9
+    weight = 6
+  
   [[menu.main]]
-    name = "ACE dashboard"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
-    identifier = "ace-dashboard"
-    parent = "dashboard"
-    weight = 10
-  [[menu.main]]
-    name = "SU dashboard"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/"
-    identifier = "su-dashboard"
-    parent = "dashboard"
-    weight = 11
-  [[menu.main]]
-    name = "SES Portal"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
-    identifier = "ses-portal"
-    parent = "dashboard"
-    weight = 12
-
-  [[menu.main]]
-    name = "Stakeholder Views"
+    name = "Views"
     pre = ""
     url = "/dashboard/stakeholder/"
     identifier = "stakeholder"   
     weight = 20
   [[menu.main]]
-    name = "ANSP view"
-    url = "/dashboard/stakeholder/ansp/"
-    identifier = "Ansp"
-    parent = "stakeholder"
-    weight = 1
-  [[menu.main]]
-    name = "State view"
+    name = "State"
     url = "/dashboard/stakeholder/state/"
     identifier = "State"
     parent = "stakeholder"
+    weight = 1
+  [[menu.main]]
+    name = "Air Nav Service Provider"
+    url = "/dashboard/stakeholder/ansp/"
+    identifier = "Ansp"
+    parent = "stakeholder"
     weight = 2
 
+  [[menu.main]]
+    name = "Tools"
+    pre = ""
+    url = "/dashboard/tools/"
+    identifier = "tools"   
+    weight = 25
+   [[menu.main]]
+    name = "ACE dashboard"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
+    identifier = "ace-dashboard"
+    parent = "tools"
+    weight = 1
+  [[menu.main]]
+    name = "SU dashboard"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/"
+    identifier = "su-dashboard"
+    parent = "tools"
+    weight = 2
+  [[menu.main]]
+    name = "SES Portal"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
+    identifier = "ses-portal"
+    parent = "tools"
+    weight = 3
+   [[menu.main]]
+    name = "divider-tools"
+    parent = "tools"
+    weight = 4
+   [[menu.main]]
+    name = "Online reporting tools"
+    url = "/otools/"
+    identifier = "cco-cdo reporting"
+    parent = "tools"
 
   [[menu.main]]
     name = "Data"
@@ -161,13 +192,6 @@ ignoreFiles = [
     url = "/reference/"
     identifier = "references"
     weight = 40
-  [[menu.main]]
-    name = "PRR"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/publication/performance-review-report-prr-2018"
-    identifier = "prr"
-    parent = "references"
-    weight = 1
   [[menu.main]]
     name = "ACE"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
@@ -223,43 +247,42 @@ ignoreFiles = [
     url = "/about/"
     weight = 50
   [[menu.main]]
+    name = "Release notes"
+    url = "/post/"
+    identifier = "news"
+    parent = "about"
+    weight = 1
+  [[menu.main]]
     name = "About PRU"
     url = "/about/us/"
     identifier = "pru"
     parent = "about"
-    weight = 1
-  [[menu.main]]
-    name = "About PRC"
-    url = "/about/prc/"
-    identifier = "prc"
-    parent = "about"
-    weight = 4
+    weight = 2
   [[menu.main]]
     name = "Disclaimer"
     url = "/about/disclaimer/"
     identifier = "disclaimer"
     parent = "about"
-    weight = 10
-
+    weight = 3
 
 [[menu.sidenav]]
     name = "Overview"
-    url = "/prcq/"
+    url = "/prc/prcq/"
     identifier= "overview"
     weight = 10
 [[menu.sidenav]]
     name = "Traffic"
-    url = "/prcq/traffic/"
+    url = "/prc/prcq/traffic/"
     identifier= "traffic"
     weight = 20
 [[menu.sidenav]]
     name = "Ops En-route"
-    url = "/prcq/ops-en-route/"
+    url = "/prc/prcq/ops-en-route/"
     identifier= "ops-en-route"
     weight = 40
 [[menu.sidenav]]
     name = "Ops Airport"
-    url = "/prcq/ops-airport/"
+    url = "/prc/prcq/ops-airport/"
     identifier= "ops-airport"
     weight = 50
 
