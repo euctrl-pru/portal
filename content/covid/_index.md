@@ -1,7 +1,13 @@
 ---
-layout: default
 title: COVID-19 outbreak
-permalink: /covid
+date: '2020-03-13'
 ---
 
-The expanding COVID-19 outbreak is threatening to derail what was expected to be a milestone year for the Japanese airline industry.
+![Example image](/images/adasma-step2a.png)
+
+
+Some other  text
+
+<!-- change the following as you best see fit (I did not want to hardoce in the covid list template) -->
+
+## Latest News
