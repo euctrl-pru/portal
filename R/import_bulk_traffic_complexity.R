@@ -17,7 +17,7 @@ library(purrr)
 base_dir    <- "G:/HQ/dgof-pru/Data/Application/Complexity_version_C/Data/Output"
 
 # NOTE: CHANGE HERE *********************************************
-files_regex <- "complexity_2018.*_bada_3_15_201912.csv"
+files_regex <- "complexity_2017.*_bada_3_15_201912.csv"
 
 # ...and HERE: version/... info
 tbl  <- "AUA_COMPLEXITY_3_15"
