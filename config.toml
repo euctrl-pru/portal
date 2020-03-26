@@ -46,27 +46,21 @@ ignoreFiles = [
 # See https://feathericons.com/
 # The value of pre is the icon name
 [menu]
-  [[menu.main]]
-    name = "News"
-    identifier = "news"
-    pre = ""
-    url = "/post/"
-    weight = 10
 
   [[menu.main]]
     name = "Analysis"
     identifier = "dashboard"
     pre = ""
     url = "/dashboard/"
-    weight = 15
+    weight = 10
   [[menu.main]]
     name = "divider-prcq"
     parent = "dashboard"
     weight = 2
   [[menu.main]]
-    name = "Safety"
-    url = "/dashboard/performance-area/safety/"
-    identifier = "safety"
+    name = "COVID-19 crisis"
+    url = "/covid/"
+    identifier = "covid"
     parent = "dashboard"
     weight = 3
   [[menu.main]]
@@ -227,13 +221,19 @@ ignoreFiles = [
     url = "/about/prc/"
     identifier = "prc"
     parent = "about"
-    weight = 4
+    weight = 2
+  [[menu.main]]
+    name = "Release notes"
+    url = "/post/"
+    identifier = "release"
+    parent = "about"
+    weight = 3
   [[menu.main]]
     name = "Disclaimer"
     url = "/about/disclaimer/"
     identifier = "disclaimer"
     parent = "about"
-    weight = 10
+    weight = 4
 
 
 [[menu.sidenav]]
