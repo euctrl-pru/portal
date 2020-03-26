@@ -24,14 +24,19 @@ date: '2020-03-13'
 }
 </style>
 
+With a pandemic sweeping its way across the globe, the entire aviation industry is facing an unprecedented challenge.  
+Nobody can currently answer the most pressing question, namely how long will the crisis last, how bad it will be, and how to get back to normality?
+
+Complementary to the [EUROCONTROL web page][ectlweb] which provides daily situation updates in an [interactive dashboard][ectl_daily], the goal of this site is to provide relevant high level snapshots of the crisis particularly related to performance topics as more data becomes available. 
+
+
+
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/jwMJB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
-Some other  text
-
-
 
 <!-- change the following as you best see fit (I did not want to hardoce in the covid list template) -->
 
-## Latest News
+[ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html "Daily traffic updates"
+[ectlweb]: https://www.eurocontrol.int/ "EUROCONTROL web page"
