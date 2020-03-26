@@ -51,20 +51,14 @@ ignoreFiles = [
     identifier = "news"
     pre = ""
     url = "/post/"
-    weight = 5
+    weight = 10
 
   [[menu.main]]
     name = "Analysis"
     identifier = "dashboard"
     pre = ""
     url = "/dashboard/"
-    weight = 10
-  [[menu.main]]
-    name = "PRC Quarterly"
-    url = "/prcq/"
-    identifier = "prcq"
-    parent = "dashboard"
-    weight = 1
+    weight = 15
   [[menu.main]]
     name = "divider-prcq"
     parent = "dashboard"

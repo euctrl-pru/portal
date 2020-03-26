@@ -16,7 +16,7 @@ function drawVisualization()
  var crt_ertfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1ofmFbajwVZRZSEGsAYBm6qpY9Xy3k3w7WCN3YV0J8B4/edit?usp=sharing&sheet=flts&range=A1:E13',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1nJCR6vW0rD6TeklumiUKUy9nVZgZKrURsLFecjhdbdc/edit?usp=sharing&sheet=flts&range=A1:E13',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -40,7 +40,7 @@ function drawVisualization()
  var crt_ertsuYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_ertsuYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1ofmFbajwVZRZSEGsAYBm6qpY9Xy3k3w7WCN3YV0J8B4/edit?usp=sharing&sheet=flts&range=A1:E13',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1nJCR6vW0rD6TeklumiUKUy9nVZgZKrURsLFecjhdbdc/edit?usp=sharing&sheet=flts&range=A1:E13',
     options: {
         //width: 500, height: 200,
         //chartArea: {left: 80, top: 30, width:'60%',height:'65%'},
@@ -63,7 +63,7 @@ function drawVisualization()
   var crt_flttypeYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_flttypeYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1ofmFbajwVZRZSEGsAYBm6qpY9Xy3k3w7WCN3YV0J8B4/edit?usp=sharing&sheet=flts&range=G1:J4&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1nJCR6vW0rD6TeklumiUKUy9nVZgZKrURsLFecjhdbdc/edit?usp=sharing&sheet=flts&range=G1:J4&hl=en_GB',
     options:{
           //width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -82,7 +82,7 @@ function drawVisualization()
   var crt_segYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_segYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1ofmFbajwVZRZSEGsAYBm6qpY9Xy3k3w7WCN3YV0J8B4/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1nJCR6vW0rD6TeklumiUKUy9nVZgZKrURsLFecjhdbdc/edit?usp=sharing&sheet=flts&range=L1:O7&hl=en_GB',
     options:{
          // width: 450, height: 150,
           chartArea: {left: 60, top: 10, width:'80%',height:'60%'},
@@ -101,7 +101,7 @@ function drawVisualization()
  var crt_anspfltsYY = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_anspfltsYY',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1ofmFbajwVZRZSEGsAYBm6qpY9Xy3k3w7WCN3YV0J8B4/edit?usp=sharing&sheet=flts&range=Q1:T43',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1nJCR6vW0rD6TeklumiUKUy9nVZgZKrURsLFecjhdbdc/edit?usp=sharing&sheet=flts&range=Q1:T43',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -132,7 +132,7 @@ function drawVisualization()
  var crt_apt3 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt3',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1ofmFbajwVZRZSEGsAYBm6qpY9Xy3k3w7WCN3YV0J8B4/edit?usp=sharing&sheet=flts&range=V2:Y31',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1nJCR6vW0rD6TeklumiUKUy9nVZgZKrURsLFecjhdbdc/edit?usp=sharing&sheet=flts&range=V2:Y31',
     options: {
         height: 350,
         chartArea: {left: 70, top: 10, width:'85%',height:'45%'},
@@ -174,10 +174,10 @@ google.setOnLoadCallback(drawVisualization)
    </thead>
    <tbody>
       <tr class = "active">
-         <td>Jan-Sep</td>
+         <td>Jan-Dec</td>
          <td><a href='{{< relref "/definition/esra-2008-area.md" >}}'>ECAC area</a></td>
          <td>Quarterly</td>
-         <td>10-Oct-2019</td>
+         <td>20-Mar-2020</td>
          <td>
           <a href='{{< relref "/acronym/nm-cfmu.md" >}}'>NM</a>,
           <a href='{{< relref "/acronym/crco.md" >}}'>CRCO</a>,
@@ -195,7 +195,7 @@ google.setOnLoadCallback(drawVisualization)
 </div>
 <div class="col-xs-6 col-sm-6 placeholder">
     <h4>Average daily en-route <a href={{< relref "/acronym/su.md" >}}>Service Units (SU)</a></h4>
-    <span class="text-muted">CRCO area (Jan-Sep)</span>
+    <span class="text-muted">CRCO area (Jan-Dec)</span>
     <div id="crt_ertsuYY"></div>
 </div>
 </div><br>
@@ -203,13 +203,15 @@ google.setOnLoadCallback(drawVisualization)
 <div class="row placeholders">
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="card bg-light "><div class="card-body">
-In the first nine months of 2019, air traffic in the <a href={{< relref "/definition/ecac-area.md" >}}>(ECAC)</a> grew on average by 1.3% which corresponds to 388 
-additional flights per day.
+Air traffic in the <a href={{< relref "/definition/ecac-area.md" >}}>(ECAC)</a> continued the positive trend observed over the past 5 five years in 2019. 
+Air traffic grew by 0.8% compared to 2018, yet at a notably lower growth 6 rate compared to previous years. 
+Compared to 2013 when the positive trend started, the ANS system controlled an additional 1.5 million flights (+15.4%) in 2019.
 
 </div></div></div>
 <div class="col-xs-6 col-sm-6 placeholder">
 <div class="card bg-light"><div class="card-body">
-Average daily en-route service units (SU) grew by 4.0% between January and June 2019, compared to the same period in 2018. 
+As in previous years, average aircraft size (+1.7% vs. 2018) and distance (+1.7% vs. 2018) continued to grow at a higher rate than flights in 2019 which 
+consequently resulted also in a higher en-route service unit growth in 2019 (+2.8% vs. 2018).
 </div></div></div>
 </div>
 <br>
@@ -226,37 +228,36 @@ Average daily en-route service units (SU) grew by 4.0% between January and June 
 </div>
 </div>
 
-
-
 <div class="row placeholders">
 <div class="col-sm-12 placeholder">
     <h4>Traffic variation by <a href={{< relref "/acronym/ansp.md" >}}>ANSP</a></h4>
-    <span class="text-muted">2019 (Jan-Sep) vs. 2018 (Jan-Sep)</span>
+    <span class="text-muted">2019 (Jan-Dec) vs. 2018 (Jan-Dec)</span>
     <div id="crt_anspfltsYY"></div>
 </div>
 </div><br><br>
 
 <div class="card bg-light">
   <div class="card-body">
-  Between January and September 2019, 26 of the Air Navigation Service Providers (ANSPs) included in the analysis reported
-  a traffic increase compared to 2018. In absolute terms, ENAV, DSNA, Croatia Control, ENAIRE, HCAA (Greece) and SMATSA (Serbia and Montenegro) showed the highest year on year growth. 
+  A total of 32 of the 42 Air Navigation Service Providers (ANSPs) included in the analysis reported a traffic increase in 2019. 
+  In absolute terms, ENAV (Italy), CroatiaControl, ENAIRE (Spain), HCAA (Greece), SMATSA (Serbia/ Montenegro), and Austro Control 
+  showed the highest year on year growth in 2019. <br>Sakaeronavigatsia (Georgia), LFV (Sweden), Maastricht Upper Area Control Centre (MUAC), 
+  Skeyes (Belgium), and ANS CR (Czech Republic) showed the highest decrease in absolute terms in 2019
   </div>
 </div>
 <br>
 <div class="row placeholders">
   <div class="col-sm-12 ">
     <h4>Traffic variation at the top 30 airports in terms of traffic</h4>
-    <span class="text-muted">2019 (Jan-Sep) vs. 2018 (Jan-Sep)</span>
+    <span class="text-muted">2019 (Jan-Dec) vs. 2018 (Jan-Dec)</span>
     <div id="crt_apt3"></div>
   </div>
 </div>
 
 <div class="card bg-light">
   <div class="card-body">
-    Frankfurt remained the airport with the highest number of commercial movements in the EUROCONTROL area in 2019 (Jan-Sep).
-    <br>
-    Overall, 21 of the top 30 airports reported a traffic growth in the first nine months of 2019. 
-    <br>
-    Milan (LIMC), (Vienna (LOWW), Paris (LFPG), Antalya (LTAI) and Madrid (LEMD) showed the highest absolute growth in the first three quarters of 2019.
+  The average traffic growth at the top 30 European airports in 2019 was of 1.7%, the lowest increase since 2013. 
+  The growth is distributed unevenly among the top 30 airports, with 9 airports showing less traffic than the previous year. <br>
+  The opening of Istanbul Grand airport in April 2019 was the biggest airport development in Europe in years consequently 
+  replacing Istanbul Atatürk in the list of the top 30, which otherwise remains unchanged.  
   </div>
 </div>

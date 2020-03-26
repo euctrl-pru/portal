@@ -18,7 +18,7 @@ Options:
 Arguments:
   FILENAME  the Trafic Complexity indicator CSV file to upload to DB.
             It is assumed to contain the date of the calculation,
-            i.e. complexity_190331_BADA313.csv refers to 2019-03-31
+            i.e. complexity_20190331_BADA313.csv refers to 2019-03-31
 " -> doc
 
 suppressMessages(suppressWarnings(suppressPackageStartupMessages(library(docopt))))
@@ -73,7 +73,7 @@ suppressMessages(suppressWarnings(suppressPackageStartupMessages(library(vroom))
 
 
 read_complexity <- function(filename, dirname, update_date, bada_ver, sw_ver) {
-  day <- str_extract(filename, "\\d{6}") %>% ymd()
+  day <- (stringr::str_split(fs::path_file(filename), "_")[[1]])[2] %>% lubridate::as_date()
   cs <- c("UNIT_CODE", "FL", "FT", "FD", "DH", "TX", "TXH", "TXV", "TXS", "N", "NCELL")
   cols <- cols(
     .default  = col_character(),
