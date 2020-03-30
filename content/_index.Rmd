@@ -34,7 +34,7 @@ Unlike previous outbreaks (SARS, MERS) which were more regional in scope, the CO
 
 * While we will continue to update the performance data on a monthly basis in the [data section](/data/), you can find daily situation reports on the [EUROCONTROL web page][ectlweb] in an [interactive dashboard][ectl_daily].
 
-* Additionally, we have created a [specific page](/covid/) in the analysis section to provide high level snapshots of the crisis and to publish specific performance oriented reviews of the situation as more data becomes available.  
+* Additionally, the PRC have created a [specific page](/covid/) in the analysis section to provide high level snapshots of the crisis and to publish specific performance oriented reviews of the situation as more data becomes available.  
 
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/5d62e643-11cf-4cc1-9c24-839c99d0a09e/page/NCvJB" frameborder="0" style="border:0" allowfullscreen></iframe>
