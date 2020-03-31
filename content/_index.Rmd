@@ -48,5 +48,5 @@ Unlike previous outbreaks (SARS, MERS) which were more regional in scope, the CO
 {{% subscribe-button %}}
 </div>
 
-[ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html "Daily traffic updates"
+[ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation "Daily traffic updates"
 [ectlweb]: https://www.eurocontrol.int/ "EUROCONTROL web page"
