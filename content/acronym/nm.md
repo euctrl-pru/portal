@@ -11,4 +11,4 @@ An International System of Units' unit of measurement defined as exactly 1852 me
 
 ## See Also
 
-* {{%  a_blank_wiki "NM" "https://en.wikipedia.org/wiki/Nautical_mile" %}}
+* {{<  a_blank_wiki "NM" "https://en.wikipedia.org/wiki/Nautical_mile" >}}

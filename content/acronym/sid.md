@@ -14,7 +14,7 @@ take-off phase to the en-route phase.
 
 ## See Also
 
-* {{% a_blank_skybrary "SID and STAR" "http://www.skybrary.aero/index.php/SIDs_and_STARs" %}}
+* {{< a_blank_skybrary "SID and STAR" "http://www.skybrary.aero/index.php/SIDs_and_STARs" >}}
 * [STAR][star]
 
 [star]: {{< relref "star.md" >}} "STAR"

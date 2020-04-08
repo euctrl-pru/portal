@@ -13,4 +13,4 @@ measured along the surface of the sphere.
 
 ## See Also
 
-* {{% a_blank_wiki "Great-Circle Distance" "https://en.wikipedia.org/wiki/Great-circle_distance" %}}
+* {{< a_blank_wiki "Great-Circle Distance" "https://en.wikipedia.org/wiki/Great-circle_distance" >}}

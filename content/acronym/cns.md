@@ -14,4 +14,4 @@ and how it plans to arrive at its destination.
 
 ## See Also
 
-* {{% a_blank_ectrl "CNS" "https://www.eurocontrol.int/communications-navigation-and-surveillance" %}}
+* {{< a_blank_ectrl "CNS" "https://www.eurocontrol.int/communications-navigation-and-surveillance" >}}

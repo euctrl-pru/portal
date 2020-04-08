@@ -15,4 +15,4 @@ performance.
 
 ## See Also
 
-* {{% a_blank_ectrl "CODA" "https://www.eurocontrol.int/network-performance" %}}
+* {{< a_blank_ectrl "CODA" "https://www.eurocontrol.int/network-performance" >}}

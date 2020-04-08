@@ -15,5 +15,5 @@ around the world.
 
 ## See Also
 
-* {{% a_blank "ACI" "http://www.aci.aero/" %}} website.
-* {{% a_blank "ACI Europe" "http://www.aci-europe.org/" %}} website.
+* {{< a_blank "ACI" "http://www.aci.aero/" >}} website.
+* {{< a_blank "ACI Europe" "http://www.aci-europe.org/" >}} website.

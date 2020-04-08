@@ -15,4 +15,4 @@ management service.
 
 ## See Also
 
-* {{% a_blank_lexicon "FMP" "https://ext.eurocontrol.int/lexicon/index.php/Flow_Management_Position" %}}
+* {{< a_blank_lexicon "FMP" "https://ext.eurocontrol.int/lexicon/index.php/Flow_Management_Position" >}}

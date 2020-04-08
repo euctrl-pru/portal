@@ -14,4 +14,4 @@ of the world’s airlines. It supports airline activity and helps
 
 ## See Also
 
-* {{% a_blank "IATA" "http://www.iata.org" %}}
+* {{< a_blank "IATA" "http://www.iata.org" >}}

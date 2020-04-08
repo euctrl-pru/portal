@@ -12,4 +12,4 @@ forecasts, briefs and observations.
 
 ## See Also
 
-* {{% a_blank_lexicon "MET" "https://www.eurocontrol.int/concept/meteorological-information-management" %}}
+* {{< a_blank_lexicon "MET" "https://www.eurocontrol.int/concept/meteorological-information-management" >}}

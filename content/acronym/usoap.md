@@ -15,5 +15,5 @@ and development.
 
 ## See Also
 
-* {{% a_blank_skybrary "USOAP" "http://www.skybrary.aero/index.php/ICAO_Universal_Safety_Oversight_Audit_Programme" %}}
-* {{% a_blank_icao "USOAP" "http://www.icao.int/safety/CMAForum/Pages/default.aspx" %}}
+* {{< a_blank_skybrary "USOAP" "http://www.skybrary.aero/index.php/ICAO_Universal_Safety_Oversight_Audit_Programme" >}}
+* {{< a_blank_icao "USOAP" "http://www.icao.int/safety/CMAForum/Pages/default.aspx" >}}

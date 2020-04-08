@@ -15,4 +15,4 @@ international air transport to ensure safe and orderly growth.
 
 ## See Also
 
-* {{% a_blank "ICAO" "http://www.icao.int" %}}
+* {{< a_blank "ICAO" "http://www.icao.int" >}}

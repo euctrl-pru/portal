@@ -26,7 +26,7 @@ requirements.
 
 ## See Also
 
-* {{% a_blank_ectrl "Airspace utilisation" "https://www.eurocontrol.int/function/airspace-utilisation" %}}
+* {{< a_blank_ectrl "Airspace utilisation" "https://www.eurocontrol.int/function/airspace-utilisation" >}}
 * [ATFCM][atfcm].
 
 

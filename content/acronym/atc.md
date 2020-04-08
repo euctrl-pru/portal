@@ -12,4 +12,4 @@ flow of air traffic.
 
 ## See Also
 
-* {{% a_blank_lexicon "Air Traffic Control" "https://ext.eurocontrol.int/lexicon/index.php/Air_traffic_control" %}}
+* {{< a_blank_lexicon "Air Traffic Control" "https://ext.eurocontrol.int/lexicon/index.php/Air_traffic_control" >}}

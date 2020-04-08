@@ -14,4 +14,4 @@ operations that are not a part of those activities.
 
 ## See Also
 
-* {{% a_blank_wiki "SUA" "https://en.wikipedia.org/wiki/Special_use_airspace" %}}
+* {{< a_blank_wiki "SUA" "https://en.wikipedia.org/wiki/Special_use_airspace" >}}

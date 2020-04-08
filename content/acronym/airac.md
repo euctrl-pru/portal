@@ -25,4 +25,4 @@ SIDs and STARs amendments, runway and taxiway information changes.
 
 ## See Also
 
-* {{% a_blank_icao "AIRAC" "http://www.icao.int/safety/information-management/Pages/AIRACAdherence.aspx" %}}
+* {{< a_blank_icao "AIRAC" "http://www.icao.int/safety/information-management/Pages/AIRACAdherence.aspx" >}}

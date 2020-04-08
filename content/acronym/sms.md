@@ -11,4 +11,4 @@ Safety Management System (SMS) - A systematic and explicit approach defining the
 
 ## See Also
 
-* {{% a_blank_skybrary "SMS" "http://www.skybrary.aero/index.php/Safety_Management_System" %}}
+* {{< a_blank_skybrary "SMS" "http://www.skybrary.aero/index.php/Safety_Management_System" >}}

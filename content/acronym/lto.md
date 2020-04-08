@@ -14,4 +14,4 @@ and a time in mode.
 
 ## See Also
 
-* {{% a_blank_ectrl "Advanced Emission Model" "https://www.eurocontrol.int/model/advanced-emission-model" %}}
+* {{< a_blank_ectrl "Advanced Emission Model" "https://www.eurocontrol.int/model/advanced-emission-model" >}}

@@ -15,5 +15,5 @@ service providers.
 
 ## See Also
 
-* {{% a_blank_lexicon "Air Traffic Flow Management" "https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_Management" %}}
-* {{% a_blank_lexicon "Air Traffic Flow and Capacity Management" "https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_and_Capacity_Management" %}}
+* {{< a_blank_lexicon "Air Traffic Flow Management" "https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_Management" >}}
+* {{< a_blank_lexicon "Air Traffic Flow and Capacity Management" "https://ext.eurocontrol.int/lexicon/index.php/Air_Traffic_Flow_and_Capacity_Management" >}}

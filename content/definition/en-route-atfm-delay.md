@@ -17,6 +17,6 @@ of the [FMP][fmp] to protect en-route ATC sectors from overload.
 
 ## See Also
 
-* {{% a_blank_lexicon "ATFM en-route Delay" "https://ext.eurocontrol.int/lexicon/index.php/ATFM_en-route_delay" %}}
+* {{< a_blank_lexicon "ATFM en-route Delay" "https://ext.eurocontrol.int/lexicon/index.php/ATFM_en-route_delay" >}}
 
 

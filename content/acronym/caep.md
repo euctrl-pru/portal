@@ -16,4 +16,4 @@ and emissions, and more generally to aviation environmental impact.
 
 ## See Also
 
-* {{% a_blank_icao "CAEP" "http://www.icao.int/ENVIRONMENTAL-PROTECTION/Pages/CAEP.aspx" %}}
+* {{< a_blank_icao "CAEP" "http://www.icao.int/ENVIRONMENTAL-PROTECTION/Pages/CAEP.aspx" >}}

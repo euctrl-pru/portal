@@ -16,6 +16,6 @@ Most OAT flights are operated by military agencies.
 ## See Also
 
 * [GAT][gat].
-* {{% a_blank_ivao "GAT and OAT" "https://www.ivao.aero/specops/gat-oat.asp" %}}
+* {{< a_blank_ivao "GAT and OAT" "https://www.ivao.aero/specops/gat-oat.asp" >}}
 
-[gat]: /acronym/gat/ "GAT"
+[gat]: {{< relref "gat.md" >}} "GAT"
