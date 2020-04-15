@@ -277,11 +277,16 @@ ignoreFiles = [
     url = "/covid/"
     identifier= "overview"
     weight = 10
-[[menu.covid]]
-    name = "Aircraft parking"
-    url = "/covid/"
-    identifier= "parking"
+ [[menu.covid]]
+    name = "Traffic (ANSP)"
+    url = "/covid/ansp_flts"
+    identifier= "ansp_flts"
     weight = 20
+[[menu.covid]]
+    name = "Grounded aircraft"
+    url = "/covid/acft_ground"
+    identifier= "parking"
+    weight = 30
 
 
 
