@@ -66,7 +66,7 @@ ignoreFiles = [
   [[menu.main]]
     name = "Performance Review Report 2019 (Consultation)"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "http://www.eurocontrol.int/publications/performance-review-report-prr-2019-consultation"
+    url = "http://www.eurocontrol.int/publication/performance-review-report-prr-2019-consultation"
     identifier = "prr19"
     parent = "prc"
     weight = 3
