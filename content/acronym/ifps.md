@@ -17,4 +17,4 @@ operationally.
 
 ## See Also
 
-* {{% a_blank_ectrl "IFPS" "https://ext.eurocontrol.int/lexicon/index.php/Integrated_Initial_Flight_Plan_Processing_System" %}}
+* {{< a_blank_ectrl "IFPS" "https://ext.eurocontrol.int/lexicon/index.php/Integrated_Initial_Flight_Plan_Processing_System" >}}

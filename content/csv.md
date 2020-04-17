@@ -14,7 +14,7 @@ where
 The datasets made available are:
 
 * Daily en-route delays: `ert_dly`
-    * [ANSP][ansp] group (see [list of ANSP's considered by PRU][ansps]): `ansp`
+    * [ANSP][ansp_acronym] group (see [list of ANSP's considered by PRU][ansps]): `ansp`
     * Country FIR group: `fir`
 
 * Horizontal Flight Efficiency: `hfe`
@@ -30,5 +30,5 @@ For example `ert_dly_ansp_2012.csv.bz2` refers to en-rote delays dataset with AN
 
 
 [bzip2]: <https://en.wikipedia.org/wiki/Bzip2> "Wikipedia: bzip2"
-[ansp]: {{< ref "/acronym/ansp.md" >}} "ANSP"
+[ansp_acronym]: {{< relref "/acronym/ansp.md" >}} "ANSP"
 [ansps]: {{< ref "../ansp/" >}} "ANSP's"

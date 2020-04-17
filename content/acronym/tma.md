@@ -12,4 +12,4 @@ airport where there is a high volume of traffic.
 
 ## See Also
 
-* {{% a_blank_wiki "TMA" "https://en.wikipedia.org/wiki/Terminal_control_area" %}}
+* {{< a_blank_wiki "TMA" "https://en.wikipedia.org/wiki/Terminal_control_area" >}}

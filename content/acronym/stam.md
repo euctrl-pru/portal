@@ -13,7 +13,7 @@ capping and exiguous rerouting to a limited number of flights.
 
 ## See also
 
-* {{% a_blank_lexicon "STAM" "https://ext.eurocontrol.int/lexicon/index.php/Short_Term_ATFCM_Measures" %}}
+* {{< a_blank_lexicon "STAM" "https://ext.eurocontrol.int/lexicon/index.php/Short_Term_ATFCM_Measures" >}}
 * [STAM definition][stam].
 
 

@@ -23,4 +23,4 @@ An indicator which assesses how much of the available capacity at an airport is 
 
 * [Peak Load Index (PLI)]({{< relref "pli.md" >}}).
 * [Airport Capacity Utilisation]({{< relref "/methodology/airport-capacity-utilisation.html" >}}) page in the [Methodology](/methodology/) section.
-* Schinwald, and Hornung (2014) "_Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012_", Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, {{% a_blank "PDF" "http://www.dglr.de/publikationen/2014/340138.pdf" %}}
+* Schinwald, and Hornung (2014) "_Methodical Approach to determine the capacity utilisation of airports: the development of the European Air Traffic System between 2008 and 2012_", Deutscher Luft- und Raumfahrtkongress 2014, DocumentID: 340138, {{< a_blank "PDF" "http://www.dglr.de/publikationen/2014/340138.pdf" >}}

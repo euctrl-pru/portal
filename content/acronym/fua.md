@@ -15,4 +15,4 @@ user requirements.
 
 ## See Also
 
-* {{% a_blank_skybrary "FUA" "http://www.skybrary.aero/index.php/Flexible_Use_of_Airspace" %}}
+* {{< a_blank_skybrary "FUA" "http://www.skybrary.aero/index.php/Flexible_Use_of_Airspace" >}}

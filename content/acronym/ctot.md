@@ -13,4 +13,4 @@ at which a flight is required to become airborne.
 
 ## See Also
 
-* {{% a_blank_lexicon "CTOT" "https://ext.eurocontrol.int/lexicon/index.php/Calculated_Take-Off_Time" %}}
+* {{< a_blank_lexicon "CTOT" "https://ext.eurocontrol.int/lexicon/index.php/Calculated_Take-Off_Time" >}}

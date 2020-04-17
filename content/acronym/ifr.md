@@ -19,5 +19,5 @@ and navigation is accomplished by reference to electronic signals.
 
 ## See Also
 
-* {{% a_blank_wiki "IFR" "https://en.wikipedia.org/wiki/Instrument_flight_rules" %}}
-* {{% a_blank_skybrary "IFR" "http://www.skybrary.aero/index.php/Instrument_Flight_Rules_(IFR)" %}}
+* {{< a_blank_wiki "IFR" "https://en.wikipedia.org/wiki/Instrument_flight_rules" >}}
+* {{< a_blank_skybrary "IFR" "http://www.skybrary.aero/index.php/Instrument_Flight_Rules_(IFR)" >}}

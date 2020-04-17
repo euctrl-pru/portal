@@ -12,4 +12,4 @@ an operator, or a services provider.
 
 ## See Also
 
-* {{% a_blank_skybrary "Acceptable Level of Safety" "http://www.skybrary.aero/index.php/Acceptable_Level_of_Safety" %}}
+* {{< a_blank_skybrary "Acceptable Level of Safety" "http://www.skybrary.aero/index.php/Acceptable_Level_of_Safety" >}}

@@ -24,26 +24,20 @@ date: '2020-03-13'
 }
 </style>
 
-With a pandemic sweeping its way across the globe, the entire aviation industry is facing an unprecedented challenge.  
-Nobody can currently answer the most pressing question, namely how long will the crisis last, how bad will it be, and how to get back to normality?
-
 Complementary to the [EUROCONTROL web page][ectlweb] which provides daily situation updates in an [interactive dashboard][ectl_daily], the goal of the PRC site is to provide relevant high level snapshots of the crisis, particularly related to performance topics as more data becomes available. 
 
-The analysis below shows the evolution of the daily flights in the [EUROCONTROL Member States][ectlmemb] for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill.
-The analysis shows the dramatic reduction in traffic starting at the beginning of March. Although many airlines have already suspended operations the bottom has not yet been reached and traffic is still reducing further.   
+ As a result of COVID-19, the number of flights operating daily in [EUROCONTROL Member States][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. The analysis below shows the evolution of the daily flights in the [EUROCONTROL Member States][ectlmemb] for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill. <br>
 
+ * [Impact of COVID-19 on ANSPs](/covid/ansp_flts) 
+ * [Aircraft grounding as a result of COVID-19](/covid/acft_ground) 
+ 
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/jwMJB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-The table below provides a similar overview at Air Navigation Service Provider level (all controlled flights including overflights). <br> 
-As usual, the corresponding data will be available for download in the [data section](/data/) as soon as we have completed and processed the full month.    
-
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-
-<!-- change the following as you best see fit (I did not want to hardoce in the covid list template) -->
+<!-- change the following as you best see fit (I did not want to hardcode in the covid list template) -->
 
 [ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation "Daily traffic updates"
 [ectlweb]: https://www.eurocontrol.int/ "EUROCONTROL web page"
 [ectlmemb]: https://www.eurocontrol.int/about-us#member-states "EUROCONTROL Member States"
+[ansp_flt]: https://www.eurocontrol.int/about-us#member-states "Impact of COVID-19 on ANSPs"
+[acft_ground]: https://www.eurocontrol.int/about-us#member-states "Aircraft grounding as a result of COVID-19"

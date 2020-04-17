@@ -13,7 +13,7 @@ by reference to instruments, and therefore under [IFR][ifr].
 
 ## See Also
 
-* {{% a_blank_wiki "IMC" "https://en.wikipedia.org/wiki/Instrument_meteorological_conditions" %}}
+* {{< a_blank_wiki "IMC" "https://en.wikipedia.org/wiki/Instrument_meteorological_conditions" >}}
 * [IFR][ifr].
 
-[ifr]: /acronym/ifr/ "IFR"
+[ifr]: {{< relref "ifr.md" >}} "IFR"

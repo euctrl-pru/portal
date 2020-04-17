@@ -17,6 +17,6 @@ service providers or, where appropriate, an integrated provider.
 ## See Also
 
 * [FAB definition][fab].
-* {{% a_blank_lexicon "FAB" "https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block" %}}
+* {{< a_blank_lexicon "FAB" "https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block" >}}
 
 [fab]: /definition/fab/ "FAB definition"

@@ -14,4 +14,4 @@ permission of the appropriate authorities
 
 ## See Also
 
-* {{% a_blank_skybrary "UPA" "http://www.skybrary.aero/index.php/Unauthorised_Penetration_of_Airspace" %}}
+* {{< a_blank_skybrary "UPA" "http://www.skybrary.aero/index.php/Unauthorised_Penetration_of_Airspace" >}}

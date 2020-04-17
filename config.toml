@@ -64,29 +64,36 @@ ignoreFiles = [
     parent = "prc"
     weight = 2
   [[menu.main]]
-    name = "Performance Review Reports"
+    name = "Performance Review Report 2019 (Consultation)"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "http://www.eurocontrol.int/publication/performance-review-report-prr-2019-consultation"
+    identifier = "prr19"
+    parent = "prc"
+    weight = 3
+  [[menu.main]]
+    name = "Older Performance Review Reports"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www.eurocontrol.int/publication/performance-review-report-prr-2018"
     identifier = "prr"
     parent = "prc"
-    weight = 5
+    weight = 4
   [[menu.main]]
     name = "ATM Cost-Effectiveness (ACE)"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
     identifier = "ace"
     parent = "prc"
-    weight = 6
+    weight = 5
   [[menu.main]]
     name = "divider-abprc"
     parent = "prc"
-    weight = 7    
+    weight = 6    
   [[menu.main]]
     name = "About the PRC"
     url = "/about/prc/"
     identifier = "ab_prc"
     parent = "prc"
-    weight = 8
+    weight = 7
 
   [[menu.main]]
     name = "Area"
@@ -265,6 +272,21 @@ ignoreFiles = [
     weight = 50
 
 
+[[menu.covid]]
+    name = "Overview"
+    url = "/covid/"
+    identifier= "overview"
+    weight = 10
+ [[menu.covid]]
+    name = "Traffic (ANSP)"
+    url = "/covid/ansp_flts"
+    identifier= "ansp_flts"
+    weight = 20
+[[menu.covid]]
+    name = "Grounded aircraft"
+    url = "/covid/acft_ground"
+    identifier= "parking"
+    weight = 30
 
 
 

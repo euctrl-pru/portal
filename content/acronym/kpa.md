@@ -12,4 +12,4 @@ ambitions and expectations.
 
 ## See Also
 
-* {{% a_blank_lexicon "KPA" "https://ext.eurocontrol.int/lexicon/index.php/Key_Performance_Area" %}}
+* {{< a_blank_lexicon "KPA" "https://ext.eurocontrol.int/lexicon/index.php/Key_Performance_Area" >}}

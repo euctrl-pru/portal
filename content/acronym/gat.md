@@ -14,7 +14,7 @@ and procedures of [ICAO][icao].
 
 * [GA][ga].
 * [OAT][oat].
-* {{% a_blank_ivao "GAT and OAT" "https://www.ivao.aero/specops/gat-oat.asp" %}}.
+* {{< a_blank_ivao "GAT and OAT" "https://www.ivao.aero/specops/gat-oat.asp" >}}.
 
 [ga]: /acronym/ga/ "GAT"
 [oat]: /acronym/oat/ "GAT"

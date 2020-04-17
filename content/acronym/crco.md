@@ -20,5 +20,5 @@ charges to the States concerned.
 ## See Also
 
 
-* {{% a_blank_ectrl "CRCO" "https://www.eurocontrol.int/crco" %}}
-* {{% a_blank_lexicon "Airspace User" "https://ext.eurocontrol.int/lexicon/index.php/Airspace_User" %}}
+* {{< a_blank_ectrl "CRCO" "https://www.eurocontrol.int/crco" >}}
+* {{< a_blank_lexicon "Airspace User" "https://ext.eurocontrol.int/lexicon/index.php/Airspace_User" >}}

@@ -12,4 +12,4 @@ related occurrences in the ATM domain.
 
 ## See Also
 
-* {{% a_blank_skybrary "RAT" "http://www.skybrary.aero/index.php/Risk_Analysis_Tool_(RAT)" %}}
+* {{< a_blank_skybrary "RAT" "http://www.skybrary.aero/index.php/Risk_Analysis_Tool_(RAT)" >}}

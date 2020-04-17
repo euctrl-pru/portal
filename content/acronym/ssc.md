@@ -30,6 +30,6 @@ of all categories of users.
 ## See Also
 
 * [SES][ses].
-* {{% a_blank_skybrary "SSC" "http://www.skybrary.aero/index.php/Single_Sky_Committee" %}}
+* {{< a_blank_skybrary "SSC" "http://www.skybrary.aero/index.php/Single_Sky_Committee" >}}
 
 [ses]: {{< relref "ses.md" >}} "Single European Sky"

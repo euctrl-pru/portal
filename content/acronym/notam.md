@@ -13,4 +13,4 @@ or at a location that could affect the safety of the flight.
 
 ## See Also
 
-* {{% a_blank_wiki "NOTAM" "https://en.wikipedia.org/wiki/NOTAM" %}}
+* {{< a_blank_wiki "NOTAM" "https://en.wikipedia.org/wiki/NOTAM" >}}

@@ -26,11 +26,11 @@ The ETFMS system has two main functions:
 
 ## See Also
 
-* {{% a_blank_ectrl "ETFMS" "http://www.eurocontrol.int/articles/enhanced-tactical-flow-management-system-etfms" %}}
-* {{% a_blank_lexicon "ETFMS" "https://www.eurocontrol.int/system/enhanced-tactical-flow-management-system" %}}
-* [IFPS](/acronym/ifps/).
+* {{< a_blank_ectrl "ETFMS" "http://www.eurocontrol.int/articles/enhanced-tactical-flow-management-system-etfms" >}}
+* {{< a_blank_lexicon "ETFMS" "https://www.eurocontrol.int/system/enhanced-tactical-flow-management-system" >}}
+* [IFPS]({{< relref "ifps.md" >}}).
 
 
-[atc]: /acronym/atc/ "ATC"
-[atm]: /acronym/atm/ "ATM"
-[atfcm]: /acronym/atfcm/ "ATFMC"
+[atc]: {{< relref "atc.md" >}} "ATC"
+[atm]: {{< relref "atm.md" >}} "ATM"
+[atfcm]: {{< relref "atfcm.md" >}} "ATFMC"

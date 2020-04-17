@@ -13,4 +13,4 @@ slug: etot
 
 ## See Also
 
-* {{% a_blank_lexicon "ETOT" "https://ext.eurocontrol.int/lexicon/index.php/Estimated_Take-Off_Time" %}}
+* {{< a_blank_lexicon "ETOT" "https://ext.eurocontrol.int/lexicon/index.php/Estimated_Take-Off_Time" >}}

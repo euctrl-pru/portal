@@ -16,7 +16,7 @@ of Slot Allocation Messages and other [ATFCM][atfcm] messages.
 
 * [ETFMS][etfms].
 * [ATFCM][atfcm].
-* {{% a_blank_ectrl "ATFCM Users Manual" "https://www.eurocontrol.int/publication/atfcm-users-manual" %}}
+* {{< a_blank_ectrl "ATFCM Users Manual" "https://www.eurocontrol.int/publication/atfcm-users-manual" >}}
 
 [etfms]: {{< relref "etfms.md" >}} "ETFMS"
 [atfcm]: {{< relref "atfcm.md" >}} "ATFCM"
