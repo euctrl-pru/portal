@@ -119,6 +119,12 @@ ignoreFiles = [
     identifier = "environment"
     parent = "dashboard"
     weight = 3
+  [[menu.main]]
+    name = "Cost efficiency"
+    url = "/dashboard/performance-area/cost-efficiency/"
+    identifier = "cost-efficiency"
+    parent = "dashboard"
+    weight = 4
 
   [[menu.main]]
     name = "Views"
