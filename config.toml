@@ -293,7 +293,11 @@ ignoreFiles = [
     url = "/covid/acft_ground"
     identifier= "parking"
     weight = 30
-
+[[menu.covid]]
+    name = "En route revenue"
+    url = "/covid/ert_crg"
+    identifier= "ref_charges"
+    weight = 40
 
 
 
