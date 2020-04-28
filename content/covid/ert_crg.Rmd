@@ -5,13 +5,13 @@ date: '2020-04-27'
 <style type="text/css">
 .img-responsive {
     margin: 0 auto;
-    max-width: 75%
+    max-width: 100%
 }
 
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.26%;
+    padding-top: 100%;
 }
 
 .resp-iframe {
@@ -19,7 +19,7 @@ date: '2020-04-27'
     top: 0;
     left: 0;
     width: 100%;
-    height: 120%;
+    height: 140%;
     border: 0;
 }
 </style>

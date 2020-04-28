@@ -54,7 +54,8 @@ ignoreFiles = [
     identifier = "prc"   
     weight = 5
   [[menu.main]]
-    name = "COVID-19 crisis"
+    name = " COVID-19 crisis"
+    pre = "<i class='fas fa-biohazard'></i>"
     url = "/covid/"
     identifier = "covid"
     parent = "prc"
@@ -277,7 +278,6 @@ ignoreFiles = [
     identifier= "ops-airport"
     weight = 50
 
-
 [[menu.covid]]
     name = "Overview"
     url = "/covid/"
@@ -298,8 +298,6 @@ ignoreFiles = [
     url = "/covid/ert_crg"
     identifier= "ref_charges"
     weight = 40
-
-
 
 [params]
   includeBootstrapJs = false
