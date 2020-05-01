@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main>
+    <article>
+    {{ partial "sidebar-cost_efficiency.html" . }}
+        <header>
+            <h2>{{.Title}}</h2>
+        </header>
+        {{.Content}}
+    </article>
+
+</main>
+{{ end }}

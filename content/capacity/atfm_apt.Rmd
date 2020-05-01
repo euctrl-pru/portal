@@ -1,0 +1,30 @@
+---
+title: ATFM delays (en-route)
+date: '2020-04-16'
+---
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50.0%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border: 0;
+}
+</style>
+The dashboard shows an analysis of airport [ATFM delays](/definition/atfm-delay/) in the EUROCONTROL area. The underlying data is available for download in the [data section](/data/).
+
+<small>Please note that the dashboard is best viewed in Chrome or Firefox.</small>
+    
+<div class="resp-container"><iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe></div>

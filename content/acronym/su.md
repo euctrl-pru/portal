@@ -7,7 +7,7 @@ type: acronym
 slug: su
 ---
 
-The multiplication of aircraft [weight factor][wf] by [distance factor][df].
+Service Unit is a unit used for charging purposes based on the multiplication of aircraft [weight factor][wf] by [distance factor][df].
 
 ## See Also
 
