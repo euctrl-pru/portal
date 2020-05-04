@@ -3,8 +3,6 @@ title: Traffic
 
 ---
 
-
-
 <style type="text/css">
   .img-responsive {
       margin: 0 auto;
@@ -26,20 +24,17 @@ title: Traffic
       border: 0;
   }
   </style>
+
 <div class="container">
 <div class="row align-items-start">
 <div class="col-12 col-md-8">
-<p>To be developed …….</p>
+  To be developed ....... 
 </div>
 <div class="col-6 col-md-4">
 <div class="card border-0">
-<p><img class="card-img-top" src="/images/landing/ectl_traff_th.jpg" alt="Traffic"></p>
-</div>
-</div>
-</div>
-</div>
+<img class="card-img-top" src="/images/landing/ectl_traff_th.jpg" alt="Traffic">
+</div></div></div></div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen>
-</iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>

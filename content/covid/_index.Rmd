@@ -1,6 +1,6 @@
 ---
-title: COVID-19 outbreak
-date: '2020-03-13'
+title: Focus on the COVID-19 outbreak
+date: '2020-05-15'
 ---
 <style type="text/css">
 .img-responsive {
@@ -24,21 +24,67 @@ date: '2020-03-13'
 }
 </style>
 
+<div class="container">
+<div class="row align-items-start">
+<div class="col-9 col-md-6">
+<br>
 Complementary to the [EUROCONTROL web page][ectlweb] which provides daily situation updates in an [interactive dashboard][ectl_daily], the goal of the PRC site is to provide relevant high level snapshots of the crisis, particularly related to performance topics as more data becomes available. 
 
- As a result of COVID-19, the number of flights operating daily in [EUROCONTROL Member States][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. The analysis below shows the evolution of the daily flights in the [EUROCONTROL Member States][ectlmemb] for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill. <br>
-
- * [Impact of COVID-19 on ANSPs](/covid/ansp_flts) 
- * [Aircraft grounding as a result of COVID-19](/covid/acft_ground) 
- * <a class="btn btn-primary" href="https://www.eurocontrol.int/covid19" role="button">EUROCONTROL COVID-19 web page</a>
-
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/jwMJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+As a result of COVID-19, the number of flights operating daily in [EUROCONTROL Member States][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. The analysis below shows the evolution of the daily flights in the [EUROCONTROL Member States][ectlmemb] for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill. <br>
 </div>
-<!-- change the following as you best see fit (I did not want to hardcode in the covid list template) -->
+<div class="col-9 col-md-6">
+<div class="container">
+<div class="row">
+<div class="card-deck">
+<div class="card"><a href="https://www.eurocontrol.int/covid19#traffic-scenarios" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_covid_recov.jpg" alt="Recovery scenarios">
+<div class="card-body"><small><h5 class="card-title">Road to recovery</h5><p class="card-text">What are EUROCONTROL's recovery scenarios?</p></small></a>
+</div>
+</div>
+<div class="card"><a href="https://www.eurocontrol.int/covid19#response-to-covid-19" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_react.jpg" alt="Airline and State response">
+<div class="card-body"><small><h5 class="card-title">Airline and States</h5><p class="card-text">What is the airline and State response to the COVID-19 crisis?</p></small></a>
+</div>
+</div>
+<div class="card"><a href="https://www.eurocontrol.int/covid19" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_covid.jpg" alt="Link EUROCONTROL COVID page">
+<div class="card-body"><small><h5 class="card-title">More on COVID-19</h5><p class="card-text">Check out also the EUROCONTROL page on more info on the COVID-19 crisis!</p></small></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="container">
+<div class="col-18 col-md-12">
+<div class="row">
+<div class="card-deck">
+<div class="card"><a href="/covid/traffic/">
+<img class="card-img-top" src="/images/covid/covid_icon.jpg" alt="Traffic impact">
+<div class="card-body"><small><h5 class="card-title">Traffic</h5><p class="card-text">What is the COVID-19 impact on flights?</p></small></a>
+</div>
+</div>
+<div class="card"><a href="/covid/acft_ground/">
+<img class="card-img-top" src="/images/covid/ectl_acft_park.jpg" alt="Link Grounded aircraft">
+<div class="card-body"><small><h5 class="card-title">Grounded aircraft</h5><p class="card-text">How many aircraft have been grounded and where are they parked?</p></small></a>
+</div>
+</div>
+<div class="card"><a href="/cost_efficiency/ert_crg/">
+<img class="card-img-top" src="/images/covid/eco_rev.jpg" alt="Impact on en-route revenues">
+<div class="card-body"><small><h5 class="card-title">Revenues</h5><p class="card-text">What is the COVID-19 impact on en-route revenues?</p></small></a>
+</div>
+</div>
+<div class="card"><a href="/efficiency/vfe/">
+<img class="card-img-top" src="/images/covid/cdo_icon.jpg" alt="Link to CCO/CDO page">
+<div class="card-body"><small><h5 class="card-title">CCO/CDO</h5><p class="card-text">More environmental friendly approaches due to COVID-19?</p></small></a>
+</div>
+</div>
+</div>
+</div>
 
 [ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation "Daily traffic updates"
 [ectlweb]: https://www.eurocontrol.int/ "EUROCONTROL web page"
 [ectlmemb]: https://www.eurocontrol.int/about-us#member-states "EUROCONTROL Member States"
-[ansp_flt]: https://www.eurocontrol.int/about-us#member-states "Impact of COVID-19 on ANSPs"
-[acft_ground]: https://www.eurocontrol.int/about-us#member-states "Aircraft grounding as a result of COVID-19"

@@ -53,23 +53,44 @@ ignoreFiles = [
     url = "/#/"
     weight = 5
 
-  [[menu.main]]
-    name = "PRC"
+
+ [[menu.main]]
+    name = "About"
+    identifier= "about"
+    url = "/about/us/"
+    weight = 10
+   [[menu.main]]
+    name = "About the PRC"
     pre = ""
     url = "/about/prc/"
+    parent = "about"
     identifier = "prc"   
-    weight = 10
-  [[menu.main]]
-    name = " COVID-19 crisis"
-    pre = "<i class='fas fa-biohazard'></i>"
-    url = "/covid/"
-    identifier = "covid"
-    parent = "prc"
     weight = 1
   [[menu.main]]
-    name = "divider-prr2019"
-    parent = "prc"
+    name = "About the PRU"
+    url = "/about/us/"
+    identifier = "pru"
+    parent = "about"
     weight = 2
+  [[menu.main]]
+    name = "Release notes"
+    url = "/post/"
+    identifier = "release"
+    parent = "about"
+    weight = 3
+  [[menu.main]]
+    name = "Disclaimer"
+    url = "/about/disclaimer/"
+    identifier = "disclaimer"
+    parent = "about"
+    weight = 4
+
+
+
+
+
+
+
   [[menu.main]]
     name = "Performance Review Report 2019 (Consultation)"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
@@ -109,29 +130,40 @@ ignoreFiles = [
     url = "/dashboard/"
     weight = 15
   [[menu.main]]
+    name = " COVID-19 crisis"
+    pre = "<i class='fas fa-biohazard'></i>"
+    url = "/covid/"
+    identifier = "covid"
+    parent = "dashboard"
+    weight = 1
+  [[menu.main]]
+    name = "divider-prr2019"
+    parent = "dashboard"
+    weight = 2
+  [[menu.main]]
     name = "Traffic"
     url = "/traffic/"
     identifier = "traffic"
     parent = "dashboard"
-    weight = 1
+    weight = 3
   [[menu.main]]
     name = "Capacity"
     url = "/capacity/"
     identifier = "capacity"
     parent = "dashboard"
-    weight = 2
+    weight = 4
   [[menu.main]]
     name = "Efficiency/ Environment"
     url = "/efficiency/"
     identifier = "efficiency"
     parent = "dashboard"
-    weight = 3
+    weight = 5
   [[menu.main]]
     name = "Cost efficiency"
     url = "/cost_efficiency/"
     identifier = "cost-efficiency"
     parent = "dashboard"
-    weight = 4
+    weight = 6
 
   [[menu.main]]
     name = "Views"
@@ -152,73 +184,50 @@ ignoreFiles = [
     parent = "stakeholder"
     weight = 2
 
+ 
   [[menu.main]]
-    name = "Data"
-    pre = ""
-    url = "/data/"
-    weight = 25
-
-  [[menu.main]]
-    name = "References"
+    name = "Support"
     pre = ""
     url = "/reference/"
-    identifier = "references"
+    identifier = "support"
     weight = 30
+ [[menu.main]]
+    name = "Data downloads"
+    pre = ""
+    url = "/data/"
+    parent = "support"
+    weight = 1
+  [[menu.main]]
+    name = "Definitions"
+    url = "/definition/"
+    parent = "support"
+    weight = 2
   [[menu.main]]
     name = "Methodology"
     url = "/methodology/"
     identifier = "methodology"
-    parent = "references"
-    weight = 1
+    parent = "support"
+    weight = 3
   [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
-    parent = "references"
-    weight = 2
-  [[menu.main]]
-    name = "Definitions"
-    url = "/definition/"
-    parent = "references"
-    weight = 3
+    parent = "support"
+    weight = 4
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
-    parent = "references"
-    weight = 4
+    parent = "support"
+    weight = 5
   [[menu.main]]
     name = "divider2"
-    parent = "references"
-    weight = 5
+    parent = "support"
+    weight = 6
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
-    parent = "references"
-    weight = 6
-
- [[menu.main]]
-    name = "About"
-    identifier= "about"
-    url = "/about/us/"
-    weight = 35
-  [[menu.main]]
-    name = "About us"
-    url = "/about/us/"
-    identifier = "pru"
-    parent = "about"
-    weight = 1
-  [[menu.main]]
-    name = "Release notes"
-    url = "/post/"
-    identifier = "release"
-    parent = "about"
-    weight = 2
-  [[menu.main]]
-    name = "Disclaimer"
-    url = "/about/disclaimer/"
-    identifier = "disclaimer"
-    parent = "about"
-    weight = 3
+    parent = "support"
+    weight = 7
 
   [[menu.main]]
     name = "SES"
@@ -228,7 +237,7 @@ ignoreFiles = [
   [[menu.main]]
     name = "Single European Sky (SES) Portal"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
+    url = "https://www.eurocontrol.int/prudata/dashboard/"
     identifier = "ses-link"
     parent = "ses"
     weight = 1
@@ -259,22 +268,22 @@ ignoreFiles = [
 [[menu.covid]]
     name = "Overview"
     url = "/covid/"
-    identifier= "overview"
+    identifier= "cov_overview"
     weight = 10
  [[menu.covid]]
-    name = "Traffic (ANSP)"
-    url = "/covid/ansp_flts"
-    identifier= "ansp_flts"
+    name = "Traffic impact"
+    url = "/covid/traffic"
+    identifier= "cov_traffic"
     weight = 20
 [[menu.covid]]
     name = "Grounded aircraft"
     url = "/covid/acft_ground"
-    identifier= "parking"
+    identifier= "cov_parking"
     weight = 30
 [[menu.covid]]
     name = "En route revenue"
     url = "/cost_efficiency/ert_crg"
-    identifier= "ref_charges"
+    identifier= "cov_revenues"
     weight = 40
 
 [[menu.traffic]]
@@ -341,7 +350,7 @@ ignoreFiles = [
     identifier= "vfe"
     weight = 30
 [[menu.efficiency]]
-    name = "Terminal area"
+    name = "Terminal holdings"
     url = "/efficiency/asma"
     identifier= "asma"
     weight = 40
