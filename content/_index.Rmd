@@ -39,7 +39,6 @@ In support of the independent work of the [Performance Review Commission (PRC)](
 
 For feedback or questions please contact us at:
 [Performance Review Unit](mailto:PRU-Support@eurocontrol.int)
-
 </div>
 
 <div class="col-9 col-md-6">
@@ -57,29 +56,34 @@ For feedback or questions please contact us at:
 
 </div></div></div>
 
-### Performance areas
+### Focus areas
 <!-- cards with Key Performance Areas -->
 <div class="container">
 <div class="row">
 <div class="card-deck">
+<div class="card"><a href="/covid">
+  <img class="card-img-top" src="/images/landing/covid_icon.jpg" alt="Covid-19">
+  <div class="card-body"><h5 class="card-title">COVID-19</h5></a><small><p class="card-text">Specific analyses and data on the COVID-19 crisis</p></small>
+  </div>
+</div>
 <div class="card"><a href="/traffic">
-  <img class="card-img-top" src="/images/landing/ectl_traff_th.jpg" alt="Card image cap">
-  <div class="card-body"><h4 class="card-title">Traffic</h4></a><p class="card-text">[IFR](/acronym/ifr/) flight and [service unit](/acronym/su/) evolution and forecast </p>
+  <img class="card-img-top" src="/images/landing/ectl_traff_th.jpg" alt="Traffic">
+  <div class="card-body"><h5 class="card-title">Traffic</h5></a><small><p class="card-text">[IFR](/acronym/ifr/) flight and [service unit](/acronym/su/) evolution and forecast </p></small>
   </div>
 </div>
 <div class="card"><a href="/capacity">
   <img class="card-img-top" src="/images/landing/ectl_cap_th.jpg" alt="Capacity">
-  <div class="card-body"><h4 class="card-title">Capacity</h4></a><p class="card-text">Analysis of en-route and airport [Air Traffic Flow Management](/acronym/atfm/) delays</p>
+  <div class="card-body"><h5 class="card-title">Capacity</h5></a><small>p class="card-text">Analysis of en-route and airport [Air Traffic Flow Management](/acronym/atfm/) delays</p></small>
   </div>
 </div>
 <div class="card"><a href="/efficiency">
   <img class="card-img-top" src="/images/landing/ectl_env_th.jpg" alt="Efficiency & Environment">
-  <div class="card-body"><h4 class="card-title">Efficiency and Environment</h4></a><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card-body"><h5 class="card-title">Efficiency and Environment</h5></a><small><p class="card-text">Flight efficiency affecting fuel burn and emissions</p></small>
   </div>
 </div>
 <div class="card"><a href="/cost_efficiency">
   <img class="card-img-top" src="/images/landing/ectl_cef_th.jpg" alt="Cost-efficiency">
-  <div class="card-body"><h4 class="card-title">Cost-efficiency</h4></a><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card-body"><h5 class="card-title">Cost-efficiency</h5></a><small><p class="card-text">Analysis of ANS cost-efficiency</p></small>
   </div>
 </div>
 </div>
