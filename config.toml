@@ -307,11 +307,6 @@ ignoreFiles = [
     identifier= "airport"
     weight = 40
 [[menu.traffic]]
-    name = "Aircraft Operators"
-    url = "/traffic/ao"
-    identifier= "ao"
-    weight = 50
-[[menu.traffic]]
     name = "Traffic forecast"
     url = "/traffic/statfor"
     identifier= "statfor"

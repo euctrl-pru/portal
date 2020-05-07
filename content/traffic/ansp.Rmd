@@ -45,5 +45,10 @@ Observed variations are the result of many different factors including: COVID-19
 <iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/DailyTrafficVariation-AOs.html" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
+<small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
 [^1]: Traffic = Total IFR Flights.
 [^2]: The comparison with the previous year is adjusted to fit the cosest comparable day: i.e. Monday 03/02/2020 is compared to Monday 04/02/2019.

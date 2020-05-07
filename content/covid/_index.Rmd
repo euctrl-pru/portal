@@ -30,7 +30,7 @@ date: '2020-05-15'
 <br>
 Complementary to the [EUROCONTROL web page][ectlweb] which provides daily situation updates in an [interactive dashboard][ectl_daily], the goal of the PRC site is to provide relevant high level snapshots of the crisis, particularly related to performance topics as more data becomes available. 
 
-As a result of COVID-19, the number of flights operating daily in [EUROCONTROL Member States][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. The analysis below shows the evolution of the daily flights in the [EUROCONTROL Member States][ectlmemb] for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill. <br>
+As a result of COVID-19, the number of flights operating daily in [EUROCONTROL Member States][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. The analysis below shows the evolution of the daily flights in the EUROCONTROL Member States for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill. <br>
 </div>
 <div class="col-9 col-md-6">
 <div class="container">
@@ -62,7 +62,7 @@ As a result of COVID-19, the number of flights operating daily in [EUROCONTROL M
 <div class="col-18 col-md-12">
 <div class="row">
 <div class="card-deck">
-<div class="card"><a href="/covid/traffic/">
+<div class="card"><a href="/covid/covid_traffic/">
 <img class="card-img-top" src="/images/covid/covid_icon.jpg" alt="Traffic impact">
 <div class="card-body"><small><h5 class="card-title">Traffic</h5><p class="card-text">What is the COVID-19 impact on flights?</p></small></a>
 </div>
@@ -72,12 +72,12 @@ As a result of COVID-19, the number of flights operating daily in [EUROCONTROL M
 <div class="card-body"><small><h5 class="card-title">Grounded aircraft</h5><p class="card-text">How many aircraft have been grounded and where are they parked?</p></small></a>
 </div>
 </div>
-<div class="card"><a href="/cost_efficiency/ert_crg/">
+<div class="card"><a href="/covid/covid_ert_rev/">
 <img class="card-img-top" src="/images/covid/eco_rev.jpg" alt="Impact on en-route revenues">
 <div class="card-body"><small><h5 class="card-title">Revenues</h5><p class="card-text">What is the COVID-19 impact on en-route revenues?</p></small></a>
 </div>
 </div>
-<div class="card"><a href="/efficiency/vfe/">
+<div class="card"><a href="/covid/covid_vfe/">
 <img class="card-img-top" src="/images/covid/cdo_icon.jpg" alt="Link to CCO/CDO page">
 <div class="card-body"><small><h5 class="card-title">CCO/CDO</h5><p class="card-text">More environmental friendly approaches due to COVID-19?</p></small></a>
 </div>

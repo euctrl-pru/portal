@@ -35,17 +35,6 @@ To be developed .......
 <div class="card border-0">
   <img class="card-img-top" src="/images/landing/ectl_cef_th.jpg" alt="Cost-efficiency">
 </div></div></div></div>
-<small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-
-The [ACE interactive online dashboard][ace] enables interested stakeholders to access
-the latest available ACE data and analysis. Using the interactive functionalities of the dashboard,
-stakeholders can design and customise specific analyses and presentations covering the 2002-2016 period.
- "ATFM Delay"
-
-The [Unit rates and Costs interactive online dashboard][rate-and-cost] enables interested stakeholders to blah/blah/blah.
 
 [ace]: {{< relref "ace.html" >}} "ACE online dashboard"
 [rate-and-cost]: {{< relref "unitrate.html" >}} "Unit-rate and Cost online dashboard"
