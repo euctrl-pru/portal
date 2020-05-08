@@ -53,7 +53,6 @@ ignoreFiles = [
     url = "/#/"
     weight = 5
 
-
  [[menu.main]]
     name = "About"
     identifier= "about"
@@ -61,7 +60,6 @@ ignoreFiles = [
     weight = 10
    [[menu.main]]
     name = "About the PRC"
-    pre = ""
     url = "/about/prc/"
     parent = "about"
     identifier = "prc"   
@@ -85,44 +83,6 @@ ignoreFiles = [
     parent = "about"
     weight = 4
 
-
-
-
-
-
-
-  [[menu.main]]
-    name = "Performance Review Report 2019 (Consultation)"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "http://www.eurocontrol.int/publication/performance-review-report-prr-2019-consultation"
-    identifier = "prr19"
-    parent = "prc"
-    weight = 3
-  [[menu.main]]
-    name = "Older Performance Review Reports"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/publication/performance-review-report-prr-2018"
-    identifier = "prr"
-    parent = "prc"
-    weight = 4
-  [[menu.main]]
-    name = "ATM Cost-Effectiveness (ACE)"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
-    identifier = "ace"
-    parent = "prc"
-    weight = 5
-  [[menu.main]]
-    name = "divider-abprc"
-    parent = "prc"
-    weight = 6    
-  [[menu.main]]
-    name = "About the Performance Review Commission (PRC)"
-    url = "/about/prc/"
-    identifier = "ab_prc"
-    parent = "prc"
-    weight = 7
-
   [[menu.main]]
     name = "Area"
     identifier = "dashboard"
@@ -137,7 +97,7 @@ ignoreFiles = [
     parent = "dashboard"
     weight = 1
   [[menu.main]]
-    name = "divider-prr2019"
+    name = "divider"
     parent = "dashboard"
     weight = 2
   [[menu.main]]
@@ -159,9 +119,9 @@ ignoreFiles = [
     parent = "dashboard"
     weight = 5
   [[menu.main]]
-    name = "Cost efficiency"
-    url = "/cost_efficiency/"
-    identifier = "cost-efficiency"
+    name = "Economics"
+    url = "/economics/"
+    identifier = "economics"
     parent = "dashboard"
     weight = 6
 
@@ -184,16 +144,13 @@ ignoreFiles = [
     parent = "stakeholder"
     weight = 2
 
- 
   [[menu.main]]
     name = "Support"
-    pre = ""
     url = "/reference/"
     identifier = "support"
     weight = 30
  [[menu.main]]
     name = "Data downloads"
-    pre = ""
     url = "/data/"
     parent = "support"
     weight = 1
@@ -272,7 +229,7 @@ ignoreFiles = [
     weight = 10
  [[menu.covid]]
     name = "Traffic impact"
-    url = "/covid/traffic"
+    url = "/covid/covid_traffic"
     identifier= "cov_traffic"
     weight = 20
 [[menu.covid]]
@@ -282,35 +239,35 @@ ignoreFiles = [
     weight = 30
 [[menu.covid]]
     name = "En route revenue"
-    url = "/cost_efficiency/ert_crg"
+    url = "/covid/covid_ert_rev"
     identifier= "cov_revenues"
     weight = 40
+[[menu.covid]]
+    name = "Vertical flight efficiency"
+    url = "/covid/covid_vfe"
+    identifier= "cov_vfe"
+    weight = 50
 
 [[menu.traffic]]
     name = "Overview"
     url = "/traffic"
     identifier= "overview"
     weight = 10
- [[menu.traffic]]
-    name = "State"
-    url = "/traffic/state"
+[[menu.traffic]]
+    name = "IFR flights"
+    url = "/traffic/flights"
     identifier= "state"
     weight = 20
 [[menu.traffic]]
-    name = "Area Control center"
-    url = "/traffic/acc"
-    identifier= "acc"
+    name = "Service Units"
+    url = "/traffic/su"
+    identifier= "su"
     weight = 30
-[[menu.traffic]]
-    name = "Airport"
-    url = "/traffic/airport"
-    identifier= "airport"
-    weight = 40
 [[menu.traffic]]
     name = "Traffic forecast"
     url = "/traffic/statfor"
     identifier= "statfor"
-    weight = 60
+    weight = 40
 
 [[menu.capacity]]
     name = "Overview"
@@ -327,7 +284,6 @@ ignoreFiles = [
     url = "/capacity/atfm_apt"
     identifier= "atfm_apt"
     weight = 30
-
 
 [[menu.efficiency]]
     name = "Overview"
@@ -355,25 +311,25 @@ ignoreFiles = [
     identifier= "taxiout"
     weight = 50
 
-[[menu.cost_efficiency]]
+[[menu.economics]]
     name = "Overview"
-    url = "/cost_efficiency"
+    url = "/economics"
     identifier= "overview"
     weight = 10
- [[menu.cost_efficiency]]
+ [[menu.economics]]
     name = "ATM Cost Efficiency Benchmark (ACE)"
-    url = "/cost_efficiency/ace"
+    url = "/economics/ace"
     identifier= "ace"
     weight = 20
-[[menu.cost_efficiency]]
+[[menu.economics]]
     name = "Unit rate and costs"
-    url = "/cost_efficiency/unitrate"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html"
     identifier= "unit"
     weight = 30
-[[menu.cost_efficiency]]
-    name = "En-route revenue"
-    url = "/cost_efficiency/ert_crg"
-    identifier= "ref_charges"
+[[menu.economics]]
+    name = "Service Units"
+    url = "/traffic/su"
+    identifier= "su"
     weight = 40
 
 

@@ -28,9 +28,11 @@ date: '2020-05-15'
 <div class="row align-items-start">
 <div class="col-9 col-md-6">
 <br>
-Complementary to the [EUROCONTROL web page][ectlweb] which provides daily situation updates in an [interactive dashboard][ectl_daily], the goal of the PRC site is to provide relevant high level snapshots of the crisis, particularly related to performance topics as more data becomes available. 
+As a result of COVID-19, the number of flights operating daily in the [EUROCONTROL area ][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. 
 
-As a result of COVID-19, the number of flights operating daily in [EUROCONTROL Member States][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. The analysis below shows the evolution of the daily flights in the EUROCONTROL Member States for the years 2010, 2019 and 2020. The year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill. <br>
+Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is to support the industry and interested parties with a consolidated view of relevant information on the impact of the COVID-19 crisis on the aviation industry, particularly related to performance topics. 
+
+<a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" class="btn btn-danger" role="button"><i class='fas fa-xs fa-exclamation-triangle'></i> For daily traffic statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator level please visit our interactive dashboard</a>
 </div>
 <div class="col-9 col-md-6">
 <div class="container">
@@ -38,17 +40,17 @@ As a result of COVID-19, the number of flights operating daily in [EUROCONTROL M
 <div class="card-deck">
 <div class="card"><a href="https://www.eurocontrol.int/covid19#traffic-scenarios" target="_blank">
 <img class="card-img-top" src="/images/covid/ectl_covid_recov.jpg" alt="Recovery scenarios">
-<div class="card-body"><small><h5 class="card-title">Road to recovery</h5><p class="card-text">What are EUROCONTROL's recovery scenarios?</p></small></a>
+<div class="card-body"><small><h5 class="card-title">Road to recovery</h5><p class="card-text">What are EUROCONTROL's recovery scenarios?</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
 </div>
 </div>
 <div class="card"><a href="https://www.eurocontrol.int/covid19#response-to-covid-19" target="_blank">
 <img class="card-img-top" src="/images/covid/ectl_react.jpg" alt="Airline and State response">
-<div class="card-body"><small><h5 class="card-title">Airline and States</h5><p class="card-text">What is the airline and State response to the COVID-19 crisis?</p></small></a>
+<div class="card-body"><small><h5 class="card-title">Airline and States</h5><p class="card-text">What is the airline and State response to the COVID-19 crisis?</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
 </div>
 </div>
 <div class="card"><a href="https://www.eurocontrol.int/covid19" target="_blank">
 <img class="card-img-top" src="/images/covid/ectl_covid.jpg" alt="Link EUROCONTROL COVID page">
-<div class="card-body"><small><h5 class="card-title">More on COVID-19</h5><p class="card-text">Check out also the EUROCONTROL page on more info on the COVID-19 crisis!</p></small></a>
+<div class="card-body"><small><h5 class="card-title">More on COVID 19</h5><p class="card-text">See also EUROCONTROL page for more info on COVID-19!</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
 </div>
 </div>
 </div>

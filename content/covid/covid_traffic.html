@@ -14,7 +14,7 @@ date: '2020-04-16'
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 60.0%;
+    padding-top: 70.0%;
 }
 
 .resp-iframe {
@@ -22,54 +22,25 @@ date: '2020-04-16'
     top: 0;
     left: 0;
     width: 100%;
-    height: 150%;
+    height: 110%;
     border: 0;
 }
 </style>
 <div class="container">
 <div class="row align-items-start">
-<div class="col-10">
-This dashboard shows the daily traffic variation<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> for the main European Aircraft Operators compared to 2019<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.
-Observed variations are the result of many different factors including: COVID-19, Overall economic downturn, Failure of airlines, ANSPs’ disruptions, Airports’ disruptions, Traffic variation in 2019.
-<ul>
-<li>
-The graphics on the top present the daily evolution, the average evolution of each week (starting on Mondays) and the moving average over the last 7 days.
-</li>
-<li>
-The bottom left graphic presents the breakdown of the Traffic<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> variation for each ACC of the selected State.
-</li>
-<li>
-The bottom right graphic presents the breakdown of the Traffic<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> variation for the main airports of the selected State
-</li>
-</ul>
+<div class="col-6">
+<blockquote>
+<p>The analysis shows the evolution of the flights (moving 7 day average) in the <a href="/definition/eurocontrol-area/">EUROCONTROL States</a> for the years 2010, 2019 and 2020.</p>
+</blockquote>
+<p>Although the dimension of the COVID-19 crisis is of a completely different order of magnitude, the year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill.</p>
+<p>The analysis suggests that the turning point was reached in mid April 2020. Since then traffic very slowly started to grow again. <br></p>
+<p><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" class="btn btn-danger" role="button"><i class='fas fa-xs fa-exclamation-triangle'></i> For daily traffic statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator level please visit our interactive dashboard!</a></p>
 </div>
-<div class="col-2">
-<div class="card border-0">
-<div class="card">
-<a href="https://www.eurocontrol.int/covid19#response-to-covid-19" target="_blank">
-<img class="card-img-top" src="/images/covid/ectl_react.jpg" alt="Airline and State response">
-<div class="card-body">
-<small>
-<p class="card-text">
-State and Airline response to the COVID-19 crisis
-</p>
-<p></small></a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="col-6">
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" frameborder="0" style="border:0" allowfullscreen>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/jwMJB" frameborder="0" style="border:0" allowfullscreen>
 </iframe>
 </div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Traffic at State level = Total IFR Flights (including international arrivals, departures and domestics).<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>The comparison with the previous year is adjusted to fit the cosest comparable day: i.e. Monday 03/02/2020 is compared to Monday 04/02/2019.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>Traffic at ACC level = Total IFR Flights (including international arrivals, departures, domestics and overflights).<a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>Traffic at Airport level = Total Departing and Arriving IFR Flights from/to each airport.<a href="#fnref4" class="footnote-back">↩</a></p></li>
-</ol>
+</div>
+</div>
 </div>
