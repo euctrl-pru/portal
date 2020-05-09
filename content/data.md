@@ -141,6 +141,8 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 <br>
 
+{{< excel_i >}} = Excel file.<br>
+{{< csv_i >}} = CSV file.<br>
 {{< dwnld_i >}} = dataset download.<br>
 {{< info_i >}}  = info on dataset.<br>
 {{< attn_i >}}  = not (yet?) available.<br>
