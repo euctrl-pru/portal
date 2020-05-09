@@ -2,3 +2,4 @@
 	path = themes/pru-theme
 	url = https://github.com/euctrl-pru/pru-theme
 	branch = master
+	update = rebase
