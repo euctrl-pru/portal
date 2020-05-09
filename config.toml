@@ -345,6 +345,7 @@ ignoreFiles = [
     url = "images/euctrl-logo-noname.png"
     height = 30
     alt = "PRU"
+    target = "https://eurocontrol.int"
 
   [params.owner]
     name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
