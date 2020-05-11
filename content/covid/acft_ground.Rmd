@@ -27,7 +27,7 @@ date: '2020-04-16'
 
 <div class="container">
 <div class="row align-items-start">
-<div class="col-9">
+<div class="col-sm-9">
 <br>
 The drastic reduction in traffic has forced many aircraft operators to withdraw from service a significant part of their fleet, be it temporarily or permanently. <br>
 The analysis of these massive groundings of aircraft across Europe in the dashboard below provides another perspective on the magnitude of the impact on the airline sector, with more than 5000 aircraft grounded in Europe since mid-February. 
@@ -37,7 +37,7 @@ The timeline shows how the majority of the groundings took place in the second a
 The interactive dashboard below enables an analysis by state, airport or aircraft operator. 
 
 </div>
-<div class="col-3">
+<div class="col-sm-3">
 <div class="card border-0"><a href="https://ext.eurocontrol.int/airport_corner_public/covid" target="_blank">
   <img class="card-img-top" src="/images/covid/ectl_apt_corner.jpg" alt="Link Airport Corner">
   <div class="card-body"><small><p class="card-text">Check out the airport corner for more information on the current situation at airports due to COVID-19! <i class='fas fa-xs fa-external-link-alt'></i></p></small></div></a>

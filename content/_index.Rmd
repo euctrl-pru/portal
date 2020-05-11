@@ -27,7 +27,7 @@ date: "2018-02-07T11:26:51+01:00"
 </style>
 <div class="container">
 <div class="row">
-<div class="col-9 col-md-6">
+<div class="col-sm-6">
 <h3>Pan-European ANS Performance Portal</h3>
 <br>
 This portal is provided by the [Performance Review Unit (PRU)](/about/us/) which is part of EUROCONTROL's Aviation Intelligence Unit (AIU). 
@@ -42,12 +42,12 @@ For feedback or questions please contact us at:
 [Performance Review Unit](mailto:PRU-Support@eurocontrol.int)
 </div>
 
-<div class="col-9 col-md-6">
+<div class="col-sm-6">
 <h4 class="card-title">What's new?</h4>
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
   <div class="carousel-item active"><div class="card"><a href="/covid"><img class="card-img-top" src="/images/covid/covid_icon.jpg" alt="Covid crisis"><div class="card-body"><h4 class="card-title">COVID Crisis</h4></a><p class="card-text">How does the unprecedented crisis affect the industry?</p></div></div></div>
-  <div class="carousel-item"><div class="card"><a href="/economics/ert_crg/"><img class="card-img-top"  src="/images/covid/eco_rev.jpg" alt="En-route revenue dashboard"><div class="card-body"><h4 class="card-title">En-route revenue dashboard</h4></a><p class="card-text">How does the COVID-19 crisis affect revenues?</p></div></div></div>
+  <div class="carousel-item"><div class="card"><a href="/covid/covid_ert_rev/"><img class="card-img-top"  src="/images/covid/eco_rev.jpg" alt="En-route revenue dashboard"><div class="card-body"><h4 class="card-title">En-route revenue dashboard</h4></a><p class="card-text">How does the COVID-19 crisis affect revenues?</p></div></div></div>
   <div class="carousel-item"><div class="card"><a href="/covid/covid_vfe/"><img class="card-img-top"  src="/images/covid/cdo_icon.jpg" alt="Continuous descent approach (CDO"><div class="card-body"><h4 class="card-title">Continuous descent approach (CDO)</h4></a><p class="card-text">More environmental friendly approaches due to COVID-19?</p></div></div></div>
   <div class="carousel-item"><div class="card"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h4 class="card-title">Performance data update</h4></a><p class="card-text">April 2020 data and post operational adjustments for 2019</p></div></div></div>
 </div>

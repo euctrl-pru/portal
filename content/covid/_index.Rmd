@@ -26,7 +26,7 @@ date: '2020-05-15'
 
 <div class="container">
 <div class="row align-items-start">
-<div class="col-9 col-md-6">
+<div class="col-sm-6">
 <br>
 As a result of COVID-19, the number of flights operating daily in the [EUROCONTROL area ][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. 
 
@@ -34,7 +34,7 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 
 <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" class="btn btn-danger" role="button"><i class='fas fa-xs fa-exclamation-triangle'></i> For daily traffic statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator level please visit our interactive dashboard!</a>
 </div>
-<div class="col-9 col-md-6">
+<div class="col-sm-6">
 <div class="container">
 <div class="row">
 <div class="card-deck">
@@ -58,10 +58,8 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 </div>
 </div>
 </div>
-<br>
 
 <div class="container">
-<div class="col-18 col-md-12">
 <div class="row">
 <div class="card-deck">
 <div class="card"><a href="/covid/covid_traffic/">
@@ -82,7 +80,6 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 <div class="card"><a href="/covid/covid_vfe/">
 <img class="card-img-top" src="/images/covid/cdo_icon.jpg" alt="Link to CCO/CDO page">
 <div class="card-body"><small><h5 class="card-title">CCO/CDO</h5><p class="card-text">More environmental friendly approaches due to COVID-19?</p></small></a>
-</div>
 </div>
 </div>
 </div>

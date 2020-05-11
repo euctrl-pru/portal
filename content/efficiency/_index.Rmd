@@ -26,7 +26,7 @@ title: Efficiency and Environment
 
 <div class="container">
 <div class="row align-items-start">
-<div class="col-9">
+<div class="col-sm-9">
 ANS performance clearly affects the environmental impact of aviation. 
 The ANS related impact on the environment is closely linked to operational performance (fuel efficiency) which is largely driven by inefficiencies in the flight trajectory and associated fuel burn (and emissions). 
 
@@ -35,7 +35,7 @@ Horizontal en-route flight efficiency is the largest single component and also t
  
 <p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
 </div>
-<div class="col-3">
+<div class="col-sm-3">
 <div class="card border-0">
   <img class="card-img-top" src="/images/eff/eff_over.jpg" alt="Flight efficiency and the environment">
 </div></div></div></div>
