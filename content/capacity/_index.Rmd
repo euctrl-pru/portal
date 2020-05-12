@@ -37,7 +37,7 @@ The underlying data is available for download in the [data section](/data/).
 <div class="card border-0">
   <img class="card-img-top" src="/images/landing/ectl_cap_th.jpg" alt="ATFM delays">
 </div></div></div></div>
-<small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
+
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/180pAkTBKNMSb9EciRJS69Ls_rTbrvD91/page/nTTw" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/BalancedScorecard.html" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>

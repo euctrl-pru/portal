@@ -37,6 +37,11 @@ title: Service Unit Dashboard
   <div class="card-body"><small><p class="card-text">Click here to learn more about EUROCONTROL's cost-recovery system! <i class='fas fa-xs fa-external-link-alt'></i></p></div></small></a>
 </div></div></div></div>
 
+### COVID-19 impact by ANSP
+The table below provides an overview of the traffic evolution at Air Navigation Service Provider level (all controlled flights including overflights).<br> 
+The analysis will be developed further as soon as more data becomes available. <br>
+As usual, the corresponding data will be available for download in the [data section](/data/) as soon as we have completed and processed the full month.
+
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>

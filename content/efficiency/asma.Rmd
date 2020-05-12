@@ -30,7 +30,7 @@ title: Efficiency in the Arrival Sequencing and Metering Area (ASMA)
 <div class="col-12 col-md-8">
 ANS-related inefficiencies on the arrival flow are measured in terms of [arrival ATFM delay](/capacity/atfm_apt/) and [additional time in the arrival sequencing and metering area (ASMA time)](/methodology/additional-asma-time-pi/). Whereas ATFM delays have an impact in terms of delay on the ground, additional ASMA time (airborne holdings) has also a direct impact in terms of fuel burn and emissions. The higher the additional ASMA time, the higher the additional fuel consumption and emissions. 
 
-The underlying data of the results shown in the dashboard belwo are available for download in our [data repository](/data/).   
+The underlying data of the results shown in the dashboard below are available for download in our [data repository](/data/).   
 </div>
 <div class="col-6 col-md-4">
 <div class="card border-0">

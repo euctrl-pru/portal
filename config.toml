@@ -200,7 +200,6 @@ ignoreFiles = [
     weight = 1
 
 
-
 [[menu.sidenav]]
     name = "Overview"
     url = "/prcq/"
@@ -223,7 +222,7 @@ ignoreFiles = [
     weight = 50
 
 [[menu.covid]]
-    name = "Overview"
+    name = "COVID Overview"
     url = "/covid/"
     identifier= "cov_overview"
     weight = 10
@@ -249,7 +248,7 @@ ignoreFiles = [
     weight = 50
 
 [[menu.traffic]]
-    name = "Overview"
+    name = "Traffic Overview"
     url = "/traffic"
     identifier= "overview"
     weight = 10
@@ -260,7 +259,7 @@ ignoreFiles = [
     weight = 20
 [[menu.traffic]]
     name = "Service Units"
-    url = "/traffic/su"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
     identifier= "su"
     weight = 30
 [[menu.traffic]]
@@ -270,7 +269,7 @@ ignoreFiles = [
     weight = 40
 
 [[menu.capacity]]
-    name = "Overview"
+    name = "Capacity Overview"
     url = "/capacity"
     identifier= "overview"
     weight = 10
@@ -286,7 +285,7 @@ ignoreFiles = [
     weight = 30
 
 [[menu.efficiency]]
-    name = "Overview"
+    name = "Efficiency Overview"
     url = "/efficiency"
     identifier= "overview"
     weight = 10
@@ -312,13 +311,13 @@ ignoreFiles = [
     weight = 50
 
 [[menu.economics]]
-    name = "Overview"
+    name = "Economics Overview"
     url = "/economics"
     identifier= "overview"
     weight = 10
  [[menu.economics]]
     name = "ATM Cost Efficiency Benchmark (ACE)"
-    url = "/economics/ace"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
     identifier= "ace"
     weight = 20
 [[menu.economics]]
@@ -328,7 +327,7 @@ ignoreFiles = [
     weight = 30
 [[menu.economics]]
     name = "Service Units"
-    url = "/traffic/su"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
     identifier= "su"
     weight = 40
 

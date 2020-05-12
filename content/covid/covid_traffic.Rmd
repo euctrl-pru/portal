@@ -44,3 +44,11 @@ The analysis suggests that the turning point was reached in mid April 2020. Sinc
 </div>
 </div>
 </div>
+
+### COVID-19 impact by ANSP
+The table below provides an overview of the traffic evolution at Air Navigation Service Provider level (all controlled flights including overflights).
+
+The corresponding data is available for download in the [data section](/data/).<br>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
