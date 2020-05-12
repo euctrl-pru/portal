@@ -17,7 +17,11 @@ baseurl = "http://www.ansperformance.eu/"
 languageCode = "en-us"
 title = "PRU Portal"
 theme = "pru-theme"
-googleAnalytics = "UA-62697169-2"
+
+# PRU Portal one
+# googleAnalytics = "UA-62697169-2" 
+
+# Deni's one
 googleAnalytics = "UA-61343306-1"
 summaryLength = 10
 
