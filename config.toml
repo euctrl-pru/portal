@@ -36,6 +36,14 @@ ignoreFiles = [
   "src$"
 ]
 
+# keep embedded HTML, see data.md
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+
 # Uncomment below to enable syntax highlighting
 # pygmentsCodefences = true
 # pygmentsCodefencesGuessSyntax = true
