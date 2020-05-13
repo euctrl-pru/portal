@@ -35,7 +35,7 @@ This portal is provided by the [Performance Review Unit (PRU)](/about/us/) which
 In support of the independent work of the [Performance Review Commission (PRC)](/about/prc/) the web page aims to:
 
 * ensure that interested stakeholders in all [EUROCONTROL States](/definition/eurocontrol-area/) have relevant high quality information on Pan-European [ANS](/acronym/ans/) performance readily available in a transparent, accurate, clear, complete and unbiased manner;
-* stimulate an informed dialogue between all stakeholders for the benefit of the entire aviationnetwork; and,
+* stimulate an informed dialogue between all stakeholders for the benefit of the entire aviation network; and,
 * further develop the [ANS](/acronym/ans/) performance analysis framework and the understanding of key [ANS](/acronym/ans/) performance issues.
 
 For feedback or questions please contact us at:
