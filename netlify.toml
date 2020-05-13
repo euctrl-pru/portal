@@ -8,7 +8,7 @@ command = "git submodule update --init --recursive --depth=1 && hugo -d public -
   HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-  command = "hugo --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "git submodule update --init --recursive && hugo --minify --buildFuture -b $DEPLOY_PRIME_URL"
   [context.deploy-preview.environment]
   HUGO_VERSION = "0.69.2"
 
