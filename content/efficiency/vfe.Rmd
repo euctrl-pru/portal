@@ -30,9 +30,9 @@ title: Vertical flight efficiency
 <div class="col-sm-9">
 Improved vertical flight efficiency during climb [(CCO)](/acronym/cco/) and descent [(CDO)](/acronym/cdo/) can save substantial amounts of fuel and CO2 and also reduce noise levels in the vicinity of airports. The lower the level segment, the higher the additional fuel consumption.
 
-Together with interested stakeholders and [EUROCONTROL's Environment Unit][env_unit], the [PRC](/about/prc/) has developed a [methodology](/methodology/cd-vertical-flight-efficiency-pi/) to compute level off segments during climb and descent at airports. The results are available for download in our [data repository](/data/). 
+Together with interested stakeholders and [EUROCONTROL's Environment Unit][env_unit], the [PRC](/about/prc/) has developed a [methodology](/methodology/cd-vertical-flight-efficiency-pi/) to compute level off segments during climb and descent at airports. 
 
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p> 
+The results are shown in the dashboard below and also available for download in our [data repository](/data/). 
 </div>
 <div class="col-sm-3">
 <div class="card border-0"><a href="https://www.eurocontrol.int/environment" target="_blank">
@@ -41,7 +41,7 @@ Together with interested stakeholders and [EUROCONTROL's Environment Unit][env_u
 </div></div></div></div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/5c5d8013-1875-4fbd-a8f6-425fde4ad818/page/wzVLB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/aada2c69-221b-4178-ab13-4e2bcb4c4703/page/wzVLB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <div class="row align-items-start">

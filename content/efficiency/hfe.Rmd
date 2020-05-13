@@ -37,12 +37,9 @@ The [horizontal en-route flight efficiency indicator](/methodology/horizontal-fl
 </div></div></div></div>
 
 * The filed flight plan takes into consideration not only those constraints, but also other factors which are linked to airlines’ preferences (including cost considerations and trade-offs). The filed flight plan must always be at least as long as, if not longer than, the SCR.
-
 * Finally, the actual flown trajectory is based on the flight plan but is influenced by unforeseen or unplannable factors at the time of filing, including weather and tactical ATC routings. Some of these modifications might lead to a lengthening of the trajectory, while others will lead to a shortening of it.
 
 Horizontal en-route inefficiencies impact in terms of fuel burn and emissions. The lower the efficiency, the higher the additional fuel consumption and emissions. The results are available for download in our [data repository](/data/). 
-
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
 
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">

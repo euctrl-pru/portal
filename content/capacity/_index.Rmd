@@ -24,20 +24,23 @@ title: Capacity
 }
 </style>
 
-<div class="container">
-<div class="row align-items-start">
-<div class="col-9">
+<div class="row">
+<div class="col-sm-9">
 The dashboard shows an analysis of [ATFM delays](/definition/atfm-delay/) in the EUROCONTROL area. 
 
-The underlying data is available for download in the [data section](/data/).
-
 <p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
+
+The underlying data is available for download in the [data section](/data/).
 </div>
-<div class="col-3">
-<div class="card border-0">
-  <img class="card-img-top" src="/images/landing/ectl_cap_th.jpg" alt="ATFM delays">
-</div></div></div></div>
+<div class="col-sm-2">
+<div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
+  <img class="card-img-top" src="/images/landing/ectl_cockpit.jpg" alt="Performance Snapshot">
+  <div class="card-body"><h5 class="card-title">Performance Snapshot</h5></a><small><p class="card-text">Click to see the latest monthly snapshot!</p></small>
+  </div>
+</div>
+</div>
+</div>
 
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/BalancedScorecard.html" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/e6c6b4fb-bfb2-4c5c-ad8b-c0261c3e588a/page/nTTw" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>

@@ -250,7 +250,7 @@ ignoreFiles = [
     identifier= "cov_parking"
     weight = 30
 [[menu.covid]]
-    name = "En route revenue"
+    name = "En-route revenues"
     url = "/covid/covid_ert_rev"
     identifier= "cov_revenues"
     weight = 40

@@ -26,18 +26,18 @@ date: '2020-04-16'
 
 <div class="container">
 <div class="row align-items-start">
-<div class="col-9">
+<div class="col-sm-9">
 The dashboard shows an analysis of airport [ATFM delays](/definition/atfm-delay/) in the EUROCONTROL area. 
 
-The underlying data is available for download in the [data section](/data/). 
-
 <p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
+
+The underlying data is available for download in the [data section](/data/).
 </div>
-<div class="col-3">
+<div class="col-sm-3">
 <div class="card border-0">
   <img class="card-img-top" src="/images/cap/ectl_cap_apt.jpg" alt="Airport ATFM delays">
 </div></div></div></div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4b2c34c1-cc8f-49e5-9c11-64bf522f7795/page/YiAPB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/e6c6b4fb-bfb2-4c5c-ad8b-c0261c3e588a/page/fV7PB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
