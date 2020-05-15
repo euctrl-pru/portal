@@ -1,0 +1,54 @@
+---
+title: Traffic
+
+---
+
+<style type="text/css">
+  .img-responsive {
+      margin: 0 auto;
+      max-width: 75%
+  }
+  
+  .resp-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 60.0%;
+  }
+  
+  .resp-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150%;
+      border: 0;
+  }
+  </style>
+
+The dashboard below provides an overview of the evolution of flights (all controlled flights including overflights) and en-route [service units](/acronym/su/) in the [EUROCONTROL Member State Area](/definition/eurocontrol-area/). The analysis of the en-route service units is based on the [en-route charging zones][ert_cz] for which the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> collects en-route charges [^1].
+
+The results are shown in the dashboard below and also available for download in our [data repository](/data/). 
+
+<!-- removed State level for the time being
+<div class="container">
+<div class="row align-items-start">
+<div class="col-sm-9">
+
+<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p> 
+
+</div>
+<div class="col-sm-3">
+<div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
+  <img class="card-img-top" src="/images/traff/traff_daily_db.png" alt="Daily traffic statistics">
+  <div class="card-body"><small><p class="card-text">See also our daily traffic dashboard to monitor the COVID-19 impact!</p></small></div></a>
+</div></div></div></div>
+ -->
+
+<small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/530431ad-7650-4dc3-9a73-9e64133134b6/page/F4Uw" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+[ert_cz]: https://ext.eurocontrol.int/lexicon/index.php/En-route_charging_zone "en-route charging zones"
+
+[^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias).

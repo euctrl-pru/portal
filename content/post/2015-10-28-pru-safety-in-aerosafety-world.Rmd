@@ -18,7 +18,7 @@ PRU safety performance analysis in July/August 2015 issue of AeroSafety World.
 
 ```{r aeroSafety, fig.align = 'center', fig.cap = '(ref:aeroSafety)', echo=FALSE}
 library(jpeg)
-knitr::include_graphics("/images/aeroworld-safety-jul-aug-2015.jpg")
+knitr::include_graphics("/images/aeroworld-safety-jul-aug-2015.jpg", error = FALSE)
 ```
 
 

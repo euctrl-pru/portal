@@ -1,0 +1,12 @@
+---
+title: Definitions
+categories:
+  - metadata
+  - definition
+type: definition
+---
+
+
+* Data Dimensions used in the processing of data. <i class="fa fa-exclamation-triangle" style="color: #337ab7;"></i>
+
+<i class="fa fa-exclamation-triangle" style="color: #337ab7;"></i> = not (yet?) available.

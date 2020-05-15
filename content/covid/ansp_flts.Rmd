@@ -24,6 +24,11 @@ date: '2020-04-16'
 }
 </style>
 
+<div class="col-18 col-md-12">
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/a960e72f-e79d-47f4-8ef1-e7c5cecb1ac5/page/jwMJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
 
 The table below provides an overview of the traffic evolution at Air Navigation Service Provider level (all controlled flights including overflights).<br> 
 The analysis will be developed further as soon as more data becomes available. <br>

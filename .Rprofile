@@ -5,6 +5,7 @@ if (file.exists("~/.Rprofile")) {
 
 
 options(
+  knitr.graphics.error = FALSE,
   blogdown.ext = ".Rmd",
   blogdown.yaml.empty = TRUE,
   blogdown.new_bundle = TRUE,

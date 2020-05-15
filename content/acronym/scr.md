@@ -10,7 +10,7 @@ slug: scr
 Shortest Constrained Route is the shortest route between two points planned by using existing
 route network and taking limitations by RAD and CDR into account.
 
-The associated distance measures how effectively the route networkis  designed with
+The associated distance measures how effectively the route network is designed with
 regard to the limitations set by flow management.
 
 

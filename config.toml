@@ -15,9 +15,14 @@ baseurl = "http://www.ansperformance.eu/"
 
 
 languageCode = "en-us"
-title = "PRU Portal"
+title = "Aviation Intelligence Unit Portal"
 theme = "pru-theme"
-googleAnalytics = "UA-62697169-2"
+
+# PRU Portal one
+# googleAnalytics = "UA-62697169-2" 
+
+# Deni's one
+googleAnalytics = "UA-61343306-1"
 summaryLength = 10
 
 customCSS = ["css/supplement.css"]
@@ -30,6 +35,14 @@ ignoreFiles = [
   "_cache$",
   "src$"
 ]
+
+# keep embedded HTML, see data.md
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 
 # Uncomment below to enable syntax highlighting
 # pygmentsCodefences = true
@@ -47,85 +60,90 @@ ignoreFiles = [
 # The value of pre is the icon name
 [menu]
 
-  [[menu.main]]
-    name = "PRC"
-    pre = ""
-    url = "/about/prc/"
-    identifier = "prc"   
+ [[menu.main]]
+    name = "AIU Home"
+    identifier= "home"
+    url = "/#/"
     weight = 5
-  [[menu.main]]
-    name = "COVID-19 crisis"
-    url = "/covid/"
-    identifier = "covid"
-    parent = "prc"
-    weight = 1
-  [[menu.main]]
-    name = "divider-prr2019"
-    parent = "prc"
-    weight = 2
-  [[menu.main]]
-    name = "Performance Review Report 2019 (Consultation)"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "http://www.eurocontrol.int/publication/performance-review-report-prr-2019-consultation"
-    identifier = "prr19"
-    parent = "prc"
-    weight = 3
-  [[menu.main]]
-    name = "Older Performance Review Reports"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/publication/performance-review-report-prr-2018"
-    identifier = "prr"
-    parent = "prc"
-    weight = 4
-  [[menu.main]]
-    name = "ATM Cost-Effectiveness (ACE)"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
-    identifier = "ace"
-    parent = "prc"
-    weight = 5
-  [[menu.main]]
-    name = "divider-abprc"
-    parent = "prc"
-    weight = 6    
-  [[menu.main]]
+
+ [[menu.main]]
+    name = "About"
+    identifier= "about"
+    url = "/about/us/"
+    weight = 10
+   [[menu.main]]
     name = "About the PRC"
     url = "/about/prc/"
-    identifier = "ab_prc"
-    parent = "prc"
-    weight = 7
+    parent = "about"
+    identifier = "prc"   
+    weight = 1
+  [[menu.main]]
+    name = "About the PRU"
+    url = "/about/us/"
+    identifier = "pru"
+    parent = "about"
+    weight = 2
+  [[menu.main]]
+    name = "Release notes"
+    url = "/post/"
+    identifier = "release"
+    parent = "about"
+    weight = 3
+  [[menu.main]]
+    name = "Disclaimer"
+    url = "/about/disclaimer/"
+    identifier = "disclaimer"
+    parent = "about"
+    weight = 4
 
   [[menu.main]]
     name = "Area"
     identifier = "dashboard"
     pre = ""
     url = "/dashboard/"
-    weight = 10
+    weight = 15
   [[menu.main]]
-    name = "Traffic"
-    url = "/dashboard/performance-area/traffic/"
-    identifier = "traffic"
+    name = " COVID-19 crisis"
+    pre = "<i class='fas fa-biohazard'></i>"
+    url = "/covid/"
+    identifier = "covid"
     parent = "dashboard"
     weight = 1
   [[menu.main]]
-    name = "Capacity"
-    url = "/dashboard/performance-area/capacity/"
-    identifier = "capacity"
+    name = "divider"
     parent = "dashboard"
     weight = 2
   [[menu.main]]
-    name = "Environment"
-    url = "/dashboard/performance-area/environment/"
-    identifier = "environment"
+    name = "Traffic"
+    url = "/traffic/"
+    identifier = "traffic"
     parent = "dashboard"
     weight = 3
+  [[menu.main]]
+    name = "Capacity"
+    url = "/capacity/"
+    identifier = "capacity"
+    parent = "dashboard"
+    weight = 4
+  [[menu.main]]
+    name = "Efficiency/ Environment"
+    url = "/efficiency/"
+    identifier = "efficiency"
+    parent = "dashboard"
+    weight = 5
+  [[menu.main]]
+    name = "Economics"
+    url = "/economics/"
+    identifier = "economics"
+    parent = "dashboard"
+    weight = 6
 
   [[menu.main]]
     name = "Views"
     pre = ""
     url = "/dashboard/stakeholder/"
     identifier = "stakeholder"   
-    weight = 15
+    weight = 20
   [[menu.main]]
     name = "Air Navigation Service Provider"
     url = "/dashboard/stakeholder/ansp/"
@@ -140,114 +158,59 @@ ignoreFiles = [
     weight = 2
 
   [[menu.main]]
-    name = "Tools"
-    identifier = "tools"
-    pre = ""
-    url = "/dashboard/"
-    weight = 20
-  [[menu.main]]
-    name = "ATM Cost-Effectiveness (ACE) dashboard"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
-    identifier = "ace-dashboard"
-    parent = "tools"
+    name = "Support"
+    url = "/reference/"
+    identifier = "support"
+    weight = 30
+ [[menu.main]]
+    name = "Data downloads"
+    url = "/data/"
+    parent = "support"
     weight = 1
   [[menu.main]]
-    name = "Service Unit (SU) dashboard"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/"
-    identifier = "su-dashboard"
-    parent = "tools"
+    name = "Definitions"
+    url = "/definition/"
+    parent = "support"
     weight = 2
-  [[menu.main]]
-    name = "divider-otools"
-    parent = "tools"
-    weight = 3
-  [[menu.main]]
-    name = "Vertical flight efficiency tools"
-    url = "/otools/"
-    identifier = "cco-cdo reporting"
-    parent = "tools"
-    weight = 4
-  [[menu.main]]
-    name = "divider-ses"
-    parent = "tools"
-    weight = 5
-  [[menu.main]]
-    name = "Single European Sky (SES) Portal"
-    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
-    url = "https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
-    identifier = "ses-portal"
-    parent = "tools"
-    weight = 6
-
-  [[menu.main]]
-    name = "Data"
-    pre = ""
-    url = "/data/"
-    weight = 30
-
-  [[menu.main]]
-    name = "References"
-    pre = ""
-    url = "/reference/"
-    identifier = "references"
-    weight = 40
   [[menu.main]]
     name = "Methodology"
     url = "/methodology/"
     identifier = "methodology"
-    parent = "references"
-    weight = 1
+    parent = "support"
+    weight = 3
   [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
-    parent = "references"
-    weight = 2
-  [[menu.main]]
-    name = "Definitions"
-    url = "/definition/"
-    parent = "references"
-    weight = 3
+    parent = "support"
+    weight = 4
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
-    parent = "references"
-    weight = 4
+    parent = "support"
+    weight = 5
   [[menu.main]]
     name = "divider2"
-    parent = "references"
-    weight = 5
+    parent = "support"
+    weight = 6
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
-    parent = "references"
-    weight = 6
+    parent = "support"
+    weight = 7
 
   [[menu.main]]
-    name = "About"
-    identifier= "about"
-    url = "/about/"
-    weight = 50
+    name = "SES"
+    identifier= "ses"
+    url = " "
+    weight = 40
   [[menu.main]]
-    name = "About PRU"
-    url = "/about/us/"
-    identifier = "pru"
-    parent = "about"
+    name = "Single European Sky (SES) Portal"
+    post = " <i class='fas fa-xs fa-external-link-alt'></i>"
+    url = "https://www.eurocontrol.int/prudata/dashboard/"
+    identifier = "ses-link"
+    parent = "ses"
     weight = 1
-  [[menu.main]]
-    name = "Release notes"
-    url = "/post/"
-    identifier = "release"
-    parent = "about"
-    weight = 2
-  [[menu.main]]
-    name = "Disclaimer"
-    url = "/about/disclaimer/"
-    identifier = "disclaimer"
-    parent = "about"
-    weight = 3
 
 
 [[menu.sidenav]]
@@ -271,24 +234,115 @@ ignoreFiles = [
     identifier= "ops-airport"
     weight = 50
 
-
 [[menu.covid]]
-    name = "Overview"
+    name = "COVID Overview"
     url = "/covid/"
-    identifier= "overview"
+    identifier= "cov_overview"
     weight = 10
  [[menu.covid]]
-    name = "Traffic (ANSP)"
-    url = "/covid/ansp_flts"
-    identifier= "ansp_flts"
+    name = "Traffic impact"
+    url = "/covid/covid_traffic"
+    identifier= "cov_traffic"
     weight = 20
 [[menu.covid]]
     name = "Grounded aircraft"
     url = "/covid/acft_ground"
-    identifier= "parking"
+    identifier= "cov_parking"
+    weight = 30
+[[menu.covid]]
+    name = "En-route revenues"
+    url = "/covid/covid_ert_rev"
+    identifier= "cov_revenues"
+    weight = 40
+[[menu.covid]]
+    name = "Vertical flight efficiency"
+    url = "/covid/covid_vfe"
+    identifier= "cov_vfe"
+    weight = 50
+
+[[menu.traffic]]
+    name = "Traffic Overview"
+    url = "/traffic"
+    identifier= "overview"
+    weight = 10
+[[menu.traffic]]
+    name = "Daily traffic dashboard"
+    url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
+    identifier= "state"
+    weight = 20
+[[menu.traffic]]
+    name = "Service Units"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
+    identifier= "su"
+    weight = 30
+[[menu.traffic]]
+    name = "Traffic forecast"
+    url = "/traffic/statfor"
+    identifier= "statfor"
+    weight = 40
+
+[[menu.capacity]]
+    name = "Capacity Overview"
+    url = "/capacity"
+    identifier= "overview"
+    weight = 10
+ [[menu.capacity]]
+    name = "En-route ATFM delays"
+    url = "/capacity/atfm_ert"
+    identifier= "atfm_ert"
+    weight = 20
+[[menu.capacity]]
+    name = "Airport ATFM delays"
+    url = "/capacity/atfm_apt"
+    identifier= "atfm_apt"
     weight = 30
 
+[[menu.efficiency]]
+    name = "Efficiency Overview"
+    url = "/efficiency"
+    identifier= "overview"
+    weight = 10
+ [[menu.efficiency]]
+    name = "Horizontal flight efficiency"
+    url = "/efficiency/hfe"
+    identifier= "hfe"
+    weight = 20
+[[menu.efficiency]]
+    name = "Vertical flight efficiency"
+    url = "/efficiency/vfe"
+    identifier= "vfe"
+    weight = 30
+[[menu.efficiency]]
+    name = "Terminal holdings"
+    url = "/efficiency/asma"
+    identifier= "asma"
+    weight = 40
+[[menu.efficiency]]
+    name = "Taxi out"
+    url = "/efficiency/taxiout"
+    identifier= "taxiout"
+    weight = 50
 
+[[menu.economics]]
+    name = "Economics Overview"
+    url = "/economics"
+    identifier= "overview"
+    weight = 10
+ [[menu.economics]]
+    name = "ATM Cost Efficiency Benchmark (ACE)"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
+    identifier= "ace"
+    weight = 20
+[[menu.economics]]
+    name = "Unit rate and costs"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html"
+    identifier= "unit"
+    weight = 30
+[[menu.economics]]
+    name = "Service Units"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
+    identifier= "su"
+    weight = 40
 
 
 [params]
@@ -303,6 +357,7 @@ ignoreFiles = [
     url = "images/euctrl-logo-noname.png"
     height = 30
     alt = "PRU"
+    target = "https://eurocontrol.int"
 
   [params.owner]
     name = "European Organisation for the Safety of Air Navigation (EUROCONTROL)"
