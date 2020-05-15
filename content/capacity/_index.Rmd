@@ -25,17 +25,20 @@ title: Capacity
 </style>
 
 <div class="row">
-<div class="col-sm-9">
-The dashboard shows an analysis of [ATFM delays](/definition/atfm-delay/) in the EUROCONTROL area. 
+<div class="col-sm-8">
+When traffic demand is anticipated to exceed the declared [ATM](/acronym/atm/) capacity, [ATC](/acronym/atc/) units may call for “[ATFM](/acronym/atfm/) regulations”. 
+Aircraft subject to ATFM regulations are held at the departure airport according to “ATFM slots” allocated by the [Network Manager](/acronym/nm-cfmu/). 
 
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
+The resulting [ATFM delays](/definition/atfm-delay/) of a flight is allocated to the most constraining ATC unit, either en-route (en-route ATFM delay) or departure/arrival airport (airport ATFM delay).
+
+The overview below shows an analysis of ATFM delays and the [delay cause](/definition/atfm-delay-codes/) as attributed by the local [Flow Management Position (FMP)](/acronym/fmp/) in the [EUROCONTROL area](/definition/eurocontrol-area/). 
 
 The underlying data is available for download in the [data section](/data/).
 </div>
-<div class="col-sm-2">
+<div class="col-sm-4">
 <div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
-  <img class="card-img-top" src="/images/landing/ectl_cockpit.jpg" alt="Performance Snapshot">
-  <div class="card-body"><h5 class="card-title">Performance Snapshot</h5></a><small><p class="card-text">Click to see the latest monthly snapshot!</p></small>
+  <img class="card-img-top" src="/images/cap/ectl_int_db.jpg" alt="Performance Snapshot">
+  <div class="card-body"><p class="card-title">See also our interactive Performance Snapshot</p></a>
   </div>
 </div>
 </div>

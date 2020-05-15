@@ -27,13 +27,15 @@ title: Efficiency and Environment
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
-ANS performance clearly affects the environmental impact of aviation. 
-The ANS related impact on the environment is closely linked to operational performance (fuel efficiency) which is largely driven by inefficiencies in the flight trajectory and associated fuel burn (and emissions). 
+The ANS related impact on the environment is closely linked to operational performance (fuel efficiency) which is largely driven by inefficiencies in the flight trajectory and associated fuel burn (and emissions). The current best estimate for 2019 is that ANS can influence approximately 6% (11.6 Mt) of the total gate-to-gate fuel burn (“benefit pool”).
+The overview below shows a consolidated view of the main components. For more detailed analysis, please consult also the respective sections on this page:
 
-The current best estimate for 2019 is that ANS can influence approximately 6% (11.6 Mt) of the total gate-to-gate fuel burn (“benefit pool”). 
-Horizontal en-route flight efficiency is the largest single component and also the only component subject to target setting in the Single European Sky, followed by inefficiencies during the arrival phase.  
- 
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
+* [Horizontal en-route flight efficiency](/efficiency/hfe/)
+* [Vertical flight efficiency](/efficiency/vfe/)
+* [Terminal holdings (ASMA)](/efficiency/asma/)
+* [Taxi out efficiency](/efficiency/taxiout/)
+
+The underlying data of the results shown in the dashboard below are available for download in our [data repository](/data/).  
 </div>
 <div class="col-sm-3">
 <div class="card border-0">

@@ -266,8 +266,8 @@ ignoreFiles = [
     identifier= "overview"
     weight = 10
 [[menu.traffic]]
-    name = "IFR flights"
-    url = "/traffic/flights"
+    name = "Daily traffic dashboard"
+    url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
     identifier= "state"
     weight = 20
 [[menu.traffic]]

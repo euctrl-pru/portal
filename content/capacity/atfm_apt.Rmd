@@ -27,11 +27,11 @@ date: '2020-04-16'
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
-The dashboard shows an analysis of airport [ATFM delays](/definition/atfm-delay/) in the EUROCONTROL area. 
+Airport operations depend upon a number of factors which all affect airport and runway capacity to some degree. In addition to physical constraints, such as airport layout, there are “strategic” factors such as airport scheduling and “tactical” factors which include, inter alia, the sequencing of aircraft and the sustainability of throughput during specific weather conditions.
 
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p>
+ANS-related inefficiencies on the arrival flow are measured in terms of arrival [ATFM delays](/definition/atfm-delay/) and additional time in the arrival sequencing and metering area (ASMA time). Whereas ATFM delays have an impact in terms of delay on the ground, [additional ASMA time (airborne holdings)](/efficiency/asma/)  has also a direct impact in terms of fuel burn and emissions.  
 
-The underlying data is available for download in the [data section](/data/).
+The interactive dashboard below enables an analysis of airport arrival ATFM delays by [delay cause](/definition/atfm-delay-codes/) as attributed by the local [Flow Management Position (FMP)](/acronym/fmp/) in the [EUROCONTROL area](/definition/eurocontrol-area/). The underlying data is available for download in the [data section](/data/).
 </div>
 <div class="col-sm-3">
 <div class="card border-0">
