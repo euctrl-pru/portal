@@ -11,6 +11,3 @@ ATM-specific occurrences (i.e. technical occurrences affecting the capability to
 are encompassing those situations where the ability to 
 provide safe ATM services is affected, including situations where, by chance, 
 the safe operations of aircraft has not been jeopardised.
-
-
-## See Also

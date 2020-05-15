@@ -46,7 +46,7 @@ The results are shown in the dashboard below and also available for download in 
 
 <div class="row align-items-start">
 <div class="col-sm-8">
-In order to get a better understanding of the level of vertical inefficiency in the en-route phase, the [PRC](/about/prc/) has developed a [methodology](/methodology/en-route-vertical-flight-efficiency-pi/) compare the maximum altitudes in the flight plans of flights between a specific airport pair with the maximum altitudes of flights between similar airport pairs for a specific [AIRAC cycle](https://www.nm.eurocontrol.int/RAD/common/airac_dates.html). 
+In order to get a better understanding of the level of vertical inefficiency in the en-route phase, the [PRC](/about/prc/) has developed a [methodology](/methodology/en-route-vertical-flight-efficiency-pi/) to compare the maximum altitudes in the flight plans of flights between a specific airport pair with the maximum altitudes of flights between similar airport pairs for a specific [AIRAC cycle](https://www.nm.eurocontrol.int/RAD/common/airac_dates.html). 
 </div>
 <br>
 <div class="col-sm-4">

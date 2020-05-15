@@ -65,4 +65,4 @@ In the ATFM delay file downloads, the computation method is indicated in the col
 
 
 [NM20-rn]: /library/NM_20_FB750_Delay_Calculation_improvements.pdf "NM 20 Release Notes: Delay calculation improvements"
-[post-ops]: http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process "Post Operations Performance Adjustment Process"
+[post-ops]: https://www.eurocontrol.int/service/post-operations-performance-adjustment "Post Operations Performance Adjustment Process"
