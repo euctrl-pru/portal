@@ -56,7 +56,7 @@ For feedback or questions please contact us at:
 
 <div class="col-sm-2"><h4></h4><br>
 <div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
-  <img class="card-img-top" src="/images/landing/ectl_int_db.jpg" alt="Performance Snapshot"><br>
+  <img class="card-img-top" src="/images/landing/ectl_int_db.png" alt="Performance Snapshot"><br>
   <div class="card-body"><h6 class="card-title">Performance Snapshot</h6></a><small><p class="card-text">Click to see the latest monthly snapshot!</p></small>
   </div>
 </div>

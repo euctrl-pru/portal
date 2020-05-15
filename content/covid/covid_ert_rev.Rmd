@@ -51,5 +51,5 @@ Last data update: 15. May 2020
 
 [ert_cz]: https://ext.eurocontrol.int/lexicon/index.php/En-route_charging_zone "en-route charging zones"
 
-[^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias).
+[^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias) and Portugal (Portugal Continental, subject to SES Regulations, and Portugal Santa Maria, not subject to SES Regulations).
 

@@ -15,7 +15,7 @@ baseurl = "http://www.ansperformance.eu/"
 
 
 languageCode = "en-us"
-title = "PRU Portal"
+title = "AIU Portal"
 theme = "pru-theme"
 
 # PRU Portal one
@@ -61,7 +61,7 @@ ignoreFiles = [
 [menu]
 
  [[menu.main]]
-    name = "Home"
+    name = "AIU Home"
     identifier= "home"
     url = "/#/"
     weight = 5
