@@ -57,11 +57,6 @@ any longer which reduces the amount of computed ATFM delay.*
 The number of flights is based on ANSP boundaries (which are not necessarily 
 coincidental with the FIR or geographical boundaries of the State).
 
-## ANSP definitions
-
-The ANSP level information is based on an aggregation of Air Traffic control 
-Unit Airspace (AUA). A list for each ANSP will be provided in due course. 
-
 
 ## Column naming and types
 
@@ -94,9 +89,13 @@ Unit Airspace (AUA). A list for each ANSP will be provided in due course.
 | FLT_ERT_1_DLY    | Network Manager | FLT_ERT_1_DLY                   |                      | Number of en-route ATFM delayed flights                                        | 0          |
 | FLT_ERT_1_DLY_15 | Network Manager | FLT_ERT_1_DLY_15                |                      | Number of en-route ATFM delayed flights (>15 min.)                             | 0          |
 
-## ANSP Composition
+## ANSP's definition
 
-ANSP composition on {{< getdata "date-ansp-composition" "date" >}}.
+The data at ANSP level is an aggregation of the values at Air Traffic control 
+Unit Airspace (AUA) level.
+
+The following table provides the details of each ANSP composition
+on {{< getdata "date-ansp-composition" "date" >}}.
 
 {{< csvtable "data-config/ansp-composition.csv" >}}
 
