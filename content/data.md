@@ -114,6 +114,11 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 ## <img src="/images/prcq-traffic.png" width="40" height="40" alt="Traffic"> Traffic
 
+**NOTE**: the two Traffic Complexity time series, 2014 - 2016 and 2017 - 2019, **cannot** be used joinly to study the full time span 2014 - 2019.<br>
+In fact they use different BADA versions and hence different aircraft characteristics for the same aircraft type; this impacts the value of the
+*Speed Different Interacting Flows* and ultimately the *Traffic Complexity Score*.
+
+
 | Data description                                                                             | Period                                                                                          | {{< excel_i >}}              | {{< csv_i >}} | Info                       | [ICAO GANP][icaoganp] |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------------------|---------------|----------------------------|-----------------------|
 | Complexity (based on [BADA][CPLXbada] version 3.6) <br><small> Complexity by ANSP</small>    | {{< getdata "dwnld" "cplx_beg_bada_3_6" >}} -  {{< getdata "dwnld" "cplx_end_bada_3_6" >}}      | [{{< dwnld_i >}}][CPLXxlsx]  |               | [{{< info_i >}}][CPLXmeta] |                       |
