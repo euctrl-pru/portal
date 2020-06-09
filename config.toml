@@ -156,6 +156,12 @@ ignoreFiles = [
     identifier = "State"
     parent = "stakeholder"
     weight = 2
+  [[menu.main]]
+    name = "Airports"
+    url = "/dashboard/stakeholder/airport/"
+    identifier = "Airport"
+    parent = "stakeholder"
+    weight = 3
 
   [[menu.main]]
     name = "Support"
