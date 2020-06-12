@@ -3,6 +3,23 @@ title: Dashboard - Airport
 layout: default
 ---
 
-* [EDDF](EDDF.html)
-* [EGLL](EGLL.html)
-* [EIDW](EIDW.html)
+<div class='index-links'>
+
+* [Germany](#germany)
+* [Ireland](#ireland)
+* [United Kingdom](#united-kingdom)
+
+</div>
+
+## Germany
+
+* [EDDF](#EDDF.html)
+* [EDDM](#EDDM.html)
+
+## Ireland
+
+* [EIDW](#EIDW.html)
+
+## United Kingdom
+
+* [EGLL](#EGLL.html)

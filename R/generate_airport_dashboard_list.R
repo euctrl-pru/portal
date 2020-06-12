@@ -2,14 +2,15 @@ library(dplyr)
 library(stringr)
 
 
-apt <- tribble(
-  ~icao, ~country, ~ready,
-  "EDDF", "Germany", TRUE,
-  "EDDM", "Germany", FALSE,
-  "EGLL", "United Kingdom", TRUE,
-  "EIDW", "Ireland", TRUE
-)
+# apt <- tribble(
+#   ~icao, ~country, ~ready,
+#   "EDDF", "Germany", TRUE,
+#   "EDDM", "Germany", FALSE,
+#   "EGLL", "United Kingdom", TRUE,
+#   "EIDW", "Ireland", TRUE
+# )
 
+apt <- readr::read_csv("data-config/airports-dashboard.csv")
 
 summary_section <- function(apt_df) {
   country <- apt_df %>% 
