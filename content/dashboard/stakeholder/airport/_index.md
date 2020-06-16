@@ -13,13 +13,13 @@ layout: default
 
 ## Germany
 
-* [EDDF](#EDDF.html)
-* [EDDM](#EDDM.html)
+* [EDDF](EDDF.html)
+* EDDM (not available)
 
 ## Ireland
 
-* [EIDW](#EIDW.html)
+* [EIDW](EIDW.html)
 
 ## United Kingdom
 
-* [EGLL](#EGLL.html)
+* [EGLL](EGLL.html)

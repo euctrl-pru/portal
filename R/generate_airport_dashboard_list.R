@@ -28,10 +28,13 @@ summary_section <- function(apt_df) {
 
 
 airport_section <- function(df) {
-  str_glue(
-    "* [{apt}](#{apt}.html)",
-    apt = df$icao) %>% 
-    str_c(collapse = "\n")
+  ent <- df %>%
+    mutate(ggg = ifelse(df$ready,
+                        "* [APT](APT.html)",
+                        "* APT (not available)"),
+           ggg = str_replace_all(ggg, "APT", .data$icao)) %>%
+    pull(ggg)
+    str_c(ent, collapse = "\n")
 }
 
 all_section <- function(x, y) {
