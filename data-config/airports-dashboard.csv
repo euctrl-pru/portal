@@ -2,21 +2,21 @@ icao,name,country,ready
 EBBR,Brussels,Belgium,TRUE
 EBCI,Charleroi,Belgium,TRUE
 EDDB,Schoenefeld-Berlin,Germany,TRUE
-EDDC,NA,NA,TRUE
-EDDE,NA,NA,TRUE
+EDDC,Dresden,Germany,TRUE
+EDDE,Erfurt,Germany,TRUE
 EDDF,Frankfurt,Germany,TRUE
-EDDG,NA,NA,TRUE
+EDDG,Münster-Osnabrück,Germany,TRUE
 EDDH,Hamburg,Germany,TRUE
 EDDK,Cologne/Bonn,Germany,TRUE
 EDDL,Dusseldorf,Germany,TRUE
 EDDM,Munich,Germany,TRUE
 EDDN,Nurenberg,Germany,TRUE
 EDDP,Leipzig/Halle,Germany,TRUE
-EDDR,NA,NA,TRUE
+EDDR,Saarbrücke,Germany,TRUE
 EDDS,Stuttgart,Germany,TRUE
 EDDT,Berlin-Tegel,Germany,TRUE
 EDDV,Hanover,Germany,TRUE
-EDDW,NA,NA,TRUE
+EDDW,Bremen,Germany,TRUE
 EETN,Tallinn/Ulemiste,Estonia,TRUE
 EFHK,Helsinki-Vantaa,Finland,TRUE
 EGBB,Birmingham,United Kingdom,TRUE
@@ -31,7 +31,7 @@ EGPF,Glasgow,United Kingdom,TRUE
 EGPH,Edinburgh,United Kingdom,TRUE
 EGSS,London/Stansted,United Kingdom,TRUE
 EHAM,Amsterdam,Netherlands,TRUE
-EICK,NA,NA,TRUE
+EICK,Cork,Ireland,TRUE
 EIDW,Dublin,Ireland,TRUE
 EKCH,Copenhagen/Kastrup,Denmark,TRUE
 ELLX,Luxembourg,Luxembourg,TRUE
