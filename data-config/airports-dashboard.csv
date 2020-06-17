@@ -1,5 +1,43 @@
-icao,country,ready
-EDDF,Germany,TRUE
-EDDM,Germany,FALSE
-EGLL,United Kingdom,TRUE
-EIDW,Ireland,TRUE
+icao,name,country,ready
+GCLP,Las Palmas,Spain,TRUE
+GCRR,Arrecife Lanzarote,Spain,TRUE
+GCTS,Tenerife Sur/Reina Sofia,Spain,TRUE
+GCXO,Tenerife Norte,Spain,TRUE
+LBSF,Sofia,Bulgaria,TRUE
+LDZA,Zagreb,Croatia,TRUE
+LEAL,Alicante,Spain,TRUE
+LEBB,Bilbao,Spain,TRUE
+LEBL,Barcelona,Spain,TRUE
+LEIB,Ibiza,Spain,TRUE
+LEMD,Madrid/Barajas,Spain,TRUE
+LEMG,Malaga,Spain,TRUE
+LEPA,Palma De Mallorca,Spain,TRUE
+LEVC,Valencia,Spain,TRUE
+LEZL,Sevilla,Spain,TRUE
+LFLL,Lyon/Sartolas,France,TRUE
+LFMN,Nice,France,TRUE
+LFPG,Paris/Charles-De-Gaulle,France,TRUE
+LFPO,Paris/Orly,France,TRUE
+LFSB,Basle/Mulhouse,France,TRUE
+LGAV,Athens,Greece,TRUE
+LHBP,Budapest/Ferihegy,Hungary,TRUE
+LICC,Catania Fontanarossa,Italy,TRUE
+LIMC,Milan/Malpensa,Italy,TRUE
+LIME,Bergamo/Orio Alserio,Italy,TRUE
+LIML,Milan/Linate,Italy,TRUE
+LIPE,Bologna,Italy,TRUE
+LIPZ,Venice/Tessera,Italy,TRUE
+LIRA,Rome/Ciampino,Italy,TRUE
+LIRF,Rome/Fiumicino,Italy,TRUE
+LIRN,Napoli Capodichino,Italy,TRUE
+LJLJ,Ljubljana,Slovenia,TRUE
+LKPR,Prague/Ruzyne,Czech Republic,TRUE
+LMML,Malta/Luqa,Malta,TRUE
+LOWW,Vienna,Austria,TRUE
+LPFR,Faro,Portugal,TRUE
+LPPR,Porto,Portugal,TRUE
+LPPT,Lisbon,Portugal,TRUE
+LROP,Otopeni-Intl.,Romania,TRUE
+LSGG,Geneva,Switzerland,TRUE
+LSZH,Zurich,Switzerland,TRUE
+LZIB,Bratislava Ivanka,Slovakia,TRUE
