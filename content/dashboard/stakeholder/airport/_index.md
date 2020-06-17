@@ -25,87 +25,87 @@ layout: default
 
 ## Austria
 
-* [LOWW](LOWW.html)
+* [Vienna (LOWW)](LOWW.html)
 
 ## Bulgaria
 
-* [LBSF](LBSF.html)
+* [Sofia (LBSF)](LBSF.html)
 
 ## Croatia
 
-* [LDZA](LDZA.html)
+* [Zagreb (LDZA)](LDZA.html)
 
 ## Czech Republic
 
-* [LKPR](LKPR.html)
+* [Prague/Ruzyne (LKPR)](LKPR.html)
 
 ## France
 
-* [LFLL](LFLL.html)
-* [LFMN](LFMN.html)
-* [LFPG](LFPG.html)
-* [LFPO](LFPO.html)
-* [LFSB](LFSB.html)
+* [Lyon/Sartolas (LFLL)](LFLL.html)
+* [Nice (LFMN)](LFMN.html)
+* [Paris/Charles-De-Gaulle (LFPG)](LFPG.html)
+* [Paris/Orly (LFPO)](LFPO.html)
+* [Basle/Mulhouse (LFSB)](LFSB.html)
 
 ## Greece
 
-* [LGAV](LGAV.html)
+* [Athens (LGAV)](LGAV.html)
 
 ## Hungary
 
-* [LHBP](LHBP.html)
+* [Budapest/Ferihegy (LHBP)](LHBP.html)
 
 ## Italy
 
-* [LICC](LICC.html)
-* [LIMC](LIMC.html)
-* [LIME](LIME.html)
-* [LIML](LIML.html)
-* [LIPE](LIPE.html)
-* [LIPZ](LIPZ.html)
-* [LIRA](LIRA.html)
-* [LIRF](LIRF.html)
-* [LIRN](LIRN.html)
+* [Catania Fontanarossa (LICC)](LICC.html)
+* [Milan/Malpensa (LIMC)](LIMC.html)
+* [Bergamo/Orio Alserio (LIME)](LIME.html)
+* [Milan/Linate (LIML)](LIML.html)
+* [Bologna (LIPE)](LIPE.html)
+* [Venice/Tessera (LIPZ)](LIPZ.html)
+* [Rome/Ciampino (LIRA)](LIRA.html)
+* [Rome/Fiumicino (LIRF)](LIRF.html)
+* [Napoli Capodichino (LIRN)](LIRN.html)
 
 ## Malta
 
-* [LMML](LMML.html)
+* [Malta/Luqa (LMML)](LMML.html)
 
 ## Portugal
 
-* [LPFR](LPFR.html)
-* [LPPR](LPPR.html)
-* [LPPT](LPPT.html)
+* [Faro (LPFR)](LPFR.html)
+* [Porto (LPPR)](LPPR.html)
+* [Lisbon (LPPT)](LPPT.html)
 
 ## Romania
 
-* [LROP](LROP.html)
+* [Otopeni-Intl. (LROP)](LROP.html)
 
 ## Slovakia
 
-* [LZIB](LZIB.html)
+* [Bratislava Ivanka (LZIB)](LZIB.html)
 
 ## Slovenia
 
-* [LJLJ](LJLJ.html)
+* [Ljubljana (LJLJ)](LJLJ.html)
 
 ## Spain
 
-* [GCLP](GCLP.html)
-* [GCRR](GCRR.html)
-* [GCTS](GCTS.html)
-* [GCXO](GCXO.html)
-* [LEAL](LEAL.html)
-* [LEBB](LEBB.html)
-* [LEBL](LEBL.html)
-* [LEIB](LEIB.html)
-* [LEMD](LEMD.html)
-* [LEMG](LEMG.html)
-* [LEPA](LEPA.html)
-* [LEVC](LEVC.html)
-* [LEZL](LEZL.html)
+* [Las Palmas (GCLP)](GCLP.html)
+* [Arrecife Lanzarote (GCRR)](GCRR.html)
+* [Tenerife Sur/Reina Sofia (GCTS)](GCTS.html)
+* [Tenerife Norte (GCXO)](GCXO.html)
+* [Alicante (LEAL)](LEAL.html)
+* [Bilbao (LEBB)](LEBB.html)
+* [Barcelona (LEBL)](LEBL.html)
+* [Ibiza (LEIB)](LEIB.html)
+* [Madrid/Barajas (LEMD)](LEMD.html)
+* [Malaga (LEMG)](LEMG.html)
+* [Palma De Mallorca (LEPA)](LEPA.html)
+* [Valencia (LEVC)](LEVC.html)
+* [Sevilla (LEZL)](LEZL.html)
 
 ## Switzerland
 
-* [LSGG](LSGG.html)
-* [LSZH](LSZH.html)
+* [Geneva (LSGG)](LSGG.html)
+* [Zurich (LSZH)](LSZH.html)
