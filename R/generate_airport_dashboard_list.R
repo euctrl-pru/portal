@@ -30,9 +30,10 @@ summary_section <- function(apt_df) {
 airport_section <- function(df) {
   ent <- df %>%
     mutate(ggg = ifelse(df$ready,
-                        "* [APT](APT.html)",
-                        "* APT (not available)"),
-           ggg = str_replace_all(ggg, "APT", .data$icao)) %>%
+                        "* [NAME (APT)](APT.html)",
+                        "* NAME (APT) (not available)"),
+           ggg = str_replace_all(ggg, "APT", .data$icao),
+           ggg = str_replace_all(ggg, "NAME", .data$name)) %>%
     pull(ggg)
     str_c(ent, collapse = "\n")
 }
@@ -47,7 +48,7 @@ all_section <- function(x, y) {
 country_section <- function(apt_df) {
   apt_df %>%
     group_by(country) %>%
-    arrange(icao) %>%
+    arrange(name) %>%
     group_map(.f = all_section) %>% 
     unlist() %>% 
     str_c(collapse = "\n\n")

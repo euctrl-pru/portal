@@ -1,4 +1,46 @@
 icao,name,country,ready
+EBBR,Brussels,Belgium,TRUE
+EBCI,Charleroi,Belgium,TRUE
+EDDB,Schoenefeld-Berlin,Germany,TRUE
+EDDC,NA,NA,TRUE
+EDDE,NA,NA,TRUE
+EDDF,Frankfurt,Germany,TRUE
+EDDG,NA,NA,TRUE
+EDDH,Hamburg,Germany,TRUE
+EDDK,Cologne/Bonn,Germany,TRUE
+EDDL,Dusseldorf,Germany,TRUE
+EDDM,Munich,Germany,TRUE
+EDDN,Nurenberg,Germany,TRUE
+EDDP,Leipzig/Halle,Germany,TRUE
+EDDR,NA,NA,TRUE
+EDDS,Stuttgart,Germany,TRUE
+EDDT,Berlin-Tegel,Germany,TRUE
+EDDV,Hanover,Germany,TRUE
+EDDW,NA,NA,TRUE
+EETN,Tallinn/Ulemiste,Estonia,TRUE
+EFHK,Helsinki-Vantaa,Finland,TRUE
+EGBB,Birmingham,United Kingdom,TRUE
+EGCC,Manchester,United Kingdom,TRUE
+EGGD,Bristol/Lulsgate,United Kingdom,TRUE
+EGGW,London/Luton,United Kingdom,TRUE
+EGKK,London/Gatwick,United Kingdom,TRUE
+EGLC,London/City,United Kingdom,TRUE
+EGLL,London/Heathrow,United Kingdom,TRUE
+EGPD,Aberdeen,United Kingdom,TRUE
+EGPF,Glasgow,United Kingdom,TRUE
+EGPH,Edinburgh,United Kingdom,TRUE
+EGSS,London/Stansted,United Kingdom,TRUE
+EHAM,Amsterdam,Netherlands,TRUE
+EICK,NA,NA,TRUE
+EIDW,Dublin,Ireland,TRUE
+EKCH,Copenhagen/Kastrup,Denmark,TRUE
+ELLX,Luxembourg,Luxembourg,TRUE
+ENGM,Oslo/Gardermoen,Norway,TRUE
+EPWA,Warsaw/Okecie,Poland,TRUE
+ESGG,Gotenborg/Landvetter,Sweden,TRUE
+ESSA,Stockholm/Arlanda,Sweden,TRUE
+EVRA,Riga Intl,Latvia,TRUE
+EYVI,Vilnius Intl,Lithuania,TRUE
 GCLP,Las Palmas,Spain,TRUE
 GCRR,Arrecife Lanzarote,Spain,TRUE
 GCTS,Tenerife Sur/Reina Sofia,Spain,TRUE
