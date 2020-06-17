@@ -41,11 +41,11 @@ layout: default
 
 ## France
 
+* [Basle/Mulhouse (LFSB)](LFSB.html)
 * [Lyon/Sartolas (LFLL)](LFLL.html)
 * [Nice (LFMN)](LFMN.html)
 * [Paris/Charles-De-Gaulle (LFPG)](LFPG.html)
 * [Paris/Orly (LFPO)](LFPO.html)
-* [Basle/Mulhouse (LFSB)](LFSB.html)
 
 ## Greece
 
@@ -57,15 +57,15 @@ layout: default
 
 ## Italy
 
-* [Catania Fontanarossa (LICC)](LICC.html)
-* [Milan/Malpensa (LIMC)](LIMC.html)
 * [Bergamo/Orio Alserio (LIME)](LIME.html)
-* [Milan/Linate (LIML)](LIML.html)
 * [Bologna (LIPE)](LIPE.html)
-* [Venice/Tessera (LIPZ)](LIPZ.html)
+* [Catania Fontanarossa (LICC)](LICC.html)
+* [Milan/Linate (LIML)](LIML.html)
+* [Milan/Malpensa (LIMC)](LIMC.html)
+* [Napoli Capodichino (LIRN)](LIRN.html)
 * [Rome/Ciampino (LIRA)](LIRA.html)
 * [Rome/Fiumicino (LIRF)](LIRF.html)
-* [Napoli Capodichino (LIRN)](LIRN.html)
+* [Venice/Tessera (LIPZ)](LIPZ.html)
 
 ## Malta
 
@@ -74,8 +74,8 @@ layout: default
 ## Portugal
 
 * [Faro (LPFR)](LPFR.html)
-* [Porto (LPPR)](LPPR.html)
 * [Lisbon (LPPT)](LPPT.html)
+* [Porto (LPPR)](LPPR.html)
 
 ## Romania
 
@@ -91,19 +91,19 @@ layout: default
 
 ## Spain
 
-* [Las Palmas (GCLP)](GCLP.html)
-* [Arrecife Lanzarote (GCRR)](GCRR.html)
-* [Tenerife Sur/Reina Sofia (GCTS)](GCTS.html)
-* [Tenerife Norte (GCXO)](GCXO.html)
 * [Alicante (LEAL)](LEAL.html)
-* [Bilbao (LEBB)](LEBB.html)
+* [Arrecife Lanzarote (GCRR)](GCRR.html)
 * [Barcelona (LEBL)](LEBL.html)
+* [Bilbao (LEBB)](LEBB.html)
 * [Ibiza (LEIB)](LEIB.html)
+* [Las Palmas (GCLP)](GCLP.html)
 * [Madrid/Barajas (LEMD)](LEMD.html)
 * [Malaga (LEMG)](LEMG.html)
 * [Palma De Mallorca (LEPA)](LEPA.html)
-* [Valencia (LEVC)](LEVC.html)
 * [Sevilla (LEZL)](LEZL.html)
+* [Tenerife Norte (GCXO)](GCXO.html)
+* [Tenerife Sur/Reina Sofia (GCTS)](GCTS.html)
+* [Valencia (LEVC)](LEVC.html)
 
 ## Switzerland
 
