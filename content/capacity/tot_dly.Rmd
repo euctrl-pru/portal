@@ -1,0 +1,28 @@
+---
+title: EUROCONTROL Central Office for Delay Analysis (CODA)
+date: '2020-06-17'
+---
+
+The Central Office for Delay Analysis within EUROCONTROL provides all-causes delay, punctuality and cancellation statistics based on operational flight by flight data received from airspace users and EUROCONTROL Network Manager flight data. 
+
+<div class="container">
+<div class="row">
+<div class="card-deck">
+<div class="card"><a href="https://www.eurocontrol.int/dashboard/all-causes-delay-analysis-interactive-dashboard" target="_blank">
+  <img class="card-img-top" src="/images/cap/ectl_coda_db.jpg" alt="CODA interactive dashboard">
+  <div class="card-body"><h4 class="card-title">CODA interactive dashboard!</h4><p class="card-text">Click to explore the CODA all-causes delay analysis interactive dashboard <i class='fas fa-xs fa-external-link-alt'></i></p></a>
+  </div>
+</div>
+<div class="card"><a href="https://www.eurocontrol.int/search?keywords=CODA&sort_by=field_publication_date" target="_blank">
+  <img class="card-img-top" src="/images/cap/ectl_coda1.jpg" alt="Latest CODA reports">
+  <div class="card-body"><h4 class="card-title">CODA reports!</h4><p class="card-text">Click to view the latest CODA reports <i class='fas fa-xs fa-external-link-alt'></i></p></a>
+  </div>
+</div>
+<div class="card">
+  <img class="card-img-top" src="" alt="">
+  <div class="card-body"><h4 class="card-title"></h4><p class="card-text"></p></a>
+  </div>
+</div>
+</div>
+</div>
+</div>

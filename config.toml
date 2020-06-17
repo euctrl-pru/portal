@@ -120,13 +120,13 @@ ignoreFiles = [
     parent = "dashboard"
     weight = 3
   [[menu.main]]
-    name = "Capacity"
+    name = "Capacity & delays"
     url = "/capacity/"
     identifier = "capacity"
     parent = "dashboard"
     weight = 4
   [[menu.main]]
-    name = "Efficiency/ Environment"
+    name = "Efficiency & environment"
     url = "/efficiency/"
     identifier = "efficiency"
     parent = "dashboard"
@@ -282,7 +282,7 @@ ignoreFiles = [
     identifier= "su"
     weight = 30
 [[menu.traffic]]
-    name = "Traffic forecast"
+    name = "STATFOR Statistics and Forecasts"
     url = "/traffic/statfor"
     identifier= "statfor"
     weight = 40
@@ -302,6 +302,11 @@ ignoreFiles = [
     url = "/capacity/atfm_apt"
     identifier= "atfm_apt"
     weight = 30
+[[menu.capacity]]
+    name = "All-causes delay"
+    url = "/capacity/tot_dly"
+    identifier= "tot_dly"
+    weight = 40
 
 [[menu.efficiency]]
     name = "Efficiency Overview"
