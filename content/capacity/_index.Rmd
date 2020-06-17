@@ -1,5 +1,5 @@
 ---
-title: Capacity
+title: Capacity and delays
 ---
 
 <style type="text/css">
@@ -29,11 +29,12 @@ title: Capacity
 When traffic demand is anticipated to exceed the declared [ATM](/acronym/atm/) capacity, [ATC](/acronym/atc/) units may call for “[ATFM](/acronym/atfm/) regulations”. 
 Aircraft subject to ATFM regulations are held at the departure airport according to “ATFM slots” allocated by the [Network Manager](/acronym/nm-cfmu/). 
 
-The resulting [ATFM delays](/definition/atfm-delay/) of a flight is allocated to the most constraining ATC unit, either en-route (en-route ATFM delay) or departure/arrival airport (airport ATFM delay).
+The resulting [ATFM delays](/definition/atfm-delay/) of a flight is allocated to the most constraining ATC unit, either en-route (en-route ATFM delay) or departure/arrival airport (airport ATFM delay). Please note that the ATFM delay is based on the flight plan. For information on delay compared to airline schedule or punctuality please see the [all-causes delay](/capacity/tot_dly/) section.
 
 The overview below shows an analysis of ATFM delays and the [delay cause](/definition/atfm-delay-codes/) as attributed by the local [Flow Management Position (FMP)](/acronym/fmp/) in the [EUROCONTROL area](/definition/eurocontrol-area/). 
 
 The underlying data is available for download in the [data section](/data/).
+
 </div>
 <div class="col-sm-4">
 <div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/BalancedScorecard.html">
