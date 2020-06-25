@@ -362,7 +362,9 @@ ignoreFiles = [
   containerMaxWidth = "960px"
   dateFormat = "Jan 2, 2006"
   hideFooter = false
-  sitetosearch = "ansperformance.eu"
+  # HACK: DuckDuckGo multiple site search (i.e. separating sites with comma)
+  #       does not work. So use 'OR site:' from the second on
+  sitetosearch = "ansperformance.eu OR site:www.eurocontrol.int/prudata/dashboard/ OR site:www.eurocontrol.int/ACE/ OR site:www.eurocontrol.int/ServiceUnits/Dashboard/ OR site:www.eurocontrol.int/Economics/"
 
   [params.logo]
     url = "images/euctrl-logo-noname.png"
