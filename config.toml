@@ -359,7 +359,7 @@ ignoreFiles = [
 [params]
   includeBootstrapJs = false
   showActiveNav = true
-  containerMaxWidth = "960px"
+  containerMaxWidth = "1200px"
   dateFormat = "Jan 2, 2006"
   hideFooter = false
   # HACK: DuckDuckGo multiple site search (i.e. separating sites with comma)
