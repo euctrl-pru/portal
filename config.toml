@@ -365,6 +365,7 @@ ignoreFiles = [
   # HACK: DuckDuckGo multiple site search (i.e. separating sites with comma)
   #       does not work. So use 'OR site:' from the second on
   sitetosearch = "ansperformance.eu OR site:www.eurocontrol.int/prudata/dashboard/ OR site:www.eurocontrol.int/ACE/ OR site:www.eurocontrol.int/ServiceUnits/Dashboard/ OR site:www.eurocontrol.int/Economics/"
+  privacyURL = "https://www.eurocontrol.int/info/privacy-and-website-terms-use"
 
   [params.logo]
     url = "images/euctrl-logo-noname.png"
