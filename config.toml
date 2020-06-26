@@ -219,6 +219,49 @@ ignoreFiles = [
     weight = 1
 
 
+  [[menu.main]]
+    pre = "<i class='far fa-star fa-spin fa-fw'></i>"
+    name = " Key pages"
+    identifier = "keypages"
+    url = ""
+    weight = 55
+  [[menu.main]]
+    name = " COVID-19 crisis"
+    pre = "<i class='fas fa-biohazard'></i>"
+    url = "/covid/"
+    identifier = "key-covid"
+    parent = "keypages"
+    weight = 1
+  [[menu.main]]
+    pre = "<i class='fas fa-plane-departure'></i>"
+    name = " Traffic"
+    url = "/traffic/"
+    identifier = "key-traffic"
+    parent = "keypages"
+    weight = 2
+  [[menu.main]]
+    pre = ""
+    name = " <span style='font-weight: normal'>Daily variation</span>"
+    url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
+    identifier = "key-daily-traffic"
+    parent = "keypages"
+    weight = 3
+  [[menu.main]]
+    pre = "<i class='fas fa-euro-sign'></i>"
+    name = " Economics"
+    url = "/economics/"
+    identifier = "key-economics"
+    parent = "keypages"
+    weight = 4
+  [[menu.main]]
+    pre = ""
+    name = " <span style='font-weight: normal'>Service Units</span>"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
+    identifier = "key-service-units"
+    parent = "keypages"
+    weight = 5
+
+
 [[menu.sidenav]]
     name = "Overview"
     url = "/prcq/"
