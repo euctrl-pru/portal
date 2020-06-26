@@ -234,7 +234,7 @@ ignoreFiles = [
     weight = 1
   [[menu.main]]
     pre = "<i class='fas fa-plane-departure'></i>"
-    name = " Traffic"
+    name = "&nbsp;Traffic"
     url = "/traffic/"
     identifier = "key-traffic"
     parent = "keypages"
