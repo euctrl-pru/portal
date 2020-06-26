@@ -226,7 +226,7 @@ ignoreFiles = [
     url = ""
     weight = 55
   [[menu.main]]
-    name = " COVID-19 crisis"
+    name = "&nbsp;COVID-19 crisis"
     pre = "<i class='fas fa-biohazard'></i>"
     url = "/covid/"
     identifier = "key-covid"
@@ -248,7 +248,7 @@ ignoreFiles = [
     weight = 3
   [[menu.main]]
     pre = "<i class='fas fa-euro-sign'></i>"
-    name = " Economics"
+    name = "&nbsp;Economics"
     url = "/economics/"
     identifier = "key-economics"
     parent = "keypages"
