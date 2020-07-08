@@ -130,7 +130,7 @@ ignoreFiles = [
       pre = "&nbsp;&nbsp;&nbsp;<i class='far fa-star fa-spin fa-fw'></i>"
       name = " <span style='font-weight: normal'>Daily Traffic Variation & Restart</span><i class='far fa-star fa-spin fa-fw'></i>"
       url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
-      identifier = "key-daily-traffic"
+      identifier = "key-traffic-daily-traffic"
       parent = "aiu"
       weight = 17
     [[menu.main]]
@@ -188,21 +188,21 @@ ignoreFiles = [
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Service Units</span>"
       url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
-      identifier = "key-service-units"
+      identifier = "key-economics-service-units"
       parent = "aiu"
       weight = 33
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Unit Rates and Costs</span>"
       url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html"
-      identifier = "key-unit-rates"
+      identifier = "key-economics-unit-rates"
       parent = "aiu"
       weight = 35
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>ATM Cost Effectiveness</span>"
       url = "https://www.eurocontrol.int/ACE"
-      identifier = "key-ace"
+      identifier = "key-economics-ace"
       parent = "aiu"
       weight = 37
   #----------------------
