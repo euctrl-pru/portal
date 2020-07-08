@@ -70,7 +70,7 @@ ignoreFiles = [
   [[menu.main]]
     name = "&nbsp;Home"
     pre = "<i class='fas fa-home'></i>"
-    url = "/covid/"
+    url = "/#"
     identifier = "key-home"
     parent = "aiu"
     weight = 1
@@ -78,7 +78,7 @@ ignoreFiles = [
   [[menu.main]]
     name = "&nbsp;Balanced Scorecard"
     pre = "<i class='fas fa-th'></i>"
-    url = "Balanced Scorecard"
+    url = "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
     identifier = "key-bsc"
     parent = "aiu"
     weight = 3
