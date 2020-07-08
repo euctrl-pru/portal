@@ -238,8 +238,8 @@ ignoreFiles = [
   [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
     name = "&nbsp;Support"
-    url = ""
-    identifier = "key-stakeholder"
+    url = "/reference/"
+    identifier = "key-support"
     parent = "aiu"
     weight = 47
     [[menu.main]]
