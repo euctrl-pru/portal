@@ -489,6 +489,13 @@ ignoreFiles = [
     url = "/covid/covid_vfe"
     identifier= "cov_vfe"
     weight = 50
+[[menu.covid]]
+    name = "Daily traffic"
+    url = "/covid/daily_traffic"
+    identifier= "day_trf"
+    weight = 60
+
+
 
 [[menu.traffic]]
     name = "Traffic Overview"
