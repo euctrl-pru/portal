@@ -26,6 +26,16 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [ganp19]: https://www4.icao.int/ganpportal/ASBU/KPI?IDs=19 "GANP KPI 19"
 
 
+## <img src="/images/eff/ectl_env1.jpg" width="40" height="40" alt="CO2 Emissions by State"> CO2 Emissions by State
+
+| Data description                                                     | Period                                                                         | {{< excel_i >}}             | {{< csv_i >}} |  Info                    |             |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------|---------------|--------------------------|------------------------------------|
+| CO2 emissions and traffic by State<br><small>provided by the [EUROCONTROL Environment Unit][ENV]</small>  | {{< getdata "dwnld" "co_opt_beg" >}} - {{< getdata "dwnld" "co_opt_end" >}}  | [{{< dwnld_i >}}][COxlsx]  |               | [{{< info_i >}}][COmeta] |                                    |
+
+[COxlsx]: /download/xls/CO2_emissions_by_state.xlsx "CO2 (Excel)"
+[COcsv]:  /404/ "CO2 (CSV)"
+[COmeta]: /reference/dataset/emissions/ "CO2 (Meta)"
+[ENV]: https://www.eurocontrol.int/environment "EUROCONTROL’s Environment Unit"
 
 ## <img src="/images/prcq-operations-enroute.png" width="40" height="40" alt="Operations En-route"> Operations En-route
 
