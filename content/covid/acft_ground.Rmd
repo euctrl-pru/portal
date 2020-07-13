@@ -44,7 +44,7 @@ The interactive dashboard below enables an analysis by state, airport or aircraf
 </div></div></div></div>
  
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.<br>
-<p style="color:#c00000">Last data update: 23rd Jun 2020</p></small>
+<p style="color:#c00000">Last data update: 13 Jul 2020</p></small>
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/2b9d2307-db40-4239-a72b-fb68eeb4f910/page/6wMXB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
