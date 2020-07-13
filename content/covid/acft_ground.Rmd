@@ -12,7 +12,7 @@ date: '2020-04-16'
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 60.0%;
+    padding-top: 90.0%;
 }
 
 .resp-iframe {
@@ -29,12 +29,12 @@ date: '2020-04-16'
 <div class="row align-items-start">
 <div class="col-sm-9">
 <br>
-The drastic reduction in traffic has forced many aircraft operators to withdraw from service a significant part of their fleet, be it temporarily or permanently. <br>
-The analysis of these massive groundings of aircraft across Europe in the dashboard below provides another perspective on the magnitude of the impact on the airline sector, with more than 5000 aircraft grounded in Europe since mid-February. 
+The drastic reduction in traffic has forced many aircraft operators to withdraw from service a significant part of their fleet, be it temporarily or permanently.
+The analysis of these massive groundings of aircraft across Europe in the dashboard below provides another perspective on the magnitude of the impact on the airline sector, with more than 6000 aircraft grounded in Europe in April and May.
 
-The timeline shows how the majority of the groundings took place in the second and third week of March, with a decrease of the daily groundings at the end of March. More than 3000 narrow bodies, 500 wide bodies and almost 200 very large aircraft are within these grounded aircraft.
+The timeline shows how the majority of the groundings took place in the second half of March, while a clear recovery is observed since the beginning of June, with progressively more aircraft returning to fly in the EUROCONTROL area.
 
-The interactive dashboard below enables an analysis by state, airport or aircraft operator. 
+The interactive dashboard below enables an analysis by state, airport or aircraft operator.
 
 </div>
 <div class="col-sm-3">
@@ -44,7 +44,7 @@ The interactive dashboard below enables an analysis by state, airport or aircraf
 </div></div></div></div>
  
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.<br>
-<p style="color:#c00000">Last data update: 23rd Jun 2020</p></small>
+<p style="color:#c00000">Last data update: 13 Jul 2020</p></small>
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/2b9d2307-db40-4239-a72b-fb68eeb4f910/page/ZbJMB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
