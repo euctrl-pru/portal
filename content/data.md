@@ -25,19 +25,20 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 [ganp19]: https://www4.icao.int/ganpportal/ASBU/KPI?IDs=19 "GANP KPI 19"
 
+<br>
 
-## <img src="/images/eff/ectl_env1.jpg" width="40" height="40" alt="CO2 Emissions by State"> CO2 Emissions by State
+## <img src="/images/eff/ectl_env2.jpg" width="60" height="60" alt="CO2 Emissions by State"> CO2 Emissions by State
 
 | Data description                                                     | Period                                                                         | {{< excel_i >}}             | {{< csv_i >}} |  Info                    |             |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------|---------------|--------------------------|------------------------------------|
-| CO2 emissions and traffic by State<br><small>provided by the [EUROCONTROL Environment Unit][ENV]</small>  | {{< getdata "dwnld" "co_opt_beg" >}} - {{< getdata "dwnld" "co_opt_end" >}}  | [{{< dwnld_i >}}][COxlsx]  |               | [{{< info_i >}}][COmeta] |                                    |
+| CO2 emissions by State<br><small>supplied by the [EUROCONTROL Aviation Sustainability Unit][ENV]</small>  | {{< getdata "dwnld" "co_opt_beg" >}} - {{< getdata "dwnld" "co_opt_end" >}}  | [{{< dwnld_i >}}][COxlsx]  |               | [{{< info_i >}}][COmeta] |                                    |
 
 [COxlsx]: /download/xls/CO2_emissions_by_state.xlsx "CO2 (Excel)"
 [COcsv]:  /404/ "CO2 (CSV)"
 [COmeta]: /reference/dataset/emissions/ "CO2 (Meta)"
-[ENV]: https://www.eurocontrol.int/environment "EUROCONTROL’s Environment Unit"
+[ENV]: https://www.eurocontrol.int/environment "EUROCONTROL Aviation Sustainability Unit"
 
-## <img src="/images/prcq-operations-enroute.png" width="40" height="40" alt="Operations En-route"> Operations En-route
+## <img src="/images/prcq-operations-enroute.png" width="50" height="50" alt="Operations En-route"> Operations En-route
 
 | Data description                                                                                                                                                                                                      | Period                                                                                           | {{< excel_i >}}                         | {{< csv_i >}}             | Info                               | [ICAO GANP][icaoganp]              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------|---------------------------|------------------------------------|------------------------------------|
@@ -72,7 +73,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [PostOps]: https://www.eurocontrol.int/service/post-operations-performance-adjustment "Post ops adjustment process"
 
 
-## <img src="/images/prcq-operations-airport.png" width="40" height="40" alt="Operations at Airports"> Operations at Airports
+## <img src="/images/prcq-operations-airport.png" width="50" height="50" alt="Operations at Airports"> Operations at Airports
 
 | Data description                                                                                                                                                                              | Period                                                                                  | {{< excel_i >}}                     | {{< csv_i >}}                  |  Info                         | [ICAO GANP][icaoganp]              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------|--------------------------------|-------------------------------|------------------------------------|
@@ -122,7 +123,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 
 
-## <img src="/images/prcq-traffic.png" width="40" height="40" alt="Traffic"> Traffic
+## <img src="/images/prcq-traffic.png" width="50" height="50" alt="Traffic"> Traffic
 
 **NOTE**: the two Traffic Complexity time series, 2014 - 2016 and 2017 - 2019, **cannot** be used joinly to study the full time span 2014 - 2019.<br>
 In fact they use different BADA versions and hence different aircraft characteristics for the same aircraft type; this impacts the value of the
@@ -143,7 +144,7 @@ In fact they use different BADA versions and hence different aircraft characteri
 
 
 
-## <img src="/images/prcq-economics.png" width="40" height="40" alt="ATM Cost-Effectiveness (ACE) operational data"> ATM Cost-Effectiveness (ACE) operational data
+## <img src="/images/prcq-economics.png" width="50" height="50" alt="ATM Cost-Effectiveness (ACE) operational data"> ATM Cost-Effectiveness (ACE) operational data
 
 | Data description                                                     | Period                                                                         | {{< excel_i >}}             | {{< csv_i >}} |  Info                    | [ICAO GANP][icaoganp]              |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------|---------------|--------------------------|------------------------------------|
