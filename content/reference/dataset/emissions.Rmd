@@ -13,7 +13,7 @@ slug: emissions
 source(here::here("_common.R"))
 ```
 ## Data description
-The data provides yearly state statistics of traffic and emissions from 2010 onward.
+The data provides yearly state statistics of departures and CO2 emissions by State from 2010 onwards.
 
 ## Column naming and types
 
@@ -21,28 +21,7 @@ The data provides yearly state statistics of traffic and emissions from 2010 onw
 | FLIGHT_MONTH          | Last month of traffic considered                                                                        |
 |-----------------------|---------------------------------------------------------------------------------------------------------|
 | YEAR                  | Year                                                                                                    |
-| MONTH                 | Month                                                                                                   |
 | STATE_NAME            | State Name                                                                                              |
 | STATE_CODE            | State Code                                                                                              |
-| TF                    | Traffic for that month, and for traffic departing that state                                            |
-| CO2_QTY_TONNES        | Co2 emited for that month, and for traffic departing that state                                         |
-| LY_CO2_QTY_TONNES     | Co2 emited for that month but the previous year, and for traffic   departing that state                 |
-| LY_TF                 | Traffic for that month but for previous year, and for traffic departing   that state                    |
-| YTD_CO2_QTY_TONNES    | Year to date Co2 qty for that departing state (sum of from Jan to current   month in that year)         |
 | Y_CO2_QTY_TONNES      | Co2 Qty for the entire year (for that state)                                                            |
-| YTD_TF                | Year to date traffic for that departing state (sum of from Jan to current   month in that year)         |
 | Y_TF                  | tf for the entire year (for that state)                                                                 |
-| LY_YTD_CO2_QTY_TONNES | Year to date Co2 qty for that departing state (sum of from Jan to current   month in the previous year) |
-| LY_Y_CO2_QTY_TONNES   | Co2 Qty for the entire previous year (for that state)                                                   |
-| LY_YTD_TF             | Year to date tf for that departing state (sum of from Jan to current   month in the previous year)      |
-| LY_Y_TF               | Traffic for the entire previous year (for that state)                                                   |
-| GC_DISTANCE_NM        | Great Circle Distance Flown                                                                             |
-| LY_GC_DISTANCE_NM     | Last Year Great Circle Distance Flown                                                                   |
-| YTD_GC_DISTANCE_NM    | Year to date Great Circle Distance Flown                                                                |
-| Y_GC_DISTANCE_NM      | Yearly Great Circle Distance Flown                                                                      |
-| LY_YTD_GC_DISTANCE_NM | Last year year to date Great Circle Distance Flown                                                      |
-| LY_Y_GC_DISTANCE_NM   | Last year full year Great Circle Distance Flown                                                         |
-| YTD_GROWTH_CO2        | Year to date co2 growth for that state                                                                  |
-| MOM_GROWTH_CO2        | CO2 month grow compare to last year same month                                                          |
-| YTD_GROWTH_TF         | Year to date tf growth for that state                                                                   |
-| MOM_GROWTH_TF         | Tf month grow compare to last year same month                                                           |
