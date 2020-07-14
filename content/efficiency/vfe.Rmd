@@ -28,7 +28,7 @@ title: Vertical flight efficiency
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
-Improved vertical flight efficiency during climb [(CCO)](/acronym/cco/) and descent [(CDO)](/acronym/cdo/) can save substantial amounts of fuel and CO2 and also reduce noise levels in the vicinity of airports. The lower the level segment, the higher the additional fuel consumption.
+Improved vertical flight efficiency during climb [(CCO)](/acronym/cco/) and descent [(CDO)](/acronym/cdo/) can save substantial amounts of fuel and CO2 and also reduce noise levels in the vicinity of airports. The lower the level segment, the higher the additional fuel consumption[^1].
 
 Together with interested stakeholders and [EUROCONTROL's Environment Unit][env_unit], the [PRC](/about/prc/) has developed a [methodology](/methodology/cd-vertical-flight-efficiency-pi/) to compute level off segments during climb and descent at airports. 
 
@@ -72,3 +72,5 @@ The analysis does not aim at quantifying the total amount of vertical en-route i
 
 [vfews]: https://www.eurocontrol.int/news/reducing-vertical-flight-inefficiency-vfe-improve-network-performance "Vertical Flight Efficiency workshop, Nov 2018"
 [env_unit]: https://www.eurocontrol.int/environment "EUROCONTROL Environmnet Unit"
+
+[^1]: Note that the average time in level flight might not always be the optimum metric.

@@ -42,7 +42,7 @@ More details on the methodology are available in the “Methodological Note” b
 </div></div></div></div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.<br>
 <p style="color:#c00000">
-Last data update: 15. July 2020
+Last data update: 15 July 2020
 </p>
 </small>
 <div class="resp-container">
