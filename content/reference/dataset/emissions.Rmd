@@ -1,0 +1,35 @@
+---
+title: CO2 emissions by State
+categories:
+  - metadata
+  - dataset
+type: dataset
+bibliography: ["../../../static/bib/aviation.bib"]
+link-citations: true
+slug: emissions
+---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+<br>
+
+## Data source
+The data is supplied by the [EUROCONTROL Aviation Sustainability Unit][env].
+
+
+## Data description
+The data provides total CO2 emissions by State based on departures.
+
+## Column naming and types
+
+| FLIGHT_MONTH          |                                                                        |
+|-----------------------|---------------------------------------------------------------------------------------------------------|
+| YEAR                  | Year                                                                                                    |
+| STATE_NAME            | State Name                                                                                              |
+| STATE_CODE            | State Code                                                                                              |
+| Y_CO2_QTY_TONNES      | Co2 Qty for the entire year (for that state)                                                            |
+| Y_TF                  | traffic for the entire year (for that state)                                                                 |
+
+
+[env]: https://www.eurocontrol.int/environment "EUROCONTROL Aviation Sustainability Unit"

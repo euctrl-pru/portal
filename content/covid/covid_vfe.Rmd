@@ -26,7 +26,7 @@ title: COVID-19 - Impact on vertical flight efficiency during climb and descent
 <br>
 <div class="row">
 <div class="col-sm-10">
-The COVID-19 crisis caused an unprecedented reduction in traffic in Europe. The dashboard below has been developed in coordination with [EUROCONTROL's Environment Unit][env_unit] to monitor the changes in average time in level flight at the top 20 airports in Europe since the start of the COVID-19 crisis in March 2020. 
+The COVID-19 crisis caused an unprecedented reduction in traffic in Europe. The dashboard below has been developed in coordination with EUROCONTROL's Aviation Sustainability Unit][env_unit] to monitor the changes in average time in level flight at the top 20 airports in Europe since the start of the COVID-19 crisis in March 2020. 
 The dramatic reduction of traffic at airports resulted in a clear improved vertical flight efficiency for those flights still operating at the top 20 airports.     
 
 For more information on the efficiency during climb [(CCO)](/acronym/cco/) and descent [(CDO)](/acronym/cdo/) including the underlying methodology, please visit also our [Vertical flight efficiency page](/efficiency/vfe) in our [efficiency section](/efficiency/).</div>
@@ -37,7 +37,7 @@ For more information on the efficiency during climb [(CCO)](/acronym/cco/) and d
 </div></div></div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.<br>
 <p style="color:#c00000">
-Last data update: 15. May 2020
+Last data update: 13 July 2020
 </p>
 </small>
 
@@ -45,4 +45,4 @@ Last data update: 15. May 2020
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/260b4637-9092-4b56-88c3-9b7055b390c7/page/W5oMB" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
-[env_unit]: https://www.eurocontrol.int/environment "EUROCONTROL Environmnet Unit"
+[env_unit]: https://www.eurocontrol.int/environment "EUROCONTROL's Aviation Sustainability Unit"
