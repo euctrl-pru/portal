@@ -58,11 +58,31 @@ title: COVID-19 - Daily traffic
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/ba2ceffcd07f7abc.js?v=3";
-  (new Runtime).module(define, name => {
+  import define_nb1 from "https://api.observablehq.com/d/ba2ceffcd07f7abc.js?v=3";
+  (new Runtime).module(define_nb1, name => {
     if (name === "my_text") return Inspector.into("#observablehq-b0338e84 .observablehq-my_text")();
     if (name === "plot") return Inspector.into("#observablehq-b0338e84 .observablehq-plot")();
     if (name === "viewof country") return Inspector.into("#observablehq-b0338e84 .observablehq-viewof-country")();
+  });
+</script>
+<div id="observablehq-5238703d">
+<div class="observablehq-loadStatus">
+
+</div>
+<div class="observablehq-map">
+
+</div>
+<div class="observablehq-viewof-selected_date">
+
+</div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define_nb2 from "https://api.observablehq.com/d/d153a6a87719e4f2.js?v=3";
+  (new Runtime).module(define_nb2, name => {
+    if (name === "loadStatus") return Inspector.into("#observablehq-5238703d .observablehq-loadStatus")();
+    if (name === "map") return Inspector.into("#observablehq-5238703d .observablehq-map")();
+    if (name === "viewof selected_date") return Inspector.into("#observablehq-5238703d .observablehq-viewof-selected_date")();
   });
 </script>
 </div>
