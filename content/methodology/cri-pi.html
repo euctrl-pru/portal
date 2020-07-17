@@ -112,7 +112,8 @@ Figure 3: Distribution of unassessed occurences (severity D) into other severity
 <dd>estimated number of safety occurrence type <span class="math inline">\(i\)</span>
 </dd>
 <dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
-<dd>number of reported occurrences of Severity Classification D (not determined) for occurrence type <span class="math inline">\(i\)</span>
+<dd>number of reported occurrences of Severity Classification D (not determined)
+for occurrence type <span class="math inline">\(i\)</span>
 </dd>
 <dt><span class="math inline">\(P_i\)</span></dt>
 <dd>probability of safety occurrence type <span class="math inline">\(i\)</span>
@@ -136,12 +137,15 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="cri-calculation-using-human-perception-of-risk" class="section level3">
 <h3>CRI calculation using human perception of risk</h3>
-<p>Using the estimated total number of occurrences for each type and adding to it the human perception of their risk, it is possible to calculate the CRI for each Entity separately. The simple formula to calculate the CRI is presented below.</p>
-<span class="math display">\[\begin{align}
+<p>Using the estimated total number of occurrences for each type and adding to it
+the human perception of their risk, it is possible to calculate the
+CRI for each Entity separately.
+The simple formula to calculate the CRI is presented below.</p>
+<p><span class="math display">\[\begin{align}
 \text{CRI}_i &amp; = \text{No}_{\text{occ_est_i}} * w_i \\
 
 \text{CRI}  &amp; = \sum_{i}^{} \frac{\text{CRI}_i}{\text{Total No}_{{occ}}}
-\end{align}\]</span>
+\end{align}\]</span></p>
 <p>where</p>
 <dl>
 <dt><span class="math inline">\(\text{CRI}_i\)</span></dt>
@@ -163,7 +167,7 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 <li><p>Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1</p></li>
 <li><p>Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2</p></li>
 </ol>
-<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span></p>
+<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">2019</a>)</span></p>
 </div>
 <div id="cri-normalisation" class="section level3">
 <h3>CRI normalisation</h3>
@@ -177,8 +181,8 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 <p>Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the <a href="/acronym/rat/" title="RAT">Risk Assessment Methodology</a>.</p>
 <table>
 <colgroup>
-<col width="20%" />
-<col width="79%" />
+<col width="19%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -343,11 +347,12 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 </div>
 <div id="further-information" class="section level2">
 <h2>Further Information</h2>
-<p>For further information please refer also to the detailed report explaining the development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019">2019</a>)</span>.</p>
+<p>For further information please refer also to the detailed report explaining the development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">2019</a>)</span>.</p>
 </div>
 <div id="working-example" class="section level2">
 <h2>Working example</h2>
-<p>Script calculating the CRI using the explained methodology and sample data are available for testing purposes <a href="/download/other/CRI-External.zip">here</a>.</p>
+<p>Script calculating the CRI using the explained methodology and sample data are available for testing purposes [here]
+<a href="/download/other/CRI-External.zip">crizip</a>.</p>
 <p>Please feel free to use sample data provided to get familiar with the methodology.</p>
 <p>User guide how to set up the environment can be found at ‘README.pdf’ file within repository.</p>
 </div>
@@ -355,7 +360,7 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 <h2>References</h2>
 <div id="refs" class="references">
 <div id="ref-performancereviewcommissionCompositeRiskIndex2019">
-<p>Commission, Performance Review. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf" class="uri">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.</p>
+<p>Commission, Performance Review. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.</p>
 </div>
 </div>
 </div>
