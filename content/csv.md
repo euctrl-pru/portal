@@ -19,6 +19,7 @@ The datasets made available are:
 
 * Horizontal Flight Efficiency: `hfe`
     * Entity type can be `State (FIR)` or `FAB (FIR)	`
+    * Please note that the code `SFR` in `Model type` corresponds to the Shortest constrained route (`SCR`). 
 
 * Airport Arrival ATFM Delays: `apt_dly`
 
