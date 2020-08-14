@@ -19,7 +19,13 @@ The data is supplied by the [EUROCONTROL Aviation Sustainability Unit][env].
 
 
 ## Data description
-The data provides total CO2 emissions by State based on departures.
+The CO2 emissions were calculated with the EUROCONTROL [Small Emitters Tool (SET)][set], which enables to estimate the fuel burn and associated CO2 emissions for an entire flight.  Hence, the results reflect total CO2 emissions from controlled flights rather than ANSP/ATM performance. 
+
+The **total CO2 emissions for each State** were calculated based on **departing [IFR](/acronym/ifr/) flights** billed by the [EUROCONTROL Route Charges Office][crco], **aircraft type** and **actual flown distance** (full trajectory from origin to destination). 
+
+For instance, the total CO2 emissions for the full trajectory of a flight from Brussels to New York would be included in the results for Belgium. 
+A flight from New York to Brussels would however NOT be included in the results for Belgium.  
+
 
 ## Column naming and types
 
@@ -33,3 +39,5 @@ The data provides total CO2 emissions by State based on departures.
 
 
 [env]: https://www.eurocontrol.int/environment "EUROCONTROL Aviation Sustainability Unit"
+[set]: https://www.eurocontrol.int/tool/small-emitters-tool "small emitters tool"
+[crco]: https://www.eurocontrol.int/crco "EUROCONTROL Route Charges Office"

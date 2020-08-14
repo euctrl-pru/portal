@@ -73,4 +73,5 @@ The analysis does not aim at quantifying the total amount of vertical en-route i
 [vfews]: https://www.eurocontrol.int/news/reducing-vertical-flight-inefficiency-vfe-improve-network-performance "Vertical Flight Efficiency workshop, Nov 2018"
 [env_unit]: https://www.eurocontrol.int/environment "EUROCONTROL's Aviation Sustainability Unit"
 
-[^1]: Note that the average time in level flight might not always be the optimum metric.
+[^1]: The European CCO / CDO Task Force advocates a harmonised metric to measure CCO / CDO using ‘the average time in level flight’ to enable a comparative CCO / CDO performance measurement across Europe.
+The Task Force is fully aware of potential pitfalls in using this indicator (see the European CCO / CDO Action Plan Appendix B for more information) but considers the average time in level flight to be the most appropriate proxy for the measurement of CCO / CDO. This consideration is based upon current expertise and stakeholder practices, the data currently available for pan-European analysis, and the fact that a straightforward measurement of fuel burn is not yet possible.

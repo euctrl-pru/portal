@@ -111,7 +111,12 @@ read <- partial(read_complexity,
                 bada_ver = opts$b,
                 sw_ver = opts$s)
 ci <- map_dfr(opts$FILENAME, read)
-r <- ROracle::dbWriteTable(con, opts$t, value = ci, append = TRUE, date = TRUE)
+r <- ROracle::dbWriteTable(
+  con,
+  opts$t,
+  value = ci,
+  append = TRUE,
+  date = TRUE)
 
 r <- dbDisconnect(con)
 Sys.unsetenv("TZ")

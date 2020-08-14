@@ -286,7 +286,7 @@ Sys.unsetenv("TZ")
 Sys.unsetenv("ORA_SDTZ")
 
 data <- data %>%
-  as.tbl() %>%
+  as_tibble() %>%
   mutate(
     YEAR = as.integer(YEAR),
     MONTH_NUM = as.integer(MONTH_NUM),
