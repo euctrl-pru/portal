@@ -56,15 +56,15 @@ layout: default
 
 ## Czech Republic
 
-* [Prague/Ruzyne (LKPR)](LKPR.html)
+* [Prague (LKPR)](LKPR.html)
 
 ## Denmark
 
-* [Copenhagen/Kastrup (EKCH)](EKCH.html)
+* [Copenhagen-Kastrup (EKCH)](EKCH.html)
 
 ## Estonia
 
-* [Tallinn/Ulemiste (EETN)](EETN.html)
+* [Tallinn (EETN)](EETN.html)
 
 ## Finland
 
@@ -72,29 +72,29 @@ layout: default
 
 ## France
 
-* [Basle/Mulhouse (LFSB)](LFSB.html)
-* [Lyon/Sartolas (LFLL)](LFLL.html)
-* [Nice (LFMN)](LFMN.html)
-* [Paris/Charles-De-Gaulle (LFPG)](LFPG.html)
-* [Paris/Orly (LFPO)](LFPO.html)
+* [Bâle-Mulhouse (LFSB)](LFSB.html)
+* [Lyon-Saint-Exupéry (LFLL)](LFLL.html)
+* [Nice-Côte d’Azur (LFMN)](LFMN.html)
+* [Paris-Charles-de-Gaulle (LFPG)](LFPG.html)
+* [Paris-Orly (LFPO)](LFPO.html)
 
 ## Germany
 
+* [Berlin-Schoenefeld (EDDB)](EDDB.html)
 * [Berlin-Tegel (EDDT)](EDDT.html)
 * [Bremen (EDDW)](EDDW.html)
-* [Cologne/Bonn (EDDK)](EDDK.html)
+* [Cologne-Bonn (EDDK)](EDDK.html)
 * [Dresden (EDDC)](EDDC.html)
 * [Dusseldorf (EDDL)](EDDL.html)
 * [Erfurt (EDDE)](EDDE.html)
 * [Frankfurt (EDDF)](EDDF.html)
 * [Hamburg (EDDH)](EDDH.html)
 * [Hanover (EDDV)](EDDV.html)
-* [Leipzig/Halle (EDDP)](EDDP.html)
+* [Leipzig-Halle (EDDP)](EDDP.html)
+* [Muenster-Osnabrueck (EDDG)](EDDG.html)
 * [Munich (EDDM)](EDDM.html)
-* [MÃ¼nster-OsnabrÃ¼ck (EDDG)](EDDG.html)
-* [Nurenberg (EDDN)](EDDN.html)
-* [SaarbrÃ¼cke (EDDR)](EDDR.html)
-* [Schoenefeld-Berlin (EDDB)](EDDB.html)
+* [Nuremberg (EDDN)](EDDN.html)
+* [Saarbruecken (EDDR)](EDDR.html)
 * [Stuttgart (EDDS)](EDDS.html)
 
 ## Greece
@@ -103,7 +103,7 @@ layout: default
 
 ## Hungary
 
-* [Budapest/Ferihegy (LHBP)](LHBP.html)
+* [Budapest-Ferihegy (LHBP)](LHBP.html)
 
 ## Ireland
 
@@ -112,23 +112,23 @@ layout: default
 
 ## Italy
 
-* [Bergamo/Orio Alserio (LIME)](LIME.html)
+* [Bergamo (LIME)](LIME.html)
 * [Bologna (LIPE)](LIPE.html)
-* [Catania Fontanarossa (LICC)](LICC.html)
-* [Milan/Linate (LIML)](LIML.html)
-* [Milan/Malpensa (LIMC)](LIMC.html)
-* [Napoli Capodichino (LIRN)](LIRN.html)
-* [Rome/Ciampino (LIRA)](LIRA.html)
-* [Rome/Fiumicino (LIRF)](LIRF.html)
-* [Venice/Tessera (LIPZ)](LIPZ.html)
+* [Catania (LICC)](LICC.html)
+* [Milan-Linate (LIML)](LIML.html)
+* [Milan-Malpensa (LIMC)](LIMC.html)
+* [Naples (LIRN)](LIRN.html)
+* [Rome-Ciampino (LIRA)](LIRA.html)
+* [Rome-Fiumicino (LIRF)](LIRF.html)
+* [Venice (LIPZ)](LIPZ.html)
 
 ## Latvia
 
-* [Riga Intl (EVRA)](EVRA.html)
+* [Riga (EVRA)](EVRA.html)
 
 ## Lithuania
 
-* [Vilnius Intl (EYVI)](EYVI.html)
+* [Vilnius (EYVI)](EYVI.html)
 
 ## Luxembourg
 
@@ -136,19 +136,19 @@ layout: default
 
 ## Malta
 
-* [Malta/Luqa (LMML)](LMML.html)
+* [Malta (LMML)](LMML.html)
 
 ## Netherlands
 
-* [Amsterdam (EHAM)](EHAM.html)
+* [Amsterdam-Schiphol (EHAM)](EHAM.html)
 
 ## Norway
 
-* [Oslo/Gardermoen (ENGM)](ENGM.html)
+* [Oslo-Gardermoen (ENGM)](ENGM.html)
 
 ## Poland
 
-* [Warsaw/Okecie (EPWA)](EPWA.html)
+* [Warszawa-Chopina (EPWA)](EPWA.html)
 
 ## Portugal
 
@@ -158,11 +158,11 @@ layout: default
 
 ## Romania
 
-* [Otopeni-Intl. (LROP)](LROP.html)
+* [Bucharest-Otopeni (LROP)](LROP.html)
 
 ## Slovakia
 
-* [Bratislava Ivanka (LZIB)](LZIB.html)
+* [Bratislava (LZIB)](LZIB.html)
 
 ## Slovenia
 
@@ -171,39 +171,39 @@ layout: default
 ## Spain
 
 * [Alicante (LEAL)](LEAL.html)
-* [Arrecife Lanzarote (GCRR)](GCRR.html)
 * [Barcelona (LEBL)](LEBL.html)
 * [Bilbao (LEBB)](LEBB.html)
+* [Gran Canaria (GCLP)](GCLP.html)
 * [Ibiza (LEIB)](LEIB.html)
-* [Las Palmas (GCLP)](GCLP.html)
-* [Madrid/Barajas (LEMD)](LEMD.html)
-* [Malaga (LEMG)](LEMG.html)
-* [Palma De Mallorca (LEPA)](LEPA.html)
+* [Lanzarote (GCRR)](GCRR.html)
+* [Madrid-Barajas (LEMD)](LEMD.html)
+* [Málaga (LEMG)](LEMG.html)
+* [Palma de Mallorca (LEPA)](LEPA.html)
 * [Sevilla (LEZL)](LEZL.html)
-* [Tenerife Norte (GCXO)](GCXO.html)
-* [Tenerife Sur/Reina Sofia (GCTS)](GCTS.html)
+* [Tenerife North (GCXO)](GCXO.html)
+* [Tenerife Sur-Reina Sofia (GCTS)](GCTS.html)
 * [Valencia (LEVC)](LEVC.html)
 
 ## Sweden
 
-* [Gotenborg/Landvetter (ESGG)](ESGG.html)
-* [Stockholm/Arlanda (ESSA)](ESSA.html)
+* [Göteborg (ESGG)](ESGG.html)
+* [Stockholm-Arlanda (ESSA)](ESSA.html)
 
 ## Switzerland
 
 * [Geneva (LSGG)](LSGG.html)
-* [Zurich (LSZH)](LSZH.html)
+* [Zürich (LSZH)](LSZH.html)
 
 ## United Kingdom
 
 * [Aberdeen (EGPD)](EGPD.html)
 * [Birmingham (EGBB)](EGBB.html)
-* [Bristol/Lulsgate (EGGD)](EGGD.html)
+* [Bristol (EGGD)](EGGD.html)
 * [Edinburgh (EGPH)](EGPH.html)
 * [Glasgow (EGPF)](EGPF.html)
-* [London/City (EGLC)](EGLC.html)
-* [London/Gatwick (EGKK)](EGKK.html)
-* [London/Heathrow (EGLL)](EGLL.html)
-* [London/Luton (EGGW)](EGGW.html)
-* [London/Stansted (EGSS)](EGSS.html)
+* [London-City (EGLC)](EGLC.html)
+* [London-Gatwick (EGKK)](EGKK.html)
+* [London-Heathrow (EGLL)](EGLL.html)
+* [London-Luton (EGGW)](EGGW.html)
+* [London-Stansted (EGSS)](EGSS.html)
 * [Manchester (EGCC)](EGCC.html)
