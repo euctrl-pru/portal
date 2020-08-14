@@ -3,7 +3,7 @@
 # 
 # Assumptions:
 #
-# * the second field of the filenames (eparated by '_' ) is the day the TC is calculated for,
+# * the second field of the filename (separated by '_' ) is the day the TC is calculated for,
 #    i.e. '20181231' in 'complexity_20181231_bada_3_15_201912.csv'
 #
 library(lubridate)
