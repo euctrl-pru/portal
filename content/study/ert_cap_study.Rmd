@@ -44,9 +44,9 @@ To gather opinions and experiences of participating stakeholders in regards to t
 Individual replies will not be disclosed at the workshop but will help to focus the discussions on the day of the workshop 
 and, additionally, drive the future work of the PRC. 
 
-<a href="https://forms.gle/J8DnBY4cWsrCXN437" class="btn btn-info" role="button"> Please register <ins>no later than 06 October 2020</ins> by completing this form.</a>
+<a href="https://forms.gle/EVb7vEEpHrpwTzAn8" class="btn btn-info" role="button"> Please register <ins>no later than 06 October 2020</ins> by completing this form.</a>
 
 Registered stakeholders will receive further details on the timing and agenda closer to the day of the workshop. 
 </div>
 
-[reg_ert_cap_ws]: https://forms.gle/J8DnBY4cWsrCXN437 "Registration form PRC en route capacity workshop"
+[reg_ert_cap_ws]: https://forms.gle/EVb7vEEpHrpwTzAn8 "Registration form PRC en route capacity workshop"
