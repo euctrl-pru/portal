@@ -61,7 +61,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [ERT-DLY-FIR-meta]: /reference/dataset/en-route-atfm-delay-fir/ "ERT-DLY (Meta)"
 
 [HFExlsx]: /download/xls/Horizontal_Flight_Efficiency.xlsx "HFE (Excel)"
-[HFEcsv]: {{< relref "csv.md" >}} "HFE (CSV)"
+[HFEcsv]: {{< relref "csv.md" >}} "CSV files"
 [HFEmeta]: /reference/dataset/horizontal-flight-efficiency/ "HFE (Meta)"
 
 [DefAUA]: /acronym/aua/ "AUA definition"
