@@ -1,9 +1,5 @@
 ---
 title: ACC - Area Control Centre
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: acc
 ---
 

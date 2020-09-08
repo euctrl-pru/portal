@@ -1,9 +1,5 @@
 ---
 title: VFR - Visual Flight Rules
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: vfr
 ---
 

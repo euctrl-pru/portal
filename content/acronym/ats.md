@@ -1,9 +1,5 @@
 ---
 title: ATS - Air Traffic Service
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ats
 ---
 

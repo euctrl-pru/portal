@@ -1,9 +1,5 @@
 ---
 title: STAR - Standard Arrival Route
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: star
 ---
 

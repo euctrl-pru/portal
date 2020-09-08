@@ -1,9 +1,5 @@
 ---
 title: Oro Navigacija
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: oro-navigacija
 ---
 

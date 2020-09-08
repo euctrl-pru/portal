@@ -1,9 +1,5 @@
 ---
 title: AIRAC - Aeronautical Information Regulation And Control
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: airac
 ---
 

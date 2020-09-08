@@ -1,9 +1,5 @@
 ---
 title: IATA code 89
-categories:
-  - metadata
-  - definition
-type: definition
 slug: iata-code-89
 bibliography: [../../static/bib/aviation.bib]
 link-citations: true

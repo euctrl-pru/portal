@@ -1,9 +1,5 @@
 ---
 title: BADA - Base of Aircraft Data
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: bada
 ---
 

@@ -1,8 +1,5 @@
 ---
 title: Air transport statistics
-categories:
-  - metadata
-  - glossary
 ---
 
 The following links provide perspectives on Statistics in Air Transport:

@@ -1,9 +1,5 @@
 ---
 title: Avinor
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: avinor
 ---
 

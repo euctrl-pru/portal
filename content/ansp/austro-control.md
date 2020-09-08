@@ -1,9 +1,5 @@
 ---
 title: Austro Control
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: austro-control
 ---
 

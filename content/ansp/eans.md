@@ -1,9 +1,5 @@
 ---
 title: EANS
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: eans
 ---
 

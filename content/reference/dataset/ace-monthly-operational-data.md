@@ -1,9 +1,5 @@
 ---
 title: ACE Monthly Operational Data Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: ace-monthly-operational-data
 ---
 

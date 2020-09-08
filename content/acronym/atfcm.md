@@ -1,9 +1,5 @@
 ---
 title: ATFCM - Air Traffic Flow and Capacity Management
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: atfcm
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ATC - Air Traffic Control
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: atc
 ---
 

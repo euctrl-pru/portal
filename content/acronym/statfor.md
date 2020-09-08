@@ -1,9 +1,5 @@
 ---
 title: STATFOR - Statistics and Forecast Service
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: statfor
 ---
 

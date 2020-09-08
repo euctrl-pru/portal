@@ -1,9 +1,5 @@
 ---
-  title: CRInorm - Composite Risk Index normalised
-categories:
-  - metadata
-- acronym
-type: acronym
+title: CRInorm - Composite Risk Index normalised
 slug: crinorm
 ---
   

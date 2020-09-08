@@ -1,9 +1,5 @@
 ---
 title: IMC - Instrument Meteorological Conditions
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: imc
 ---
 

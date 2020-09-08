@@ -1,9 +1,5 @@
 ---
 title: ANSP - Air Navigation Services Provider
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ansp
 ---
 

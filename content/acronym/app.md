@@ -1,9 +1,5 @@
 ---
 title: APP - Approach Control Office
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: app
 ---
 

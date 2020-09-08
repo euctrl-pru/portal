@@ -1,9 +1,5 @@
 ---
 title: MET - METeorological services for air navigation
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: met
 ---
 

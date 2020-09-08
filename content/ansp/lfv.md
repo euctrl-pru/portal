@@ -1,9 +1,5 @@
 ---
 title: LFV
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: lfv
 ---
 

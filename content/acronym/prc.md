@@ -1,9 +1,5 @@
 ---
 title: PRC - Performance Review Commission
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: prc
 ---
 

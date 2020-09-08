@@ -1,9 +1,5 @@
 ---
 title: ASBU - Aviation System Block Upgrade
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: asbu
 ---
 

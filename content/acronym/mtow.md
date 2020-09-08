@@ -1,9 +1,5 @@
 ---
 title: MTOW - Maximum Take-Off Weight
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: mtow
 ---
 

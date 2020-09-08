@@ -1,9 +1,5 @@
 ---
 title: IFPS - Initial Flight Plan Processing System
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ifps
 ---
 

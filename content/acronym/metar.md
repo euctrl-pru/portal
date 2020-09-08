@@ -1,9 +1,5 @@
 ---
 title: METAR - METeorological Aerodrome or Aeronautical Report
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: metar
 ---
 

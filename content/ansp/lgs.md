@@ -1,9 +1,5 @@
 ---
 title: LGS
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: lgs
 ---
 

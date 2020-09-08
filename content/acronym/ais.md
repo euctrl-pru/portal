@@ -1,9 +1,5 @@
 ---
 title: AIS - Aeronautical Information Service
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ais
 ---
 

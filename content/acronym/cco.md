@@ -1,9 +1,5 @@
 ---
 title: CCO - Continuous Climb Operation
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cco
 ---
 

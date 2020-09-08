@@ -1,9 +1,5 @@
 ---
 title: ESRA - EUROCONTROL Statistical Reference Area
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: esra
 ---
 

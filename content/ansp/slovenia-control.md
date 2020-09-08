@@ -1,9 +1,5 @@
 ---
 title: Slovenia Control
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: slovenia-control
 ---
 

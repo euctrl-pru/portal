@@ -1,9 +1,5 @@
 ---
 title: RAD - Route Availability Document
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: rad
 ---
 

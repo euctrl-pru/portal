@@ -1,9 +1,5 @@
 ---
 title: SRR - Shortest RAD restrictions applied Route
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: srr
 ---
 

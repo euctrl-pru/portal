@@ -1,9 +1,5 @@
 ---
 title: ALDT - Actual Landing Time
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: aldt
 ---
 

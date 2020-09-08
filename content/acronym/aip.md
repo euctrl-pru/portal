@@ -1,9 +1,5 @@
 ---
 title: AIP - Aeronautical Information Publication
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: aip
 ---
 

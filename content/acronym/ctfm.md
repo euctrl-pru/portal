@@ -1,9 +1,6 @@
 ---
 title: CTFM - Current Tactical Flight Model
-categories:
-  - metadata
-  - acronym
-type: acronym
+slug: ctfm
 ---
 
 A mathematical model containing a point and airspace volume profile created in 

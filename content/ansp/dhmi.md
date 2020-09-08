@@ -1,9 +1,5 @@
 ---
 title: DHMI
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: dhmi
 ---
 

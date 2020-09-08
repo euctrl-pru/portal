@@ -1,9 +1,5 @@
 ---
 title: SUR - Shortest Unconstrained Route
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: sur
 ---
 

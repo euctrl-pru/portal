@@ -1,9 +1,5 @@
 ---
 title: TMA - Terminal Manoeuvring Area
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tma
 ---
 

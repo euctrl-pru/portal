@@ -1,9 +1,5 @@
 ---
 title: GA - General Aviation
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ga
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: HCAA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: hcaa
 ---
 

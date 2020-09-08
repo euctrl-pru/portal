@@ -1,9 +1,5 @@
 ---
 title: RVSM - Reduced Vertical Separation Minima
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: rvsm
 ---
 

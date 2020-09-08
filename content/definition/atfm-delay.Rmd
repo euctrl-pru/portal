@@ -1,9 +1,5 @@
 ---
 title: ATFM Delay
-categories:
-  - metadata
-  - definition
-type: definition
 slug: atfm-delay
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}

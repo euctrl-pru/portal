@@ -1,9 +1,5 @@
 ---
 title: XMAN - CROSS border arrival MANagement
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: xman
 ---
 

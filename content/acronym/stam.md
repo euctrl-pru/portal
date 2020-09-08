@@ -1,9 +1,5 @@
 ---
 title: STAM - Short Term ATFCM Measures
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: stam
 ---
 

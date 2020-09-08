@@ -1,9 +1,5 @@
 ---
 title: Unimpeded Taxi-out Time - Technical Note
-categories:
-  - metadata
-  - methodology
-type: methodology
 slug: unimpeded-taxi-out-time
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}

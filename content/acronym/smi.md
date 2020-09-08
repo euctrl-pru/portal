@@ -1,9 +1,5 @@
 ---
 title: SMI - Separation Minima Infringement
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: smi
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: Datasets Definition
-categories:
-  - metadata
-  - dataset
-type: dataset
 ---
 
 ## <img src="/images/prcq-operations-enroute.png" width="32" height="32"> Operations En-route

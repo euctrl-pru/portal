@@ -1,9 +1,5 @@
 ---
 title: MATS
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: mats
 ---
 

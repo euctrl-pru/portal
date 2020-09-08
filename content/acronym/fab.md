@@ -1,9 +1,5 @@
 ---
 title: FAB - Functional Airspace Block
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: fab
 ---
 

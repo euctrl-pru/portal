@@ -1,9 +1,5 @@
 ---
 title: ADEP - Aerodrome of Departure
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: adep
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: TNC - Terminal Navigation Charges
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tnc
 ---
 

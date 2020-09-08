@@ -1,8 +1,5 @@
 ---
 title: Data
-categories:
-  - download
-  - data
 aliases: ["/data/performancearea/"]
 ndwk_i: <i class="fa pru fa-flask"></i>
 fltr_i: <i class="fa pru fa-filter"></i>

@@ -1,9 +1,5 @@
 ---
 title: Skyguide
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: skyguide
 ---
 

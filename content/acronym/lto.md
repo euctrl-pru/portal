@@ -1,9 +1,5 @@
 ---
 title: LTO - Landing and Take-off cycle
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: lto
 ---
 

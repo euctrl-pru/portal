@@ -1,9 +1,5 @@
 ---
 title: A-CDM - Airport Collaborative Decision-Making
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: a-cdm
 ---
 

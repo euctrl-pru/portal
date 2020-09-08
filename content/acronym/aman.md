@@ -1,9 +1,5 @@
 ---
 title: AMAN - Arrival MANagement
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: aman
 ---
 

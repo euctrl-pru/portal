@@ -1,9 +1,5 @@
 ---
 title: GAT - General Air Traffic
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: gat
 ---
 

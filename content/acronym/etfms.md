@@ -1,9 +1,5 @@
 ---
 title: ETFMS - Enhanced Tactical Flow Management System
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: etfms
 ---
 

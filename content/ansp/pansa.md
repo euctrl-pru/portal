@@ -1,9 +1,5 @@
 ---
 title: PANSA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: pansa
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: KEA
-categories:
-  - metadata
-  - definition
-type: definition
 slug: kea
 ---
 

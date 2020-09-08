@@ -1,9 +1,5 @@
 ---
 title: NM - Nautical Mile
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: nm
 ---
 

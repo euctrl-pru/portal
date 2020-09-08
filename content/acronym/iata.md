@@ -1,9 +1,5 @@
 ---
 title: IATA - International Air Transport Association
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: iata
 ---
 

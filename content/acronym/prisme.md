@@ -1,10 +1,5 @@
 ---
-title: PRISME - Pan European Repository of Information Supporting the Management of
-  EATM
-categories:
-  - metadata
-  - acronym
-type: acronym
+title: PRISME - Pan European Repository of Information Supporting the Management of EATM
 slug: prisme
 ---
 

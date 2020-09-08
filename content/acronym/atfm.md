@@ -1,9 +1,5 @@
 ---
 title: ATFM - Air Traffic Flow Management
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: atfm
 ---
 

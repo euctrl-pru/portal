@@ -1,9 +1,5 @@
 ---
 title: KEA - Key performance Environment indicator based on Actual trajectory
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: kea
 ---
 

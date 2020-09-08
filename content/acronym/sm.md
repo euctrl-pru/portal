@@ -1,9 +1,5 @@
 ---
 title: SM - Separation Minima
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: sm
 ---
 

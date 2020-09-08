@@ -1,9 +1,5 @@
 ---
 title: DSNA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: dsna
 ---
 

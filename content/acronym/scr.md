@@ -1,9 +1,5 @@
 ---
 title: SCR - Shortest Constrained Route
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: scr
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: MoldATSA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: moldatsa
 ---
 

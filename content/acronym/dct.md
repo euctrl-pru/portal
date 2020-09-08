@@ -1,9 +1,5 @@
 ---
 title: DCT - DireCT route
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: dct
 ---
 

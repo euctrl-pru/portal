@@ -1,9 +1,5 @@
 ---
 title: ATFM slot adherence
-categories:
-  - metadata
-  - definition
-type: definition
 slug: atfm-slot-adherence
 bibliography: [../../static/bib/legislation.bib]
 link-citations: true

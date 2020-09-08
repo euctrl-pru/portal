@@ -1,9 +1,5 @@
 ---
 title: Sakaeronavigatsia
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: sakaeronavigatsia
 ---
 

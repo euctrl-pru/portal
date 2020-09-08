@@ -1,7 +1,5 @@
 ---
 title: Bibliography
-categories:
-  - metadata
 ---
 
 * [EU Legislation](/bibliography/legislation/)

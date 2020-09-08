@@ -1,9 +1,5 @@
 ---
 title: FUA - Flexible Use of Airspace
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: fua
 ---
 

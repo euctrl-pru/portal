@@ -1,9 +1,5 @@
 ---
 title: PRU - Performance Review Unit
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: pru
 ---
 

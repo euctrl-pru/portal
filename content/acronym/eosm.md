@@ -1,9 +1,5 @@
 ---
 title: EoSM - Effectiveness of Safety Management
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: eosm
 ---
 

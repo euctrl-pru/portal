@@ -1,9 +1,5 @@
 ---
 title: AST - Annual Summary Template
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ast
 ---
 

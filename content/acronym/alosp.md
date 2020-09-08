@@ -1,9 +1,5 @@
 ---
 title: ALoSP - Acceptable Level of Safety Performance
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: alosp
 ---
 

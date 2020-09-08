@@ -1,9 +1,5 @@
 ---
 title: CO2 emissions by State
-categories:
-  - metadata
-  - dataset
-type: dataset
 bibliography: ["../../../static/bib/aviation.bib"]
 link-citations: true
 slug: emissions

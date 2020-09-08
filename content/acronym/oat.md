@@ -1,9 +1,5 @@
 ---
 title: OAT - Operational Air Traffic
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: oat
 ---
 

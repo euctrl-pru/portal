@@ -1,9 +1,5 @@
 ---
 title: TOBT - Target Off-Block Time
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tobt
 ---
 

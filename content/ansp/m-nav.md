@@ -1,9 +1,5 @@
 ---
 title: M‐NAV
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: m-nav
 ---
 

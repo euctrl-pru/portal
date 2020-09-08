@@ -1,9 +1,5 @@
 ---
 title: LPS
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: lps
 ---
 

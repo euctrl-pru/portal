@@ -1,9 +1,5 @@
 ---
 title: ESSIP - European Single Sky ImPlementation plan
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: essip
 ---
 

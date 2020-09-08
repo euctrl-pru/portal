@@ -1,9 +1,6 @@
 ---
 title: CDO - Continuous Descent Operation
-categories:
-  - metadata
-  - acronym
-type: acronym
+slug: cdo
 ---
 
 An operation, enabled by airspace design, procedure design and [ATC]({{< relref "atc.md" >}})

@@ -1,9 +1,5 @@
 ---
 title: NOTAM - NOTices to AirMen
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: notam
 ---
 

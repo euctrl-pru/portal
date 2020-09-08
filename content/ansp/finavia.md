@@ -1,9 +1,5 @@
 ---
 title: Finavia
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: finavia
 ---
 

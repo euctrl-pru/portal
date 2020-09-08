@@ -1,9 +1,5 @@
 ---
 title: FIR - Flight Information Region
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: fir
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: BLI - Basic Load Index
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: bli
 ---
 

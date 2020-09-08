@@ -1,9 +1,5 @@
 ---
 title: TCZ - Terminal Charging Zone
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tcz
 ---
 

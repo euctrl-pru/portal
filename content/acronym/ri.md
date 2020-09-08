@@ -1,9 +1,5 @@
 ---
 title: RI - Runway Incursion
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ri
 ---
 

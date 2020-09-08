@@ -1,9 +1,5 @@
 ---
 title: SSP - State Safety Programme
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ssp
 ---
 

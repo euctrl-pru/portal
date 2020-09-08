@@ -1,9 +1,5 @@
 ---
 title: FMP - Flow Management Position
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: fmp
 ---
 

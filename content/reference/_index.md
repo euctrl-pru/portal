@@ -1,7 +1,5 @@
 ---
 title: References
-categories:
-  - metadata
 ---
 
 * [Acronyms](/acronym/)

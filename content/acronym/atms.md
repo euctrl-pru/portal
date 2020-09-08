@@ -1,9 +1,5 @@
 ---
-  title: ATM-S - ATM Specific Occurrences
-categories:
-  - metadata
-- acronym
-type: acronym
+title: ATM-S - ATM Specific Occurrences
 slug: atms
 ---
   
