@@ -34,8 +34,14 @@ fed them to the excellent ![flowmap.blue](/images/flowmap.blue-32x32.png) [flowm
 so that questiones like the ones below (and many others you may have in mind)
 can be *visualised* on a map.
 
-Play with the filters or settings in the [following map][flows-map]
-(or look at the sections for some examples and relevant links):
+In the [following map][flows-map] (or see the sections below for some examples
+and relevant links) play with
+
+* the filters (top left box, or click on the circles) to select the countries of interest,
+* your mouse and hover over the flow arrows or country circles to get the amount 
+  of relevant flight flows counts, or
+* customise the settings (bottom left gear) in order, for example, to enable clustering
+
 
 <div class="resp-container" style="display:block;margin:auto">
 <iframe class="resp-iframe" src="https://flowmap.blue/19mCVbGW943x-xx7zompIrw2bPnyXAq-T8HsupbW4NHQ/0db2dd9?v=45.558025,6.475440,2.76,15,1&a=0&as=1&b=1&bo=75&c=0&ca=0&cz=2&d=0&fe=1&lt=1&lfm=ALL&t=20200101T000000,20200911T000000&col=Default&f=50" title="Daily country flight flows - 2020" frameborder="0" style="border:0" allowfullscreen>
@@ -49,12 +55,13 @@ Play with the filters or settings in the [following map][flows-map]
 
 ### Who was flying to/from Spain in the mid August week?
 
-Answer: Britons and Germans seems to have *all* [flown to Spain][spain-aug]{target="_blank"}
+Answer: Britons and Germans seems to have *all* [flown to Spain][spain-aug]
 to spend their holidays! (Or maybe Spaniards went en-mass to UK and Germany...!)
   
-  ```{r, out.width="49%",fig.align='center'}
-  knitr::include_graphics("/images/flows-eu-mid-aug-2020.png")
-  ```
+```{r, out.width="49%",fig.align='center'}
+knitr::include_graphics("/images/flows-eu-mid-aug-2020.png")
+```
+
 
 ### Where were flying Europeans in July/August?
 
@@ -75,7 +82,7 @@ knitr::include_graphics("/images/flows-de-jul-aug-2020.png")
 ### How was the translantic traffic like this summer 2020?
 
 Answer: extremely low, just few flights coming in / flying out of Europe.
-Look at the very thin flow from USA...
+Look for example at the very thin flow from USA...
 
 
 
