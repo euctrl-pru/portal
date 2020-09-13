@@ -39,8 +39,9 @@ and relevant links) play with
 
 * the filters (top left box, or click on the circles) to select the countries of interest,
 * your mouse and hover over the flow arrows or country circles to get the amount 
-  of relevant flight flows counts, or
-* customise the settings (bottom left gear) in order, for example, to enable clustering
+  of relevant flight flows counts
+* the time interval selector (center bottom) and its play button; or
+* the settings (bottom left gear) in order, for example, to enable clustering
 
 
 <div class="resp-container" style="display:block;margin:auto">
@@ -93,7 +94,7 @@ The pairs/counts have been derived from the country location of the ICAO indicat
 associated with the aerodrome of departure (ADEP) and destination (ADES).
 
 There is a very low percentage of airport pairs where one or both of ADEP/ADES
-are unknown. These are usually associated with IFR helicopter flights
+are unknown. These are usually associated with [IFR][ifr] helicopter flights
 (i.e. connections to oil platforms from/to [Norway][no-null-island]) or
 air filled ([AFIL][afil]) flight plans.
 
@@ -103,6 +104,7 @@ in order to keep the flow counts consistent.
 
 
 [afil]: /acronym/afil/ "Air-filed (flight plan)"
+[ifr]: /acronym/ifir/ "Instrument Flight Rules"
 
 [no-null-island]: <https://flowmap.blue/19mCVbGW943x-xx7zompIrw2bPnyXAq-T8HsupbW4NHQ/0db2dd9?v=30.350738,3.951042,2.14,15,1&a=0&as=1&b=1&bo=75&c=0&ca=0&cz=2&d=0&fe=1&lt=1&lfm=ALL&col=Default&f=50&s=3>
 
