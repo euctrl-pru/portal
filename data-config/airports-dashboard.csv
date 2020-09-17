@@ -1,4 +1,4 @@
-icao,country,name,ready
+APT_ICAO,APT_COUNTRY,APT_NAME,DASHBOARD
 EBBR,Belgium,Brussels,TRUE
 EDDE,Germany,Erfurt,TRUE
 EDDH,Germany,Hamburg,TRUE
