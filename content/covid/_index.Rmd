@@ -43,9 +43,9 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 <div class="card-body"><small><h5 class="card-title">Road to recovery</h5><p class="card-text">What are EUROCONTROL's recovery scenarios?</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
 </div>
 </div>
-<div class="card"><a href="https://www.eurocontrol.int/covid19#response-to-covid-19" target="_blank">
-<img class="card-img-top" src="/images/covid/ectl_react.jpg" alt="Airline and State response">
-<div class="card-body"><small><h5 class="card-title">Airline and States</h5><p class="card-text">What is the airline and State response to the COVID-19 crisis?</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
+<div class="card"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-assessment-covid-19s-impact-european-air-traffic" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_react.jpg" alt="Situation assessments">
+<div class="card-body"><small><h5 class="card-title">Situation awareness</h5><p class="card-text">See the latest EUROCONTROL comprehensive assessment report.</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
 </div>
 </div>
 <div class="card"><a href="https://www.eurocontrol.int/covid19" target="_blank">

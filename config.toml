@@ -222,13 +222,6 @@ ignoreFiles = [
       weight = 41
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>FAB View</span>"
-      url = "/dashboard/stakeholder/fab/"
-      identifier = "key-stakeholder-fab"
-      parent = "aiu"
-      weight = 43
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>ANSP View</span>"
       url = "/dashboard/stakeholder/ansp/"
       identifier = "key-stakeholder-ansp"
@@ -379,12 +372,6 @@ ignoreFiles = [
     identifier = "State"
     parent = "stakeholder"
     weight = 1
-  [[menu.main]]
-    name = "Functional Airspace Block (FAB)"
-    url = "/dashboard/stakeholder/fab/"
-    identifier = "Fab"
-    parent = "stakeholder"
-    weight = 2
   [[menu.main]]
     name = "Air Navigation Service Provider"
     url = "/dashboard/stakeholder/ansp/"

@@ -17,7 +17,7 @@ apt_flt_end: Aug 2020
 asma_beg: Jan 2014
 asma_end: Jul 2020
 cdo_beg: Jan 2015
-cdo_end: Jun 2020
+cdo_end: Aug 2020
 tx_out_beg: Jan 2014
 tx_out_end: Jul 2020
 atc_pre_beg: Jan 2016
@@ -28,7 +28,7 @@ cplx_beg_bada_3_6: Jan 2014
 cplx_end_bada_3_6: Dec 2016
 cplx_beg_bada_3_13_1: Jan 2017
 cplx_end_bada_3_13_1: Dec 2019
-ace_opt_beg: Jan 2017
+ace_opt_beg: Jan 2019
 ace_opt_end: Aug 2020
 co_opt_beg: Jan 2010
 co_opt_end: Dec 2019
