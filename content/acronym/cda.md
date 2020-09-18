@@ -1,9 +1,5 @@
 ---
 title: CDA - Continuous Descent Approach
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cda
 ---
 

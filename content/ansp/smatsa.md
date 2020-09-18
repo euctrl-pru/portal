@@ -1,9 +1,5 @@
 ---
 title: SMATSA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: smatsa
 ---
 

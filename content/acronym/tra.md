@@ -1,9 +1,5 @@
 ---
 title: TRA - Temporary Reserved Area
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tra
 ---
 

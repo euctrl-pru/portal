@@ -1,9 +1,5 @@
 ---
 title: EC - European Commission
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ec
 ---
 

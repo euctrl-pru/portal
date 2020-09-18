@@ -1,9 +1,5 @@
 ---
 title: SMS - Safety Management System
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: sms
 ---
 

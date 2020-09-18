@@ -1,0 +1,52 @@
+---
+title: "PRC workshop on en route capacity"
+date: "2020-09-14"
+excerpt: "PRC workshop on en route capacity"
+bibliography: ["../../static/bib/aviation.bib"]
+link-citations: true
+dwnld_i: <i class="fa pru fa-download"></i>
+---
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+# run setup script
+source(here::here("_common.R"))
+```
+<small><p style="color:#808080">Published: 16 September 2020</p></small>
+<div class="container">
+<div class="row align-items-start">
+<div class="col-sm-7">
+
+#### When?
+<b><p style="color:#c91818">Tuesday, 13 October 2020</p></b>
+
+#### Background & Objective
+The [EUROCONTROL Performance Review Commission (PRC)](/about/prc/) is well aware of the crisis in the industry caused by COVID19 and fully understands that traffic is unlikely to experience capacity problems over the next year or two. 
+
+However, the PRC believes that the downturn in traffic provides an opportunity for ANSPs to review how they currently manage capacity and how they can improve in the future.
+</div>
+
+<div class="col-sm-5">
+<div class="card border-0">
+  <img class="card-img-top" src="/images/ert_cap_study.jpg" alt="PRC views on en route capacity">
+</div></div></div></div>
+
+<div class="container">
+Since the ANSPs report a considerable lag time for implementing capacity improvements, the current downturn in traffic could actually enable ANSPs to get ahead of the demand curve – to ensure that sufficient capacity will be available when needed – and emerge from the crisis in a stronger position than entering it.
+
+Whilst airspace users and national supervisory authorities may currently have more pressing priorities (than adding capacity during the downturn in demand), the PRC believes that addressing capacity issues now will provide significant benefit in the future when traffic inevitably returns to more robust levels.
+
+Improving capacity performance involves identifying existing and future capacity constraints, planning and implementing effective mitigation or solutions to the capacity constraints and improving transparency about capacity for all stakeholders.
+
+Based on 2019 data, the PRC has conducted an analysis of the various facets of en route capacity: declared capacity, deployed capacity and planned capacity. In order to discuss issues identified during the capacity crisis in 2018/19 and the PRCs' vision for en route capacity performance and reporting, the PRC will hold an online workshop on en route capacity on <ins>**Tuesday, 13 October 2020**</ins>, which will deal with all of the facets listed above.
+
+#### Registration
+To gather opinions and experiences of participating stakeholders in regards to the planning and deployment of ATC capacity,
+<ins>the PRC encourages all stakeholders to kindly respond to 18 questions when filling in the registration form.</ins> 
+Individual replies will not be disclosed at the workshop but will help to focus the discussions on the day of the workshop 
+and, additionally, drive the future work of the PRC. 
+
+<a href="https://forms.gle/EVb7vEEpHrpwTzAn8" class="btn btn-info" role="button"> Please register <ins>no later than 06 October 2020</ins> by completing this form.</a>
+
+Registered stakeholders will receive further details on the timing and agenda closer to the day of the workshop. 
+</div>
+
+[reg_ert_cap_ws]: https://forms.gle/EVb7vEEpHrpwTzAn8 "Registration form PRC en route capacity workshop"

@@ -1,9 +1,5 @@
 ---
 title: SSC - Single Sky Committee
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ssc
 ---
 

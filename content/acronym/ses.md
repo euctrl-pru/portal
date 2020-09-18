@@ -1,9 +1,5 @@
 ---
 title: SES - Single European Sky
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ses
 ---
 

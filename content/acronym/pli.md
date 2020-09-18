@@ -1,9 +1,5 @@
 ---
 title: PLI - Peak Load Index
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: pli
 ---
 

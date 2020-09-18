@@ -1,9 +1,5 @@
 ---
 title: Belgocontrol
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: belgocontrol
 ---
 

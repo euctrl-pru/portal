@@ -1,9 +1,5 @@
 ---
 title: Composite flight-hour
-categories:
-  - metadata
-  - definition
-type: definition
 slug: composite-flight-hour
 ---
 

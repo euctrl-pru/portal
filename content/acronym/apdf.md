@@ -1,9 +1,5 @@
 ---
 title: APDF - Airport Operator Data Flow
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: apdf
 ---
 

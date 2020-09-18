@@ -1,9 +1,5 @@
 ---
 title: ASM - AirSpace Management
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: asm
 ---
 

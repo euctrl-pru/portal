@@ -1,9 +1,5 @@
 ---
 title: KPA - Key Performance Area
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: kpa
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: SESAR - Single European Sky ATM Research programme
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: sesar
 ---
 

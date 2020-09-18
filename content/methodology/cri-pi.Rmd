@@ -1,9 +1,5 @@
 ---
 title: Composite Risk Index Methodology
-categories:
-  - metadata
-  - methodology
-type: methodology
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
 output: html_document

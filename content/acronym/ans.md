@@ -1,9 +1,5 @@
 ---
 title: ANS - Air Navigation Service
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ans
 ---
 

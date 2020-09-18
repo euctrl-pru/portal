@@ -1,9 +1,5 @@
 ---
 title: ATC Pre-Departure Delay (IATA code 89) Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 bibliography: ["../../../static/bib/aviation.bib"]
 link-citations: true
 slug: atc-pre-departure-delay

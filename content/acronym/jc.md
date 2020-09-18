@@ -1,9 +1,5 @@
 ---
 title: JC - Just culture
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: jc
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ECAC Area
-categories:
-  - metadata
-  - definition
-type: definition
 slug: ecac-area
 ---
 

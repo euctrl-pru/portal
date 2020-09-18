@@ -1,9 +1,5 @@
 ---
 title: ACE - Benchmarking Report
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ace
 ---
 

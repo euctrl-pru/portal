@@ -1,9 +1,5 @@
 ---
 title: Airport Arrival ATFM Delay Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: airport-arrival-atfm-delay
 ---
 

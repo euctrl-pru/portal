@@ -1,9 +1,5 @@
 ---
 title: Albcontrol
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: albcontrol
 ---
 

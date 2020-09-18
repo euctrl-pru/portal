@@ -1,9 +1,5 @@
 ---
 title: ICAO - International Civil Aviation Organization
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: icao
 ---
 

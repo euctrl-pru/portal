@@ -1,9 +1,5 @@
 ---
 title: Airspace Infringement
-categories:
-  - metadata
-  - definition
-type: definition
 slug: airspace-infringement
 ---
 

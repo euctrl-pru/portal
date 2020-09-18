@@ -1,9 +1,5 @@
 ---
 title: ASMA Additional Time Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: asma-additional-time
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}

@@ -1,9 +1,5 @@
 ---
 title: SRC - Safety Regulation Commission
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: src
 ---
 

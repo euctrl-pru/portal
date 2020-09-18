@@ -1,9 +1,5 @@
 ---
 title: TBS - Time Based Separation
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tbs
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: WF - Weight Factor
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: wf
 ---
 

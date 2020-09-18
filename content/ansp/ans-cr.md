@@ -1,9 +1,5 @@
 ---
 title: ANS CR
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: ans-cr
 ---
 

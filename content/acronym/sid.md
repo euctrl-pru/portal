@@ -1,9 +1,5 @@
 ---
 title: SID - Standard Instrument Departure
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: sid
 ---
 

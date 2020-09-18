@@ -1,9 +1,5 @@
 ---
 title: KPI - Key Performance Indicator
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: kpi
 ---
 

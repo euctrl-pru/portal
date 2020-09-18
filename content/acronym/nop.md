@@ -1,9 +1,5 @@
 ---
 title: NOP - Network Operations Plan
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: nop
 ---
 

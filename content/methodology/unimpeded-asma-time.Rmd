@@ -1,9 +1,5 @@
 ---
 title: Unimpeded ASMA Time - Technical Note
-categories:
-  - metadata
-  - methodology
-type: methodology
 slug: unimpeded-asma-time
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}

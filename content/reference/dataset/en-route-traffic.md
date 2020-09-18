@@ -1,9 +1,5 @@
 ---
 title: En-Route IFR Flights Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: en-route-traffic
 ---
 

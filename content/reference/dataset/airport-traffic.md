@@ -1,9 +1,5 @@
 ---
 title: Airport Traffic Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: airport-traffic
 ---
 

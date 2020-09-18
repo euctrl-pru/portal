@@ -1,10 +1,5 @@
 ---
 title: SES Area
-categories:
-  - metadata
-  - definition
-type: definition
-slug: ses-area
 ---
 
 The Single European Sky Area comprises the States included in Performance Scheme of the Single European Sky.

@@ -10,7 +10,11 @@ library(stringr)
 #   "EIDW", "Ireland", TRUE
 # )
 
-apt <- readr::read_csv("data-config/airports-dashboard.csv")
+apt <- readr::read_csv("data-config/airports-dashboard.csv") %>%
+  rename(icao    = APT_ICAO,
+         country = APT_COUNTRY,
+         name    = APT_NAME,
+         ready   = DASHBOARD)
 
 summary_section <- function(apt_df) {
   country <- apt_df %>% 

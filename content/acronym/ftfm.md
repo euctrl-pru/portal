@@ -1,9 +1,6 @@
 ---
 title: FTFM - Filed Tactical Flight Model
-categories:
-  - metadata
-  - acronym
-type: acronym
+slug: ftfm
 ---
 
 A mathematical model containing a point and airspace volume profile created in 

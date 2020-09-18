@@ -1,9 +1,5 @@
 ---
 title: SU - Service Unit
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: su
 ---
 

@@ -215,25 +215,25 @@ ignoreFiles = [
     weight = 39
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>ANSP View</span>"
-      url = "/dashboard/stakeholder/ansp/"
-      identifier = "key-stakeholder-ansp"
-      parent = "aiu"
-      weight = 41
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>State View</span>"
       url = "/dashboard/stakeholder/ansp/"
       identifier = "key-stakeholder-state"
       parent = "aiu"
-      weight = 43
+      weight = 41
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>ANSP View</span>"
+      url = "/dashboard/stakeholder/ansp/"
+      identifier = "key-stakeholder-ansp"
+      parent = "aiu"
+      weight = 45
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Airport View</span>"
       url = "/dashboard/stakeholder/ansp/"
       identifier = "key-stakeholder-airport"
       parent = "aiu"
-      weight = 45
+      weight = 47
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
@@ -367,23 +367,23 @@ ignoreFiles = [
     identifier = "stakeholder"   
     weight = 20
   [[menu.main]]
-    name = "Air Navigation Service Provider"
-    url = "/dashboard/stakeholder/ansp/"
-    identifier = "Ansp"
-    parent = "stakeholder"
-    weight = 1
-  [[menu.main]]
     name = "States"
     url = "/dashboard/stakeholder/state/"
     identifier = "State"
     parent = "stakeholder"
-    weight = 2
+    weight = 1
+  [[menu.main]]
+    name = "Air Navigation Service Provider"
+    url = "/dashboard/stakeholder/ansp/"
+    identifier = "Ansp"
+    parent = "stakeholder"
+    weight = 3
   [[menu.main]]
     name = "Airports"
     url = "/dashboard/stakeholder/airport/"
     identifier = "Airport"
     parent = "stakeholder"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "Support"

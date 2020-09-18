@@ -1,9 +1,5 @@
 ---
 title: AUA - Air traffic control Unit Airspace
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: aua
 ---
 

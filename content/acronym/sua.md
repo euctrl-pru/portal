@@ -1,9 +1,5 @@
 ---
 title: SUA - Special Use Airspace
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: sua
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: PRR - Performance Review Report
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: prr
 ---
 

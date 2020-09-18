@@ -1,9 +1,5 @@
 ---
 title: DCAC Cyprus
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: dcac-cyprus
 ---
 

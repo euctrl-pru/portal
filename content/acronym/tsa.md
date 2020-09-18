@@ -1,9 +1,5 @@
 ---
 title: TSA - Temporary Segregated Area
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tsa
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: KEP - Key performance Environment indicator based on last filed flight Plan
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: kep
 ---
 

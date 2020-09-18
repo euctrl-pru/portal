@@ -1,9 +1,5 @@
 ---
 title: ERNIP - European Route Network Improvement Plan
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ernip
 ---
 

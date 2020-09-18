@@ -1,9 +1,5 @@
 ---
 title: PI - Performance Indicator
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: pi
 ---
 

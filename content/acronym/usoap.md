@@ -1,9 +1,5 @@
 ---
 title: USOAP - Universal Safety Oversight Audit Programme
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: usoap
 ---
 

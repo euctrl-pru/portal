@@ -1,9 +1,5 @@
 ---
 title: NAV Portugal
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: nav-portugal
 ---
 

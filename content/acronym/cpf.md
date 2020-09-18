@@ -1,9 +1,6 @@
 ---
 title: CPF - Correlated Position reports for a Flight
-categories:
-  - metadata
-  - acronym
-type: acronym
+slug: cpf
 ---
 
 Airspace profile following as much as possible the actual flown trajectory derived from

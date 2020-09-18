@@ -1,9 +1,5 @@
 ---
 title: AMC - Airspace Management Cell
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: amc
 ---
 

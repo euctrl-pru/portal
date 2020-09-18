@@ -1,9 +1,5 @@
 ---
 title: Methodology
-categories:
-  - metadata
-  - methodology
-type: methodology
 ---
 
 In order to encourage collaboration, transparency and reproducibility of performance indicators, please find below methodological information related to the computation of the indicators used in our website:

@@ -1,9 +1,5 @@
 ---
 title: ETS - Emissions Trading Scheme
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ets
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ATCO - Air Traffic Control Officer
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: atco
 ---
 

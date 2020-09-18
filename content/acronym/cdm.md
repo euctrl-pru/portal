@@ -1,9 +1,5 @@
 ---
 title: CDM - Collaborative Decision Making
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cdm
 ---
 

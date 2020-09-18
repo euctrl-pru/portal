@@ -1,9 +1,5 @@
 ---
 title: GCD - Great-Circle Distance
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: gcd
 ---
 

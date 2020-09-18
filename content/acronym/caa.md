@@ -1,9 +1,5 @@
 ---
 title: CAA - Civil Aviation Authority
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: caa
 ---
 

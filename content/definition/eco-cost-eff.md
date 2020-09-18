@@ -1,9 +1,5 @@
 ---
 title: Economic Cost Effectiveness
-categories:
-  - metadata
-  - definition
-type: definition
 slug: eco-cost-eff
 ---
 

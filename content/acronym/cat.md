@@ -1,9 +1,5 @@
 ---
 title: CAT - Commercial Air Transport
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cat
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: Modification of the ATFM delay calculation (NM release 20.0)
-categories:
-  - metadata
-  - methodology
-type: methodology
 slug: atfm-delay-calculation
 ---
 <style>

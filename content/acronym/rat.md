@@ -1,9 +1,5 @@
 ---
 title: RAT - Risk Analysis Tool Methodology
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: rat
 ---
 

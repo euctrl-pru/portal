@@ -1,9 +1,5 @@
 ---
 title: Additional Taxi-out Time
-categories:
-  - metadata
-  - definition
-type: definition
 slug: additional-taxi-out-time
 ---
 

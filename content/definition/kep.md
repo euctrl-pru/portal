@@ -1,9 +1,5 @@
 ---
 title: KEP
-categories:
-  - metadata
-  - definition
-type: definition
 slug: kep
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: DFS
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: dfs
 ---
 

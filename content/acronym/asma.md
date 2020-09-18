@@ -1,9 +1,5 @@
 ---
 title: ASMA - Arrival Sequencing and Metering Area
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: asma
 ---
 

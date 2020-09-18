@@ -1,9 +1,5 @@
 ---
 title: UPA - Unauthorised Penetration of Airspace
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: upa
 ---
 

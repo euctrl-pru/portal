@@ -1,10 +1,5 @@
 ---
 title: Short term ATFCM measures
-categories:
-  - metadata
-  - definition
-type: definition
-slug: short-term-atfcm-measures
 ---
 
 An approach to smooth sector workloads by reducing traffic peaks through short-term application of minor ground delays, appropriate flight level capping and exiguous rerouting to a limited number of flights.

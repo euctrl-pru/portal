@@ -1,9 +1,5 @@
 ---
 title: CNS - Communications, Navigation, Surveillance
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cns
 ---
 

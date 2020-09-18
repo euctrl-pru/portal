@@ -1,9 +1,5 @@
 ---
 title: ROMATSA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: romatsa
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: CPR - Correlated Position Report
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cpr
 ---
 

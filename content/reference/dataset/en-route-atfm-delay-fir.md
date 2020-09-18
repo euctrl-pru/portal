@@ -1,9 +1,5 @@
 ---
 title: En-Route ATFM Delay Dataset (FIR)
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: en-route-atfm-delay-fir
 ---
 

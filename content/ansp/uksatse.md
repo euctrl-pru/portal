@@ -1,9 +1,5 @@
 ---
 title: UkSATSE
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: uksatse
 ---
 

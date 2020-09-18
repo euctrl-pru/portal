@@ -1,9 +1,5 @@
 ---
 title: HungaroControl
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: hungarocontrol
 ---
 

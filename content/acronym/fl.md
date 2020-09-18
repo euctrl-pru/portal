@@ -1,9 +1,5 @@
 ---
 title: FL - Flight Level
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: fl
 ---
 

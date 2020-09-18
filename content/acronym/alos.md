@@ -1,9 +1,5 @@
 ---
 title: ALoS - Acceptable Level of Safety
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: alos
 ---
 

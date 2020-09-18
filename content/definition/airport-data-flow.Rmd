@@ -1,9 +1,5 @@
 ---
 title: Airport operator data flow (APDF)
-categories:
-  - metadata
-  - definition
-type: definition
 slug: airport-data-flow
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: NAVIAIR
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: naviair
 ---
 

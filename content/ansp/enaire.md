@@ -1,9 +1,5 @@
 ---
 title: ENAIRE
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: enaire
 ---
 

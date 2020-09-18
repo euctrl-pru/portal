@@ -1,9 +1,5 @@
 ---
 title: NATS
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: nats
 ---
 

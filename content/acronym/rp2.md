@@ -1,9 +1,5 @@
 ---
 title: RP2 - Reporting Period 2
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: rp2
 ---
 

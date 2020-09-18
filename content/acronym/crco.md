@@ -1,9 +1,5 @@
 ---
 title: CRCO - Central Route Charges Office
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: crco
 ---
 

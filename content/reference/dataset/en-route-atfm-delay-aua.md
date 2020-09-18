@@ -1,9 +1,5 @@
 ---
 title: En-Route ATFM Delay Dataset (AUA)
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: en-route-atfm-delay-aua
 ---
 

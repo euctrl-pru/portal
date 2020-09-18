@@ -1,9 +1,5 @@
 ---
 title: IFR - Instrument Flight Rules
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ifr
 ---
 

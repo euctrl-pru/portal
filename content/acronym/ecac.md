@@ -1,9 +1,5 @@
 ---
 title: ECAC - European Civil Aviation Conference
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ecac
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: CTOT - Calculated Take-Off Time
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ctot
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ATFM Slot Adherence Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: atfm-slot-adherence
 ---
 

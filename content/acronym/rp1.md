@@ -1,9 +1,5 @@
 ---
 title: RP1 - Reporting Period 1
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: rp1
 ---
 

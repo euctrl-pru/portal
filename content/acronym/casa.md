@@ -1,9 +1,5 @@
 ---
 title: CASA - Computer-Assisted Slot Allocation
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: casa
 ---
 

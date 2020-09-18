@@ -1,9 +1,5 @@
 ---
 title: CDR - ConDitional Route
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: cdr
 ---
 

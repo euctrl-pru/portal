@@ -1,9 +1,5 @@
 ---
 title: TNSU - Terminal Navigation Service Units
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: tnsu
 ---
 

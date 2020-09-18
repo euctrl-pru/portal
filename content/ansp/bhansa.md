@@ -1,9 +1,5 @@
 ---
 title: BHANSA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: bhansa
 ---
 

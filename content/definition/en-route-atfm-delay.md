@@ -1,9 +1,5 @@
 ---
 title: En-route ATFM Delay
-categories:
-  - metadata
-  - definition
-type: definition
 slug: en-route-atfm-delay
 ---
 

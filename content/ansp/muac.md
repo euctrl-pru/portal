@@ -1,9 +1,5 @@
 ---
 title: MUAC
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: muac
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: CAEP - Committee on Aviation Environmental Protection
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: caep
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ANA LUX
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: ana-lux
 ---
 

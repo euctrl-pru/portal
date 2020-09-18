@@ -1,8 +1,5 @@
 ---
 title: Reference Location
-categories:
-  - metadata
-  - glossary
 ---
 
 An identifier used in the ETFMS to describe one or more aerodromes,

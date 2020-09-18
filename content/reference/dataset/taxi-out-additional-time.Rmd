@@ -1,9 +1,5 @@
 ---
 title: Taxi-Out Additional Time Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: taxi-out-additional-time
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}

@@ -1,9 +1,5 @@
 ---
 title: Croatia Control
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: croatia-control
 ---
 

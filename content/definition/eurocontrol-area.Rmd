@@ -1,9 +1,5 @@
 ---
 title: EUROCONTROL Area
-categories:
-  - metadata
-  - definition
-type: definition
 slug: eurocontrol-area
 ---
 

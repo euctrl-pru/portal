@@ -1,9 +1,5 @@
 ---
 title: LAQ - Local Air Quality
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: laq
 ---
 

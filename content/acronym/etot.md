@@ -1,9 +1,5 @@
 ---
 title: ETOT - Estimated Take-Off Time
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: etot
 ---
 

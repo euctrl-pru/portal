@@ -1,9 +1,5 @@
 ---
 title: ATM - Air Traffic Management
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: atm
 ---
 

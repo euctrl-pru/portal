@@ -1,9 +1,5 @@
 ---
 title: NM - Network Manager
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: nm-cfmu
 ---
 

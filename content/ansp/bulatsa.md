@@ -1,9 +1,5 @@
 ---
 title: BULATSA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: bulatsa
 ---
 

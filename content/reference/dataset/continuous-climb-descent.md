@@ -1,9 +1,5 @@
 ---
 title: Continuous climb and descent Dataset
-categories:
-  - metadata
-  - dataset
-type: dataset
 slug: continuous-climb-descent
 ---
 

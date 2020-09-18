@@ -1,9 +1,5 @@
 ---
 title: CODA - Central Office for Delay Analysis
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: coda
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ACI - Airports Council International
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: aci
 ---
 

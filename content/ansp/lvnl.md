@@ -1,9 +1,5 @@
 ---
 title: LVNL
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: lvnl
 ---
 

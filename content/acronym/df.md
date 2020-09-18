@@ -1,9 +1,5 @@
 ---
 title: DF - Distance Factor
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: df
 ---
 

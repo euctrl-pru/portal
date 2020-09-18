@@ -1,9 +1,5 @@
 ---
 title: ATC Pre-departure Delay
-categories:
-  - metadata
-  - definition
-type: definition
 slug: atc-pre-departure-delay
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}

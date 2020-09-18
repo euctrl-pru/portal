@@ -1,9 +1,5 @@
 ---
-  title: CRI - Composite Risk Index 
-categories:
-  - metadata
-- acronym
-type: acronym
+title: CRI - Composite Risk Index 
 slug: cri
 ---
   

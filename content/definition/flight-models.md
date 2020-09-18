@@ -1,8 +1,5 @@
 ---
 title: Flight Trajectory Models
-categories:
-  - metadata
-  - glossary
 ---
 
 <style>

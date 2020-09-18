@@ -1,9 +1,5 @@
 ---
 title: GANP - Global Air Navigation Plan
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ganp
 ---
 

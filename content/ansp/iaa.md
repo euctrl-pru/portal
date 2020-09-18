@@ -1,9 +1,5 @@
 ---
 title: IAA
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: iaa
 ---
 

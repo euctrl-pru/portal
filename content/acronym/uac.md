@@ -1,9 +1,5 @@
 ---
 title: UAC - Upper Area Control centre
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: uac
 ---
 

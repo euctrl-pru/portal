@@ -1,9 +1,5 @@
 ---
 title: ATFM Measure
-categories:
-  - metadata
-  - definition
-type: definition
 slug: atfm-measure
 bibliography: [../../static/bib/legislation.bib]
 link-citations: true

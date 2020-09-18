@@ -1,9 +1,5 @@
 ---
 title: FAB - Functional Airspace Blocks
-categories:
-  - metadata
-  - definition
-type: definition
 slug: fab
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: ADEP - Aerodrome of Destination
-categories:
-  - metadata
-  - acronym
-type: acronym
 slug: ades
 ---
 

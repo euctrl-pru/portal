@@ -1,9 +1,5 @@
 ---
 title: ENAV
-categories:
-  - metadata
-  - ansp
-type: ansp
 slug: enav
 ---
 

@@ -1,9 +1,5 @@
 ---
 title: Additional ASMA Time
-categories:
-  - metadata
-  - definition
-type: definition
 slug: additional-asma-time
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}
