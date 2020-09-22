@@ -10,7 +10,7 @@ dwnld_i: <i class="fa pru fa-download"></i>
 # run setup script
 source(here::here("_common.R"))
 ```
-<small><p style="color:#808080">Published: 16 September 2020</p></small>
+<small><p style="color:#808080">Published: 21 September 2020</p></small>
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-7">
@@ -45,7 +45,7 @@ To gather opinions and experiences of participating stakeholders in regards to t
 Individual replies will not be disclosed at the workshop but will help to focus the discussions on the day of the workshop 
 and, additionally, drive the future work of the PRC. 
 
-<a href="https://forms.gle/EVb7vEEpHrpwTzAn8" class="btn btn-info" role="button"> Please register <ins>no later than 06 October 2020</ins> by completing this form.</a>
+<a href="https://forms.gle/EVb7vEEpHrpwTzAn8" class="btn btn-info" role="button"> Please register <ins>no later than 01 October 2020</ins> by completing this form.</a>
 
 Registered stakeholders will receive further details on the timing and agenda closer to the day of the workshop. 
 </div>
