@@ -17,9 +17,10 @@ source(here::here("_common.R"))
 
 #### When?
 <b><p style="color:#c91818">Tuesday, 13 October 2020</p></b>
+<p style="color:#c91818">10h00-16h00 CEST</p>
 
 #### Background & Objective
-The [EUROCONTROL Performance Review Commission (PRC)](/about/prc/) is well aware of the crisis in the industry caused by COVID19 and fully understands that traffic is unlikely to experience capacity problems over the next year or two. 
+The [EUROCONTROL Performance Review Commission (PRC)](/about/prc/) closely monitors the crisis in the industry caused by COVID19 on the [Aviation Intelligence Portal][aiu_port] and fully understands that traffic is unlikely to experience capacity problems over the next year or two. 
 
 However, the PRC believes that the downturn in traffic provides an opportunity for ANSPs to review how they currently manage capacity and how they can improve in the future.
 </div>
@@ -36,7 +37,7 @@ Whilst airspace users and national supervisory authorities may currently have mo
 
 Improving capacity performance involves identifying existing and future capacity constraints, planning and implementing effective mitigation or solutions to the capacity constraints and improving transparency about capacity for all stakeholders.
 
-Based on 2019 data, the PRC has conducted an analysis of the various facets of en route capacity: declared capacity, deployed capacity and planned capacity. In order to discuss issues identified during the capacity crisis in 2018/19 and the PRCs' vision for en route capacity performance and reporting, the PRC will hold an online workshop on en route capacity on <ins>**Tuesday, 13 October 2020**</ins>, which will deal with all of the facets listed above.
+Based on 2019 data, the PRC has conducted an analysis of the various facets of en route capacity: declared capacity, deployed capacity and planned capacity. In order to discuss issues identified during the capacity crisis in 2018/19 and the PRCs' vision for en route capacity performance and reporting, the PRC will hold an online workshop on en route capacity on <ins>**Tuesday, 13 October 2020**</ins> (10h00-16h00 CEST), which will deal with all of the facets listed above.
 
 #### Registration
 To gather opinions and experiences of participating stakeholders in regards to the planning and deployment of ATC capacity,
@@ -50,3 +51,4 @@ Registered stakeholders will receive further details on the timing and agenda cl
 </div>
 
 [reg_ert_cap_ws]: https://forms.gle/EVb7vEEpHrpwTzAn8 "Registration form PRC en route capacity workshop"
+[aiu_port]: https://ansperformance.eu/ "Aviation Intelligence Portal"
