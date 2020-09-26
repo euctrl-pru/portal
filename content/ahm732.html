@@ -42,10 +42,13 @@ title: AHM732
 }
 
 </style>
-<p><br></p>
 <div class="row">
 <div class="col-sm-10">
-<div id="observablehq-44e493ae">
+Please select the relevant fields in order to determine the delay code to use:
+<div id="observablehq-437637d7">
+<div class="observablehq-loadStatus">
+
+</div>
 <div class="observablehq-viewof-group">
 
 </div>
@@ -58,7 +61,8 @@ title: AHM732
 <div class="observablehq-viewof-stakeholder">
 
 </div>
-<div class="observablehq-delayCode">
+<br>
+<div class="observablehq-viewof-code">
 
 </div>
 </div>
@@ -66,11 +70,11 @@ title: AHM732
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
   import define from "https://api.observablehq.com/@espinielli/the-making-of-ahm732.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "viewof group") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-group")();
-    if (name === "viewof process") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-process")();
-    if (name === "viewof reason") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-reason")();
-    if (name === "viewof stakeholder") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-stakeholder")();
-    if (name === "delayCode") return Inspector.into("#observablehq-44e493ae .observablehq-delayCode")();
+    if (name === "viewof group") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-group")();
+    if (name === "viewof process") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-process")();
+    if (name === "viewof reason") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-reason")();
+    if (name === "viewof stakeholder") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-stakeholder")();
+    if (name === "viewof code") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-code")();
   });
 </script>
 </div>
