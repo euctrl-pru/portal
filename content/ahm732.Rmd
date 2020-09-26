@@ -1,0 +1,68 @@
+---
+title: AHM732
+---
+
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60.0%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border: 0;
+}
+
+
+#vg-tooltip-element table {
+  border-spacing: 0;
+  border: none;
+  margin: initial;
+}
+
+#vg-tooltip-element table td, th {
+  border: none;
+  vertical-align: revert;
+}
+
+#observablehq-loadStatus {
+  font-size: 0.15em;
+}
+
+</style>
+<br>
+
+<div class="row">
+<div class="col-sm-10">
+
+<div id="observablehq-44e493ae">
+  <div class="observablehq-viewof-group"></div>
+  <div class="observablehq-viewof-process"></div>
+  <div class="observablehq-viewof-reason"></div>
+  <div class="observablehq-viewof-stakeholder"></div>
+  <div class="observablehq-delayCode"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@espinielli/the-making-of-ahm732.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof group") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-group")();
+    if (name === "viewof process") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-process")();
+    if (name === "viewof reason") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-reason")();
+    if (name === "viewof stakeholder") return Inspector.into("#observablehq-44e493ae .observablehq-viewof-stakeholder")();
+    if (name === "delayCode") return Inspector.into("#observablehq-44e493ae .observablehq-delayCode")();
+  });
+</script>
+
+</div>
+</div>
