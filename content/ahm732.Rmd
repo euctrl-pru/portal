@@ -23,16 +23,15 @@ title: AHM732
     border: 0;
 }
 
-
-#vg-tooltip-element table {
-  border-spacing: 0;
-  border: none;
-  margin: initial;
+div.observablehq form * select {
+  width: 30em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#vg-tooltip-element table td, th {
-  border: none;
-  vertical-align: revert;
+div.observablehq form * option {
+  white-space: wrap;
+  width: 100%;
 }
 
 #observablehq-loadStatus {
