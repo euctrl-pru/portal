@@ -229,11 +229,18 @@ ignoreFiles = [
       weight = 45
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>FAB View</span>"
+      url = "/dashboard/stakeholder/fab/"
+      identifier = "key-stakeholder-fab"
+      parent = "aiu"
+      weight = 47    
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Airport View</span>"
       url = "/dashboard/stakeholder/ansp/"
       identifier = "key-stakeholder-airport"
       parent = "aiu"
-      weight = 47
+      weight = 49
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
@@ -241,28 +248,28 @@ ignoreFiles = [
     url = "/reference/"
     identifier = "key-support"
     parent = "aiu"
-    weight = 47
+    weight = 51
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Data Download</span>"
       url = "/data/"
       identifier = "key-support-data"
       parent = "aiu"
-      weight = 49
+      weight = 53
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Definitions</span>"
       url = "/definition/"
       identifier = "key-support-definitions"
       parent = "aiu"
-      weight = 51
+      weight = 55
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Methodology</span>"
       url = "/methodology/"
       identifier = "key-support-methodology"
       parent = "aiu"
-      weight = 53
+      weight = 57
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-external-link-alt'></i>"
@@ -270,21 +277,21 @@ ignoreFiles = [
     url = ""
     identifier = "key-external"
     parent = "aiu"
-    weight = 55
+    weight = 59
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Single European Sky Portal</span>"
       url = "https://www.eurocontrol.int/prudata/dashboard/"
       identifier = "key-external-ses"
       parent = "aiu"
-      weight = 57
+      weight = 61
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>ICAO GANP</span>"
       url = "https://www4.icao.int/ganpportal/"
       identifier = "key-external-ganp"
       parent = "aiu"
-      weight = 59
+      weight = 63
 
 
 
@@ -379,11 +386,17 @@ ignoreFiles = [
     parent = "stakeholder"
     weight = 3
   [[menu.main]]
+    name = "Functional Airspace Block"
+    url = "/dashboard/stakeholder/fab/"
+    identifier = "fab"
+    parent = "stakeholder"
+    weight = 4
+  [[menu.main]]
     name = "Airports"
     url = "/dashboard/stakeholder/airport/"
     identifier = "Airport"
     parent = "stakeholder"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "Support"
