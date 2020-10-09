@@ -245,7 +245,7 @@ ignoreFiles = [
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
-    name = "&nbsp;Support"
+    name = "&nbsp;Reference"
     url = "/reference/"
     identifier = "key-support"
     parent = "aiu"
@@ -259,18 +259,25 @@ ignoreFiles = [
       weight = 53
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>Studies</span>"
+      url = "/study/"
+      identifier = "key-support-studies"
+      parent = "aiu"
+      weight = 55
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Definitions</span>"
       url = "/definition/"
       identifier = "key-support-definitions"
       parent = "aiu"
-      weight = 55
+      weight = 57
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Methodology</span>"
       url = "/methodology/"
       identifier = "key-support-methodology"
       parent = "aiu"
-      weight = 57
+      weight = 59
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-external-link-alt'></i>"
@@ -278,21 +285,21 @@ ignoreFiles = [
     url = ""
     identifier = "key-external"
     parent = "aiu"
-    weight = 59
+    weight = 61
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Single European Sky Portal</span>"
       url = "https://www.eurocontrol.int/prudata/dashboard/"
       identifier = "key-external-ses"
       parent = "aiu"
-      weight = 61
+      weight = 63
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>ICAO GANP</span>"
       url = "https://www4.icao.int/ganpportal/"
       identifier = "key-external-ganp"
       parent = "aiu"
-      weight = 63
+      weight = 65
 
 
 
@@ -400,46 +407,51 @@ ignoreFiles = [
     weight = 4
 
   [[menu.main]]
-    name = "Support"
+    name = "Reference"
     url = "/reference/"
-    identifier = "support"
+    identifier = "reference"
     weight = 30
  [[menu.main]]
     name = "Data downloads"
     url = "/data/"
-    parent = "support"
+    parent = "reference"
     weight = 1
+  [[menu.main]]
+    name = "Studies"
+    url = "/study/"
+    parent = "reference"
+    weight = 2
   [[menu.main]]
     name = "Definitions"
     url = "/definition/"
-    parent = "support"
-    weight = 2
+    parent = "reference"
+    weight = 3
   [[menu.main]]
     name = "Methodology"
     url = "/methodology/"
     identifier = "methodology"
-    parent = "support"
-    weight = 3
+    parent = "reference"
+    weight = 4
   [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
-    parent = "support"
-    weight = 4
+    parent = "reference"
+    weight = 5
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
-    parent = "support"
-    weight = 5
+    parent = "reference"
+    weight = 6
   [[menu.main]]
     name = "divider2"
-    parent = "support"
-    weight = 6
+    parent = "reference"
+    weight = 7
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
-    parent = "support"
-    weight = 7
+    parent = "reference"
+    weight = 8
 
   [[menu.main]]
     name = "SES"
