@@ -52,7 +52,7 @@ date: '2020-05-15'
 </div>
 
 <div class="card"><a href="https://www.eurocontrol.int/airport-integration" target="_blank">
-  <img class="card-img-top" src="/images/apt/ectl_apt_int.jpg" alt="Airport network integration">
+  <img class="card-img-top" src="/images/apt/ectl_apt_int1.jpg" alt="Airport network integration">
   <div class="card-body"><h5 class="card-title">EUROCONTROL airport network integration</h5></a><p class="card-text">Learn how EUROCONTROL helps to better integrate airports in the ATM network <i class='fas fa-xs fa-external-link-alt'></i></p>
   </div>
 </div>
@@ -64,6 +64,12 @@ date: '2020-05-15'
 <div class="container">
 <div class="row">
 <div class="card-deck">
+
+<div class="card"><a href="/capacity/atfm_apt/">
+  <img class="card-img-top" src="/images/apt/ectl_3.jpg" alt="ATFM arrival delays @ airports">
+  <div class="card-body"><h5 class="card-title">ATFM delays @ airports</h5></a><p class="card-text">Analyse the airport ATFM arrival delays @ airports</p>
+  </div>
+</div>
 
 <div class="card"><a href="/efficiency/vfe/">
   <img class="card-img-top" src="/images/apt/cdo_icon.jpg" alt="Vertical flight efficiency @ airports">
@@ -79,7 +85,7 @@ date: '2020-05-15'
 
 <div class="card"><a href="/efficiency/taxiout/">
   <img class="card-img-top" src="/images/apt/apt_taxi.jpg" alt="Taxi-out additional time @ airports">
-  <div class="card-body"><h5 class="card-title">Additional taxi-out time @ airports</h5></a><p class="card-text">Taxi-out efficiency at airports</p>
+  <div class="card-body"><h5 class="card-title">Additional taxi-out time @ airports</h5></a><p class="card-text">See the taxi-out efficiency at airports</p>
   </div>
 </div>
 
