@@ -17,6 +17,13 @@ command = "hugo -d public --gc --minify -b $DEPLOY_URL"
   [context.branch-deploy.environment]
     HUGO_VERSION = "0.69.2" # if older, use format: 0.53 (no trailing zero)
 
+# required by security colleagues
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains"
+
 
 # A basic redirect rule
 [[redirects]]
