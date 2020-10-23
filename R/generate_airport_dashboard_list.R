@@ -58,6 +58,13 @@ country_section <- function(apt_df) {
     str_c(collapse = "\n\n")
 }
 
+writeUTF8 <- function(x, file, bom = FALSE) {
+  con <- file(file, "wb")
+  if(bom) writeBin(BOM, con, endian="little")
+  writeBin(charToRaw(x), con, endian="little")
+  close(con)
+}
+
 pre <- summary_section(apt)
 big <- country_section(apt)
 
@@ -76,5 +83,4 @@ layout: default
 "
 
 str_glue(template, summary = pre, block = big) %>% 
-  write(file = "content/dashboard/stakeholder/airport/_index.md")
-
+  writeUTF8(file = "content/dashboard/stakeholder/airport/db/_index.md")

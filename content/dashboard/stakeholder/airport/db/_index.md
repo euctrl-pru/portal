@@ -72,9 +72,9 @@ layout: default
 
 ## France
 
-* [Bâle-Mulhouse (LFSB)](LFSB.html)
-* [Lyon-Saint-Exupéry (LFLL)](LFLL.html)
-* [Nice-Côte d’Azur (LFMN)](LFMN.html)
+* [BÃ¢le-Mulhouse (LFSB)](LFSB.html)
+* [Lyon-Saint-ExupÃ©ry (LFLL)](LFLL.html)
+* [Nice-CÃ´te dâ€™Azur (LFMN)](LFMN.html)
 * [Paris-Charles-de-Gaulle (LFPG)](LFPG.html)
 * [Paris-Orly (LFPO)](LFPO.html)
 
@@ -177,7 +177,7 @@ layout: default
 * [Ibiza (LEIB)](LEIB.html)
 * [Lanzarote (GCRR)](GCRR.html)
 * [Madrid-Barajas (LEMD)](LEMD.html)
-* [Málaga (LEMG)](LEMG.html)
+* [MÃ¡laga (LEMG)](LEMG.html)
 * [Palma de Mallorca (LEPA)](LEPA.html)
 * [Sevilla (LEZL)](LEZL.html)
 * [Tenerife North (GCXO)](GCXO.html)
@@ -186,13 +186,13 @@ layout: default
 
 ## Sweden
 
-* [Göteborg (ESGG)](ESGG.html)
+* [GÃ¶teborg (ESGG)](ESGG.html)
 * [Stockholm-Arlanda (ESSA)](ESSA.html)
 
 ## Switzerland
 
 * [Geneva (LSGG)](LSGG.html)
-* [Zürich (LSZH)](LSZH.html)
+* [ZÃ¼rich (LSZH)](LSZH.html)
 
 ## United Kingdom
 
