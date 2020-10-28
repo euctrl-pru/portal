@@ -48,10 +48,10 @@ This paper presents the results of this study, from the methodology followed for
 and the indicators developed to assess the potential imbalance, to the detailed results obtained for each of the 90 airports 
 analysed.
 
-| Document download                                                                                |
-|--------------------------------------------------------------------------------------------------|
-| [{{% dwnld_i %}}][apt_cap_res] Airport Capacity Imbalance Study                                  | 
-| [{{% dwnld_i %}}][apt_cap_res_sor] Summary of Response to draft Airport Capacity Imbalance Study | 
+| Document download                                                                                 |
+|---------------------------------------------------------------------------------------------------|
+| [{{% dwnld_i %}}][apt_cap_res]  Airport Capacity Imbalance Study                                  | 
+| [{{% dwnld_i %}}][apt_cap_res_sor]  Summary of Response to draft Airport Capacity Imbalance Study | 
 </div>
 
 #### Stakeholder consultation
