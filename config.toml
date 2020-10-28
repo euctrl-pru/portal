@@ -29,9 +29,10 @@ customCSS = ["css/supplement.css"]
 
 
 ignoreFiles = [
+  "\\.knit\\.md$",
+  "\\.utf8\\.md$",
   "\\.Rmd$",
   "\\.Rmarkdown$",
-  "_files$",
   "_cache$",
   "src$"
 ]
