@@ -58,6 +58,7 @@ country_section <- function(apt_df) {
     str_c(collapse = "\n\n")
 }
 
+# from https://tomizonor.wordpress.com/2013/04/17/file-utf8-windows/
 writeUTF8 <- function(x, file, bom = FALSE) {
   con <- file(file, "wb")
   if(bom) writeBin(BOM, con, endian="little")
