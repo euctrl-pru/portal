@@ -1,6 +1,6 @@
 ---
 title: "Airport Capacity Imbalance Study"
-date: "2020-07-30"
+date: "2020-10-28"
 excerpt: "Airport Capacity Imbalance Study"
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
@@ -10,7 +10,7 @@ dwnld_i: <i class="fa pru fa-download"></i>
 # run setup script
 source(here::here("_common.R"))
 ```
-<small><p style="color:#808080">Published: 30 July 2020</p></small>
+<small><p style="color:#808080">Published: 28 October 2020</p></small>
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
@@ -48,15 +48,19 @@ This paper presents the results of this study, from the methodology followed for
 and the indicators developed to assess the potential imbalance, to the detailed results obtained for each of the 90 airports 
 analysed.
 
-| Document download                      |
-|--------------------------------|
-| [{{% dwnld_i %}}][apt_cap_res] Airport Capacity Imbalance Study (for stakeholder comments) | 
+| Document download                                                                                |
+|--------------------------------------------------------------------------------------------------|
+| [{{% dwnld_i %}}][apt_cap_res] Airport Capacity Imbalance Study                                  | 
+| [{{% dwnld_i %}}][apt_cap_res_sor] Summary of Response to draft Airport Capacity Imbalance Study | 
 </div>
 
-#### Stakeholder feedback
+#### Stakeholder consultation
 <div class="container">
-We invite all interested parties to submit their feedback <ins>**no later than 11 September 2020** </ins>by email to: [Performance Review Unit](mailto:PRU-Support@eurocontrol.int)
-(PRU-Support@eurocontrol.int).
+Stakeholders were invited to provide their comments on the draft version of this Technical Note.
+The feedback received, together with the response/action resulting from it,
+is summarised in the Summary of Responses document (see *Document download* table).
+
+
 
 #### Background
 This report has been produced on behalf of the independent Performance Review Commission (PRC). 
@@ -71,4 +75,5 @@ could please bring them to the Aviation Intelligence Units attention.*
 
 </div>
 
-[apt_cap_res]: /library/TN_Airport_Capacity_Imbalance_consultation.pdf "Airport Capacity Imbalance Study"
+[apt_cap_res]: /library/technical-note_airport_capacity_imbalance.pdf "Airport Capacity Imbalance Study"
+[apt_cap_res_sor]: /library/technical-note_airport_capacity_imbalance_sor.pdf "Summary of Responses to draft Airport Capacity Imbalance Study"
