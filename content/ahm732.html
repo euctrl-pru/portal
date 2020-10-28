@@ -1,0 +1,80 @@
+---
+title: AHM732
+---
+
+
+
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60.0%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border: 0;
+}
+
+div.observablehq form * select {
+  width: 30em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.observablehq form * option {
+  white-space: wrap;
+  width: 100%;
+}
+
+#observablehq-loadStatus {
+  font-size: 0.15em;
+}
+
+</style>
+<div class="row">
+<div class="col-sm-10">
+Please select the relevant fields in order to determine the delay code to use:
+<div id="observablehq-437637d7">
+<div class="observablehq-loadStatus">
+
+</div>
+<div class="observablehq-viewof-group">
+
+</div>
+<div class="observablehq-viewof-process">
+
+</div>
+<div class="observablehq-viewof-reason">
+
+</div>
+<div class="observablehq-viewof-stakeholder">
+
+</div>
+<br>
+<div class="observablehq-viewof-code">
+
+</div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@espinielli/the-making-of-ahm732.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof group") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-group")();
+    if (name === "viewof process") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-process")();
+    if (name === "viewof reason") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-reason")();
+    if (name === "viewof stakeholder") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-stakeholder")();
+    if (name === "viewof code") return Inspector.into("#observablehq-437637d7 .observablehq-viewof-code")();
+  });
+</script>
+</div>
+</div>
