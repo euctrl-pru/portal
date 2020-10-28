@@ -46,7 +46,7 @@ For feedback or questions please contact us at:
 <div class="carousel-inner">
 
   <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"><img class="card-img-top" src="/images/landing/ectl_cov.jpg" alt="Daily traffic dashboard"><div class="card-body"><h5 class="card-title">COVID-19: The road to recovery</h5></a><small><p class="card-text">Check out the traffic situation by State, ACC, airport, and airline on our daily traffic dashboard!</p></small></div></div></div>
-  
+
   <div class="carousel-item"><div class="card  border-0"><a href="/study/apt_res/"><img class="card-img-top"  src="/images/cap/ectl_cap_apt.jpg" alt="Airport Capacity Imbalance Study"><div class="card-body"><h5 class="card-title">Airport capacity imbalance study</h5></a><small><p class="card-text">Read our new airport capacity imbalance study analysing 90 European airports.</p></small></div></div></div>
 
   <div class="carousel-item"><div class="card  border-0"><a href="/dashboard/stakeholder/airport/"><img class="card-img-top"  src="/images/landing/ectl_apt.jpg" alt="Airport Portfolio"><div class="card-body"><h5 class="card-title">Airport portfolio</h5></a><small><p class="card-text">Visit our new airport page which provides an overview of airport related data and dashboards across the agency.</p></small></div></div></div>
