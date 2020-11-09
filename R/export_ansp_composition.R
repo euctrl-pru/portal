@@ -91,6 +91,6 @@ Sys.unsetenv("ORA_SDTZ")
 
 data <- data %>%
   as_tibble() %>%
-  write_csv(path = here::here("data-config", "ansp-composition.csv"), na = "")
+  write_csv(file = here::here("data-config", "ansp-composition.csv"), na = "")
 
 cat("date:", instant, file = here::here("data", "date-ansp-composition.yml"))
