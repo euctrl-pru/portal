@@ -24,6 +24,7 @@ Whilst airspace users and national supervisory authorities may currently have mo
 Improving capacity performance involves identifying existing and future capacity constraints, planning and implementing effective mitigation or solutions to the capacity constraints and improving transparency about capacity for all stakeholders.
 </div>
 
+
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-6">
@@ -35,10 +36,11 @@ In order to discuss issues identified during the capacity crisis in 2018/19 and 
 #### Workshop material
 <div class="container">
 <div class="row">
+<a href="/library/prc_ws_2020_10_capacity_prc_summary_v1_0.pdf" class="btn btn-info" role="button" target="_blank"> PRC Summary Notes <br> {{% dwnld_i %}} Download </a>
 <div class="card border-0">
-A summary of the workshop and supporting material will be made available in due course.
 </div></div></div>
 </div>
+
 <div class="col-sm-6">
 <div class="row justify-content-center">
 <div class="card border-0">
@@ -51,6 +53,7 @@ A summary of the workshop and supporting material will be made available in due 
 *The PRC has made every effort to ensure that the information and analysis contained in this document are as accurate and 
 complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you 
 could please bring them to the Aviation Intelligence Unit's attention.*
+
 </div>
 
 [aiu_port]: https://ansperformance.eu/ "Aviation Intelligence Portal"
