@@ -10,5 +10,6 @@ options(
   blogdown.yaml.empty = TRUE,
   blogdown.new_bundle = TRUE,
   blogdown.title_case = TRUE,
+  blogdown.serve_site.startup = FALSE,
   blogdown.publishDir = '../pru-portal-generated'
 )
