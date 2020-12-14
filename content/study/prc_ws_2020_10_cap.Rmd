@@ -36,7 +36,8 @@ In order to discuss issues identified during the capacity crisis in 2018/19 and 
 #### Workshop material
 <div class="container">
 <div class="row">
-<a href="/library/prc_ws_2020_10_capacity_prc_summary_v1_0.pdf" class="btn btn-info" role="button" target="_blank"> PRC Summary Notes <br> {{% dwnld_i %}} Download </a>
+<a href="/library/prc_ws_2020_10_capacity_prc_summary_v1_0.pdf" class="btn btn-info" role="button" target="_blank"> PRC Summary Notes <br> {{% dwnld_i %}} Download </a>  
+<a href="/library/prc_technical-note_Enroute Capacity.pdf" class="btn btn-info" role="button" target="_blank"> PRC TECHNICAL NOTE ON EN ROUTE CAPACITY <br> {{% dwnld_i %}} Download </a>
 <div class="card border-0">
 </div></div></div>
 </div>
