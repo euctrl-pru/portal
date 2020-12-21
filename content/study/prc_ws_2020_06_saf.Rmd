@@ -38,6 +38,7 @@ In addition to the workshop, several experts and researchers were asked for thei
 <div class="card border-0">
 <a href="/library/prc_ws_2020_06_challenges_atm_safety-background_note.pdf" class="btn btn-info" role="button" target="_blank"> Background Notes <br> {{% dwnld_i %}} Download </a>
 <a href="/library/prc_ws_2020_06_challenges_atm_safety-slides.pdf" class="btn btn-info" role="button" target="_blank"> Workshop Slides <br> {{% dwnld_i %}} Download </a>
+<a href="/library/prc_position-paper_2020-12_Challenges to Safety.pdf" class="btn btn-info" role="button" target="_blank"> PRC Position Paper <br> {{% dwnld_i %}} Download </a>
 </div></div></div>
 </div>
 <div class="col-sm-2">
