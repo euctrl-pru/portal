@@ -45,7 +45,9 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
  
- <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/what-covid19-did-european-aviation-2020-outlook-2021"><img class="card-img-top" src="/images/landing/ectl_covid.jpg" alt="Covid impact on traffic outlook"><div class="card-body"><h5 class="card-title">COVID-19: Impact on Aviation</h5></a><small><p class="card-text">Read the new EUROCONTROL Think Paper on the impact of COVID-19 on European Aviation in 2020</p></small></div></div></div>
+  <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/what-covid19-did-european-aviation-2020-outlook-2021"><img class="card-img-top" src="/images/landing/ectl_covid.jpg" alt="Covid impact on traffic outlook"><div class="card-body"><h5 class="card-title">COVID-19: Impact on Aviation</h5></a><small><p class="card-text">Read the new EUROCONTROL Think Paper on the impact of COVID-19 on European Aviation in 2020</p></small></div></div></div>
+
+  <div class="carousel-item"><div class="card  border-0"><a href="/library/prc_position-paper_2020-12_Challenges to Safety.pdf" target="_blank"><img class="card-img-top"  src="/images/landing/prc_pos.png" alt="PRC Position Paper"><div class="card-body"><h5 class="card-title">PRC Position Paper</h5></a><small><p class="card-text">Learn more about the Performance Review Commission's position on the Future Challenges to Safety</p></small></div></div></div>
 
   <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"><img class="card-img-top" src="/images/landing/ectl_cov.jpg" alt="Daily traffic dashboard"><div class="card-body"><h5 class="card-title">COVID-19: Daily traffic situation</h5></a><small><p class="card-text">Check out the traffic situation by State, ACC, airport, and airline on our daily traffic dashboard!</p></small></div></div></div>
 
