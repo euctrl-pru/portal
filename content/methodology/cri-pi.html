@@ -1,5 +1,5 @@
 ---
-title: Composite Risk Index Methodology
+title: Composite Risk Index (CRI) Methodology Update
 bibliography: ["../../static/bib/aviation.bib"]
 link-citations: true
 output: html_document
@@ -7,356 +7,64 @@ output: html_document
 
 
 
-<p>This document provides a technical description of the methodology used to calculate the Composite Risk Index (CRI).</p>
-<p>The CRI represents a cumulative risk value aggregating all reported, assessed and severity classified safety-related incidents to form an index. This measure of risk exposure is based on probability and severity that considers the human perception of equivalent risk.</p>
-<p>Note that CRI can be calculated for any given entity, provider or the State.</p>
-<p>Figure <a href="#fig:cri-components">1</a> shows all components of proposed CRI index.</p>
-
-<div class="figure" style="text-align: center"><span id="fig:cri-components"></span>
-<img src="/images/cri-components.png" alt="Composite Risk Index components." width="800px" />
-<p class="caption">
-Figure 1: Composite Risk Index components.
-</p>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<p>In 2019 the PRC published (in PRR2018) its preliminary concept of the Composite Risk Index (CRI) and the corresponding methodology that could be used to measure the performance of the European ATM system, either as a whole or of its individual entities (service providers, Member States).</p>
+<p>Since then, the PRC has refined its CRI methodology to take account of local specific operating conditions and has published the updated and improved methodology in a <a href="/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf" title="PRC Technical Note - Composite Risk Index">Technical Note</a> <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">2020</a>)</span>.</p>
+<p>This CRI methodology will be of interest to ATM key decision makers, policymakers and operations staff as well as to Safety specialists, because the PRC’s methodology by nature is scalable and therefore can provide high level information for decision makers as well as more in-depth knowledge about risk exposure to safety experts.</p>
 </div>
-<div id="acronyms-and-terminology" class="section level2">
-<h2>Acronyms and terminology</h2>
-<table>
-<caption><span id="tab:acronyms">Table 1: </span> Acronyms and terminology</caption>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/acronym/cri/" title="CRI">CRI</a></td>
-<td>Composite Risk Index</td>
-</tr>
-<tr class="even">
-<td><a href="/acronym/crinorm/" title="CRInorm">CRInorm</a></td>
-<td>Composite Risk Index normalised by flight hours</td>
-</tr>
-<tr class="odd">
-<td><a href="/acronym/ri/" title="RI">RI</a></td>
-<td>Runway Incursion</td>
-</tr>
-<tr class="even">
-<td><a href="/acronym/upa/" title="UPA">UPA</a></td>
-<td>Unauthorised Penetration of Airspace</td>
-</tr>
-<tr class="odd">
-<td><a href="/acronym/smi/" title="SMI">SMI</a></td>
-<td>Separation Minima Infringement</td>
-</tr>
-<tr class="even">
-<td><a href="/acronym/atms/" title="TECH">TECH</a></td>
-<td>ATM Specific / Technical occurrences</td>
-</tr>
-</tbody>
-</table>
+<div id="why-a-composite-risk-index" class="section level2">
+<h2>Why a Composite Risk Index?</h2>
+<p>Safety in aviation is paramount. Although safety procedures and policies have become well established, implemented and enforced, there is always a risk, however remote, of complacency creeping in. To ensure that this never happens, a CRI methodology can assist the key parties concerned to ensure that all aspects of safety management systems, for example policy, safety oversight, safety data reporting, pro-active actions to prevent safety threats, etc., are given top priority at all times.</p>
+<p>A standard safety report with typical incident or accident trends may highlight some aspects. However, such safety reports do not always give an insight and overall impression of how safety is performing over time or enable comparisons with different States or stakeholders.
+It is from this perspective that the PRC has developed a CRI Methodology. It is not designed to replace reporting on specific aspects of safety. Its purpose is to assist key decision makers, policymakers, and operations staff as well as Safety specialists by providing an easy overview to monitor and possibly compare the safety risks, either for one provider or for a State to make an overview of annual developments. Ultimately, based on data availability, it can be used as a kind of benchmark between ANSPs, States or regions at one moment in time or over several years.</p>
 </div>
-<div id="methodology" class="section level2">
-<h2>Methodology</h2>
-<p>As a proxy of safety risk within certain airspace, State, or any Entity, the concept of exposure to risk, based on reported / historical safety information was proposed.</p>
-<p>In order to calculate the composite risk, each historical, reported occurrence had to have assigned severity (using Risk Assessment Tool methodology) and probability (calculated from historical safety data).</p>
-<p>Modelling can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements.</p>
-<p>The CRI calculations are based on the following information:</p>
-<ul>
-<li>Accidents</li>
-<li>Operation occurrences (high/medium risk incidents with Severity A to C):
-<ul>
-<li>runway incursions (RI)</li>
-<li>separation minima infringements (SMI)</li>
-<li>unauthorized penetrations of airspace (UPA)</li>
-</ul></li>
-<li>Other operational occurrences</li>
-<li>Technical occurrences (high/medium risk incidents with Severity AA/A to C)</li>
-</ul>
-<p>A detailed data description can be found at the end of this page.</p>
-<p>To take into account the local conditions within each Entity, exposure data, i.e. the total number of flight hours within each Entity is used as an additional input (CRI normalised results).</p>
-<p>The process is visualised in Figure <a href="#fig:cri-data-input">2</a>.</p>
-
-<div class="figure" style="text-align: center"><span id="fig:cri-data-input"></span>
-<img src="/images/cri-data-input.png" alt="Composite Risk Index process." width="800px" />
-<p class="caption">
-Figure 2: Composite Risk Index process.
-</p>
+<div id="problem-how-can-the-total-safety-risk-be-measured" class="section level2">
+<h2>Problem: How can the total safety risk be measured?</h2>
+<p>Risk is the potential for mishaps or other adverse variation in the cost, schedule, or safety performance of the ATM system. Safety risk therefore can be explained as the potential for mishaps that could result in injury, fatality, equipment or system damage or total loss.</p>
+<p>Conceptually, all safety programmes desire accurate safety risk quantification in order to provide a meaningful expression of risk. As there are typically multiple safety risks associated with a system or event, the quantification of total safety risk is a major challenge.</p>
+<p>One possible way to define the total safety risk of any system is using the concept of a composite risk estimate <span class="citation">(Burns <a href="#ref-burns2016" role="doc-biblioref">2016</a>)</span>. Current methods of obtaining this composite risk estimate use summing techniques to add the individual risks and produce a single number <span class="citation">(Burns <a href="#ref-burns2016" role="doc-biblioref">2016</a>)</span>,<span class="citation">(Nardo <a href="#ref-nardo2005" role="doc-biblioref">2005</a>)</span>. This method seems natural, however, it is often difficult to determine particular occurrence probabilities (e.g. when historical information is of limited time series) or to quantify their severity (e.g. when information in safety databases is missing). That makes the additive computation of risk difficult or impossible.</p>
+<p>Moreover, although risk in general can be quantified, as it represents a combination of probability and severity of specific occurrence happening, the human perception of risk often influences how risk is addressed <span class="citation">(Slovic <a href="#ref-slovic2016" role="doc-biblioref">2016</a>)</span>. For example, on the level of decision makers the risk perception does not necessarily map directly to probability and severity in a linear fashion. That makes computation of total risk additionally difficult and subjective.</p>
 </div>
-<div id="occurrences-with-no-severity-classification" class="section level3">
-<h3>Occurrences with no severity classification</h3>
-<p>All severity unclassified/not assessed events (Severity Category D) are distributed into groups A to E, based on historical distribution (determined using the all available safety data).</p>
-<p>The probability of occurrence being assigned to a specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions.</p>
-<p>Figure <a href="#fig:cri-sevD">3</a> shows how unassessed occurences (severity D) are distributed into other severity groups.</p>
-
-<div class="figure" style="text-align: center"><span id="fig:cri-sevD"></span>
-<img src="/images/cri-sevD.png" alt="Distribution of unassessed occurences (severity D) into other severity groups." width="800px" />
-<p class="caption">
-Figure 3: Distribution of unassessed occurences (severity D) into other severity groups.
-</p>
-</div>
-</div>
-<div id="estimated-numbers-of-occurrences" class="section level3">
-<h3>Estimated numbers of occurrences</h3>
-<p>The formula how the total numbers of specific type of occurrence were determined using the distribution based on probability of unclassified occurrences is presented below.</p>
-<p><span class="math display">\[
-\text{No_occ_est}_i = ((\text{No_D}_i * P_i) + \text{No_occ}_i)
-\]</span></p>
-<p>where</p>
-<dl>
-<dt><span class="math inline">\(\text{No_occ_est}_i\)</span></dt>
-<dd>estimated number of safety occurrence type <span class="math inline">\(i\)</span>
-</dd>
-<dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
-<dd>number of reported occurrences of Severity Classification D (not determined)
-for occurrence type <span class="math inline">\(i\)</span>
-</dd>
-<dt><span class="math inline">\(P_i\)</span></dt>
-<dd>probability of safety occurrence type <span class="math inline">\(i\)</span>
-</dd>
-<dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
-<dd>number of reported safety occurrences of type <span class="math inline">\(i\)</span>
-</dd>
-</dl>
-<p>The probability of each type of occurrence is calculated using the simple principle:</p>
-<p><span class="math display">\[
-P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
-\]</span></p>
-<dl>
-<dt><span class="math inline">\(\text{No_occ}_i\)</span></dt>
-<dd>number of reported safety occurrences type <span class="math inline">\(i\)</span> in a year
-</dd>
-<dt><span class="math inline">\(\text{Total No}_{{occ}_i}\)</span></dt>
-<dd>total number of reported safety occurrences type <span class="math inline">\(i\)</span> in a group in all years
-</dd>
-</dl>
-</div>
-<div id="cri-calculation-using-human-perception-of-risk" class="section level3">
-<h3>CRI calculation using human perception of risk</h3>
-<p>Using the estimated total number of occurrences for each type and adding to it
-the human perception of their risk, it is possible to calculate the
-CRI for each Entity separately.
-The simple formula to calculate the CRI is presented below.</p>
-<p><span class="math display">\[\begin{align}
-\text{CRI}_i &amp; = \text{No}_{\text{occ_est_i}} * w_i \\
-
-\text{CRI}  &amp; = \sum_{i}^{} \frac{\text{CRI}_i}{\text{Total No}_{{occ}}}
-\end{align}\]</span></p>
-<p>where</p>
-<dl>
-<dt><span class="math inline">\(\text{CRI}_i\)</span></dt>
-<dd>CRI index for occurrence type <span class="math inline">\(i\)</span>
-</dd>
-<dt><span class="math inline">\(w_i\)</span></dt>
-<dd>weight (based on severity and human perception) assigned to specific type of safety occurrence
-</dd>
-<dt><span class="math inline">\(\text{Total No}_{{occ}}\)</span></dt>
-<dd>total number of all occurrences in a year
-</dd>
-</dl>
-<p>In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event so that the CRI can at the end consider the human perception of equivalent risk.</p>
-<p>Introduction of Weights to express the severity of the event allows their description in non-monetary terms which have a meaningful and understandable explanation in human perception.</p>
-<p>Each weight value for specific Severity category is determined by using the optimisation technique, with the aim to select a combination of weights that will not disturb the computation of the CRI from year to year if significant changes in reporting are introduced. In other words, the optimisation will find which combination of weights result in the lowest standard deviation of CRI values between the years for each Entity.</p>
-<p>Due to a large number of variables involved and the enormous number of combinations possible, the optimisation and selection of the Weights combination is done in stages:</p>
+<div id="what-is-the-prcs-proposal-to-measure-total-safety-risk" class="section level2">
+<h2>What is the PRC’s proposal to measure total safety risk?</h2>
+<p>In PRR 2018, the PRC presented the preliminary concept of the CRI and a corresponding methodology that could be used to measure the performance of the European ATM system as a whole or also its individual entities (service providers or Member States).</p>
+<p>This initial calculation of the CRI was mainly based on reported safety occurrences. More specifically, the CRI was represented as a cumulative risk value calculated aggregating all reported, assessed and severity classified key safety‐related incidents to form an index.</p>
+<p>The measure of risk exposure was based on probability and severity that considers the human perception of equivalent risk. The overall idea behind the CRI was that the performance of the safety system can be analysed in three important broad categories: (1) the quality of the reporting system with reporting entity, (2) measured risks within the system, and (3) the human perception of risk.</p>
+<p><a href="/methodology/cri-pi_v1/" title="Composite Risk Index - Preliminary Methodology">Click here for an explanation of this preliminary CRI methodology including a working example</a></p>
+<p>At the same time, the PRC also has highlighted that there could be possibilities to further improve the CRI by considering specific local operating conditions, airspace size, capacity and/or complexity. In order to improve the initial CRI methodology, further consideration of local operating conditions, airspace size and complexity of the airspace were taken into consideration. As a result, three additional components, besides the original one (Safety Data), were considered in the new methodology. The new CRI methodology includes hence four distinct components, or Intermediate Composite Indexes (ICIs):</p>
 <ol style="list-style-type: decimal">
-<li><p>Selection of Weights for accident, all OPS occurrences and TECH occurrences</p></li>
-<li><p>Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1</p></li>
-<li><p>Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2</p></li>
+<li>Safety data (with the following parameters: number and type of safety occurrences, severity classification, and human perception of risk),</li>
+<li>Traffic / exposure data (consisting of the following parameters: flight hours and airport movements),</li>
+<li>Complexity (namely adjusted density, structural index and Complexity index), and</li>
+<li>Reporting practices (described through parameters of reporting rate and reporting culture).</li>
 </ol>
-<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">2019</a>)</span></p>
-</div>
-<div id="cri-normalisation" class="section level3">
-<h3>CRI normalisation</h3>
-<p>To allow the applicability of the CRI to airspaces with different traffic levels, the CRI is normalised by flight hours for each Entity. The CRInorm is calculated based on the following formula:</p>
-<p>CRInorm =CRI/(Number of Flight Hours)</p>
-</div>
-</div>
-<div id="data" class="section level2">
-<h2>Data</h2>
-<p>For CRI calculation, each historical, reported occurrence besides classification, has to have assigned severity and probability.</p>
-<p>Modelling of Weights can be performed using any source of safety occurrences data, as long as the input satisfies the minimum data requirements as in the table below. Note, that safety data, should include occurrence severity, reported and calculated using severity classification of the <a href="/acronym/rat/" title="RAT">Risk Assessment Methodology</a>.</p>
-<table>
-<colgroup>
-<col width="19%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Entity</td>
-<td>the name of Entity within State, ANSP, or department</td>
-</tr>
-<tr class="even">
-<td>accident</td>
-<td>safety occurrence where: a person is fatally or seriously injured; the aircraft sustains damage or structural failure; the aircraft is missing or is completely inaccessible”</td>
-</tr>
-<tr class="odd">
-<td>total_no_of_ops_occurrences</td>
-<td>the sum of safety occurrences (incidents) related to OPS</td>
-</tr>
-<tr class="even">
-<td>ri_a</td>
-<td>runway incursions severity A</td>
-</tr>
-<tr class="odd">
-<td>smi_a</td>
-<td>separation minima infringments severity A</td>
-</tr>
-<tr class="even">
-<td>upa_a</td>
-<td>unauthorised penetration of airspace severity A</td>
-</tr>
-<tr class="odd">
-<td>ri_b</td>
-<td>runway incursions severity B</td>
-</tr>
-<tr class="even">
-<td>smi_b</td>
-<td>separation minima infringments severity B</td>
-</tr>
-<tr class="odd">
-<td>upa_b</td>
-<td>unauthorised penetration of airspace severity B</td>
-</tr>
-<tr class="even">
-<td>ri_c</td>
-<td>runway incursions severity C</td>
-</tr>
-<tr class="odd">
-<td>smi_c</td>
-<td>separation minima infringments severity C</td>
-</tr>
-<tr class="even">
-<td>upa_c</td>
-<td>unauthorised penetration of airspace severity C</td>
-</tr>
-<tr class="odd">
-<td>ri_d</td>
-<td>runway incursions severity D</td>
-</tr>
-<tr class="even">
-<td>smi_d</td>
-<td>separation minima infringments severity D</td>
-</tr>
-<tr class="odd">
-<td>upa_d</td>
-<td>unauthorised penetration of airspace severity D</td>
-</tr>
-<tr class="even">
-<td>ri_e</td>
-<td>runway incursions severity E</td>
-</tr>
-<tr class="odd">
-<td>smi_e</td>
-<td>separation minima infringments severity E</td>
-</tr>
-<tr class="even">
-<td>upa_e</td>
-<td>unauthorised penetration of airspace severity E</td>
-</tr>
-<tr class="odd">
-<td>total_no_of_tech_occurrences</td>
-<td>the sum of safety occurrences related to technical reasons</td>
-</tr>
-<tr class="even">
-<td>t_aa</td>
-<td>technical occurrences severity AA</td>
-</tr>
-<tr class="odd">
-<td>t_a</td>
-<td>techechnical occurrences severity A</td>
-</tr>
-<tr class="even">
-<td>t_b</td>
-<td>techchnical occurrences severity B</td>
-</tr>
-<tr class="odd">
-<td>t_c</td>
-<td>techechnical occurrences severity C</td>
-</tr>
-<tr class="even">
-<td>t_d</td>
-<td>techechnical occurrences severity D</td>
-</tr>
-<tr class="odd">
-<td>t_e</td>
-<td>techechnical occurrences severity E</td>
-</tr>
-<tr class="even">
-<td>total_number_of_all_reported_occurrences</td>
-<td>sum of all OPS and TECH occurences</td>
-</tr>
-<tr class="odd">
-<td>year</td>
-<td>year</td>
-</tr>
-<tr class="even">
-<td>flight_hours</td>
-<td>sum of flight hours in Entity for year n</td>
-</tr>
-</tbody>
-</table>
-<div id="severity" class="section level3">
-<h3>Severity</h3>
-<p>The classification scheme for safety occurrences in ATM specifies six severity categories for ATM related occurrences impacting the safe operations of the aircraft (as per ESARR2).</p>
-<table>
-<thead>
-<tr class="header">
-<th>Severity</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td>serious incident</td>
-</tr>
-<tr class="even">
-<td>B</td>
-<td>major incident</td>
-</tr>
-<tr class="odd">
-<td>C</td>
-<td>significant incident</td>
-</tr>
-<tr class="even">
-<td>D</td>
-<td>not determined</td>
-</tr>
-<tr class="odd">
-<td>E</td>
-<td>no safety effect</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="frequency" class="section level3">
-<h3>Frequency</h3>
-<p>The RAT classification scheme specifies five qualitative frequency categories (repeatability). However, these values are not commonly reported through the AST. Each State/Entity in principle should develop their own quantitative boundaries, which should consider national traffic volumes and specific operating conditions of the national ATM system.</p>
-<p>Therefore, the occurrence probability is calculated using historical data from all available years separately for each Entity in order to simulate/take into consideration the local conditions.</p>
+<p>Figure <a href="#fig:crimethod">1</a> shows all components of the proposed CRI index.</p>
+<div class="figure" style="text-align: center"><span id="fig:crimethod"></span>
+<img src="/images/cri-meth-comp.png" alt="CRI Methodology Components" width="800px" />
+<p class="caption">
+Figure 1: CRI Methodology Components
+</p>
 </div>
 </div>
 <div id="further-information" class="section level2">
 <h2>Further Information</h2>
-<p>For further information please refer also to the detailed report explaining the development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">2019</a>)</span>.</p>
-</div>
-<div id="working-example" class="section level2">
-<h2>Working example</h2>
-<p>Script calculating the CRI using the explained methodology and sample data are available for testing purposes [here]
-<a href="/download/other/CRI-External.zip">crizip</a>.</p>
-<p>Please feel free to use sample data provided to get familiar with the methodology.</p>
-<p>User guide how to set up the environment can be found at ‘README.pdf’ file within repository.</p>
+<p>For more detailed information, please refer also to the <a href="/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf" title="PRC Technical Note - Composite Risk Index">PRC Technical Note</a> explaining the further development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">2020</a>)</span>. The technical note explains in detail several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.</p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
 <div id="refs" class="references">
-<div id="ref-performancereviewcommissionCompositeRiskIndex2019">
-<p>Commission, Performance Review. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.</p>
+<div id="ref-burns2016">
+<p>Burns, M. 2016. <em>Logistics and Transportation Security, a Strategic, Tactical, and Operational Guide to Resilience</em>. CRC Press, Taylor and Francis Group.</p>
+</div>
+<div id="ref-performancereviewcommissionCompositeRiskIndex2020">
+<p>Commission, Performance Review. 2020. “Updated Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf">https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf</a>.</p>
+</div>
+<div id="ref-nardo2005">
+<p>Nardo, Saisana, M. 2005. “Handbook on Constructing Composite Indicators: Methodology and User Guide.” Organisation for Economic Co-operation and Development; OECD Statistics Working Papers.</p>
+</div>
+<div id="ref-slovic2016">
+<p>Slovic, P. 2016. “Perception of Risk.” <a href="https://www.researchgate.net/publication/325954197_The_perception_of_risk">https://www.researchgate.net/publication/325954197_The_perception_of_risk</a>.</p>
 </div>
 </div>
 </div>
