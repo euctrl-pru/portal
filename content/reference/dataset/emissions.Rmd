@@ -30,14 +30,15 @@ A flight from New York to Brussels would however NOT be included in the results 
 
 ## Column naming and types
 
-| Column name           | Description              | Example |
-|-----------------------|--------------------------|---------|
-| YEAR                  | Year                     | 2019    |
-| MONTH                 | Month                    | 1       |
-| STATE_NAME            | State Name               | ALBANIA |
-| STATE_CODE            | State Code               | LA      |
-| CO2_QTY_TONNES        | Co2 Qty (for that state) | 8318.42 |
-| TF                    | traffic (for that state) | 821     |
+| Column name    | Description              | Example |
+|----------------|--------------------------|---------|
+| YEAR           | Year                     | 2019    |
+| MONTH          | Month                    | 1       |
+| STATE_NAME     | State Name               | ALBANIA |
+| STATE_CODE     | State Code               | LA      |
+| CO2_QTY_TONNES | Co2 Qty (for that state) | 8318.42 |
+| TF             | traffic (for that state) | 821     |
+
 
 
 [env]: https://www.eurocontrol.int/environment "EUROCONTROL Aviation Sustainability Unit"
