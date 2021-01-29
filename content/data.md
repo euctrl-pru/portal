@@ -28,7 +28,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 | Data description                                                     | Period                                                                         | {{< excel_i >}}             | {{< csv_i >}} |  Info                    |             |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------|---------------|--------------------------|------------------------------------|
-| CO2 emissions by State<br><small>supplied by the [EUROCONTROL Aviation Sustainability Unit][ENV]</small>  | {{< getdata "dwnld" "co_opt_beg" >}} - {{< getdata "dwnld" "co_opt_end" >}}  | [{{< dwnld_i >}}][COxlsx]  |               | [{{< info_i >}}][COmeta] |                                    |
+| Monthly CO2 emissions by State<br><small>supplied by the [EUROCONTROL Aviation Sustainability Unit][ENV]</small>  | {{< getdata "dwnld" "co_opt_beg" >}} - {{< getdata "dwnld" "co_opt_end" >}}  | [{{< dwnld_i >}}][COxlsx]  |               | [{{< info_i >}}][COmeta] |                                    |
 
 [COxlsx]: /download/xls/CO2_emissions_by_state.xlsx "CO2 (Excel)"
 [COcsv]:  /404/ "CO2 (CSV)"
