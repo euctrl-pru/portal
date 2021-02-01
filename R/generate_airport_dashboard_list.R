@@ -11,7 +11,7 @@ library(stringr)
 # )
 
 apt <- readr::read_csv("data-config/airports-dashboard.csv") %>%
-  rename(icao    = APT_ICAO,
+  rename(icao    = ARP_CODE,
          country = APT_COUNTRY,
          name    = APT_NAME,
          ready   = DASHBOARD)
