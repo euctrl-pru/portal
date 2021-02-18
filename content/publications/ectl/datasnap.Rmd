@@ -1,0 +1,19 @@
+---
+title: EUROCONTROL Data Snapshots
+type: "Data Snapshot"
+date: '2021-02-16'
+tags:  Data Snapshot
+---
+
+## 2021
+* [EUROCONTROL Data Snapshot (16 Feb 2021) - CO₂ emissions by flight distance][DS4]
+* [EUROCONTROL Data Snapshot (09 Feb 2021) - COVID-19 cuts to flights have interrupted Airbus’s growing dominance of flights in Europe][DS3]
+* [EUROCONTROL Data Snapshot (26 Jan 2021) - CO₂ emissions from flights in 2020][DS2]
+* [EUROCONTROL Data Snapshot (12 Jan 2021) - Airline schedules during 2020 were a weaker guide to flights than usual][DS1]
+
+
+
+[DS1]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot "EUROCONTROL Data Snapshot #1 - Airline schedules during 2020 were a weaker guide to flights than usual"
+[DS2]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-co2-emissions-flights-2020 "EUROCONTROL Data Snapshot #2 - CO₂ emissions from flights in 2020"
+[DS3]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-manufacturer-share-flights-europe "EUROCONTROL Data Snapshot #3 - COVID-19 cuts to flights have interrupted Airbus’s growing dominance of flights in Europe"
+[DS4]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-co2-emissions-flight-distance "EUROCONTROL Data Snapshot #4 - CO₂ emissions by flight distance"

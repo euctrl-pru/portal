@@ -1,0 +1,32 @@
+---
+title: EUROCONTROL Think Papers
+type: "Think Papers"
+date: '2021-01-01'
+tags:  Think Paper
+---
+
+## 2021
+* [EUROCONTROL Think Paper #8 (01 Jan 2021) - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021][TP8]
+
+## 2020
+* [EUROCONTROL Think Paper #7 (19 Oct 2020) - Does taxing aviation really reduce emissions?][TP7]
+* [EUROCONTROL Think Paper #6 (29 Jan 2020) - Arriving on time: the passenger priority][TP6]
+
+## 2019
+* [EUROCONTROL Think Paper #5 (25 Oct 2019) - Effects on the network of extra standby aircraft and Boeing 737 MAX grounding][TP5]
+* [EUROCONTROL Think Paper #4 (10 Sep 2019) - The aviation network - Decarbonisation issues][TP4]
+* [EUROCONTROL Think Paper #3 (28 Aug 2019) - Cybersecurity in aviation][TP3]
+* [EUROCONTROL Think Paper #2 (18 July 2019) - Air traffic flow management (ATFM) regulations: a power for good][TP2]
+* [EUROCONTROL Think Paper #1 (21 June 2019) - Fuel tankering in European skies: economic benefits and environmental impact][TP1]
+
+
+
+
+[TP1]: https://www.eurocontrol.int/publication/fuel-tankering-european-skies-economic-benefits-and-environmental-impact "EUROCONTROL Think Paper #1 - Fuel tankering in European skies: economic benefits and environmental impact"
+[TP2]: https://www.eurocontrol.int/publication/air-traffic-flow-management-atfm-regulations-power-good "EUROCONTROL Think Paper #2 - Air traffic flow management (ATFM) regulations: a power for good"
+[TP3]: https://www.eurocontrol.int/publication/cybersecurity-aviation "EUROCONTROL Think Paper #3 - Cybersecurity in aviation"
+[TP4]: https://www.eurocontrol.int/publication/aviation-network-decarbonisation-issues "EUROCONTROL Think Paper #4 - The aviation network - Decarbonisation issues"
+[TP5]: https://www.eurocontrol.int/publication/effects-network-extra-standby-aircraft-and-boeing-737-max-grounding "EUROCONTROL Think Paper #5 - Effects on the network of extra standby aircraft and Boeing 737 MAX grounding"
+[TP6]: https://www.eurocontrol.int/publication/arriving-time-passenger-priority "EUROCONTROL Think Paper #6 - Arriving on time: the passenger priority"
+[TP7]: https://www.eurocontrol.int/publication/does-taxing-aviation-reduce-emissions "EUROCONTROL Think Paper #7 - Does taxing aviation really reduce emissions?"
+[TP8]: https://www.eurocontrol.int/publication/what-covid19-did-european-aviation-2020-outlook-2021 "EUROCONTROL Think Paper #8 - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021"

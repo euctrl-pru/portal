@@ -409,9 +409,9 @@ ignoreFiles = [
 
   [[menu.main]]
     name = "Publications"
-    identifier = "publications"
     pre = ""
     url = "/publications/"
+    identifier = "publications" 
     weight = 30
 
   [[menu.main]]
