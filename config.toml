@@ -245,6 +245,15 @@ ignoreFiles = [
 
   #----------------------
   [[menu.main]]
+    pre = "<i class='fas fa-book'></i>"
+    name = "&nbsp;Publications"
+    url = "/publications/"
+    identifier = "key-publications"
+    parent = "aiu"
+    weight = 49
+
+  #----------------------
+  [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
     name = "&nbsp;Reference"
     url = "/reference/"
