@@ -415,60 +415,52 @@ ignoreFiles = [
     weight = 30
 
   [[menu.main]]
-    name = "Data"
-    identifier = "data"
-    pre = ""
-    url = "/data/"
-    weight = 40
- [[menu.main]]
-    name = "Data downloads"
-    url = "/data/"
-    parent = "data"
-    weight = 1
-
-
-  [[menu.main]]
     name = "Reference"
     url = "/reference/"
     identifier = "reference"
-    weight = 50
+    weight = 40
+   [[menu.main]]
+    name = "Data downloads"
+    url = "/data/"
+    parent = "reference"
+    weight = 1  
   [[menu.main]]
     name = "Definitions"
     url = "/definition/"
     parent = "reference"
-    weight = 1
+    weight = 2
   [[menu.main]]
     name = "Methodology"
     url = "/methodology/"
     identifier = "methodology"
     parent = "reference"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
     parent = "reference"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
     parent = "reference"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "divider2"
     parent = "reference"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
     parent = "reference"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "SES"
     identifier= "ses"
     url = " "
-    weight = 60
+    weight = 50
   [[menu.main]]
     name = "Single European Sky (SES) Portal"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
