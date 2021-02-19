@@ -245,6 +245,15 @@ ignoreFiles = [
 
   #----------------------
   [[menu.main]]
+    pre = "<i class='fas fa-book'></i>"
+    name = "&nbsp;Publications"
+    url = "/publications/"
+    identifier = "key-publications"
+    parent = "aiu"
+    weight = 49
+
+  #----------------------
+  [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
     name = "&nbsp;Reference"
     url = "/reference/"
@@ -335,7 +344,7 @@ ignoreFiles = [
     weight = 4
 
   [[menu.main]]
-    name = "Area"
+    name = "Areas"
     identifier = "dashboard"
     pre = ""
     url = "/dashboard/"
@@ -408,57 +417,59 @@ ignoreFiles = [
     weight = 4
 
   [[menu.main]]
+    name = "Publications"
+    pre = ""
+    url = "/publications/"
+    identifier = "publications" 
+    weight = 30
+
+  [[menu.main]]
     name = "Reference"
     url = "/reference/"
     identifier = "reference"
-    weight = 30
- [[menu.main]]
+    weight = 40
+   [[menu.main]]
     name = "Data downloads"
     url = "/data/"
     parent = "reference"
-    weight = 1
-  [[menu.main]]
-    name = "Studies"
-    url = "/study/"
-    parent = "reference"
-    weight = 2
+    weight = 1  
   [[menu.main]]
     name = "Definitions"
     url = "/definition/"
     parent = "reference"
-    weight = 3
+    weight = 2
   [[menu.main]]
     name = "Methodology"
     url = "/methodology/"
     identifier = "methodology"
     parent = "reference"
-    weight = 4
+    weight = 3
   [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
     parent = "reference"
-    weight = 5
+    weight = 4
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
     parent = "reference"
-    weight = 6
+    weight = 5
   [[menu.main]]
     name = "divider2"
     parent = "reference"
-    weight = 7
+    weight = 6
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
     parent = "reference"
-    weight = 8
+    weight = 7
 
   [[menu.main]]
     name = "SES"
     identifier= "ses"
     url = " "
-    weight = 40
+    weight = 50
   [[menu.main]]
     name = "Single European Sky (SES) Portal"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
@@ -466,30 +477,6 @@ ignoreFiles = [
     identifier = "ses-link"
     parent = "ses"
     weight = 1
-
-
-
-
-[[menu.sidenav]]
-    name = "Overview"
-    url = "/prcq/"
-    identifier= "overview"
-    weight = 10
-[[menu.sidenav]]
-    name = "Traffic"
-    url = "/prcq/traffic/"
-    identifier= "traffic"
-    weight = 20
-[[menu.sidenav]]
-    name = "Ops En-route"
-    url = "/prcq/ops-en-route/"
-    identifier= "ops-en-route"
-    weight = 40
-[[menu.sidenav]]
-    name = "Ops Airport"
-    url = "/prcq/ops-airport/"
-    identifier= "ops-airport"
-    weight = 50
 
 [[menu.covid]]
     name = "COVID Overview"
@@ -605,6 +592,30 @@ ignoreFiles = [
     url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
     identifier= "su"
     weight = 40
+
+
+[[menu.publications]]
+    name = "PRC News"
+    url = "/publications/prc/news"
+    identifier= "prc_news"
+    weight = 10
+[[menu.publications]]
+    name = "PRR"
+    url = "/publications/prc/prr"
+    identifier= "prr"
+    weight = 20
+ [[menu.publications]]
+    name = "ATM Cost Efficiency Benchmark (ACE)"
+    url = "/publications/prc/ace"
+    identifier= "ace"
+    weight = 30
+[[menu.publications]]
+    name = "Other"
+    url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
+    identifier= "su"
+    weight = 40
+
+
 
 
 [params]

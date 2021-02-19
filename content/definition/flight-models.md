@@ -16,10 +16,10 @@ td {
 
 There are several trajectories of interest for the analysis of horizontal flight efficiency.
 
-## FTFM
+## FTFM or Model 1
 Filed Tactical Flight Model, corresponding to the last filed flight plan (see also [FTFM][ftfm])
 
-## CTFM
+## CTFM or Model 3
 Current Tactical Flight Model (see [CTFM][ctfm])
 
 ## CPF

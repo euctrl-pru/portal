@@ -5,7 +5,7 @@ slug: ctfm
 
 A mathematical model containing a point and airspace volume profile created in 
 [ETFMS][etfms] for a flight which has been activated.
-Also known as Actual Profile.
+Also known as Actual Profile or *Model 3* (M3).
 
 
 ## See Also
