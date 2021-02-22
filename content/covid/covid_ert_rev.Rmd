@@ -34,7 +34,7 @@ The analysis includes 39 States (all EUROCONTROL Member States except Monaco and
 
 It should be noted that the estimated losses that are presented below for ANSPs in the SES Area are calculated using the traffic risk sharing arrangements defined in the Performance and Charging Scheme Regulation (EU) No 2019/317. These figures are therefore subject to change following the application of the exceptional RP3 measures proposed by the European Commission and the adoption of RP3 performance plans.
 
-More details on the methodology are available in the “Methodological Note” below. 
+More details on the methodology are available in the “Methodological Note” below.  
 
 </div>
 <div class="col-sm-3">
