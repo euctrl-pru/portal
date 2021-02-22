@@ -32,7 +32,7 @@ The geographical scope of the analysis is the [EUROCONTROL Member States](/defin
 
 The analysis includes 39 States (all EUROCONTROL Member States except Monaco and Ukraine), referred to as CRCO Area in this analysis. The view is broken down in 39 individual [en-route charging zones][ert_cz][^1].
 
-It should be noted that the estimated losses that are presented below for ANSPs in the SES Area are calculated using the traffic risk sharing arrangements defined in the current Performance and Charging Scheme Regulation (EU) No 2019/317. These figures are therefore subject to change following the application of the exceptional RP3 measures proposed by the European Commission and the adoption of RP3 performance plans.
+It should be noted that the estimated losses that are presented below for ANSPs in the SES Area are calculated using the traffic risk sharing arrangements defined in the Performance and Charging Scheme Regulation (EU) No 2019/317. These figures are therefore subject to change following the application of the exceptional RP3 measures proposed by the European Commission and the adoption of RP3 performance plans.
 
 More details on the methodology are available in the “Methodological Note” below. 
 
