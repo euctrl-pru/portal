@@ -1,6 +1,5 @@
 ---
 title: Technical Notes - Composite Risk Index (CRI)
-type: "PRC News"
 date: '2021-01-22'
 tags:
   - News

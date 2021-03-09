@@ -1,6 +1,5 @@
 ---
 title: "COVID-19 - The big picture so far...."
-type: "Study"
 date: "2020-08-15"
 draft: "true"
 excerpt: "COVID-19 - The big picture so far...."

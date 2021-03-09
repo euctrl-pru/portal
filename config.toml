@@ -8,7 +8,7 @@
 
 #--------------- PRODUCTION ---------------
 # remember ending '/'
-baseurl = "http://www.ansperformance.eu/"
+baseurl = "https://www.ansperformance.eu/"
 # publishDir = "public/"
 #-----------------------------------------
 
