@@ -1,6 +1,5 @@
 ---
 title: "PRC workshop - En-route capacity"
-type: "Workshop"
 date: "2020-10-13"
 excerpt: "PRC workshop - En-route capacity"
 bibliography: ["../../../../static/bib/aviation.bib"]

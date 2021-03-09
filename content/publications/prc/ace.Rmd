@@ -1,7 +1,6 @@
 ---
 title: ATM Cost Effectiveness (ACE) Reports
 date: '2020-05-15'
-type: "ACE"
 tags: ["publications"]
 ---
 
