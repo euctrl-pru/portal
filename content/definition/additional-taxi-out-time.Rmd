@@ -1,6 +1,9 @@
 ---
 title: Additional Taxi-out Time
 slug: additional-taxi-out-time
+bibliography: [../../static/bib/aviation.bib]
+link-citations: true
+nocite: '@pru-tx-out-pi'
 ---
 
 The *additional taxi-out time* is a proxy for the average departure runway queuing
@@ -11,4 +14,6 @@ Minutes per IFR departure [min/dep].
 
 ## See also
 
-[Additional taxi-out time methodology](/methodology/unimpeded-taxi-out-time/)
+[Unimpeded taxi-out time methodology](/methodology/unimpeded-taxi-out-time/)
+
+## References
