@@ -22,12 +22,13 @@ extrajs: [
 <small><strong><p style="color:#808080">Published: 16 March 2021</p></strong></small>
 
 As a result of the COVID-19 pandemic, Europe's high-frequency long-haul network is cut by two-thirds.
+
 <br>
 <a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-covid-impact-europe-long-haul" role="button">Learn more...</a>
 </div>
 
 <div class="col-sm-4">
-<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds6.png" alt="How has COVID-19 impacted the network?"></div>
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds7.png" alt="COVID-19's impact on Europe's long-haul network"></div>
 </div>
 </div></div>
 
@@ -40,6 +41,7 @@ As a result of the COVID-19 pandemic, Europe's high-frequency long-haul network 
 <small><strong><p style="color:#808080">Published: 09 March 2021</p></strong></small>
 
 Right now, most routes across the Network are lower frequency and mostly domestic – find out where the flows are in the latest Data Snapshot, which compares 02/2021 and pre-pandemic 02/2020. The new  Data Snapshot compares the busy short and medium-haul routes right now, with this time last year, pre-COVID.<br>
+
 <a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-what-has-happened-network" role="button">Learn more...</a>
 </div>
 
@@ -58,6 +60,7 @@ Right now, most routes across the Network are lower frequency and mostly domesti
 <small><strong><p style="color:#808080">Published: 23 Feb 2021</p></strong></small>
 
 A growing number of empty passenger aircraft are operating freight-only flights, finds our latest Data Snapshot, which looks at the growth of air cargo during the COVID-19 pandemic.<br>
+
 <a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-all-cargo-flights-market-share" role="button">Learn more</a>
 </div>
 
