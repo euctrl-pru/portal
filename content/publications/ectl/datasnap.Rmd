@@ -3,17 +3,137 @@ title: EUROCONTROL Data Snapshots
 type: "Data Snapshot"
 date: '2021-02-16'
 tags:  Data Snapshot
+extrajs: [
+  "/javascript/img_pre.js",
+  ]
 ---
 
-## 2021
-* [EUROCONTROL Data Snapshot (16 Feb 2021) - CO₂ emissions by flight distance][DS4]
-* [EUROCONTROL Data Snapshot (09 Feb 2021) - COVID-19 cuts to flights have interrupted Airbus’s growing dominance of flights in Europe][DS3]
-* [EUROCONTROL Data Snapshot (26 Jan 2021) - CO₂ emissions from flights in 2020][DS2]
-* [EUROCONTROL Data Snapshot (12 Jan 2021) - Airline schedules during 2020 were a weaker guide to flights than usual][DS1]
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog"><div class="modal-content"><div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><img src="" class="imagepreview"  style="width: 300%;"></div></div></div></div>
 
+## 2021
+<!-- #7 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[COVID-19's impact on Europe's long-haul network - EUROCONTROL Data Snapshot #7][DS7]</h5>
+<small><strong><p style="color:#808080">Published: 16 March 2021</p></strong></small>
+
+As a result of the COVID-19 pandemic, Europe's high-frequency long-haul network is cut by two-thirds.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-covid-impact-europe-long-haul" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds7.png" alt="COVID-19's impact on Europe's long-haul network"></div>
+</div>
+</div></div>
+
+<!-- #6 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[How has COVID-19 impacted the network? - EUROCONTROL Data Snapshot #6][DS6]</h5>
+<small><strong><p style="color:#808080">Published: 09 March 2021</p></strong></small>
+
+Right now, most routes across the Network are lower frequency and mostly domestic – find out where the flows are in the latest Data Snapshot, which compares 02/2021 and pre-pandemic 02/2020. The new  Data Snapshot compares the busy short and medium-haul routes right now, with this time last year, pre-COVID.<br>
+
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-what-has-happened-network" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds6.png" alt="How has COVID-19 impacted the network?"></div>
+</div>
+</div></div>
+
+
+<!-- #5 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[All-cargo flights market share - EUROCONTROL Data Snapshot #5][DS5]</h5>
+<small><strong><p style="color:#808080">Published: 23 Feb 2021</p></strong></small>
+
+A growing number of empty passenger aircraft are operating freight-only flights, finds our latest Data Snapshot, which looks at the growth of air cargo during the COVID-19 pandemic.<br>
+
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-all-cargo-flights-market-share" role="button">Learn more</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds5.png" alt="All-cargo flights market share"></div>
+</div>
+</div></div>
+
+<!-- #4 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+<div class="col-sm-8"> 
+<h5>[CO₂ emissions by flight distance - EUROCONTROL Data Snapshot #4][DS4]</h5>
+<small><strong><p style="color:#808080">Published: 16 Feb 2021</p></strong></small>
+
+The fourth EUROCONTROL Data Snapshot expands on the fact that half of CO₂ emissions come from just 6% of flights: the long-haul ones.<br>
+
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-co2-emissions-flight-distance" role="button">Learn more</a>
+</div>
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds4.png" alt="CO₂ emissions by flight distance"><div class="card-body"></div></div></div>
+</div></div>
+
+<!-- #3 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+<div class="col-sm-8"> 
+<h5>[COVID-19 cuts to flights have interrupted Airbus’s growing dominance of flights in Europe - EUROCONTROL Data Snapshot #3][DS3]</h5>
+<small><strong><p style="color:#808080">Published: 09 Feb 2021</p></strong></small>
+
+The EUROCONTROL Data Snapshot reveals that COVID-19 has massively reduced the number of flights by Airbus aircraft across the network, reversing a decade-long trend.<br>
+
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-manufacturer-share-flights-europe" role="button">Learn more</a>
+</div>
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds3.png" alt="COVID-19 cuts to flights have interrupted Airbus’s growing dominance of flights in Europe"><div class="card-body"></div></div></div>
+</div></div>
+
+<!-- #2 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+<div class="col-sm-8"> 
+<h5>[CO₂ emissions from flights in 2020 - EUROCONTROL Data Snapshot #2][DS2]</h5>
+<small><strong><p style="color:#808080">Published: 26 Jan 2021</p></strong></small>
+
+CO2 emissions fell by 57% in the EUROCONTROL network area in 2020 – but, as our latest EUROCONTROL Data Snapshot 2020 shows, that breaks down into big variations across States.<br>
+
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-co2-emissions-flights-2020" role="button">Learn more</a>
+</div>
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds2.png" alt="CO₂ emissions from flights in 2020"><div class="card-body"></div></div></div>
+</div></div>
+
+<!-- #1 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+<div class="col-sm-8"> 
+<h5>[Airline schedules during 2020 were a weaker guide to flights than usual - EUROCONTROL Data Snapshot #1][DS1]</h5>
+<small><strong><p style="color:#808080">Published: 12 Jan 2021</p></strong></small>
+
+In normal times the published airline schedules are a pretty good indicator of how many scheduled flights there will be. However, these are not normal times. One stark indicator of the volatility of COVID-related travel restrictions in the last 10 months is the fraction of scheduled flights which were actually operated, even in the week immediately after the schedule was published.<br>
+
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot" role="button">Learn more</a>
+</div>
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds1.png" alt="Airline schedules during 2020 were a weaker guide to flights than usual"><div class="card-body"></a></div></div></div>
+</div></div>
 
 
 [DS1]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot "EUROCONTROL Data Snapshot #1 - Airline schedules during 2020 were a weaker guide to flights than usual"
 [DS2]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-co2-emissions-flights-2020 "EUROCONTROL Data Snapshot #2 - CO₂ emissions from flights in 2020"
 [DS3]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-manufacturer-share-flights-europe "EUROCONTROL Data Snapshot #3 - COVID-19 cuts to flights have interrupted Airbus’s growing dominance of flights in Europe"
 [DS4]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-co2-emissions-flight-distance "EUROCONTROL Data Snapshot #4 - CO₂ emissions by flight distance"
+[DS5]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-all-cargo-flights-market-share "EUROCONTROL Data Snapshot #5 - All-cargo flights market share"
+[DS6]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-what-has-happened-network "EUROCONTROL Data Snapshot #6 - How has COVID-19 impacted the network?"
+[DS7]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-covid-impact-europe-long-haul "EUROCONTROL Data Snapshot #7 - COVID-19's impact on Europe's long-haul network?"

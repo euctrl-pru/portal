@@ -45,13 +45,11 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
  
-  <div class="carousel-item active"><div class="card  border-0"><a href="/publications/prc/news/2021_02_19_prc_news"><img class="card-img-top" src="/images/prc/prc_news_funding.png" alt="PRC News on ANS funding"><div class="card-body"><h5 class="card-title">PRC News: ANS funding</h5></a><small><p class="card-text">Read the latest PRC news on ANS funding in times of COVID-19</p></small></div></div></div>
+  <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/event/addressing-airport-capacity-imbalance" target="_blank"><img class="card-img-top" src="/images/landing/apt_webinar.png" alt="Addressing airport capacity imbalance"><div class="card-body"><h5 class="card-title">Airport capacity imbalance</h5></a><small><p class="card-text">Join us for a webinar on “Airport runway capacity imbalance” on 25 March 2021, between 10:00 and 11:40 CET.</p></small></div></div></div>
 
-  <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"><img class="card-img-top" src="/images/landing/ectl_cov.jpg" alt="Daily traffic dashboard"><div class="card-body"><h5 class="card-title">COVID-19: Daily traffic situation</h5></a><small><p class="card-text">Check out the traffic situation by State, ACC, airport, and airline on our daily traffic dashboard!</p></small></div></div></div>
+  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top" src="/images/eff/ectl_env1.jpg" alt="Monthly CO2 data by State"><div class="card-body"><h5 class="card-title">CO2 emissions by State</h5></a><small><p class="card-text">The CO2 emissions by State, supplied by the Aviation Sustainability Unit, are now updated monthly in the download area</p></small></div></div></div>
 
-  <div class="carousel-item"><div class="card  border-0"><a href="/publications/studies/2021_01_22_tn_cri"><img class="card-img-top"  src="/images/prc/prc_meth_cri.png" alt="Composite Risk Index"><div class="card-body"><h5 class="card-title">Composite Risk Index</h5></a><small><p class="card-text">Learn more about the updated Composite Risk Index (CRI) Methodology</p></small></div></div></div>
-
-  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">January 2021 data available now</p></small></div></div></div>
+  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">February 2021 data available now</p></small></div></div></div>
 
 </div>
 

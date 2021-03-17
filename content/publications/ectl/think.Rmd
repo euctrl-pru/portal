@@ -1,10 +1,11 @@
 ---
 title: EUROCONTROL Think Papers
-date: '2021-01-01'
+date: '2021-03-01'
 tags:  Think Paper
 ---
 
 ## 2021
+* [EUROCONTROL Think Paper #9 (01 Mar 2021) - Radio Frequency Interference to satellite navigation: An active threat for aviation?][TP9]
 * [EUROCONTROL Think Paper #8 (01 Jan 2021) - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021][TP8]
 
 ## 2020
@@ -29,3 +30,4 @@ tags:  Think Paper
 [TP6]: https://www.eurocontrol.int/publication/arriving-time-passenger-priority "EUROCONTROL Think Paper #6 - Arriving on time: the passenger priority"
 [TP7]: https://www.eurocontrol.int/publication/does-taxing-aviation-reduce-emissions "EUROCONTROL Think Paper #7 - Does taxing aviation really reduce emissions?"
 [TP8]: https://www.eurocontrol.int/publication/what-covid19-did-european-aviation-2020-outlook-2021 "EUROCONTROL Think Paper #8 - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021"
+[TP9]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-9-radio-frequency-interference-satellite-navigation-active "EUROCONTROL Think Paper #9 - Radio Frequency Interference to satellite navigation: An active threat for aviation?"
