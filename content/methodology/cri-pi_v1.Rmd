@@ -253,5 +253,5 @@ User guide how to set up the environment can be found at 'README.pdf' file withi
 
 ## References
 
-[prc_cri_tn]: /library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf "PRC Technical Note - Composite Risk Index"
+[prc_cri_tn]: /library/tn_prc_2021_01_Composite_Risk_Index_Methodology.pdf "PRC Technical Note - Composite Risk Index"
 [cri_meth]: /methodology/cri-pi/ "Composite Risk Index (CRI) Methodology Update"
