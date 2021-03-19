@@ -1,6 +1,8 @@
 #
 # Generate a CSV file, 'traffic_complexity.csv', for bulk append to the DB table
 # 
+# Then use import_traffic_complexity.bat/.sh to import to DB via SQLLoader
+#
 # Assumptions:
 #
 # * the second field of the filename (separated by '_' ) is the day the TC is calculated for,
@@ -17,7 +19,7 @@ library(purrr)
 base_dir    <- "G:/HQ/dgof-pru/Data/Application/Complexity_version_C/Data/Output"
 
 # NOTE: CHANGE HERE *********************************************
-files_regex <- "complexity_2017.*_bada_3_15_201912.csv"
+files_regex <- "complexity_20201.*_bada_3_15_201912.csv"
 
 # ...and HERE: version/... info
 tbl  <- "AUA_COMPLEXITY_3_15"
