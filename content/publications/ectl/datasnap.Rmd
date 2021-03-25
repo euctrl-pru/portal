@@ -13,6 +13,25 @@ extrajs: [
 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><img src="" class="imagepreview"  style="width: 300%;"></div></div></div></div>
 
 ## 2021
+<!-- #8 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[The costs of air traffic management in Europe - EUROCONTROL Data Snapshot #8][DS8]</h5>
+<small><strong><p style="color:#808080">Published: 23 March 2021</p></strong></small>
+
+The eighth EUROCONTROL Data Snapshot is dedicated to how costs of air traffic management in Europe became disconnected from traffic around 2008.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-costs-atm-europe" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds8.png" alt="COVID-19's impact on Europe's long-haul network"></div>
+</div>
+</div></div>
+
 <!-- #7 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
@@ -137,3 +156,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS5]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-all-cargo-flights-market-share "EUROCONTROL Data Snapshot #5 - All-cargo flights market share"
 [DS6]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-what-has-happened-network "EUROCONTROL Data Snapshot #6 - How has COVID-19 impacted the network?"
 [DS7]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-covid-impact-europe-long-haul "EUROCONTROL Data Snapshot #7 - COVID-19's impact on Europe's long-haul network?"
+[DS8]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-costs-atm-europe "The costs of air traffic management in Europe"
