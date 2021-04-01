@@ -126,8 +126,6 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 In fact they use different BADA versions and hence different aircraft characteristics for the same aircraft type; this impacts the value of the
 *Speed Different Interacting Flows* and ultimately the *Traffic Complexity Score*.
 
-<p style="color:#c00000"><small>Work is in progress to provide the 2020 complexity data</small></p>
-
 | Data description                                                                             | Period                                                                                          | {{< excel_i >}}              | {{< csv_i >}} | Info                       | [ICAO GANP][icaoganp] |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------------------|---------------|----------------------------|-----------------------|
 | Complexity (based on [BADA][CPLXbada] version 3.6) <br><small> Complexity by ANSP</small>    | {{< getdata "dwnld" "cplx_beg_bada_3_6" >}} -  {{< getdata "dwnld" "cplx_end_bada_3_6" >}}      | [{{< dwnld_i >}}][CPLXxlsx]  |               | [{{< info_i >}}][CPLXmeta] |                       |
