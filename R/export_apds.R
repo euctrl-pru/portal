@@ -81,6 +81,7 @@ data <- data %>% as_tibble() %>%
   select(
     APDS_ID, 
     AP_C_FLTID,
+    AP_C_FLTRUL,
     AP_C_REG,
     ends_with("ICAO"),
     SRC_PHASE,
