@@ -66,7 +66,7 @@ FROM
 WHERE
       MVT_TIME_UTC >= TO_DATE(?WEF, 'YYYY-MM-DD')
   AND MVT_TIME_UTC <  TO_DATE(?TIL, 'YYYY-MM-DD')
-  AND SRC_DATE_FROM = '01-AUG-2017'
+  AND SRC_DATE_FROM = TRUNC(MVT_TIME_UTC, 'MONTH')
 "
 
 query <- sqlInterpolate(con, sqlq, WEF = wef, TIL = til)
