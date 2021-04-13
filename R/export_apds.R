@@ -66,7 +66,7 @@ FROM
 WHERE
       MVT_TIME_UTC >= TO_DATE(?WEF, 'YYYY-MM-DD')
   AND MVT_TIME_UTC <  TO_DATE(?TIL, 'YYYY-MM-DD')
-  AND SRC_DATE_FROM = '01-AUG-2017'
+  AND SRC_DATE_FROM = TRUNC(MVT_TIME_UTC, 'MONTH')
 "
 
 query <- sqlInterpolate(con, sqlq, WEF = wef, TIL = til)
@@ -81,6 +81,7 @@ data <- data %>% as_tibble() %>%
   select(
     APDS_ID, 
     AP_C_FLTID,
+    AP_C_FLTRUL,
     AP_C_REG,
     ends_with("ICAO"),
     SRC_PHASE,
