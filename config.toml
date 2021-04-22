@@ -217,7 +217,7 @@ ignoreFiles = [
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Airport View</span>"
-      url = "/dashboard/stakeholder/ansp/"
+      url = "/dashboard/stakeholder/airport/"
       identifier = "key-stakeholder-airport"
       parent = "aiu"
       weight = 41
@@ -238,7 +238,7 @@ ignoreFiles = [
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>State View</span>"
-      url = "/dashboard/stakeholder/ansp/"
+      url = "/dashboard/stakeholder/state/"
       identifier = "key-stakeholder-state"
       parent = "aiu"
       weight = 47
