@@ -4,7 +4,8 @@ aliases:
     - /graphic/
 ---
 
+* [COVID Crisis](/covid/)
 * [Traffic](/traffic/)
-* [Capacity](/capacity/)
-* [Environment](/efficiency/)
-* [Cost Efficiency](/economics/)
+* [Capacity & delays](/capacity/)
+* [Environment & environment](/efficiency/)
+* [Economics](/economics/)
