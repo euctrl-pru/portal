@@ -5,6 +5,7 @@ tags:  Think Paper
 ---
 
 ## 2021
+* [EUROCONTROL Think Paper #10 (20 Apr 2021) - Flying the ‘perfect green flight': How can we make every journey as environmentally friendly as possible?][TP10]
 * [EUROCONTROL Think Paper #9 (01 Mar 2021) - Radio Frequency Interference to satellite navigation: An active threat for aviation?][TP9]
 * [EUROCONTROL Think Paper #8 (01 Jan 2021) - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021][TP8]
 
@@ -21,7 +22,6 @@ tags:  Think Paper
 
 
 
-
 [TP1]: https://www.eurocontrol.int/publication/fuel-tankering-european-skies-economic-benefits-and-environmental-impact "EUROCONTROL Think Paper #1 - Fuel tankering in European skies: economic benefits and environmental impact"
 [TP2]: https://www.eurocontrol.int/publication/air-traffic-flow-management-atfm-regulations-power-good "EUROCONTROL Think Paper #2 - Air traffic flow management (ATFM) regulations: a power for good"
 [TP3]: https://www.eurocontrol.int/publication/cybersecurity-aviation "EUROCONTROL Think Paper #3 - Cybersecurity in aviation"
@@ -31,3 +31,4 @@ tags:  Think Paper
 [TP7]: https://www.eurocontrol.int/publication/does-taxing-aviation-reduce-emissions "EUROCONTROL Think Paper #7 - Does taxing aviation really reduce emissions?"
 [TP8]: https://www.eurocontrol.int/publication/what-covid19-did-european-aviation-2020-outlook-2021 "EUROCONTROL Think Paper #8 - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021"
 [TP9]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-9-radio-frequency-interference-satellite-navigation-active "EUROCONTROL Think Paper #9 - Radio Frequency Interference to satellite navigation: An active threat for aviation?"
+[TP10]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-10-flying-perfect-green-flight "EUROCONTROL Think Paper #10 - Flying the ‘perfect green flight': How can we make every journey as environmentally friendly as possible?"
