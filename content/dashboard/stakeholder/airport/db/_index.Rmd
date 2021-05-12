@@ -1,0 +1,50 @@
+---
+title: Dashboard - Airport
+layout: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  NULL
+)
+
+library(leaflet)
+library(readr)
+library(here)
+library(dplyr)
+library(stringr)
+library(htmltools)
+```
+
+
+```{r airports-selection-map}
+# a lot to learn from https://www.jla-data.net/eng/leaflet-in-r-tips-and-tricks/
+pop <- str_c(
+  "<a href='{icao}.html'>{name}</a> ({country})<br>",
+  "<span style='font-variant: small-caps;'>ICAO</span>: <b>{icao}</b>/",
+  "<span style='font-variant: small-caps;'>IATA</span>: <b>{iata}</b>")
+apt <- readr::read_csv2(here("data-config", "APT_DSHBD_AIRPORT.csv")) %>%
+  dplyr::select(
+    icao    = ICAO_CODE,
+    iata    = IATA_CODE,
+    country = CTRY_ABBREVIATION,
+    name    = APDF_NAME,
+    lon     = LON,
+    lat     = LAT)
+  
+
+
+apt %>%
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(~lon, ~lat,
+             popup = ~str_glue(pop) %>%
+               lapply(htmltools::HTML),
+             label = ~htmltools::htmlEscape(name),
+             clusterOptions = markerClusterOptions())
+```
+
