@@ -56,7 +56,7 @@ layout: default
 
 ## Armenia
 
-* [Zvartnots (UDYZ)](UDYZ.html)
+* [Yerevan (UDYZ)](UDYZ.html)
 
 ## Austria
 
