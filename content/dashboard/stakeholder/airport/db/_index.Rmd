@@ -20,8 +20,8 @@ library(stringr)
 library(htmltools)
 ```
 
-
-```{r airports-selection-map}
+Please select the airport you are interested in from the following map:
+```{r airports-selection-map, out.width='100%'}
 # a lot to learn from https://www.jla-data.net/eng/leaflet-in-r-tips-and-tricks/
 pop <- str_c(
   "<a href='{icao}.html'>{name}</a> ({country})<br>",
@@ -35,8 +35,6 @@ apt <- readr::read_csv2(here("data-config", "APT_DSHBD_AIRPORT.csv")) %>%
     name    = APDF_NAME,
     lon     = LON,
     lat     = LAT)
-  
-
 
 apt %>%
 leaflet() %>%
@@ -44,7 +42,6 @@ leaflet() %>%
   addMarkers(~lon, ~lat,
              popup = ~str_glue(pop) %>%
                lapply(htmltools::HTML),
-             label = ~htmltools::htmlEscape(name),
-             clusterOptions = markerClusterOptions())
+             label = ~htmltools::htmlEscape(name))
 ```
 
