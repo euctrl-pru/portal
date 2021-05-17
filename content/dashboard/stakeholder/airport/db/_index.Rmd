@@ -51,7 +51,8 @@ leaflet() %>%
   addSearchFeatures(targetGroups = "airports",
                     options = searchFeaturesOptions(
                       position = 'topleft',
-                      zoom = 8.25
+                      zoom = 8.25,
+                      collapsed = FALSE
                     ))
   
 ```
