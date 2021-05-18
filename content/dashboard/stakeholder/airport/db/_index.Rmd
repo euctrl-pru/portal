@@ -23,14 +23,19 @@ library(gt)
 ```
 
 Please **select**/**search** the airport you are interested in from the following map:
-<div id="airportfindbox"></div>
+
+
+<div id='findbox' style='position: relative;'>
+</div>
+
 <br>
 
-```{r airport-selection-map, out.width='80%'}
+
+```{r airport-selection-map}
 # a lot to learn from https://www.jla-data.net/eng/leaflet-in-r-tips-and-tricks/
 pop <- str_c(
-  "<a href='{icao}.html'>{name}</a> ({country})<br>",
-  "<span style='font-variant: small-caps;'>ICAO</span>: <b>{icao}</b>/",
+  "<a href='{icao}.html'><strong>{name}</strong></a> ({country})<br>",
+  "<span style='font-variant: small-caps;'>ICAO</span>: <b>{icao}</b> | ",
   "<span style='font-variant: small-caps;'>IATA</span>: <b>{iata}</b>")
 tit <- "{name}, {country} ({icao}/{iata})"
 apt <- readr::read_csv2(here("data-config", "APT_DSHBD_AIRPORT.csv")) %>%
@@ -45,8 +50,10 @@ apt <- readr::read_csv2(here("data-config", "APT_DSHBD_AIRPORT.csv")) %>%
 apt %>%
 leaflet() %>%
   addTiles() %>%
-  addMarkers(~lon, ~lat,
+  addMarkers(lng = ~lon, lat = ~lat,
              group = "airports",
+             # icon = makeIcon(iconUrl = "aerodrome_symbol.png",
+             #                 iconWidth = 18, iconHeight = 18),
              popup = ~str_glue(pop) %>%
                lapply(htmltools::HTML),
              label = ~str_glue(tit) %>%
@@ -54,17 +61,17 @@ leaflet() %>%
              ) %>%
   addSearchFeatures(targetGroups = "airports",
                     options = searchFeaturesOptions(
-                      # position = 'topleft',
                       zoom = 8.25,
                       collapsed = FALSE,
-                      container = 'airportfindbox'
+                      # container = 'findbox',
+                      textPlaceholder = 'Search...                           '
                     ))
   
 ```
 
 <br>
 
-```{r airport-selection-table,out.width='80%'}
+```{r airport-selection-table}
 library(gt)
 
 apt %>%
@@ -87,6 +94,7 @@ apt %>%
   )  %>%
   tab_options(
     table.width = "unset !important",
+    table.margin.left = "unset !important",
     row_group.font.weight = "bold"
   )
 ```
