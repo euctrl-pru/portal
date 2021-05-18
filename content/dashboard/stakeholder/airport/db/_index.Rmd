@@ -86,7 +86,7 @@ apt %>%
     columns = c(name)
   )  %>%
   tab_options(
-    table.width = "reset",
+    table.width = "unset !important",
     row_group.font.weight = "bold"
   )
 ```
