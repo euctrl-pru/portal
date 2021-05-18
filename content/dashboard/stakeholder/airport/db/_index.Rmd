@@ -3,7 +3,7 @@ title: Dashboard - Airport
 layout: default
 ---
 
-```{r setup, include=FALSE}
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
 knitr::opts_chunk$set(
   echo = FALSE,
   message = FALSE,
@@ -19,10 +19,14 @@ library(here)
 library(dplyr)
 library(stringr)
 library(htmltools)
+library(gt)
 ```
 
 Please **select**/**search** the airport you are interested in from the following map:
-```{r airports-selection-map, out.width='100%'}
+<div id="airportfindbox"></div>
+<br>
+
+```{r airport-selection-map, out.width='80%'}
 # a lot to learn from https://www.jla-data.net/eng/leaflet-in-r-tips-and-tricks/
 pop <- str_c(
   "<a href='{icao}.html'>{name}</a> ({country})<br>",
@@ -50,10 +54,35 @@ leaflet() %>%
              ) %>%
   addSearchFeatures(targetGroups = "airports",
                     options = searchFeaturesOptions(
-                      position = 'topleft',
+                      # position = 'topleft',
                       zoom = 8.25,
-                      collapsed = FALSE
+                      collapsed = FALSE,
+                      container = 'airportfindbox'
                     ))
   
+```
+
+<br>
+
+```{r airport-selection-table,out.width='80%'}
+library(gt)
+
+apt %>%
+  select(-c("lon", "lat")) %>%
+  mutate(
+    name = glue::glue("[{name}]({icao}.html)"),
+    name = purrr::map(name, gt::md),
+  ) %>%
+  relocate(name, icao, iata) %>%
+  group_by(country) %>%
+  gt(
+    rowname_col = "name",
+    groupname_col = "country"
+  ) %>%
+  tab_header(title = "Airports in the dashboard") %>%
+  cols_align(
+    align = "left",
+    columns = c(name)
+  )
 ```
 
