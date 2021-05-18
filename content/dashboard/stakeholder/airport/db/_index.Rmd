@@ -74,6 +74,7 @@ apt %>%
     name = purrr::map(name, gt::md),
   ) %>%
   relocate(name, icao, iata) %>%
+  arrange(country, name) %>%
   group_by(country) %>%
   gt(
     rowname_col = "name",
