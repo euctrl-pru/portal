@@ -83,6 +83,10 @@ apt %>%
   cols_align(
     align = "left",
     columns = c(name)
+  )  %>%
+  tab_options(
+    table.width = "reset",
+    row_group.font.weight = "bold"
   )
 ```
 
