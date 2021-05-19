@@ -48,7 +48,9 @@ apt <- readr::read_csv2(here("data-config", "APT_DSHBD_AIRPORT.csv")) %>%
     lat     = LAT)
 
 apt %>%
-leaflet() %>%
+leaflet(options = leafletOptions(minZoom = 3, maxZoom = 9)) %>%
+  setMaxBounds(lng1 = -34, lat1 = 20,
+               lng2 =  52, lat2 = 73) %>%
   addTiles() %>%
   addMarkers(lng = ~lon, lat = ~lat,
              group = "airports",
