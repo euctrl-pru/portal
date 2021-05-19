@@ -24,12 +24,9 @@ library(gt)
 
 Please **select**/**search** the airport you are interested in from the following map:
 
-
-<div id='findbox' style='position: relative;'>
-</div>
-
-<br>
-
+<!-- <div id='findbox' style='position: relative;'> -->
+<!-- </div> -->
+<!-- <br> -->
 
 ```{r airport-selection-map}
 # a lot to learn from https://www.jla-data.net/eng/leaflet-in-r-tips-and-tricks/
@@ -64,6 +61,7 @@ leaflet(options = leafletOptions(minZoom = 3, maxZoom = 9)) %>%
   addSearchFeatures(targetGroups = "airports",
                     options = searchFeaturesOptions(
                       zoom = 8.25,
+                      position = 'topright',
                       collapsed = FALSE,
                       # container = 'findbox',
                       textPlaceholder = 'Search...                           '
