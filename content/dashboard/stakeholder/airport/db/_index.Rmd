@@ -76,12 +76,12 @@ library(gt)
 
 apt %>%
   select(-c("lon", "lat")) %>%
+  arrange(country, name) %>%
   mutate(
     name = glue::glue("[{name}]({icao}.html)"),
     name = purrr::map(name, gt::md),
   ) %>%
   relocate(name, icao, iata) %>%
-  arrange(country, name) %>%
   group_by(country) %>%
   gt(
     rowname_col = "name",
@@ -92,6 +92,17 @@ apt %>%
     align = "left",
     columns = c(name)
   )  %>%
+  cols_label(
+    icao = "ICAO",
+    iata = "IATA"
+  ) %>%
+  tab_style(
+    style = cell_text(font = "Courier"),
+    locations = list(
+      cells_body(columns = "icao"),
+      cells_body(columns = "iata")
+    )
+  ) %>%
   tab_options(
     table.width = "unset !important",
     table.margin.left = "unset !important",
