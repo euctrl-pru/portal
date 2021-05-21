@@ -81,6 +81,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 | Vertical flight efficiency - Continuous climb and descent operations<br><small> Monthly continuous climb and descent data</small>                                                             | {{< getdata "dwnld" "cdo_beg" >}} - {{< getdata "dwnld" "cdo_end" >}}            | [{{< dwnld_i >}}][CDOxlsx]          |                                | [{{< info_i >}}][CDOmeta]  | [KPI 17][ganp17], [KPI 19][ganp19] |
 | Taxi-out additional time<br><small> Monthly taxi out [additional][TX-OUTadditional] and [unimpeded][TX-OUTunimpeded] time</small>                                                             | {{< getdata "dwnld" "tx_out_beg" >}} - {{< getdata "dwnld" "tx_out_end" >}}             | [{{< dwnld_i >}}][TX-OUTxlsx]       |                                | [{{< info_i >}}][TX-OUTmeta]  | [KPI 02][ganp02]                   |
 | ATC pre-departure delays<br><small> Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                                                                                        | {{< getdata "dwnld" "atc_pre_beg" >}} - {{< getdata "dwnld" "atc_pre_end" >}}           | [{{< dwnld_i >}}][ATC-PRExlsx]      |                                | [{{< info_i >}}][ATC-PREmeta] |                                    |
+| Total pre-departure delays<br><small> Daily total pre-departure delay by airport (all causes)</small>                                                                                        | {{< getdata "dwnld" "all_pre_beg" >}} - {{< getdata "dwnld" "all_pre_end" >}}           | [{{< dwnld_i >}}][ALL-PRExlsx]      |                                | [{{< info_i >}}][ALL-PREmeta] |                                    |
 | ATFM slot adherence<br><small> Daily ATFM slot adherence by airport</small>                                                                                                                   | {{< getdata "dwnld" "slt_adh_beg" >}} - {{< getdata "dwnld" "slt_adh_end" >}}           | [{{< dwnld_i >}}][SLT-ADHxlsx]      |                                | [{{< info_i >}}][SLT-ADHmeta] | [KPI 03][ganp03]                   |
 
 
@@ -89,6 +90,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [TX-OUTadditional]: /definition/additional-taxi-out-time/ "Taxi-out Additional Time definition"
 [TX-OUTunimpeded]:  /definition/unimpeded-taxi-out-time/ "Taxi-out Unimpeded Time definition"
 [ATCpredepdelay]:   /definition/atc-pre-departure-delay/ "ATC Pre-departure Delay definition"
+[ALLpredepdelay]:   /definition/all-pre-departure-delay/ "All Pre-departure Delay definition"
 
 [APT-FLTxlsx]:      /download/xls/Airport_Traffic.xlsx "APT-FLT (Excel)"
 [APT-DLY-postxlsx]: /download/xls/Airport_Arrival_ATFM_Delay_post_ops.xlsx "APT-DLY-PO (Excel)"
@@ -113,6 +115,9 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 [ATC-PRExlsx]: /download/xls/ATC_Pre-Departure_Delay.xlsx "ATC-PRE (Excel)"
 [ATC-PREmeta]: /reference/dataset/atc-pre-departure-delay/  "ATC-PRE (Meta)"
+
+[ALL-PRExlsx]: /download/xls/All_Pre-Departure_Delay.xlsx "All-PRE (Excel)"
+[ALL-PREmeta]: /reference/dataset/all-pre-departure-delay/  "All-PRE (Meta)"
 
 [SLT-ADHxlsx]: /download/xls/ATFM_Slot_Adherence.xlsx "SLT-ADH (Excel)"
 [SLT-ADHmeta]: /reference/dataset/atfm-slot-adherence/ "SLT-ADH (Meta)"
