@@ -630,7 +630,7 @@ ignoreFiles = [
   privacyURL = "https://www.eurocontrol.int/info/privacy-and-website-terms-use"
 
   [params.logo]
-    url = "images/euctrl-logo-noname.png"
+    url = "images/EUROCONTROL-logo-standard-rgb.png"
     height = 30
     alt = "PRU"
     target = "https://eurocontrol.int"
