@@ -631,7 +631,7 @@ ignoreFiles = [
 
   [params.logo]
     url = "images/EUROCONTROL-logo-standard-rgb.png"
-    height = 30
+    height = 40
     alt = "PRU"
     target = "https://eurocontrol.int"
 
