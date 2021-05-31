@@ -25,9 +25,6 @@ theme = "pru-theme"
 googleAnalytics = "UA-61343306-1"
 summaryLength = 10
 
-customCSS = ["css/supplement.css"]
-
-
 ignoreFiles = [
   "\\.knit\\.md$",
   "\\.utf8\\.md$",
