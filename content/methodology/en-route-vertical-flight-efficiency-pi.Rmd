@@ -191,10 +191,10 @@ With:
 | $n_{ {act}, i}$ | Number of flights on the considered airport pair in the percentile range. |
 
 
-[rad]: `r htmltools::HTML('{{< relref "/acronym/rad.md" >}}')` "RAD"
-[prisme]: `r htmltools::HTML('{{< relref "/acronym/prisme.md" >}}')` "PRISME"
-[gcd]: `r htmltools::HTML('{{< relref "/acronym/gcd.md" >}}')` "GCD"
-[ftfm]: `r htmltools::HTML('{{< relref "/acronym/ftfm.md" >}}')` "FTFM"
+[rad]: /acronym/rad/ "RAD"
+[prisme]: /acronym/prisme/ "PRISME"
+[gcd]: /acronym/gcd/ "GCD"
+[ftfm]: /acronym/ftfm/ "FTFM"
 
 
 ## Further Information
