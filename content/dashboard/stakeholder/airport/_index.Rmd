@@ -2,33 +2,6 @@
 title: Airport portfolio
 date: '2020-05-15'
 ---
-<script>
-    function resizeIframe(obj) {
-      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-    }
-  </script>
-<style type="text/css">
-.img-responsive {
-    margin: 0 auto;
-    max-width: 75%
-}
-
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 60.0%;
-}
-
-.resp-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150%;
-    border: 0;
-}
-</style>
-<br>
 <div class="container">
 <div class="row">
 <div class="card-deck">
@@ -98,3 +71,30 @@ date: '2020-05-15'
 </div>
 </div>
 </div>
+
+<script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60.0%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border: 0;
+}
+</style>
