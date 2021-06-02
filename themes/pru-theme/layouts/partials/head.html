@@ -9,8 +9,8 @@
     {{ $title = .Site.Title }}
   {{ end }}
   <title>{{ $title }}</title>
+  {{ $summary := trim (.Summary | plainify | htmlUnescape) "\n\r" | default $title }}
+  <meta name="description" content="{{ $summary }}">
+
   {{ partial "style.html" . }}
-  {{ range .Site.Params.customCSS }}
-  <link rel="stylesheet" href="{{ . | relURL }}">
-  {{ end }}
 </head>
