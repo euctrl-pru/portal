@@ -3,6 +3,35 @@ title: COVID-19 - Impact on traffic
 date: '2020-04-16'
 ---
 
+<div class="container">
+<div class="row align-items-start">
+<div class="col-sm-6">>
+The analysis shows the evolution of the flights (moving 7 day average) in the [EUROCONTROL Area](/definition/eurocontrol-area/) for the years 2010, 2019 and 2020. 
+
+Although the dimension of the COVID-19 crisis is of a completely different order of magnitude, the year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill.
+
+There has been a steady increase of flights since mid-April with a more pronounced increase in June and July (holiday season). However, following the resurgence of COVID-19 in some European States and subsequent largely uncoordinated State restrictions, traffic started to decrease again notably since the beginning of September.  <br>
+
+<a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" class="btn btn-danger" role="button"><i class='fas fa-xs fa-exclamation-triangle'></i> For daily traffic statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator level please visit our interactive dashboard!</a>
+</div>
+
+<div class="col-sm-6">
+<small>Please note that the analysis may take a few moments to load...<br>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/jwMJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+
+### COVID-19 impact by ANSP
+The table below provides an overview of the traffic evolution at Air Navigation Service Provider level (all controlled flights including overflights).
+
+The corresponding data is available for download in the [data section](/data/).<br>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
 <style type="text/css">
 .img-responsive {
     margin: 0 auto;
@@ -24,31 +53,3 @@ date: '2020-04-16'
     border: 0;
 }
 </style>
-
-<div class="container">
-<div class="row align-items-start">
-<div class="col-sm-6">>
-The analysis shows the evolution of the flights (moving 7 day average) in the [EUROCONTROL Area](/definition/eurocontrol-area/) for the years 2010, 2019 and 2020. 
-
-Although the dimension of the COVID-19 crisis is of a completely different order of magnitude, the year 2010 was included as a reference because of the volcanic ash crisis from 14-20 April which brought European aviation close to a standstill.
-
-There has been a steady increase of flights since mid-April with a more pronounced increase in June and July (holiday season). However, following the resurgence of COVID-19 in some European States and subsequent largely uncoordinated State restrictions, traffic started to decrease again notably since the beginning of September.  <br>
-
-<a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" class="btn btn-danger" role="button"><i class='fas fa-xs fa-exclamation-triangle'></i> For daily traffic statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator level please visit our interactive dashboard!</a>
-</div>
-
-<div class="col-sm-6">
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/jwMJB" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</div>
-
-### COVID-19 impact by ANSP
-The table below provides an overview of the traffic evolution at Air Navigation Service Provider level (all controlled flights including overflights).
-
-The corresponding data is available for download in the [data section](/data/).<br>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/JSNJB" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
