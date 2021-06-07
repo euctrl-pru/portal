@@ -1,5 +1,5 @@
 ---
-title: AIU airport performance dashboard
+title: AIU Airport Performance Dashboard
 layout: default
 ---
 
