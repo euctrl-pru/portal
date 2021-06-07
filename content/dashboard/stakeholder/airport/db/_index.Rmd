@@ -32,7 +32,7 @@ Please **select**/**search** the airport you are interested in from the followin
 <!-- </div> -->
 <!-- <br> -->
 
-```{r airport-selection-map}
+```{r airport-selection-map, out.width = '100%'}
 # a lot to learn from https://www.jla-data.net/eng/leaflet-in-r-tips-and-tricks/
 pop <- str_c(
   "<a href='{icao}.html'><strong>{name}</strong></a> ({country})<br>",
