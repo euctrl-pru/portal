@@ -1,5 +1,5 @@
 ---
-title: Dashboard - Airport
+title: AIU airport performance dashboard
 layout: default
 ---
 
@@ -21,6 +21,10 @@ library(stringr)
 library(htmltools)
 library(gt)
 ```
+
+Consolidated monthly overview of operational performance at European airports
+across a wide spectrum of indicators.
+
 
 Please **select**/**search** the airport you are interested in from the following map:
 
