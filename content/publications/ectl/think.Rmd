@@ -5,6 +5,7 @@ tags:  Think Paper
 ---
 
 ## 2021
+* [EUROCONTROL Think Paper #11 (03 Jun 2021) - Plane and train: Getting the balance right][TP11]
 * [EUROCONTROL Think Paper #10 (20 Apr 2021) - Flying the ‘perfect green flight': How can we make every journey as environmentally friendly as possible?][TP10]
 * [EUROCONTROL Think Paper #9 (01 Mar 2021) - Radio Frequency Interference to satellite navigation: An active threat for aviation?][TP9]
 * [EUROCONTROL Think Paper #8 (01 Jan 2021) - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021][TP8]
@@ -32,3 +33,4 @@ tags:  Think Paper
 [TP8]: https://www.eurocontrol.int/publication/what-covid19-did-european-aviation-2020-outlook-2021 "EUROCONTROL Think Paper #8 - Impact of COVID-19 on European Aviation in 2020 and Outlook 2021"
 [TP9]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-9-radio-frequency-interference-satellite-navigation-active "EUROCONTROL Think Paper #9 - Radio Frequency Interference to satellite navigation: An active threat for aviation?"
 [TP10]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-10-flying-perfect-green-flight "EUROCONTROL Think Paper #10 - Flying the ‘perfect green flight': How can we make every journey as environmentally friendly as possible?"
+[TP11]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-11-plane-and-train-getting-balance-right "EUROCONTROL Think Paper #11 - Plane and train: Getting the balance right"

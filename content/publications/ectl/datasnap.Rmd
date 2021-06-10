@@ -13,6 +13,25 @@ extrajs: [
 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><img src="" class="imagepreview"  style="width: 300%;"></div></div></div></div>
 
 ## 2021
+<!-- #11 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Sustainable aviation fuels (SAF) at European airports? - EUROCONTROL Data Snapshot #11][DS11]</h5>
+<small><strong><p style="color:#808080">Published: 08 Jun 2021</p></strong></small>
+
+The eleventh EUROCONTROL Data Snapshot tackles the question - Can regulation and focused logistics unlock the availability of sustainable aviation fuels (SAF) at European airports?.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-11-saf-airports" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds11.png" alt="SAF use at European airports"></div>
+</div>
+</div></div>
+
 <!-- #10 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
@@ -197,3 +216,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS8]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-costs-atm-europe "The costs of air traffic management in Europe"
 [DS9]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-2020s-smaller-aircraft-shorter-flights-and-fluctuating-weight "2020 - smaller aircraft, shorter flights and fluctuating weight"
 [DS10]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-surveillance-radar-overload "Surveillance Radar Overload"
+[DS11]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-11-saf-airports "SAF use at European airports"
