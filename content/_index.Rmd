@@ -23,11 +23,11 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
  
-  <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/tool/mirror" target="_blank"><img class="card-img-top" src="/images/cap/ectl_mirror.jpg" alt="Take a look in the MIRROR - Operational decision support tool"><div class="card-body"><h5 class="card-title">Take a look in the MIRROR!</h5></a><small><p class="card-text">Check out MIRROR - The new operational decision support tool which is online now.</p></small></div></div></div>
+  <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/press-release/new-eurocontrol-four-year-forecast-finds-air-traffic-not-expected-reach-2019-levels" target="_blank"><img class="card-img-top" src="/images/landing/statfor_fcst.png" alt="Take a look at the New EUROCONTROL Four-Year Forecast"><div class="card-body"><h5 class="card-title">EUROCONTROL four year forecast</h5></a><small><p class="card-text">Check out the updated EUROCONTROL Four-Year Forecast</p></small></div></div></div>
 
-  <div class="carousel-item"><div class="card  border-0"><a href="/publications/studies/2021_04_29_tn_vfe"><img class="card-img-top" src="/images/landing/ectl_tn_vfe.png" alt="Technical Note on Vertical flight efficiency"><div class="card-body"><h5 class="card-title">Vertical flight efficiency</h5></a><small><p class="card-text">Read the updated PRC technical note on vertical flight efficiency</p></small></div></div></div>
+  <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/covid19#covid-19-impact-briefings" target="_blank"><img class="card-img-top" src="/images/landing/ectl_state.png" alt="COVID-19 State impact briefings"><div class="card-body"><h5 class="card-title">COVID-19 State impact briefings</h5></a><small><p class="card-text">Take a look at the new COVID-19 state impact briefings</p></small></div></div></div>
 
-  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">April 2021 data available now</p></small></div></div></div>
+  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">May 2021 data available now</p></small></div></div></div>
 
 </div>
 
