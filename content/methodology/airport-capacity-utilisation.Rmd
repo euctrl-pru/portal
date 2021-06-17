@@ -81,8 +81,8 @@ For a more detailed explanation of the methodology see [@apt-capacity-utilisatio
 * [Basic Load Index (BLI)][bli].
 * [Peak Load Index (PLI)][pli].
 
-[bli]: `r htmltools::HTML("{{< relref \"/acronym/bli.md\" >}}")` "Basic Load Index"
-[pli]: `r htmltools::HTML("{{< relref \"/acronym/pli.md\" >}}")` "Peak Load Index"
+[bli]: /acronym/bli/ "Basic Load Index"
+[pli]: /acronym/pli/ "Peak Load Index"
 
 
 # References

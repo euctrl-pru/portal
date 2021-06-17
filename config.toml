@@ -25,9 +25,6 @@ theme = "pru-theme"
 googleAnalytics = "UA-61343306-1"
 summaryLength = 10
 
-customCSS = ["css/supplement.css"]
-
-
 ignoreFiles = [
   "\\.knit\\.md$",
   "\\.utf8\\.md$",
@@ -630,8 +627,8 @@ ignoreFiles = [
   privacyURL = "https://www.eurocontrol.int/info/privacy-and-website-terms-use"
 
   [params.logo]
-    url = "images/euctrl-logo-noname.png"
-    height = 30
+    url = "images/EUROCONTROL-logo-standard-rgb.png"
+    height = 40
     alt = "PRU"
     target = "https://eurocontrol.int"
 
