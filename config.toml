@@ -589,6 +589,11 @@ ignoreFiles = [
     url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
     identifier= "su"
     weight = 40
+[[menu.economics]]
+    name = "ANSP Finance dashboard"
+    url = "/economics/finance/"
+    identifier= "finance"
+    weight = 50
 
 
 [[menu.publications]]

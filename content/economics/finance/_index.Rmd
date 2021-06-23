@@ -1,0 +1,13 @@
+---
+layout: default
+title: ANSPs Financial Dashboard
+---
+
+This dashboard presents financial information and indicators for European ANSPs, 
+and contains interactive features that allow for comparisons over time.
+All information presented is publicly available and has been collected from
+ANSPs’ most recent financial statements.
+
+You can find more details about the content and purpose of this dashboard
+as well as the definition of the indicators used in our
+[Reader's Guide](guide/).
