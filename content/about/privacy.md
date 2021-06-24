@@ -2,7 +2,8 @@
 title: "Privacy & Protection of AIU Portal Subscribers' Personal Data"
 ---
 
-EUROCONTROL protects your personal data in accordance with the EUROCONTROL Regulation on Personal Data Protection adopted by its Member States and published in 2008, and its Implementing Rules which were published in 2017.
+EUROCONTROL protects your personal data in accordance with the 
+[EUROCONTROL Regulation on Personal Data Protection](https://www.eurocontrol.int/sites/default/files/2020-06/summary-implementing-rule-eurocontrol-regulation-personal-data-protection.pdf) adopted by its Member States and published in 2008, and its [Implementing Rules](https://www.eurocontrol.int/sites/default/files/2020-06/implementing-rule-eurocontrol-regulation-personal-data-protection.pdf) which were published in 2017.
 1. What is AIU Portal Subscribers? Why do we collect, store and process your data?
    
    The AIU Portal Subscribers are stakeholders interested to receive relevant
@@ -29,7 +30,7 @@ EUROCONTROL protects your personal data in accordance with the EUROCONTROL Regul
 1. What are your rights under the EUROCONTROL Data Protection Regulation?
    
    You have the right to access, rectify, complete, update and delete
-   your data by contacting mailto:PRU-Support@eurocontrol.int .
+   your data by contacting [PRU-Support@eurocontrol.int](mailto:PRU-Support@eurocontrol.int).
 
 1. What do we do to avoid misuse or unauthorised access to data concerning you?
    
@@ -48,7 +49,7 @@ EUROCONTROL protects your personal data in accordance with the EUROCONTROL Regul
 1. Who can you contact if you have questions or want to make a complaint?
    
    For any queries related to your personal data, please contact:
-   mailto:PRU-Support@eurocontrol.int, which is the entity/team responsible for
+   [PRU-Support@eurocontrol.int](mailto:PRU-Support@eurocontrol.int), which is the entity/team responsible for
    the processing of the personal data concerning you.
 
-   Complaints can be addressed to EUROCONTROL’s Data Protection Officer.
+   Complaints can be addressed to EUROCONTROL’s [Data Protection Officer](mailto:data-protection-officer@eurocontrol.int).
