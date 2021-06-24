@@ -23,3 +23,50 @@ The top section of the dashboard provides an overview of the selected ANSP, incl
 * the average share of the ANSP’s revenue as a proportion of total revenue across all ANSPs in the Pan-European System over the period shown in the dashboard. 
 
 The remainder of this section describes the three main sections of the dashboard. Unless otherwise stated, figures are expressed in national currencies and in nominal prices.
+
+
+### Income Statement section
+Income statements report information on a company revenues and expenses throughout a year. The format of the income statements can vary across different ANSPs, in terms of which items are reported, the level of detail provided and where items are reported within the income statement.
+
+The figures presented in the dashboard are based only on what is presented in ANSPs’ respective audited income statements (i.e. not incorporating the additional information or the level of disaggregation disclosed as part of the notes on financial statements) except in cases where depreciation and amortisation expenses are not reported in the income statement.
+
+
+### Income statement items
+
+
+Revenue
+:  Income generated from normal business operations.
+   Common items include operating income, other operating income and grants.
+    
+Opex (Operating expenditure)
+:  Expenses generated from normal business operations.
+   Common items include staff (wages and salaries, employers' contributions to
+   social security and pensions, etc.) and non-staff operating costs
+   (such as services, materials, maintenance, etc.).
+   It does not include Depreciation Amortisation and Other non-cash Items (defined below).
+
+Depreciation and amortisation
+:  Accounting expenses (which do not involve a cash payment) representing either,
+   the cost of tangible assets (depreciation) or the lowering of the value of
+   intangible assets (amortisation), spread over their useful life or a set period.
+   Note that for ANSPs applying IFR16, leased assets incur depreciation costs. 
+
+Other non-cash items
+:  The net total of income and expenses (except depreciation and amortisation)
+   that do not involve a cash payment.
+   Common items include capitalised costs, impairment and disposal of capital
+   assets, and provisions for expenses (and/or reversals of these).
+
+Net financial income/expense
+:  The net total of income and expenses from financing activities (including
+   investments and borrowing) and the change in value of financial assets.
+   Common items include interest income and expenses, gains and losses on
+   foreign currency transactions, and gains and losses on financial assets. 
+
+Other income/expense[^1]
+:  The net total of income and expenses generated from sources not directly
+   related to normal business operations.
+   Common items include income from joint ventures and subsidiaries and,
+   exceptional income and expenses.
+
+[^1]: Not currently shown in DB but is used to calculated the pre-tax profit.
