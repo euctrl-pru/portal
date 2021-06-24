@@ -230,13 +230,27 @@ Cash flow from operating activities (as % of revenue)
    A higher negative value indicates a higher level of outflows, and
    a higher positive value indicates a higher level of cash inflows,
    relative to revenue.
-   $$\mathrm{Cash\ flow\ from\ operating\ activities} = \frac{\mathrm{Net\ cash\ flow\ from\ Pperating Activities}}{\mathrm{Revenue}}$$
+   $$\mathrm{Cash\ flow\ from\ operating\ activities\ (\%\ of\ revenue)} = \frac{\mathrm{Net\ cash\ flow\ from\ Pperating Activities}}{\mathrm{Revenue}}$$
 Cash flow from investing activities (as % of revenue)
 :  Ratio showing net cash flow from investing activities relative to revenue,
    as a measure for the overall size of operations.
    A higher negative value indicates a higher level of outflows, and
    a higher positive value indicates a higher level of cash inflows,
    relative to revenue.
-   $$\mathrm{Cash\ flow\ from\ investing\ activities} = \frac{\mathrm{Net\ cash\ flow\ from\ investing activities}}{\mathrm{Revenue}}$$
-Cash flow from financing activities (as % of revenue)	Ratio showing the net cash flow financing activities relative to revenue, as a measure for the overall size of operations. A higher negative value indicates a higher level of outflows, and a higher positive value indicates a higher level of cash inflows, relative to revenue.	=(Net cash flow from financing activities)/Revenue
-Net cash flow (as % of revenue)	Ratio showing net cash flow relative to revenue, as a measure for the overall size of operations. A higher negative value indicates a higher level of outflows, and a higher positive value indicates a higher level of cash inflows, relative to revenue.	=(Net cash flow )/Revenue
+   $$\mathrm{Cash\ flow\ from\ investing\ activities\ (\%\ of\ revenue)} = \frac{\mathrm{Net\ cash\ flow\ from\ investing activities}}{\mathrm{Revenue}}$$
+   
+Cash flow from financing activities (as % of revenue)
+:  Ratio showing the net cash flow financing activities relative to revenue,
+   as a measure for the overall size of operations.
+   A higher negative value indicates a higher level of outflows, and 
+   a higher positive value indicates a higher level of cash inflows,
+   relative to revenue.
+   $$\mathrm{Cash\ flow\ from\ financing\ activities\ (\%\ of\ revenue)} = \frac{\mathrm{Net\ cash\ flow\ from\ financing\ activities}}{\mathrm{Revenue}}$$
+
+Net cash flow (as % of revenue)
+:  Ratio showing net cash flow relative to revenue, as a measure for the
+   overall size of operations.
+   A higher negative value indicates a higher level of outflows, and
+   a higher positive value indicates a higher level of cash inflows,
+   relative to revenue.
+   $$\mathrm{Net\ cash\ flow\ (\%\ of\ revenue)} = \frac{\mathrm{Net\ cash\ flow}}{\mathrm{Revenue}}$$
