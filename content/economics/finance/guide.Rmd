@@ -70,3 +70,24 @@ Other income/expense[^1]
    exceptional income and expenses.
 
 [^1]: Not currently shown in DB but is used to calculated the pre-tax profit.
+
+
+### Income statement profitability measures and ratios
+
+EBITDA[^2]
+:  Profitability measure representing earnings generated from normal business
+   operations, that is, before accounting for interest, taxes, amortisation and
+   other non-cash items.
+   A higher EBITDA value implies a higher level of profitability from normal
+   operations (a negative value implies a loss).<br>
+   $\mathrm{EBITDA} = \mathrm{Revenue} - \mathrm{Opex}$
+   
+   
+Operating income (EBIT)
+:  Profitability measure representing earnings generated from operations,
+   before deduction of interest and taxes. A higher EBIT value implies a higher
+   level of profitability from operations after accounting for depreciation,
+   amortisation and other non-cash items (a negative value implies a loss).<br>
+   $\mathrm{EBIT} = \mathrm{Revenue} - \mathrm{Opex} - \mathrm{Depreciation\ Amortisation} - \mathrm{Other\ NonCash\ Items}$
+
+[^2]: Not currently shown in DB but is used to calculated the pre-tax profit.
