@@ -168,6 +168,8 @@ In fact they use different BADA versions and hence different aircraft characteri
 
 <div class="container text-center">
 {{< subscribe-button >}}
+
+[Read our Privacy protection statement](/about/privacy/)
 </div>
 
 

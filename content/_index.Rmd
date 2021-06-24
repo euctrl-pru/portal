@@ -84,6 +84,8 @@ For feedback or questions please contact us at:
 <br>
 <div class="container text-center">
 {{% subscribe-button %}}
+
+[Read our Privacy protection statement](/about/privacy/)
 </div>
 
 [ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation "Daily traffic updates"
