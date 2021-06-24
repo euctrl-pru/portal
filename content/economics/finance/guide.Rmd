@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Financial Dashboard Guide
+output:
+  blogdown::html_page:
+    toc: true
 ---
 <style>
 span.mjx-chtml.MJXc-display {
