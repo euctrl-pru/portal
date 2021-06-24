@@ -2,7 +2,11 @@
 layout: default
 title: Financial Dashboard Guide
 ---
-
+<style>
+span.mjx-chtml.MJXc-display {
+/* text-align: left !important; */
+}
+</style>
 ## Overview
 
 The objective of the dashboard is to create an online resource of ANSPs’ financial information and indicators with interactive features, which is accessible and allows for comparisons over time.
@@ -80,7 +84,7 @@ EBITDA
    other non-cash items.
    A higher EBITDA value implies a higher level of profitability from normal
    operations (a negative value implies a loss).<br>
-   $\mathrm{EBITDA} = \mathrm{Revenue} - \mathrm{Opex}$
+   $$\mathrm{EBITDA} = \mathrm{Revenue} - \mathrm{Opex}$$
    
    
 Operating income (EBIT)
@@ -88,11 +92,148 @@ Operating income (EBIT)
    before deduction of interest and taxes. A higher EBIT value implies a higher
    level of profitability from operations after accounting for depreciation,
    amortisation and other non-cash items (a negative value implies a loss).<br>
-   $\mathrm{EBIT} = \mathrm{Revenue} - \mathrm{Opex} - \mathrm{Depreciation\ Amortisation} - \mathrm{Other\ NonCash\ Items}$
+   $$\mathrm{EBIT} = \mathrm{Revenue} - \mathrm{Opex} - \mathrm{Depreciation\ Amortisation} - \mathrm{Other\ NonCash\ Items}$$
 
 Pre-tax profit
 :  Profitability measure representing earnings generated from operations,
    after accounting for all (pre-tax) income and expenses.
    A higher pre-tax profit value implies a higher level of profitability
    (a negative value implies a loss).<br>
-   $\mathrm{Pre\textrm{-}tax\ profit} = \mathrm{Revenue}-\mathrm{Opex}-\mathrm{Depreciation\ \& \ Amortisation} - \mathrm{Other\ NonCash\ Items} - \frac{\mathrm{Net\ Financial\ Income}}{\mathrm{Expense}} - \frac{\mathrm{Other\ Income}}{\mathrm{Expense}}$
+   $$\mathrm{Pre\textrm{-}tax\ profit} = \mathrm{Revenue}-\mathrm{Opex}-\mathrm{Depreciation\ \& \ Amortisation} - \mathrm{Other\ NonCash\ Items} - \frac{\mathrm{Net\ Financial\ Income}}{\mathrm{Expense}} - \frac{\mathrm{Other\ Income}}{\mathrm{Expense}}$$
+ 
+EBITDA margin %
+:  Profitability ratio showing EBITDA as a proportion of revenue.<br>
+   $$\mathrm{EBITDA\ margin\ \%} = \frac{\mathrm{EBITDA}}{\mathrm{Revenue}}$$
+   
+
+
+### Balance Sheet Section
+
+Balance sheets report on a company assets, liabilities and shareholders’ equity at the end of the calendar year (except for NATS, which has financial years running from 1 April to 31 March the following year). The format of the balance sheets across ANSPs’ financial statements is relatively standardised, though some variation remains in terms of how some items are reported.
+
+The figures presented in the dashboard are based only on what is presented in ANSPs’ balance sheets (i.e. not incorporating additional information or the level of disaggregation disclosed as part of the notes on financial statements).
+
+#### Balance sheet items
+
+Cash and equivalents
+:	 Component of current assets that represents assets that are cash or can be
+   converted into cash immediately.
+
+Current assets
+:	 All the assets of a company that are expected to be conveniently sold,
+   consumed, used, or exhausted through standard business operations within
+   the accounting year.
+   Common items include cash and equivalents, accounts receivable, short-term
+   investments and pre-paid expense
+
+Non-current assets
+:  A company's long-term investments for which the full value will not be
+  realised within the accounting year.
+  They are generally highly illiquid, meaning these assets cannot easily be
+  converted into cash.
+  Common items include tangible fixed assets, intangible fixed assets
+  (including, right of use for those applying IFRS 16) and long-term investments.
+  (Also includes accrued and deferred charges, and assets held for sale,
+  where not reported as of current assets or non-current assets).
+
+Total assets
+:  Combined total of current assets and non-current assets.
+
+Current liabilities
+:  Financial obligations that are due to be paid within the accounting year.
+   Common items include accounts payable, short-term debt and short-term lease obligations. 
+
+Non-current liabilities
+:  Financial obligations that become due beyond the accounting year.
+   Common items include long-term debt, long-term lease obligations and
+   pension benefit obligations.
+   (Also includes accrued and deferred charges, and provisions,
+   where not reported as of current liabilities or non-current liabilities).
+
+Shareholders’ equity
+:  Owners’ invested funds equivalent to the value to company net worth or
+   the residual claim on assets after liabilities have been paid.
+
+Total liabilities & equity
+:  Combined total of current liabilities, non-current liabilities and
+   shareholders’ equity.
+
+
+#### Balance sheet ratios
+
+Equity ratio
+:  The ratio of shareholders equity to total liabilities & equity.
+   This ratio indicates the extent of financial leverage, that is, to what
+   extent assets are funded using equity versus debt.
+   A ratio above 0.5 indicates a higher share of equity and
+   a ratio below 0.5 indicates a higher share of debt.<br>
+   $$\mathrm{Equity\ ratio} = \frac{\mathrm{Shareholders\ Equity} }{ \mathrm{Total\ Liabilities\ \&\ Equity}}$$
+
+Current ratio
+:  The ratio of current assets to current liabilities.
+   Liquidity ratio that measures a company's ability to pay short-term obligations.
+   A ratio a above 1 indicates current assets are larger than current liabilities,
+   and a higher figure indicates a greater level of liquidity.<br>
+   $$\mathrm{Current\ ratio} = \frac{\mathrm{Current\ Assets}}{\mathrm{Current\ Liabilites}}$$
+
+Cash on hand days
+:  The numbers of days of opex that can be paid for using cash and equivalents
+   reserves. Liquidity measure that measures the number of days opex can be
+   paid using only cash reserves, assuming no revenue.
+   A higher figure indicates a high level of cash reserves, relative to opex.<br>
+   $$\mathrm{Cash\ on\ hand\ days} = 365 \times \frac{\mathrm{Cash\ \&\ Equivalents}}{\mathrm{Opex}}$$
+
+
+### Cash Flow Statement Section
+
+Cash flow statements report cash inflows and outflows throughout the year. The format of cash flow statements, across ANSPs’ financial statements, is relatively standardised, though there is some variation in terms of how items are reported. It should be noted that not all ANSPs’ financial statements include cash flow statements; therefore, no information provided for these organisations in this section of the dashboard.
+
+The figures presented in the dashboard are based only on what is presented in ANSPs’ cash flow statements (i.e. not incorporating additional information or the level of disaggregation disclosed as part of the notes on financial statements) except in cases where the capex is not reported in the cash flow statement.
+
+#### Cash flow statement items
+
+Net cash flow from operating activities
+:  The net total of cash inflows and outflows generated from normal business operations.
+
+Net cash flow from investing activities
+:  The net total of cash inflows and outflows generated from investment,
+   including capital expenditure and cash flows arising from the sale or
+   acquisition of tangible, intangible or financial assets.
+
+Capex (Capital expenditure)
+:  A component of cash flow from investing activities that represents the funds
+   used to acquire capital non-current assets.
+
+Net cash flow from financing activities
+:  The net total of cash inflows and outflows used to fund the company,
+   including debt, equity and dividend transactions.
+
+Net cash flow
+:  The net total of cash flow from operating activities, cash flow from
+   investing activities and cash flow from financing activities. 
+
+
+#### Cash flow statement cash measures
+
+Free cash flow
+:  Representation of cash generated after accounting for outflows to support
+   operations and maintain capital assets.
+   A higher figure indicates a higher level of cash generated.
+   $$\mathrm{Free\ cash\ flow} = \mathrm{Net\ Cash\ flow\ from\ Operating\ Activities} - \mathrm{Capex} $$
+
+Cash flow from operating activities (as % of revenue)
+:  Cash flow ratio showing cash flow from operating activities as a proportion
+   of revenue.
+   A higher negative value indicates a higher level of outflows, and
+   a higher positive value indicates a higher level of cash inflows,
+   relative to revenue.
+   $$\mathrm{Cash\ flow\ from\ operating\ activities} = \frac{\mathrm{Net\ cash\ flow\ from\ Pperating Activities}}{\mathrm{Revenue}}$$
+Cash flow from investing activities (as % of revenue)
+:  Ratio showing net cash flow from investing activities relative to revenue,
+   as a measure for the overall size of operations.
+   A higher negative value indicates a higher level of outflows, and
+   a higher positive value indicates a higher level of cash inflows,
+   relative to revenue.
+   $$\mathrm{Cash\ flow\ from\ investing\ activities} = \frac{\mathrm{Net\ cash\ flow\ from\ investing activities}}{\mathrm{Revenue}}$$
+Cash flow from financing activities (as % of revenue)	Ratio showing the net cash flow financing activities relative to revenue, as a measure for the overall size of operations. A higher negative value indicates a higher level of outflows, and a higher positive value indicates a higher level of cash inflows, relative to revenue.	=(Net cash flow from financing activities)/Revenue
+Net cash flow (as % of revenue)	Ratio showing net cash flow relative to revenue, as a measure for the overall size of operations. A higher negative value indicates a higher level of outflows, and a higher positive value indicates a higher level of cash inflows, relative to revenue.	=(Net cash flow )/Revenue
