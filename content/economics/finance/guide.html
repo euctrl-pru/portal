@@ -4,6 +4,7 @@ title: Financial Dashboard Guide
 output:
   blogdown::html_page:
     toc: true
+#    toc_depth: 1
 ---
 
 
@@ -12,8 +13,6 @@ output:
 <li><a href="#overview">Overview</a></li>
 <li><a href="#dashboard">Dashboard</a><ul>
 <li><a href="#income-statement-section">Income Statement section</a></li>
-<li><a href="#income-statement-items">Income statement items</a></li>
-<li><a href="#income-statement-profitability-measures-and-ratios">Income statement profitability measures and ratios</a></li>
 <li><a href="#balance-sheet-section">Balance Sheet Section</a></li>
 <li><a href="#cash-flow-statement-section">Cash Flow Statement Section</a></li>
 </ul></li>
@@ -45,9 +44,8 @@ span.mjx-chtml.MJXc-display {
 <h3>Income Statement section</h3>
 <p>Income statements report information on a company revenues and expenses throughout a year. The format of the income statements can vary across different ANSPs, in terms of which items are reported, the level of detail provided and where items are reported within the income statement.</p>
 <p>The figures presented in the dashboard are based only on what is presented in ANSPs’ respective audited income statements (i.e. not incorporating the additional information or the level of disaggregation disclosed as part of the notes on financial statements) except in cases where depreciation and amortisation expenses are not reported in the income statement.</p>
-</div>
-<div id="income-statement-items" class="section level3">
-<h3>Income statement items</h3>
+<div id="income-statement-items" class="section level4">
+<h4>Income statement items</h4>
 <dl>
 <dt>Revenue</dt>
 <dd>Income generated from normal business operations.
@@ -86,8 +84,8 @@ exceptional income and expenses.
 </dd>
 </dl>
 </div>
-<div id="income-statement-profitability-measures-and-ratios" class="section level3">
-<h3>Income statement profitability measures and ratios</h3>
+<div id="income-statement-profitability-measures-and-ratios" class="section level4">
+<h4>Income statement profitability measures and ratios</h4>
 <dl>
 <dt>EBITDA</dt>
 <dd>Profitability measure representing earnings generated from normal business
@@ -109,13 +107,14 @@ amortisation and other non-cash items (a negative value implies a loss).<br>
 after accounting for all (pre-tax) income and expenses.
 A higher pre-tax profit value implies a higher level of profitability
 (a negative value implies a loss).<br>
-<span class="math display">\[\mathrm{Pre\textrm{-}tax\ profit} = \mathrm{Revenue}-\mathrm{Opex}-\mathrm{Depreciation\ \&amp; \ Amortisation} - \mathrm{Other\ NonCash\ Items} - \frac{\mathrm{Net\ Financial\ Income}}{\mathrm{Expense}} - \frac{\mathrm{Other\ Income}}{\mathrm{Expense}}\]</span>
+<span class="math display">\[\mathrm{Pre\textrm{-}tax\ profit} = \mathrm{Revenue}-\mathrm{Opex}-\mathrm{Depreciation\ \&amp; \ Amortisation} - \mathrm{Other\ NonCash\ Items} - \mathrm{Net\ Financial\ Income} - \mathrm{Other\ Income}\]</span>
 </dd>
 <dt>EBITDA margin %</dt>
 <dd>Profitability ratio showing EBITDA as a proportion of revenue.<br>
 <span class="math display">\[\mathrm{EBITDA\ margin\ \%} = \frac{\mathrm{EBITDA}}{\mathrm{Revenue}}\]</span>
 </dd>
 </dl>
+</div>
 </div>
 <div id="balance-sheet-section" class="section level3">
 <h3>Balance Sheet Section</h3>
