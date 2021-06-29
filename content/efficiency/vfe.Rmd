@@ -35,10 +35,17 @@ Together with interested stakeholders and [EUROCONTROL's Aviation Sustainability
 The results are shown in the dashboard below and also available for download in our [data repository](/data/). 
 </div>
 <div class="col-sm-3">
-<div class="card border-0"><a href="https://www.eurocontrol.int/environment" target="_blank">
+<div class="card border-0">
+<a href="https://www.eurocontrol.int/environment" target="_blank">
   <img class="card-img-top" src="/images/eff/ectl_env1.jpg" alt="EUROCONTROL Aviation Sustainability Unit">
-  <div class="card-body"><small><p class="card-text">Click to visit EUROCONTROL's Aviation Sustainability Unit! <i class='fas fa-xs fa-external-link-alt'></i></p></a></small></div>
-</div></div></div></div>
+  <div class="card-body">
+  <small><p class="card-text">Click to visit EUROCONTROL's Aviation Sustainability Unit! <i class='fas fa-xs fa-external-link-alt'></i></p></small>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/ef90f5d6-f9fb-4149-9c7c-65c717f8c36a/page/K3GTB" frameborder="0" style="border:0" allowfullscreen></iframe>
