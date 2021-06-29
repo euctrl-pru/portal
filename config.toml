@@ -198,6 +198,15 @@ ignoreFiles = [
       weight = 35
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>ANSPs Financial Dashboard</span>"
+      url = "/economics/finance/"
+      identifier = "key-economics-financial"
+      parent = "aiu"
+      weight = 36
+      
+      
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>ATM Cost Effectiveness</span>"
       url = "https://www.eurocontrol.int/ACE"
       identifier = "key-economics-ace"
