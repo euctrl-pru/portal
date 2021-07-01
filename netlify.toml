@@ -29,7 +29,7 @@ command = "hugo --gc --minify"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy-Report-Only = "base-uri 'self'; block-all-mixed-content; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; font-src 'self' https://use.fontawesome.com data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data:; script-src-elem 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://code.jquery.com https://stackpath.bootstrapcdn.com https://www.google-analytics.com data:; sandbox allow-forms allow-popups allow-same-origin allow-scripts"
+    Content-Security-Policy = "base-uri 'self'; block-all-mixed-content; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; font-src 'self' https://use.fontawesome.com data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data:; script-src-elem 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://code.jquery.com https://stackpath.bootstrapcdn.com https://www.google-analytics.com data:; sandbox allow-forms allow-popups allow-same-origin allow-scripts"
 
 
 # A basic redirect rule
