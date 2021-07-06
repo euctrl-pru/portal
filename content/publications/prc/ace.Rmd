@@ -4,8 +4,6 @@ date: '2020-05-15'
 tags: ["publications"]
 ---
 
-<strong><p class="text-danger">The ACE 2019 report will be available in May 2021 </p></strong>
-
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-3">
@@ -22,6 +20,12 @@ The [ACE interactive dashboard][acedb] allows you to access the latest available
 <div class="container">
 <div class="row">
 <div class="card-deck">
+
+<div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2019" target="_blank">
+  <img class="card-img-top" src="/images/prc/ace2019.png" alt="ACE 2019">
+  <div class="card-body"><h5 class="card-title">ATM Cost Effectiveness (ACE) Report 2019</h5></a>
+  </div>
+</div>
 
 <div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2018" target="_blank">
   <img class="card-img-top" src="/images/prc/ace2018.png" alt="ACE 2018">
@@ -53,12 +57,6 @@ The [ACE interactive dashboard][acedb] allows you to access the latest available
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2013" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace2013.png" alt="ACE 2013">
-  <div class="card-body"><h5 class="card-title">ATM Cost Effectiveness (ACE) Report 2013</h5></a>
-  </div>
-</div>
-
 
 </div>
 </div>
@@ -69,6 +67,12 @@ The [ACE interactive dashboard][acedb] allows you to access the latest available
 <div class="container">
 <div class="row">
 <div class="card-deck">
+
+<div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2013" target="_blank">
+  <img class="card-img-top" src="/images/prc/ace2013.png" alt="ACE 2013">
+  <div class="card-body"><h5 class="card-title">ATM Cost Effectiveness (ACE) Report 2013</h5></a>
+  </div>
+</div>
 
 <div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2012" target="_blank">
   <img class="card-img-top" src="/images/prc/ace2012.png" alt="ACE 2012">
@@ -100,15 +104,25 @@ The [ACE interactive dashboard][acedb] allows you to access the latest available
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2007" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace2007.png" alt="ACE 2007">
-  <div class="card-body"><h5 class="card-title">ATM Cost Effectiveness (ACE) Report 2007</h5></a>
-  </div>
-</div>
-
 </div>
 </div>
 </div>
 
 
+## Older reports
+* [ATM Cost Effectiveness (ACE) Report 2007][ace2007]
+* [ATM Cost Effectiveness (ACE) Report 2006][ace2006]
+* [ATM Cost Effectiveness (ACE) Report 2005][ace2005]
+* [ATM Cost Effectiveness (ACE) Report 2004][ace2004]
+* [ATM Cost Effectiveness (ACE) Report 2003][ace2003]
+* [ATM Cost Effectiveness (ACE) Report 2002][ace2002]
+
+
+
+[ace2007]: https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2007 "ATM Cost Effectiveness (ACE) Report 2007"
+[ace2006]: https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2006 "ATM Cost Effectiveness (ACE) Report 2006"
+[ace2005]: https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2005 "ATM Cost Effectiveness (ACE) Report 2005"
+[ace2004]: https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2004 "ATM Cost Effectiveness (ACE) Report 2004"
+[ace2003]: https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2003 "ATM Cost Effectiveness (ACE) Report 2003"
+[ace2002]: https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2002 "ATM Cost Effectiveness (ACE) Report 2002"
 [acedb]: https://www.eurocontrol.int/ACE/ACE-Home.html
