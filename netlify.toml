@@ -80,9 +80,13 @@ command = "hugo --gc --minify"
   to = "/definition/atc-pre-departure-delay/"
   status = 301
 
-
 [[redirects]]
   from = "/definition/composite_flight_hour.html"
   to = "/definition/composite-flight-hour/"
   status = 301
 
+[[redirects]]
+  from = "/global/brazil/bra-eur/ "
+  to = "https://euctrl-pru.github.io/international-BRA-EUR/"
+  status = 200
+  force = true
