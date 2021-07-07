@@ -9,6 +9,8 @@ EUROCONTROL protects your personal data in accordance with the
    The AIU Portal Subscribers are stakeholders interested to receive relevant
    high quality information on Pan-European ANS performance in a transparent,
    accurate, clear, complete and unbiased manner.
+   The personal data collected are necessary to allow the subscribers to receive
+   notifications regarding updates in relation to the AIU Portal. 
 
 1. What data do we collect, store and process about you?
    
