@@ -86,7 +86,7 @@ command = "hugo --gc --minify"
   status = 301
 
 [[redirects]]
-  from = "/global/brazil/bra-eur/"
-  to = "https://euctrl-pru.github.io/international-BRA-EUR/"
+  from = "/global/brazil/bra-eur/*"
+  to = "https://euctrl-pru.github.io/international-BRA-EUR/:splat"
   status = 200
   force = true
