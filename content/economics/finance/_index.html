@@ -315,7 +315,7 @@ title: ANSPs Financial Dashboard
         <div class="row" style="padding-left: 15px; "> 
           <div class= "col-12 pl-0" style="margin-right: 6px;">
           <h6>Assets, Liabilities and Equity</h6>
-          <div id="MyChartBalance1_div" style="padding: 0px; padding-top: 20px; background-color: #e4e8ed;">
+          <div id="MyChartBalance1_div" style="padding: 0px; padding-top: 20px; background-color: #e4e8ed; text-align: center;">
           </div>
           </div>
         </div>
@@ -1436,6 +1436,13 @@ title: ANSPs Financial Dashboard
       Data.getFilteredRows([{ column: 1, value: SelectedEntity }])
     );
     MyViewBalance1.setColumns([0, 14, 13, 16, 17, 18]);
+    //Check negative values
+    for (var y = 1; y < MyViewBalance1.getNumberOfColumns(); y++) {
+      var NegativeValues_Balance
+      if (MyViewBalance1.getValue(SelectedYear - MinYear, y) < 0) {
+        NegativeValues_Balance = 1
+      };
+    } 
 
     // Set chart options
     var optionsMyChartBalance1 = {
@@ -1516,10 +1523,15 @@ title: ANSPs Financial Dashboard
       }
     };
 
-    // Instantiate and draw our chart, passing in some options.
-    var MyChartBalance1 = new google.charts.Bar(document.getElementById('MyChartBalance1_div'));
-    MyChartBalance1.draw(MyViewBalance1, google.charts.Bar.convertOptions(optionsMyChartBalance1));
-  };
+    // No chart if negative values 
+    if (NegativeValues_Balance == 1) {
+        document.getElementById("MyChartBalance1_div").innerHTML = "Chart not available.";
+        MyChartBalance1 = new google.charts.Bar(document.getElementById('MyChartBalance1_div'));
+      }
+    else {
+      // Instantiate and draw our chart, passing in some options.
+      MyChartBalance1.draw(MyViewBalance1, google.charts.Bar.convertOptions(optionsMyChartBalance1));
+      }
 
   //---------------------------MyChartBalance 2 update ---------------------------------------------
   function UpdateMyChartBalance2() {
@@ -1811,7 +1823,7 @@ title: ANSPs Financial Dashboard
     };
     
     if (NegativeValues == 1) {
-      document.getElementById("MyPieChartBalance_div").innerHTML = "Cannot draw piechart with negative values!!";
+      document.getElementById("MyPieChartBalance_div").innerHTML = "Chart not available.";
       MyPieChartBalance = new google.visualization.PieChart(document.getElementById("MyPieChartBalance_div"));
     }
     else {
