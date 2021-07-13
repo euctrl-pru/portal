@@ -14,7 +14,7 @@ slug: horizontal-flight-efficiency-pi
 <div id="general" class="section level2">
 <h2>General</h2>
 <p>This document describes the conceptual, informational, and implementation
-independent model of the Horizontal Flight Efficiency Indicators – KEP and KEA.</p>
+independent model of the Horizontal Flight Efficiency Indicators – KEP, KEA and KES.</p>
 <p>The indicator is used as part of the performance monitoring and reporting under:</p>
 <ul>
 <li>SES: IR317/2019 <span class="citation">(<a href="#ref-eu:317/2019" role="doc-biblioref">European Commission 2019</a>)</span> repealing Implementing Regulations (EU) No IR390/2013 <span class="citation">(<a href="#ref-eu:390/2013" role="doc-biblioref">European Commission 2013a</a>)</span> and (EU) No 391/2013 <span class="citation">(<a href="#ref-eu:391/2013" role="doc-biblioref">European Commission 2013b</a>)</span>; and</li>
@@ -39,19 +39,20 @@ it is calculated.</p>
 <div id="scope" class="section level2">
 <h2>Scope</h2>
 <p>This document covers the data processing and calculation of the Horizontal
-Flight Efficiency key performance indicators (KEP and KEA).</p>
+Flight Efficiency key performance indicators (KEP, KEA, KES).</p>
 <p>The calculation of this performance indicator is performed according to the
 Horizontal Flight Efficiency Data Flow standard for data collection and
 processing, under the responsibility of the operations unit in the QoS
-department of the PRU, which is compliant with IR691/2010 and IR390/2013. The
+department of the PRU, which is compliant with IR317/2019. The
 Horizontal Flight Efficiency Data Flow associated processes and procedures are
 documented as part of the PRU Quality Management System.</p>
 <p>These key performance indicators are also defined in the Implementing Regulation
-(390/2013), Annex I:</p>
+(317/2019), Annex I:</p>
 <ul>
-<li>Section 1, Environment 2.1, (a) (KEA, Union-wide level);</li>
-<li>Section 1, Environment 2.1 (b) (KEP, Union-wide level);</li>
-<li>Section 2, Environment 2.1 (KEA, Functional Airspace Block level);</li>
+<li>Section 1, Environment 2.1, (KEA, Union-wide level);</li>
+<li>Section 1, Environment 2.2, (KEP, KES Union-wide level);</li>
+<li>Section 2, Environment 2.1, (KEA, National, Functional Airspace Block level);</li>
+<li>Section 2, Environment 2.2, (KEP, KES National, Functional Airspace Block level);</li>
 </ul>
 </div>
 <div id="summary-of-the-performance-indicator-information" class="section level2">
@@ -63,8 +64,8 @@ documented as part of the PRU Quality Management System.</p>
 <li>Conceptual Phase: phase completed.</li>
 <li>Technical Development: phase completed.</li>
 <li>Prototyping / Validation: phase completed.</li>
-<li>Monitoring: RP1 and RP2, active.</li>
-<li>Target Setting: RP1 and RP2, active.</li>
+<li>Monitoring: RP1, RP2, RP3, active.</li>
+<li>Target Setting: RP1, RP2, RP3, active.</li>
 <li>Phase Out: n/a.</li>
 </ul></li>
 <li><p>Context</p>
@@ -72,7 +73,7 @@ documented as part of the PRU Quality Management System.</p>
 <li>KPA: Environment.</li>
 <li>Focus Area: Horizontal Flight Efficiency.</li>
 <li>Trade Offs: local and network performance.</li>
-<li>Supports the SES II Performance Scheme.</li>
+<li>Supports the SES Performance Scheme.</li>
 </ul></li>
 <li><p>Description: The indicators provide a measure of the average en route
 additional distance with respect to the great circle distance.</p></li>
@@ -88,8 +89,8 @@ compares the flown and the achieved distance:</p>
 Percentage (additional distance per achieved distance).</p></li>
 <li><p>Used in</p>
 <ul>
-<li>SES (IR691/2010 &amp; IR390/2013): Annual Performance Report.</li>
-<li>SES eDashboard [ RP1 <span class="citation">(<a href="#ref-prb:dashboardRP1" role="doc-biblioref">Performance Review Body 2015</a>)</span> and RP2 <span class="citation">(<a href="#ref-prb:dashboardRP2" role="doc-biblioref">Performance Review Body 2016</a>)</span> ]</li>
+<li>SES IR317/2019: Annual Performance Report.</li>
+<li>SES eDashboard [ RP1 <span class="citation">(<a href="#ref-prb:dashboardRP1" role="doc-biblioref">Performance Review Body 2015</a>)</span>, RP2 <span class="citation">(<a href="#ref-prb:dashboardRP2" role="doc-biblioref">Performance Review Body 2016</a>)</span> and RP3 <span class="citation">(<a href="#ref-prb:dashboardRP3" role="doc-biblioref">Performance Review Body 2020</a>)</span>]</li>
 <li>EUROCONTROL: Performance Review Report</li>
 </ul></li>
 </ul>
@@ -98,6 +99,10 @@ Percentage (additional distance per achieved distance).</p></li>
 <h2>Acronyms and terminology</h2>
 <table>
 <caption><span id="tab:acronyms">Table 1: </span> Acronyms and terminology</caption>
+<colgroup>
+<col width="36%" />
+<col width="63%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Term</th>
@@ -166,20 +171,20 @@ Percentage (additional distance per achieved distance).</p></li>
 <td>Identifier</td>
 </tr>
 <tr class="even">
-<td>IR691</td>
-<td>COMMISSION REGULATION (EU) No 691/2010</td>
+<td>IR317</td>
+<td>COMMISSION REGULATION (EU) No 317/2019</td>
 </tr>
 <tr class="odd">
-<td>IR390</td>
-<td>COMMISSION REGULATION (EU) No 390/2013</td>
-</tr>
-<tr class="even">
 <td>KEA</td>
 <td>Key performance Environment indicator based on Actual trajectory</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>KEP</td>
 <td>Key performance Environment indicator based on last filed flight Plan</td>
+</tr>
+<tr class="odd">
+<td>KES</td>
+<td>Key performance Environment indicator based on shortest constrained route available for flight planning</td>
 </tr>
 <tr class="even">
 <td>KPA</td>
@@ -218,10 +223,14 @@ Percentage (additional distance per achieved distance).</p></li>
 <td><span class="math inline">\(2^{nd}\)</span> Reference Period (2015-2019)</td>
 </tr>
 <tr class="odd">
+<td>RP3</td>
+<td><span class="math inline">\(3^{rd}\)</span> Reference Period (2020-2024)</td>
+</tr>
+<tr class="even">
 <td>SES</td>
 <td>Single European Sky</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>TMA</td>
 <td>Terminal Manoeuvring Area</td>
 </tr>
@@ -249,8 +258,8 @@ situation described above, such as the possibility that one (if not both) of the
 airports does not belong to the area on which we would like to measure the
 efficiency and the need to define the measurement on a portion of the flight
 (e.g., en route) instead than for the whole trajectory.</p>
-<p>In addition, there is a specific need which stems from the requirements of
-Reference Period 2 (RP2) <strong>to measure local performance (FAB level) while at the
+<p>In addition, there is a specific need which stems from the SES requirements
+<strong>to measure local performance (FAB level) while at the
 same time keeping the network perspective.</strong></p>
 
 <div class="figure" style="text-align: center"><span id="fig:hfe-02"></span>
@@ -516,12 +525,13 @@ the area (a flight might re-enter the area).</p>
 <p>At a technical level, it is worth noting again that the indicator is an average
 per distance unit and not per flight.</p>
 </div>
-<div id="difference-between-kep-and-kea" class="section level2">
-<h2>Difference between KEP and KEA</h2>
+<div id="difference-between-kep-kea-kes" class="section level2">
+<h2>Difference between KEP, KEA, KES</h2>
 <p>There is no difference in the methodology used to calculate the value of the two
 indicators. The KEP indicator is the horizontal flight efficiency calculated
 using the last filed flight plans to describe the trajectories, while KEA uses
-the trajectories generated via radar data.</p>
+the trajectories generated via radar data. KES is based on the shortest constrained
+route available for flight planning.</p>
 <p>In order to smooth out the influence of unusual events, in reporting annual
 values the ten best days and the ten worst days (for each measured area) will be
 excluded from the computation.</p>
@@ -705,6 +715,9 @@ Performance Review Body. 2015. <span>“Dashboard <span>Rp1</span>.”</span> <a
 </div>
 <div id="ref-prb:dashboardRP2" class="csl-entry">
 ———. 2016. <span>“Dashboard <span>Rp2</span>.”</span> <a href="http://www.eurocontrol.int/prudata/dashboard/rp2_2015.html">http://www.eurocontrol.int/prudata/dashboard/rp2_2015.html</a>.
+</div>
+<div id="ref-prb:dashboardRP3" class="csl-entry">
+———. 2020. <span>“Dashboard <span>Rp3</span>.”</span> <a href="https://www.eurocontrol.int/prudata/dashboard/vis/">https://www.eurocontrol.int/prudata/dashboard/vis/</a>.
 </div>
 </div>
 </div>
