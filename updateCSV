@@ -86,9 +86,13 @@ if (( $# != 0 )); then
     exit 1
 fi
 
-APT_DLY_WEF=2021-01-01
-ERT_DLY_WEF=2021-01-01
-TIL=2021-06-01
+year_beg=$(date +'%Y-01-01')
+month_beg=$(date +'%F' -d "-0 month -$(($(date +%d)-1)) days")
+
+APT_DLY_WEF=${year_beg}
+ERT_DLY_WEF=${year_beg}
+TIL=${month_beg}
+
 
 (
     cd "${SCRIPT_DIR}/" || exit;
