@@ -21,8 +21,7 @@ independent model of the Horizontal Flight Efficiency Indicators – KEP and KEA
 
 The indicator is used as part of the performance monitoring and reporting under:
 
-* SES: IR691/2010 [@eu:691/2010] and IR390/2013
-  [@eu:390/2013]; and
+* SES: IR317/2019 [@eu:317/2019] repealing Implementing Regulations (EU) No IR390/2013 [@eu:390/2013] and (EU) No 391/2013 [@eu:391/2013]; and
 * EUROCONTROL: performance review reporting.
 
 
