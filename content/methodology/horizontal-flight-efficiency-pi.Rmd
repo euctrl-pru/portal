@@ -17,7 +17,7 @@ source(here::here("_common.R"))
 ## General
 
 This document describes the conceptual, informational, and implementation
-independent model of the Horizontal Flight Efficiency Indicators – KEP and KEA.
+independent model of the Horizontal Flight Efficiency Indicators – KEP, KEA and KES.
 
 The indicator is used as part of the performance monitoring and reporting under:
 
@@ -48,21 +48,22 @@ it is calculated.
 ## Scope
 
 This document covers the data processing and calculation of the Horizontal
-Flight Efficiency key performance indicators (KEP and KEA).
+Flight Efficiency key performance indicators (KEP, KEA, KES).
 
 The calculation of this performance indicator is performed according to the
 Horizontal Flight Efficiency Data Flow standard for data collection and
 processing, under the responsibility of the operations unit in the QoS
-department of the PRU, which is compliant with IR691/2010 and IR390/2013. The
+department of the PRU, which is compliant with IR317/2019. The
 Horizontal Flight Efficiency Data Flow associated processes and procedures are
 documented as part of the PRU Quality Management System.
 
 These key performance indicators are also defined in the Implementing Regulation
-(390/2013), Annex I:
+(317/2019), Annex I:
 
-* Section 1, Environment 2.1, (a) (KEA, Union-wide level);
-* Section 1, Environment 2.1 (b) (KEP, Union-wide level);
-* Section 2, Environment 2.1 (KEA, Functional Airspace Block level);
+* Section 1, Environment 2.1, (KEA, Union-wide level);
+* Section 1, Environment 2.2, (KEP, KES Union-wide level);
+* Section 2, Environment 2.1, (KEA, National, Functional Airspace Block level);
+* Section 2, Environment 2.2, (KEP, KES National, Functional Airspace Block level);
 
 
 
@@ -74,15 +75,15 @@ These key performance indicators are also defined in the Implementing Regulation
     * Conceptual Phase: phase completed.
     * Technical Development: phase completed.
     * Prototyping / Validation: phase completed.
-    * Monitoring: RP1 and RP2, active.
-    * Target Setting: RP1 and RP2, active.
+    * Monitoring: RP1, RP2, RP3, active.
+    * Target Setting: RP1, RP2, RP3, active.
     * Phase Out: n/a.
 
 * Context
     * KPA: Environment.
     * Focus Area: Horizontal Flight Efficiency.
     * Trade Offs: local and network performance.
-    * Supports the SES II Performance Scheme.
+    * Supports the SES Performance Scheme.
 * Description: The indicators provide a measure of the average en route
   additional distance with respect to the great circle distance.
 * Formula and Metrics
@@ -99,8 +100,8 @@ These key performance indicators are also defined in the Implementing Regulation
 * Units
     Percentage (additional distance per achieved distance).
 * Used in
-    * SES (IR691/2010 & IR390/2013): Annual Performance Report.
-    * SES eDashboard [ RP1 [@prb:dashboardRP1] and RP2 [@prb:dashboardRP2] ]
+    * SES IR317/2019: Annual Performance Report.
+    * SES eDashboard [ RP1 [@prb:dashboardRP1], RP2 [@prb:dashboardRP2] and RP3 [@prb:dashboardRP3]]
     * EUROCONTROL: Performance Review Report
 
 
@@ -125,10 +126,10 @@ Table: (\#tab:acronyms) Acronyms and terminology
 | HFE   | Horizontal Flight Efficiency |
 | ICAO  | International Civil Aviation Organization |
 | ID    | Identifier |
-| IR691 | COMMISSION REGULATION (EU) No 691/2010 |
-| IR390 | COMMISSION REGULATION (EU) No 390/2013 |
+| IR317 | COMMISSION REGULATION (EU) No 317/2019 |
 | KEA   | Key performance Environment indicator based on Actual trajectory |
 | KEP   | Key performance Environment indicator based on last filed flight Plan |
+| KES   | Key performance Environment indicator based on shortest constrained route available for flight planning |
 | KPA   | Key Performance Area |
 | KPI   | Key Performance Indicator |
 | LOBT  | Last Off-Block Time |
@@ -138,6 +139,7 @@ Table: (\#tab:acronyms) Acronyms and terminology
 | QoS   | Quality of Service |
 | RP1   | $1^{st}$ Reference Period (2012-2014) |
 | RP2   | $2^{nd}$ Reference Period (2015-2019) |
+| RP3   | $3^{rd}$ Reference Period (2020-2024) |
 | SES   | Single European Sky |
 | TMA   | Terminal Manoeuvring Area |
 
@@ -167,8 +169,8 @@ airports does not belong to the area on which we would like to measure the
 efficiency and the need to define the measurement on a portion of the flight
 (e.g., en route) instead than for the whole trajectory.
 
-In addition, there is a specific need which stems from the requirements of
-Reference Period 2 (RP2) **to measure local performance (FAB level) while at the
+In addition, there is a specific need which stems from the SES requirements 
+**to measure local performance (FAB level) while at the
 same time keeping the network perspective.**
 
 
@@ -422,12 +424,13 @@ per distance unit and not per flight.
 
 
 
-## Difference between KEP and KEA
+## Difference between KEP, KEA, KES
 
 There is no difference in the methodology used to calculate the value of the two
 indicators. The KEP indicator is the horizontal flight efficiency calculated
 using the last filed flight plans to describe the trajectories, while KEA uses
-the trajectories generated via radar data.
+the trajectories generated via radar data. KES is based on the shortest constrained 
+route available for flight planning.
 
 In order to smooth out the influence of unusual events, in reporting annual
 values the ten best days and the ten worst days (for each measured area) will be
