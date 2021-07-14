@@ -25,7 +25,7 @@ extrajs: [
 The 14. EUROCONTROL Data Snapshot looks at horizontal en-route flight efficiency - and why the shortest route is not necessarily the most fuel efficient one.
 
 <br>
-<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-13-airlines-reducing-fleet-complexity-introduced-fuel-efficient-types" target="_blank" role="button">Learn more...</a>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-14-horizontal-flight-efficiency" target="_blank" role="button">Learn more...</a>
 </div>
 
 <div class="col-sm-4">
@@ -279,4 +279,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS11]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-11-saf-airports "SAF use at European airports"
 [DS12]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-12-aircraft-across-europe-being-woken-summer "Inactive Aircraft in Europe"
 [DS13]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-13-airlines-reducing-fleet-complexity-introduced-fuel-efficient-types "Change in operational fleet mix"
-[DS14]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-14-aircraft-across-europe-being-woken-summer "Horizontal en-route flight efficiency"
+[DS14]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-14-horizontal-flight-efficiency "Horizontal en-route flight efficiency"
