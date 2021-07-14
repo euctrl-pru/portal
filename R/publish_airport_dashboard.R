@@ -10,6 +10,7 @@ library(blogdown)
 dest <- here("content","dashboard","stakeholder", "airport","db")
 src <- here("..","pru-airport-dashboard")
 
+# delete everything which is not .Rmd
 dir_ls(
   path = dest,
   glob = "*.Rmd",
