@@ -10,6 +10,7 @@ library(blogdown)
 dest <- here("content","dashboard","stakeholder", "airport","db")
 src <- here("..","pru-airport-dashboard")
 
+# delete everything which is not .Rmd
 dir_ls(
   path = dest,
   glob = "*.Rmd",
@@ -37,4 +38,4 @@ file_copy(here(src, "data", "APT_DSHBD_AIRPORT.csv"),
 
 # regenerate _index.html
 # this does NOT work
-# blogdown::build_site(run_hugo = FALSE, build_rmd = c(here(dest, "_index.Rmd")))
+blogdown::build_site(build_rmd = c(here(dest, "_index.Rmd")))

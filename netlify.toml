@@ -27,10 +27,9 @@ command = "hugo --gc --minify"
     Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=()"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
 #    Content-Security-Policy = "base-uri 'self'; block-all-mixed-content; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; font-src 'self' https://use.fontawesome.com data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data: *.openstreetmap.org https://unpkg.com; script-src-elem 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://code.jquery.com https://stackpath.bootstrapcdn.com https://www.google-analytics.com https://cdn.bootcss.com data:; sandbox allow-forms allow-popups allow-same-origin allow-scripts"
-
 
 # A basic redirect rule
 [[redirects]]
@@ -81,9 +80,13 @@ command = "hugo --gc --minify"
   to = "/definition/atc-pre-departure-delay/"
   status = 301
 
-
 [[redirects]]
   from = "/definition/composite_flight_hour.html"
   to = "/definition/composite-flight-hour/"
   status = 301
 
+[[redirects]]
+  from = "/global/brazil/bra-eur/*"
+  to = "https://euctrl-pru.github.io/international-BRA-EUR/:splat"
+  status = 200
+  force = true

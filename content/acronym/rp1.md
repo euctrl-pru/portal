@@ -1,9 +1,9 @@
 ---
-title: RP1 - Reporting Period 1
+title: RP1 - Reference Period 1
 slug: rp1
 ---
 
-The Reporting Period 1 of the [SES][ses] Performance Scheme for EU and
+The Reference Period 1 of the [SES][ses] Performance Scheme for EU and
 associated States covers the years 2012-2014.
 
 ## See Also

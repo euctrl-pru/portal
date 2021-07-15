@@ -1,5 +1,6 @@
 ---
 title: Technical Notes - Composite Risk Index (CRI)
+type: "Safety"
 date: '2021-01-22'
 tags:
   - News

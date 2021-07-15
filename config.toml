@@ -198,6 +198,15 @@ ignoreFiles = [
       weight = 35
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>ANSPs Financial Dashboard</span>"
+      url = "/economics/finance/"
+      identifier = "key-economics-financial"
+      parent = "aiu"
+      weight = 36
+      
+      
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>ATM Cost Effectiveness</span>"
       url = "https://www.eurocontrol.int/ACE"
       identifier = "key-economics-ace"
@@ -589,6 +598,11 @@ ignoreFiles = [
     url = "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
     identifier= "su"
     weight = 40
+[[menu.economics]]
+    name = "ANSP Finance dashboard"
+    url = "/economics/finance/"
+    identifier= "finance"
+    weight = 50
 
 
 [[menu.publications]]
@@ -625,6 +639,7 @@ ignoreFiles = [
   #       does not work. So use 'OR site:' from the second on
   sitetosearch = "ansperformance.eu OR site:www.eurocontrol.int/prudata/dashboard/ OR site:www.eurocontrol.int/ACE/ OR site:www.eurocontrol.int/ServiceUnits/Dashboard/ OR site:www.eurocontrol.int/Economics/"
   privacyURL = "https://www.eurocontrol.int/info/privacy-and-website-terms-use"
+  MathJaxCDN = "https://mathjax.rstudio.com/latest"
 
   [params.logo]
     url = "images/EUROCONTROL-logo-standard-rgb.png"
