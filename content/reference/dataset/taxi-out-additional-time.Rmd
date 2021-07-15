@@ -9,13 +9,13 @@ source(here::here("_common.R"))
 
 ## Data description
 
-The [additional taxi-out time](`r htmltools::HTML("{{< relref \"/definition/additional-taxi-out-time.md\" >}}")`)
+The [additional taxi-out time](/definition/additional-taxi-out-time/)
 is a proxy for the average departure runway
 queuing time on the outbound traffic flow during congestion periods at airports.
 
 It is the difference between the actual taxi-out time of a flight and a
 statistically determined
-[unimpeded taxi-out time](`r htmltools::HTML("{{< relref \"/definition/unimpeded-taxi-out-time.md\" >}}")`)
+[unimpeded taxi-out time](/definition/unimpeded-taxi-out-time/)
 based on taxi-out times in periods of low traffic demand.
 
 When monitoring taxi-out performance at airports, it is important to note that

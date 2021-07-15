@@ -5,7 +5,6 @@ link-citations: true
 slug: cd-vertical-flight-efficiency-pi
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>This document provides a technical description on the methodology used in the analysis of the
@@ -57,7 +56,7 @@ The next step is the determination of the Top of Climb or Top of Descent.
 Finally, the results are calculated and processed for presentation.
 This process is visualised in Figure 1.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:pli-bli"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pli-bli"></span>
 <img src="/images/vfe-cd-figure-001.png" alt="Different steps of the analysis." width="800px" />
 <p class="caption">
 Figure 1: Different steps of the analysis.
@@ -79,7 +78,7 @@ the Top of Descent (ToD).</p>
 <p>Optimal climb and descent parts until/from the cruising altitude generally
 require less than 200NM of track distance from/until the airport, especially
 when the cost index is low or high for respectively the climb and
-descent <span class="citation">(<a href="#ref-airbus-cost-index" role="doc-biblioref">Airbus 1998</a>; <a href="#ref-sam-thesis" role="doc-biblioref">Sam Peeters 2013</a>)</span>.
+descent <span class="citation">(Airbus <a href="#ref-airbus-cost-index" role="doc-biblioref">1998</a>; Peeters <a href="#ref-sam-thesis" role="doc-biblioref">2013</a>)</span>.
 With this in mind, the analysis is limited to the parts of the trajectories
 within a 200NM radius around the departure/arrival airport.
 This is to avoid including into the analysis climbs during the cruise phase
@@ -118,7 +117,7 @@ If the aircraft is still climbing when passing the 200NM radius, D200 and
 ToC-D200 are the same.</p>
 <p>The climb phase is considered to start at 3000 feet AGL since the Noise
 Abatement Departure Procedures (NADP) defined by ICAO end at this altitude
-<span class="citation">(<a href="#ref-icao:8168" role="doc-biblioref">ICAO 2006</a>)</span>.</p>
+<span class="citation">(ICAO <a href="#ref-icao:8168" role="doc-biblioref">2006</a>)</span>.</p>
 <p>Overall, the part of the trajectory considered for the analysis goes from 3000
 feet AGL (included) until ToC-D200.</p>
 <p>The CCO/CDO Task Force uses 2500 feet as lower limit which is chosen in
@@ -148,7 +147,7 @@ determined. The trajectory part between two points on that trajectory is
 considered as level when the trajectory stays within a fictional window as can
 be seen in Figure <a href="#fig:vfe-cd-figure-002">2</a>.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:vfe-cd-figure-002"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:vfe-cd-figure-002"></span>
 <img src="/images/vfe-cd-figure-002.png" alt="Rolling window for level segment detection." width="500px" />
 <p class="caption">
 Figure 2: Rolling window for level segment detection.
@@ -361,28 +360,28 @@ level segments and their allowed lengths or durations.</p>
 <div id="further-information" class="section level2">
 <h2>Further Information</h2>
 <p>For further information please refer also to
-<span class="citation">(<a href="#ref-cco-cdo-leaflet" role="doc-biblioref">Sam Peeters 2016</a>; <a href="#ref-icns-vfe" role="doc-biblioref">S. Peeters et al. 2016</a>; <a href="#ref-vertical-flight-efficiency-during-climb-and-descent_consultation" role="doc-biblioref">Sam Peeters and Guastalla 2017</a>)</span>.</p>
+<span class="citation">(Sam Peeters <a href="#ref-cco-cdo-leaflet" role="doc-biblioref">2016</a>; S. Peeters et al. <a href="#ref-icns-vfe" role="doc-biblioref">2016</a>; Peeters and Guastalla <a href="#ref-vertical-flight-efficiency-during-climb-and-descent_consultation" role="doc-biblioref">2017</a>)</span>.</p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-airbus-cost-index" class="csl-entry">
-Airbus. 1998. <em>Getting to <span>Grips</span> with the <span>Cost Index</span></em>. Getting <span>Grips</span> With 2. <span>Airbus</span>. <a href="https://goo.gl/llIzE6">https://goo.gl/llIzE6</a>.
+<div id="refs" class="references">
+<div id="ref-airbus-cost-index">
+<p>Airbus. 1998. <em>Getting to Grips with the Cost Index</em>. Getting Grips with 2. Airbus. <a href="https://goo.gl/llIzE6">https://goo.gl/llIzE6</a>.</p>
 </div>
-<div id="ref-icao:8168" class="csl-entry">
-ICAO. 2006. <em>Doc 8168. <span>Aircraft Operations</span></em>. Fifth. Doc 8168 OPS/611. <span>ICAO</span>. <a href="http://www.aptrac.co.za/file/icao_8168_5th_ed..pdf">http://www.aptrac.co.za/file/icao_8168_5th_ed..pdf</a>.
+<div id="ref-icao:8168">
+<p>ICAO. 2006. <em>Aircraft Operations - Flight Operations</em>. Vol. 1. Doc 8168 OPS/611. ICAO. <a href="https://www.bazl.admin.ch/bazl/it/home/professionale/organizzazione-e-informazioni-di-base/basi-legali-e-direttive/allegati-della-convenzione-dell-organizzazione-dell-aviazione-ci/manuali-relativi-allannesso-14-dell-oaci.html">https://www.bazl.admin.ch/bazl/it/home/professionale/organizzazione-e-informazioni-di-base/basi-legali-e-direttive/allegati-della-convenzione-dell-organizzazione-dell-aviazione-ci/manuali-relativi-allannesso-14-dell-oaci.html</a>.</p>
 </div>
-<div id="ref-icns-vfe" class="csl-entry">
-Peeters, S., H. Koelman, R. Koelle, R. Galaviz-Schomisch, J. Gulding, and M. Meekma. 2016. <span>“Towards a Common Analysis of Vertical Flight Efficiency.”</span> In <em>2016 <span>Integrated Communications Navigation</span> and <span>Surveillance</span> (<span>ICNS</span>)</em>, 7A2-1-7A2-11. <span>Herndon, VA, USA</span>: <span>IEEE</span>. <a href="https://doi.org/10.1109/ICNSURV.2016.7486368">https://doi.org/10.1109/ICNSURV.2016.7486368</a>.
+<div id="ref-sam-thesis">
+<p>Peeters, Sam. 2013. “Adaptation of Continuous Descent and Climb Operational Techniques at Brussels Airport Aiming at Cost Efficiency.” Belgium: Vrije Universiteit Brussel. <a href="http://ansperformance.eu/library/sam-thesis.pdf">http://ansperformance.eu/library/sam-thesis.pdf</a>.</p>
 </div>
-<div id="ref-sam-thesis" class="csl-entry">
-Peeters, Sam. 2013. <span>“Adaptation of Continuous Descent and Climb Operational Techniques at <span>Brussels Airport</span> Aiming at Cost Efficiency.”</span> <span>Belgium</span>: <span>Vrije Universiteit Brussel</span>. <a href="http://ansperformance.eu/library/sam-thesis.pdf">http://ansperformance.eu/library/sam-thesis.pdf</a>.
+<div id="ref-cco-cdo-leaflet">
+<p>———. 2016. “Vertical Flight Efficiency During Climb and Descent,” April. <a href="http://ansperformance.eu/library/cco-cdo-leaflet.pdf">http://ansperformance.eu/library/cco-cdo-leaflet.pdf</a>.</p>
 </div>
-<div id="ref-cco-cdo-leaflet" class="csl-entry">
-———. 2016. <span>“Vertical <span>Flight Efficiency During Climb</span> and <span>Descent</span>,”</span> April. <a href="http://ansperformance.eu/library/cco-cdo-leaflet.pdf">http://ansperformance.eu/library/cco-cdo-leaflet.pdf</a>.
+<div id="ref-vertical-flight-efficiency-during-climb-and-descent_consultation">
+<p>Peeters, Sam, and Guglielmo Guastalla. 2017. “Analysis of Vertical Flight Efficiency During Climb and Descent.” 00-04. Eurocontrol/PRU. <a href="http://ansperformance.eu/library/vertical-flight-efficiency-during-climb-and-descent_consultation.pdf">http://ansperformance.eu/library/vertical-flight-efficiency-during-climb-and-descent_consultation.pdf</a>.</p>
 </div>
-<div id="ref-vertical-flight-efficiency-during-climb-and-descent_consultation" class="csl-entry">
-Peeters, Sam, and Guglielmo Guastalla. 2017. <span>“Analysis of Vertical Flight Efficiency During Climb and Descent.”</span> 00-04. <span>Eurocontrol/PRU</span>. <a href="http://ansperformance.eu/library/vertical-flight-efficiency-during-climb-and-descent_consultation.pdf">http://ansperformance.eu/library/vertical-flight-efficiency-during-climb-and-descent_consultation.pdf</a>.
+<div id="ref-icns-vfe">
+<p>Peeters, S., H. Koelman, R. Koelle, R. Galaviz-Schomisch, J. Gulding, and M. Meekma. 2016. “Towards a Common Analysis of Vertical Flight Efficiency.” In <em>2016 Integrated Communications Navigation and Surveillance (ICNS)</em>, 7A2–1–7A2–11. Herndon, VA, USA: IEEE. <a href="https://doi.org/10.1109/ICNSURV.2016.7486368">https://doi.org/10.1109/ICNSURV.2016.7486368</a>.</p>
 </div>
 </div>
 </div>

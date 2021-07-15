@@ -5,7 +5,6 @@ link-citations: true
 output: html_document
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>This page provides a technical description of the preliminary methodology used to calculate the Composite Risk Index (CRI).</p>
@@ -14,7 +13,7 @@ output: html_document
 <p>Note that CRI can be calculated for any given entity, provider or the State.</p>
 <p>Figure <a href="#fig:cri-components">1</a> shows all components of proposed CRI index.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:cri-components"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cri-components"></span>
 <img src="/images/cri-components.png" alt="Composite Risk Index components." width="800px" />
 <p class="caption">
 Figure 1: Composite Risk Index components.
@@ -79,7 +78,7 @@ Figure 1: Composite Risk Index components.
 <p>To take into account the local conditions within each Entity, exposure data, i.e. the total number of flight hours within each Entity is used as an additional input (CRI normalised results).</p>
 <p>The process is visualised in Figure <a href="#fig:cri-data-input">2</a>.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:cri-data-input"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cri-data-input"></span>
 <img src="/images/cri-data-input.png" alt="Composite Risk Index process." width="800px" />
 <p class="caption">
 Figure 2: Composite Risk Index process.
@@ -91,7 +90,7 @@ Figure 2: Composite Risk Index process.
 <p>The probability of occurrence being assigned to a specific severity category is calculated using historical data, separately for each State/Entity in order to simulate/take into consideration the local conditions.</p>
 <p>Figure <a href="#fig:cri-sevD">3</a> shows how unassessed occurences (severity D) are distributed into other severity groups.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:cri-sevD"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cri-sevD"></span>
 <img src="/images/cri-sevD.png" alt="Distribution of unassessed occurences (severity D) into other severity groups." width="800px" />
 <p class="caption">
 Figure 3: Distribution of unassessed occurences (severity D) into other severity groups.
@@ -165,7 +164,7 @@ The simple formula to calculate the CRI is presented below.</p>
 <li><p>Selection of Weights for OPS occurrences based on their type (RI, SMI, UPA, OTHER), taking into consideration overall OPS Weight determined in Step 1</p></li>
 <li><p>Selection of Weights for OPS and TECH occurrences based on their severity (AA/A, B, C), taking into consideration overall OPS Weight determined in Step 2</p></li>
 </ol>
-<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">Commission 2019</a>)</span></p>
+<p>In addition, each type of weight selection has predefined weight ranges, to allow for an incremental Severity classification order, based on human perception of risk (from accident to Severity C incident, i.e. from high risk to low risk). In other words, each range has an expectation value associated with it. See further details in the methodology report <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">2019</a>)</span></p>
 </div>
 <div id="cri-normalisation" class="section level3">
 <h3>CRI normalisation</h3>
@@ -345,8 +344,8 @@ The simple formula to calculate the CRI is presented below.</p>
 </div>
 <div id="further-information" class="section level2">
 <h2>Further Information</h2>
-<p>For further information on the preliminary methodology please refer also to the report explaining the development of the methodology <span class="citation">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">Commission 2019</a>)</span>.</p>
-<p>For more detailed information on the updated methodology, please see the <a href="/library/tn_prc_2021_01_Composite_Risk_Index_Methodology.pdf" title="PRC Technical Note - Composite Risk Index">PRC Technical Note</a> explaining the further development of the methodology <span class="citation">(<a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">Commission 2020</a>)</span>. The technical note explains several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.</p>
+<p>For further information on the preliminary methodology please refer also to the report explaining the development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>For more detailed information on the updated methodology, please see the <a href="/library/tn_prc_2021_01_Composite_Risk_Index_Methodology.pdf" title="PRC Technical Note - Composite Risk Index">PRC Technical Note</a> explaining the further development of the methodology <span class="citation">(Commission <a href="#ref-performancereviewcommissionCompositeRiskIndex2020" role="doc-biblioref">2020</a>)</span>. The technical note explains several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.</p>
 </div>
 <div id="working-example" class="section level2">
 <h2>Working example</h2>
@@ -357,12 +356,12 @@ The simple formula to calculate the CRI is presented below.</p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2>References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-performancereviewcommissionCompositeRiskIndex2019" class="csl-entry">
-Commission, Performance Review. 2019. <span>“Composite <span>Risk Index</span> (<span>CRI</span>) - Methodology.”</span> <span>EUROCONTROL</span>. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.
+<div id="refs" class="references">
+<div id="ref-performancereviewcommissionCompositeRiskIndex2019">
+<p>Commission, Performance Review. 2019. “Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf">https://ansperformance.eu/library/Composite_Risk_Index_methodology.pdf</a>.</p>
 </div>
-<div id="ref-performancereviewcommissionCompositeRiskIndex2020" class="csl-entry">
-———. 2020. <span>“Updated Composite <span>Risk Index</span> (<span>CRI</span>) - Methodology.”</span> <span>EUROCONTROL</span>. <a href="https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf">https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf</a>.
+<div id="ref-performancereviewcommissionCompositeRiskIndex2020">
+<p>———. 2020. “Updated Composite Risk Index (CRI) - Methodology.” EUROCONTROL. <a href="https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf">https://ansperformance.eu/library/prc_tn_2021_01_Composite_Risk_Index_Methodology.pdf</a>.</p>
 </div>
 </div>
 </div>
