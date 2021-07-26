@@ -398,7 +398,11 @@ title: ANSPs Financial Dashboard
       <div class="Mycolumn" style="display:flex">
         <div class="col-4" ;
           style="margin: 0px; margin-left: 0px; padding-left: 5px; padding-right: 5px; border: solid 2px #002060; border-radius: 5px;">
-          <p id="Title_FreeCashFlow" class="ScorecardTitle">Free cash flow</p>
+          <!-- <p id="Title_FreeCashFlow" class="ScorecardTitle">Free cash flow</p>-->
+          <p class="ScorecardTitle">
+            <span>Free cash flow</span><span><a href="#" data-toggle="tooltip" data-placement="right"
+                title="In this dashboard, the Free Cash Flow indicator is calculated as Net Cash flow from Operating Activities - Capex.">*</a></span><span id="Title_FreeCashFlow"></span>
+          </p>
           <p style="text-align: center;">
             <span id="Scorecard_FreeCashFlow" class="Scorecard"></span>
             <span id="Scorecard_FreeCashFlow_Curr" class="MyCurrency">€ M</span>
@@ -2306,7 +2310,8 @@ title: ANSPs Financial Dashboard
     document.getElementById("income_title").innerHTML = "Income Statement (" + SelectedEntity + ")";
     document.getElementById("balance_title").innerHTML = "Balance Sheet (" + SelectedEntity + ")";
     document.getElementById("cashflow_title").innerHTML = "Cash Flow Statement (" + SelectedEntity + ")";
-    document.getElementById("Title_FreeCashFlow").innerHTML = "Free cash flow " + SelectedYear + "";
+    //document.getElementById("Title_FreeCashFlow").innerHTML = "Free cash flow " + SelectedYear + "";
+    document.getElementById("Title_FreeCashFlow").innerHTML = " " + SelectedYear;
     document.getElementById("Title_Capex").innerHTML = " " + SelectedYear;
 
     document.getElementById("incomeitems_title").innerHTML = "Income Statement Items (" + NatCurrency + " " + CurrMultiplierString + ")";
