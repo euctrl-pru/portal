@@ -165,13 +165,11 @@ In fact they use different BADA versions and hence different aircraft characteri
 {{< attn_i >}}  = not (yet?) available.<br>
 
 
-
 <div class="container text-center">
 {{< subscribe-button >}}<br>
+
 [Read our Privacy protection statement](/about/privacy/)
 </div>
-
-
 
 
 <style>
