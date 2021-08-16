@@ -1,0 +1,32 @@
+---
+title: En-route Charging Zone
+slug: en-route-charging-zone
+---
+
+A route charge is levied for each flight performed in the EUROCONTROL airspace.
+The EUROCONTROL airspace is divided into *route charging zones* as defined by
+the Member States.
+
+The EUROCONTROL route charge takes account of three basic elements:
+
+* The distance factor (for each charging zone);
+* The aircraft weight factor; and
+* The unit rate of charge (for each charging zone).
+
+The Unit Rate of charge is established at the beginning of the year and,
+normally, remains valid for a calendar year.
+
+The following map shows EUROCONTROL charging zone (as of 2020-05-27):
+
+```{r charging-zone-map, out.width="90%", echo=FALSE}
+knitr::include_graphics("/images/crco-1.png")
+```
+
+
+## See Also
+
+* `r blogdown::shortcode("a_blank_ectrl", "CRCO - Central Route Charges Office", "https://www.eurocontrol.int/crco")`
+* `r blogdown::shortcode("a_blank_lexicon", "En-route Charging Zone", "https://ext.eurocontrol.int/lexicon/index.php/En-route_charging_zone")`
+
+
+

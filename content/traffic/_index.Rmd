@@ -49,6 +49,7 @@ The results are shown in the dashboard below and also available for download in 
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/530431ad-7650-4dc3-9a73-9e64133134b6/page/F4Uw" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
-[ert_cz]: https://ext.eurocontrol.int/lexicon/index.php/En-route_charging_zone "en-route charging zones"
+[ert_cz]: /definition/en-route-charging-zone/ "En-route charging zone"
+
 
 [^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias).
