@@ -23,11 +23,11 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
  
-<div class="carousel-item active"><div class="card  border-0"><a href="/global/brazil/"><img class="card-img-top" src="/images/global/prcbrazileurope.png" alt="New Brazil / Europe Comparison of operational performance"><div class="card-body"><h5 class="card-title">Comparison: Brazil/Europe</h5></a><small><p class="card-text">Have a look at the comparison of operational ANS performance between Brazil and Europe!</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"><img class="card-img-top" src="/images/landing/ectl_downl.png" alt="New download feature"><div class="card-body"><h5 class="card-title">New download function</h5></a><small><p class="card-text">Check out our new download function on the daily traffic dashboard!</p></small></div></div></div>
  
  <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/covid19#covid-19-impact-briefings" target="_blank"><img class="card-img-top" src="/images/landing/ectl_apt.png" alt="COVID-19 Airport impact briefings"><div class="card-body"><h5 class="card-title">COVID-19 Airport briefings</h5></a><small><p class="card-text">Take a look at the COVID-19 Airport impact briefings.</p></small></div></div></div>
 
-  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">July 2021 data available now</p></small></div></div></div>
+  <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">August 2021 data available now</p></small></div></div></div>
 
 </div>
 

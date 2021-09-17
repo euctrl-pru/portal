@@ -14,6 +14,45 @@ extrajs: [
 
 ## 2021
 
+<!-- #16 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Varying state recovery profiles - EUROCONTROL Data Snapshot #16][DS16]</h5>
+<small><strong><p style="color:#808080">Published: 07 Sep 2021</p></strong></small>
+
+The 16. EUROCONTROL Data Snapshot looks at the recovery profiles in summer 2021.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-16-recovery-wide-variations" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds16.png" alt="Varying state recovery profiles"></div>
+</div>
+</div></div>
+
+
+<!-- #15 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Delay caused by checking the COVID-19 documentation of passengers - EUROCONTROL Data Snapshot #15][DS15]</h5>
+<small><strong><p style="color:#808080">Published: 31 Aug 2021</p></strong></small>
+
+The 15. EUROCONTROL Data Snapshot looks at the delay caused by checking the COVID-19 documentation of passengers.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-15-checking-covid-19-documents" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds15.png" alt="Delay due to checking COVID-19 documents"></div>
+</div>
+</div></div>
+
 <!-- #14 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
@@ -280,3 +319,5 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS12]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-12-aircraft-across-europe-being-woken-summer "Inactive Aircraft in Europe"
 [DS13]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-13-airlines-reducing-fleet-complexity-introduced-fuel-efficient-types "Change in operational fleet mix"
 [DS14]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-14-horizontal-flight-efficiency "Horizontal en-route flight efficiency"
+[DS15]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-15-checking-covid-19-documents "Delay due to checking COVID-19 documents"
+[DS16]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-16-recovery-wide-variations "Varying state recovery profiles"
