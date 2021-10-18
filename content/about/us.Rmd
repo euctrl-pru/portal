@@ -19,7 +19,6 @@ The [EUROCONTROL Performance Review System](https://www.eurocontrol.int/air-navi
 The [SES](/acronym/ses/) Performance Scheme provides the legislative/regulatory framework for setting targets for key performance indicators, assessing the respective performance plans of the [SES](/acronym/ses/) Member States/Functional Airspace Blocks and subsequently monitoring achieved performance against those.
 The [EUROCONTROL Performance Review System](https://www.eurocontrol.int/air-navigation-services-performance-review/) complements the [SES](/acronym/ses/) Performance Scheme by providing the performance view on all the EUROCONTROL Member States and carrying out research and development into the longer-term evolution of ANS performance review including benchmarking with regions outside Europe. 
 
-<img src="/images/prc/prc_pru1.jpg" class="img-fluid" alt="PRC and PRU">
 
 For feedback or questions please contact us at:
 [Performance Review Unit](mailto:PRU-Support@eurocontrol.int)
