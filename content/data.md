@@ -72,6 +72,8 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 ## <img src="/images/prcq-operations-airport.png" width="50" height="50" alt="Operations at Airports"> Operations at Airports
 
+**NOTE**: The Vertical flight efficiency data for September 2021 will only be available as of November 2021. The data will be updated as soon as possible.
+
 | Data description                                                                                                                                                                              | Period                                                                                  | {{< excel_i >}}                     | {{< csv_i >}}                  |  Info                         | [ICAO GANP][icaoganp]              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------|--------------------------------|-------------------------------|------------------------------------|
 | Airport arrival ATFM delays<br><em> no post ops adjustments</em><br><small> Daily IFR arrivals and airport arrival [ATFM delay][ATFMdelay] by airport and delay category</small>              | {{< getdata "dwnld" "apt_dly_beg" >}} - {{< getdata "dwnld" "apt_dly_end" >}}           | [{{< dwnld_i >}}][APT-DLYxlsx]      | [{{< dwnld_i >}}][APT-DLYcsv]  | [{{< info_i >}}][APT-DLYmeta] | [KPI 12][ganp12]                   |
