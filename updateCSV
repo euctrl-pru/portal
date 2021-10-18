@@ -93,6 +93,7 @@ APT_DLY_WEF=${year_beg}
 ERT_DLY_WEF=${year_beg}
 TIL=${month_beg}
 
+echo "TIL is: ${TIL}"
 
 (
     cd "${SCRIPT_DIR}/" || exit;
