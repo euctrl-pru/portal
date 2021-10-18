@@ -18,7 +18,7 @@ ANSP operational performance dashboard
 </h5>
 </a>
 <p class="card-text">
-Consolidated monthly overview of operational ANSP performance across a wide spectrum of indicators
+Monthly overview of operational ANSP performance across a wide spectrum of indicators
 </p>
 </div>
 </div>
@@ -47,7 +47,7 @@ ATM Cost-Effectiveness Dashboard
 <p class="card-text">
 Analyse information and data on ANSP cost-effectiveness performance (2002-2019)
 </p>
-</div>-
+</div>
 </div>
 
 <div class="card">
@@ -133,7 +133,7 @@ MIRROR - Operational decision support tool
 </h5>
 </a>
 <p class="card-text">
-Check out the innovative flight visualisation tool that helps stakeholders predict and mitigate delays <i class='fas fa-xs fa-external-link-alt'></i>
+Check out the new tool that helps stakeholders predict and mitigate delays <i class='fas fa-xs fa-external-link-alt'></i>
 </p>
 </div>
 </div>
