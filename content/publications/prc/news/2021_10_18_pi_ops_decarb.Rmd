@@ -25,7 +25,9 @@ In addition to the long recovery from the COVID-19 pandemic, decarbonisation of 
 
 The objective of this paper is to provide a collection of facts about the environmental performance of aviation in general and the role of Air Navigation Services (ANS) in particular to identify and formulate relevant questions for future debate.
 
-Although there are other areas such as noise and local air quality where aviation has an impact, the focus in this paper will be on greenhouse gas emissions (GHG) and the impact on climate. 
+Although there are other areas such as noise and local air quality where aviation has an impact, the focus in this paper will be on greenhouse gas emissions (GHG) and the impact on climate.
+
+Should you wish to comment on this publication, or to contact the PRC, please email us @: pru-support@eurocontrol.int.
 </div>
 <div class="col-sm-3">
 <div class="card border-0"><a href="/library/pi_prc_2021_10_The role of ANS in a decarbonising world.pdf"><br>
@@ -40,7 +42,7 @@ Although there are other areas such as noise and local air quality where aviatio
 #### Notice
 *The PRC has made every effort to ensure that the information and analysis contained in this document are as accurate and 
 complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you 
-could please bring them to the Aviation Intelligence Unit's attention.*
+could please bring them to the [Aviation Intelligence Unit's attention](mailto:PRU-Support@eurocontrol.int).*
 </div>
 
 <div class="col-sm-3">
