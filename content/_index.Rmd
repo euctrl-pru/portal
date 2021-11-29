@@ -23,7 +23,9 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
 
-<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/event/eurocontrol-aviation-sustainability-summit" target="_blank"><img class="card-img-top" src="/images/landing/ENV_Summit.jpg" alt="EUROCONTROL Sustainability Summit"><div class="card-body"><h5 class="card-title">Aviation Sustainability Summit</h5></a><small><p class="card-text">Join the EUROCONTROL Aviation Sustainability Summit on 22 November 2021 to hear how European aviation plans to achieve carbon neutrality by 2050</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="/publications/prc/news/2021_10_18_pi_ops_decarb/"><img class="card-img-top" src="/images/prc/pi3.png" alt="The role of ANS in a decarbonising world"><div class="card-body"><h5 class="card-title">PRC Performance Insight</h5></a><small><p class="card-text">Read the latest PRC Performance insight on the role of ANS in a decarbonising world</p></small></div></div></div>
+ 
+ <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-forecast-update-2021-2027" target="_blank"><img class="card-img-top" src="/images/landing/ectl_fcst_update.png" alt="EUROCONTROL Forecast Update 2021-2027"><div class="card-body"><h5 class="card-title">Updated: Forecast 2021-2027</h5></a><small><p class="card-text">Take a look at the updated forecast which predicts that flights will recover to 2019 levels by the end of 2023.</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">October 2021 data available now</p></small></div></div></div>
 
