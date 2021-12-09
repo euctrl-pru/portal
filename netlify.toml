@@ -90,3 +90,9 @@ command = "hugo --gc --minify"
   to = "https://euctrl-pru.github.io/international-BRA-EUR/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/economics/ace/hls/*"
+  to = "https://ace-hlsr.netlify.app/:splat"
+  status = 200
+  force = true
