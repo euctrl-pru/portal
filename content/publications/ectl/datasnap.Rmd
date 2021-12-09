@@ -14,15 +14,34 @@ extrajs: [
 
 ## 2021
 
+<!-- #22 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Lower summer taxi-out times in 2021 - EUROCONTROL Data Snapshot #22][DS22]</h5>
+<small><strong><p style="color:#808080">Published: 30 Nov 2021</p></strong></small>
+
+The 22. EUROCONTROL Data Snapshot focuses on the welcome benefits of lower taxi-out times this summer and the challenge to keep them low.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-22-lower-summer-taxi-out-times" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds22.png" alt="Lower summer taxi-out times in 2021"></div>
+</div>
+</div></div>
+
 <!-- #21 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
 
 <div class="col-sm-8"> 
-<h5>[Aircraft flying higher, more efficiently and sustainably - EUROCONTROL Data Snapshot #21][DS21]</h5>
-<small><strong><p style="color:#808080">Published: 9 Nov 2021</p></strong></small>
+<h5>[Aircraft flying higher, more efficiently and sustainably  - EUROCONTROL Data Snapshot #21][DS21]</h5>
+<small><strong><p style="color:#808080">Published: 09 Nov 2021</p></strong></small>
 
-The 21st EUROCONTROL Data Snapshot focuses on aircraft flying higher, creating extra airspace capacity and burning less fuel, saving 1 million tonnes of CO2 per year.
+The 21. EUROCONTROL Data Snapshot focuses on aircraft flying higher, creating extra airspace capacity and burning less fuel, saving 1 million tonnes of CO2 per year.
 
 <br>
 <a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-21-aircraft-flying-higher-more-efficiently-and-sustainably" target="_blank" role="button">Learn more...</a>
@@ -38,10 +57,10 @@ The 21st EUROCONTROL Data Snapshot focuses on aircraft flying higher, creating e
 <div class="row align-items-start">
 
 <div class="col-sm-8"> 
-<h5>[Recovering flights and increasing delays - EUROCONTROL Data Snapshot #20][DS20]</h5>
+<h5>[Recovering flights and increasing delays in 2021 - EUROCONTROL Data Snapshot #20][DS20]</h5>
 <small><strong><p style="color:#808080">Published: 03 Nov 2021</p></strong></small>
 
-The 20th EUROCONTROL Data Snapshot focuses on flights recovering in summer 2021, alongside delays.
+The 20th EUROCONTROL Data Snapshot focuses on flights recovering this summer, alongside delays.
 
 <br>
 <a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-20-recovering-flights-and-increasing-delays" target="_blank" role="button">Learn more...</a>
@@ -60,7 +79,7 @@ The 20th EUROCONTROL Data Snapshot focuses on flights recovering in summer 2021,
 <h5>[Europe's business aviation recovery from COVID-19 - EUROCONTROL Data Snapshot #19][DS19]</h5>
 <small><strong><p style="color:#808080">Published: 19 Oct 2021</p></strong></small>
 
-The 19. EUROCONTROL Data Snapshot focuses on on the continued recovery of Europe's business aviation sector from the COVID-19 pandemic.
+The 19. EUROCONTROL Data Snapshot focuses on the continued recovery of Europe's business aviation sector from the COVID-19 pandemic.
 
 <br>
 <a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-19-europes-business-aviation-recovery-covid-19" target="_blank" role="button">Learn more...</a>
@@ -421,4 +440,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS19]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-19-europes-business-aviation-recovery-covid-19 "Europe's business aviation recovery from COVID-19"
 [DS20]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-20-recovering-flights-and-increasing-delays "Recovering flights and increasing delays"
 [DS21]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-21-aircraft-flying-higher-more-efficiently-and-sustainably "aircraft flying higher, more efficiently and sustainably"
-
+[DS22]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-22-lower-summer-taxi-out-times "Lower summer taxi-out times in 2021"
