@@ -8,6 +8,45 @@ The cooperation started back in 2003. As of 2013, the cooperation is framed by A
 
 The overall objective is to make a factual high-level comparison of Air Traffic Management performance between the U.S. and Europe with a view to its economic and operational performance. The work is based on a set of comparable performance indicators, developed jointly and reviewed year after year, creating a sound basis for factual comparisons between countries and world regions. The specific Key Performance Indicators (KPIs) are based on best practices from both the Air Traffic Organization System Operations Services and the Performance Scheme of the Single European Sky initiative and EUROCONTROL’s Performance Review System.
 
+
+## 2021
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+<div class="col-sm-2">
+<div class="card border-0"><img class="card-img-top" src="/images/global/us_eur_2021.png" alt="Special report on the impact of the
+COVID-19 pandemic on the U.S. and European ANS systems"></div>
+</div>
+<div class="col-sm-10"> 
+<h5>Special report on the impact of the COVID-19 pandemic on the U.S. and European ANS systems</h5>
+<small><strong><p style="color:#808080">Published: 08 December 2021</p></strong></small>
+
+The outbreak of COVID-19 pandemic in 2020 had a devastating impact on the global aviation affecting the entire value chain from aircraft manufacturers to the ANS providers.
+
+This special report is the seventh in a series of joint comparisons between the U.S. and Europe. It aims at understanding the operational and economic impact of the COVID-19 pandemic unfolding in early 2020 on the ATM systems in the U.S. and in Europe.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/special-report-impact-covid-19-pandemic-us-and-european-ans-systems" target="_blank" role="button">Learn more...</a>
+</div>
+</div></div>
+
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+<div class="col-sm-2">
+<div class="card border-0"><img class="card-img-top" src="/images/global/us_eur_eco_2016.png" alt="U.S./Europe comparison of air navigation services (ANS) cost-efficiency trends between 2006-2016"></div>
+</div>
+<div class="col-sm-10"> 
+<h5>U.S./Europe comparison of air navigation services (ANS) cost-efficiency trends between 2006-2016</h5>
+<small><strong><p style="color:#808080">Published: 08 April 2019</p></strong></small>
+This report is a factual high-level comparison of Air Navigation Services (ANS) provision costs in Europe and the United States of America (US), based on comparable data and a well-established economic performance framework. 
+
+It is an update of the comparison of ANS cost-efficiency trends published in 2013 and 2016. It focuses on the period from 2006 to 2016.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/useurope-comparison-air-navigation-services-ans-cost-efficiency-trends-between-2006-0" target="_blank" role="button">Learn more...</a>
+</div>
+</div></div>
+
+
 ## 2019
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
