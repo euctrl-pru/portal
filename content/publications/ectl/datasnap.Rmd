@@ -14,6 +14,25 @@ extrajs: [
 
 ## 2021
 
+<!-- #23 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Flight recovery with fewer choices for passengers in 2021 - EUROCONTROL Data Snapshot #23][DS23]</h5>
+<small><strong><p style="color:#808080">Published: 14 Dec 2021</p></strong></small>
+
+The 23. EUROCONTROL Data Snapshot focuses on flights recovering to 75% of 2019 levels, but for passengers, the choice of flights to their destination remains low.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-23-flight-recovery-fewer-choices-passengers" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds23.png" alt="Flight recovery with fewer choices for passengers in 2021"></div>
+</div>
+</div></div>
+
 <!-- #22 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
@@ -441,3 +460,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS20]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-20-recovering-flights-and-increasing-delays "Recovering flights and increasing delays"
 [DS21]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-21-aircraft-flying-higher-more-efficiently-and-sustainably "aircraft flying higher, more efficiently and sustainably"
 [DS22]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-22-lower-summer-taxi-out-times "Lower summer taxi-out times in 2021"
+[DS23]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-23-flight-recovery-fewer-choices-passengers "Flight recovery with fewer choices for passengers"
