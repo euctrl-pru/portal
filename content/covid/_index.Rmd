@@ -1,70 +1,8 @@
 ---
-title: Focus on the COVID-19 outbreak
+title: Focus on the COVID-19 crisis
 date: '2020-05-15'
 ---
-<div class="container">
-<div class="row align-items-start">
-<div class="col-sm-6">
-<br>
-As a result of COVID-19, the number of flights operating daily in the [EUROCONTROL area ][ectlmemb] declined in March-April by up to -90% compared to the same period in 2019. 
 
-Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is to support the industry and interested parties with a consolidated view of relevant information on the impact of the COVID-19 crisis on the aviation industry, particularly related to performance topics. 
-
-<a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" class="btn btn-danger" role="button"><i class='fas fa-xs fa-exclamation-triangle'></i> For daily traffic statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator level please visit our interactive dashboard!</a>
-</div>
-<div class="col-sm-6">
-<div class="container">
-<div class="row">
-<div class="card-deck">
-<div class="card"><a href="https://www.eurocontrol.int/covid19#traffic-scenarios" target="_blank">
-<img class="card-img-top" src="/images/covid/ectl_covid_recov.jpg" alt="Recovery scenarios">
-<div class="card-body"><small><h5 class="card-title">Road to recovery</h5><p class="card-text">What are EUROCONTROL's recovery scenarios?</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
-</div>
-</div>
-<div class="card"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-assessment-covid-19s-impact-european-air-traffic" target="_blank">
-<img class="card-img-top" src="/images/covid/ectl_react.jpg" alt="Situation assessments">
-<div class="card-body"><small><h5 class="card-title">Situation awareness</h5><p class="card-text">See the latest EUROCONTROL comprehensive assessment report.</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
-</div>
-</div>
-<div class="card"><a href="https://www.eurocontrol.int/covid19" target="_blank">
-<img class="card-img-top" src="/images/covid/ectl_covid.jpg" alt="Link EUROCONTROL COVID page">
-<div class="card-body"><small><h5 class="card-title">More on COVID 19</h5><p class="card-text">See also EUROCONTROL page for more info on COVID-19!</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container">
-<div class="row">
-<div class="card-deck">
-<div class="card"><a href="/covid/covid_traffic/">
-<img class="card-img-top" src="/images/covid/covid_icon.JPG" alt="Traffic impact">
-<div class="card-body"><small><h5 class="card-title">Traffic</h5><p class="card-text">What is the COVID-19 impact on flights?</p></small></a>
-</div>
-</div>
-<div class="card"><a href="/covid/acft_ground/">
-<img class="card-img-top" src="/images/covid/ectl_acft_park.jpg" alt="Link Grounded aircraft">
-<div class="card-body"><small><h5 class="card-title">Grounded aircraft</h5><p class="card-text">How many aircraft have been grounded and where are they parked?</p></small></a>
-</div>
-</div>
-<div class="card"><a href="/covid/covid_ert_rev/">
-<img class="card-img-top" src="/images/covid/eco_rev.jpg" alt="Impact on en-route revenues">
-<div class="card-body"><small><h5 class="card-title">Revenues</h5><p class="card-text">What is the COVID-19 impact on en-route revenues?</p></small></a>
-</div>
-</div>
-<div class="card"><a href="/covid/covid_vfe/">
-<img class="card-img-top" src="/images/covid/cdo_icon.jpg" alt="Link to CCO/CDO page">
-<div class="card-body"><small><h5 class="card-title">CCO/CDO</h5><p class="card-text">More environmental friendly approaches due to COVID-19?</p></small></a>
-</div>
-</div>
-</div>
-
-[ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation "Daily traffic updates"
-[ectlweb]: https://www.eurocontrol.int/ "EUROCONTROL web page"
-[ectlmemb]: https://www.eurocontrol.int/about-us#member-states "EUROCONTROL Member States"
 
 <style type="text/css">
 .img-responsive {
@@ -75,7 +13,7 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 50.0%;
+    padding-top: 62.0%;
 }
 
 .resp-iframe {
@@ -87,3 +25,95 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
     border: 0;
 }
 </style>
+With the outbreak of the COVID-19 pandemic in Europe in early 2020, the focus changed entirely from solving the European en-route capacity crisis to managing an unprecedented global crisis of the aviation industry affecting the entire value chain. 
+
+Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is to support the industry and interested parties with a consolidated view of relevant information on the impact of the COVID-19 crisis on the aviation industry, particularly related to performance topics.
+
+<div class="container">
+<div class="row align-items-start">
+
+<div class="col-sm-6">
+
+<div class="container">
+<div class="row">
+<div class="card-deck">
+
+<div class="card"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
+<h5 class="card-title"><span style="color:red"> Daily traffic statistics</span></h5>
+<img class="card-img-top" src="/images/covid/cov_ag.jpg" alt="Traffic impact">
+<div class="card-body"><p class="card-text">Check out our daily statistics by State, Area Control Center (ACC), Airport, and Aircraft Operator</p></a>
+</div></div>
+
+<div class="card"><a href="https://www.eurocontrol.int/covid19#traffic-scenarios" target="_blank">
+<h5 class="card-title"> Road to recovery</h5>
+<img class="card-img-top" src="/images/covid/ectl_covid_recov.jpg" alt="Recovery scenarios">
+<div class="card-body"><p class="card-text">What are EUROCONTROL's recovery scenarios?</p><i class='fas fa-xs fa-external-link-alt'></i></a>
+</div></div>
+
+</div></div></div>
+</div>
+
+<div class="col-sm-6">
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/p_682iueu5pc" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div></div>
+
+</div></div>
+
+
+<div class="container">
+<div class="row">
+<div class="card-deck">
+
+<div class="card"><a href="/covid/covid_ert_rev/">
+<img class="card-img-top" src="/images/covid/cov_eco.jpg" alt="Impact on en-route revenues">
+<div class="card-body"><small><h5 class="card-title">Economic impact</h5><p class="card-text">What is the COVID-19 impact on en-route revenues?</p></small></a>
+</div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-assessment-covid-19s-impact-european-air-traffic" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_comp.png" alt="Comprehensive assessments">
+<div class="card-body"><small><h5 class="card-title">Comprehensive assessments</h5><p class="card-text">See the latest EUROCONTROL comprehensive assessments!</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
+</div>
+</div>
+
+<div class="card"><a href="/covid/acft_ground/">
+<img class="card-img-top" src="/images/covid/ectl_aircraft3.jpg" alt="Link Grounded aircraft">
+<div class="card-body"><small><h5 class="card-title">Grounded aircraft</h5><p class="card-text">How many aircraft have been grounded and where are they parked?</p></small></a>
+</div>
+</div>
+
+<div class="card"><a href="/covid/covid_vfe/">
+<img class="card-img-top" src="/images/covid/cdo_icon.jpg" alt="Link to CCO/CDO page">
+<div class="card-body"><small><h5 class="card-title">CCO/CDO</h5><p class="card-text">More environmental friendly approaches due to COVID-19?</p></small></a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!--
+<div class="container">
+<div class="row">
+<div class="card-deck">
+
+<div class="card"><a href="https://www.eurocontrol.int/covid19#traffic-scenarios" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_covid.jpg" alt="Link EUROCONTROL COVID page">
+<div class="card-body"><small><h5 class="card-title">More on COVID 19</h5><p class="card-text">See also EUROCONTROL page for more info on COVID-19!</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
+</div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/covid19" target="_blank">
+<img class="card-img-top" src="/images/covid/ectl_covid.jpg" alt="Link EUROCONTROL COVID page">
+<div class="card-body"><small><h5 class="card-title">More on COVID 19</h5><p class="card-text">See also EUROCONTROL page for more info on COVID-19!</p><i class='fas fa-xs fa-external-link-alt'></i></small></a>
+</div>
+</div>
+
+</div></div></div>
+ -->
+
+
+[ectl_daily]: https://www.eurocontrol.int/Economics/DailyTrafficVariation "Daily traffic updates"
+[ectlweb]: https://www.eurocontrol.int/covid19 "EUROCONTROL web page"
+[ectlmemb]: https://www.eurocontrol.int/about-us#member-states "EUROCONTROL Member States"
