@@ -72,7 +72,6 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 
 ## <img src="/images/prcq-operations-airport.png" width="50" height="50" alt="Operations at Airports"> Operations at Airports
 
-**NOTE**: The Vertical flight efficiency data for September 2021 will only be available as of November 2021. The data will be updated as soon as possible.
 
 | Data description                                                                                                                                                                              | Period                                                                                  | {{< excel_i >}}                     | {{< csv_i >}}                  |  Info                         | [ICAO GANP][icaoganp]              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------|--------------------------------|-------------------------------|------------------------------------|
@@ -82,6 +81,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 | Arrival Sequencing and Metering (ASMA) additional time<br><small> Monthly ASMA [additional][ASMAadditional] and [unimpeded][ASMAunimpeded] time</small>                                       | {{< getdata "dwnld" "asma_beg" >}} - {{< getdata "dwnld" "asma_end" >}}                 | [{{< dwnld_i >}}][ASMAxlsx]         |                                | [{{< info_i >}}][ASMAmeta]    | [KPI 08][ganp08]                   |
 | Vertical flight efficiency - Continuous climb and descent operations<br><small> Monthly continuous climb and descent data</small>                                                             | {{< getdata "dwnld" "cdo_beg" >}} - {{< getdata "dwnld" "cdo_end" >}}            | [{{< dwnld_i >}}][CDOxlsx]          |                                | [{{< info_i >}}][CDOmeta]  | [KPI 17][ganp17], [KPI 19][ganp19] |
 | Taxi-out additional time<br><small> Monthly taxi out [additional][TX-OUTadditional] and [unimpeded][TX-OUTunimpeded] time</small>                                                             | {{< getdata "dwnld" "tx_out_beg" >}} - {{< getdata "dwnld" "tx_out_end" >}}             | [{{< dwnld_i >}}][TX-OUTxlsx]       |                                | [{{< info_i >}}][TX-OUTmeta]  | [KPI 02][ganp02]                   |
+| <span style="color:red">NEW:</span> Taxi-time planning values<br><small> Taxi time planning values, by IATA season for airline schedulers supplied by [CODA][coda]</small>                                                             | {{< getdata "dwnld" "tx_std_beg" >}} - {{< getdata "dwnld" "tx_std_end" >}}             | [{{< dwnld_i >}}][TX-Stdxlsx]       |                                | [{{< info_i >}}][TX-Stdmeta]  |             |
 | ATC pre-departure delays<br><small> Daily [ATC pre-departure delay][ATCpredepdelay] by airport</small>                                                                                        | {{< getdata "dwnld" "atc_pre_beg" >}} - {{< getdata "dwnld" "atc_pre_end" >}}           | [{{< dwnld_i >}}][ATC-PRExlsx]      |                                | [{{< info_i >}}][ATC-PREmeta] |                                    |
 | Total pre-departure delays<br><small> Daily total pre-departure delay by airport (all causes)</small>                                                                                        | {{< getdata "dwnld" "all_pre_beg" >}} - {{< getdata "dwnld" "all_pre_end" >}}           | [{{< dwnld_i >}}][ALL-PRExlsx]      |                                | [{{< info_i >}}][ALL-PREmeta] |                                    |
 | ATFM slot adherence<br><small> Daily ATFM slot adherence by airport</small>                                                                                                                   | {{< getdata "dwnld" "slt_adh_beg" >}} - {{< getdata "dwnld" "slt_adh_end" >}}           | [{{< dwnld_i >}}][SLT-ADHxlsx]      |                                | [{{< info_i >}}][SLT-ADHmeta] | [KPI 03][ganp03]                   |
@@ -114,6 +114,11 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [TX-OUTxlsx]: /download/xls/Taxi-Out_Additional_Time.xlsx "TX-OUT (Excel)"
 [TX-OUTcsv]:  /404/ "TX-OUT (CSV)"
 [TX-OUTmeta]: /reference/dataset/taxi-out-additional-time/ "TX-OUT (Meta)"
+
+[TX-Stdxlsx]: /download/xls/Taxi_times_Planning_Data_S14_S21.xlsx "TX-Std (Excel)"
+[TX-Stdcsv]:  /404/ "TX-Std (CSV)"
+[TX-Stdmeta]: /reference/dataset/planning-taxi-times/ "TX-Std (Meta)"
+[coda]: /capacity/tot_dly/ "Coda"
 
 [ATC-PRExlsx]: /download/xls/ATC_Pre-Departure_Delay.xlsx "ATC-PRE (Excel)"
 [ATC-PREmeta]: /reference/dataset/atc-pre-departure-delay/  "ATC-PRE (Meta)"
