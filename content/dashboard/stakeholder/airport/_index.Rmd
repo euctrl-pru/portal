@@ -24,15 +24,9 @@ date: '2020-05-15'
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/tool/mirror">
-  <img class="card-img-top" src="/images/cap/ectl_mirror.jpg" alt="MIRROR - Operational decision support tool">
-  <div class="card-body"><h5 class="card-title">MIRROR - Operational decision support tool</h5></a><p class="card-text">Check out the innovative tool that helps stakeholders predict and mitigate delays</p>
-  </div>
-</div>
-
-<div class="card"><a href="https://www.eurocontrol.int/airport-integration" target="_blank">
-  <img class="card-img-top" src="/images/apt/ectl_apt_int1.jpg" alt="Airport network integration">
-  <div class="card-body"><h5 class="card-title">EUROCONTROL airport network integration</h5></a><p class="card-text">Learn how EUROCONTROL helps to better integrate airports in the ATM network <i class='fas fa-xs fa-external-link-alt'></i></p>
+<div class="card"><a href="/capacity/atfm_apt/">
+  <img class="card-img-top" src="/images/apt/ectl_3.jpg" alt="ATFM arrival delays @ airports">
+  <div class="card-body"><h5 class="card-title">ATFM delays @ airports</h5></a><p class="card-text">Analyse the airport ATFM arrival delays @ airports</p>
   </div>
 </div>
 
@@ -43,12 +37,6 @@ date: '2020-05-15'
 <div class="container">
 <div class="row">
 <div class="card-deck">
-
-<div class="card"><a href="/capacity/atfm_apt/">
-  <img class="card-img-top" src="/images/apt/ectl_3.jpg" alt="ATFM arrival delays @ airports">
-  <div class="card-body"><h5 class="card-title">ATFM delays @ airports</h5></a><p class="card-text">Analyse the airport ATFM arrival delays @ airports</p>
-  </div>
-</div>
 
 <div class="card"><a href="/efficiency/vfe/">
   <img class="card-img-top" src="/images/apt/cdo_icon.jpg" alt="Vertical flight efficiency @ airports">
@@ -68,9 +56,37 @@ date: '2020-05-15'
   </div>
 </div>
 
+<div class="card"><a href="https://www.eurocontrol.int/publication/taxi-times-summer-2021" target="_blank">
+  <img class="card-img-top" src="/images/apt/ectl_tx_stand.jpeg" alt="Taxi-time planning values">
+  <div class="card-body"><h5 class="card-title">Taxi-time planning values</h5></a><p class="card-text">Taxi time planning values, by IATA season for airline schedulers <i class='fas fa-xs fa-external-link-alt'></i></p>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="card-deck">
+
+<div class="card"><a href="https://www.eurocontrol.int/tool/mirror">
+  <img class="card-img-top" src="/images/cap/ectl_mirror.jpg" alt="MIRROR - Operational decision support tool">
+  <div class="card-body"><h5 class="card-title">MIRROR - Operational decision support tool</h5></a><p class="card-text">Check out the innovative tool that helps stakeholders predict and mitigate delays</p>
+  </div>
+</div>
+
+
 <div class="card"><a href="https://ext.eurocontrol.int/airport_corner_public/" target="_blank">
   <img class="card-img-top" src="/images/apt/ectl_apt_corner1.jpg" alt="EUROCONTROL airport corner">
   <div class="card-body"><h5 class="card-title">EUROCONTROL airport corner</h5></a><p class="card-text">Get information on airport infrastructure and ongoing and planned activities <i class='fas fa-xs fa-external-link-alt'></i></p>
+  </div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/airport-integration" target="_blank">
+  <img class="card-img-top" src="/images/apt/ectl_apt_int1.jpg" alt="Airport network integration">
+  <div class="card-body"><h5 class="card-title">EUROCONTROL airport network integration</h5></a><p class="card-text">Learn how EUROCONTROL helps to better integrate airports in the ATM network <i class='fas fa-xs fa-external-link-alt'></i></p>
   </div>
 </div>
 

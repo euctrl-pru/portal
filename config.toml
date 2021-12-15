@@ -491,7 +491,7 @@ ignoreFiles = [
     weight = 10
  [[menu.covid]]
     name = "Traffic impact"
-    url = "/covid/covid_traffic"
+    url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
     identifier= "cov_traffic"
     weight = 20
 [[menu.covid]]

@@ -69,13 +69,12 @@ dbDisconnect(con)
 Sys.unsetenv("TZ")
 Sys.unsetenv("ORA_SDTZ")
 
-s <- function(df, ftype) {
-  y <- unique(df$YEAR)
-  write_csv(df, here::here("static", "download", "csv", stringr::str_c("hfe_", y, ".csv.bz2")), na = "")
-  df
-}
-
 
 data %>%
   group_by(YEAR) %>% 
-  do(s(.))
+  group_walk(~ write_csv(.x, 
+                         here::here("static",
+                                    "download",
+                                    "csv",
+                                    stringr::str_c("hfe_", .y$YEAR, ".csv.bz2")),
+                         na = ""))
