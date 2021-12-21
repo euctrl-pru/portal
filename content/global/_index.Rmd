@@ -35,13 +35,27 @@ blogdown::shortcode(
 ```{r echo=FALSE}
 blogdown::shortcode(
   "bootstrap-card-alt",
+  img="flag_of_china.png",
+  link="china/",
+  title="China",
+  text="Our collaboration with China.", 
+  alt="China", 
+  command="Resize", 
+  options="300x", 
+  class="mb-2"
+  )
+```
+
+```{r echo=FALSE}
+blogdown::shortcode(
+  "bootstrap-card-alt",
   img="flag_of_usa.png",
   link="usa/",
   title="USA",
   text="Our collaboration with USA.", 
   alt="USA", 
   command="Resize", 
-  options="300x", 
+  options="300x200", 
   class="mb-2"
   )
 ```

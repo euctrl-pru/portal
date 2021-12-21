@@ -1,0 +1,29 @@
+---
+title: "China"
+---
+
+China and Europe ...
+
+<div class="col-sm-6">
+<div class="container">
+<div class="row">
+<div class="card-deck">
+
+```{r echo=FALSE}
+blogdown::shortcode(
+  "bootstrap-card-alt",
+  img="flag_of_china.png",
+  link="bra-eur/",
+  title="Comparison of Operational Air Navigation System Performance in China and Europe",
+  text="This report ...", 
+  alt="Comparison of Operational Air Navigation System Performance in China and Europe", 
+  command="Resize", 
+  options="300x", 
+  style="width: 18rem;", 
+  class="mb-2"
+  )
+```
+
+</div>
+</div>
+</div>
