@@ -2,7 +2,15 @@
 title: "China"
 ---
 
-China and Europe ...
+The initial China/Europe comparison is a joint publications of the Civial Aviation Authority of China and EUROCONTROL. 
+The scope of the comparison comprises the operational performance in both regions with a view to work out similarities and differences in terms of service provision, traffic characteristics, punctuality/delay, and efficiency performance.
+
+This initial comparison report marks the work of both groups in 2021. The report covers the period 2019 through June 2021. 
+This allows to provide a pre-COVID baseline and put the observed performance in the context of the on-going response and recovery of the industry and how air navigation facilitates this development. 
+
+The overall objective is to make a factual high-level comparison of air navigation system performance between China and Europe.
+To achieve this objective, the work revolves around the identification and validation of comparable data sources, joint data processing and analysis, and the development of a harmonised set of performance indicators, developed jointly by both groups.
+
 
 <div class="col-sm-6">
 <div class="container">
@@ -12,10 +20,10 @@ China and Europe ...
 ```{r echo=FALSE}
 blogdown::shortcode(
   "bootstrap-card-alt",
-  img="flag_of_china.png",
-  link="bra-eur/",
+  img="chn-eur_cover.png",
+  link="chn-eur_comparison.pdf",
   title="Comparison of Operational Air Navigation System Performance in China and Europe",
-  text="This report ...", 
+  text="This report covers the period 2019 through June 2021. This allows to provide a pre-COVID baseline and put the observed performance in the context of the on-going response and recovery of the industry and how air navigation facilitates this development", 
   alt="Comparison of Operational Air Navigation System Performance in China and Europe", 
   command="Resize", 
   options="300x", 
