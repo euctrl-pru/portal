@@ -26,7 +26,7 @@ For feedback or questions please contact us at:
 <div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-think-paper-15-2021-covid-19-impact-and-2022-outlook"><img class="card-img-top" src="/images/landing/TP_15.jpg" alt=""><div class="card-body"><h5 class="card-title">COVID in 2021 and outlook </h5></a><small><p class="card-text">
 Read the summary of key indicators for European aviation in 2021, and EUROCONTROL's outlook for the recovery in 2022</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="/dashboard/stakeholder/airport/db"><img class="card-img-top" src="/images/landing/ad_pct.jpg" alt=""><div class="card-body"><h5 class="card-title">Punctuality @ airports</h5></a><small><p class="card-text">Check out the new arrival and departure punctuality data on our airport dashboard</p></small></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="/dashboard/stakeholder/airport/db/"><img class="card-img-top" src="/images/landing/ad_pct.jpg" alt=""><div class="card-body"><h5 class="card-title">Punctuality @ airports</h5></a><small><p class="card-text">Check out the new arrival and departure punctuality data on our airport dashboard</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">December 2021 data available now</p></small></div></div></div>
 
