@@ -6,7 +6,7 @@ date: '2020-05-15'
 <div class="row">
 <div class="card-deck">
 
-<div class="card"><a href="/dashboard/stakeholder/airport/db">
+<div class="card"><a href="/dashboard/stakeholder/airport/db/">
   <img class="card-img-top" src="/images/apt/aiu_apt_db.jpg" alt="AIU airport performance dashboard">
   <div class="card-body"><h5 class="card-title">AIU airport performance dashboard</h5></a><p class="card-text">Consolidated monthly overview of operational performance at European airports across a wide spectrum of indicators</p>
   </div>
