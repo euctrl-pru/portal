@@ -60,12 +60,9 @@ knitr::include_graphics("/images/cri-meth-comp.png")
 
 For more detailed information, please refer also to the [PRC Technical Note][prc_cri_tn] explaining the further development of the methodology [@performancereviewcommissionCompositeRiskIndex2020]. The technical note explains in detail several statistical methods used to model index weights, overall computation, logic behind it, its use and limitations, and lastly areas of further improvement and expansion.
 
-## References
-
-[prc_cri_tn]: /library/tn_prc_2021_01_Composite_Risk_Index_Methodology.pdf "PRC Technical Note - Composite Risk Index"
+[prc_cri_tn]: /library/tn_prc_2021_01_composite_risk_index_methodology.pdf "PRC Technical Note - Composite Risk Index"
 [cri_methv1]: /methodology/cri-pi_v1/ "Composite Risk Index - Preliminary Methodology"
 
 
-
-
+## References
 

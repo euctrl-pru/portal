@@ -86,14 +86,19 @@ if (( $# != 0 )); then
     exit 1
 fi
 
+# NOTE: beginning of current year BUT not ok for Jan release...
 year_beg=$(date +'%Y-01-01')
+if (( $(date +'%-m') == 1 )); then
+    # ...hence go back one year ;-)
+    year_beg=$(date -d "$year_beg -1 years" +"%Y-%m-%d")
+fi
 month_beg=$(date +'%F' -d "-0 month -$(($(date +%d)-1)) days")
 
 APT_DLY_WEF=${year_beg}
 ERT_DLY_WEF=${year_beg}
 TIL=${month_beg}
 
-echo "TIL is: ${TIL}"
+echo "[WEF, TIL) = [${year_beg}, ${TIL})"
 
 (
     cd "${SCRIPT_DIR}/" || exit;
