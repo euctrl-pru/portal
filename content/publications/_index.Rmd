@@ -77,7 +77,7 @@ layout: frontpage
 </div>
 
 <div class="card"><a href="https://www.eurocontrol.int/aviation-sustainability-briefing" target="_blank">
-  <img class="card-img-top" src="/images/asu/asu_pub.png" alt="EUROCONTROL Aviation Sustainability Briefings">
+  <img class="card-img-top" src="/images/asu_pub.png" alt="EUROCONTROL Aviation Sustainability Briefings">
   <div class="card-body"><h5 class="card-title">EUROCONTROL Aviation Sustainability Briefings</h5></a><p class="card-text"></p>
   </div>
 </div>
@@ -85,6 +85,5 @@ layout: frontpage
 </div>
 </div>
 </div>
-
 
 </html>
