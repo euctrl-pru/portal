@@ -30,7 +30,7 @@ command = "hugo --gc --minify"
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     # new stuff
-    Content-Security-Policy = "base-uri 'self'; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; form-action 'self'; frame-ancestors 'self'; object-src 'self'; sandbox allow-downloads allow-forms allow-popups allow-same-origin allow-scripts; upgrade-insecure-requests"
+    # Content-Security-Policy = "base-uri 'self'; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; form-action 'self'; frame-ancestors 'self'; object-src 'self'; sandbox allow-downloads allow-forms allow-popups allow-same-origin allow-scripts; upgrade-insecure-requests"
     Cache-Control = "no-cache, max-age=0"
     Expires = "0"
     Pragma = "no-cache"
