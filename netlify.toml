@@ -3,19 +3,19 @@ publish = "public"
 command = "hugo --gc --minify"
 
 [context.production.environment]
-  HUGO_VERSION = "0.69.2" # if older, use format: 0.53 (no trailing zero)
+  HUGO_VERSION = "0.92.1" # if older, use format: 0.53 (no trailing zero)
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
   command = "hugo --minify --gc --buildFuture -b $DEPLOY_PRIME_URL"
   [context.deploy-preview.environment]
-  HUGO_VERSION = "0.69.2"
+  HUGO_VERSION = "0.92.1"
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
   [context.branch-deploy.environment]
-    HUGO_VERSION = "0.69.2" # if older, use format: 0.53 (no trailing zero)
+    HUGO_VERSION = "0.92.1" # if older, use format: 0.53 (no trailing zero)
 
 # required by security colleagues
 [[headers]]
@@ -31,7 +31,7 @@ command = "hugo --gc --minify"
     X-XSS-Protection = "1; mode=block"
     # Content-Security-Policy = "base-uri 'self'; block-all-mixed-content; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; font-src 'self' https://use.fontawesome.com data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data: *.openstreetmap.org https://unpkg.com; script-src-elem 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://code.jquery.com https://stackpath.bootstrapcdn.com https://www.google-analytics.com https://cdn.bootcss.com data:; sandbox allow-forms allow-popups allow-same-origin allow-scripts"
     # new stuff
-    # Content-Security-Policy = "base-uri 'self'; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; form-action 'self'; frame-ancestors 'self'; object-src 'self'; sandbox allow-downloads allow-forms allow-popups allow-same-origin allow-scripts; upgrade-insecure-requests"
+    # Content-Security-Policy = "base-uri 'self'; default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; font-src 'self' https://use.fontawesome.com data:; form-action 'self'; frame-ancestors 'self'; object-src 'self'; sandbox allow-downloads allow-forms allow-popups allow-same-origin allow-scripts; upgrade-insecure-requests"
     Cache-Control = "no-cache, max-age=0"
     Expires = "0"
     Pragma = "no-cache"

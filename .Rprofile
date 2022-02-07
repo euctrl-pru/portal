@@ -11,5 +11,6 @@ options(
   blogdown.new_bundle = TRUE,
   blogdown.title_case = TRUE,
   blogdown.serve_site.startup = FALSE,
-  blogdown.publishDir = '../pru-portal-generated'
+  blogdown.publishDir = '../pru-portal-generated',
+  blogdown.hugo.version = "0.92.1"
 )
