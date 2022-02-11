@@ -32,7 +32,7 @@ blogdown::shortcode(
   )
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 blogdown::shortcode(
   "bootstrap-card-alt",
   img="flag_of_china.png",
