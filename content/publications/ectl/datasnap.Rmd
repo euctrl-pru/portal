@@ -13,6 +13,44 @@ extrajs: [
 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><img src="" class="imagepreview"  style="width: 300%;"></div></div></div></div>
 
 ## 2022
+<!-- #26 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[All cargo flights complementing passenger flights - EUROCONTROL Data Snapshot #26][DS26]</h5>
+<small><strong><p style="color:#808080">Published: 15 Feb 2022</p></strong></small>
+
+The 26. EUROCONTROL Data Snapshot focuses on how all-cargo flights complement passenger flights.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-26-how-all-cargo-flights-complement-passenger-flights" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds26.png" alt="All cargo flights complementing passenger flights"></div>
+</div>
+</div></div>
+
+<!-- #25 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Variation of aviation markets in States - EUROCONTROL Data Snapshot #25][DS25]</h5>
+<small><strong><p style="color:#808080">Published: 01 Feb 2022</p></strong></small>
+
+The 25. EUROCONTROL Data Snapshot focuses on how second-largest airports very rarely exceed 20% share of flights, but provide a window onto a country’s aviation market.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-25-how-aviation-markets-vary" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds25.png" alt="Variation of aviation markets in States"></div>
+</div>
+</div></div>
+
 
 <!-- #24 -->
 <div class="container alert alert-secondary">
@@ -483,3 +521,5 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS22]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-22-lower-summer-taxi-out-times "Lower summer taxi-out times in 2021"
 [DS23]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-23-flight-recovery-fewer-choices-passengers "Flight recovery with fewer choices for passengers"
 [DS24]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-24-covid-19s-impact-passenger-fleet "COVID-19's impact on the passenger fleet"
+[DS25]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-25-how-aviation-markets-vary "Variation of aviation markets"
+[DS26]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-26-how-all-cargo-flights-complement-passenger-flights "How cargo flights complement passenger flights"
