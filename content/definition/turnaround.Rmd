@@ -47,3 +47,4 @@ tribble(
   
 ```
 
+Additional information, based on Network Manager data, can be found in the tool MIRROR at https://www.eurocontrol.int/tool/mirror
