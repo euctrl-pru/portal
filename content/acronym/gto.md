@@ -6,10 +6,18 @@ slug: gto
 The Ground Time Overshoot (GTO) is the share of flights exceeding the scheduled
 ground time during a defined period.
 
+
 $$
-\mathrm{GTO} = \frac{\mbox{Number of flights with an actual ground time exceeding the scheduled ground time}}{\mathrm{Number of flights}} \times 100
+\mathrm{GTO} = \frac{N_e}{N} \times 100
 \ [\\%]
 $$
+
+where
+
+`$N_e = $` Number of flights with an actual ground time exceeding the scheduled ground time (over period `$P$`.)
+
+`$N = $` Number of flights (over period `$P$`.)
+
 
 ## See Also
 
