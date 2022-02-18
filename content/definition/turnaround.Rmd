@@ -20,7 +20,7 @@ tribble(
   "D", "181-220", "x", "x", "", "150 minutes",
   "E", "> 220", "x", "x", "x", "180 minutes"
 ) %>%
-  gt() %>%
+  gt(id = "one") %>%
   tab_spanner(
     label = "WTC",
     columns = c(wtc_m, wtc_h, wtc_j)
@@ -42,9 +42,14 @@ tribble(
     locations = cells_column_labels(
       columns = cutoff_time
     )
+  ) %>%
+    opt_css(
+    css = "
+      #one .gt_table {
+        width: auto !important;
+      }
+    "
   )
-
-  
 ```
 
 Additional information, based on Network Manager data, can be found in the tool MIRROR at https://www.eurocontrol.int/tool/mirror
