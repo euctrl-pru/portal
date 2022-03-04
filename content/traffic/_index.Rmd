@@ -196,7 +196,7 @@ The results are shown in the dashboard below and also available for download in 
 </div>
 </div></div>
 
-A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">Daily traffic variation dashboard</a>.
+A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>.
 
 <h5 style="border-bottom: solid 2px #a6a6a6">Stakeholder view</h5>
 <!-- Stakeholders section -->
@@ -204,22 +204,27 @@ A more detailed view of the traffic situation at network and stakeholder level i
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/122mC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div></div></div>
-<div class="Mycolumn2">
-</div>blablabla</div>
-
-blablabla
-
-<small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/530431ad-7650-4dc3-9a73-9e64133134b6/page/F4Uw" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div></div>
+<br>
+Aircraft operators in the table above are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.
 </div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div></div>
 
-[ert_cz]: /definition/en-route-charging-zone/ "En-route charging zone"
+
+<!-- <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small> -->
+<!-- <div class="resp-container"> -->
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/530431ad-7650-4dc3-9a73-9e64133134b6/page/F4Uw" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<!-- </div> -->
+
+<!-- [ert_cz]: /definition/en-route-charging-zone/ "En-route charging zone" -->
 
 
-[^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias).
+<!-- [^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias). -->
 
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
