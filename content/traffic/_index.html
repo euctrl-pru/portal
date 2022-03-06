@@ -42,13 +42,17 @@ title: Traffic
   
   .Mycolumn {
     width: 50%;
-  margin-right: 5px
+    text-align: justify;
+<!-- margin-right: 5px -->
+  <!-- margin-left: 0px; -->
+  <!-- background-color: #7f7f7f; -->
   }
 
   .Mycolumn2 {
     width: 50%;
-    /* margin-left: 5px; */
-    margin-right: 5px
+    text-align: justify;
+    <!-- margin-left: 0px; -->
+    <!-- margin-right: 5px -->
   }
 
   .Scorecard {
@@ -75,12 +79,14 @@ title: Traffic
   .Mycolumn {
     width: 100%;
     margin-right: 0px;
+    text-align: justify;
   }
   
   .Mycolumn2 {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px
+    text-align: justify;
   }
   
   .Scorecard {
@@ -121,9 +127,12 @@ title: Traffic
 </div></div></div></div>
  -->
 <!-- Network Traffic section -->
+<h4 style="border-bottom: solid 2px #a6a6a6">
+Network View
+</h5>
 <div class="container" style="margin: 0px; padding: 0px">
-<h5 style="border-bottom: solid 2px #a6a6a6">
-Traffic (flights) situation on <span id="last_day"></span> - Network view
+<h5>
+Traffic (flights)
 </h5>
 <!-- Daily traffic graphs and scorecards -->
 <div class="flex-container" style=" margin-bottom: 5px;">
@@ -138,7 +147,7 @@ Traffic (flights) situation on <span id="last_day"></span> - Network view
 <div class="Mycolumn2">
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
 <div class="col-12" ; style="margin: 0px;  ">
-  <p style="font-weight: bold; margin-bottom: 0px;">Day</p>
+  <p id="last_day" style="font-weight: bold; margin-bottom: 0px;"></p>
 </div>
 <div class="col-3" ; style="margin: 0px; ">
   <p id="Day_traffic" class="Scorecard"></p>
@@ -200,13 +209,108 @@ Traffic (flights) situation on <span id="last_day"></span> - Network view
 </div>
 </div>
 <p>A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>.</p>
-<h5 style="border-bottom: solid 2px #a6a6a6">
+<!-- Delsy section -->
+<div id="delay" class="section level5">
+<h5>Delay</h5>
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn2">
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="last_day" style="font-weight: bold; margin-bottom: 0px;"></p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="Day_traffic" class="Scorecard"></p>
+  <p class="Scorecard_subt">minutes</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="Dif_day_prev_week" class="Scorecard2" ></p>
+  <p class="Scorecard_subt">vs prev. week</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="Dif_day_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="Dif_day_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs prev. year</p>
+</div>
+</div>
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="last_week" style="font-weight: bold; margin-bottom: 0px;">Week</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="week_traffic" class="Scorecard"></p>
+  <p id="avg_week_traffic" class="Scorecard_subt"></p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_week_prev_week" class="Scorecard2" ></p>
+  <p class="Scorecard_subt">vs prev. week</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_week_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_week_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs prev. year</p>
+</div>
+</div>
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p style="font-weight: bold; margin-bottom: 0px;">Year to date</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="y2d_traffic" class="Scorecard"></p>
+  <p id="avg_y2d_traffic" class="Scorecard_subt"></p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_y2d_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_y2d_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs prev. year</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Traffic flows section -->
+</div>
+<div id="traffic-flows" class="section level5">
+<h5>Traffic Flows</h5>
+<p>Intra-ECAC traffic typically accounts for around 80% of the total network traffic (excluding overflights). The share was 79% in 2019, the last pre-pandemic year, it reached 81% in 2020 and 2021 as domestic traffic was less affected than international traffic by the COVID-19 pandemic and, as we can see below, is 80% in 2022.</p>
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn">
+<div class="col-12">
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/d90a94e9-e35b-46c3-aaca-9b36f8372400/page/BLMnC" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; ">
+<p>
+Example image
+</p>
+<p><img src="https://pbs.twimg.com/media/FLOu_HFXMAEln0r?format=jpg&name=large" alt="image not found"></p>
+</div>
+</div>
+</div>
+<p>Country pairs/airport pairs?</p>
+<!-- Stakeholders section -->
+<h4 style="border-bottom: solid 2px #a6a6a6">
 Stakeholder view
 </h5>
-<!-- Stakeholders section -->
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn">
 <div class="col-12" style=" margin: 0px; ">
+<h5>
+Aircraft Operators
+</h5>
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen>
 </iframe>
@@ -217,6 +321,9 @@ Aircraft operators in the table above are grouped as per levels 1 and 0 as defin
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; ">
+<h5>
+Airports
+</h5>
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen>
 </iframe>
@@ -323,8 +430,8 @@ Aircraft operators in the table above are grouped as per levels 1 and 0 as defin
 
   // Update scorecard values
   // ---- found this string function below in stack overflow to add thousandseparators
-  document.getElementById("last_day").innerHTML = Last_Day_text;
-  document.getElementById("last_week").innerHTML = "Rolling week " + last_week_text;
+  document.getElementById("last_day").innerHTML = "Day (" + Last_Day_text + ")";
+  document.getElementById("last_week").innerHTML = "Rolling week (" + last_week_text + ")";
   
   document.getElementById("Day_traffic").innerHTML = String(Day_Traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
   document.getElementById("Dif_day_prev_week").innerHTML = String(Dif_day_prev_week) + '%';
@@ -344,3 +451,4 @@ Aircraft operators in the table above are grouped as per levels 1 and 0 as defin
 
 }
 </script>
+</div>
