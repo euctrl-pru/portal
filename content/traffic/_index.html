@@ -127,13 +127,13 @@ title: Traffic
 </div></div></div></div>
  -->
 <!-- Network Traffic section -->
-<h4 style="border-bottom: solid 2px #a6a6a6">
-Network View
+<h4>
+Flights
 </h5>
 Intro…
 <div class="container" style="margin: 0px; padding: 0px">
-<h5>
-Traffic (flights)
+<h5 style="border-bottom: solid 2px #a6a6a6">
+Network view
 </h5>
 <!-- Daily traffic graphs and scorecards -->
 <div class="flex-container" style=" margin-bottom: 5px;">
@@ -164,7 +164,7 @@ Traffic (flights)
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_day_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs prev. year</p>
+  <p class="Scorecard_subt">vs 2021</p>
 </div>
 </div>
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
@@ -185,7 +185,7 @@ Traffic (flights)
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_week_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs prev. year</p>
+  <p class="Scorecard_subt">vs 2021</p>
 </div>
 </div>
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
@@ -204,15 +204,16 @@ Traffic (flights)
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_y2d_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs prev. year</p>
+  <p class="Scorecard_subt">vs 2021</p>
 </div>
 </div>
 </div>
 </div>
 <p>A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>.</p>
 <!-- Traffic flows section -->
-<div id="traffic-flows" class="section level5">
-<h5>Traffic Flows</h5>
+<h5 style="border-bottom: solid 2px #a6a6a6">
+Traffic Flows
+</h5>
 <p>Intra-ECAC traffic typically accounts for around 80% of the total network traffic (excluding overflights). The share was 79% in 2019, the last pre-pandemic year, it reached 81% in 2020 and 2021 as domestic traffic was less affected than international traffic by the COVID-19 pandemic and, as we can see below, is 80% in 2022.</p>
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn">
@@ -245,11 +246,13 @@ Example image
 <p>Airport pairs?</p>
 </div>
 </div>
-<p><br><br></p>
+<p><br></p>
 <!-- Stakeholders section -->
-<h4 style="border-bottom: solid 2px #a6a6a6">
+<h5 style="border-bottom: solid 2px #a6a6a6">
 Stakeholder view
 </h5>
+<p>Intro..
+<br></p>
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn">
 <div class="col-12" style=" margin: 0px; ">
@@ -262,7 +265,7 @@ Aircraft Operators
 </div>
 </div>
 <p><br>
-Aircraft operators in the table above are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.</p>
+Aircraft operators in the table below are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.</p>
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; ">
@@ -275,10 +278,34 @@ Airports
 </div>
 </div>
 </div>
-<!-- Delay section -->
 </div>
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn">
+<div class="col-12" style=" margin: 0px; ">
+<h5>
+ANSPs
+</h5>
+<div class="resp-container">
+
+</div>
+</div>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; ">
+<h5>
+ACCs, States?
+</h5>
+<div class="resp-container">
+
+</div>
+</div>
+</div>
+</div>
+<!-- Delay section -->
 <div id="delay" class="section level3">
 <h3>Delay</h3>
+Maybe better to separate delay and delay per flight… it looks too crowded now
+<br>
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn">
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
@@ -287,7 +314,8 @@ Airports
 </div>
 <div class="col-3" ; style="margin: 0px; ">
   <p id="day_dly" class="Scorecard" style="color: #8e0000"></p>
-  <p class="Scorecard_subt">minutes</p>
+  <p class="Scorecard_subt">min</p>
+  <p class="Scorecard_subt" style="padding-top: 3px"><span id="day_dly_per_flt" style="color: #8e0000; font-weight: bold"></span>min/flight</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_day_prev_week_dly" class="Scorecard2" ></p>
@@ -299,7 +327,7 @@ Airports
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_day_prev_year_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs prev. year</p>
+  <p class="Scorecard_subt">vs 2021</p>
 </div>
 </div>
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
@@ -309,6 +337,7 @@ Airports
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="week_dly" class="Scorecard" style="color: #8e0000"></p>
   <p id="avg_week_dly" class="Scorecard_subt"></p>
+  <p class="Scorecard_subt" style="padding-top: 3px"><span id="week_dly_per_flt" style="color: #8e0000; font-weight: bold"></span>min/flight</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_week_prev_week_dly" class="Scorecard2" ></p>
@@ -320,7 +349,7 @@ Airports
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_week_prev_year_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs prev. year</p>
+  <p class="Scorecard_subt">vs 2021</p>
 </div>
 </div>
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
@@ -330,16 +359,19 @@ Airports
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="y2d_dly" class="Scorecard" style="color: #8e0000"></p>
   <p id="avg_y2d_dly" class="Scorecard_subt"></p>
+  <p class="Scorecard_subt" style="padding-top: 3px"><span id="y2d_dly_per_flt" style="color: #8e0000; font-weight: bold"></span>min/flight</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
 </div>
 <div class="col-3" ; style="margin: 0px; ">
   <p id="dif_y2d_2019_dly" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2019</p>
+  <p class="Scorecard_subt" style="padding-top: 3px"><span id="y2d_dly_per_flt_2019" style="color: black; font-weight: bold"></span>in 2019</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="dif_y2d_prev_year_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs prev. year</p>
+  <p class="Scorecard_subt">vs 2021</p>
+  <p class="Scorecard_subt" style="padding-top: 3px"><span id="y2d_dly_per_flt_prev" style="color: black; font-weight: bold"></span>in 2021</p>
 </div>
 </div>
 </div>
@@ -417,7 +449,7 @@ Airports
   function UpdateValues() {
   // Update all titles and values
    
-   // Calculate traffic scorecard values
+// Calculate traffic scorecard values
    day_traffic = my_view_traffic.getValue(0, 11);
    dif_day_prev_week = Math.round(my_view_traffic.getValue(0, 18)*100);
      dif_day_prev_week = (dif_day_prev_week > 0) ? "+" + dif_day_prev_week : "" + dif_day_prev_week
@@ -436,17 +468,23 @@ Airports
      dif_week_prev_year = (dif_week_prev_year > 0) ? "+" + dif_week_prev_year : "" + dif_week_prev_year
 
   y2d_traffic = my_view_traffic.getValue(0, 30);
+  y2d_prev_year_traffic = my_view_traffic.getValue(0, 31);
+  y2d_2019_traffic = my_view_traffic.getValue(0, 32);
+  
   avg_y2d_traffic = Math.round(my_view_traffic.getValue(0, 33));
   dif_y2d_2019 = Math.round(my_view_traffic.getValue(0, 37)*100);
      dif_y2d_2019 = (dif_y2d_2019 > 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019
   dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
      dif_y2d_prev_year = (dif_y2d_prev_year > 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
 
-   // Calculate delay scorecard values
+// Calculate delay scorecard values
+  //day
    day_dly = my_view_traffic.getValue(0, 39);
    day_prev_week_dly = my_view_traffic.getValue(0, 41);
    day_prev_year_dly = my_view_traffic.getValue(0, 42);
    day_2019_dly = my_view_traffic.getValue(0, 40);
+   
+   day_dly_per_flt = Math.round(day_dly/day_traffic*100)/100
    
    dif_day_prev_week_dly = (day_prev_week_dly == 0) ? "-" : Math.round((day_dly / day_prev_week_dly - 1)*100);
         dif_day_prev_week_dly = (dif_day_prev_week_dly > 0) ? "+" + dif_day_prev_week_dly : "" + dif_day_prev_week_dly;
@@ -455,12 +493,15 @@ Airports
    dif_day_2019_dly = (day_2019_dly == 0) ? "-" : Math.round((day_dly / day_2019_dly - 1)*100);
         dif_day_2019_dly = (dif_day_2019_dly > 0) ? "+" + dif_day_2019_dly : "" + dif_day_2019_dly;
         
+  //week
    week_dly = my_view_traffic.getValue(0, 47);
    avg_week_dly = Math.round(week_dly/7);
    avg_week_prev_week_dly = my_view_traffic.getValue(0, 48);
    avg_week_prev_year_dly = my_view_traffic.getValue(0, 50);
    avg_week_2019_dly = my_view_traffic.getValue(0, 51);
-    
+
+   week_dly_per_flt = Math.round(week_dly/week_traffic*100)/100
+
    dif_week_prev_week_dly = (avg_week_prev_week_dly == 0) ? "-" : Math.round((avg_week_dly / avg_week_prev_week_dly - 1)*100);
         dif_week_prev_week_dly = (dif_week_prev_week_dly > 0) ? "+" + dif_week_prev_week_dly : "" + dif_week_prev_week_dly;
    dif_week_prev_year_dly = (avg_week_prev_year_dly == 0) ? "-" : Math.round((avg_week_dly / avg_week_prev_year_dly - 1)*100);
@@ -468,17 +509,23 @@ Airports
    dif_week_2019_dly = (avg_week_2019_dly == 0) ? "-" : Math.round((avg_week_dly / avg_week_2019_dly - 1)*100);
         dif_week_2019_dly = (dif_week_2019_dly > 0) ? "+" + dif_week_2019_dly : "" + dif_week_2019_dly;
 
+  //y2d
    y2d_dly = my_view_traffic.getValue(0, 43);
    avg_y2d_dly = Math.round(my_view_traffic.getValue(0, 49));
    y2d_prev_year_dly = my_view_traffic.getValue(0, 44);
    y2d_2019_dly = my_view_traffic.getValue(0, 45);
 
+   y2d_dly_per_flt = Math.round(y2d_dly/y2d_traffic*100)/100
+   y2d_dly_per_flt_2019 = Math.round(y2d_2019_dly/y2d_2019_traffic*100)/100
+   y2d_dly_per_flt_prev = Math.round(y2d_prev_year_dly/y2d_prev_year_traffic*100)/100
+ 
    dif_y2d_prev_year_dly = (y2d_prev_year_dly == 0) ? "-" : Math.round((y2d_dly / y2d_prev_year_dly - 1)*100);
         dif_y2d_prev_year_dly = (dif_y2d_prev_year_dly > 0) ? "+" + dif_y2d_prev_year_dly : "" + dif_y2d_prev_year_dly;
    dif_y2d_2019_dly = (y2d_2019_dly == 0) ? "-" : Math.round((y2d_dly / y2d_2019_dly - 1)*100);
         dif_y2d_2019_dly = (dif_y2d_2019_dly > 0) ? "+" + dif_y2d_2019_dly : "" + dif_y2d_2019_dly;
 
-  last_day_text = last_day.toDateString();
+// Calculate other scorecard values
+last_day_text = last_day.toDateString();
     last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11)
 
   //calculate 1st day of rolling week and string
@@ -511,20 +558,27 @@ Airports
   document.getElementById("dif_y2d_prev_year").innerHTML = String(dif_y2d_prev_year) + '%';
 
   document.getElementById("day_dly").innerHTML = String(day_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("day_dly_per_flt").innerHTML = String(day_dly_per_flt) + " ";
   document.getElementById("dif_day_prev_week_dly").innerHTML = String(dif_day_prev_week_dly) + '%';
   document.getElementById("dif_day_prev_year_dly").innerHTML = String(dif_day_prev_year_dly) + '%';
   document.getElementById("dif_day_2019_dly").innerHTML = String(dif_day_2019_dly) + '%';
   
   document.getElementById("week_dly").innerHTML = String(week_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("avg_week_dly").innerHTML = String(avg_week_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily minutes";
+  document.getElementById("avg_week_dly").innerHTML = String(avg_week_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily min";
+  document.getElementById("week_dly_per_flt").innerHTML = String(week_dly_per_flt) + " ";
   document.getElementById("dif_week_prev_week_dly").innerHTML = String(dif_week_prev_week_dly) + '%';
   document.getElementById("dif_week_prev_year_dly").innerHTML = String(dif_week_prev_year_dly) + '%';
   document.getElementById("dif_week_2019_dly").innerHTML = String(dif_week_2019_dly) + '%';
 
   document.getElementById("y2d_dly").innerHTML = String(y2d_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("avg_y2d_dly").innerHTML = String(avg_y2d_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily minutes";
+  document.getElementById("avg_y2d_dly").innerHTML = String(avg_y2d_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily min";
+  document.getElementById("y2d_dly_per_flt").innerHTML = String(y2d_dly_per_flt) + " ";
+
   document.getElementById("dif_y2d_prev_year_dly").innerHTML = String(dif_y2d_prev_year_dly) + '%';
+  document.getElementById("y2d_dly_per_flt_prev").innerHTML = String(y2d_dly_per_flt_prev) + " ";
+
   document.getElementById("dif_y2d_2019_dly").innerHTML = String(dif_y2d_2019_dly) + '%';
+  document.getElementById("y2d_dly_per_flt_2019").innerHTML = String(y2d_dly_per_flt_2019) + " ";
     
 }
 </script>
