@@ -2,7 +2,6 @@
 title: Turnaround
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>Turnaround shows the time elapsed between an aircraft blocking in and
@@ -56,6 +55,8 @@ The sample is treated to consider only ground times with the following character
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
@@ -66,6 +67,8 @@ The sample is treated to consider only ground times with the following character
   font-weight: initial;
   padding-top: 0;
   padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
@@ -144,7 +147,10 @@ The sample is treated to consider only ground times with the following character
 }
 
 #one .gt_group_heading {
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -216,7 +222,26 @@ The sample is treated to consider only ground times with the following character
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#one .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#one .gt_row_group_first td {
+  border-top-width: 2px;
 }
 
 #one .gt_summary_row {
@@ -230,13 +255,22 @@ The sample is treated to consider only ground times with the following character
 }
 
 #one .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#one .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#one .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
 }
 
 #one .gt_grand_summary_row {
@@ -289,7 +323,10 @@ The sample is treated to consider only ground times with the following character
 #one .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #one .gt_sourcenotes {
@@ -308,7 +345,10 @@ The sample is treated to consider only ground times with the following character
 
 #one .gt_sourcenote {
   font-size: 90%;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #one .gt_left {
@@ -343,7 +383,31 @@ The sample is treated to consider only ground times with the following character
 #one .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#one .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#one .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#one .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#one .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
 }
 
 #one .gt_table {
@@ -394,18 +458,9 @@ The sample is treated to consider only ground times with the following character
 <td class="gt_row gt_left">180 minutes</td></tr>
   </tbody>
   
-  <tfoot>
-    <tr class="gt_footnotes">
-      <td colspan="6">
-        <p class="gt_footnote">
-          <sup class="gt_footnote_marks">
-            <em>1</em>
-          </sup>
-           
-          Turnaround cutoff time based on scheduled Ground Time.
-          <br />
-        </p>
-      </td>
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="6"><sup class="gt_footnote_marks">1</sup> Turnaround cutoff time based on scheduled Ground Time.</td>
     </tr>
   </tfoot>
 </table>
