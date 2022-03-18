@@ -13,6 +13,25 @@ extrajs: [
 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><img src="" class="imagepreview"  style="width: 300%;"></div></div></div></div>
 
 ## 2022
+<!-- #27 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[All cargo flights complementing passenger flights - EUROCONTROL Data Snapshot #27][DS27]</h5>
+<small><strong><p style="color:#808080">Published: 16 Mar 2022</p></strong></small>
+
+The 27. EUROCONTROL Data Snapshot reports on how Europe now has 8 airline groups in the global Top 40.
+
+<br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-27" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds27.png" alt="Europe now has 8 airline groups in the global Top 40"></div>
+</div>
+</div></div>
+
 <!-- #26 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
@@ -523,3 +542,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS24]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-24-covid-19s-impact-passenger-fleet "COVID-19's impact on the passenger fleet"
 [DS25]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-25-how-aviation-markets-vary "Variation of aviation markets"
 [DS26]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-26-how-all-cargo-flights-complement-passenger-flights "How cargo flights complement passenger flights"
+[DS27]: https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-27 "Europe now has 8 airline groups in the global Top 40"
