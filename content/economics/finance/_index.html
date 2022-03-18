@@ -2343,7 +2343,7 @@ title: ANSPs Financial Dashboard
     var Dif_OPEX = (SelectedYear == MinYear) ? "-" : Math.round(((-MyViewTableIncome.getValue(SelectedYear - MinYear, 2) + MyViewTableIncome.getValue(SelectedYear - MinYear - 1, 2))/Math.abs(MyViewTableIncome.getValue(SelectedYear - MinYear - 1, 2))) * 1000) / 10;
     Dif_OPEX = (Dif_OPEX > 0) ? "+" + Dif_OPEX : "" + Dif_OPEX; // add + sign
 
-    var Scorecard_Liab = Math.round(TransposedTableBalance.getValue(TransposedTableBalance.getNumberOfRows() - 3, SelectedYear - MinYear + 1) + TransposedTableBalance.getValue(TransposedTableBalance.getNumberOfRows() - 2, SelectedYear - MinYear + 1)* DecimalsDivisor)/ DecimalsDivisor;
+    var Scorecard_Liab = Math.round(TransposedTableBalance.getValue(TransposedTableBalance.getNumberOfRows() - 3, SelectedYear - MinYear + 1)* DecimalsDivisor + TransposedTableBalance.getValue(TransposedTableBalance.getNumberOfRows() - 2, SelectedYear - MinYear + 1)* DecimalsDivisor)/ DecimalsDivisor;
     
     var Scorecard_Equity = Math.round(TransposedTableBalance.getValue(TransposedTableBalance.getNumberOfRows() - 4, SelectedYear - MinYear + 1)* DecimalsDivisor)/ DecimalsDivisor;
 
