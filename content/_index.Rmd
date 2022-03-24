@@ -23,10 +23,13 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
 
-<div class="carousel-item active"><div class="card  border-0"><a href=""><img class="card-img-top" src="/images/landing/prr2021.PNG" alt=""><div class="card-body"><h6 class="card-title">Performance Review Report 2021</h6></a><small><p class="card-text">
-PRR 2021 will be available for stakeholder consultation soon...</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/draft-performance-review-report-prr-2021-consultation" target="_blank"><img class="card-img-top" src="/images/prc/prr2021_consultation.png" alt=""><div class="card-body"><h6 class="card-title">Performance Review Report 2021</h6></a><small><p class="card-text">
+PRR 2021 now available for stakeholder consultation</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.PNG" alt=""><div class="card-body"><h6 class="card-title">EUROCONTROL comprehensive COVID-19 assessments</h6></a><small><p class="card-text">
+<div class="carousel-item"><div class="card  border-0"><a href="/dashboard/stakeholder/airport/db/"><img class="card-img-top" src="/images/landing/apt_pic.png" alt=""><div class="card-body"><h6 class="card-title">Turnaround times @ airports</h6></a><small><p class="card-text">
+Check out the new turnaround indicators in oru Airport Performance Dashboard!</p></small></div></div></div>
+
+<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h6 class="card-title">EUROCONTROL comprehensive COVID-19 assessments</h6></a><small><p class="card-text">
 Read our EUROCONTROL briefings how the COVID-19 pandemic impacts on European aviation</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">February 2022 data available now</p></small></div></div></div>
@@ -46,7 +49,7 @@ Read our EUROCONTROL briefings how the COVID-19 pandemic impacts on European avi
 </div>
 </div>
 </div>
-
+ 
 ### Focus areas
 <!-- cards with Key Performance Areas -->
 <div class="container">
