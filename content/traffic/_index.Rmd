@@ -130,7 +130,8 @@ The figures shown in the dashboard below and also available for download in our 
 <!-- Network Traffic section -->
 <div class="container" style="margin: 0px; padding: 0px">
 #### Network View
-Intro...
+This section shows traffic situation in terms of flights for the latest available day, rolling week and year to date with a comparison with relevant previous periods.
+The chart presents the traffic evolution (7-day average number of flights) since 2019.
 
 <!-- Daily traffic graphs and scorecards -->
 <div class="flex-container" style=" margin-bottom: 5px;">
@@ -213,7 +214,7 @@ nw_all_data <- nw_all_data %>%
 
 # build plot
 nw_all_data %>%
-  plot_ly(width = 550, height = 350,
+  plot_ly(width = 550, height = 370,
     x      = ~FLIGHT_DATE,
     y      = ~AVG_ROLLING_WEEK,
     name = '2022',
@@ -248,11 +249,11 @@ nw_all_data %>%
                        xanchor='center', yanchor='auto',
                        font = list(family = 'Roboto', size = 14)),
     xaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
-                 tick0 = "2022-01-31", dtick = "M1", tickformat="%b") ,
+                 tick0 = "2022-01-31", dtick = "M1", tickformat="%d %b") ,
     yaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
                  hoverformat = ".0f", range = c(0, 41000), dtick = 10000,
                  constraintoward = 'bottom'),
-    legend = list(orientation = 'h', xanchor = "center", x = 0.5),
+    legend = list(orientation = 'h', xanchor = "center", x = 0.5, y=-0.2),
     hovermode = "x unified",
     margin = list(t=60)
     )%>%
@@ -266,7 +267,8 @@ nw_all_data %>%
 <!-- Stakeholders section -->
 <div class="container" style="margin: 0px; padding: 0px">
 #### Local/Stakeholder View
-Intro..
+This section shows the top 40 aircraft operators, airports and country pairs (note that you can scroll down to see the full list) in terms of flights. It also shows a list of all ANSPs ranked by total flights (including overflights). All rankings are presented for the latest available day, rolling week and year to date with a comparison with relevant previous periods.
+(download files to be discussed)
 <br>
 
 <div class="flex-container" style=" margin-bottom: 5px;">
