@@ -3,6 +3,20 @@ title: Traffic
 
 ---
 
+```{r, echo=FALSE, include=FALSE}
+# All defaults
+## libraries
+library(fs)
+library(tibble)
+library(dplyr)
+library(stringr)
+library(googlesheets4)
+library(lubridate)
+library(plotly)
+```
+
+
+
 <style type="text/css">
   .img-responsive {
       margin: 0 auto;
@@ -108,42 +122,22 @@ title: Traffic
 
   </style>
 
-The dashboard below provides an overview of the evolution of flights (all controlled flights including overflights) and en-route [service units](/acronym/su/) in the [EUROCONTROL Member State Area](/definition/eurocontrol-area/). The analysis of the en-route service units is based on the [en-route charging zones][ert_cz] for which the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> collects en-route charges [^1].
+The dashboard below provides an overview of the evolution of flights in the [EUROCONTROL Member State Area](/definition/eurocontrol-area/) (referred to as 'Network' below). A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>.
 
-The results are shown in the dashboard below and also available for download in our [data repository](/data/). 
+The figures shown in the dashboard below and also available for download in our [data repository](/data/). 
 
-<!-- removed State level for the time being
-<div class="container">
-<div class="row align-items-start">
-<div class="col-sm-9">
-
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p> 
-
-</div>
-<div class="col-sm-3">
-<div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
-  <img class="card-img-top" src="/images/traff/traff_daily_db.png" alt="Daily traffic statistics">
-  <div class="card-body"><small><p class="card-text">See also our daily traffic dashboard to monitor the COVID-19 impact!</p></small></div></a>
-</div></div></div></div>
- -->
 
 <!-- Network Traffic section -->
-<h4>Flights</h5>
-Intro...
 <div class="container" style="margin: 0px; padding: 0px">
-<h5 style="border-bottom: solid 2px #a6a6a6">Network view</h5>
+#### Network View
+Intro...
 
 <!-- Daily traffic graphs and scorecards -->
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn" >
-<div class="col-12" style=" margin: 0px; " >
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div></div></div>
-<div class="Mycolumn2">
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
 <div class="col-12" ; style="margin: 0px;  ">
-  <p id="last_day" style="font-weight: bold; margin-bottom: 0px;"></p>
+  <p id="last_day" style="font-weight: bold; margin-bottom: 0px;">Day</p>
 </div>
 <div class="col-3" ; style="margin: 0px; ">
   <p id="day_traffic" class="Scorecard"></p>
@@ -185,7 +179,7 @@ Intro...
 </div>
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
 <div class="col-12" ; style="margin: 0px;  ">
-  <p style="font-weight: bold; margin-bottom: 0px;">Year to date</p>
+  <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px;">Year to date</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
   <p id="y2d_traffic" class="Scorecard"></p>
@@ -202,44 +196,76 @@ Intro...
   <p class="Scorecard_subt">vs 2021</p>
 </div>
 </div>
-</div></div>
-
-A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>.
-
-<!-- Traffic flows section -->
-<h5 style="border-bottom: solid 2px #a6a6a6"> Traffic Flows</h5>
-Intra-ECAC traffic typically accounts for around 80% of the total network traffic (excluding overflights). The share was 79% in 2019, the last pre-pandemic year, it reached 81% in 2020 and 2021 as domestic traffic was less affected than international traffic by the COVID-19 pandemic and, as we can see below, is 80% in 2022.
-
-<div class="flex-container" style=" margin-bottom: 5px;">
-<div class="Mycolumn">
-<div class="col-12"  >
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/d90a94e9-e35b-46c3-aaca-9b36f8372400/page/BLMnC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
-<p>Example image </p>
-<img src="https://pbs.twimg.com/media/FLOu_HFXMAEln0r?format=jpg&name=large" alt="image not found">
+<!-- <div class="resp-container"> -->
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<!-- </div> -->
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+nw_all_data <- read_sheet("https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing", sheet = "NW_Flights_All")
+
+
+nw_all_data <- nw_all_data %>%
+  # mutate_at(vars(FLIGHT_DATE), ~ as.Date(.x)) %>%
+           mutate_at(vars(AVG_ROLLING_WEEK,AVG_ROLLING_WEEK_PREV_YEAR, AVG_ROLLING_WEEK_2020, AVG_ROLLING_WEEK_2019),round,0) 
+
+# build plot
+nw_all_data %>%
+  plot_ly(width = 550, height = 350,
+    x      = ~FLIGHT_DATE,
+    y      = ~AVG_ROLLING_WEEK,
+    name = '2022',
+    type = 'scatter',
+    mode = 'lines',
+    line = list(color = '#003f5c', width = 3)
+    ) %>%
+  add_trace(
+    y = ~AVG_ROLLING_WEEK_PREV_YEAR, 
+    name = '2021',
+    mode = 'lines',
+    line = list(color = '#58508d', width = 1) 
+    ) %>%
+  add_trace(
+    y = ~AVG_ROLLING_WEEK_2020, 
+    name = '2020',
+    mode = 'lines',
+    line = list(color = '#bc5090', width = 1) 
+    ) %>%
+  add_trace(
+    y = ~AVG_ROLLING_WEEK_2019, 
+    name = '2019',
+    mode = 'lines',
+    line = list(color = '#ffa600', width = 2) 
+    )%>%
+  layout(
+    autosize = F,
+    title = list(text = '<b>Evolution of daily flights in the EUROCONTROL area</b>',
+                 font = list(family = "Roboto", size = 16)),
+    annotations = list(text = '(7-day moving average)', x = 0.5, y = 1.12,
+                       showarrow = F, xref='paper', yref='paper',
+                       xanchor='center', yanchor='auto',
+                       font = list(family = 'Roboto', size = 14)),
+    xaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
+                 tick0 = "2022-01-31", dtick = "M1", tickformat="%b") ,
+    yaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
+                 hoverformat = ".0f", range = c(0, 41000), dtick = 10000,
+                 constraintoward = 'bottom'),
+    legend = list(orientation = 'h', xanchor = "center", x = 0.5),
+    hovermode = "x unified",
+    margin = list(t=60)
+    )%>%
+    config(displaylogo = FALSE, modeBarButtons = list(list("toImage"))
+           )
+```
 </div>
-</div>
-</div>
-<div class="flex-container" style=" margin-bottom: 5px;">
-<div class="Mycolumn">
-<div class="col-12"  >
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-<div class="Mycolumn2">Airport pairs?
-</div>
-</div>
+</div></div>
 <br>
 
 <!-- Stakeholders section -->
-<h5 style="border-bottom: solid 2px #a6a6a6">Stakeholder view</h5>
+<div class="container" style="margin: 0px; padding: 0px">
+#### Local/Stakeholder View
 Intro..
 <br>
 
@@ -252,7 +278,7 @@ Intro..
 </div>
 </div>
 <br>
-Aircraft operators in the table below are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.
+Aircraft operators in the table above are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
@@ -273,106 +299,15 @@ Aircraft operators in the table below are grouped as per levels 1 and 0 as defin
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
-<h5>ACCs, States?</h5>
+<h5>Country Pairs</h5>
 <div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </div>
 </div></div>
-
-<!-- Delay section -->
-### Delay
-Maybe better to separate delay and delay per flight... it looks too crowded now
-<br>
-<div class="flex-container" style=" margin-bottom: 5px;">
-<div class="Mycolumn">
-<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
-  <p id="last_day_dly" style="font-weight: bold; margin-bottom: 0px;"></p>
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="day_dly" class="Scorecard" style="color: #8e0000"></p>
-  <p class="Scorecard_subt">min</p>
-  <p class="Scorecard_subt" style="padding-top: 3px"><span id="day_dly_per_flt" style="color: #8e0000; font-weight: bold"></span>min/flight</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_day_prev_week_dly" class="Scorecard2" ></p>
-  <p class="Scorecard_subt">vs prev. week</p>
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="dif_day_2019_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_day_prev_year_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
-</div>
 </div>
 
-<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
-  <p id="last_week_dly" style="font-weight: bold; margin-bottom: 0px;">Week</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="week_dly" class="Scorecard" style="color: #8e0000"></p>
-  <p id="avg_week_dly" class="Scorecard_subt"></p>
-  <p class="Scorecard_subt" style="padding-top: 3px"><span id="week_dly_per_flt" style="color: #8e0000; font-weight: bold"></span>min/flight</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_week_prev_week_dly" class="Scorecard2" ></p>
-  <p class="Scorecard_subt">vs prev. week</p>
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="dif_week_2019_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_week_prev_year_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
-</div>
-</div>
-
-<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
-  <p style="font-weight: bold; margin-bottom: 0px;">Year to date</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="y2d_dly" class="Scorecard" style="color: #8e0000"></p>
-  <p id="avg_y2d_dly" class="Scorecard_subt"></p>
-  <p class="Scorecard_subt" style="padding-top: 3px"><span id="y2d_dly_per_flt" style="color: #8e0000; font-weight: bold"></span>min/flight</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="dif_y2d_2019_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-  <p class="Scorecard_subt" style="padding-top: 3px"><span id="y2d_dly_per_flt_2019" style="color: black; font-weight: bold"></span>in 2019</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_y2d_prev_year_dly" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
-  <p class="Scorecard_subt" style="padding-top: 3px"><span id="y2d_dly_per_flt_prev" style="color: black; font-weight: bold"></span>in 2021</p>
-</div>
-</div></div>
-
-<div class="Mycolumn2">
-<div class="col-12" style=" margin: 0px; " >
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/61017acc-b6d2-44e9-84b1-5c75dcf75bda/page/cdVnC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div></div></div>
-</div>
-
-
-<!-- <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small> -->
-<!-- <div class="resp-container"> -->
-<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/530431ad-7650-4dc3-9a73-9e64133134b6/page/F4Uw" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-<!-- </div> -->
-
-<!-- [ert_cz]: /definition/en-route-charging-zone/ "En-route charging zone" -->
-
-
-<!-- [^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias). -->
-
-
+<!-- script for traffic figures -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script type="text/javascript">
@@ -394,6 +329,8 @@ Maybe better to separate delay and delay per flight... it looks too crowded now
   var dif_week_prev_year
  
   var y2d_traffic
+  var y2d_prev_year_traffic
+  var y2d_2019_traffic 
   var avg_y2d_traffic
   var dif_y2d_2019
   var dif_y2d_prev_year
@@ -414,9 +351,8 @@ Maybe better to separate delay and delay per flight... it looks too crowded now
   function drawDashboard(response) {
     Data = response.getDataTable();
     UpdateTraffic();
-    UpdateValues();
-  }
-//---------------------------Services table ---------------------------------------------
+   }
+//---------------------------Update traffic---------------------------------------------
   function UpdateTraffic() {
   my_view_traffic = new google.visualization.DataView(Data);
 
@@ -428,11 +364,18 @@ Maybe better to separate delay and delay per flight... it looks too crowded now
   my_view_traffic.setRows(
   Data.getFilteredRows([{ column: 7, value: last_day }])
   );
-  }
-  
-  function UpdateValues() {
-  // Update all titles and values
-   
+
+// Calculate datestrings
+last_day_text = last_day.toDateString();
+    last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11)
+
+  //calculate 1st day of rolling week and string
+  var first_week_day = new Date();
+    first_week_day.setDate(last_day.getDate()-6);
+    first_week_day = first_week_day.toDateString();
+  last_week_text = first_week_day.substring(8, 11) + (last_day_text.substring(3, 7) == first_week_day.substring(4, 8) ? "" : first_week_day.substring(4, 8)) + "- " + last_day_text;
+  y2d_day_text = last_day_text.substring(3, 7) == "Jan " ? "01 - " + last_day_text : "01 Jan - " + last_day_text
+
 // Calculate traffic scorecard values
    day_traffic = my_view_traffic.getValue(0, 11);
    dif_day_prev_week = Math.round(my_view_traffic.getValue(0, 18)*100);
@@ -441,6 +384,7 @@ Maybe better to separate delay and delay per flight... it looks too crowded now
      dif_day_2019 = (dif_day_2019 > 0) ? "+" + dif_day_2019 : "" + dif_day_2019
    dif_day_prev_year = Math.round(my_view_traffic.getValue(0, 19) * 100);
     dif_day_prev_year = (dif_day_prev_year > 0) ? "+" + dif_day_prev_year : "" + dif_day_prev_year;
+
 
   week_traffic = my_view_traffic.getValue(0, 21)
   avg_week_traffic = Math.round(week_traffic/7)
@@ -461,75 +405,21 @@ Maybe better to separate delay and delay per flight... it looks too crowded now
   dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
      dif_y2d_prev_year = (dif_y2d_prev_year > 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
 
-// Calculate delay scorecard values
-  //day
-   day_dly = my_view_traffic.getValue(0, 39);
-   day_prev_week_dly = my_view_traffic.getValue(0, 41);
-   day_prev_year_dly = my_view_traffic.getValue(0, 42);
-   day_2019_dly = my_view_traffic.getValue(0, 40);
-   
-   day_dly_per_flt = Math.round(day_dly/day_traffic*100)/100
-   
-   dif_day_prev_week_dly = (day_prev_week_dly == 0) ? "-" : Math.round((day_dly / day_prev_week_dly - 1)*100);
-        dif_day_prev_week_dly = (dif_day_prev_week_dly > 0) ? "+" + dif_day_prev_week_dly : "" + dif_day_prev_week_dly;
-   dif_day_prev_year_dly = (day_prev_year_dly == 0) ? "-" : Math.round((day_dly / day_prev_year_dly - 1)*100);
-        dif_day_prev_year_dly = (dif_day_prev_year_dly > 0) ? "+" + dif_day_prev_year_dly : "" + dif_day_prev_year_dly;
-   dif_day_2019_dly = (day_2019_dly == 0) ? "-" : Math.round((day_dly / day_2019_dly - 1)*100);
-        dif_day_2019_dly = (dif_day_2019_dly > 0) ? "+" + dif_day_2019_dly : "" + dif_day_2019_dly;
-        
-  //week
-   week_dly = my_view_traffic.getValue(0, 47);
-   avg_week_dly = Math.round(week_dly/7);
-   avg_week_prev_week_dly = my_view_traffic.getValue(0, 48);
-   avg_week_prev_year_dly = my_view_traffic.getValue(0, 50);
-   avg_week_2019_dly = my_view_traffic.getValue(0, 51);
-
-   week_dly_per_flt = Math.round(week_dly/week_traffic*100)/100
-
-   dif_week_prev_week_dly = (avg_week_prev_week_dly == 0) ? "-" : Math.round((avg_week_dly / avg_week_prev_week_dly - 1)*100);
-        dif_week_prev_week_dly = (dif_week_prev_week_dly > 0) ? "+" + dif_week_prev_week_dly : "" + dif_week_prev_week_dly;
-   dif_week_prev_year_dly = (avg_week_prev_year_dly == 0) ? "-" : Math.round((avg_week_dly / avg_week_prev_year_dly - 1)*100);
-        dif_week_prev_year_dly = (dif_week_prev_year_dly > 0) ? "+" + dif_week_prev_year_dly : "" + dif_week_prev_year_dly;
-   dif_week_2019_dly = (avg_week_2019_dly == 0) ? "-" : Math.round((avg_week_dly / avg_week_2019_dly - 1)*100);
-        dif_week_2019_dly = (dif_week_2019_dly > 0) ? "+" + dif_week_2019_dly : "" + dif_week_2019_dly;
-
-  //y2d
-   y2d_dly = my_view_traffic.getValue(0, 43);
-   avg_y2d_dly = Math.round(my_view_traffic.getValue(0, 49));
-   y2d_prev_year_dly = my_view_traffic.getValue(0, 44);
-   y2d_2019_dly = my_view_traffic.getValue(0, 45);
-
-   y2d_dly_per_flt = Math.round(y2d_dly/y2d_traffic*100)/100
-   y2d_dly_per_flt_2019 = Math.round(y2d_2019_dly/y2d_2019_traffic*100)/100
-   y2d_dly_per_flt_prev = Math.round(y2d_prev_year_dly/y2d_prev_year_traffic*100)/100
- 
-   dif_y2d_prev_year_dly = (y2d_prev_year_dly == 0) ? "-" : Math.round((y2d_dly / y2d_prev_year_dly - 1)*100);
-        dif_y2d_prev_year_dly = (dif_y2d_prev_year_dly > 0) ? "+" + dif_y2d_prev_year_dly : "" + dif_y2d_prev_year_dly;
-   dif_y2d_2019_dly = (y2d_2019_dly == 0) ? "-" : Math.round((y2d_dly / y2d_2019_dly - 1)*100);
-        dif_y2d_2019_dly = (dif_y2d_2019_dly > 0) ? "+" + dif_y2d_2019_dly : "" + dif_y2d_2019_dly;
-
-// Calculate other scorecard values
-last_day_text = last_day.toDateString();
-    last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11)
-
-  //calculate 1st day of rolling week and string
-  var first_week_day = new Date();
-    first_week_day.setDate(last_day.getDate()-6);
-    first_week_day = first_week_day.toDateString();
-  last_week_text = first_week_day.substring(8, 11) + (last_day_text.substring(3, 7) == first_week_day.substring(4, 8) ? "" : first_week_day.substring(4, 8)) + "- " + last_day_text
-
-  // Update scorecard values
-  // ---- found this string function below in stack overflow to add thousandseparators
+// Update scorecard values
   document.getElementById("last_day").innerHTML = "Day (" + last_day_text + ")";
   document.getElementById("last_week").innerHTML = "Rolling week (" + last_week_text + ")";
-  document.getElementById("last_day_dly").innerHTML = "Day (" + last_day_text + ")";
-  document.getElementById("last_week_dly").innerHTML = "Rolling week (" + last_week_text + ")";
+  document.getElementById("y2d_day_text").innerHTML = "Year to date (" + y2d_day_text + ")";
+
+  <!-- document.getElementById("last_day_dly").innerHTML = "Day (" + last_day_text + ")"; -->
+  <!-- document.getElementById("last_week_dly").innerHTML = "Rolling week (" + last_week_text + ")"; -->
+  <!-- document.getElementById("last_day_dly_flt").innerHTML = "Day (" + last_day_text + ")"; -->
+  <!-- document.getElementById("last_week_dly_flt").innerHTML = "Rolling week (" + last_week_text + ")"; -->
   
   document.getElementById("day_traffic").innerHTML = String(day_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
   document.getElementById("dif_day_prev_week").innerHTML = String(dif_day_prev_week) + '%';
   document.getElementById("dif_day_2019").innerHTML = String(dif_day_2019) + '%';
   document.getElementById("dif_day_prev_year").innerHTML = String(dif_day_prev_year) + '%';
-  
+
   document.getElementById("week_traffic").innerHTML = String(week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
   document.getElementById("avg_week_traffic").innerHTML = String(avg_week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
   document.getElementById("dif_week_prev_week").innerHTML = String(dif_week_prev_week) + '%';
@@ -541,28 +431,6 @@ last_day_text = last_day.toDateString();
   document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%';
   document.getElementById("dif_y2d_prev_year").innerHTML = String(dif_y2d_prev_year) + '%';
 
-  document.getElementById("day_dly").innerHTML = String(day_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("day_dly_per_flt").innerHTML = String(day_dly_per_flt) + " ";
-  document.getElementById("dif_day_prev_week_dly").innerHTML = String(dif_day_prev_week_dly) + '%';
-  document.getElementById("dif_day_prev_year_dly").innerHTML = String(dif_day_prev_year_dly) + '%';
-  document.getElementById("dif_day_2019_dly").innerHTML = String(dif_day_2019_dly) + '%';
+  }
   
-  document.getElementById("week_dly").innerHTML = String(week_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("avg_week_dly").innerHTML = String(avg_week_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily min";
-  document.getElementById("week_dly_per_flt").innerHTML = String(week_dly_per_flt) + " ";
-  document.getElementById("dif_week_prev_week_dly").innerHTML = String(dif_week_prev_week_dly) + '%';
-  document.getElementById("dif_week_prev_year_dly").innerHTML = String(dif_week_prev_year_dly) + '%';
-  document.getElementById("dif_week_2019_dly").innerHTML = String(dif_week_2019_dly) + '%';
-
-  document.getElementById("y2d_dly").innerHTML = String(y2d_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("avg_y2d_dly").innerHTML = String(avg_y2d_dly).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily min";
-  document.getElementById("y2d_dly_per_flt").innerHTML = String(y2d_dly_per_flt) + " ";
-
-  document.getElementById("dif_y2d_prev_year_dly").innerHTML = String(dif_y2d_prev_year_dly) + '%';
-  document.getElementById("y2d_dly_per_flt_prev").innerHTML = String(y2d_dly_per_flt_prev) + " ";
-
-  document.getElementById("dif_y2d_2019_dly").innerHTML = String(dif_y2d_2019_dly) + '%';
-  document.getElementById("y2d_dly_per_flt_2019").innerHTML = String(y2d_dly_per_flt_2019) + " ";
-    
-}
 </script>
