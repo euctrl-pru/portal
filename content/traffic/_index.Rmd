@@ -203,111 +203,6 @@ The chart presents the traffic evolution (7-day average number of flights) since
 <!-- <div class="resp-container"> -->
 <!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 <!-- </div> -->
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-
-nw_all_data <- read_sheet("https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing", sheet = "NW_Flights_All")
-
-
-nw_all_data <- nw_all_data %>%
-  # mutate_at(vars(FLIGHT_DATE), ~ as.Date(.x)) %>%
-           mutate_at(vars(AVG_ROLLING_WEEK,AVG_ROLLING_WEEK_PREV_YEAR, AVG_ROLLING_WEEK_2020, AVG_ROLLING_WEEK_2019),round,0) 
-
-# build plot
-nw_all_data %>%
-  plot_ly(width = 550, height = 370,
-    x      = ~FLIGHT_DATE,
-    y      = ~AVG_ROLLING_WEEK,
-    name = '2022',
-    type = 'scatter',
-    mode = 'lines',
-    line = list(color = '#003f5c', width = 3)
-    ) %>%
-  add_trace(
-    y = ~AVG_ROLLING_WEEK_PREV_YEAR, 
-    name = '2021',
-    mode = 'lines',
-    line = list(color = '#58508d', width = 1) 
-    ) %>%
-  add_trace(
-    y = ~AVG_ROLLING_WEEK_2020, 
-    name = '2020',
-    mode = 'lines',
-    line = list(color = '#bc5090', width = 1) 
-    ) %>%
-  add_trace(
-    y = ~AVG_ROLLING_WEEK_2019, 
-    name = '2019',
-    mode = 'lines',
-    line = list(color = '#ffa600', width = 2) 
-    )%>%
-  layout(
-    autosize = F,
-    title = list(text = '<b>Evolution of daily flights in the EUROCONTROL area</b>',
-                 font = list(family = "Roboto", size = 16)),
-    annotations = list(text = '(7-day moving average)', x = 0.5, y = 1.12,
-                       showarrow = F, xref='paper', yref='paper',
-                       xanchor='center', yanchor='auto',
-                       font = list(family = 'Roboto', size = 14)),
-    xaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
-                 tick0 = "2022-01-31", dtick = "M1", tickformat="%d %b") ,
-    yaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
-                 hoverformat = ".0f", range = c(0, 41000), dtick = 10000,
-                 constraintoward = 'bottom'),
-    legend = list(orientation = 'h', xanchor = "center", x = 0.5, y=-0.2),
-    hovermode = "x unified",
-    margin = list(t=60)
-    )%>%
-    config(displaylogo = FALSE, modeBarButtons = list(list("toImage"))
-           )
-```
-</div>
-</div></div>
-<br>
-
-<!-- Stakeholders section -->
-<div class="container" style="margin: 0px; padding: 0px">
-#### Local/Stakeholder View
-This section shows the top 40 aircraft operators, airports and country pairs (note that you can scroll down to see the full list) in terms of flights. It also shows a list of all ANSPs ranked by total flights (including overflights). All rankings are presented for the latest available day, rolling week and year to date with a comparison with relevant previous periods.
-(download files to be discussed)
-<br>
-
-<div class="flex-container" style=" margin-bottom: 5px;">
-<div class="Mycolumn" >
-<div class="col-12" style=" margin: 0px; " >
-<h5>Aircraft Operators</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
-<br>
-Aircraft operators in the table above are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.
-</div>
-<div class="Mycolumn2">
-<div class="col-12" style=" margin: 0px; " >
-<h5>Airports</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div></div>
-</div>
-</div>
-
-<div class="flex-container" style=" margin-bottom: 5px;">
-<div class="Mycolumn" >
-<div class="col-12" style=" margin: 0px; " >
-<h5>ANSPs</h5>
-<div class="resp-container">
-</div>
-</div>
-</div>
-<div class="Mycolumn2">
-<div class="col-12" style=" margin: 0px; " >
-<h5>Country Pairs</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
-</div></div>
-</div>
 
 <!-- script for traffic figures -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -436,3 +331,112 @@ last_day_text = last_day.toDateString();
   }
   
 </script>
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+nw_all_data <- read_sheet("https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing", sheet = "NW_Flights_All")
+
+
+nw_all_data <- nw_all_data %>%
+  # mutate_at(vars(FLIGHT_DATE), ~ as.Date(.x)) %>%
+           mutate_at(vars(AVG_ROLLING_WEEK,AVG_ROLLING_WEEK_PREV_YEAR, AVG_ROLLING_WEEK_2020, AVG_ROLLING_WEEK_2019),round,0) 
+
+# build plot
+nw_all_data %>%
+  plot_ly(width = 550, height = 370,
+    x      = ~FLIGHT_DATE,
+    y      = ~AVG_ROLLING_WEEK,
+    name = '2022',
+    type = 'scatter',
+    mode = 'lines',
+    line = list(color = '#003f5c', width = 3)
+    ) %>%
+  add_trace(
+    y = ~AVG_ROLLING_WEEK_PREV_YEAR, 
+    name = '2021',
+    mode = 'lines',
+    line = list(color = '#58508d', width = 1) 
+    ) %>%
+  add_trace(
+    y = ~AVG_ROLLING_WEEK_2020, 
+    name = '2020',
+    mode = 'lines',
+    line = list(color = '#bc5090', width = 1) 
+    ) %>%
+  add_trace(
+    y = ~AVG_ROLLING_WEEK_2019, 
+    name = '2019',
+    mode = 'lines',
+    line = list(color = '#ffa600', width = 2) 
+    )%>%
+  layout(
+    autosize = F,
+    title = list(text = '<b>Evolution of daily flights in the EUROCONTROL area</b>',
+                 font = list(family = "Roboto", size = 16)),
+    annotations = list(text = '(7-day moving average)', x = 0.5, y = 1.12,
+                       showarrow = F, xref='paper', yref='paper',
+                       xanchor='center', yanchor='auto',
+                       font = list(family = 'Roboto', size = 14)),
+    xaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
+                 tick0 = "2022-01-31", dtick = "M1", tickformat="%d %b") ,
+    yaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
+                 hoverformat = ".0f", range = c(0, 41000), dtick = 10000,
+                 constraintoward = 'bottom'),
+    legend = list(orientation = 'h', xanchor = "center", x = 0.5, y=-0.2),
+    hovermode = "x unified",
+    margin = list(t=60)
+    )%>%
+    config(displaylogo = FALSE, modeBarButtons = list(list("toImage"))
+           )
+```
+</div>
+</div></div>
+<br>
+
+<!-- Stakeholders section -->
+<div class="container" style="margin: 0px; padding: 0px">
+#### Local/Stakeholder View
+This section shows the top 40 aircraft operators, airports and country pairs in the Network in terms of flights (note that you can scroll down to see the full list). It also shows a list of all ANSPs ranked by total flights (including overflights). All rankings are presented for the latest available day, rolling week and year to date with a comparison with relevant previous periods.
+(download files to be discussed)
+<br>
+
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn" >
+<div class="col-12" style=" margin: 0px; " >
+<h5>Aircraft Operators</h5>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+<br>
+Aircraft operators in the table above are grouped as per levels 1 and 0 as defined in the <a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >EUROCONTROL airline groups lookup</a>.
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
+<h5>Airports</h5>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div></div>
+</div>
+</div>
+
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn" >
+<div class="col-12" style=" margin: 0px; " >
+<h5>ANSPs</h5>
+<div class="resp-container">
+(TB added)</div>
+</div>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
+<h5>Country Pairs</h5>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div></div>
+</div>
+
+
