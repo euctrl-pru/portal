@@ -103,7 +103,7 @@ library(plotly)
   .Scorecard {
     margin: 0px;
     padding: 0px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #161b21;
     text-align: left;
@@ -113,7 +113,7 @@ library(plotly)
     margin: 0px;
     padding: 0px;
     padding-top: 7px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #161b21;
     text-align: left;
@@ -122,7 +122,7 @@ library(plotly)
 
   </style>
 
-The dashboard below provides an overview of the evolution of flights in the [EUROCONTROL Member State Area](/definition/eurocontrol-area/) (referred to as 'Network' below). A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>. The results are shown in the dashboard below and also available for download in our [data repository](/data/).
+The dashboard below provides an overview of the evolution of flights in the [EUROCONTROL Area](/definition/eurocontrol-area/) (referred to as 'Network' below). A more detailed view of the traffic situation at network and stakeholder level is shown in our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>.
 
 For a view of the en-route and terminal [service units](/acronym/su/) used by the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> to collect charges visit our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.
 
@@ -133,7 +133,7 @@ And if you want to know more about forecasting products and services visit our [
 <div class="container" style="margin: 0px; padding: 0px">
 #### Network View
 This section shows traffic situation in terms of flights for the latest available day, rolling week and year to date with a comparison with relevant previous periods.
-The chart presents the traffic evolution (7-day average number of flights) since 2019.
+The chart presents the traffic evolution (7-day average number of flights) since 2019. The network traffic data presented in this section can be downloaded clicking <a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" download>here</a>.
 
 <!-- Daily traffic graphs and scorecards -->
 <div class="flex-container" style=" margin-bottom: 5px;">
@@ -202,9 +202,6 @@ The chart presents the traffic evolution (7-day average number of flights) since
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
-<!-- <div class="resp-container"> -->
-<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-<!-- </div> -->
 
 <!-- script for traffic figures -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -333,65 +330,9 @@ last_day_text = last_day.toDateString();
   }
   
 </script>
-
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-
-nw_all_data <- read_sheet("https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing", sheet = "NW_Flights_All")
-
-
-nw_all_data <- nw_all_data %>%
-  # mutate_at(vars(FLIGHT_DATE), ~ as.Date(.x)) %>%
-           mutate_at(vars(AVG_ROLLING_WEEK,AVG_ROLLING_WEEK_PREV_YEAR, AVG_ROLLING_WEEK_2020, AVG_ROLLING_WEEK_2019),round,0) 
-
-# build plot
-nw_all_data %>%
-  plot_ly(width = 550, height = 370,
-    x      = ~FLIGHT_DATE,
-    y      = ~AVG_ROLLING_WEEK,
-    name = '2022',
-    type = 'scatter',
-    mode = 'lines',
-    line = list(color = '#003f5c', width = 3)
-    ) %>%
-  add_trace(
-    y = ~AVG_ROLLING_WEEK_PREV_YEAR, 
-    name = '2021',
-    mode = 'lines',
-    line = list(color = '#58508d', width = 1) 
-    ) %>%
-  add_trace(
-    y = ~AVG_ROLLING_WEEK_2020, 
-    name = '2020',
-    mode = 'lines',
-    line = list(color = '#bc5090', width = 1) 
-    ) %>%
-  add_trace(
-    y = ~AVG_ROLLING_WEEK_2019, 
-    name = '2019',
-    mode = 'lines',
-    line = list(color = '#ffa600', width = 2) 
-    )%>%
-  layout(
-    autosize = F,
-    title = list(text = '<b>Evolution of daily flights in the EUROCONTROL area</b>',
-                 font = list(family = "Roboto", size = 16)),
-    annotations = list(text = '(7-day moving average)', x = 0.5, y = 1.12,
-                       showarrow = F, xref='paper', yref='paper',
-                       xanchor='center', yanchor='auto',
-                       font = list(family = 'Roboto', size = 14)),
-    xaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
-                 tick0 = "2022-01-31", dtick = "M1", tickformat="%d %b") ,
-    yaxis = list(showgrid = T, zeroline = T, showline = T, title = '',
-                 hoverformat = ".0f", range = c(0, 41000), dtick = 10000,
-                 constraintoward = 'bottom'),
-    legend = list(orientation = 'h', xanchor = "center", x = 0.5, y=-0.2),
-    hovermode = "x unified",
-    margin = list(t=60)
-    )%>%
-    config(displaylogo = FALSE, modeBarButtons = list(list("toImage"))
-           )
-```
+<div class="resp-container" style=" margin-top: 10px; ">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 </div>
 </div></div>
 <br>
