@@ -6,6 +6,137 @@ date: "2018-02-07T11:26:51+01:00"
 
 
 
+<style type="text/css">
+  .img-responsive {
+      margin: 0 auto;
+      max-width: 75%
+  }
+  
+  .resp-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 50.0%;
+  }
+  
+  .resp-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 110%;
+      border: 0;
+  }
+      
+  .Scorecard_subt {
+    margin: 0px; 
+    padding-bottom: 0px;  
+    text-align: left; 
+    color:#7f7f7f
+  }
+
+    .Scorecard_net {
+    margin: 0px; 
+    padding-bottom: 0px;
+    font-weight: bold;  
+    text-align: left;
+    color: #0070c0; 
+  }
+
+  </style>
+<!-- Daily traffic graphs and scorecards -->
+<div class="container">
+<div class="row" style="padding: 0px; background-color: #d9e1f2; border-radius: 2px; width: 100%;">
+<div class="col-4"; style="margin: 0px; ">
+  <p class="Scorecard_net">Latest Network traffic situation</p>
+  <p id="y2d_day_text" style="font-weight: bold; color: #0070c0;"</p> 
+</div>
+<div class="col-2" ; style="margin: 0px;">
+  <p class="Scorecard_subt">total flights</p>
+  <p id="y2d_traffic" style="font-weight: bold; color: #0070c0;"></p> 
+</div>
+<div class="col-2" ; style="margin: 0px;  ">
+  <p class="Scorecard_subt">avg. daily flights</p>
+  <p id="avg_y2d_traffic" style="font-weight: bold; color: #0070c0;"></p>
+</div>
+<div class="col-2" ; style="margin: 0px; ">
+  <p class="Scorecard_subt">vs 2019</p>
+  <p id="dif_y2d_2019" style="font-weight: bold; color: #0070c0;"></p>
+</div>
+<div class="col-2" ; style="margin: 0px;  ">
+  <p class="Scorecard_subt">vs 2021</p>
+  <p id="dif_y2d_prev_year" style="font-weight: bold; color: #0070c0;"></p>
+</div>
+</div>
+</div>
+<!-- script for traffic figures -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  var Data
+  var my_view_traffic
+  var last_day
+  var y2d_traffic
+  var y2d_prev_year_traffic
+  var y2d_2019_traffic 
+  var avg_y2d_traffic
+  var dif_y2d_2019
+  var dif_y2d_prev_year
+
+  google.load("visualization", "1.1", {
+    packages: ["corechart", "table", "controls", "bar"]
+  });
+  google.setOnLoadCallback(Initialisation);
+
+  function Initialisation() {
+    var query = new google.visualization.Query(
+      "https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing&sheet=NW_Flights_All"
+    );
+
+  query.send(drawDashboard);
+  }
+
+  function drawDashboard(response) {
+    Data = response.getDataTable();
+    UpdateTraffic();
+   }
+//---------------------------Update traffic---------------------------------------------
+  function UpdateTraffic() {
+  my_view_traffic = new google.visualization.DataView(Data);
+
+  //       for (var y = 1; y < my_view_traffic.getNumberOfColumns(); y++) {
+  //        // my_view_traffic.getValue(x, y) 
+  //        last_day = my_view_traffic.getValue(0, y)
+  //      }
+  last_day = my_view_traffic.getValue(0, 38); 
+  my_view_traffic.setRows(
+  Data.getFilteredRows([{ column: 7, value: last_day }])
+  );
+
+// Calculate datestrings
+last_day_text = last_day.toDateString();
+  last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11)
+  y2d_day_text = last_day_text.substring(3, 7) == "Jan " ? "01 - " + last_day_text : "01 Jan - " + last_day_text
+
+// Calculate traffic scorecard values
+  y2d_traffic = my_view_traffic.getValue(0, 30);
+  y2d_prev_year_traffic = my_view_traffic.getValue(0, 31);
+  y2d_2019_traffic = my_view_traffic.getValue(0, 32);
+  
+  avg_y2d_traffic = Math.round(my_view_traffic.getValue(0, 33));
+  dif_y2d_2019 = Math.round(my_view_traffic.getValue(0, 37)*100);
+     dif_y2d_2019 = (dif_y2d_2019 > 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019
+  dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
+     dif_y2d_prev_year = (dif_y2d_prev_year > 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
+
+// Update scorecard values
+  document.getElementById("y2d_day_text").innerHTML =  y2d_day_text ; 
+  document.getElementById("y2d_traffic").innerHTML = String(y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("avg_y2d_traffic").innerHTML = String(avg_y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%';
+  document.getElementById("dif_y2d_prev_year").innerHTML = String(dif_y2d_prev_year) + '%';
+  }
+  
+</script>
+<br>
 <div class="container">
 <div class="row">
 <div class="col-sm-6">
@@ -15,7 +146,7 @@ Aviation Intelligence Portal
 <p>This portal is provided by the <a href="/about/us/">Performance Review Unit (PRU)</a> which is part of EUROCONTROL’s Aviation Intelligence Unit (AIU).</p>
 <p>In support of the independent work of the <a href="/about/prc/">Performance Review Commission (PRC)</a> this portal aims to:</p>
 <ul>
-<li>ensure that interested stakeholders in all <a href="/definition/eurocontrol-area/">EUROCONTROL States</a> have relevant high quality information on Pan-European <a href="/acronym/ans/">ANS</a> performance readily available in a transparent, accurate, clear, complete and unbiased manner;</li>
+<li>ensure that all stakeholders in all <a href="/definition/eurocontrol-area/">EUROCONTROL States</a> have relevant high quality information on Pan-European <a href="/acronym/ans/">ANS</a> performance readily available in a transparent, accurate, complete and unbiased manner;</li>
 <li>stimulate an informed dialogue between all stakeholders for the benefit of the entire aviation network; and,</li>
 <li>further develop the <a href="/acronym/ans/">ANS</a> performance analysis framework and the understanding of key <a href="/acronym/ans/">ANS</a> performance issues.</li>
 </ul>
@@ -31,14 +162,14 @@ What’s new?
 <div class="carousel-inner">
 <div class="carousel-item active">
 <div class="card border-0">
-<a href="https://www.eurocontrol.int/publication/draft-performance-review-report-prr-2021-consultation" target="_blank"><img class="card-img-top" src="/images/prc/prr2021_consultation.png" alt="">
+<a href="https://www.eurocontrol.int/publication/draft-performance-review-report-prr-2021-consultation" target="_blank"><img class="card-img-top" src="/images/landing/prr2021_consultation.png" alt="">
 <div class="card-body">
-<h6 class="card-title">
-Performance Review Report 2021
-</h6>
+<h5 class="card-title">
+Last chance: PRR 2021
+</h5>
 </a><small>
 <p class="card-text">
-PRR 2021 now available for stakeholder consultation
+Submit your comments on the final draft by 15 April!
 </p>
 </small>
 </div>
@@ -46,14 +177,14 @@ PRR 2021 now available for stakeholder consultation
 </div>
 <div class="carousel-item">
 <div class="card border-0">
-<a href="/dashboard/stakeholder/airport/db/"><img class="card-img-top" src="/images/landing/apt_pic.png" alt="">
+<a href="/traffic/"><img class="card-img-top" src="/images/landing/traff_new.png" alt="">
 <div class="card-body">
-<h6 class="card-title">
-Turnaround times @ airports
-</h6>
+<h5 class="card-title">
+NEW: traffic overview
+</h5>
 </a><small>
 <p class="card-text">
-Check out the new turnaround indicators in oru Airport Performance Dashboard!
+Check out our new daily updated traffic overview including ANSP, airport and airlines..
 </p>
 </small>
 </div>
@@ -64,7 +195,7 @@ Check out the new turnaround indicators in oru Airport Performance Dashboard!
 <a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt="">
 <div class="card-body">
 <h6 class="card-title">
-EUROCONTROL comprehensive COVID-19 assessments
+Comprehensive COVID-19 assessments
 </h6>
 </a><small>
 <p class="card-text">
@@ -83,7 +214,7 @@ Performance data update
 </h5>
 </a><small>
 <p class="card-text">
-February 2022 data available now
+March 2022 data available now
 </p>
 </small>
 </div>
@@ -153,11 +284,11 @@ Traffic
 <img class="card-img-top" src="/images/landing/ectl_cap_th.jpg" alt="Capacity">
 <div class="card-body">
 <h5 class="card-title">
-Capacity &amp; Delays
+Capacity/ Delay
 </h5>
 </a><small>
 <p class="card-text">
-Analysis of en-route and airport <a href="/acronym/atfm/">Air Traffic Flow Management</a> delays
+En-route and airport <a href="/acronym/atfm/">ATFM</a> delays
 </p>
 </small>
 </div>
@@ -167,7 +298,7 @@ Analysis of en-route and airport <a href="/acronym/atfm/">Air Traffic Flow Manag
 <img class="card-img-top" src="/images/landing/ectl_env_th.jpg" alt="Efficiency & Environment">
 <div class="card-body">
 <h5 class="card-title">
-Efficiency &amp; Environment
+Efficiency/ Environment
 </h5>
 </a><small>
 <p class="card-text">
@@ -198,25 +329,4 @@ Analysis of ANS cost-efficiency
 <p>{{% subscribe-button %}}</p>
 <p><a href="/about/privacy/">Read our Privacy protection statement</a></p>
 </div>
-<style type="text/css">
-.img-responsive {
-    margin: 0 auto;
-    max-width: 75%
-}
-
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 50.0%;
-}
-
-.resp-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    border: 0;
-}
-</style>
 </div>
