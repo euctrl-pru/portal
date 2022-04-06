@@ -4,6 +4,7 @@
 /public/
 /resources/
 
+# New file needed by Hugo as ov version 9.2.1
 .hugo_build.lock
 
 ######## R project specific (R.gitignore)
