@@ -268,21 +268,21 @@ last_day_text = last_day.toDateString();
 // Calculate traffic scorecard values
    day_traffic = my_view_traffic.getValue(0, 11);
    dif_day_prev_week = Math.round(my_view_traffic.getValue(0, 18)*100);
-     dif_day_prev_week = (dif_day_prev_week > 0) ? "+" + dif_day_prev_week : "" + dif_day_prev_week
+     dif_day_prev_week = (dif_day_prev_week >= 0) ? "+" + dif_day_prev_week : "" + dif_day_prev_week
    dif_day_2019 = Math.round(my_view_traffic.getValue(0, 20) * 100) ;
-     dif_day_2019 = (dif_day_2019 > 0) ? "+" + dif_day_2019 : "" + dif_day_2019
+     dif_day_2019 = (dif_day_2019 >= 0) ? "+" + dif_day_2019 : "" + dif_day_2019
    dif_day_prev_year = Math.round(my_view_traffic.getValue(0, 19) * 100);
-    dif_day_prev_year = (dif_day_prev_year > 0) ? "+" + dif_day_prev_year : "" + dif_day_prev_year;
+    dif_day_prev_year = (dif_day_prev_year >= 0) ? "+" + dif_day_prev_year : "" + dif_day_prev_year;
 
 
   week_traffic = my_view_traffic.getValue(0, 21)
   avg_week_traffic = Math.round(week_traffic/7)
   dif_week_prev_week = Math.round(my_view_traffic.getValue(0, 27)*100);
-     dif_week_prev_week = (dif_week_prev_week > 0) ? "+" + dif_week_prev_week : "" + dif_week_prev_week
+     dif_week_prev_week = (dif_week_prev_week >= 0) ? "+" + dif_week_prev_week : "" + dif_week_prev_week
   dif_week_2019 = Math.round(my_view_traffic.getValue(0, 29)*100);
-     dif_week_2019 = (dif_week_2019 > 0) ? "+" + dif_week_2019 : "" + dif_week_2019
+     dif_week_2019 = (dif_week_2019 >= 0) ? "+" + dif_week_2019 : "" + dif_week_2019
   dif_week_prev_year = Math.round(my_view_traffic.getValue(0, 28)*100);
-     dif_week_prev_year = (dif_week_prev_year > 0) ? "+" + dif_week_prev_year : "" + dif_week_prev_year
+     dif_week_prev_year = (dif_week_prev_year >= 0) ? "+" + dif_week_prev_year : "" + dif_week_prev_year
 
   y2d_traffic = my_view_traffic.getValue(0, 30);
   y2d_prev_year_traffic = my_view_traffic.getValue(0, 31);
@@ -290,9 +290,9 @@ last_day_text = last_day.toDateString();
   
   avg_y2d_traffic = Math.round(my_view_traffic.getValue(0, 33));
   dif_y2d_2019 = Math.round(my_view_traffic.getValue(0, 37)*100);
-     dif_y2d_2019 = (dif_y2d_2019 > 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019
+     dif_y2d_2019 = (dif_y2d_2019 >= 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019
   dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
-     dif_y2d_prev_year = (dif_y2d_prev_year > 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
+     dif_y2d_prev_year = (dif_y2d_prev_year >= 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
 
 // Update scorecard values
   document.getElementById("last_day").innerHTML = "Day (" + last_day_text + ")";
