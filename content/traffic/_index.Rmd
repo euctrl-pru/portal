@@ -1,6 +1,6 @@
 ---
 title: Traffic Overview
-
+dwnld_i: <i class="fa pru fa-download"></i>
 ---
 
 ```{r, echo=FALSE, include=FALSE}
@@ -14,8 +14,6 @@ library(googlesheets4)
 library(lubridate)
 library(plotly)
 ```
-
-
 
 <style type="text/css">
   .img-responsive {
@@ -327,15 +325,17 @@ last_day_text = last_day.toDateString();
 <div class="resp-container" style=" margin-top: 10px; ">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-Click <a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx">here</a> to download the underlying data.
+
 </div>
-</div></div>
+</div>
+</div>
+<a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network data</a>
 
 <!-- Stakeholders section -->
 <div class="container" style="margin: 0px; padding: 0px">
+
 #### Stakeholder views
 Only the top 40 in terms of flights are shown in the tables (latest day, rolling week and year to date).
-Click <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx">here</a> to download the underlying data.
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
@@ -359,9 +359,9 @@ Click <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffi
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
-<h5>ANSPs</h5>
+<h5>ANSPs (coming soon....)</h5>
 <div class="resp-container">
-(TB added)</div>
+</div>
 </div>
 </div>
 <div class="Mycolumn2">
@@ -373,3 +373,4 @@ Click <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffi
 </div>
 </div></div>
 </div>
+<a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a>
