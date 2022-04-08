@@ -337,6 +337,7 @@ last_day_text = last_day.toDateString();
 #### Stakeholder views
 Only the top 40 in terms of flights are shown in the tables (latest day, rolling week and year to date).
 <div class="flex-container" style=" margin-bottom: 5px;">
+
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <h5>Aircraft Operators</h5>
@@ -359,8 +360,9 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
-<h5>ANSPs (coming soon....)</h5>
+<h5>Air Navigation Service Providers (ANSPs)</h5>
 <div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
