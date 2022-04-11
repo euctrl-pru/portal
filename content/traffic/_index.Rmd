@@ -1,7 +1,19 @@
 ---
-title: Traffic
-
+title: Traffic Overview
+dwnld_i: <i class="fa pru fa-download"></i>
 ---
+
+```{r, echo=FALSE, include=FALSE}
+# All defaults
+## libraries
+library(fs)
+library(tibble)
+library(dplyr)
+library(stringr)
+library(googlesheets4)
+library(lubridate)
+library(plotly)
+```
 
 <style type="text/css">
   .img-responsive {
@@ -23,33 +35,346 @@ title: Traffic
       height: 150%;
       border: 0;
   }
+      
+  .Scorecard_subt {
+    margin: 0px; 
+    padding-bottom: 5px; 
+    font-size: 16px; 
+    text-align: left; 
+    color:#7f7f7f
+  }
+
+@media screen and (min-width:1000px) {
+  .flex-container {
+    display: flex;
+  }
+  
+  .Mycolumn {
+    width: 50%;
+    text-align: justify;
+<!-- margin-right: 5px -->
+  <!-- margin-left: 0px; -->
+  <!-- background-color: #7f7f7f; -->
+  }
+
+  .Mycolumn2 {
+    width: 50%;
+    text-align: justify;
+    <!-- margin-left: 0px; -->
+    <!-- margin-right: 5px -->
+  }
+
+  .Scorecard {
+    margin: 0px;
+    padding: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #161b21;
+    text-align: left;
+  }
+
+  .Scorecard2 {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 7px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #161b21;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .Mycolumn {
+    width: 100%;
+    margin-right: 0px;
+    text-align: justify;
+  }
+  
+  .Mycolumn2 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px
+    text-align: justify;
+  }
+  
+  .Scorecard {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #161b21;
+    text-align: left;
+  }
+
+  .Scorecard2 {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #161b21;
+    text-align: left;
+  }
+}
+
   </style>
 
-The dashboard below provides an overview of the evolution of flights (all controlled flights including overflights) and en-route [service units](/acronym/su/) in the [EUROCONTROL Member State Area](/definition/eurocontrol-area/). The analysis of the en-route service units is based on the [en-route charging zones][ert_cz] for which the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> collects en-route charges [^1].
+This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal [service units](/acronym/su/) from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.
 
-The results are shown in the dashboard below and also available for download in our [data repository](/data/). 
+<!-- Network Traffic section -->
+<div class="container" style="margin: 0px; padding: 0px">
 
-<!-- removed State level for the time being
-<div class="container">
-<div class="row align-items-start">
-<div class="col-sm-9">
+#### EUROCONTROL area (Network view)
+<!-- Daily traffic graphs and scorecards -->
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn" >
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="day_traffic" class="Scorecard"></p>
+  <p class="Scorecard_subt">flights</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_day_prev_week" class="Scorecard2" ></p>
+  <p class="Scorecard_subt">vs prev. week</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_day_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_day_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2021</p>
+</div>
+</div>
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Week</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="week_traffic" class="Scorecard"></p>
+  <p id="avg_week_traffic" class="Scorecard_subt"></p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_week_prev_week" class="Scorecard2" ></p>
+  <p class="Scorecard_subt">vs prev. week</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_week_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_week_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2021</p>
+</div>
+</div>
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Year to date</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="y2d_traffic" class="Scorecard"></p>
+  <p id="avg_y2d_traffic" class="Scorecard_subt"></p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_y2d_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_y2d_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2021</p>
+</div>
+</div>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
 
-<p style="color:#c00000">Dashboard is work in progress for update on 15 May 2020</p> 
+<!-- script for traffic figures -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+  var Data
+  var my_view_traffic
+  var last_day
+  var last_day_text
+  var last_week_text
+
+  var day_traffic
+  var dif_day_prev_week
+  var dif_day_2019
+  var dif_day_prev_year
+
+  var week_traffic
+  var avg_week_traffic
+  var dif_week_prev_week
+  var dif_week_2019
+  var dif_week_prev_year
+ 
+  var y2d_traffic
+  var y2d_prev_year_traffic
+  var y2d_2019_traffic 
+  var avg_y2d_traffic
+  var dif_y2d_2019
+  var dif_y2d_prev_year
+
+  google.load("visualization", "1.1", {
+    packages: ["corechart", "table", "controls", "bar"]
+  });
+  google.setOnLoadCallback(Initialisation);
+
+  function Initialisation() {
+    var query = new google.visualization.Query(
+      "https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing&sheet=NW_Flights_All"
+    );
+
+  query.send(drawDashboard);
+  }
+
+  function drawDashboard(response) {
+    Data = response.getDataTable();
+    UpdateTraffic();
+   }
+//---------------------------Update traffic---------------------------------------------
+  function UpdateTraffic() {
+  my_view_traffic = new google.visualization.DataView(Data);
+
+  //       for (var y = 1; y < my_view_traffic.getNumberOfColumns(); y++) {
+  //        // my_view_traffic.getValue(x, y) 
+  //        last_day = my_view_traffic.getValue(0, y)
+  //      }
+  last_day = my_view_traffic.getValue(0, 38); 
+  my_view_traffic.setRows(
+  Data.getFilteredRows([{ column: 7, value: last_day }])
+  );
+
+// Calculate datestrings
+last_day_text = last_day.toDateString();
+    last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11)
+
+  //calculate 1st day of rolling week and string
+  var first_week_day = new Date();
+    first_week_day.setDate(last_day.getDate()-6);
+    first_week_day = first_week_day.toDateString();
+  last_week_text = first_week_day.substring(8, 11) + (last_day_text.substring(3, 7) == first_week_day.substring(4, 8) ? "" : first_week_day.substring(4, 8)) + "- " + last_day_text;
+  y2d_day_text = last_day_text.substring(3, 7) == "Jan " ? "01 - " + last_day_text : "01 Jan - " + last_day_text
+
+// Calculate traffic scorecard values
+   day_traffic = my_view_traffic.getValue(0, 11);
+   dif_day_prev_week = Math.round(my_view_traffic.getValue(0, 18)*100);
+     dif_day_prev_week = (dif_day_prev_week >= 0) ? "+" + dif_day_prev_week : "" + dif_day_prev_week
+   dif_day_2019 = Math.round(my_view_traffic.getValue(0, 20) * 100) ;
+     dif_day_2019 = (dif_day_2019 >= 0) ? "+" + dif_day_2019 : "" + dif_day_2019
+   dif_day_prev_year = Math.round(my_view_traffic.getValue(0, 19) * 100);
+    dif_day_prev_year = (dif_day_prev_year >= 0) ? "+" + dif_day_prev_year : "" + dif_day_prev_year;
+
+
+  week_traffic = my_view_traffic.getValue(0, 21)
+  avg_week_traffic = Math.round(week_traffic/7)
+  dif_week_prev_week = Math.round(my_view_traffic.getValue(0, 27)*100);
+     dif_week_prev_week = (dif_week_prev_week >= 0) ? "+" + dif_week_prev_week : "" + dif_week_prev_week
+  dif_week_2019 = Math.round(my_view_traffic.getValue(0, 29)*100);
+     dif_week_2019 = (dif_week_2019 >= 0) ? "+" + dif_week_2019 : "" + dif_week_2019
+  dif_week_prev_year = Math.round(my_view_traffic.getValue(0, 28)*100);
+     dif_week_prev_year = (dif_week_prev_year >= 0) ? "+" + dif_week_prev_year : "" + dif_week_prev_year
+
+  y2d_traffic = my_view_traffic.getValue(0, 30);
+  y2d_prev_year_traffic = my_view_traffic.getValue(0, 31);
+  y2d_2019_traffic = my_view_traffic.getValue(0, 32);
+  
+  avg_y2d_traffic = Math.round(my_view_traffic.getValue(0, 33));
+  dif_y2d_2019 = Math.round(my_view_traffic.getValue(0, 37)*100);
+     dif_y2d_2019 = (dif_y2d_2019 >= 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019
+  dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
+     dif_y2d_prev_year = (dif_y2d_prev_year >= 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
+
+// Update scorecard values
+  document.getElementById("last_day").innerHTML = "Day (" + last_day_text + ")";
+  document.getElementById("last_week").innerHTML = "Rolling week (" + last_week_text + ")";
+  document.getElementById("y2d_day_text").innerHTML = "Year to date (" + y2d_day_text + ")";
+
+  <!-- document.getElementById("last_day_dly").innerHTML = "Day (" + last_day_text + ")"; -->
+  <!-- document.getElementById("last_week_dly").innerHTML = "Rolling week (" + last_week_text + ")"; -->
+  <!-- document.getElementById("last_day_dly_flt").innerHTML = "Day (" + last_day_text + ")"; -->
+  <!-- document.getElementById("last_week_dly_flt").innerHTML = "Rolling week (" + last_week_text + ")"; -->
+  
+  document.getElementById("day_traffic").innerHTML = String(day_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("dif_day_prev_week").innerHTML = String(dif_day_prev_week) + '%';
+  document.getElementById("dif_day_2019").innerHTML = String(dif_day_2019) + '%';
+  document.getElementById("dif_day_prev_year").innerHTML = String(dif_day_prev_year) + '%';
+
+  document.getElementById("week_traffic").innerHTML = String(week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("avg_week_traffic").innerHTML = String(avg_week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
+  document.getElementById("dif_week_prev_week").innerHTML = String(dif_week_prev_week) + '%';
+  document.getElementById("dif_week_2019").innerHTML = String(dif_week_2019) + '%';
+  document.getElementById("dif_week_prev_year").innerHTML = String(dif_week_prev_year) + '%';
+  
+  document.getElementById("y2d_traffic").innerHTML = String(y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("avg_y2d_traffic").innerHTML = String(avg_y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
+  document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%';
+  document.getElementById("dif_y2d_prev_year").innerHTML = String(dif_y2d_prev_year) + '%';
+
+  }
+  
+</script>
+
+<div class="resp-container" style=" margin-top: 10px; ">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 
 </div>
-<div class="col-sm-3">
-<div class="card bg-light text-center border-0"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html">
-  <img class="card-img-top" src="/images/traff/traff_daily_db.png" alt="Daily traffic statistics">
-  <div class="card-body"><small><p class="card-text">See also our daily traffic dashboard to monitor the COVID-19 impact!</p></small></div></a>
-</div></div></div></div>
- -->
+</div>
+</div>
+<a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network data</a>
 
-<small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
+<!-- Stakeholders section -->
+<div class="container" style="margin: 0px; padding: 0px">
+
+#### Stakeholder views
+Only the top 40 in terms of flights are shown in the tables (latest day, rolling week and year to date).
+<br>
+
+<div class="flex-container" style=" margin-bottom: 5px;">
+
+<div class="Mycolumn" >
+<div class="col-12" style=" margin: 0px; " >
+<h5>Aircraft Operators</h5>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/530431ad-7650-4dc3-9a73-9e64133134b6/page/F4Uw" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+<br>
+<a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >See aircraft operator groupings</a>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
+<h5>Airports</h5>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div></div>
+</div>
 </div>
 
-[ert_cz]: /definition/en-route-charging-zone/ "En-route charging zone"
-
-
-[^1]: Note that in the Route Charges system, two en-route charging zones include more than one State (Belgium-Luxembourg and Serbia-Montenegro). Similarly, there are two charging zones for Spain (Spain Continental and Spain Canarias).
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn" >
+<div class="col-12" style=" margin: 0px; " >
+<h5>Air Navigation Service Providers (ANSPs)</h5>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
+<h5>Country Pairs</h5>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div></div>
+</div>
+<a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a>
