@@ -157,10 +157,10 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
 
-<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/draft-performance-review-report-prr-2021-consultation" target="_blank"><img class="card-img-top" src="/images/landing/prr2021_consultation.png" alt=""><div class="card-body"><h5 class="card-title">Last chance: PRR 2021</h5></a><small><p class="card-text">
-Submit your comments on the final draft by 15 April!</p></small></div></div></div>
+<!--<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/draft-performance-review-report-prr-2021-consultation" target="_blank"><img class="card-img-top" src="/images/landing/prr2021_consultation.png" alt=""><div class="card-body"><h5 class="card-title">Last chance: PRR 2021</h5></a><small><p class="card-text">
+Submit your comments on the final draft by 15 April!</p></small></div></div></div>-->
 
-<div class="carousel-item"><div class="card  border-0"><a href="/traffic/"><img class="card-img-top" src="/images/landing/traff_new.png" alt=""><div class="card-body"><h5 class="card-title">NEW: Traffic overview</h5></a><small><p class="card-text">
+<div class="carousel-item active"><div class="card  border-0"><a href="/traffic/"><img class="card-img-top" src="/images/landing/traff_new.png" alt=""><div class="card-body"><h5 class="card-title">NEW: Traffic overview</h5></a><small><p class="card-text">
 Check out our daily updated traffic overview, including a ranking of the top 40 airports and airlines in Europe.</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h6 class="card-title">Comprehensive COVID-19 assessments</h6></a><small><p class="card-text">
