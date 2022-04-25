@@ -1,0 +1,197 @@
+---
+layout: default
+title: ATM Cost-Effectiveness (ACE) benchmarking
+excerpt: ACE Report highlights.
+keywords: performance, air transport, europe, cost efficiency, benchmarking
+---
+
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60.0%;
+}
+
+
+[ACEdb]: https://www.eurocontrol.int/ACE/ACE-Home.html "ACE Dashboard"
+[ACE2019]: https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf "ACE 2019"
+[ACEhb]: https://ace-methodology.netlify.app/ "ACE Handbook (electronic version)"
+
+<style type="text/css">
+.img-responsive {
+    margin: 0 auto;
+    max-width: 75%
+}
+
+.scorecard-box {
+     <!-- margin-left: 30px;  -->
+     <!-- margin-right: 30px;  -->
+     padding: 0px;
+     text-align: center;
+     border: solid 1px #D9D9D9;
+     border-radius: 4px
+
+}
+
+}
+
+</style>
+
+
+The ACE benchmarking project analyses the cost-effectiveness and productivity of 38 European Air Navigation Service Providers (ANSPs) in Europe. It examines both individual ANSPs and the Pan-European ATM/CNS system as a whole.
+
+Given the unprecedented drop in traffic, all the ACE indicators are massively impacted in 2020. This report therefore puts a special emphasis on the observed changes between 2019 and 2020 and the mitigation measures implemented by ANSPs. It also introduces new financial indicators in order to monitor the impact of the COVID-19 pandemic on ANSPs financial situation.
+
+#### ACE 2019 Highlights
+
+<div class="container">
+<div class="row align-items-start">
+<div class="col-sm-6">
+* ANSPs **gate-to-gate revenues fell by -53%** as a result of an unprecedented traffic decrease in 2020 (-57%). 
+
+* Cost containment measures were implemented and **ATM/CNS provision costs fell by -€441M**, mainly through reduced staff costs (-€314M) and lower cost of capital (-€92M). 
+</div>
+<div class="col-sm-6">
+* Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term **borrowings rose by +€2.5 billion (+134%)**.
+
+* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -26% lower than in 2019.
+</div>
+</div></div>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-6" >
+
+<div class="d-flex justify-content-center">
+<div class="col-5 scorecard-box">
+<p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >€867</p>
+<p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(+xxx% vs 2018)</p>
+ATM/CNS provision costs per composite flight-hour
+</div>
+
+<div class="col-5 scorecard-box" >
+<p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >€590</p>
+<p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(+xxx% vs 2018)</p>
+Support costs per composite flight-hour
+</div>
+</div>
+
+<div class="d-flex justify-content-center">
+<div class="col-5 scorecard-box" >
+<p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >€119</p>
+<p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(+xxx% vs 2018)</p>
+ATCO employment costs per ATCO-hour
+</div>
+
+<div class="col-5 scorecard-box" >
+<p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >0.47</p>
+<p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(+xxx% vs 2018)</p>
+ATCO-hour productivity
+</div>
+</div>
+
+</div>
+
+<div class="col-sm-6">
+Picture
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="container">
+<div class="row align-items-start">
+<div class="col-sm-6">
+#### ACE 2019 Report
+
+<div style="background-color: #F2F2F2; "  >
+<a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=13" target="_blank">**Executive summary**</a>
+
+</div>
+
+<div style="background-color: #F2F2F2; "  >
+<a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank"><i class="fas fa-download"></i></a>
+<a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank">**Main report**</a>
+</div>
+
+<details open>
+  <summary>**Chapters**</summary>
+  1. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=21" target="_blank">Introduction</a>
+  2. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=31" target="_blank">Pan-European cost-effectiveness performance in 2019</a>
+  3. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=67" target="_blank">Preliminary impacts of COVID-19 on the ANS industry</a>
+</details>
+
+</div>
+<div class="col-sm-6">
+#### ACE Handbook
+
+<div style="background-color: #F2F2F2; "  >
+<a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a>
+[**ACE Handbook**][ACEhb]
+</div>
+Learn about the scope of the ACE analysis, the processes involved in the production of the report, the factors affecting performance and  the indicators used in the ACE analysis.
+
+#### ANSPs individual factsheets
+<div style="background-color: #F2F2F2; "  >
+<!-- <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank"><i class="fas fa-download"></i></a> -->
+<a href="" target="_blank">**Factsheets (previously Part II of the ACE Report)**</a>
+</div>
+Access information on ANSP institutional arrangements, corporate governance structure, historical developments of financial cost-effectiveness, comparison with peers and capital expenditures.
+
+
+</div>
+</div>
+<br>
+
+### ACE interactive dashboard and other ACE Related documents
+
+<div class="card-deck">
+
+<div class="card"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html">
+  <img class="card-img-top" src="/images/prc/ace_dashboard.jpg" alt="ACE interactive dashboard">
+  <div class="card-body"><h5 class="card-title">ACE interactive dashboard</h5></a><p class="card-text"></p>
+  </div>
+</div>
+
+<div class="card"><a href="/publications/prc/ace">
+  <img class="card-img-top" src="/images/prc/ace2018.png" alt="Previous ACE reports">
+  <div class="card-body"><h5 class="card-title">Previous ACE reports</h5></a><p class="card-text"></p>
+  </div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/ACE/HighLevelSummary-Reports/HighLevelSummaryReport2020.pdf">
+  <img class="card-img-top" src="/images/prc/ace-prelim-results-2020.png" alt="Preliminary results">
+  <div class="card-body"><h5 class="card-title">Preliminary results (Dec. 2021 edition)</h5></a><p class="card-text"></p>
+  </div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/SEID3.0.pdf">
+  <img class="card-img-top" src="/images/prc/ace_seid_3.0.jpg" alt="Specification for economic information disclosure">
+  <div class="card-body"><h5 class="card-title">Specification for economic information disclosure</h5></a><p class="card-text"></p>
+  </div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/SEID3.0.pdf">
+  <img class="card-img-top" src="/images/prc/ace_key_ops_data_2020.png" alt="2020 Key operational data">
+  <div class="card-body"><h5 class="card-title">2020 Key operational data</h5></a><p class="card-text"></p>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+

@@ -584,7 +584,7 @@ ignoreFiles = [
     weight = 10
  [[menu.economics]]
     name = "ATM Cost Efficiency Benchmark (ACE)"
-    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
+    url = "/economics/ACE-overview"
     identifier= "ace"
     weight = 20
 [[menu.economics]]
