@@ -23,9 +23,9 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
 }
 
 
-[ACEdb]: https://www.eurocontrol.int/ACE/ACE-Home.html "ACE Dashboard"
-[ACE2019]: https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf "ACE 2019"
-[ACEhb]: https://ace-methodology.netlify.app/ "ACE Handbook (electronic version)"
+<!-- [ACEdb]: https://www.eurocontrol.int/ACE/ACE-Home.html "ACE Dashboard" -->
+<!-- [ACE2019]: https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf "ACE 2019" -->
+<!-- [ACEhb]: https://ace-methodology.netlify.app/ "ACE Handbook (electronic version)" -->
 
 <style type="text/css">
 .img-responsive {
@@ -65,28 +65,50 @@ ACE_landing_page <- ACE_landing_page%>%
 
 year_report <- max(ACE_landing_page$year_data)
 
-costs_per_cph <- ACE_landing_page %>% filter(year_data == year_report) %>% select(costs_per_cph) %>% unlist %>% unname %>% round
-costs_per_cph_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>% select(costs_per_cph_change_perc) %>% unlist %>% unname 
-costs_per_cph_change_perc <- paste0(if_else(costs_per_cph_change_perc >0, "+", ""), round(costs_per_cph_change_perc*100,1),"%")
+costs_per_cph <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(costs_per_cph) %>% unlist %>% unname %>% round
+costs_per_cph_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(costs_per_cph_change_perc) %>% unlist %>% unname 
+costs_per_cph_change_perc <- paste0(if_else(costs_per_cph_change_perc >0, "+", ""), round(costs_per_cph_change_perc*100,if_else(costs_per_cph_change_perc >=1, 0, 1)),"%")
 
-ATCO_prod <- ACE_landing_page %>% filter(year_data == year_report) %>% select(ATCO_prod) %>% unlist %>% unname %>% round(.,2)
-ATCO_prod_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>% select(ATCO_prod_change_perc) %>% unlist %>% unname
-ATCO_prod_change_perc <- paste0(if_else(ATCO_prod_change_perc >0, "+", ""), round(ATCO_prod_change_perc*100,1),"%")
+ATCO_prod <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(ATCO_prod) %>% unlist %>% unname %>% round(.,2)
+ATCO_prod_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(ATCO_prod_change_perc) %>% unlist %>% unname
+ATCO_prod_change_perc <- paste0(if_else(ATCO_prod_change_perc >0, "+", ""), round(ATCO_prod_change_perc*100,if_else(ATCO_prod_change_perc >=1, 0, 1)),"%")
 
-ATCO_costs_per_h <- ACE_landing_page %>% filter(year_data == year_report) %>% select(ATCO_costs_per_h) %>% unlist %>% unname %>% round
-ATCO_costs_per_h_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>% select(ATCO_costs_per_h_change_perc) %>% unlist %>% unname
-ATCO_costs_per_h_change_perc <- paste0(if_else(ATCO_costs_per_h_change_perc >0, "+", ""), round(ATCO_costs_per_h_change_perc*100,1),"%")
+ATCO_costs_per_h <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(ATCO_costs_per_h) %>% unlist %>% unname %>% round
+ATCO_costs_per_h_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(ATCO_costs_per_h_change_perc) %>% unlist %>% unname
+ATCO_costs_per_h_change_perc <- paste0(if_else(ATCO_costs_per_h_change_perc >0, "+", ""), round(ATCO_costs_per_h_change_perc*100,if_else(ATCO_costs_per_h_change_perc >=1, 0, 1)),"%")
 
-support_costs_per_cph <- ACE_landing_page %>% filter(year_data == year_report) %>% select(support_costs_per_cph) %>% unlist %>% unname %>% round
-support_costs_per_cph_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>% select(support_costs_per_cph_change_perc) %>% unlist %>% unname 
-support_costs_per_cph_change_perc <- paste0(if_else(support_costs_per_cph_change_perc >0, "+", ""), round(support_costs_per_cph_change_perc*100,1),"%")
+support_costs_per_cph <- ACE_landing_page %>% filter(year_data == year_report) %>%
+  select(support_costs_per_cph) %>% unlist %>% unname %>% round
+support_costs_per_cph_change_perc <- ACE_landing_page %>%
+  filter(year_data == year_report) %>% select(support_costs_per_cph_change_perc) %>%
+  unlist %>% unname 
+support_costs_per_cph_change_perc <- paste0(if_else(support_costs_per_cph_change_perc >0, "+", ""), round(support_costs_per_cph_change_perc*100,if_else(support_costs_per_cph_change_perc >=1, 0, 1)),"%")
 
 ```
 
+<div class="container">
+<div class="row align-items-start">
+<div class="col-sm-9">
 The ACE benchmarking project analyses the cost-effectiveness and productivity of 38 European Air Navigation Service Providers (ANSPs) in Europe. It examines both individual ANSPs and the Pan-European ATM/CNS system as a whole.
 
 Given the unprecedented drop in traffic, all the ACE indicators are massively impacted in 2020. This report therefore puts a special emphasis on the observed changes between 2019 and 2020 and the mitigation measures implemented by ANSPs. It also introduces new financial indicators in order to monitor the impact of the COVID-19 pandemic on ANSPs financial situation.
 
+The ACE interactive dashboard allows you to access the latest available data and analysis provided in the ACE Benchmarking Reports prepared by the EUROCONTROL Performance Review Unit.
+</div>
+
+<div class="col-sm-3">
+<div class="card border-0"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html">
+  <img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord">
+  <div class="card-body"><h6 class="card-title">ACE interactive dashbaord</h6></a><p class="card-text"></p>
+</div></div></div>
+
+</div></div>
 #### ACE 2019 Highlights
 
 <div class="container">
@@ -118,8 +140,7 @@ ATM/CNS provision costs per composite flight-hour
 <p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >€`r support_costs_per_cph`</p>
 <p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(`r support_costs_per_cph_change_perc` vs `r (year_report-1)`)</p>
 Support costs per composite flight-hour
-</div>
-</div>
+</div></div>
 
 <div class="d-flex justify-content-center">
 <div class="col-5 scorecard-box" >
@@ -132,8 +153,7 @@ ATCO employment costs per ATCO-hour
 <p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >`r ATCO_prod`</p>
 <p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(`r ATCO_prod_change_perc` vs `r (year_report-1)`)</p>
 ATCO-hour productivity
-</div>
-</div>
+</div></div>
 
 </div>
 
@@ -143,8 +163,7 @@ source(here::here ("R","plot_ace_lp.R"), local = knitr::knit_global(), print.eva
 plot_ACE
 ```
 </div>
-</div>
-</div>
+</div></div>
 
 <br>
 
@@ -153,6 +172,10 @@ plot_ACE
 <div class="col-sm-6">
 #### ACE 2019 Report
 
+<div class="row align-items-start">
+<div class="col-sm-2" style="backgroung-color:red">![](/images/eco/ace2019.png)</div>
+
+<div class="col-sm-10" style="backgroung-color: blue">
 <div style="background-color: #F2F2F2; "  >
 <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=13" target="_blank">**Executive summary**</a>
 
@@ -163,20 +186,42 @@ plot_ACE
 <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank">**Main report**</a>
 </div>
 
-<details open>
-  <summary>**Chapters**</summary>
   1. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=21" target="_blank">Introduction</a>
+
+<details open>
+<summary>**PART I:** Pan-European system cost-effectiveness performance in 2019 and initial examination of COVID-19 impacts in 2019</summary>
   2. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=31" target="_blank">Pan-European cost-effectiveness performance in 2019</a>
   3. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=67" target="_blank">Preliminary impacts of COVID-19 on the ANS industry</a>
 </details>
 
+<details open>
+  <summary>**PART II:** Cost-effectiveness performance focus at ANSP level</summary>
+  4. <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=81" target="_blank">Focus on ANSPs individual cost-effectiveness performance</a>
+</details>
+<details>
+<summary>**Annexes**</summary>
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=163" target="_blank">ANNEX 1 – Status of ANSPs 2019 Annual Reports</a>
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=165" target="_blank">ANNEX 2 – Performance indicators used for the comparison of ANSPs</a>
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=169" target="_blank">ANNEX 3 – ACE cost-effectiveness indicator and SES cost-efficiency</a>  
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=171" target="_blank">ANNEX 4 – Performance ratios</a> 
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=173" target="_blank">ANNEX 5 – Factors affecting performance</a>  
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=175" target="_blank">ANNEX 6 – Excgange rates, inflation rates and purchasing power parities (PPPS)</a>  
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=179" target="_blank">ANNEX 7 – Key data</a>  
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=187" target="_blank">ANNEX 8 – Performance indicators at FAB level</a>  
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=232" target="_blank">ANNEX 9 – Individual ANSP fact-sheets</a>
+  * <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=229" target="_blank">Glossary</a>
+</details>
+
 </div>
+</div>
+</div>
+
 <div class="col-sm-6">
 #### ACE Handbook
 
 <div style="background-color: #F2F2F2; "  >
 <a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a>
-[**ACE Handbook**][ACEhb]
+<a href="https://ace-methodology.netlify.app/" data-toggle="tooltip" title="Download electronic version" target="_blank">**ACE Handbook**</a>
 </div>
 Learn about the scope of the ACE analysis, the processes involved in the production of the report, the factors affecting performance and  the indicators used in the ACE analysis.
 
@@ -192,15 +237,15 @@ Access information on ANSP institutional arrangements, corporate governance stru
 </div>
 <br>
 
-#### ACE interactive dashboard and other ACE Related documents
+#### Other ACE related documents
 
 <div class="card-deck">
 
-<div class="card"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html">
-  <img class="card-img-top" src="/images/prc/ace_dashboard.jpg" alt="ACE interactive dashboard">
-  <div class="card-body"><h5 class="card-title">ACE interactive dashboard</h5></a><p class="card-text"></p>
-  </div>
-</div>
+<!-- <div class="card"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html"> -->
+<!--   <img class="card-img-top" src="/images/prc/ace_dashboard.jpg" alt="ACE interactive dashboard"> -->
+<!--   <div class="card-body"><h5 class="card-title">ACE interactive dashboard</h5></a><p class="card-text"></p> -->
+<!--   </div> -->
+<!-- </div> -->
 
 <div class="card"><a href="/publications/prc/ace">
   <img class="card-img-top" src="/images/prc/ace2018.png" alt="Previous ACE reports">
