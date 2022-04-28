@@ -43,7 +43,7 @@ dc %>%
   ) %>% 
     cols_label(
     id = "ID",
-    cd = "code",
+    cd = "Code",
     description = "Description"
   ) %>% 
     tab_style(
@@ -55,6 +55,7 @@ dc %>%
 
 ## See Also
 
+* [IATA Delay Code 89](/definition/iata-code-89/)
 * IATA Delay codes table ([PDF](/library/iata-delay-codes.pdf))
 * Appendix of [All-causes delay and cancellations to Air Transport Europe Quaterly Reports](https://www.eurocontrol.int/library?keywords=All-causes+delay+and+cancellations+to+Air+Transport+Europe&sort_by=search_api_relevance&f%5B0%5D=activity%3A777&f%5B1%5D=product%3A805)
 
