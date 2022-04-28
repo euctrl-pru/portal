@@ -30,8 +30,7 @@ dc %>%
   group_by(group) %>% 
   gt(rowname_col = "ii") %>% 
    tab_header(
-    title = "IATA delay codes",
-    subtitle = "from IATA 'Airport Handling Manual' (730 & 731)"
+    title = "IATA delay codes"
   ) %>% 
   fmt_missing(
     columns = 2,
