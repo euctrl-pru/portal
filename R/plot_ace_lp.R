@@ -21,7 +21,7 @@ library(plotly)
 
 plot_ACE <- ACE_landing_page %>%
   plot_ly(
-    width = 500, height = 350,
+    width = 500, height = 330,
     x = ~ year_data,
     y = ~ costs_per_cph,
     yaxis = "y1",

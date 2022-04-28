@@ -148,6 +148,7 @@ title: ANSPs Financial Dashboard
             <p id="ANSP_Full_Name" style="font-size: 16px; font-style: italic;"></p>
             <p style="font-size: 14px; font-weight: bold; margin: 0px;">Organisational & Corporate Arrangements:</p>
             <p id="Ownership" style="font-size: 14px; margin: 0px; font-weight: normal"></p>
+            <p id="notes" style="font-size: 14px; padding-top: 15px; font-weight: normal; font-style: italic;"></p>
           </div>
         </div>
       </div>
@@ -184,7 +185,7 @@ title: ANSPs Financial Dashboard
       </div>
       <div class="mb-2 ml-2" style="width:180px" >
         <p  style="margin-bottom: 0px; margin-left: -15px; font-size: 14px; text-align: center;">
-         <span id="MyTitleShareRevenue_div">Share of Pan-European System</span><span><a href="#" data-toggle="tooltip" data-placement="right" title="Based on 2017-2019 avg.">*</a></span>
+         <span id="MyTitleShareRevenue_div">Share of Pan-European System</span><span><a href="#" data-toggle="tooltip" data-placement="right" title="Based on 2017-2020 avg.">*</a></span>
         </p>
         <div id="MyPieShareRevenue_div" style="margin-bottom: 0px;"></div>
         <!-- <p style="margin: 0px; font-size: 14px;"> Share of total revenue</p> -->
@@ -685,12 +686,9 @@ title: ANSPs Financial Dashboard
  function UpdateMyANSPServices() {
     MyViewANSPServices = new google.visualization.DataView(Data);
     MyViewANSPServices.setRows(
-      Data.getFilteredRows([{ column: 0, value: SelectedYear }])
-    );
-    MyViewANSPServices.setRows(
-      Data.getFilteredRows([{ column: 1, value: SelectedEntity }])
-    );
-    MyViewANSPServices.setColumns([52, 53, 55, 56, 57, 51]);
+      Data.getFilteredRows([{ column: 0, value: SelectedYear }, { column: 1, value: SelectedEntity }])
+     );
+    MyViewANSPServices.setColumns([52, 53, 55, 56, 57, 51, 47]);
  }
 
   //---------------------------Share of revenue piechart ---------------------------------------------
@@ -2292,6 +2290,7 @@ title: ANSPs Financial Dashboard
     document.getElementById("ANSP_Full_Name").innerHTML = ANSP_Full_Name.getValue(0, 0);
     document.getElementById("ANSP_logo").innerHTML = '<img src="ANSP_logos/' + SelectedEntity + '.png" style="height:40px; margin-bottom:5px">';
     document.getElementById("Ownership").innerHTML = MyViewANSPServices.getValue(0, 5);
+    document.getElementById("notes").innerHTML = MyViewANSPServices.getValue(0, 6);
     document.getElementById("MyTitleShareRevenue_div").innerHTML = "Revenue Share of Pan-European System (" + (MyTableShareTotalRevenue.getValue(0, 1) < 0.001 ? Math.round(MyTableShareTotalRevenue.getValue(0, 1) * 10000) / 100 : Math.round(MyTableShareTotalRevenue.getValue(0, 1) * 1000) / 10) + "%)";
     // document.getElementById("Ownership").innerHTML = MyViewANSPServices.getValue(0, 5);
 

@@ -29,9 +29,9 @@ keywords: performance, air transport, flights, europe, cost efficiency
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
-The economics dashboards page provides an overview of the economic aspects of pan-European ANS performance through four distinct sets of dashboards:
+The economics dashboards page provides an overview of the economic aspects of pan-European ANS performance through four different sections:
 
-* The [ACE dashboard][ectl_acedb] comprising information and analysis on cost-effectiveness performance of pan-European air navigation service providers (ANSPs) based on the methodology and framework developed in the ATM Cost-effectiveness Benchmarking reports.
+* The [ATM Cost-Effectiveness (ACE)](/economics/ACE-overview/) section presents the highlights of the latest ACE Benchmarking report and provides access to the ACE interactive dashboard and ACE related documents. The ACE benchmarking project analyses the cost-effectiveness and productivity of the Pan-European ATM/CNS system as a whole and of 38 indivudual European air navigation service providers (ANSPs).
 * The [Unit rates and costs dashboard][ectl_urdb] comprising actual and historical information on the en-route unit rates and en-route ANS costs in the EUROCONTROL route charges system as well as information on terminal unit rates for the States, which have established terminal charging zones in line with [Regulation (EU) 2019/317][reg_317].
 * The [Total en-route service unit dashboard ][ectl_sudb] presents different views of the monthly and annual evolution of total en-route service units (TSUs) and their components for EUROCONTROL States, which have joined the [EUROCONTROL route charges system][ectl_crco].
 * Finally, the [ANSPs Financial Dashboard](finance/) presents financial information and indicators for European ANSPs, and contains interactive features that allow for comparisons over time. All information presented is publicly available, collected from ANSPs’ most recent financial statements.
