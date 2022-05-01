@@ -120,84 +120,10 @@ library(plotly)
 
   </style>
 
-This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal [service units](/acronym/su/) from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.
-
-<!-- Network Traffic section -->
-<div class="container" style="margin: 0px; padding: 0px">
-
-#### EUROCONTROL area (Network view)
-<!-- Daily traffic graphs and scorecards -->
-<div class="flex-container" style=" margin-bottom: 5px;">
-<div class="Mycolumn" >
-<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
-  <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="day_traffic" class="Scorecard"></p>
-  <p class="Scorecard_subt">flights</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_day_prev_week" class="Scorecard2" ></p>
-  <p class="Scorecard_subt">vs prev. week</p>
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="dif_day_2019" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_day_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
-</div>
-</div>
-<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
-  <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Week</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="week_traffic" class="Scorecard"></p>
-  <p id="avg_week_traffic" class="Scorecard_subt"></p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_week_prev_week" class="Scorecard2" ></p>
-  <p class="Scorecard_subt">vs prev. week</p>
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="dif_week_2019" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_week_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
-</div>
-</div>
-<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
-  <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Year to date</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="y2d_traffic" class="Scorecard"></p>
-  <p id="avg_y2d_traffic" class="Scorecard_subt"></p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-</div>
-<div class="col-3" ; style="margin: 0px; ">
-  <p id="dif_y2d_2019" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
-<div class="col-3" ; style="margin: 0px;  ">
-  <p id="dif_y2d_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
-</div>
-</div>
-</div>
-<div class="Mycolumn2">
-<div class="col-12" style=" margin: 0px; " >
-
 <!-- script for traffic figures -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script type="text/javascript">
+<script async type="text/javascript">
   var Data
   var my_view_traffic
   var last_day
@@ -242,11 +168,6 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 //---------------------------Update traffic---------------------------------------------
   function UpdateTraffic() {
   my_view_traffic = new google.visualization.DataView(Data);
-
-  //       for (var y = 1; y < my_view_traffic.getNumberOfColumns(); y++) {
-  //        // my_view_traffic.getValue(x, y) 
-  //        last_day = my_view_traffic.getValue(0, y)
-  //      }
   last_day = my_view_traffic.getValue(0, 38); 
   my_view_traffic.setRows(
   Data.getFilteredRows([{ column: 7, value: last_day }])
@@ -322,8 +243,85 @@ last_day_text = last_day.toDateString();
   
 </script>
 
-<div class="resp-container" style=" margin-top: 10px; ">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal [service units](/acronym/su/) from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.
+
+<!-- Network Traffic section -->
+<div class="container" style="margin: 0px; padding: 0px">
+
+#### EUROCONTROL area (Network view)
+<!-- Daily traffic graphs and scorecards -->
+<div class="flex-container" style=" margin-bottom: 5px;">
+<div class="Mycolumn" >
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="day_traffic" class="Scorecard"></p>
+  <p class="Scorecard_subt">flights</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_day_prev_week" class="Scorecard2" ></p>
+  <p class="Scorecard_subt">vs prev. week</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_day_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_day_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2021</p>
+</div>
+</div>
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Week</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="week_traffic" class="Scorecard"></p>
+  <p id="avg_week_traffic" class="Scorecard_subt"></p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_week_prev_week" class="Scorecard2" ></p>
+  <p class="Scorecard_subt">vs prev. week</p>
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_week_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_week_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2021</p>
+</div>
+</div>
+<div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
+<div class="col-12" ; style="margin: 0px;  ">
+  <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Year to date</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="y2d_traffic" class="Scorecard"></p>
+  <p id="avg_y2d_traffic" class="Scorecard_subt"></p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+</div>
+<div class="col-3" ; style="margin: 0px; ">
+  <p id="dif_y2d_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
+</div>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p id="dif_y2d_prev_year" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2021</p>
+</div>
+</div>
+</div>
+<div class="Mycolumn2">
+<div class="col-12" style=" margin: 0px; " >
+
+<div class="resp-container" style=" margin-top: 10px; margin-left: -10px">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/traffic_lp_plot.html" frameborder="0" style="border:0" onload="resizeIframe(this)" allowfullscreen>
+</iframe>
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 </div>
 
 </div>
@@ -343,8 +341,8 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <h5>Aircraft Operators</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="aos" class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
 </div>
 </div>
 <br>
@@ -354,7 +352,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="col-12" style=" margin: 0px; " >
 <h5>Airports</h5>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
 </div></div>
 </div>
 </div>
@@ -364,7 +362,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="col-12" style=" margin: 0px; " >
 <h5>Air Navigation Service Providers (ANSPs)</h5>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
 </div>
 </div>
 </div>
@@ -372,7 +370,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="col-12" style=" margin: 0px; " >
 <h5>Country Pairs</h5>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
 </div>
 </div>
 </div></div>

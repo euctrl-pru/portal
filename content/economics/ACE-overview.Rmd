@@ -10,6 +10,7 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
   }
 </script>
+
 <style type="text/css">
 .img-responsive {
     margin: 0 auto;
@@ -23,12 +24,6 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
 }
 
 
-<style type="text/css">
-.img-responsive {
-    margin: 0 auto;
-    max-width: 75%
-}
-
 .scorecard-box {
      <!-- margin-left: 30px;  -->
      <!-- margin-right: 30px;  -->
@@ -36,8 +31,6 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
      text-align: center;
      border: solid 1px #D9D9D9;
      border-radius: 4px
-
-}
 
 }
 
