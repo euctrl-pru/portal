@@ -14,6 +14,12 @@ library(googlesheets4)
 library(lubridate)
 library(plotly)
 ```
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+
 
 <style type="text/css">
   .img-responsive {
@@ -25,7 +31,6 @@ library(plotly)
       position: relative;
       overflow: hidden;
       padding-top: 60.0%;
-      
   }
 
   .resp-iframe {
@@ -33,14 +38,26 @@ library(plotly)
       top: 0;
       left: 0;
       width: 100%;
-      height: 150%;
+      height: 100%;
       border: 0;
+   }  
+  
+  .col-12 {
+    margin: 0px;
+    padding: 0px
   }
-
 
 @media screen and (min-width:1000px) {
   .flex-container {
     display: flex;
+  }
+  
+  #aos, #ansps {
+  margin-right:10px
+  }
+  
+  #traffic-plot{
+  margin-left:40px
   }
   
   .Mycolumn {
@@ -248,7 +265,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn" >
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
+<div class="col-12" ; style="margin-left: 20px;  ">
   <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
 </div>
 <div class="col-3" ; style="margin: 0px; ">
@@ -267,9 +284,9 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   <p id="dif_day_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2021</p>
 </div>
-</div>
+</div><!-- closes row -->
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
+<div class="col-12" ; style="margin-left: 20px; ">
   <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Week</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
@@ -288,9 +305,9 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   <p id="dif_week_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2021</p>
 </div>
-</div>
+</div><!-- closes row -->
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
+<div class="col-12" ; style="margin-left: 20px;">
   <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Year to date</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
@@ -307,20 +324,20 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   <p id="dif_y2d_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2021</p>
 </div>
-</div>
-</div>
+</div><!-- closes row -->
+</div><!-- closes Mycolumn -->
 <div class="Mycolumn2">
-<div class="col-12" style=" margin: 0px; " >
+<div class="col-12" >
 
-<div class="resp-container" style=" margin-top: 10px; margin-left: -10px">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/traffic_lp_plot.html" frameborder="0" style="border:0" onload="resizeIframe(this)" allowfullscreen>
+<div class="resp-container" style=" margin-top: 0px; margin-left: 5px;  padding-top: 70.0%; overflow:hidden">
+<iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp.html" frameborder="0" style="border:0; width:550px; height: 400px; overflow:hidden; margin-top: 10px;" >
 </iframe>
 <!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 </div>
 
-</div>
-</div>
-</div>
+</div><!-- closes col-12 -->
+</div><!-- closes Mycolumn2 -->
+</div><!-- closes flex-container -->
 <a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network data</a>
 
 <!-- Stakeholders section -->
@@ -336,7 +353,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="col-12" style=" margin: 0px; " >
 <h5>Aircraft Operators</h5>
 <div id="aos" class="resp-container">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/ao-ranking-table.html" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ao-ranking-table.html" frameborder="0" style="border:0, padding-left: 0px" allowfullscreen></iframe>
 <!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div>
 </div>
@@ -346,8 +363,8 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
 <h5>Airports</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/apt-ranking-table.html" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe><!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
+<div id="apts" class="resp-container">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-ranking-table.html" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe><!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div></div>
 </div>
 </div>
@@ -356,7 +373,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <h5>Air Navigation Service Providers (ANSPs)</h5>
-<div class="resp-container" style="align-text: center">Comming soon!
+<div id="ansps" class="resp-container" style="align-text: center">Comming soon!
 <!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div>
 </div>
@@ -364,8 +381,8 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
 <h5>Country Pairs</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/ctrypair-ranking-table.html" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe><!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
+<div id="cps" class="resp-container">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ctrypair-ranking-table.html" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe><!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div>
 </div>
 </div></div>
