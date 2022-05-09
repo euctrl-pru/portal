@@ -21,7 +21,8 @@ library(plotly)
 
 plot_ACE <- ACE_landing_page %>%
   plot_ly(
-    width = 500, height = 330,
+    # width = 500, 
+    height = 330,
     x = ~ year_data,
     y = ~ costs_per_cph,
     yaxis = "y1",
@@ -71,9 +72,11 @@ plot_ACE <- ACE_landing_page %>%
                           "<extra></extra>",
                           sep = "")
   )%>%
-  layout(autosize = F,
+  layout(
+    autosize = T,
     xaxis = list(
       title = "",
+      fixedrange = TRUE,
       # automargin = T,
       # tickvals = 2014:2019,
       autotick = F,
@@ -84,6 +87,7 @@ plot_ACE <- ACE_landing_page %>%
     yaxis = list(
       title = paste("\U20AC","per composite flight-hour"),
       titlefont   = list(size = 13),
+      fixedrange = TRUE,
       # tickformat=",.0%", ticks = 'outside',
       zeroline = T, showline = F, showgrid = T
     ),
@@ -93,8 +97,8 @@ plot_ACE <- ACE_landing_page %>%
       title = paste ("Index of costs and traffic", "<br>","(", min(ACE_landing_page$year_data), " = 100)",sep = ""),
       titlefont = list(size = 13),
       range = list(40, 10+round(max(ACE_landing_page$index_costs, ACE_landing_page$index_cph)/10)*10),
-      showgrid = F,
-      automargin = T
+      automargin = T,
+      showgrid = F
     ),
     bargap = 0.4,
     legend = list(orientation = 'h', xanchor = "left", x = -0.05, y = -0.05),

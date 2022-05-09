@@ -5,25 +5,8 @@ excerpt: ACE Report highlights.
 keywords: performance, air transport, europe, cost efficiency, benchmarking
 ---
 
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-  }
-</script>
 
 <style type="text/css">
-.img-responsive {
-    margin: 0 auto;
-    max-width: 75%
-}
-
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 60.0%;
-}
-
-
 .scorecard-box {
      <!-- margin-left: 30px;  -->
      <!-- margin-right: 30px;  -->
@@ -33,6 +16,7 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
      border-radius: 4px
 
 }
+
 
 </style>
 
@@ -86,14 +70,12 @@ support_costs_per_cph_change_perc <- paste0(if_else(support_costs_per_cph_change
 <div class="col-sm-9">
 The ACE benchmarking project analyses the cost-effectiveness and productivity of 38 European Air Navigation Service Providers (ANSPs) in Europe. It examines both individual ANSPs and the Pan-European ATM/CNS system as a whole.
 
-Given the unprecedented drop in traffic, all the ACE indicators are massively impacted in 2020. This report therefore puts a special emphasis on the observed changes between 2019 and 2020 and the mitigation measures implemented by ANSPs. It also introduces new financial indicators in order to monitor the impact of the COVID-19 pandemic on ANSPs financial situation.
-
 The ACE interactive dashboard allows you to access the latest available data and analysis provided in the ACE Benchmarking Reports prepared by the EUROCONTROL Performance Review Unit.
 </div>
 
 <div class="col-sm-3">
 <div class="card border-0"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord">
+  <img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:60%; max-width:60%; display:block; margin: auto">
   <div class="card-body"><h6 class="card-title">ACE interactive dashbaord</h6></a><p class="card-text"></p>
 </div></div></div>
 
@@ -103,20 +85,20 @@ The ACE interactive dashboard allows you to access the latest available data and
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-6">
-* ANSPs **gate-to-gate revenues fell by -53%** as a result of an unprecedented traffic decrease in 2020 (-57%). 
+* Financial **cost-effectiveness indicator (€396) was at its lowest level** since the start of ACE benchmarking analysis in 2001.
 
-* Cost containment measures were implemented and **ATM/CNS provision costs fell by -€441M**, mainly through reduced staff costs (-€314M) and lower cost of capital (-€92M). 
+* **Traffic volumes grew by +1.7%** in 2019, a significantly lower growth than that recorded in the previous years.
 </div>
 <div class="col-sm-6">
-* Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term **borrowings rose by +€2.5 billion (+134%)**.
+* The **increase in support staff** at a Pan-European system level of **+2.3% (or +882 FTEs)** was the largest observed over the past ten years.
 
-* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -26% lower than in 2019.
+* ANSPs held **cash reserves of some €2.9B** at the end of 2019, covering only slightly more than half of the estimated reduction in route and terminal charges in 2020.
 </div>
 </div></div>
 
 <div class="container">
 <div class="row">
-<div class="col-sm-6" >
+<div class="col-md-6" >
 
 <div class="d-flex justify-content-center">
 <div class="col-5 scorecard-box">
@@ -146,8 +128,8 @@ ATCO-hour productivity
 
 </div>
 
-<div class="col-sm-6">
-```{r,  echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
+<div class="col-md-6" >
+```{r,  echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE, out.width='100%'}
 source(here::here ("R","plot_ace_lp.R"), local = knitr::knit_global(), print.eval = TRUE)
 plot_ACE
 ```
@@ -158,7 +140,7 @@ plot_ACE
 
 <div class="container">
 <div class="row align-items-start">
-<div class="col-sm-6">
+<div class="col-md-6">
 #### ACE 2019 Report
 
 <div class="row align-items-start">
@@ -207,7 +189,7 @@ plot_ACE
 </div>
 </div>
 
-<div class="col-sm-6">
+<div class="col-md-6">
 #### ACE Handbook
 
 <div style="background-color: #F2F2F2; "  >
@@ -267,6 +249,4 @@ Access information on ANSP institutional arrangements, corporate governance stru
 
 </div>
 
-
- 
 

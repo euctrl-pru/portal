@@ -16,24 +16,7 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
 <script src="/rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
 
 
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-  }
-</script>
 <style type="text/css">
-.img-responsive {
-    margin: 0 auto;
-    max-width: 75%
-}
-
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 60.0%;
-}
-
-
 .scorecard-box {
      <!-- margin-left: 30px;  -->
      <!-- margin-right: 30px;  -->
@@ -44,19 +27,19 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
 
 }
 
+
 </style>
 <!-- retrieve latest ACE data -->
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
 <p>The ACE benchmarking project analyses the cost-effectiveness and productivity of 38 European Air Navigation Service Providers (ANSPs) in Europe. It examines both individual ANSPs and the Pan-European ATM/CNS system as a whole.</p>
-<p>Given the unprecedented drop in traffic, all the ACE indicators are massively impacted in 2020. This report therefore puts a special emphasis on the observed changes between 2019 and 2020 and the mitigation measures implemented by ANSPs. It also introduces new financial indicators in order to monitor the impact of the COVID-19 pandemic on ANSPs financial situation.</p>
 <p>The ACE interactive dashboard allows you to access the latest available data and analysis provided in the ACE Benchmarking Reports prepared by the EUROCONTROL Performance Review Unit.</p>
 </div>
 <div class="col-sm-3">
 <div class="card border-0">
 <a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">
-<img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord">
+<img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:60%; max-width:60%; display:block; margin: auto">
 <div class="card-body">
 <h6 class="card-title">
 ACE interactive dashbaord
@@ -75,21 +58,21 @@ ACE interactive dashbaord
 <div class="row align-items-start">
 <div class="col-sm-6">
 <ul>
-<li><p>ANSPs <strong>gate-to-gate revenues fell by -53%</strong> as a result of an unprecedented traffic decrease in 2020 (-57%).</p></li>
-<li><p>Cost containment measures were implemented and <strong>ATM/CNS provision costs fell by -€441M</strong>, mainly through reduced staff costs (-€314M) and lower cost of capital (-€92M).</p></li>
+<li><p>Financial <strong>cost-effectiveness indicator (€396) was at its lowest level</strong> since the start of ACE benchmarking analysis in 2001.</p></li>
+<li><p><strong>Traffic volumes grew by +1.7%</strong> in 2019, a significantly lower growth than that recorded in the previous years.</p></li>
 </ul>
 </div>
 <div class="col-sm-6">
 <ul>
-<li><p>Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term <strong>borrowings rose by +€2.5 billion (+134%)</strong>.</p></li>
-<li><p>Liquidity issues also resulted in the <strong>postponement of some capital expenditures</strong>, which were -26% lower than in 2019.</p></li>
+<li><p>The <strong>increase in support staff</strong> at a Pan-European system level of <strong>+2.3% (or +882 FTEs)</strong> was the largest observed over the past ten years.</p></li>
+<li><p>ANSPs held <strong>cash reserves of some €2.9B</strong> at the end of 2019, covering only slightly more than half of the estimated reduction in route and terminal charges in 2020.</p></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="container">
 <div class="row">
-<div class="col-sm-6">
+<div class="col-md-6">
 <div class="d-flex justify-content-center">
 <div class="col-5 scorecard-box">
 <p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; ">
@@ -131,9 +114,9 @@ ACE interactive dashbaord
 </div>
 </div>
 </div>
-<div class="col-sm-6">
-<div id="htmlwidget-1" style="width:500px;height:330px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"11c5eb2715d":["function () ","plotlyVisDat"]},"cur_data":"11c5eb2715d","attrs":{"11c5eb2715d":{"x":{},"y":{},"yaxis":"y1","marker":{"color":"##4F81BD"},"text":{},"textangle":-90,"textposition":"inside","insidetextanchor":"start","textfont":{"color":"#FFFFFF","size":14},"hoverinfo":"none","showlegend":false,"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"11c5eb2715d.1":{"x":{},"y":{},"yaxis":"y1","mode":"text","text":{},"textfont":{"color":"black","size":14},"type":"scatter","mode.1":"lines","hoverinfo":"none","showlegend":false,"inherit":false},"11c5eb2715d.2":{"x":{},"y":{},"yaxis":"y2","type":"scatter","mode":"lines","name":"ATM/CNS provision costs","line":{"color":"#1F497D"},"hovertemplate":"<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","inherit":false},"11c5eb2715d.3":{"x":{},"y":{},"yaxis":"y2","type":"scatter","mode":"lines","name":"Composite flight-hours","line":{"color":"#E46C0A"},"hovertemplate":"<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","inherit":false}},"layout":{"width":500,"height":330,"margin":{"b":40,"l":60,"t":25,"r":10},"autosize":false,"xaxis":{"domain":[0,1],"automargin":true,"title":"","autotick":false,"showgrid":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"€ per composite flight-hour","titlefont":{"size":13},"zeroline":true,"showline":false,"showgrid":true},"yaxis2":{"overlaying":"y","side":"right","title":"Index of costs and traffic<br>(2014 = 100)","titlefont":{"size":13},"range":[40,130],"showgrid":false,"automargin":true},"bargap":0.4,"legend":{"orientation":"h","xanchor":"left","x":-0.05,"y":-0.05},"uniformtext":{"minsize":10,"mode":"show"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"modeBarButtons":[["toImage"]]},"data":[{"x":[2019,2018,2017,2016,2015,2014],"y":[393.867376,393.652784,407.1009002,422.3382648,430.9547905,435.4329829],"yaxis":"y","marker":{"color":"##4F81BD","line":{"color":"rgba(31,119,180,1)"}},"text":["  <b> 394 <\/b>","  <b> 394 <\/b>","  <b> 407 <\/b>","  <b> 422 <\/b>","  <b> 431 <\/b>","  <b> 435 <\/b>"],"textangle":-90,"textposition":["inside","inside","inside","inside","inside","inside"],"insidetextanchor":"start","textfont":{"color":"#FFFFFF","size":14},"hoverinfo":["none","none","none","none","none","none"],"showlegend":false,"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","frame":null},{"x":[2019,2018,2017,2016,2015,2014],"y":[413.867376,413.652784,427.1009002,442.3382648,450.9547905,455.4329829],"yaxis":"y","mode":"text","text":["<b>+0.1%<\/b>","<b>-3.3%<\/b>","<b>-3.6%<\/b>","<b>-2%<\/b>","<b>-1%<\/b>","<b>-2.2%<\/b>"],"textfont":{"color":"black","size":14},"type":"scatter","mode.1":"lines","hoverinfo":["none","none","none","none","none","none"],"showlegend":false,"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","frame":null},{"x":[2019,2018,2017,2016,2015,2014],"y":[105.9,104.1,102.1,101.1,100.6,100],"yaxis":"y2","type":"scatter","mode":"lines","name":"ATM/CNS provision costs","line":{"color":"#1F497D"},"hovertemplate":["<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>"],"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","frame":null},{"x":[2019,2018,2017,2016,2015,2014],"y":[117.1,115.1,109.2,104.2,101.7,100],"yaxis":"y2","type":"scatter","mode":"lines","name":"Composite flight-hours","line":{"color":"#E46C0A"},"hovertemplate":["<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>"],"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="col-md-6">
+<div id="htmlwidget-1" style="width:100%;height:330px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"25b823d94ef7":["function () ","plotlyVisDat"]},"cur_data":"25b823d94ef7","attrs":{"25b823d94ef7":{"x":{},"y":{},"yaxis":"y1","marker":{"color":"##4F81BD"},"text":{},"textangle":-90,"textposition":"inside","insidetextanchor":"start","textfont":{"color":"#FFFFFF","size":14},"hoverinfo":"none","showlegend":false,"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"25b823d94ef7.1":{"x":{},"y":{},"yaxis":"y1","mode":"text","text":{},"textfont":{"color":"black","size":14},"type":"scatter","mode.1":"lines","hoverinfo":"none","showlegend":false,"inherit":false},"25b823d94ef7.2":{"x":{},"y":{},"yaxis":"y2","type":"scatter","mode":"lines","name":"ATM/CNS provision costs","line":{"color":"#1F497D"},"hovertemplate":"<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","inherit":false},"25b823d94ef7.3":{"x":{},"y":{},"yaxis":"y2","type":"scatter","mode":"lines","name":"Composite flight-hours","line":{"color":"#E46C0A"},"hovertemplate":"<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","inherit":false}},"layout":{"height":330,"margin":{"b":40,"l":60,"t":25,"r":10},"autosize":true,"xaxis":{"domain":[0,1],"automargin":true,"title":"","fixedrange":true,"autotick":false,"showgrid":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"€ per composite flight-hour","titlefont":{"size":13},"fixedrange":true,"zeroline":true,"showline":false,"showgrid":true},"yaxis2":{"overlaying":"y","side":"right","title":"Index of costs and traffic<br>(2014 = 100)","titlefont":{"size":13},"range":[40,130],"automargin":true,"showgrid":false},"bargap":0.4,"legend":{"orientation":"h","xanchor":"left","x":-0.05,"y":-0.05},"uniformtext":{"minsize":10,"mode":"show"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"modeBarButtons":[["toImage"]]},"data":[{"x":[2019,2018,2017,2016,2015,2014],"y":[393.867376,393.652784,407.1009002,422.3382648,430.9547905,435.4329829],"yaxis":"y","marker":{"color":"##4F81BD","line":{"color":"rgba(31,119,180,1)"}},"text":["  <b> 394 <\/b>","  <b> 394 <\/b>","  <b> 407 <\/b>","  <b> 422 <\/b>","  <b> 431 <\/b>","  <b> 435 <\/b>"],"textangle":-90,"textposition":["inside","inside","inside","inside","inside","inside"],"insidetextanchor":"start","textfont":{"color":"#FFFFFF","size":14},"hoverinfo":["none","none","none","none","none","none"],"showlegend":false,"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","frame":null},{"x":[2019,2018,2017,2016,2015,2014],"y":[413.867376,413.652784,427.1009002,442.3382648,450.9547905,455.4329829],"yaxis":"y","mode":"text","text":["<b>+0.1%<\/b>","<b>-3.3%<\/b>","<b>-3.6%<\/b>","<b>-2%<\/b>","<b>-1%<\/b>","<b>-2.2%<\/b>"],"textfont":{"color":"black","size":14},"type":"scatter","mode.1":"lines","hoverinfo":["none","none","none","none","none","none"],"showlegend":false,"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","frame":null},{"x":[2019,2018,2017,2016,2015,2014],"y":[105.9,104.1,102.1,101.1,100.6,100],"yaxis":"y2","type":"scatter","mode":"lines","name":"ATM/CNS provision costs","line":{"color":"#1F497D"},"hovertemplate":["<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>","<b>ATM/CNS costs index<\/b>: <br>%{y}<extra><\/extra>"],"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","frame":null},{"x":[2019,2018,2017,2016,2015,2014],"y":[117.1,115.1,109.2,104.2,101.7,100],"yaxis":"y2","type":"scatter","mode":"lines","name":"Composite flight-hours","line":{"color":"#E46C0A"},"hovertemplate":["<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>","<b>Composite flight-hours index<\/b>: <br>%{y}<extra><\/extra>"],"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -141,7 +124,7 @@ ACE interactive dashbaord
 </div>
 <div class="container">
 <div class="row align-items-start">
-<div id="ace-2019-report" class="section level4 col-sm-6">
+<div id="ace-2019-report" class="section level4 col-md-6">
 <h4>ACE 2019 Report</h4>
 <div class="row align-items-start">
 <div class="col-sm-2">
@@ -195,7 +178,7 @@ ACE interactive dashbaord
 </div>
 </div>
 </div>
-<div class="col-sm-6">
+<div class="col-md-6">
 <div id="ace-handbook" class="section level4">
 <h4>ACE Handbook</h4>
 <div style="background-color: #F2F2F2; ">
