@@ -191,23 +191,35 @@ plot_ACE
 
 <div class="col-md-6">
 #### ACE Handbook
-
+<div class="row align-items-start">
+<div class="col-sm-2">
+place holder
+</div>
+<div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
 <a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a>
 <a href="https://ace-methodology.netlify.app/" data-toggle="tooltip" title="Download electronic version" target="_blank">**ACE Handbook**</a>
 </div>
 Learn about the scope of the ACE analysis, the processes involved in the production of the report, the factors affecting performance and  the indicators used in the ACE analysis.
+</div>
+</div> <!-- closes secondary row -->
 
 #### ANSPs individual factsheets
+<div class="row align-items-start">
+<div class="col-sm-2">
+![](/images/eco/ace_partII_thmb.png)
+</div>
+
+<div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
 <!-- <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank"><i class="fas fa-download"></i></a> -->
 <a href="" target="_blank">**Factsheets (previously Part II of the ACE Report)**</a>
 </div>
 Access information on ANSP institutional arrangements, corporate governance structure, historical developments of financial cost-effectiveness, comparison with peers and capital expenditures.
-
-
 </div>
-</div>
+</div> <!-- closes secondary row -->
+</div> <!-- closes col-md-6 -->
+</div> <!-- closes main row -->
 <br>
 
 #### Other ACE related documents
@@ -245,8 +257,8 @@ Access information on ANSP institutional arrangements, corporate governance stru
   </div>
 </div>
 
-</div>
+</div> <!-- closes card deck -->
 
-</div>
+</div> <!-- closes container -->
 
 

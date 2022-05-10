@@ -43,7 +43,7 @@ plot_ACE <- ACE_landing_page %>%
     yaxis = "y1",
     # colors = c('#4F81BD'),
     mode = 'text',
-    text = ~ paste("<b>",if_else(costs_per_cph_change_perc >0, "+", ""),round(costs_per_cph_change_perc*100,if_else(costs_per_cph_change_perc >=1, 0, 1)), "%","</b>",sep = ""),
+    text = ~ paste("<b>",if_else(costs_per_cph_change_perc >0, "+", ""),format(round(costs_per_cph_change_perc*100,1), nsmall=if_else(costs_per_cph_change_perc >=1, 0, 1)), "%","</b>",sep = ""),
     textfont = list(color = 'black', size = 14),
     type = 'scatter',  mode = 'lines',
     hoverinfo = "none",
