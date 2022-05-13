@@ -104,8 +104,8 @@ ignoreFiles = [
       weight = 9
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = "  <span style='font-weight: normal'>Impact on en-route revenues</span>"
-      url = "/covid/covid_ert_rev/"
+      name = "  <span style='font-weight: normal'>Impact on en-route ANSPs finances</span>"
+      url = "/economics/finance/"
       identifier = "key-covid-ert"
       parent = "aiu"
       weight = 11
@@ -584,7 +584,7 @@ ignoreFiles = [
     weight = 10
  [[menu.economics]]
     name = "ATM Cost Efficiency Benchmark (ACE)"
-    url = "/economics/ACE-overview"
+    url = "https://www.eurocontrol.int/ACE/ACE-Home.html"
     identifier= "ace"
     weight = 20
 [[menu.economics]]
@@ -598,7 +598,7 @@ ignoreFiles = [
     identifier= "su"
     weight = 40
 [[menu.economics]]
-    name = "ANSP Finance dashboard"
+    name = "ANSP Financial dashboard"
     url = "/economics/finance/"
     identifier= "finance"
     weight = 50

@@ -75,17 +75,17 @@ The ACE interactive dashboard allows you to access the latest available data and
 
 <div class="col-sm-3">
 <div class="card border-0"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:60%; max-width:60%; display:block; margin: auto">
-  <div class="card-body"><h6 class="card-title">ACE interactive dashbaord</h6></a><p class="card-text"></p>
+  <img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:78%; max-width:78%; display:block; margin: auto">
+  <div class="card-body"><h6 class="card-title">ACE interactive dashboard</h6></a><p class="card-text"></p>
 </div></div></div>
 
 </div></div>
-#### ACE 2019 Highlights
 
-<div class="container">
+<div class="container" style="margin-top: -20px">
+#### ACE 2019 Highlights
 <div class="row align-items-start">
 <div class="col-sm-6">
-* Financial **cost-effectiveness indicator (€396) was at its lowest level** since the start of ACE benchmarking analysis in 2001.
+* Financial **cost-effectiveness indicator (€394) was at its lowest level** since the start of ACE benchmarking analysis in 2001.
 
 * **Traffic volumes grew by +1.7%** in 2019, a significantly lower growth than that recorded in the previous years.
 </div>
@@ -178,7 +178,7 @@ plot_ACE
   * [ANNEX 3 – ACE cost-effectiveness indicator and SES cost-efficiency](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=169){target="_blank"}
   * [ANNEX 4 – Performance ratios](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=171){target="_blank"}
   * [ANNEX 5 – Factors affecting performance](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=173){target="_blank"}
-  * [ANNEX 6 – Excgange rates, inflation rates and purchasing power parities (PPPS)](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=175){target="_blank"}
+  * [ANNEX 6 – Exchange rates, inflation rates and purchasing power parities (PPPS)](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=175){target="_blank"}
   * [ANNEX 7 – Key data](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=179){target="_blank"}
   * [ANNEX 8 – Performance indicators at FAB level](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=187){target="_blank"}
   * [ANNEX 9 – Individual ANSP fact-sheets](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=189){target="_blank"}
@@ -197,8 +197,8 @@ place holder
 </div>
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
-<a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a>
-<a href="https://ace-methodology.netlify.app/" data-toggle="tooltip" title="Download electronic version" target="_blank">**ACE Handbook**</a>
+<!-- <a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a> -->
+<a href="https://ace-methodology.netlify.app/" data-toggle="tooltip" title="Access electronic version" target="_blank">**ACE Handbook**</a>
 </div>
 Learn about the scope of the ACE analysis, the processes involved in the production of the report, the factors affecting performance and  the indicators used in the ACE analysis.
 </div>
@@ -261,4 +261,4 @@ Access information on ANSP institutional arrangements, corporate governance stru
 
 </div> <!-- closes container -->
 
-
+For feedback or questions please contact please contact the [PRU Support Team](mailto:PRU-Support@eurocontrol.int).

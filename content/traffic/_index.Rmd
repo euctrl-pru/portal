@@ -51,7 +51,7 @@ library(plotly)
   }
 
   #traffic-plot{
-  margin-left:40px
+  margin-left:20px
   }
   
   .Mycolumn {
@@ -142,7 +142,7 @@ library(plotly)
   </style>
 
 
-This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal [service units](/acronym/su/) from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.
+This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
 
 <!-- Network Traffic section -->
 <div class="container" style="margin: 0px; padding: 0px">
@@ -245,13 +245,14 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 </div>
 </div>
 <br>
-<a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >See aircraft operator groupings</a>
+[See aircraft operator groupings](https://www.eurocontrol.int/directory/airline-groups-lookup){target="_blank"}
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
 <h5>Airports</h5>
 <div id="apts" class="resp-container">
-<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-ranking-table.html" frameborder="0" style="border:0" allowfullscreen></iframe><!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-ranking-table.html" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div></div>
 </div>
 </div>
@@ -260,8 +261,8 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <h5>Air Navigation Service Providers (ANSPs)</h5>
-<div id="ansps" class="resp-container" style="align-text: center">Comming soon!
-<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
+<div id="ansps" class="resp-container" style="align-text: center">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ansp-ranking-table.html" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
