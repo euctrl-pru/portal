@@ -104,7 +104,7 @@ ignoreFiles = [
       weight = 9
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = "  <span style='font-weight: normal'>Impact on en-route ANSPs finances</span>"
+      name = "  <span style='font-weight: normal'>Impact on ANSPs financial situation</span>"
       url = "/economics/finance/"
       identifier = "key-covid-ert"
       parent = "aiu"
@@ -499,8 +499,8 @@ ignoreFiles = [
     identifier= "cov_parking"
     weight = 30
 [[menu.covid]]
-    name = "En-route revenues"
-    url = "/covid/covid_ert_rev"
+    name = "ANSPs financial situation"
+    url = "/economics/finance"
     identifier= "cov_revenues"
     weight = 40
 [[menu.covid]]
