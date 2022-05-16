@@ -65,9 +65,9 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 <div class="row">
 <div class="card-deck">
 
-<div class="card"><a href="/covid/covid_ert_rev/">
-<img class="card-img-top" src="/images/covid/cov_eco.jpg" alt="Impact on en-route revenues">
-<div class="card-body"><small><h5 class="card-title">Economic impact</h5><p class="card-text">What is the COVID-19 impact on en-route revenues?</p></small></a>
+<div class="card"><a href="/economics/finance/">
+<img class="card-img-top" src="/images/covid/cov_eco.jpg" alt="Impact on ANSPs finances">
+<div class="card-body"><small><h5 class="card-title">Economic impact</h5><p class="card-text">What is the COVID-19 impact on ANSPs finances?</p></small></a>
 </div>
 </div>
 
