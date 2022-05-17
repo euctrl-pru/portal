@@ -14,6 +14,11 @@ library(googlesheets4)
 library(lubridate)
 library(plotly)
 ```
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
 
 <style type="text/css">
   .img-responsive {
@@ -21,32 +26,32 @@ library(plotly)
       max-width: 75%
   }
   
-  .resp-container {
-      position: relative;
-      overflow: hidden;
-      padding-top: 60.0%;
-  }
-  
+
   .resp-iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 150%;
+      height: 100%;
       border: 0;
+   }  
+  
+  .col-12 {
+    margin: 0px;
+    padding: 0px
   }
-      
+  
   .Scorecard_subt {
-    margin: 0px; 
-    padding-bottom: 5px; 
-    font-size: 16px; 
-    text-align: left; 
-    color:#7f7f7f
+    text-align: left;
   }
 
 @media screen and (min-width:1000px) {
   .flex-container {
     display: flex;
+  }
+
+  #traffic-plot{
+  margin-left:20px
   }
   
   .Mycolumn {
@@ -64,6 +69,15 @@ library(plotly)
     <!-- margin-right: 5px -->
   }
 
+  .resp-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 55.0%;
+  }
+
+ #aos, #ansps {
+    margin-right: 10px
+ }
   .Scorecard {
     margin: 0px;
     padding: 0px;
@@ -82,6 +96,7 @@ library(plotly)
     color: #161b21;
     text-align: left;
   }
+  
 }
 
 @media screen and (max-width:1000px) {
@@ -94,7 +109,7 @@ library(plotly)
   .Mycolumn2 {
     width: 100%;
     margin-left: 0px;
-    margin-right: 0px
+    margin-right: 0px;
     text-align: justify;
   }
   
@@ -105,6 +120,12 @@ library(plotly)
     font-weight: bold;
     color: #161b21;
     text-align: left;
+  }
+
+  .resp-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 85.0%;
   }
 
   .Scorecard2 {
@@ -120,7 +141,8 @@ library(plotly)
 
   </style>
 
-This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html " target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal [service units](/acronym/su/) from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.
+
+This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
 
 <!-- Network Traffic section -->
 <div class="container" style="margin: 0px; padding: 0px">
@@ -130,7 +152,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 <div class="flex-container" style=" margin-bottom: 5px;">
 <div class="Mycolumn" >
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
+<div class="col-12" ; style="margin-left: 16px;  ">
   <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
 </div>
 <div class="col-3" ; style="margin: 0px; ">
@@ -149,9 +171,9 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   <p id="dif_day_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2021</p>
 </div>
-</div>
+</div><!-- closes row -->
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
+<div class="col-12" ; style="margin-left: 16px; ">
   <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Week</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
@@ -170,9 +192,9 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   <p id="dif_week_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2021</p>
 </div>
-</div>
+</div><!-- closes row -->
 <div class="row" style="margin:0px; margin-bottom: 5px;background-color: #f2f2f2; border-radius: 5px; width: 101%;">
-<div class="col-12" ; style="margin: 0px;  ">
+<div class="col-12" ; style="margin-left: 16px;">
   <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Year to date</p>
 </div>
 <div class="col-3" ; style="margin: 0px;  ">
@@ -189,146 +211,20 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   <p id="dif_y2d_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs 2021</p>
 </div>
-</div>
-</div>
+</div><!-- closes row -->
+</div><!-- closes Mycolumn -->
 <div class="Mycolumn2">
-<div class="col-12" style=" margin: 0px; " >
+<div class="col-12" >
 
-<!-- script for traffic figures -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-  var Data
-  var my_view_traffic
-  var last_day
-  var last_day_text
-  var last_week_text
-
-  var day_traffic
-  var dif_day_prev_week
-  var dif_day_2019
-  var dif_day_prev_year
-
-  var week_traffic
-  var avg_week_traffic
-  var dif_week_prev_week
-  var dif_week_2019
-  var dif_week_prev_year
- 
-  var y2d_traffic
-  var y2d_prev_year_traffic
-  var y2d_2019_traffic 
-  var avg_y2d_traffic
-  var dif_y2d_2019
-  var dif_y2d_prev_year
-
-  google.load("visualization", "1.1", {
-    packages: ["corechart", "table", "controls", "bar"]
-  });
-  google.setOnLoadCallback(Initialisation);
-
-  function Initialisation() {
-    var query = new google.visualization.Query(
-      "https://docs.google.com/spreadsheets/d/14Lt3C3PCxxYCLXXYxRrFXd1s0tVZ3EQ8q9YfuYvx3Ww/edit?usp=sharing&sheet=NW_Flights_All"
-    );
-
-  query.send(drawDashboard);
-  }
-
-  function drawDashboard(response) {
-    Data = response.getDataTable();
-    UpdateTraffic();
-   }
-//---------------------------Update traffic---------------------------------------------
-  function UpdateTraffic() {
-  my_view_traffic = new google.visualization.DataView(Data);
-
-  //       for (var y = 1; y < my_view_traffic.getNumberOfColumns(); y++) {
-  //        // my_view_traffic.getValue(x, y) 
-  //        last_day = my_view_traffic.getValue(0, y)
-  //      }
-  last_day = my_view_traffic.getValue(0, 38); 
-  my_view_traffic.setRows(
-  Data.getFilteredRows([{ column: 7, value: last_day }])
-  );
-
-// Calculate datestrings
-last_day_text = last_day.toDateString();
-    last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11)
-
-  //calculate 1st day of rolling week and string
-  var first_week_day = new Date();
-    first_week_day.setDate(last_day.getDate()-6);
-    first_week_day = first_week_day.toDateString();
-  last_week_text = first_week_day.substring(8, 11) + (last_day_text.substring(3, 7) == first_week_day.substring(4, 8) ? "" : first_week_day.substring(4, 8)) + "- " + last_day_text;
-  y2d_day_text = last_day_text.substring(3, 7) == "Jan " ? "01 - " + last_day_text : "01 Jan - " + last_day_text
-
-// Calculate traffic scorecard values
-   day_traffic = my_view_traffic.getValue(0, 11);
-   dif_day_prev_week = Math.round(my_view_traffic.getValue(0, 18)*100);
-     dif_day_prev_week = (dif_day_prev_week >= 0) ? "+" + dif_day_prev_week : "" + dif_day_prev_week
-   dif_day_2019 = Math.round(my_view_traffic.getValue(0, 20) * 100) ;
-     dif_day_2019 = (dif_day_2019 >= 0) ? "+" + dif_day_2019 : "" + dif_day_2019
-   dif_day_prev_year = Math.round(my_view_traffic.getValue(0, 19) * 100);
-    dif_day_prev_year = (dif_day_prev_year >= 0) ? "+" + dif_day_prev_year : "" + dif_day_prev_year;
-
-
-  week_traffic = my_view_traffic.getValue(0, 21)
-  avg_week_traffic = Math.round(week_traffic/7)
-  dif_week_prev_week = Math.round(my_view_traffic.getValue(0, 27)*100);
-     dif_week_prev_week = (dif_week_prev_week >= 0) ? "+" + dif_week_prev_week : "" + dif_week_prev_week
-  dif_week_2019 = Math.round(my_view_traffic.getValue(0, 29)*100);
-     dif_week_2019 = (dif_week_2019 >= 0) ? "+" + dif_week_2019 : "" + dif_week_2019
-  dif_week_prev_year = Math.round(my_view_traffic.getValue(0, 28)*100);
-     dif_week_prev_year = (dif_week_prev_year >= 0) ? "+" + dif_week_prev_year : "" + dif_week_prev_year
-
-  y2d_traffic = my_view_traffic.getValue(0, 30);
-  y2d_prev_year_traffic = my_view_traffic.getValue(0, 31);
-  y2d_2019_traffic = my_view_traffic.getValue(0, 32);
-  
-  avg_y2d_traffic = Math.round(my_view_traffic.getValue(0, 33));
-  dif_y2d_2019 = Math.round(my_view_traffic.getValue(0, 37)*100);
-     dif_y2d_2019 = (dif_y2d_2019 >= 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019
-  dif_y2d_prev_year = Math.round(my_view_traffic.getValue(0, 36)*100);
-     dif_y2d_prev_year = (dif_y2d_prev_year >= 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
-
-// Update scorecard values
-  document.getElementById("last_day").innerHTML = "Day (" + last_day_text + ")";
-  document.getElementById("last_week").innerHTML = "Rolling week (" + last_week_text + ")";
-  document.getElementById("y2d_day_text").innerHTML = "Year to date (" + y2d_day_text + ")";
-
-  <!-- document.getElementById("last_day_dly").innerHTML = "Day (" + last_day_text + ")"; -->
-  <!-- document.getElementById("last_week_dly").innerHTML = "Rolling week (" + last_week_text + ")"; -->
-  <!-- document.getElementById("last_day_dly_flt").innerHTML = "Day (" + last_day_text + ")"; -->
-  <!-- document.getElementById("last_week_dly_flt").innerHTML = "Rolling week (" + last_week_text + ")"; -->
-  
-  document.getElementById("day_traffic").innerHTML = String(day_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("dif_day_prev_week").innerHTML = String(dif_day_prev_week) + '%';
-  document.getElementById("dif_day_2019").innerHTML = String(dif_day_2019) + '%';
-  document.getElementById("dif_day_prev_year").innerHTML = String(dif_day_prev_year) + '%';
-
-  document.getElementById("week_traffic").innerHTML = String(week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("avg_week_traffic").innerHTML = String(avg_week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
-  document.getElementById("dif_week_prev_week").innerHTML = String(dif_week_prev_week) + '%';
-  document.getElementById("dif_week_2019").innerHTML = String(dif_week_2019) + '%';
-  document.getElementById("dif_week_prev_year").innerHTML = String(dif_week_prev_year) + '%';
-  
-  document.getElementById("y2d_traffic").innerHTML = String(y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("avg_y2d_traffic").innerHTML = String(avg_y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
-  document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%';
-  document.getElementById("dif_y2d_prev_year").innerHTML = String(dif_y2d_prev_year) + '%';
-
-  }
-  
-</script>
-
-<div class="resp-container" style=" margin-top: 10px; ">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div style=" margin-top: 0px; height: 400px;">
+<iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp.html" frameborder="0" style="border:0; margin-top: 10px;" >
+</iframe>
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 </div>
 
-</div>
-</div>
-</div>
+</div><!-- closes col-12 -->
+</div><!-- closes Mycolumn2 -->
+</div><!-- closes flex-container -->
 <a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network data</a>
 
 <!-- Stakeholders section -->
@@ -343,18 +239,20 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <h5>Aircraft Operators</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="aos" class="resp-container">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ao-ranking-table.html" frameborder="0" style="border:0, padding-left: 0px" allowfullscreen></iframe>
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/7cb12f8c-175b-4a00-8e41-4995bc78464c/page/p_01akhlhpsc" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div>
 </div>
 <br>
-<a href="https://www.eurocontrol.int/directory/airline-groups-lookup" target="_blank" >See aircraft operator groupings</a>
+[See aircraft operator groupings](https://www.eurocontrol.int/directory/airline-groups-lookup){target="_blank"}
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
 <h5>Airports</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="apts" class="resp-container">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-ranking-table.html" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/71726332-25f1-412b-a902-50182fbc00c7/page/obGnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div></div>
 </div>
 </div>
@@ -363,18 +261,110 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <div class="Mycolumn" >
 <div class="col-12" style=" margin: 0px; " >
 <h5>Air Navigation Service Providers (ANSPs)</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/82e3ef8b-e5c9-4ff1-a983-05bce140e029/page/9v7pC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="ansps" class="resp-container" style="align-text: center">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ansp-ranking-table.html" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
 <div class="Mycolumn2">
 <div class="col-12" style=" margin: 0px; " >
 <h5>Country Pairs</h5>
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="cps" class="resp-container">
+<iframe class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-ctrypair-ranking-table.html" frameborder="0" style="border:0;" allowfullscreen></iframe><!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/74850727-d77f-4508-b312-114d40a3a7e6/page/tAPnC" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe> -->
 </div>
 </div>
 </div></div>
 </div>
 <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a>
+
+
+<!-- script for traffic figures -->
+<script type="text/javascript">
+  var data
+  
+  window.onload = function() {
+   window.addEventListener('message', function (e) {
+   var $iframe = $('#traffic-plot');
+
+   data = JSON.parse(e.data);
+
+   UpdateTraffic();
+   
+  }, false);
+    
+}
+ 
+ function UpdateTraffic() { 
+     // Calculate datestrings
+   var last_day = new Date(data.LAST_DATA_DAY);
+   var last_day_text = last_day.toString();
+       last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11, 15);
+ 
+ 
+ //calculate 1st day of rolling week and string
+  var first_week_day = new Date();
+      first_week_day = first_week_day.setDate(last_day.getDate()-6);
+      first_week_day = new Date(first_week_day);
+      first_week_day = first_week_day.toString();
+  var last_week_text = first_week_day.substring(8, 11) + (last_day_text.substring(3, 7) == first_week_day.substring(4, 8) ? "" :  first_week_day.substring(4, 8)) + "- " + last_day_text;
+
+  var y2d_day_text = last_day_text.substring(3, 7) == "Jan " ? "01 - " + last_day_text : "01 Jan - " + last_day_text;
+ 
+ // Calculate traffic scorecard values
+  var day_traffic = data.DAY_TFC;
+  
+  var dif_day_prev_week = Math.round(data.DAY_TFC_PREV_WEEK_PERC*100);
+      dif_day_prev_week = (dif_day_prev_week >= 0) ? "+" + dif_day_prev_week : "" + dif_day_prev_week ;
+  
+  var dif_day_2019 = Math.round(data.DAY_TFC_DIFF_2019_PERC*100);
+      dif_day_2019 = (dif_day_2019 >= 0) ? "+" + dif_day_2019 : "" + dif_day_2019;
+  
+  var dif_day_prev_year = Math.round(data.DAY_DIFF_PREV_YEAR_PERC*100);
+      dif_day_prev_year = (dif_day_prev_year >= 0) ? "+" + dif_day_prev_year : "" + dif_day_prev_year ;
+
+  var week_traffic = data.TOTAL_ROLLING_WEEK;
+  var avg_week_traffic = Math.round(week_traffic/7);
+  
+  var dif_week_prev_week = Math.round(data.DIF_PREV_WEEK_PERC*100);
+      dif_week_prev_week = (dif_week_prev_week >= 0) ? "+" + dif_week_prev_week : "" + dif_week_prev_week;
+  
+  var dif_week_2019 = Math.round(data.DIF_ROLLING_WEEK_2019_PERC*100);
+      dif_week_2019 = (dif_week_2019 >= 0) ? "+" + dif_week_2019 : "" + dif_week_2019;
+  
+  var dif_week_prev_year = Math.round(data.DIF_WEEK_PREV_YEAR_PERC*100);
+      dif_week_prev_year = (dif_week_prev_year >= 0) ? "+" + dif_week_prev_year : "" + dif_week_prev_year;
+   
+  var y2d_traffic = data.Y2D_TFC_YEAR;
+  var avg_y2d_traffic = Math.round(data.Y2D_AVG_TFC_YEAR);
+  var dif_y2d_2019 = Math.round(data.Y2D_DIFF_2019_PERC*100);
+      dif_y2d_2019 = (dif_y2d_2019 >= 0) ? "+" + dif_y2d_2019 : "" + dif_y2d_2019;
+  var dif_y2d_prev_year = Math.round(data.Y2D_DIFF_PREV_YEAR_PERC*100);
+      dif_y2d_prev_year = (dif_y2d_prev_year >= 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year;
+
+
+// Update scorecard values
+  document.getElementById("last_day").innerHTML = "Day (" + last_day_text + ")";
+  document.getElementById("last_week").innerHTML = "Rolling week (" + last_week_text + ")";
+  document.getElementById("y2d_day_text").innerHTML = "Year to date (" + y2d_day_text + ")";
+   
+  document.getElementById("day_traffic").innerHTML = String(day_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("dif_day_prev_week").innerHTML = dif_day_prev_week + '%';
+  document.getElementById("dif_day_2019").innerHTML = dif_day_2019 + '%';
+  document.getElementById("dif_day_prev_year").innerHTML = dif_day_prev_year + '%';
+  
+  document.getElementById("week_traffic").innerHTML = String(week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("avg_week_traffic").innerHTML = String(avg_week_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
+  document.getElementById("dif_week_prev_week").innerHTML = dif_week_prev_week + '%';
+  document.getElementById("dif_week_2019").innerHTML = dif_week_2019 + '%';
+  document.getElementById("dif_week_prev_year").innerHTML = dif_week_prev_year + '%';
+  
+  document.getElementById("y2d_traffic").innerHTML = String(y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
+  document.getElementById("avg_y2d_traffic").innerHTML = String(avg_y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,') + " daily flights";
+  document.getElementById("dif_y2d_2019").innerHTML = dif_y2d_2019 + '%';
+  document.getElementById("dif_y2d_prev_year").innerHTML = dif_y2d_prev_year + '%';
+
+
+ }  
+  
+</script>
+
