@@ -98,8 +98,14 @@ command = "hugo --gc --minify"
   force = true
 
 [[redirects]]
-  from = "/economics/ace/hlsr/*"
+  from = "/economics/ace/ace-hlsr/*"
   to = "https://ace-hlsr.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/economics/ace/ace-handbook/*"
+  to = "https://ace-handbook.netlify.app/:splat"
   status = 200
   force = true
 
