@@ -15,54 +15,12 @@ charges to the States concerned.
 
 
 
+<iframe width="100%" height="1063" frameborder="0"
+  src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
 
-<!-- By CSS the container element will fill 64% (0.8 the width) the height and 80% the width of the window. -->
-<div id="container" style="position: relative; width: 80vw; height: 64vh;">
-  <div id="map" style="position: absolute; width: 100%; height: 100%;"></div>
-</div>
+<!-- Setting an initial height may help initial page layout, but would be overridden on resize. -->
+<iframe id="embed" width="1063" frameborder="0" src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
 
-<script type="module">
-
-import {Runtime, Inspector, Library} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import notebook from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3";
-
-// To avoid the chart itself affecting the size of its container, the chart is
-// absolutely-positioned within the container element that determines the size.
-const map = document.querySelector("#map");
-const container = map.parentNode;
-
-// Embed the chart cell from the notebook into the chart element.
-const library = new Library();
-const runtime = new Runtime(library);
-const main = runtime.module(notebook, name => {
-  if (name === "map") {
-    return new Inspector(map);
-  }
-});
-
-// Redefine width and height to be a generator created by the resizer function
-// below to observe the size of the container.
-main.redefine("width", resizer(container, "width"));
-main.redefine("height", resizer(container, "height"));
-
-// Rather making separate generators for width and height, here’s a generalized
-// generator “factory” that watches the given dimension of the given element.
-// (Note: depends on browser ResizeObserver support.)
-function resizer(element, dimension) {
-  return library.Generators.observe(notify => {
-    let value = notify(element.getBoundingClientRect()[dimension]); // initial value
-    const observer = new ResizeObserver(([entry]) => {
-      const newValue = entry.contentRect[dimension];
-      if (newValue !== value) {
-        notify(value = newValue);
-      }
-    });
-    observer.observe(element);
-    return () => observer.disconnect();
-  });
-}
-
-</script>
 
 
 ## See Also
