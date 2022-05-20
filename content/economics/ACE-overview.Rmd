@@ -204,7 +204,7 @@ place holder
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
 <!-- <a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a> -->
-<a href="/economics/ace/ace-handbook" data-toggle="tooltip" title="Access electronic version" target="_blank">**ACE Handbook**</a>
+<a href="/economics/ace/ace-handbook/" data-toggle="tooltip" title="Access electronic version" target="_blank">**ACE Handbook**</a>
 </div>
 Learn about the scope of the ACE analysis, the processes involved in the production of the report, the factors affecting performance and  the indicators used in the ACE analysis.
 </div>
@@ -239,13 +239,13 @@ Access information on ANSP institutional arrangements, corporate governance stru
 <!-- </div> -->
 
 <div class="card">
-<a href="/publications/prc/ace" target="_blank">
+<a href="/publications/prc/ace/" target="_blank">
   <img class="card-img-top" src="/images/prc/ace2019.png" alt="Previous ACE reports">
   <div class="card-body"><h5 class="card-title">Previous ACE reports</h5></a><p class="card-text"></p>
   </div>
 </div>
 
-<div class="card"><a href="/economics/ace/ace-hlsr" target="_blank">
+<div class="card"><a href="/economics/ace/ace-hlsr/" target="_blank">
   <img class="card-img-top" src="/images/prc/ace-prelim-results-2020.png" alt="Preliminary results">
   <div class="card-body"><h5 class="card-title">Preliminary results (Dec. 2021 edition)</h5></a><p class="card-text"></p>
   </div>
