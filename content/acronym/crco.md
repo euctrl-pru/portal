@@ -16,12 +16,11 @@ charges to the States concerned.
 
 
 <!-- Setting an initial height may help initial page layout, but would be overridden on resize. -->
-<iframe id="embed" height="600" frameborder="0" src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
-
+<iframe width="100%" height="1063" frameborder="0"
+  src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
 
 
 ## See Also
-
 
 * {{< a_blank_ectrl "CRCO" "https://www.eurocontrol.int/crco" >}}
 * {{< a_blank_lexicon "Airspace User" "https://ext.eurocontrol.int/lexicon/index.php/Airspace_User" >}}
