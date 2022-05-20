@@ -149,7 +149,9 @@ plot_ACE
 
 <div class="row align-items-start">
 <div class="col-sm-2">
-![](/images/eco/ace2019.png)
+  <img src="/images/eco/ace2020.png" alt="ACE 2020 Report" style="border: 1px solid rgba(0,0,0,.125)">
+
+<!-- ![](/images/eco/ace2020-1.png) -->
 </div>
 
 <div class="col-sm-10">
