@@ -13,6 +13,12 @@ The CRCO calculates the route charges due to the Member States for the
 services provided, bills the airspace users and distributes the route
 charges to the States concerned.
 
+
+<iframe width="100%" height="1063" frameborder="0"
+  src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
+
+
+
 ## See Also
 
 
