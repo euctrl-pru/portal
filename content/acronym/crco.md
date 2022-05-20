@@ -29,7 +29,7 @@ import notebook from "https://api.observablehq.com/@espinielli/central-route-cha
 // To avoid the chart itself affecting the size of its container, the chart is
 // absolutely-positioned within the container element that determines the size.
 const map = document.querySelector("#map");
-const container = chart.parentNode;
+const container = map.parentNode;
 
 // Embed the chart cell from the notebook into the chart element.
 const library = new Library();
@@ -61,45 +61,6 @@ function resizer(element, dimension) {
     return () => observer.disconnect();
   });
 }
-
-</script>
-
-
-
-<!-- Setting an initial height may help initial page layout, but would be overridden on resize. -->
-<iframe id="embed" width="1063" frameborder="0" src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
-
-<script type="module">
-
-// Select the embed iframe.
-const iframe = document.querySelector("#embed");
-
-// The Embedly protocol is to send the height as part of a stringified object.
-// In this example, the resize message is the only message being sent; however,
-// the checks are good practice, lest we try to interpret unrelated messages as
-// resize events. https://docs.embed.ly/v1.0/docs/provider-height-resizing
-function onMessage(message) {
-  if (message.source !== iframe.contentWindow) return;
-  let {data} = message;
-
-  // If message isn’t valid JSON, it must not be our resize event.
-  if (typeof data === "string") {
-    try {
-      data = JSON.parse(data);
-    } catch (ignore) {
-      return;
-    }
-  }
-
-  // Make sure it’s the resize event.
-  if (data.context !== "iframe.resize") return;
-
-  // Set the iframe’s height!
-  iframe.style.height = `${data.height}px`;
-}
-
-// Attach our listener for the message from the iframe
-addEventListener("message", onMessage);
 
 </script>
 
