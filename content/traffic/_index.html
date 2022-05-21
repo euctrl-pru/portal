@@ -78,6 +78,19 @@ dwnld_i: <i class="fa pru fa-download"></i>
 
   </style>
 <p>This page provides an overview of the traffic situation in the <a href="/definition/eurocontrol-area/">EUROCONTROL Area</a>. For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal <a href="/acronym/su/">service units</a> from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.</p>
+<ul class="nav nav-tabs mb-1">
+<li class="nav-item">
+<button id="flights-button" class="nav-link active" onclick="openTraffic(&#39;flights&#39;)">
+Flights
+</button>
+</li>
+<li class="nav-item">
+<button id="delays-button" class="nav-link" onclick="openTraffic(&#39;delays&#39;)">
+Delays
+</button>
+</li>
+</ul>
+<div id="flights" class="mytabs">
 <!-- Network Traffic section -->
 <div id="eurocontrol-area-network-view" class="section level4">
 <h4>EUROCONTROL area (Network view)</h4>
@@ -271,6 +284,8 @@ Country Pairs
 <!-- closes container -->
 <p><br>
 <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a></p>
+</div>
+<!-- closes tab -->
 <!-- script for traffic figures -->
 <script type="text/javascript">
   var data
@@ -359,4 +374,23 @@ Country Pairs
 
  }  
   
+</script>
+<div id="delays" class="mytabs">
+<p>Something</p>
+</div>
+<!-- closes tab -->
+<!-- script for tabs -->
+<script>
+function openTraffic(myelement) {
+  var i;
+  var x = document.getElementsByClassName("mytabs");
+  var y = document.getElementsByClassName("nav-link active")
+  var mybutton = myelement + "-button";
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(myelement).style.display = "block";
+  y[0].classList.remove('active');
+  document.getElementById(mybutton).classList.add('active');
+}
 </script>

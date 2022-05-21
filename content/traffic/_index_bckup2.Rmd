@@ -90,16 +90,6 @@ library(plotly)
 
 This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
 
-<ul class="nav nav-tabs mb-1">
-  <li class="nav-item">
-  <button id="flights-button" class="nav-link active" onclick="openTraffic('flights')">Flights</button>
-  </li>
-  <li class="nav-item">
-  <button id="delays-button" class="nav-link" onclick="openTraffic('delays')">Delays</button>
-  </li>
-</ul>
-
-<div id="flights" class="mytabs">
 <!-- Network Traffic section -->
 #### EUROCONTROL area (Network view)
 <div class="container">
@@ -231,7 +221,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <br>
 <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a>
 
-</div><!-- closes tab -->
+
 <!-- script for traffic figures -->
 <script type="text/javascript">
   var data
@@ -321,26 +311,4 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
  }  
   
 </script>
-
-<div id="delays" class="mytabs">
-Something
-</div><!-- closes tab -->
-
-
-<!-- script for tabs -->
-<script>
-function openTraffic(myelement) {
-  var i;
-  var x = document.getElementsByClassName("mytabs");
-  var y = document.getElementsByClassName("nav-link active")
-  var mybutton = myelement + "-button";
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(myelement).style.display = "block";
-  y[0].classList.remove('active');
-  document.getElementById(mybutton).classList.add('active');
-}
-</script>
-
 

@@ -46,7 +46,7 @@ library(lubridate)
   }
   
   #delay-plot{
-    margin-left:5px;
+    margin-left:10px;
   }
   
 }
@@ -151,7 +151,7 @@ library(lubridate)
 </div><!-- closes col md-6-->
 
 <div class="col-md-6">
-<div style=" margin-top: 0px; height: 450px;">
+<div style=" margin-top: 0px; height: 410px;">
 <iframe id="delay-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-delay-traffic-lp.html" frameborder="0" style="border:0;" >
 </iframe>
 </div><!-- closes iframe container -->
