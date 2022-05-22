@@ -14,13 +14,20 @@ services provided, bills the airspace users and distributes the route
 charges to the States concerned.
 
 
-
-<!-- Setting an initial height may help initial page layout, but would be overridden on resize. -->
-<iframe width="100%" height="1063" frameborder="0"
-  src="https://observablehq.com/embed/@espinielli/central-route-charging-office-zones-and-rates?cells=map"></iframe>
+<div id="observablehq-map-97f748d5"></div>
 
 
 ## See Also
 
 * {{< a_blank_ectrl "CRCO" "https://www.eurocontrol.int/crco" >}}
 * {{< a_blank_lexicon "Airspace User" "https://ext.eurocontrol.int/lexicon/index.php/Airspace_User" >}}
+
+
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d5"));
+});
+</script>
