@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "test-delay"
+title: "Traffic Overview"
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
@@ -38,7 +38,7 @@ title: "test-delay"
   }
   
   #delay-plot{
-    margin-left:5px;
+    margin-left:10px;
   }
   
 }
@@ -66,12 +66,22 @@ title: "test-delay"
 }
 
   </style>
-<p>blabla</p>
+<p>This page provides an overview of the traffic situation in the <a href="/definition/eurocontrol-area/">EUROCONTROL Area</a>. For a more detailed analysis consult our <a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html" target="_blank">Daily traffic variation dashboard</a>. Information on en-route and terminal <a href="/acronym/su/">service units</a> from the <a href="https://www.eurocontrol.int/crco" target="_blank">Central Route Charges Office of EUROCONTROL (CRCO)</a> is available from our <a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html" target="_blank">Service Units dashboard</a>.</p>
+<ul class="nav nav-tabs mb-1">
+<li class="nav-item">
+<a class="nav-link" href="/traffic/">Flights</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page">Delays</a>
+</li>
+</ul>
 <!-- Network dly section -->
+<div id="eurocontrol-area-network-view" class="section level4">
+<h4>EUROCONTROL area (Network view)</h4>
 <div class="container">
 <div class="row align-items-start">
 <div class="col-md-6">
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12">
 <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">
 Day
@@ -108,7 +118,7 @@ vs 2021
 </div>
 <!-- closes row -->
 <!-- week -->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12">
 <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">
 </p>
@@ -143,7 +153,7 @@ vs 2021
 </div>
 <!-- closes row -->
 <!-- y2d -->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12">
 <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">
 </p>
@@ -176,7 +186,7 @@ vs 2021
 </div>
 <!-- closes col md-6-->
 <div class="col-md-6">
-<div style=" margin-top: 0px; height: 450px;">
+<div style=" margin-top: 0px; height: 420px;">
 <iframe id="delay-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-delay-traffic-lp.html" frameborder="0" style="border:0;">
 </iframe>
 </div>
@@ -187,10 +197,12 @@ vs 2021
 <!-- closes row -->
 </div>
 <!-- closes container -->
+<p><a href="https://www.eurocontrol.int/Economics/Download/Network_Delay.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network delay data</a></p>
 <!-- ACC dly section -->
-<br>
-<div id="acc-view" class="section level4 container">
+</div>
+<div id="acc-view" class="section level4">
 <h4>ACC view</h4>
+<div class="container">
 <div class="row align-items-start">
 <div class="col-3">
 <div style=" margin-top: 0px; height: 750px;">
@@ -292,3 +304,4 @@ vs 2021
  
 }
 </script>
+</div>

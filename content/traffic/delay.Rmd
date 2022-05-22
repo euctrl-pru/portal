@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "test-delay"
+title: "Traffic Overview"
 ---
 
 ```{r, echo=FALSE, include=FALSE}
@@ -75,14 +75,24 @@ library(lubridate)
 
   </style>
   
-  blabla
-  
-  <!-- Network dly section -->
+This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
+
+<ul class="nav nav-tabs mb-1">
+  <li class="nav-item">
+    <a class="nav-link" href="/traffic/">Flights</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page">Delays</a>
+  </li>
+</ul>
+
+<!-- Network dly section -->
+#### EUROCONTROL area (Network view)  
 <div class="container">
 <div class="row align-items-start">
 <div class="col-md-6">
 
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12" >
   <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
 </div>
@@ -105,7 +115,7 @@ library(lubridate)
 </div><!-- closes row -->
 
 <!-- week -->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12" >
   <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;"></p>
 </div>
@@ -128,7 +138,7 @@ library(lubridate)
 </div><!-- closes row -->
 
 <!-- y2d -->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12" >
   <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;"></p>
 </div>
@@ -151,18 +161,18 @@ library(lubridate)
 </div><!-- closes col md-6-->
 
 <div class="col-md-6">
-<div style=" margin-top: 0px; height: 410px;">
+<div style=" margin-top: 0px; height: 420px;">
 <iframe id="delay-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-delay-traffic-lp.html" frameborder="0" style="border:0;" >
 </iframe>
 </div><!-- closes iframe container -->
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
+<a href="https://www.eurocontrol.int/Economics/Download/Network_Delay.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network delay data</a>
 
-  <!-- ACC dly section -->
-<br>
-<div class="container">
+<!-- ACC dly section -->
 #### ACC view
+<div class="container">
 <div class="row align-items-start">
 <div class="col-3">
 <div style=" margin-top: 0px; height: 750px;">

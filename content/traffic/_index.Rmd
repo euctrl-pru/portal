@@ -92,14 +92,13 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 
 <ul class="nav nav-tabs mb-1">
   <li class="nav-item">
-  <button id="flights-button" class="nav-link active" onclick="openTraffic('flights')">Flights</button>
+    <a class="nav-link active" aria-current="page" >Flights</a>
   </li>
   <li class="nav-item">
-  <button id="delays-button" class="nav-link" onclick="openTraffic('delays')">Delays</button>
+    <a class="nav-link" href="/traffic/delay/">Delays</a>
   </li>
 </ul>
 
-<div id="flights" class="mytabs">
 <!-- Network Traffic section -->
 #### EUROCONTROL area (Network view)
 <div class="container">
@@ -107,7 +106,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 <div class="row align-items-start">
 <div class="col-md-6">
 <!-- day -->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12" >
   <p id="last_day" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Day</p>
 </div>
@@ -129,7 +128,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 </div>
 </div><!-- closes day row -->
 <!-- week -->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12" >
   <p id="last_week" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Week</p>
 </div>
@@ -151,7 +150,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 </div>
 </div><!-- closes week row -->
 <!-- y2d-->
-<div class="row align-items-start" style="background-color: #f2f2f2; border-radius: 5px;">
+<div class="row align-items-start mb-1" style="background-color: #f2f2f2; border-radius: 5px;">
 <div class="col-12">
   <p id="y2d_day_text" style="font-weight: bold; margin-bottom: 0px; color: #0070c0;">Year to date</p>
 </div>
@@ -183,7 +182,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
-<a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network data</a>
+<a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network flight data</a>
 
 <!-- Stakeholders section -->
 <div class="container p-0" >
@@ -231,7 +230,6 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 <br>
 <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a>
 
-</div><!-- closes tab -->
 <!-- script for traffic figures -->
 <script type="text/javascript">
   var data
@@ -322,25 +320,6 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
   
 </script>
 
-<div id="delays" class="mytabs">
-Something
-</div><!-- closes tab -->
 
-
-<!-- script for tabs -->
-<script>
-function openTraffic(myelement) {
-  var i;
-  var x = document.getElementsByClassName("mytabs");
-  var y = document.getElementsByClassName("nav-link active")
-  var mybutton = myelement + "-button";
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(myelement).style.display = "block";
-  y[0].classList.remove('active');
-  document.getElementById(mybutton).classList.add('active');
-}
-</script>
 
 
