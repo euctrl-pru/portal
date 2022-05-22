@@ -24,7 +24,7 @@ plot_ACE <- ace_graph_data %>%
     x = ~ year_data,
     y = ~ costs_per_cph,
     yaxis = "y1",
-    marker = list(color =('##4F81BD')),
+    marker = list(color =('#4F81BD')),
     text = ~ paste("  <b>",round(costs_per_cph,0),"</b>"),
     textangle = -90,
     textposition = "inside",
