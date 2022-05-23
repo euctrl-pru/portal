@@ -28,5 +28,3 @@ blogdown::serve_site(.site_dir = "../pru-portal-generated")
 
 and then browsing at http://localhost:4321
 
-
-
