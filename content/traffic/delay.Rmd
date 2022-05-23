@@ -197,14 +197,15 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 </iframe>
 </div><!-- closes iframe container -->
 </div><!-- closes col -->
-<div class="col-9">
-![](/traffic/chart.png)
+<div class="col-9" style="width: 750px;">
+<div id="observablehq-map-97f748d5"></div>
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
 
 <!-- script for dly figures -->
 <script type="text/javascript">
+  console.log("hello");
   var data
   window.onload = function() {
    window.addEventListener('message', function (e) {
@@ -286,4 +287,12 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
   document.getElementById("dif_y2d_prev_year").innerHTML = dif_y2d_prev_year + '%';
  
 }
+</script>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d5"));
+});
 </script>
