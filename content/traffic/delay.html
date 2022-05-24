@@ -221,9 +221,9 @@ vs 2021
 <h4>ACC view</h4>
 <div class="flex-container">
 <div class="row align-items-start">
-<div class="col-3" style="min-width: 300px;">
+<div class="col-3 p-0" style="min-width: 300px;">
 <div id="acc-delay" style="margin-top: 0px;">
-<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-ranking-table.html" frameborder="0" style="border:0;">
+<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-day-table.html" frameborder="0" style="border:0;">
 </iframe>
 </div>
 <!-- closes iframe container -->
@@ -240,7 +240,7 @@ vs 2021
 </div>
 <!-- closes container -->
 <!-- script for dly figures -->
-<script type="text/javascript">
+<script type="text/javascript"> 
   console.log("hello");
   var data
   window.onload = function() {
@@ -248,11 +248,13 @@ vs 2021
    var $iframe = $('#delay-plot');
 
    data = JSON.parse(e.data);
-   <!-- alert("hello"); -->
+   console.log("hello again");
+  <!-- alert("hello"); -->
    UpdateDelay();
    
   }, false);
-    
+   console.log("hello3");
+
 }
 
  function UpdateDelay() { 
