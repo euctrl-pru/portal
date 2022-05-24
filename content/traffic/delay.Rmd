@@ -235,19 +235,44 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
-  
-  
-</div>
-<div id="week-tab" class="tab-pane fade">
-<h3>Menu 1</h3>
-<p>Some content in menu 1.</p>
-</div>
-<div id="y2d-tab" class="tab-pane fade">
-<h3>Menu 2</h3>
-<p>Some content in menu 2.</p>
-</div>
-</div>
 
+</div><!-- closes tab pane-->
+
+<div id="week-tab" class="tab-pane fade">
+<div class="flex-container mt-2">
+<div class="row align-items-start">
+<div class="col-3 p-0" style="min-width: 300px;">
+<div id="acc-delay" style="margin-top: 0px;">
+<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-week-table.html" frameborder="0" style="border:0;" >
+</iframe>
+</div><!-- closes iframe container -->
+</div><!-- closes col -->
+<div class="col-9" style="width: 750px;">
+<div id="observablehq-map-97f748d6"></div>
+</div><!-- closes col -->
+</div><!-- closes row -->
+</div><!-- closes container -->
+
+</div><!-- closes tab pane-->
+
+<div id="y2d-tab" class="tab-pane fade">
+
+<div class="flex-container mt-2">
+<div class="row align-items-start">
+<div class="col-3 p-0" style="min-width: 300px;">
+<div id="acc-delay" style="margin-top: 0px;">
+<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-y2d-table.html" frameborder="0" style="border:0;" >
+</iframe>
+</div><!-- closes iframe container -->
+</div><!-- closes col -->
+<div class="col-9" style="width: 750px;">
+<div id="observablehq-map-97f748d7"></div>
+</div><!-- closes col -->
+</div><!-- closes row -->
+</div><!-- closes container -->
+
+</div><!-- closes tab pane-->
+</div><!-- closes tab content->
 
 
 <!-- script for dly figures -->
@@ -345,3 +370,19 @@ new Runtime().module(define, name => {
   if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d5"));
 });
 </script>
+
+<!-- <script type="module"> -->
+<!-- import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js"; -->
+<!-- import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3"; -->
+<!-- new Runtime().module(define, name => { -->
+<!--   if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d6")); -->
+<!-- }); -->
+<!-- </script> -->
+
+<!-- <script type="module"> -->
+<!-- import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js"; -->
+<!-- import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3"; -->
+<!-- new Runtime().module(define, name => { -->
+<!--   if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d7")); -->
+<!-- }); -->
+<!-- </script> -->
