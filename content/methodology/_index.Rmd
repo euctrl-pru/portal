@@ -54,7 +54,7 @@ In order to encourage collaboration, transparency and reproducibility of perform
 </div></div>
 <div class="col-10">
 #### Economics
-  * to be developed
+  * [ATM Cost-Efficiency (ACE) Handbook][ace]
 </div>
 </div></div>
 
@@ -69,3 +69,4 @@ In order to encourage collaboration, transparency and reproducibility of perform
 [tasma]: /methodology/unimpeded-taxi-out-time/ "Unimpeded Taxi-out Time metric"
 [cdvfe]: /methodology/cd-vertical-flight-efficiency-pi/ "Vertical Flight Efficiency during Climb and Descent"
 [acu]: /methodology/airport-capacity-utilisation/ "Airport Capacity Utilisation"
+[ace]: /economics/ace/ace-handbook/ "ATM Cost-Efficiency (ACE)"
