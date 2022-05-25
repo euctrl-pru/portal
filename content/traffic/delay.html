@@ -68,15 +68,15 @@ title: "Traffic Overview"
 
 @media screen and (max-width:1200px) {
 
-  #acc-delay {
+  #acc-delay, #apt-delay {
     height: 350px;
   }
 }
 
 @media screen and (min-width:1200px) {
 
-  #acc-delay {
-    height: 750px;
+  #acc-delay, #apt-delay {
+    height: 680px;
   }
 }
 
@@ -236,100 +236,54 @@ vs 2021
 <!-- closes container -->
 <p><a href="https://www.eurocontrol.int/Economics/Download/Network_Delay.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network delay data</a></p>
 <!-- ACC dly section -->
+<!-- <ul class="nav nav-tabs"> -->
+<!--   <li> -->
+<!--   <button class="active" id="day-btn" data-toggle="tab" href="#day-tab">Day</button></li> -->
+<!--   <li> -->
+<!--   <button id="week-btn" data-toggle="tab" href="#week-tab">Week</button></li> -->
+<!--   <li> -->
+<!--   <button id="y2d-btn" data-toggle="tab" href="#y2d-tab">Y2d</button></li> -->
+<!-- </ul> -->
+<!-- <div class="tab-content"> -->
+<!-- <div id="day-tab" class="tab-pane active"> -->
 </div>
-<div id="acc-view" class="section level4">
+<div class="flex-container mt-2">
+<div class="row align-items-start">
+<div id="acc-view" class="section level4 col-md-6">
 <h4>ACC view</h4>
-<ul class="nav nav-tabs">
-<li>
-<button class="active" id="day-btn" data-toggle="tab" href="#day-tab">
-Day
-</button>
-</li>
-<li>
-<button id="week-btn" data-toggle="tab" href="#week-tab">
-Week
-</button>
-</li>
-<li>
-<button id="y2d-btn" data-toggle="tab" href="#y2d-tab">
-Y2d
-</button>
-</li>
-</ul>
-<div class="tab-content">
-<div id="day-tab" class="tab-pane active">
-<div class="flex-container mt-2">
+<p>Total ATFM delay per ACC.</p>
+</div>
+<!-- closes col -->
+<div id="airport-view" class="section level4 col-md-6">
+<h4>Airport view</h4>
+<p>Total ATFM delay for main European airports.</p>
+</div>
+<!-- closes col -->
+</div>
+<!-- closes row -->
 <div class="row align-items-start">
-<div class="col-md-3 p-0" style="min-width: 300px;">
+<div class="col-md-6 p-0" style="min-width: 300px;">
 <div id="acc-delay" style="margin-top: 0px;">
-<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-day-table.html" frameborder="0" style="border:0;">
+<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-ranking-table.html" frameborder="0" style="border:0;">
 </iframe>
 </div>
 <!-- closes iframe container -->
 </div>
 <!-- closes col -->
-<div class="col-md-9">
-<div id="observablehq-map-97f748d5">
-
+<div class="col-md-6 p-0" style="min-width: 300px;">
+<div id="apt-delay" style="margin-top: 0px;">
+<iframe id="apt-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-delay-ranking-table.html" frameborder="0" style="border:0;">
+</iframe>
 </div>
+<!-- closes iframe container -->
 </div>
 <!-- closes col -->
 </div>
 <!-- closes row -->
 </div>
 <!-- closes container -->
-</div>
-<!-- closes tab pane-->
-<div id="week-tab" class="tab-pane fade">
-<div class="container mt-2">
-<div class="row align-items-start">
-<div class="col-sm-3 p-0" style="min-width: 300px;">
-<div id="acc-delay" style="margin-top: 0px;">
-<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-week-table.html" frameborder="0" style="border:0;">
-</iframe>
-</div>
-<!-- closes iframe container -->
-</div>
-<!-- closes col -->
-<div class="col-sm-9" style="height: 750px;">
-<div id="observablehq-map-97f748d6">
-
-</div>
-</div>
-<!-- closes col -->
-</div>
-<!-- closes row -->
-</div>
-<!-- closes container -->
-</div>
-<!-- closes tab pane-->
-<div id="y2d-tab" class="tab-pane fade">
-<div class="flex-container mt-2">
-<div class="row align-items-start">
-<div class="col-3 p-0" style="min-width: 300px;">
-<div id="acc-delay" style="margin-top: 0px;">
-<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-y2d-table.html" frameborder="0" style="border:0;">
-</iframe>
-</div>
-<!-- closes iframe container -->
-</div>
-<!-- closes col -->
-<div class="col-9">
-<div id="observablehq-map-97f748d7">
-
-</div>
-</div>
-<!-- closes col -->
-</div>
-<!-- closes row -->
-</div>
-<!-- closes container -->
-</div>
-<!-- closes tab pane-->
-</div>
-<!-- closes tab content->
-
-
+<!-- </div><!-- closes tab pane-> -->
+<!-- </div><!-- closes tab content-> -->
 <!-- script for dly figures -->
 <script type="text/javascript"> 
   console.log("hello");
@@ -417,25 +371,3 @@ Y2d
  
 }
 </script>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d5"));
-});
-</script>
-<!-- <script type="module"> -->
-<!-- import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js"; -->
-<!-- import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3"; -->
-<!-- new Runtime().module(define, name => { -->
-<!--   if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d6")); -->
-<!-- }); -->
-<!-- </script> -->
-<!-- <script type="module"> -->
-<!-- import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js"; -->
-<!-- import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3"; -->
-<!-- new Runtime().module(define, name => { -->
-<!--   if (name === "map") return new Inspector(document.querySelector("#observablehq-map-97f748d7")); -->
-<!-- }); -->
-<!-- </script> -->
-</div>
