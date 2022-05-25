@@ -207,52 +207,38 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 </div><!-- closes container -->
 <a href="https://www.eurocontrol.int/Economics/Download/Network_Delay.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network delay data</a>
 
-<!-- ACC dly section -->
-
-
-<!-- <ul class="nav nav-tabs"> -->
-<!--   <li> -->
-<!--   <button class="active" id="day-btn" data-toggle="tab" href="#day-tab">Day</button></li> -->
-<!--   <li> -->
-<!--   <button id="week-btn" data-toggle="tab" href="#week-tab">Week</button></li> -->
-<!--   <li> -->
-<!--   <button id="y2d-btn" data-toggle="tab" href="#y2d-tab">Y2d</button></li> -->
-<!-- </ul> -->
-
-<!-- <div class="tab-content"> -->
-<!-- <div id="day-tab" class="tab-pane active"> -->
-
 <div class="flex-container mt-2">
+
 <div class="row align-items-start">
-<div class="col-md-6">
+<div class="col-md-6" >
 #### ACC view
 Total ATFM delay per ACC.
-</div><!-- closes col -->
-
-<div class="col-md-6">
-#### Airport view
-Total ATFM delay for main European airports.
-</div><!-- closes col -->
-</div><!-- closes row -->
-
 <div class="row align-items-start">
-<div class="col-md-6 p-0" style="min-width: 300px;">
-<div id="acc-delay" style="margin-top: 0px;">
+<div class="col-12">
+<div id="acc-delay">
 <iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-acc-delay-ranking-table.html" frameborder="0" style="border:0;" >
 </iframe>
 </div><!-- closes iframe container -->
-</div><!-- closes col -->
+</div><!-- closes col 12-->
+</div><!-- closes secondary row-->
+</div><!-- closes col 6-->
 
-<div class="col-md-6 p-0" style="min-width: 300px;">
-<div id="apt-delay" style="margin-top: 0px;">
-<iframe id="apt-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-delay-ranking-table.html" frameborder="0" style="border:0;" >
+<div class="col-md-6" >
+#### Airport view
+Total ATFM delay (arrival + departure) for main EUROCONTROL airports.
+<div class="row align-items-start">
+<div class="col-12">
+<div id="apt-delay">
+<iframe id="acc-delay-table" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-apt-delay-ranking-table.html" frameborder="0" style="border:0;" >
 </iframe>
 </div><!-- closes iframe container -->
-</div><!-- closes col -->
+</div><!-- closes col 12-->
+</div><!-- closes secondary row-->
+</div><!-- closes col 6-->
 </div><!-- closes row -->
 </div><!-- closes container -->
-
-
+<br>
+<a href="https://www.eurocontrol.int/Economics/Download/ACC_airport_delay.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download ACC/airport delay data</a>
 <!-- </div><!-- closes tab pane-> -->
 <!-- </div><!-- closes tab content-> -->
 
