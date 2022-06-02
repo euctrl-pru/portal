@@ -95,7 +95,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
     <a class="nav-link active" aria-current="page" >Flights</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/traffic/delay/">Delays</a>
+    <a class="nav-link" href="/traffic/delay/">ATFM Delays</a>
   </li>
 </ul>
 
