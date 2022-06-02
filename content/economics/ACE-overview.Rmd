@@ -131,13 +131,13 @@ plot_ACE
 
 <br>
 <div class="container" >
-* ANSPs gate-to-gate **revenues fell by -53%** as a result of an unprecedented traffic decrease in 2020 (-57%). 
+* ANSPs gate-to-gate **revenues fell by -54%** as a result of an unprecedented traffic decrease in 2020 (-57%). 
 
-* Cost containment measures were implemented and **ATM/CNS provision costs fell by -€441M**, mainly through reduced staff costs (-€314M) and lower cost of capital (-€92M). 
+* Cost containment measures were implemented and **ATM/CNS provision costs fell by -€450M**, mainly through reduced staff costs (-€314M) and lower cost of capital (-€101M). 
 
-* Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term **borrowings rose by +€2.5 billion (+134%)**.
+* Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term **borrowings rose by +€2.5 billion (+136%)**.
 
-* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -26% lower than in 2019.
+* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -27% lower than in 2019.
 
 </div>
 
@@ -149,7 +149,7 @@ plot_ACE
 
 <div class="row align-items-start">
 <div class="col-sm-2">
-  <img src="/images/eco/ace2020.png" alt="ACE 2020 Report" style="border: 1px solid rgba(0,0,0,.125)">
+  <img src="/images/eco/ace2020-thmb.png" alt="ACE 2020 Report" style="border: 1px solid rgba(0,0,0,.125)">
 
 <!-- ![](/images/eco/ace2020-1.png) -->
 </div>
@@ -267,4 +267,4 @@ Access information on ANSP institutional arrangements, corporate governance stru
 
 </div> <!-- closes container -->
 
-For feedback or questions please contact please contact the [PRU Support Team](mailto:PRU-Support@eurocontrol.int).
+For feedback or questions please contact the [PRU Support Team](mailto:PRU-Support@eurocontrol.int).
