@@ -523,8 +523,10 @@ title: ANSPs Financial Dashboard
   var SelectedEntity = "ENAV";
   var SelectedYear = 2020;
   var MinYear;
+  var MaxYear;
   var DataFlag;
   var DecimalsDivisor;
+  var ticks = [];
 
   var NatCurrency;
   var XRate;
@@ -880,11 +882,22 @@ title: ANSPs Financial Dashboard
 
     // find out minimum year. This value is used in other parts of the dashboard
     MinYear = MyViewIncome1.getValue(0, 0);
+    MaxYear = MyViewIncome1.getValue(0, 0);
       for (var x = 0; x < MyViewIncome1.getNumberOfRows(); x++) {
       if (MyViewIncome1.getValue(x, 0) < MinYear) {
         MinYear = MyViewIncome1.getValue(x, 0);
      }
+       if (MyViewIncome1.getValue(x, 0) > MaxYear) {
+        MaxYear = MyViewIncome1.getValue(x, 0);
+     }
     }
+    
+    // create tick array
+     ticks = new Array();
+     for (var x = MinYear; x <= MaxYear; x++) {
+          ticks.push(x);
+     }
+
 
     var optionsMyChartIncome1 = {
       // title: SelectedEntity,
@@ -915,7 +928,8 @@ title: ANSPs Financial Dashboard
         textPosition: "out",
         textStyle: { color: "#595959", fontSize: 12 },
         // gridlines: "{ count: MyViewIncome1.getNumberOfRows() }"
-        gridlines: { count: 0 }
+        ticks: ticks,
+        gridlines: { count: 0, color: '#e4e8ed'}
       },
       vAxes: {
         0: {
@@ -1460,7 +1474,7 @@ title: ANSPs Financial Dashboard
           title: " ",
           format: "####",
           textPosition: "out",
-          textStyle: { color: "#595959", fontSize: 12 },
+          textStyle: { color: "#595959", fontSize: 12 }
         },
       1: {
           format: "-",
@@ -1514,7 +1528,7 @@ title: ANSPs Financial Dashboard
         easing: "inAndOut"
       },
       // width: 500, //set it to 710 by 210 if bars vertical
-      height: 280,
+      height: 306,
       chartArea: {
         backgroundColor: "#e4e8ed",
         //   left: 40, //none of this works for this type of chart
@@ -1548,7 +1562,7 @@ title: ANSPs Financial Dashboard
       // title: SelectedEntity,
       titlePosition: "out",
       // width: 410,
-      height: 300,
+      height: 326,
       pointSize: 3,
       backgroundColor: "#e4e8ed",
       series: {
@@ -1976,10 +1990,8 @@ title: ANSPs Financial Dashboard
         format: "####",
         textPosition: "out",
         textStyle: { color: "#595959", fontSize: 12 },
-        // slantedText: true,
-        // slantedTextAngle: 90,
-        // gridlines: "{ count: MyViewIncome1.getNumberOfRows() }"
-        gridlines: { count: 0 }
+          ticks: ticks,
+        gridlines: { count: 0, color: '#e4e8ed'}
       },
       vAxes: {
         0: {
@@ -2096,10 +2108,8 @@ title: ANSPs Financial Dashboard
         format: "####",
         textPosition: "out",
         textStyle: { color: "#595959", fontSize: 12 },
-        // slantedText: true,
-        // slantedTextAngle: 90,
-        // gridlines: "{ count: MyViewIncome1.getNumberOfRows() }"
-        gridlines: { count: 0 }
+        ticks: ticks,
+        gridlines: { count: 0, color: '#e4e8ed'}
       },
       vAxes: {
         0: {
