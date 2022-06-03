@@ -156,39 +156,34 @@ plot_ACE
 
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2;" >
-[**Executive summary**](){target="_blank"}
+[**Executive summary**](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=EXECUTIVE SUMMARY){target="_blank"}
 </div>
 
 <div style="background-color: #F2F2F2; "  >
 [<i class="fas fa-download"></i>](){target="_blank"}
-[**Main report**](){target="_blank"}
+[**Main report**](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf){target="_blank"}
 </div>
 
-  1. [Introduction](){target="_blank"}
+  1. [Introduction](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=INTRODUCTION){target="_blank"}
 
 <details open>
-<summary>**PART I:** Pan-European system cost-effectiveness performance in 2020</summary>
-  2. [Pan-European cost-effectiveness performance in 2020](){target="_blank"}
-  3. [Trend analysis and COVID-19 impacts on cost-effectiveness](){target="_blank"}
-  4. [Impact of the COVID-19 pandemic on ANSPs financial situation](){target="_blank"}
-  5. [Forward-looking cost-effectiveness (2021-2024)](){target="_blank"}
-</details>
-
-<details open>
-  <summary>**PART II:** Cost-effectiveness performance focus at ANSP level</summary>
-  5. [Summary of ANSPs individual cost-effectiveness performance](){target="_blank"}
-  6. [Focus on ANSPs individual cost-effectiveness performance](){target="_blank"}
+<summary>**Main Chapters:**</summary>
+  2. [Pan-European cost-effectiveness performance in 2020](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=PAN-EUROPEAN COST-EFFECTIVENESS PERFORMANCE IN 2020){target="_blank"}
+  3. [Trend analysis and COVID-19 impacts on cost-effectiveness](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=TREND ANALYSIS AND COVID-19 IMPACTS ON COST-EFFECTIVENESS){target="_blank"}
+  4. [Impact of the COVID-19 pandemic on ANSPs financial situation](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=IMPACT OF THE COVID-19 PANDEMIC ON ANSPS FINANCIAL SITUATION){target="_blank"}
+  5. [Forward-looking cost-effectiveness (2021-2024)](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=FORWARD-LOOKING COST-EFFECTIVENESS (2021-2024)){target="_blank"}
+  6. [Summary of ANSPs individual cost-effectiveness performance](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=SUMMARY OF ANSPS INDIVIDUAL COST-EFFECTIVENESS PERFORMANCE){target="_blank"}
 </details>
 
 <details>
 <summary>**Annexes**</summary>
-  * [ANNEX 1 – Status of ANSPs 2020 Annual Reports](){target="_blank"}
-  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](){target="_blank"}
-  * [ANNEX 3 – Performance ratios](){target="_blank"}
-  * [ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS)](){target="_blank"}
-  * [ANNEX 5 – Key data](){target="_blank"}
-  * [ANNEX 6 – Performance indicators at FAB level](){target="_blank"}
-  * [Glossary](){target="_blank"}
+  * [ANNEX 1 – Status of ANSPs 2020 Annual Reports](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 1 – STATUS OF ANSPS 2020 ANNUAL REPORTS){target="_blank"}
+  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 2 – PERFORMANCE INDICATORS USED FOR THE COMPARISON OFANSPS){target="_blank"}
+  * [ANNEX 3 – Performance ratios](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 3 – PERFORMANCE RATIOS){target="_blank"}
+  * [ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS) data](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 4 – EXCHANGE RATES, INFLATION RATES AND PURCHASING POWERPARITIES (PPPS) DATA){target="_blank"}
+  * [ANNEX 5 – Key data](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 5 – KEY DATA){target="_blank"}
+  * [ANNEX 6 – Performance indicators at FAB level](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 6 – PERFORMANCE INDICATORS AT FAB LEVEL){target="_blank"}
+  * [Glossary](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#page=87){target="_blank"}
 </details>
 
 </div>
@@ -219,7 +214,7 @@ Learn about the scope of the ACE analysis, the processes involved in the product
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
 <!-- <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank"><i class="fas fa-download"></i></a> -->
-<a href="https://www.eurocontrol.int/ACE/ACE-Factsheets.html" target="_blank">**Factsheets (Part II of the ACE Report)**</a>
+<a href="/economics/ace/ace-ansp-factsheets/" target="_blank">**Factsheets (Former Part II of the ACE Report)**</a>
 </div>
 Access information on ANSP institutional arrangements, corporate governance structure, historical developments of financial cost-effectiveness, comparison with peers and capital expenditures.
 </div>
