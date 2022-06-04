@@ -212,7 +212,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 <div class="row align-items-start">
 <div class="col-md-6" >
 #### ACC view
-Total ATFM delay per ACC.
+Total [ATFM delay](/definition/atfm-delay/) per ACC.
 <div class="row align-items-start">
 <div class="col-12">
 <div id="acc-delay">
@@ -225,7 +225,7 @@ Total ATFM delay per ACC.
 
 <div class="col-md-6" >
 #### Airport view
-Total ATFM delay (arrival + departure) for main EUROCONTROL airports.
+Total [ATFM delay](/definition/atfm-delay/) (arrival + departure) for main EUROCONTROL airports.
 <div class="row align-items-start">
 <div class="col-12">
 <div id="apt-delay">

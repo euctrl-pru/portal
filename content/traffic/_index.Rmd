@@ -87,7 +87,6 @@ library(plotly)
 
   </style>
 
-
 This page provides an overview of the traffic situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
 
 <ul class="nav nav-tabs mb-1">
@@ -232,6 +231,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
 
 <!-- script for traffic figures -->
 <script type="text/javascript">
+  console.log("hello");
   var data
   
   window.onload = function() {
@@ -239,11 +239,12 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
    var $iframe = $('#traffic-plot');
 
    data = JSON.parse(e.data);
-
+   <!-- typeof data === 'object'; -->
+   console.log("hello2");
    UpdateTraffic();
    
   }, false);
-    
+   console.log("hello3");    
 }
  
  function UpdateTraffic() { 
