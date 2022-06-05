@@ -8,7 +8,8 @@ tags: ["publications"]
 <div class="row">
 <div class="card-deck">
 
-<div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020" target="_blank">
+<!-- <div class="card"><a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020" target="_blank"> -->
+<div class="card"><a href="/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf" target="_blank">
   <img class="card-img-top" src="/images/prc/ace2020.png" alt="ACE 2020">
   <div class="card-body"><h5 class="card-title">ATM Cost Effectiveness (ACE) Report 2020</h5></a>
   </div>
