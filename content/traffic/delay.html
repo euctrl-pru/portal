@@ -280,22 +280,35 @@ Total <a href="/definition/atfm-delay/">ATFM delay</a> (arrival + departure) for
 <!-- </div><!-- closes tab content-> --></p>
 <!-- script for dly figures -->
 <script type="text/javascript"> 
+  <!-- code found @ https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser -->
+  var isFirefox = typeof InstallTrigger !== 'undefined';
   console.log("hello");
   var data
+
+  if (isFirefox == true) {
+   window.addEventListener('message', function (e) {
+   var $iframe = $('#delay-plot');
+
+   data = JSON.parse(e.data);
+   console.log("hello again");
+   UpdateDelay();
+   
+  }, false);
+   console.log("hello3");
+
+} else {
   window.onload = function() {
    window.addEventListener('message', function (e) {
    var $iframe = $('#delay-plot');
 
    data = JSON.parse(e.data);
    console.log("hello again");
-  <!-- alert("hello"); -->
    UpdateDelay();
    
   }, false);
    console.log("hello3");
-
+  }
 }
-
  function UpdateDelay() { 
      // Calculate datestrings
    var last_day = new Date(data.LAST_DATA_DAY);

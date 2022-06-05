@@ -280,12 +280,16 @@ Country Pairs
 <p><br>
 <a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download stakeholder data</a></p>
 <!-- script for traffic figures -->
-<script src="/js/my.js"></script>
 <script type="text/javascript">
-  console.log("hello");
+  var browserName  = navigator.appName
+  <!-- code found @ https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser -->
+  var isFirefox = typeof InstallTrigger !== 'undefined';
+  <!-- alert(isFirefox); -->
+  <!-- console.log("hello"); -->
   var data
-  
-   function myfunction() {
+ 
+  if (isFirefox == true) {
+  <!-- window.onload = function() { -->
    window.addEventListener('message', function (e) {
    var $iframe = $('#traffic-plot');
 
@@ -296,11 +300,21 @@ Country Pairs
    
   }, false);
    console.log("hello3");    
-}
+<!-- } -->
+  } else {
+  window.onload = function() {
+   window.addEventListener('message', function (e) {
+   var $iframe = $('#traffic-plot');
 
-$(window).load(function(){
-myfunction();
-});
+   data = JSON.parse(e.data);
+   <!-- typeof data === 'object'; -->
+   console.log("hello2");
+   UpdateTraffic();
+   
+  }, false);
+   console.log("hello3");    
+  }
+}
  
  function UpdateTraffic() { 
      // Calculate datestrings
