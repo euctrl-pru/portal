@@ -251,13 +251,13 @@ Access information on ANSP institutional arrangements, corporate governance stru
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/SEID3.0.pdf" target="_blank">
+<div class="card"><a href="https://www.eurocontrol.int/publication/eurocontrol-specification-economic-information-disclosure" target="_blank">
   <img class="card-img-top" src="/images/prc/ace_seid_3.0.jpg" alt="Specification for economic information disclosure">
   <div class="card-body"><h5 class="card-title">Specification for economic information disclosure</h5></a><p class="card-text"></p>
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/SEID3.0.pdf" target="_blank">
+<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/KeyOpsData2020.xlsm" target="_blank">
   <img class="card-img-top" src="/images/prc/ace_key_ops_data_2020.png" alt="2020 Key operational data">
   <div class="card-body"><h5 class="card-title">2020 Key operational data</h5></a><p class="card-text"></p>
   </div>
