@@ -161,7 +161,7 @@ In fact they use different BADA versions and hence different aircraft characteri
 [ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xlsx "ACE (Excel)"
 [ACEcsv]:  /404/ "ACE (CSV)"
 [ACEmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE (Meta)"
-[ACEurl]:  http://www.eurocontrol.int/documents/economic-information-disclosure-specification "ACE specs"
+[ACEurl]:  https://www.eurocontrol.int/publication/eurocontrol-specification-economic-information-disclosure "ACE specs"
 
 <br>
 
