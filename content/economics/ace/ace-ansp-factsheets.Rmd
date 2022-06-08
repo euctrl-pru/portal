@@ -26,7 +26,9 @@ The chart in the middle of the third page shows the historical evolution of capi
 
 <div class="col-lg-6 text-center">
 <div id="ANSP_filter_div"></div>
-<div id="MyEmbed_div"><embed src="/library/ace/ansp-factsheets/Albcontrol.pdf" type="application/pdf" width="100%" height="850pt"></div>
+<div id="MyEmbed_div">
+<embed src="/library/ace/ansp-factsheets/Albcontrol.pdf" type="application/pdf" width="100%" height="850pt">
+</div>
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
