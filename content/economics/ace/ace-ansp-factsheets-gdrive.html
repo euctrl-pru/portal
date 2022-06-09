@@ -3,7 +3,6 @@ title: "ANSPs individual factsheets"
 output: html_document
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>This page comprises factsheets for each ANSP participating to the ACE analysis. These factsheets are made of three pages which comprise the following information:</p>
@@ -32,7 +31,8 @@ Developments in the components of financial cost-effectiveness (ATCO-hour produc
 
 </div>
 <div id="MyEmbed_div">
-<embed src="/library/ace/ansp-factsheets/Albcontrol.pdf" type="application/pdf" width="100%" height="850pt">
+<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/Albcontrol.pdf" width="100%" height="850pt">
+</iframe>
 </div>
 </div>
 <!-- closes col -->
@@ -91,6 +91,6 @@ Developments in the components of financial cost-effectiveness (ATCO-hour produc
     
     function changeANSP_Picker () {
         SelectedANSP = ANSP_Picker.getState().selectedValues[0];
-        document.getElementById("MyEmbed_div").innerHTML = '<embed src="/library/ace/ansp-factsheets/'+SelectedANSP+'.pdf" type="application/pdf" width="100%" height="850pt" />';
+        document.getElementById("MyEmbed_div").innerHTML = '<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+SelectedANSP+'.pdf" width="100%" height="850pt" /></iframe>';
     }
 </script>
