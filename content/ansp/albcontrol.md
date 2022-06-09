@@ -1,5 +1,5 @@
 ---
-title: Albcontrol
+title: "Albcontrol"
 slug: albcontrol
 ---
 
