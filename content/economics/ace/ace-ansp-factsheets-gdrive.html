@@ -27,12 +27,20 @@ Developments in the components of financial cost-effectiveness (ATCO-hour produc
 </div>
 </div>
 <!-- closes col -->
-<div class="col-lg-6 text-center">
-<div id="ANSP_filter_div">
+<div class="col-lg-6">
+<div class="row">
+<div id="ANSP_filter_div" class="col-6 float-left">
 
 </div>
-<div id="MyEmbed_div">
-<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/Albcontrol.pdf" width="100%" height="850pt">
+<div class="col-6 mb-1">
+<p><a id="mydownload" href="/library/ace/ansp-factsheets/Albcontrol.pdf" role="button" target="_blank"
+class="float-right pr-1 pl-1" style="padding-top:2px; padding-bottom:2px; border-radius:2px; border:1px solid #aaaaaa; background: linear-gradient(to bottom, #fcfcfc, #dddddd)" type="button" download>Download .pdf
+</a></p>
+</div>
+</div>
+<!-- closes row -->
+<div>
+<iframe id="MyEmbed_div" src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/Albcontrol.pdf" width="100%" height="850pt">
 </iframe>
 </div>
 </div>
@@ -92,6 +100,12 @@ Developments in the components of financial cost-effectiveness (ATCO-hour produc
     
     function changeANSP_Picker () {
         SelectedANSP = ANSP_Picker.getState().selectedValues[0];
-        document.getElementById("MyEmbed_div").innerHTML = '<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+SelectedANSP+'.pdf" width="100%" height="850pt" /></iframe>';
+
+        var element1 = document.getElementById("MyEmbed_div");
+      element1.src = 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+SelectedANSP+'.pdf' ;        
+        
+        var element2 = document.getElementById("mydownload");
+        var myurl = '/library/ace/ansp-factsheets/'+SelectedANSP+'.pdf';
+      element2.setAttribute("href", myurl) ;
     }
 </script>

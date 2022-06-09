@@ -24,15 +24,24 @@ The chart in the middle of the third page shows the historical evolution of capi
 
 </div><!-- closes col -->
 
-<div class="col-lg-6 text-center">
-<div id="ANSP_filter_div"></div>
-<div id="MyEmbed_div">
-<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/Albcontrol.pdf" width="100%" height="850pt">
+<div class="col-lg-6 ">
+<div class="row">
+<div class="col-6 float-left" id="ANSP_filter_div"></div>
+<div class="col-6 mb-1">
+<a id="mydownload" href="/library/ace/ansp-factsheets/Albcontrol.pdf" role="button" target="_blank"
+class="float-right pr-1 pl-1" style="padding-top:2px; padding-bottom:2px; border-radius:2px; border:1px solid #aaaaaa; background: linear-gradient(to bottom, #fcfcfc, #dddddd)" type="button" download>Download .pdf
+</a>
+</div>
+</div><!-- closes row -->
+
+<div>
+<iframe id="MyEmbed_div" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/Albcontrol.pdf" width="100%" height="850pt">
 </iframe>
 </div>
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
+
 
 <script
   type="text/javascript"
@@ -86,7 +95,13 @@ The chart in the middle of the third page shows the historical evolution of capi
 	
 	function changeANSP_Picker () {
 		SelectedANSP = ANSP_Picker.getState().selectedValues[0];
-		document.getElementById("MyEmbed_div").innerHTML = '<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+SelectedANSP+'.pdf" width="100%" height="850pt" /></iframe>';
+
+		var element1 = document.getElementById("MyEmbed_div");
+	  element1.src = 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+SelectedANSP+'.pdf' ;		
+		
+		var element2 = document.getElementById("mydownload");
+		var myurl = '/library/ace/ansp-factsheets/'+SelectedANSP+'.pdf';
+	  element2.setAttribute("href", myurl) ;
 	}
 </script>
 
