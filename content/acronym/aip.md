@@ -9,4 +9,3 @@ and containing aeronautical information of a lasting character essential to air 
 ## See Also
 
 * {{< a_blank_wiki "AIP" "https://en.wikipedia.org/wiki/Aeronautical_Information_Publication" >}}
-* {{< a_blank_lexicon "AIP" "https://ext.eurocontrol.int/lexicon/index.php/Aeronautical_information_publication" >}}

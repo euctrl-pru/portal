@@ -34,6 +34,7 @@ used), please refer to the relevant section in the
 [En-route ATFM delays](/reference/dataset/en-route-atfm-delay-fir/)
 page part of the [Datasets Definition](/reference/dataset/) section.
 
+
 ## See Also
 
-* {{< a_blank_lexicon "FAB - Functional Airspace Block" "https://ext.eurocontrol.int/lexicon/index.php/Functional_Airspace_Block" >}}
+* {{< a_blank_skybrary "FAB - Functional Airspace Block" "https://skybrary.aero/articles/functional-airspace-block-fab" >}}

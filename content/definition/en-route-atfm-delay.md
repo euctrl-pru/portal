@@ -10,9 +10,3 @@ of the [FMP][fmp] to protect en-route ATC sectors from overload.
 [fmp]: /acronym/fmp/ "Flow Management Position"
 [regu]: /definition/regulation/ "Regulation"
 
-
-## See Also
-
-* {{< a_blank_lexicon "ATFM en-route Delay" "https://ext.eurocontrol.int/lexicon/index.php/ATFM_en-route_delay" >}}
-
-
