@@ -174,7 +174,7 @@ This page provides an overview of the traffic situation in the [EUROCONTROL Area
 <div class="col-md-6 text-center h6">
 Evolution of daily flights in the EUROCONTROL area
 <div style=" height: 400px;">
-<iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp.html" frameborder="0" style="border:0; margin-top: 25px;" >
+<iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp.html" frameborder="0" style="border:0; margin-top: 35px;" >
 </iframe>
 <!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 </div><!-- closes iframe container -->
