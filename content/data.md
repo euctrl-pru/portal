@@ -157,12 +157,17 @@ In fact they use different BADA versions and hence different aircraft characteri
 | Data description                                                     | Period                                                                         | {{< excel_i >}}             | {{< csv_i >}} |  Info                    | [ICAO GANP][icaoganp]              |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------|---------------|--------------------------|------------------------------------|
 | ACE operational data<br><small>Monthly ACE operational data</small>  | {{< getdata "dwnld" "ace_opt_beg" >}} - {{< getdata "dwnld" "ace_opt_end" >}}  | [{{< dwnld_i >}}][ACExlsx]  |               | [{{< info_i >}}][ACEurl] |                                    |
+| ACE operational data<br><small>Yearly ACE operational data</small>  | {{< getdata "dwnld" "ace_year_end" >}} | [{{< dwnld_i >}}][ACEyearxlsx]  |               | [{{< info_i >}}][ACEyearurl] |                                    |
 
-[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xlsx "ACE (Excel)"
-[ACEcsv]:  /404/ "ACE (CSV)"
-[ACEmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE (Meta)"
+[ACExlsx]: /download/xls/ACE_Monthly_Operational_Data.xlsx "ACE Month (Excel)"
+[ACEcsv]:  /404/ "ACE Month (CSV)"
+[ACEmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE Month (Meta)"
 [ACEurl]:  https://www.eurocontrol.int/publication/eurocontrol-specification-economic-information-disclosure "ACE specs"
 
+[ACEyearxlsx]: /download/xls/ACE_Yearly_Operational_Data.xlsx "ACE Year (Excel)"
+[ACEyearcsv]:  /404/ "ACE Year (CSV)"
+[ACEyearmeta]: /reference/dataset/ace-monthly-operational-data/ "ACE Year (Meta)"
+[ACEyearurl]:  https://www.eurocontrol.int/publication/eurocontrol-specification-economic-information-disclosure "ACE specs"
 <br>
 
 {{< excel_i >}} = Excel file.<br>

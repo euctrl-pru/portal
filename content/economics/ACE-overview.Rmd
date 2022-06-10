@@ -23,15 +23,20 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
 <!-- retrieve latest ACE data -->
 ```{r,  echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
 library(dplyr)
-ACE_landing_page <- read.csv(
-  file  = here::here ("content","economics","ace_landing_page_data.csv")) 
+library(readxl)
+# ACE_landing_page <- read.csv(
+#   file  = here::here ("content","economics","ace_landing_page_data.csv")) 
+# 
+# if(ncol(ACE_landing_page)==1){
+#   ACE_landing_page <- read.csv2(
+#     file  = here::here ("content","economics","ace_landing_page_data.csv")) 
+# }
 
-if(ncol(ACE_landing_page)==1){
-  ACE_landing_page <- read.csv2(
-    file  = here::here ("content","economics","ace_landing_page_data.csv")) 
-}
-
-ACE_landing_page <- ACE_landing_page%>%
+ACE_landing_page <- read_xlsx(
+  path  = here::here ("content","economics","ace_landing_page_data.xlsx"),
+  sheet = "ACE_landing_page_data",
+  range = cell_limits(c(1, 1), c(NA, NA))
+  )%>%
   as_tibble%>%
   mutate_all(as.numeric)%>%
   rename(year_data=1)
@@ -137,7 +142,7 @@ plot_ACE
 
 * Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term **borrowings rose by +€2.5 billion (+136%)**.
 
-* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -27% lower than in 2019.
+* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -28% lower than in 2019.
 
 </div>
 
@@ -238,14 +243,14 @@ Access information on ANSP institutional arrangements, corporate governance stru
 <!--   </div> -->
 <!-- </div> -->
 
-<div class="card">
+<div class=" card">
 <a href="/publications/prc/ace/" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace2019.png" alt="Previous ACE reports">
+  <img class="card-img-top" src="/images/eco/ace_oldcovers.png" alt="Previous ACE reports">
   <div class="card-body"><h5 class="card-title">Previous ACE reports</h5></a><p class="card-text"></p>
   </div>
 </div>
 
-<div class="card"><a href="/economics/ace/ace-hlsr/" target="_blank">
+<div class="card" ><a href="/economics/ace/ace-hlsr/" target="_blank">
   <img class="card-img-top" src="/images/prc/ace-prelim-results-2020.png" alt="Preliminary results">
   <div class="card-body"><h5 class="card-title">Preliminary results (Dec. 2021 edition)</h5></a><p class="card-text"></p>
   </div>
@@ -257,11 +262,11 @@ Access information on ANSP institutional arrangements, corporate governance stru
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/KeyOpsData2020.xlsm" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace_key_ops_data_2020.png" alt="2020 Key operational data">
-  <div class="card-body"><h5 class="card-title">2020 Key operational data</h5></a><p class="card-text"></p>
-  </div>
-</div>
+<!-- <div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/KeyOpsData2020.xlsm" target="_blank"> -->
+<!--   <img class="card-img-top" src="/images/prc/ace_key_ops_data_2020.png" alt="2020 Key operational data"> -->
+<!--   <div class="card-body"><h5 class="card-title">2020 Key operational data</h5></a><p class="card-text"></p> -->
+<!--   </div> -->
+<!-- </div> -->
 
 </div> <!-- closes card deck -->
 

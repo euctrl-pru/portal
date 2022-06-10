@@ -1,18 +1,15 @@
 ## libraries
 library(dplyr)
 library(stringr)
+library(readxl)
 library(plotly)
 
 
-ace_graph_data <- read.csv(
-  file  = here::here ("content","economics","ACE_landing_page_data.csv"))
-
-if(ncol(ace_graph_data)==1){
-  ace_graph_data <- read.csv2(
-    file  = here::here ("content","economics","ACE_landing_page_data.csv"))
-}
-
-ace_graph_data <- ace_graph_data%>%
+ace_graph_data <- read_xlsx(
+  path  = here::here ("content","economics","ace_landing_page_data.xlsx"),
+  sheet = "ACE_landing_page_data",
+  range = cell_limits(c(1, 1), c(NA, NA))
+)%>%
   as_tibble%>%
   mutate_all(as.numeric)%>%
   rename(year_data=1)

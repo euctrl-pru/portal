@@ -3,6 +3,23 @@ title: "ANSPs individual factsheets"
 output: html_document
 ---
 
+```{r,  echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(readxl)
+library(jsonlite)
+
+ansp <- read_xlsx(
+  path  = here::here ("content","economics","ace_landing_page_data.xlsx"),
+  sheet = "ANSP",
+  range = cell_limits(c(1, 1), c(NA, NA))
+  )%>%
+  as_tibble()%>%
+  toJSON() 
+
+```
+
+
+
 This page comprises factsheets for each ANSP participating to the ACE analysis. These factsheets are made of three pages which comprise the following information:
 
 <div class="container-fluid">
@@ -23,11 +40,15 @@ The chart on the top-left shows the level and changes in unit ATM/CNS provision 
 The chart in the middle of the third page shows the historical evolution of capital expenditure and depreciation, highlighting the ANSP’s investment cycles and their magnitude, across time. The ratio of these quantities is an indication of the rate at which the overall asset base is being expanded.
 
 </div><!-- closes col -->
-
-<div class="col-lg-6 ">
+  
+<div class="col-lg-6">
 <div class="row">
-<div class="col-6 float-left" id="ANSP_filter_div"></div>
-<div class="col-6 mb-1">
+<div class="col-8 float-left" id="ansp_list">
+<label class="mb-0" for="ansp">Select ANSP:</label>
+<select name="ansp" id="ansp" onchange="changeANSP(this.value)"></select>
+</div>
+
+<div class="col-4">
 <a id="mydownload" href="/library/ace/ansp-factsheets/Albcontrol.pdf" role="button" target="_blank"
 class="float-right pr-1 pl-1" style="padding-top:2px; padding-bottom:2px; color:black; border-radius:2px; border:1px solid #aaaaaa; background: linear-gradient(to bottom, #fcfcfc, #dddddd)" type="button" download>Download .pdf
 </a>
@@ -43,65 +64,50 @@ class="float-right pr-1 pl-1" style="padding-top:2px; padding-bottom:2px; color:
 </div><!-- closes container -->
 
 
-<script
-  type="text/javascript"
-  src="https://www.gstatic.com/charts/loader.js">
+<script id="json_ansp" type="application/json">`r ansp`</script>
+
+<script type="text/javascript">
+var data = document.getElementById("json_ansp").textContent
+data = JSON.parse(data);
+
+var myselect = document.getElementById("ansp")
+var i = 0;
+
+for (const val of data)
+    {
+        var option = document.createElement("option");
+        option.value = data[i].ANSP_NAME;
+        option.text = data[i].ANSP_NAME;
+        myselect.appendChild(option);
+        myselect.style.border="1px solid #aaaaaa";
+        myselect.style.padding="2px";
+        myselect.style.borderRadius="2px";
+        myselect.style.background="linear-gradient(to bottom, #fcfcfc, #dddddd)";
+        <!-- myselect.style.padding-bottom="2px"; -->
+        <!-- console.log(data[i].ANSP_NAME); -->
+        i = i+1;
+    }
+
+  document.getElementById("ansp_list").appendChild(label).appendChild(select);
+  
+
 </script>
 
 <script type="text/javascript">
-	var data;
-	var MyDataWithoutIntermediatePanEuropeanSystems;
-	var ANSP_Picker;
-	var SelectedANSP = 'Albcontrol';
-	
-	google.load('visualization', '1.1', {'packages':['corechart', 'table', 'controls']});
-	google.setOnLoadCallback(Initialisation);
 
-	function Initialisation() {
-		var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1SzrRUcel3Kr-VEbgTIhxcqXULAriyvbiIeSNYUG36uE/edit?usp=sharing');
-		query.send(drawDashboard);
-	}
-
-	function drawDashboard(response) {
-		data = response.getDataTable();
-
-		MyDataWithoutIntermediatePanEuropeanSystems = new google.visualization.DataView(data);
-			MyDataWithoutIntermediatePanEuropeanSystems.setRows(data.getFilteredRows([{column: 1, test: function(value, row, column, table) {
-				return (value.substring(0,3) != 'Pan')}}]));
-
-		ANSP_Picker = new google.visualization.ControlWrapper({
-			controlType: 'CategoryFilter',
-			containerId: 'ANSP_filter_div',
-			dataTable: MyDataWithoutIntermediatePanEuropeanSystems,
-//			dataTable: data,
-			state: {selectedValues: [SelectedANSP]},
-			options: {
-				filterColumnLabel: 'ANSP_NAME',
-				ui: {
-					label: 'Select ANSP:',
-					caption: '',
-//					labelStacking: 'vertical',
-					allowTyping: false,
-					allowMultiple: false,
-					sortValues: true,
-					allowNone: false,
-//					cssClass: 'ClassANSPPicker',
-				},
-			}
-		});
-		ANSP_Picker.draw();
-		google.visualization.events.addListener(ANSP_Picker, 'statechange', changeANSP_Picker);
-	}
-	
-	function changeANSP_Picker () {
-		SelectedANSP = ANSP_Picker.getState().selectedValues[0];
+function changeANSP (value) {
 
 		var element1 = document.getElementById("MyEmbed_div");
-	  element1.src = 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+SelectedANSP+'.pdf' ;		
-		
+	  element1.src = 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+value+'.pdf' ;
+
 		var element2 = document.getElementById("mydownload");
-		var myurl = '/library/ace/ansp-factsheets/'+SelectedANSP+'.pdf';
+		var myurl = '/library/ace/ansp-factsheets/'+value+'.pdf';
 	  element2.setAttribute("href", myurl) ;
-	}
+	  
+	  element1.src = 'https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.eurocontrol.int/ACE/ANSP-Factsheets/'+value+'.pdf' ;
+
+}
 </script>
+
+
 
