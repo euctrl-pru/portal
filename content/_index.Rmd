@@ -156,20 +156,17 @@ For feedback or questions please contact us at:
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 <div class="carousel-inner">
 
-<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/performance-insight-4-impact-covid-19-en-route-unit-rates-and-charges-billed-airspace" target="_blank"><img class="card-img-top" src="/images/landing/PI_4.png" alt=""><div class="card-body"><h5 class="card-title">PRC Performance Insight #4</h5></a><small><p class="card-text">
-Learn about the impact of COVID-19 on en-route unit rates and charges billed to airspace users</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/news/eurocontrol-performance-review-commission-publishes-its-eatm-performance-report-2021" target="_blank"><img class="card-img-top" src="/images/landing/prr2021_cov.png" alt=""><div class="card-body"><h5 class="card-title">Performance Review Report 2021</h5></a><small><p class="card-text">
+Read the Performance Review Commission's final report on European ATM performance in 2021</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="/traffic/"><img class="card-img-top" src="/images/landing/ansp.png" alt=""><div class="card-body"><h6 class="card-title">ANSP ranking in traffic overview</h6></a><small><p class="card-text">Our traffic overview page is updated daily and now also includes a ranking of Air Navigation Service Providers</p></small></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/news/eurocontrol-performance-review-commission-issues-its-ace-benchmarking-report-2020" target="_blank"><img class="card-img-top" src="/images/landing/ace2020_cov.png" alt=""><div class="card-body"><h5 class="card-title">ACE 2020 Benchmarking Report</h5></a><small><p class="card-text">View the latest <a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020" target="_blank">ATM Cost-Effectiveness Benchmarking (ACE) Report</a> and the new <a href="/economics/ace-overview/">ACE web page!</a>!</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="/data/#img-srcimagesprcq-operations-airportpng-width50-height50-altoperations-at-airports-operations-at-airports"><img class="card-img-top" src="/images/landing/apt_plan.png" alt=""><div class="card-body"><h6 class="card-title">UPDATED: Taxi-time planning values</h6></a><small><p class="card-text">Check out the taxi time planning values now including winter 21/22 (supplied by CODA)</p></small></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="/traffic/delay/"><img class="card-img-top" src="/images/landing/atfm_new.png" alt=""><div class="card-body"><h5 class="card-title">New: Daily view on ATFM delays</h5></a><small><p class="card-text">Check out our new overview on ATFM delays in Europe, including a breakdown by ACC and airport!</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-aviation-outlook-2050" target="_blank" ><img class="card-img-top" src="/images/landing/ectl_outlook50.png" alt=""><div class="card-body"><h6 class="card-title">EUROCONTROL Aviation Outlook 2050</h6></a><small><p class="card-text">
-Read the new long-term forecast, looking at how aviation in Europe will grow over the coming decades</p></small></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h5 class="card-title">Comprehensive assessments</h5></a><small><p class="card-text">
+Read our EUROCONTROL aviation briefings on the latest trends in the European network</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h6 class="card-title">Comprehensive COVID-19 assessments</h6></a><small><p class="card-text">
-Read our EUROCONTROL briefings how the COVID-19 pandemic impacts on European aviation</p></small></div></div></div>
-
-<div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><small><p class="card-text">April 2022 data available now</p></small></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><p class="card-text">May 2022 data available now</p></div></div></div>
 
 </div>
 
