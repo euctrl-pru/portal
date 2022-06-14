@@ -80,7 +80,7 @@ The ACE interactive dashboard allows you to access the latest available data and
 
 <div class="col-sm-3">
 <a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace_db2.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:78%; max-width:78%; display:block; margin: auto">
+  <img class="card-img-top" src="/images/prc/ace_db3.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:78%; max-width:78%; display:block; margin: auto; border: 1px solid rgba(0,0,0,.125)">
   <!-- <div class="card-body"> -->
   <h6 class="card-title" style="text-align: center; padding-top: 5px; ">ACE interactive dashboard</h6></a>
 <!-- </div> -->
