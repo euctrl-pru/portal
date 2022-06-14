@@ -152,7 +152,7 @@ In fact they use different BADA versions and hence different aircraft characteri
 
 
 
-## <img src="/images/prcq-economics.png" width="50" height="50" alt="Economics"> Economics
+## <img id="eco" src="/images/prcq-economics.png" width="50" height="50" alt="Economics"> Economics
 
 | Data description                                                     | Period                                                                         | {{< excel_i >}}             | {{< csv_i >}} |  Info                    | [ICAO GANP][icaoganp]              |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------|---------------|--------------------------|------------------------------------|
