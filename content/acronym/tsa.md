@@ -11,5 +11,4 @@ allowed to transit.
 
 ## See Also
 
-* {{< a_blank_lexicon "TSA" "https://ext.eurocontrol.int/lexicon/index.php/Temporary_Segregated_Area" >}}
 * {{< a_blank_skybrary "TSA" "http://www.skybrary.aero/index.php/Temporary_Segregated_Area" >}}

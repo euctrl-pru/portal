@@ -13,8 +13,19 @@ The CRCO calculates the route charges due to the Member States for the
 services provided, bills the airspace users and distributes the route
 charges to the States concerned.
 
+
+<div id="observablehq-map-4a746be0"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@espinielli/central-route-charging-office-zones-and-rates.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-4a746be0"));
+});
+</script>
+
+
 ## See Also
 
-
 * {{< a_blank_ectrl "CRCO" "https://www.eurocontrol.int/crco" >}}
-* {{< a_blank_lexicon "Airspace User" "https://ext.eurocontrol.int/lexicon/index.php/Airspace_User" >}}
+

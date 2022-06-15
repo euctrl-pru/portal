@@ -17,12 +17,12 @@ Within this airspace, flights remain subject to air traffic control.
 
 ## Free route airspace implementation status December 2016
 
-```{r fra, fig.lab="FRA implementation status 2016", echo=FALSE, out.height="700px"}
+```{r fra, fig.lab="FRA implementation - End 2022", echo=FALSE, out.height="700px"}
 library(png)
-knitr::include_graphics("/images/fra_dec_2016.png")
+knitr::include_graphics("/images/eurocontrol-fra-implementation-end-2022-v9-03062022.png")
 ```
 
 
 ## See Also
 
-* `r blogdown::shortcode("a_blank_lexicon", "FRA", "https://ext.eurocontrol.int/lexicon/index.php/Free_Route_Airspace")`
+* `r blogdown::shortcode("a_blank_skybrary", "FRA", "https://skybrary.aero/articles/free-route-airspace-fra")`

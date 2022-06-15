@@ -9,9 +9,8 @@ capping and exiguous rerouting to a limited number of flights.
 
 ## See also
 
-* {{< a_blank_lexicon "STAM" "https://ext.eurocontrol.int/lexicon/index.php/Short_Term_ATFCM_Measures" >}}
+* {{< a_blank_skybrary "STAM" "https://skybrary.aero/articles/short-term-atfcm-measures-stam" >}}
 * [STAM definition][stam].
-
 
 
 [stam]: {{< relref "/definition/short-term-atfcm-measures.md" >}} "STAM"

@@ -23,15 +23,20 @@ keywords: performance, air transport, europe, cost efficiency, benchmarking
 <!-- retrieve latest ACE data -->
 ```{r,  echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
 library(dplyr)
-ACE_landing_page <- read.csv(
-  file  = here::here ("content","economics","ACE_landing_page_data.csv")) 
+library(readxl)
+# ACE_landing_page <- read.csv(
+#   file  = here::here ("content","economics","ace_landing_page_data.csv")) 
+# 
+# if(ncol(ACE_landing_page)==1){
+#   ACE_landing_page <- read.csv2(
+#     file  = here::here ("content","economics","ace_landing_page_data.csv")) 
+# }
 
-if(ncol(ACE_landing_page)==1){
-  ACE_landing_page <- read.csv2(
-    file  = here::here ("content","economics","ACE_landing_page_data.csv")) 
-}
-
-ACE_landing_page <- ACE_landing_page%>%
+ACE_landing_page <- read_xlsx(
+  path  = here::here ("content","economics","ace_landing_page_data.xlsx"),
+  sheet = "ACE_landing_page_data",
+  range = cell_limits(c(1, 1), c(NA, NA))
+  )%>%
   as_tibble%>%
   mutate_all(as.numeric)%>%
   rename(year_data=1)
@@ -42,26 +47,26 @@ costs_per_cph <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(costs_per_cph) %>% unlist %>% unname %>% round
 costs_per_cph_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(costs_per_cph_change_perc) %>% unlist %>% unname 
-costs_per_cph_change_perc <- paste0(if_else(costs_per_cph_change_perc >0, "+", ""), round(costs_per_cph_change_perc*100,if_else(costs_per_cph_change_perc >=1, 0, 1)),"%")
+costs_per_cph_change_perc <- paste0(if_else(costs_per_cph_change_perc >0, "+", ""), round(costs_per_cph_change_perc*100,1),"%")
 
 ATCO_prod <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(ATCO_prod) %>% unlist %>% unname %>% round(.,2)
 ATCO_prod_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(ATCO_prod_change_perc) %>% unlist %>% unname
-ATCO_prod_change_perc <- paste0(if_else(ATCO_prod_change_perc >0, "+", ""), round(ATCO_prod_change_perc*100,if_else(ATCO_prod_change_perc >=1, 0, 1)),"%")
+ATCO_prod_change_perc <- paste0(if_else(ATCO_prod_change_perc >0, "+", ""), round(ATCO_prod_change_perc*100,1),"%")
 
 ATCO_costs_per_h <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(ATCO_costs_per_h) %>% unlist %>% unname %>% round
 ATCO_costs_per_h_change_perc <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(ATCO_costs_per_h_change_perc) %>% unlist %>% unname
-ATCO_costs_per_h_change_perc <- paste0(if_else(ATCO_costs_per_h_change_perc >0, "+", ""), round(ATCO_costs_per_h_change_perc*100,if_else(ATCO_costs_per_h_change_perc >=1, 0, 1)),"%")
+ATCO_costs_per_h_change_perc <- paste0(if_else(ATCO_costs_per_h_change_perc >0, "+", ""), round(ATCO_costs_per_h_change_perc*100,1),"%")
 
 support_costs_per_cph <- ACE_landing_page %>% filter(year_data == year_report) %>%
   select(support_costs_per_cph) %>% unlist %>% unname %>% round
 support_costs_per_cph_change_perc <- ACE_landing_page %>%
   filter(year_data == year_report) %>% select(support_costs_per_cph_change_perc) %>%
   unlist %>% unname 
-support_costs_per_cph_change_perc <- paste0(if_else(support_costs_per_cph_change_perc >0, "+", ""), round(support_costs_per_cph_change_perc*100,if_else(support_costs_per_cph_change_perc >=1, 0, 1)),"%")
+support_costs_per_cph_change_perc <- paste0(if_else(support_costs_per_cph_change_perc >0, "+", ""), round(support_costs_per_cph_change_perc*100,1),"%")
 
 ```
 
@@ -71,32 +76,22 @@ support_costs_per_cph_change_perc <- paste0(if_else(support_costs_per_cph_change
 The ACE benchmarking project analyses the cost-effectiveness and productivity of 38 European Air Navigation Service Providers (ANSPs) in Europe. It examines both individual ANSPs and the Pan-European ATM/CNS system as a whole.
 
 The ACE interactive dashboard allows you to access the latest available data and analysis provided in the ACE Benchmarking Reports prepared by the EUROCONTROL Performance Review Unit.
-</div>
+</div><!-- closes col  -->
 
 <div class="col-sm-3">
-<div class="card border-0"><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace_db.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:78%; max-width:78%; display:block; margin: auto">
-  <div class="card-body"><h6 class="card-title">ACE interactive dashboard</h6></a><p class="card-text"></p>
-</div></div></div>
-
-</div></div>
-
-<div class="container" style="margin-top: -20px">
-#### ACE 2019 Highlights
-<div class="row align-items-start">
-<div class="col-sm-6">
-* Financial **cost-effectiveness indicator (€394) was at its lowest level** since the start of ACE benchmarking analysis in 2001.
-
-* **Traffic volumes grew by +1.7%** in 2019, a significantly lower growth than that recorded in the previous years.
-</div>
-<div class="col-sm-6">
-* The **increase in support staff** at a Pan-European system level of **+2.3% (or +882 FTEs)** was the largest observed over the past ten years.
-
-* ANSPs held **cash reserves of some €2.9B** at the end of 2019, covering only slightly more than half of the estimated reduction in route and terminal charges in 2020.
-</div>
-</div></div>
+<a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">
+  <img class="card-img-top" src="/images/prc/ace_db3.PNG" alt="EUROCONTROL ATM Cost Effectiveness (ACE) Dashbaord" style="max-height:78%; max-width:78%; display:block; margin: auto; border: 1px solid rgba(0,0,0,.125)">
+  <!-- <div class="card-body"> -->
+  <h6 class="card-title" style="text-align: center; padding-top: 5px; ">ACE interactive dashboard</h6></a>
+<!-- </div> -->
+</div><!-- closes col  -->
+</div><!-- closes row  -->
+</div><!-- closes container  -->
 
 <div class="container">
+#### ACE 2020 Highlights
+Given the unprecedented drop in traffic, all the ACE indicators are massively impacted in 2020. This report therefore puts a special emphasis on the observed changes between 2019 and 2020 and the mitigation measures implemented by ANSPs. It also introduces new financial indicators in order to monitor the impact of the COVID-19 pandemic on ANSPs financial situation.
+
 <div class="row">
 <div class="col-md-6" >
 
@@ -111,7 +106,8 @@ ATM/CNS provision costs per composite flight-hour
 <p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >€`r support_costs_per_cph`</p>
 <p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(`r support_costs_per_cph_change_perc` vs `r (year_report-1)`)</p>
 Support costs per composite flight-hour
-</div></div>
+</div>
+</div><!-- closes d-flex  -->
 
 <div class="d-flex justify-content-center">
 <div class="col-5 scorecard-box" >
@@ -124,65 +120,77 @@ ATCO employment costs per ATCO-hour
 <p style="font-weight: bold; font-size: 24px; margin-bottom: 0px; " >`r ATCO_prod`</p>
 <p style="border-bottom: solid 1px #A6A6A6; margin-left: 15px; margin-right: 15px; padding-bottom: 15px; " >(`r ATCO_prod_change_perc` vs `r (year_report-1)`)</p>
 ATCO-hour productivity
-</div></div>
-
 </div>
+</div><!-- closes d-flex  -->
+
+</div><!-- closes col-md-6  -->
 
 <div class="col-md-6" >
 ```{r,  echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE, out.width='100%'}
 source(here::here ("R","plot_ace_lp.R"), local = knitr::knit_global(), print.eval = TRUE)
 plot_ACE
 ```
-</div>
-</div></div>
+</div><!-- closes col-md-6  -->
+</div><!-- closes row  -->
+</div><!-- closes container  -->
 
 <br>
+<div class="container" >
+* ANSPs gate-to-gate **revenues fell by -54%** as a result of an unprecedented traffic decrease in 2020 (-57%). 
+
+* Cost containment measures were implemented and **ATM/CNS provision costs fell by -€450M**, mainly through reduced staff costs (-€314M) and lower cost of capital (-€101M). 
+
+* Many ANSPs contracted new loans in order to respond to liquidity issues: short and long-term **borrowings rose by +€2.5 billion (+136%)**.
+
+* Liquidity issues also resulted in the **postponement of some capital expenditures**, which were -28% lower than in 2019.
+
+</div>
 
 <div class="container">
+<br>
 <div class="row align-items-start">
 <div class="col-md-6">
-#### ACE 2019 Report
+#### ACE 2020 Report
 
 <div class="row align-items-start">
 <div class="col-sm-2">
-![](/images/eco/ace2019.png)
+  <img src="/images/eco/ace2020-thmb.png" alt="ACE 2020 Report" style="border: 1px solid rgba(0,0,0,.125)">
+
+<!-- ![](/images/eco/ace2020-1.png) -->
 </div>
 
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2;" >
-[**Executive summary**](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=13){target="_blank"}
+[**Executive summary**](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=EXECUTIVE SUMMARY){target="_blank"}
 </div>
 
 <div style="background-color: #F2F2F2; "  >
-[<i class="fas fa-download"></i>](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf){target="_blank"}
-[**Main report**](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf){target="_blank"}
+[**Main report**](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf){target="_blank"}
+<span class="float-right">
+[<i class="fas fa-download"></i>](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf){target="_blank"}
+</span>
 </div>
 
-  1. [Introduction](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=21){target="_blank"}
+  1. [Introduction](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=INTRODUCTION){target="_blank"}
 
 <details open>
-<summary>**PART I:** Pan-European system cost-effectiveness performance in 2019 and initial examination of COVID-19 impacts in 2019</summary>
-  2. [Pan-European cost-effectiveness performance in 2019](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=31){target="_blank"}
-  3. [Preliminary impacts of COVID-19 on the ANS industry](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=67){target="_blank"}
-</details>
-
-<details open>
-  <summary>**PART II:** Cost-effectiveness performance focus at ANSP level</summary>
-  4. [Focus on ANSPs individual cost-effectiveness performance](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=81){target="_blank"}
+<summary>**Main Chapters:**</summary>
+  2. [Pan-European cost-effectiveness performance in 2020](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=PAN-EUROPEAN COST-EFFECTIVENESS PERFORMANCE IN 2020){target="_blank"}
+  3. [Trend analysis and COVID-19 impacts on cost-effectiveness](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=TREND ANALYSIS AND COVID-19 IMPACTS ON COST-EFFECTIVENESS){target="_blank"}
+  4. [Impact of the COVID-19 pandemic on ANSPs financial situation](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=IMPACT OF THE COVID-19 PANDEMIC ON ANSPS FINANCIAL SITUATION){target="_blank"}
+  5. [Forward-looking cost-effectiveness (2021-2024)](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=FORWARD-LOOKING COST-EFFECTIVENESS (2021-2024)){target="_blank"}
+  6. [Summary of ANSPs individual cost-effectiveness performance](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=SUMMARY OF ANSPS INDIVIDUAL COST-EFFECTIVENESS PERFORMANCE){target="_blank"}
 </details>
 
 <details>
 <summary>**Annexes**</summary>
-  * [ANNEX 1 – Status of ANSPs 2019 Annual Reports](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=163){target="_blank"}
-  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=165){target="_blank"}
-  * [ANNEX 3 – ACE cost-effectiveness indicator and SES cost-efficiency](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=169){target="_blank"}
-  * [ANNEX 4 – Performance ratios](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=171){target="_blank"}
-  * [ANNEX 5 – Factors affecting performance](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=173){target="_blank"}
-  * [ANNEX 6 – Exchange rates, inflation rates and purchasing power parities (PPPS)](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=175){target="_blank"}
-  * [ANNEX 7 – Key data](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=179){target="_blank"}
-  * [ANNEX 8 – Performance indicators at FAB level](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=187){target="_blank"}
-  * [ANNEX 9 – Individual ANSP fact-sheets](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=189){target="_blank"}
-  * [Glossary](https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf#page=229){target="_blank"}
+  * [ANNEX 1 – Status of ANSPs 2020 Annual Reports](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 1 – STATUS OF ANSPS 2020 ANNUAL REPORTS){target="_blank"}
+  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 2 – PERFORMANCE INDICATORS USED FOR THE COMPARISON OFANSPS){target="_blank"}
+  * [ANNEX 3 – Performance ratios](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 3 – PERFORMANCE RATIOS){target="_blank"}
+  * [ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS) data](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 4 – EXCHANGE RATES, INFLATION RATES AND PURCHASING POWERPARITIES (PPPS) DATA){target="_blank"}
+  * [ANNEX 5 – Key data](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 5 – KEY DATA){target="_blank"}
+  * [ANNEX 6 – Performance indicators at FAB level](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 6 – PERFORMANCE INDICATORS AT FAB LEVEL){target="_blank"}
+  * [Glossary](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=GLOSSARY){target="_blank"}
 </details>
 
 </div>
@@ -193,12 +201,15 @@ plot_ACE
 #### ACE Handbook
 <div class="row align-items-start">
 <div class="col-sm-2">
-place holder
+  <img src="/images/eco/ace-handbook-thmb.png" alt="ACE 2020 Report" style="border: 1px solid rgba(0,0,0,.125)">
 </div>
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
 <!-- <a href="/library/ACE-handbook.pdf" download><i class="fas fa-download" data-toggle="tooltip" title="Download pdf"></i></a> -->
-<a href="https://ace-methodology.netlify.app/" data-toggle="tooltip" title="Access electronic version" target="_blank">**ACE Handbook**</a>
+<a href="/economics/ace/ace-handbook/" data-toggle="tooltip" title="Access electronic version" target="_blank">**ACE Handbook**</a>
+<span class="float-right">
+<a href="/library/ace/ace-handbook-june-2022-edition.pdf" data-toggle="tooltip" title="Download pdf version" target="_blank"><i class="fas fa-download"></i></a>
+</span>
 </div>
 Learn about the scope of the ACE analysis, the processes involved in the production of the report, the factors affecting performance and  the indicators used in the ACE analysis.
 </div>
@@ -213,7 +224,7 @@ Learn about the scope of the ACE analysis, the processes involved in the product
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2; "  >
 <!-- <a href="https://www.eurocontrol.int/ACE/ACE-Reports/ACE2019.pdf" target="_blank"><i class="fas fa-download"></i></a> -->
-<a href="" target="_blank">**Factsheets (previously Part II of the ACE Report)**</a>
+<a href="/economics/ace/ace-ansp-factsheets/" target="_blank">**Factsheets (Former Part II of the ACE Report)**</a>
 </div>
 Access information on ANSP institutional arrangements, corporate governance structure, historical developments of financial cost-effectiveness, comparison with peers and capital expenditures.
 </div>
@@ -232,33 +243,33 @@ Access information on ANSP institutional arrangements, corporate governance stru
 <!--   </div> -->
 <!-- </div> -->
 
-<div class="card">
-<a href="/publications/prc/ace" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace2018.png" alt="Previous ACE reports">
+<div class=" card">
+<a href="/publications/prc/ace/" target="_blank">
+  <img class="card-img-top" src="/images/eco/ace_oldcovers.png" alt="Previous ACE reports">
   <div class="card-body"><h5 class="card-title">Previous ACE reports</h5></a><p class="card-text"></p>
   </div>
 </div>
 
-<div class="card"><a href=" https://ansperformance.eu/economics/ace/hlsr/" target="_blank">
+<div class="card" ><a href="/economics/ace/ace-hlsr/" target="_blank">
   <img class="card-img-top" src="/images/prc/ace-prelim-results-2020.png" alt="Preliminary results">
   <div class="card-body"><h5 class="card-title">Preliminary results (Dec. 2021 edition)</h5></a><p class="card-text"></p>
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/SEID3.0.pdf" target="_blank">
+<div class="card"><a href="https://www.eurocontrol.int/publication/eurocontrol-specification-economic-information-disclosure" target="_blank">
   <img class="card-img-top" src="/images/prc/ace_seid_3.0.jpg" alt="Specification for economic information disclosure">
   <div class="card-body"><h5 class="card-title">Specification for economic information disclosure</h5></a><p class="card-text"></p>
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/SEID3.0.pdf" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace_key_ops_data_2020.png" alt="2020 Key operational data">
-  <div class="card-body"><h5 class="card-title">2020 Key operational data</h5></a><p class="card-text"></p>
-  </div>
-</div>
+<!-- <div class="card"><a href="https://www.eurocontrol.int/ACE/Supporting-Documents/KeyOpsData2020.xlsm" target="_blank"> -->
+<!--   <img class="card-img-top" src="/images/prc/ace_key_ops_data_2020.png" alt="2020 Key operational data"> -->
+<!--   <div class="card-body"><h5 class="card-title">2020 Key operational data</h5></a><p class="card-text"></p> -->
+<!--   </div> -->
+<!-- </div> -->
 
 </div> <!-- closes card deck -->
 
 </div> <!-- closes container -->
 
-For feedback or questions please contact please contact the [PRU Support Team](mailto:PRU-Support@eurocontrol.int).
+For feedback or questions please contact the [PRU Support Team](mailto:PRU-Support@eurocontrol.int).

@@ -1,32 +1,27 @@
 ## libraries
-# library(dplyr)
-# library(stringr)
+library(dplyr)
+library(stringr)
+library(readxl)
 library(plotly)
 
 
-# ACE_landing_page <- read.csv(
-#   file  = here::here ("content","economics","ACE_landing_page_data.csv")) 
-# 
-# if(ncol(ACE_landing_page)==1){
-#   ACE_landing_page <- read.csv2(
-#     file  = here::here ("content","economics","ACE_landing_page_data.csv")) 
-# }
-# 
-# ACE_landing_page <- ACE_landing_page%>%
-#   as_tibble%>%
-#   mutate_all(as.numeric)%>%
-#   rename(year_data=1)
-# 
-# costs_per_cph <- ACE_landing_page %>% filter(year_data == max(year_data)) %>% select(costs_per_cph) %>% unlist %>% unname
+ace_graph_data <- read_xlsx(
+  path  = here::here ("content","economics","ace_landing_page_data.xlsx"),
+  sheet = "ACE_landing_page_data",
+  range = cell_limits(c(1, 1), c(NA, NA))
+)%>%
+  as_tibble%>%
+  mutate_all(as.numeric)%>%
+  rename(year_data=1)
 
-plot_ACE <- ACE_landing_page %>%
+plot_ACE <- ace_graph_data %>%
   plot_ly(
     # width = 500, 
     height = 330,
     x = ~ year_data,
     y = ~ costs_per_cph,
     yaxis = "y1",
-    marker = list(color =('##4F81BD')),
+    marker = list(color =('#4F81BD')),
     text = ~ paste("  <b>",round(costs_per_cph,0),"</b>"),
     textangle = -90,
     textposition = "inside",
@@ -43,7 +38,7 @@ plot_ACE <- ACE_landing_page %>%
     yaxis = "y1",
     # colors = c('#4F81BD'),
     mode = 'text',
-    text = ~ paste("<b>",if_else(costs_per_cph_change_perc >0, "+", ""),format(round(costs_per_cph_change_perc*100,1), nsmall=if_else(costs_per_cph_change_perc >=1, 0, 1)), "%","</b>",sep = ""),
+    text = paste0("<b>",if_else(ace_graph_data$costs_per_cph_change_perc >0, "+", ""),format(round(ace_graph_data$costs_per_cph_change_perc*100,1), 1), "%","</b>"),
     textfont = list(color = 'black', size = 14),
     type = 'scatter',  mode = 'lines',
     hoverinfo = "none",
@@ -68,6 +63,7 @@ plot_ACE <- ACE_landing_page %>%
     yaxis = "y2",
     type = 'scatter',  mode = 'lines', name = 'Composite flight-hours',
     line = list(color = "#E46C0A"),
+    hoverlabel=list(bgcolor="#F8A662",font=list(color='black')),
     hovertemplate = paste('<b>Composite flight-hours index</b>: <br>%{y}',
                           "<extra></extra>",
                           sep = "")
@@ -80,7 +76,6 @@ plot_ACE <- ACE_landing_page %>%
       # automargin = T,
       # tickvals = 2014:2019,
       autotick = F,
-      # ticktext = paste0(ACE_landing_page$year_data,"n"),
       showgrid = F
     ),
     
@@ -94,9 +89,9 @@ plot_ACE <- ACE_landing_page %>%
     yaxis2 = list (
       overlaying = "y",
       side = "right",
-      title = paste ("Index of costs and traffic", "<br>","(", min(ACE_landing_page$year_data), " = 100)",sep = ""),
+      title = paste ("Index of costs and traffic", "<br>","(", min(ace_graph_data$year_data), " = 100)",sep = ""),
       titlefont = list(size = 13),
-      range = list(40, 10+round(max(ACE_landing_page$index_costs, ACE_landing_page$index_cph)/10)*10),
+      range = list(40, 10+round(max(ace_graph_data$index_costs, ace_graph_data$index_cph)/10)*10),
       automargin = T,
       showgrid = F
     ),
@@ -109,3 +104,5 @@ plot_ACE <- ACE_landing_page %>%
   )
 
 plot_ACE
+
+

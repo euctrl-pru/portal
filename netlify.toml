@@ -11,11 +11,13 @@ command = "hugo --gc --minify"
   command = "hugo --minify --gc --buildFuture -b $DEPLOY_PRIME_URL"
   [context.deploy-preview.environment]
   HUGO_VERSION = "0.92.1"
+  HUGO_ENV = "development"
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
   [context.branch-deploy.environment]
     HUGO_VERSION = "0.92.1" # if older, use format: 0.53 (no trailing zero)
+    HUGO_ENV = "development"
 
 # required by security colleagues
 [[headers]]
@@ -98,8 +100,14 @@ command = "hugo --gc --minify"
   force = true
 
 [[redirects]]
-  from = "/economics/ace/hlsr/*"
+  from = "/economics/ace/ace-hlsr/*"
   to = "https://ace-hlsr.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/economics/ace/ace-handbook/*"
+  to = "https://ace-handbook.netlify.app/:splat"
   status = 200
   force = true
 

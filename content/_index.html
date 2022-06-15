@@ -43,26 +43,25 @@ date: "2018-02-07T11:26:51+01:00"
   }
 
   </style>
-<!-- Daily traffic graphs and scorecards -->
+<!-- Daily traffic graphs and scorecards Scorecard_net-->
 <div class="container">
-<div class="row" style="padding: 0px; background-color: #d9e1f2; border-radius: 2px; width: 100%;">
-<div class="col-4"; style="margin: 0px; ">
-  <p class="Scorecard_net">Latest Network traffic situation</p>
-  <p id="y2d_day_text" style="font-weight: bold; color: #0070c0;"</p> 
+<div class="row" style="padding: 0px; background-color: #d9e1f2; border-radius: 0px; width: 100%;">
+<div class="col-12"; style="margin: 0px; "><p id="y2d_day_text" style="font-weight: bold; color: #0070c0;"</p> </div>
 </div>
-<div class="col-2" ; style="margin: 0px;">
+<div class="row" style="padding: 0px; background-color: #d9e1f2; border-radius: 0px; width: 100%;">
+<div class="col-3" ; style="margin: 0px;">
   <p class="Scorecard_subt">total flights</p>
   <p id="y2d_traffic" style="font-weight: bold; color: #0070c0;"></p> 
 </div>
-<div class="col-2" ; style="margin: 0px;  ">
-  <p class="Scorecard_subt">avg. daily flights</p>
+<div class="col-3" ; style="margin: 0px;  ">
+  <p class="Scorecard_subt">avg. daily</p>
   <p id="avg_y2d_traffic" style="font-weight: bold; color: #0070c0;"></p>
 </div>
-<div class="col-2" ; style="margin: 0px; ">
+<div class="col-3" ; style="margin: 0px; ">
   <p class="Scorecard_subt">vs 2019</p>
   <p id="dif_y2d_2019" style="font-weight: bold; color: #0070c0;"></p>
 </div>
-<div class="col-2" ; style="margin: 0px;  ">
+<div class="col-3" ; style="margin: 0px;  ">
   <p class="Scorecard_subt">vs 2021</p>
   <p id="dif_y2d_prev_year" style="font-weight: bold; color: #0070c0;"></p>
 </div>
@@ -128,10 +127,10 @@ last_day_text = last_day.toDateString();
      dif_y2d_prev_year = (dif_y2d_prev_year >= 0) ? "+" + dif_y2d_prev_year : "" + dif_y2d_prev_year
 
 // Update scorecard values
-  document.getElementById("y2d_day_text").innerHTML =  y2d_day_text ; 
+  document.getElementById("y2d_day_text").innerHTML =  "Latest Network traffic situation - " + y2d_day_text; 
   document.getElementById("y2d_traffic").innerHTML = String(y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
   document.getElementById("avg_y2d_traffic").innerHTML = String(avg_y2d_traffic).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-  document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%';
+  document.getElementById("dif_y2d_2019").innerHTML = String(dif_y2d_2019) + '%' ;
   document.getElementById("dif_y2d_prev_year").innerHTML = String(dif_y2d_prev_year) + '%';
   }
   
@@ -162,14 +161,14 @@ What’s new?
 <div class="carousel-inner">
 <div class="carousel-item active">
 <div class="card border-0">
-<a href="https://www.eurocontrol.int/publication/performance-insight-4-impact-covid-19-en-route-unit-rates-and-charges-billed-airspace" target="_blank"><img class="card-img-top" src="/images/landing/PI_4.png" alt="">
+<a href="https://www.eurocontrol.int/news/eurocontrol-performance-review-commission-publishes-its-eatm-performance-report-2021" target="_blank"><img class="card-img-top" src="/images/landing/prr2021_cov.png" alt="">
 <div class="card-body">
 <h5 class="card-title">
-PRC Performance Insight #4
+Performance Review Report 2021
 </h5>
 </a><small>
 <p class="card-text">
-Learn about the impact of COVID-19 on en-route unit rates and charges billed to airspace users
+Read the Performance Review Commission’s final report on European ATM performance in 2021
 </p>
 </small>
 </div>
@@ -177,14 +176,14 @@ Learn about the impact of COVID-19 on en-route unit rates and charges billed to 
 </div>
 <div class="carousel-item">
 <div class="card border-0">
-<a href="/traffic/"><img class="card-img-top" src="/images/landing/ansp.png" alt="">
+<a href="https://www.eurocontrol.int/news/eurocontrol-performance-review-commission-issues-its-ace-benchmarking-report-2020" target="_blank"><img class="card-img-top" src="/images/landing/ace2020_cov.png" alt="">
 <div class="card-body">
-<h6 class="card-title">
-ANSP ranking in traffic overview
-</h6>
+<h5 class="card-title">
+ACE 2020 Benchmarking Report
+</h5>
 </a><small>
 <p class="card-text">
-Our traffic overview page is updated daily and now also includes a ranking of Air Navigation Service Providers
+View the latest <a href="https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020" target="_blank">ATM Cost-Effectiveness Benchmarking (ACE) Report</a> and the new <a href="/economics/ace-overview/">ACE web page!</a>!
 </p>
 </small>
 </div>
@@ -192,29 +191,14 @@ Our traffic overview page is updated daily and now also includes a ranking of Ai
 </div>
 <div class="carousel-item">
 <div class="card border-0">
-<a href="/data/#img-srcimagesprcq-operations-airportpng-width50-height50-altoperations-at-airports-operations-at-airports"><img class="card-img-top" src="/images/landing/apt_plan.png" alt="">
+<a href="/traffic/delay/"><img class="card-img-top" src="/images/landing/atfm_new.png" alt="">
 <div class="card-body">
-<h6 class="card-title">
-UPDATED: Taxi-time planning values
-</h6>
+<h5 class="card-title">
+New: Daily view on ATFM delays
+</h5>
 </a><small>
 <p class="card-text">
-Check out the taxi time planning values now including winter 21/22 (supplied by CODA)
-</p>
-</small>
-</div>
-</div>
-</div>
-<div class="carousel-item">
-<div class="card border-0">
-<a href="https://www.eurocontrol.int/publication/eurocontrol-aviation-outlook-2050" target="_blank" ><img class="card-img-top" src="/images/landing/ectl_outlook50.png" alt="">
-<div class="card-body">
-<h6 class="card-title">
-EUROCONTROL Aviation Outlook 2050
-</h6>
-</a><small>
-<p class="card-text">
-Read the new long-term forecast, looking at how aviation in Europe will grow over the coming decades
+Check out our new overview on ATFM delays in Europe, including a breakdown by ACC and airport!
 </p>
 </small>
 </div>
@@ -224,12 +208,12 @@ Read the new long-term forecast, looking at how aviation in Europe will grow ove
 <div class="card border-0">
 <a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment-covid-19s-impact-european-air-traffic" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt="">
 <div class="card-body">
-<h6 class="card-title">
-Comprehensive COVID-19 assessments
-</h6>
+<h5 class="card-title">
+Comprehensive assessments
+</h5>
 </a><small>
 <p class="card-text">
-Read our EUROCONTROL briefings how the COVID-19 pandemic impacts on European aviation
+Read our EUROCONTROL aviation briefings on the latest trends in the European network
 </p>
 </small>
 </div>
@@ -242,11 +226,10 @@ Read our EUROCONTROL briefings how the COVID-19 pandemic impacts on European avi
 <h5 class="card-title">
 Performance data update
 </h5>
-</a><small>
+</a>
 <p class="card-text">
-April 2022 data available now
+May 2022 data available now
 </p>
-</small>
 </div>
 </div>
 </div>
@@ -275,8 +258,8 @@ Click to see the latest monthly snapshot!
 </div>
 </div>
 </div>
-<div id="focus-areas" class="section level3">
-<h3>Focus areas</h3>
+<div id="focus-areas" class="section level4">
+<h4>Focus areas</h4>
 <!-- cards with Key Performance Areas -->
 <div class="container">
 <div class="row">
@@ -285,9 +268,9 @@ Click to see the latest monthly snapshot!
 <a href="/covid">
 <img class="card-img-top" src="/images/landing/covid_icon.jpg" alt="Covid-19">
 <div class="card-body">
-<h5 class="card-title">
+<h6 class="card-title">
 COVID-19
-</h5>
+</h6>
 </a><small>
 <p class="card-text">
 Specific analyses and data on the COVID-19 crisis
@@ -299,9 +282,9 @@ Specific analyses and data on the COVID-19 crisis
 <a href="/traffic">
 <img class="card-img-top" src="/images/landing/ectl_traff_th.jpg" alt="Traffic">
 <div class="card-body">
-<h5 class="card-title">
+<h6 class="card-title">
 Traffic
-</h5>
+</h6>
 </a><small>
 <p class="card-text">
 <a href="/acronym/ifr/">IFR</a> flight and <a href="/acronym/su/">service unit</a> evolution and forecast
@@ -313,9 +296,9 @@ Traffic
 <a href="/capacity">
 <img class="card-img-top" src="/images/landing/ectl_cap_th.jpg" alt="Capacity">
 <div class="card-body">
-<h5 class="card-title">
+<h6 class="card-title">
 Capacity/ Delay
-</h5>
+</h6>
 </a><small>
 <p class="card-text">
 En-route and airport <a href="/acronym/atfm/">ATFM</a> delays
@@ -327,9 +310,9 @@ En-route and airport <a href="/acronym/atfm/">ATFM</a> delays
 <a href="/efficiency">
 <img class="card-img-top" src="/images/landing/ectl_env_th.jpg" alt="Efficiency & Environment">
 <div class="card-body">
-<h5 class="card-title">
+<h6 class="card-title">
 Efficiency/ Environment
-</h5>
+</h6>
 </a><small>
 <p class="card-text">
 Flight efficiency affecting fuel burn and emissions
@@ -341,9 +324,9 @@ Flight efficiency affecting fuel burn and emissions
 <a href="/economics">
 <img class="card-img-top" src="/images/landing/ectl_cef_th.jpg" alt="Economics">
 <div class="card-body">
-<h5 class="card-title">
+<h6 class="card-title">
 Economics
-</h5>
+</h6>
 </a><small>
 <p class="card-text">
 Analysis of ANS cost-efficiency

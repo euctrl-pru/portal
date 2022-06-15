@@ -8,4 +8,5 @@ alerting service are provided.
 
 ## See Also
 
-* {{< a_blank_lexicon "FIR" "https://ext.eurocontrol.int/lexicon/index.php/Flight_Information_Region" >}}
+* {{< a_blank_skybrary "FIR" "https://skybrary.aero/articles/flight-information-region-fir" >}}
+* [Flight Information Regions](https://observablehq.com/@xoolive/flight-information-regions)

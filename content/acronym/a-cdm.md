@@ -11,5 +11,4 @@ predictability of events and optimising the utilisation of resources.
 ## See Also
 
 * {{< a_blank_ectrl "A-CDM" "https://www.eurocontrol.int/concept/airport-collaborative-decision-making" >}}
-* {{< a_blank_lexicon "A-CDM" "https://ext.eurocontrol.int/lexicon/index.php/Airport_Collaborative_Decision_Making" >}}
 * {{< a_blank_skybrary "A-CDM" "https://www.skybrary.aero/index.php/Airport_Collaborative_Decision_Making_(A-CDM)" >}}

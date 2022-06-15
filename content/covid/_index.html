@@ -26,12 +26,27 @@ date: '2020-05-15'
     height: 110%;
     border: 0;
 }
+
+.scoretitle {
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 0;
+}
+
+.scorecard {
+    font-size: 1.8em; 
+    text-align: center; 
+    margin-bottom: 0.3rem;
+    color: #2194f3;
+}
+
+
 </style>
 <p>With the outbreak of the COVID-19 pandemic in Europe in early 2020, the focus changed entirely from solving the European en-route capacity crisis to managing an unprecedented global crisis of the aviation industry affecting the entire value chain.</p>
 <p>Complementary to the <a href="https://www.eurocontrol.int/covid19" title="EUROCONTROL web page">EUROCONTROL web page</a>, the goal of this page is to support the industry and interested parties with a consolidated view of relevant information on the impact of the COVID-19 crisis on the aviation industry, particularly related to performance topics.</p>
 <div class="container">
 <div class="row align-items-start">
-<div class="col-sm-6">
+<div class="col-md-6">
 <div class="container">
 <div class="row">
 <div class="card-deck">
@@ -65,12 +80,51 @@ What are EUROCONTROL’s recovery scenarios?
 </div>
 </div>
 </div>
-<div class="col-sm-6">
-<div class="resp-container">
-<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/b2b43aeb-ce1d-4c7e-961a-8bb646368111/page/p_682iueu5pc" frameborder="0" style="border:0" allowfullscreen>
+<div class="col-md-6">
+<div class="row align-items-start" style="text-align: center; font-weight: bold;">
+<div class="col-12">
+<p style="background-color: #2a3646; color: #efefef; border-radius: 8px;">
+Evolution of daily flights in the EUROCONTROL area (7d mov. avg.)
+</p>
+</div>
+</div>
+<!-- closes row-->
+<div class="row align-items-start">
+<div class="col-2 p-0">
+<p style="font-weight: bold; font-size: 1rem; margin-bottom:0;">
+Period:
+</p>
+<p id="period" style="font-weight: bold; font-size: 0.8rem; ">
+</p>
+<div style="background-color: #f2f2f2; border-radius: 5px;">
+<p id="flt-sub" class="scoretitle">
+</p>
+<p id="flt" class="scorecard">
+</p>
+</div>
+<div style="background-color: #f2f2f2; border-radius: 5px;">
+<p id="difprev-sub" class="scoretitle">
+</p>
+<p id="difprev" class="scorecard">
+</p>
+</div>
+<div style="background-color: #f2f2f2; border-radius: 5px;">
+<p id="dif2019-sub" class="scoretitle">
+</p>
+<p id="dif2019" class="scorecard">
+</p>
+</div>
+</div>
+<!-- closes col-2-->
+<div class="col-10 p-0" style=" margin: 0px; height: 300px;">
+<iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-covid.html" frameborder="0" style="border:0;">
 </iframe>
 </div>
+<!-- closes iframe container-->
 </div>
+<!-- closes main row-->
+</div>
+<!-- closes col sm-6 -->
 </div>
 </div>
 <div class="container">
@@ -154,3 +208,45 @@ More environmental friendly approaches due to COVID-19?
 
 </div></div></div>
  -->
+<!-- script for traffic figures -->
+<script type="text/javascript">
+  var data
+   window.onload = function() {
+   window.addEventListener('message', function (e) {
+   var $iframe = $('#traffic-plot');
+
+   data = JSON.parse(e.data);
+
+   UpdateTraffic();
+   
+  }, false);
+    
+}
+
+ function UpdateTraffic() { 
+     // Calculate datestrings
+   var last_day = new Date(data.LAST_DATA_DAY);
+   var last_day_text = last_day.toString();
+       last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8);
+   var period = last_day_text.substring(3, 7) == "Jan " ? "01-" + last_day_text : "01 Jan-" + last_day_text;   
+
+   var year = data.YEAR;
+   
+   var flt = Math.round(data.Y2D_TFC_YEAR/100000)/10;
+  var dif2019 = Math.round(data.Y2D_DIFF_2019_PERC*100);
+      dif2019 = (dif2019 >= 0) ? "+" + dif2019 : "" + dif2019;
+  var difprev = Math.round(data.Y2D_DIFF_PREV_YEAR_PERC*100);
+      difprev = (difprev >= 0) ? "+" + difprev : "" + difprev;
+
+   
+   // Update scorecard values
+  document.getElementById("period").innerHTML = period;
+  document.getElementById("flt-sub").innerHTML = 'Total flights (' + year + ')';
+  document.getElementById("flt").innerHTML = flt + 'M';
+  document.getElementById("dif2019-sub").innerHTML = 'Change vs. 2019';
+  document.getElementById("dif2019").innerHTML = dif2019 + '%';
+  document.getElementById("difprev-sub").innerHTML = 'Change vs. ' + (year-1);
+  document.getElementById("difprev").innerHTML = difprev + '%';
+
+}
+</script>
