@@ -161,36 +161,36 @@ plot_ACE
 
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2;" >
-[**Executive summary**](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=EXECUTIVE SUMMARY){target="_blank"}
+[**Executive summary**](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=EXECUTIVE SUMMARY){target="_blank"}
 </div>
 
 <div style="background-color: #F2F2F2; "  >
-[**Main report**](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf){target="_blank"}
+[**Main report**](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf){target="_blank"}
 <span class="float-right">
-[<i class="fas fa-download"></i>](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf){target="_blank"}
+[<i class="fas fa-download"></i>](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf){target="_blank"}
 </span>
 </div>
 
-  1. [Introduction](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=INTRODUCTION){target="_blank"}
+  1. [Introduction](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=INTRODUCTION){target="_blank"}
 
 <details open>
 <summary>**Main Chapters:**</summary>
-  2. [Pan-European cost-effectiveness performance in 2020](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=PAN-EUROPEAN COST-EFFECTIVENESS PERFORMANCE IN 2020){target="_blank"}
-  3. [Trend analysis and COVID-19 impacts on cost-effectiveness](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=TREND ANALYSIS AND COVID-19 IMPACTS ON COST-EFFECTIVENESS){target="_blank"}
-  4. [Impact of the COVID-19 pandemic on ANSPs financial situation](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=IMPACT OF THE COVID-19 PANDEMIC ON ANSPS FINANCIAL SITUATION){target="_blank"}
-  5. [Forward-looking cost-effectiveness (2021-2024)](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=FORWARD-LOOKING COST-EFFECTIVENESS (2021-2024)){target="_blank"}
-  6. [Summary of ANSPs individual cost-effectiveness performance](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=SUMMARY OF ANSPS INDIVIDUAL COST-EFFECTIVENESS PERFORMANCE){target="_blank"}
+  2. [Pan-European cost-effectiveness performance in 2020](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=PAN-EUROPEAN COST-EFFECTIVENESS PERFORMANCE IN 2020){target="_blank"}
+  3. [Trend analysis and COVID-19 impacts on cost-effectiveness](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=TREND ANALYSIS AND COVID-19 IMPACTS ON COST-EFFECTIVENESS){target="_blank"}
+  4. [Impact of the COVID-19 pandemic on ANSPs financial situation](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=IMPACT OF THE COVID-19 PANDEMIC ON ANSPS FINANCIAL SITUATION){target="_blank"}
+  5. [Forward-looking cost-effectiveness (2021-2024)](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=FORWARD-LOOKING COST-EFFECTIVENESS (2021-2024)){target="_blank"}
+  6. [Summary of ANSPs individual cost-effectiveness performance](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=SUMMARY OF ANSPS INDIVIDUAL COST-EFFECTIVENESS PERFORMANCE){target="_blank"}
 </details>
 
 <details>
 <summary>**Annexes**</summary>
-  * [ANNEX 1 – Status of ANSPs 2020 Annual Reports](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 1 – STATUS OF ANSPS 2020 ANNUAL REPORTS){target="_blank"}
-  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 2 – PERFORMANCE INDICATORS USED FOR THE COMPARISON OFANSPS){target="_blank"}
-  * [ANNEX 3 – Performance ratios](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 3 – PERFORMANCE RATIOS){target="_blank"}
-  * [ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS) data](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 4 – EXCHANGE RATES, INFLATION RATES AND PURCHASING POWERPARITIES (PPPS) DATA){target="_blank"}
-  * [ANNEX 5 – Key data](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 5 – KEY DATA){target="_blank"}
-  * [ANNEX 6 – Performance indicators at FAB level](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=ANNEX 6 – PERFORMANCE INDICATORS AT FAB LEVEL){target="_blank"}
-  * [Glossary](/library/ace/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020.pdf#nameddest=GLOSSARY){target="_blank"}
+  * [ANNEX 1 – Status of ANSPs 2020 Annual Reports](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=ANNEX 1 – STATUS OF ANSPS 2020 ANNUAL REPORTS){target="_blank"}
+  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=ANNEX 2 – PERFORMANCE INDICATORS USED FOR THE COMPARISON OFANSPS){target="_blank"}
+  * [ANNEX 3 – Performance ratios](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=ANNEX 3 – PERFORMANCE RATIOS){target="_blank"}
+  * [ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS) data](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=ANNEX 4 – EXCHANGE RATES, INFLATION RATES AND PURCHASING POWERPARITIES (PPPS) DATA){target="_blank"}
+  * [ANNEX 5 – Key data](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=ANNEX 5 – KEY DATA){target="_blank"}
+  * [ANNEX 6 – Performance indicators at FAB level](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=ANNEX 6 – PERFORMANCE INDICATORS AT FAB LEVEL){target="_blank"}
+  * [Glossary](https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=GLOSSARY){target="_blank"}
 </details>
 
 </div>
