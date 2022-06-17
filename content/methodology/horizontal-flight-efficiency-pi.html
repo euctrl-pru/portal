@@ -426,6 +426,13 @@ to the great circle distance for the flight, not the sum of the length of direct
 courses.</p>
 <table>
 <caption><span id="tab:quantities">Table 2: </span> Summary of the different quantities used to compute HFE</caption>
+<colgroup>
+<col width="8%" />
+<col width="12%" />
+<col width="24%" />
+<col width="41%" />
+<col width="13%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
@@ -547,6 +554,13 @@ valid (the definition of the type of flight is based on the location of the
 airports with respect to the reference area):</p>
 <table>
 <caption><span id="tab:locations">Table 3: </span> General location of origin, destination and en-route end-points</caption>
+<colgroup>
+<col width="22%" />
+<col width="12%" />
+<col width="24%" />
+<col width="21%" />
+<col width="18%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Type of flight</th>
@@ -684,10 +698,10 @@ weighted average which takes into consideration the great circle distance
 achieved distance; <span class="math inline">\(f\)</span> indicates a flight, <span class="math inline">\(j\)</span> indicates an area, <span class="math inline">\(p\)</span>
 indicates a portion of the flight):</p>
 <p><span class="math display">\[
- \text{HFE} = \sum w_f \cdot \frac{K_f}{G_f} = \sum \frac{G_f}{\sum G_f} \cdot \frac{K_f}{G_f}
- = \frac{\sum K_f}{\sum G_f} = \frac{K_f}{H_f} \cong \frac{\sum K_{fjp}}{\sum
- H_{fjp}}
- \]</span></p>
+\text{HFE} = \sum w_f \cdot \frac{K_f}{G_f} = \sum \frac{G_f}{\sum G_f} \cdot \frac{K_f}{G_f}
+= \frac{\sum K_f}{\sum G_f} = \frac{K_f}{H_f} \cong \frac{\sum K_{fjp}}{\sum
+H_{fjp}}
+\]</span></p>
 <p>The contribution to the additional distance of each portion of the flight is
 proportional to the achieved distance of the same portion. The impact of
 short flights is therefore proportional to their lengths.</p></li>
