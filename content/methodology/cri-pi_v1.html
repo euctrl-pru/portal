@@ -14,7 +14,7 @@ output: html_document
 <p>Figure <a href="#fig:cri-components">1</a> shows all components of proposed CRI index.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:cri-components"></span>
-<img src="/images/cri-components.png" alt="Composite Risk Index components." width="800px" />
+<img src="../../../../../../images/cri-components.png" alt="Composite Risk Index components." width="800px" />
 <p class="caption">
 Figure 1: Composite Risk Index components.
 </p>
@@ -23,6 +23,10 @@ Figure 1: Composite Risk Index components.
 <h2>Acronyms and terminology</h2>
 <table>
 <caption><span id="tab:acronyms">Table 1: </span> Acronyms and terminology</caption>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Term</th>
@@ -79,7 +83,7 @@ Figure 1: Composite Risk Index components.
 <p>The process is visualised in Figure <a href="#fig:cri-data-input">2</a>.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:cri-data-input"></span>
-<img src="/images/cri-data-input.png" alt="Composite Risk Index process." width="800px" />
+<img src="../../../../../../images/cri-data-input.png" alt="Composite Risk Index process." width="800px" />
 <p class="caption">
 Figure 2: Composite Risk Index process.
 </p>
@@ -91,7 +95,7 @@ Figure 2: Composite Risk Index process.
 <p>Figure <a href="#fig:cri-sevD">3</a> shows how unassessed occurences (severity D) are distributed into other severity groups.</p>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:cri-sevD"></span>
-<img src="/images/cri-sevD.png" alt="Distribution of unassessed occurences (severity D) into other severity groups." width="800px" />
+<img src="../../../../../../images/cri-sevD.png" alt="Distribution of unassessed occurences (severity D) into other severity groups." width="800px" />
 <p class="caption">
 Figure 3: Distribution of unassessed occurences (severity D) into other severity groups.
 </p>
@@ -106,17 +110,21 @@ Figure 3: Distribution of unassessed occurences (severity D) into other severity
 <p>where</p>
 <dl>
 <dt><span class="math inline">\(\text{No_occ_est}_i\)</span></dt>
-<dd>estimated number of safety occurrence type <span class="math inline">\(i\)</span>
+<dd>
+estimated number of safety occurrence type <span class="math inline">\(i\)</span>
 </dd>
 <dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
-<dd>number of reported occurrences of Severity Classification D (not determined)
+<dd>
+number of reported occurrences of Severity Classification D (not determined)
 for occurrence type <span class="math inline">\(i\)</span>
 </dd>
 <dt><span class="math inline">\(P_i\)</span></dt>
-<dd>probability of safety occurrence type <span class="math inline">\(i\)</span>
+<dd>
+probability of safety occurrence type <span class="math inline">\(i\)</span>
 </dd>
 <dt><span class="math inline">\(\text{No_D}_i\)</span></dt>
-<dd>number of reported safety occurrences of type <span class="math inline">\(i\)</span>
+<dd>
+number of reported safety occurrences of type <span class="math inline">\(i\)</span>
 </dd>
 </dl>
 <p>The probability of each type of occurrence is calculated using the simple principle:</p>
@@ -125,10 +133,12 @@ P_i =  \frac{\text{No_occ}_i}{\text{Total No}_{{occ}_i}}
 \]</span></p>
 <dl>
 <dt><span class="math inline">\(\text{No_occ}_i\)</span></dt>
-<dd>number of reported safety occurrences type <span class="math inline">\(i\)</span> in a year
+<dd>
+number of reported safety occurrences type <span class="math inline">\(i\)</span> in a year
 </dd>
 <dt><span class="math inline">\(\text{Total No}_{{occ}_i}\)</span></dt>
-<dd>total number of reported safety occurrences type <span class="math inline">\(i\)</span> in a group in all years
+<dd>
+total number of reported safety occurrences type <span class="math inline">\(i\)</span> in a group in all years
 </dd>
 </dl>
 </div>
@@ -146,13 +156,16 @@ The simple formula to calculate the CRI is presented below.</p>
 <p>where</p>
 <dl>
 <dt><span class="math inline">\(\text{CRI}_i\)</span></dt>
-<dd>CRI index for occurrence type <span class="math inline">\(i\)</span>
+<dd>
+CRI index for occurrence type <span class="math inline">\(i\)</span>
 </dd>
 <dt><span class="math inline">\(w_i\)</span></dt>
-<dd>weight (based on severity and human perception) assigned to specific type of safety occurrence
+<dd>
+weight (based on severity and human perception) assigned to specific type of safety occurrence
 </dd>
 <dt><span class="math inline">\(\text{Total No}_{{occ}}\)</span></dt>
-<dd>total number of all occurrences in a year
+<dd>
+total number of all occurrences in a year
 </dd>
 </dl>
 <p>In the formula above the Weights added to each equation represent the additional human perception of the risk for the specific event so that the CRI can at the end consider the human perception of equivalent risk.</p>
