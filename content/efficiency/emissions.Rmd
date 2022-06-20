@@ -3,31 +3,6 @@ title: ""
 output: html_document
 ---
 
-```{css, echo=FALSE}
-
-.nav-pills > li > a  {
-    color:black;
-    background-color:#f5f5f5;
-}
-
-ul > li > a.active, .nav-pills > li > a:hover, .nav-pills > li > a:focus {
-    color:black;
-    background-color:#e0e0e0;
-}
-
-.nav-pills > .nav-link {
-    color:black;
-    background-color:#e0e0e0;
-}
-
-.nav>li>a {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-
-```
-
 ```{r, echo=FALSE, include=FALSE}
 # All defaults
 ## libraries
@@ -40,6 +15,23 @@ library(lubridate)
 library(plotly)
 ```
 
+```{css, echo=FALSE}
+
+.nav>li>a {
+    color: black;
+    background-color:#f5f5f5;
+    padding: 2px 5px 2px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active {
+    color:black;
+    background-color:#e0e0e0;
+    text-decoration: none;
+}
+
+```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 base_dir <- ''
@@ -726,7 +718,6 @@ dif_co2_dep_y2d_2019 <- paste0(if_else(dif_co2_dep_y2d_2019>=0,'+', ''),format(d
 
 ```
 
-
 ### CO<sub>2</sub> emissions
 Intro.
 
@@ -810,21 +801,32 @@ Intro.
 </div><!-- closes col -->
 
 <div class="col-md-8">
-##### Option 1 - 2nd indicator: CO2 emissions/departure
+
+<ul class="nav nav-pills">
+  <li class="active m-1"><a id="defaultTab2" data-toggle="pill" href="#co2dep">Option 1</a></li>
+  <li class="m-1"><a data-toggle="pill" href="#deponly">Option 2</a></li>
+  <li class="m-1"><a data-toggle="pill" href="#indexes">Option 3</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="co2dep" class="tab-pane fade in active">
 ```{r echo=FALSE, out.width='100%'}
 co2_nw_plot
 ```
+</div>
 
-##### Option 2 - 2nd indicator: Departures
+<div id="deponly" class="tab-pane fade">
 ```{r echo=FALSE, out.width='100%'}
 co2_nw_plot2
 ```
+</div>
 
-##### Option 3 - 1st indicator: CO2 idx 2nd indicator: Departure idx
+<div id="indexes" class="tab-pane fade">
 ```{r echo=FALSE, out.width='100%'}
 co2_nw_plot3
 ```
-
+</div>
+</div><!-- closes tabcontent -->
 </div><!-- closes col -->
 
 </div><!-- closes row -->
@@ -832,19 +834,16 @@ co2_nw_plot3
 
 #### States
 
-<ul class="nav nav-pills mb-1" role="tablist">
-  <li class="nav-item m-1">
-    <a class="nav-link active" data-toggle="tab" aria-selected="true">`r last_month`</a>
-  </li>
-  <li class="nav-item m-1">
-    <a class="nav-link" data-toggle="tab" aria-selected="false">Year to date (empty)</a>
-  </li>
-  <li class="nav-item m-1">
-    <a class="nav-link" data-toggle="tab" aria-selected="false">Map (empty)</a>
-  </li>
+<ul class="nav nav-pills">
+  <li class="active m-1"><a id="defaultTab" data-toggle="pill" href="#month">`r last_month`</a></li>
+  <li class="m-1"><a data-toggle="pill" href="#y2d">Year to date (empty)</a></li>
+  <li class="m-1"><a data-toggle="pill" href="#map">Map (empty)</a></li>
 </ul>
 
-<div class="container" style="padding:0px">
+
+<div class="tab-content">
+<div id="month" class="container tab-pane fade in active" style="padding:0px">
+
 <div class="row align-items-start">
 <div class="col-md-12">
 
@@ -862,8 +861,21 @@ co2_lolli_plot
 
 </div><!-- closes col -->
 </div><!-- closes row -->
+</div><!-- closes container -->
+
+<div class="tab-pane fade" id="y2d"></div>
+
+</div>
 <br>
 For more information visit the EUROCONTROL page on [Aviation Sustainability](https://www.eurocontrol.int/aviation-sustainability){target="_blank"}.
 
 (We can also add a catalog of products like in [this page](https://ansperformance.eu/capacity/tot_dly/){target="_blank"})
-</div><!-- closes container -->
+
+<script type="text/javascript">
+window.onload = function() {
+  var element = document.getElementById("defaultTab2");
+  element.click();
+  var element = document.getElementById("defaultTab");
+  element.click();
+}
+</script>
