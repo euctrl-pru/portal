@@ -89,30 +89,9 @@ library(lubridate)
 }
 
 
-.nav.nav-tabs > li > button {
-    color:black;
-    background-color:#f5f5f5;
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    border-radius: 4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 3px;
-    border: 0;
-}
-
-.nav.nav-tabs > li > button.active, .nav.nav-tabs > li > button:hover {
-    color:black;
-    background-color:#e0e0e0;
-}
-
-
-
   </style>
   
-This page provides an overview of the traffic and delay situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
+This page provides an overview of the traffic, delay and punctuality situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
 
 <ul class="nav nav-tabs mb-1">
   <li class="nav-item">
@@ -121,6 +100,9 @@ This page provides an overview of the traffic and delay situation in the [EUROCO
   <li class="nav-item">
     <a class="nav-link active" aria-current="page">ATFM Delays</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/traffic/punctuality">Punctuality</a>
+  </li> 
 </ul>
 
 <!-- Network dly section -->

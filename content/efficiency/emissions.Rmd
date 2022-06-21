@@ -728,72 +728,72 @@ Intro.
 <div class="col-md-4" >
 <br><br>
 <div class="row align-items-start">
-<div class="col-md-12" style="border: solid 1px #D9D9D9; border-radius: 4px;">
+<div class="col-12" style="border: solid 1px #D9D9D9; border-radius: 4px;">
 <div class="row align-items-start" style="margin-top:10px;">
-<div class="col-md-5" >
+<div class="col-5" >
 <p style="font-weight:bold; color:#2E75B6; font-size:18px;  ">Month: `r last_month` </p>
 </div>
-<div class="col-md-4" >
+<div class="col-4" >
 <p style=" font-size:15px; margin-top:15px">vs 2021</p>
 </div>
-<div class="col-md-3" >
+<div class="col-3" >
 <p style="font-size:15px; margin-top:15px">vs 2019</p>
 </div>
 </div><!-- closes row -->
 
 <div class="row align-items-start" style="">
-<div class="col-md-5" >
+<div class="col-5" >
 <p style="font-weight:bold; font-size:22px; margin-bottom:0px">`r co2_month_r` Mt</p>
 </div>
-<div class="col-md-4" >
+<div class="col-4" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_month_prev_year`</p>
 </div>
-<div class="col-md-3" >
+<div class="col-3" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_month_2019`</p>
 </div>
 </div><!-- closes row -->
 
 <div class="row align-items-start" style="">
-<div class="col-md-5" >
+<div class="col-5" >
 <p style="font-weight:bold; font-size:22px; margin-bottom:0px">`r co2_dep_month_r` <span style="font-size:20px;">t/dep</span><span><a href="#" data-toggle="tooltip" data-placement="right" title="Tonnes of CO2 emissions per departure">*</a></span>
 </p>
 </div>
-<div class="col-md-4" >
+<div class="col-4" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_dep_month_prev_year`</p>
 </div>
-<div class="col-md-3" >
+<div class="col-3" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_dep_month_2019`</p>
 </div>
 </div><!-- closes row -->
 
 
 <div class="row align-items-start" style="">
-<div class="col-md-12" >
+<div class="col-12" >
 <p style="font-weight:bold; color:#2E75B6; font-size:18px; margin-top:10px">`r y2d` </p>
 </div>
 </div><!-- closes row -->
 
 <div class="row align-items-start" style="">
-<div class="col-md-5" >
+<div class="col-5" >
 <p style="font-weight:bold; font-size:22px; margin-bottom:0px">`r co2_y2d_r` Mt</p>
 </div>
-<div class="col-md-4" >
+<div class="col-4" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_y2d_prev_year`</p>
 </div>
-<div class="col-md-3" >
+<div class="col-3" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_y2d_2019`</p>
 </div>
 </div><!-- closes row -->
 
 <div class="row align-items-start" style="">
-<div class="col-md-5" >
+<div class="col-5" >
 <p style="font-weight:bold; font-size:22px; margin-bottom:0px">`r co2_dep_y2d_r` <span style="font-size:20px;">t/dep</span><a href="#" data-toggle="tooltip" data-placement="right" title="Tonnes of CO2 emissions per departure">*</a></span>
 </p>
 </div>
-<div class="col-md-4" >
+<div class="col-4" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_dep_y2d_prev_year`</p>
 </div>
-<div class="col-md-3" >
+<div class="col-3" >
 <p style="font-weight:bold; font-size:18px; margin-top:5px">`r dif_co2_dep_y2d_2019`</p>
 </div>
 </div><!-- closes row -->
