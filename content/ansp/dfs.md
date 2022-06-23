@@ -5,8 +5,8 @@ slug: dfs
 
 Deutsche Flugsicherung GmbH, Germany.
 
-See the relevant [leaflet][leaf] from [ACE2015].
+See the relevant [leaflet][leaf] from the [ACE] Report.
 
-[leaf]: ../DFS_Germany_ACE_2015.pdf "ACE 2015 Benchmarking Report Factsheet: DFS"
+[leaf]: /library/ace/ansp-factsheets/DFS.pdf "ACE Benchmarking Report Factsheet: DFS"
 
-[ACE2015]: http://www.eurocontrol.int/publications/atm-cost-effectiveness-ace-2015-benchmarking-report-2016-2020-outlook "ACE 2015 Benchmarking Report"
+[ACE]: https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf "ACE 2020 Benchmarking Report"
