@@ -3,7 +3,9 @@ title: "European Legislation for ANS Performance"
 layout: default
 nocite: '@*'
 bibliography: ../../static/bib/legislation.bib
+# csl: aerospace.csl
 csl: eea.csl
+# csl: australian-business-law-review.csl
 ---
 ```{r echo = FALSE, message = FALSE, warning = FALSE}
 # run setup script

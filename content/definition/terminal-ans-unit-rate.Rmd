@@ -15,7 +15,7 @@ commercial airlines, for the air navigation services provided, mainly air
 traffic control.
 
 Terminal ANS unit rates are defined in the Annex V of the
-EC 1794/2006 Charging Scheme Regulation [@ec:1794/2006]
+EC 1794/2006 Charging Scheme Regulation [@eu:1794/2006]
 (all references below refer to articles of this regulation):
 
 
