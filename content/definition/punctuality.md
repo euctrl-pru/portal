@@ -1,9 +1,10 @@
 ---
-title: Punctuality
+title: Punctuality (OTP15)
 slug: punctuality
 ---
 
-The share of flights arriving/departing within 15 minutes after the scheduled
+The share of [IFR]({{< relref "ifr.md" >}}) flights arriving/departing within
+15 minutes after the scheduled
 arrival/departure time (airline schedules).
 
 IFR flights without a commercial schedule are not considered for the punctuality
