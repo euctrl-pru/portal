@@ -15,11 +15,11 @@ subject to airspace availability.
 Within this airspace, flights remain subject to air traffic control.
 
 
-## Free route airspace implementation status December 2016
+## Free route airspace implementation status December 2020
 
 ```{r fra, fig.lab="FRA implementation - End 2022", echo=FALSE, out.height="700px"}
 library(png)
-knitr::include_graphics("/images/eurocontrol-fra-implementation-end-2022-v9-03062022.png")
+knitr::include_graphics("/images/eurocontrol-fra-implementation-end-2020.png")
 ```
 
 

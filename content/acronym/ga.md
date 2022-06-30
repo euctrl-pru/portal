@@ -8,8 +8,6 @@ and non-scheduled air transport operations for remuneration or hire.
 
 ## See Also
 
-* [OAT][oat].
-* [GAT][gat].
-
-[oat]: /acronym/oat/ "OAT"
-[gat]: /acronym/gat/ "OAT"
+* {{< a_blank_skybrary "GA - General Aviation" "https://skybrary.aero/articles/general-aviation-ga" >}}
+* [OAT]({{< relref "oat.md" >}}).
+* [GAT]({{< relref "gat.md" >}}).
