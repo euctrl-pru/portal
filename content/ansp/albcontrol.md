@@ -5,7 +5,7 @@ slug: albcontrol
 
 ANS Provider - Albania.
 
-See the relevant [leaflet][leaf] from the latest [ACE] Report.
+See the relevant [leaflet][leaf] from the [ACE] Report.
 
 
 [leaf]: /library/ace/ansp-factsheets/Albcontrol.pdf "ACE Benchmarking Report Factsheet: Albcontrol"
