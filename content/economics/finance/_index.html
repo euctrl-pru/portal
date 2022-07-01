@@ -692,7 +692,16 @@ title: ANSPs Financial Dashboard
       Data.getFilteredRows([{ column: 0, value: SelectedYear }, { column: 1, value: SelectedEntity }])
      );
     MyViewANSPServices.setColumns([52, 53, 55, 56, 57, 51, 47]);
+    try {
+      var check_data = MyViewANSPServices.getValue(0,0,0,0,0,0,0);
+      }
+      catch(err) {
+        SelectedYear = SelectedYear-1;
+        Initialisation();
+      }
  }
+
+
 
   //---------------------------Share of revenue piechart ---------------------------------------------
  function UpdateMyShareTotalRevenue() {
