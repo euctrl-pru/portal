@@ -84,7 +84,7 @@ library(lubridate)
 @media screen and (min-width:1200px) {
 
   #ctry-pun, #apt-pun {
-    height: 690px;
+    height: 705px;
   }
 }
 
@@ -124,14 +124,14 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
-<a href="#" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network punctuality data</a>
+<a href="https://www.eurocontrol.int/Economics/Download/Network_Punctuality.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network punctuality data</a>
 
 <div class="flex-container mt-2">
 
 <div class="row align-items-start">
 <div class="col-md-6" >
 #### State view
-Punctuality per State.
+[Punctuality (OTP15)](/definition/punctuality/) per State.
 <div class="row align-items-start">
 <div class="col-12">
 <div id="ctry-pun">
@@ -144,7 +144,7 @@ Punctuality per State.
 
 <div class="col-md-6" >
 #### Airport view
-Punctuality for main EUROCONTROL airports.
+[Punctuality (OTP15)](/definition/punctuality/) for main EUROCONTROL airports.
 <div class="row align-items-start">
 <div class="col-12">
 <div id="apt-pun">
@@ -157,7 +157,7 @@ Punctuality for main EUROCONTROL airports.
 </div><!-- closes row -->
 </div><!-- closes container -->
 <br>
-<a href="#" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download State/airport punctuality data</a>
+<a href="https://www.eurocontrol.int/Economics/Download/Stakeholder_Punctuality.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download State/airport punctuality data</a>
 <!-- </div><!-- closes tab pane-> -->
 <!-- </div><!-- closes tab content-> -->
 
