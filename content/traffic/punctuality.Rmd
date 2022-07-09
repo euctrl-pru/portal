@@ -91,7 +91,7 @@ library(lubridate)
 
   </style>
   
-This page provides an overview of the traffic, [ATFM delay](/definition/atfm-delay/) and [punctuality (OTP15)](/definition/punctuality/) situation in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyPunctuality-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
+This page provides an overview of the traffic, [ATFM delay](/definition/atfm-delay/), [punctuality (OTP15)](/definition/punctuality/) and percentage of [operated schedules](/definition/opschedules/) in the [EUROCONTROL Area](/definition/eurocontrol-area/). For a more detailed analysis consult our [Daily traffic variation dashboard](https://www.eurocontrol.int/Economics/DailyPunctuality-States.html){target="_blank"}. Information on en-route and terminal [service units](/acronym/su/) from the [Central Route Charges Office of EUROCONTROL (CRCO)](https://www.eurocontrol.int/crco){target="_blank"} is available from our [Service Units dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html){target="_blank"}.
 
 <ul class="nav nav-tabs mb-1">
   <li class="nav-item">
@@ -131,7 +131,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 <div class="row align-items-start">
 <div class="col-md-6" >
 #### State view
-[Punctuality (OTP15)](/definition/punctuality/) per State.
+[Punctuality (OTP15)](/definition/punctuality/) and percentage of [operated schedules](/definition/opschedules/) per State.
 <div class="row align-items-start">
 <div class="col-12">
 <div id="ctry-pun">
@@ -144,7 +144,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 
 <div class="col-md-6" >
 #### Airport view
-[Punctuality (OTP15)](/definition/punctuality/) for main EUROCONTROL airports.
+[Punctuality (OTP15)](/definition/punctuality/) and percentage of [operated schedules](/definition/opschedules/) for main EUROCONTROL airports.
 <div class="row align-items-start">
 <div class="col-12">
 <div id="apt-pun">
