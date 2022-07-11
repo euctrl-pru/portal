@@ -1,6 +1,6 @@
 ---
-title: LAQ - Local Air Quality
-slug: laq
+title: EUACA - European Airport Coordinators Association
+slug: euaca
 ---
 
-Formerly Local Convergence and Implementation Plans
+
