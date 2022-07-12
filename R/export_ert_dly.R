@@ -144,7 +144,7 @@ TDF_15_ERT as FLT_ERT_1_DLY_15
 FROM data
 where 
 UNIT_PRU_TYPE = 'ANSP' and 
-unit_name NOT in ('NATS','NATS (Oceanic)','HungaroControl','Israel AA', 'ONDA',
+unit_name NOT in ('NATS','NATS (Oceanic)','HungaroControl','Israel AA', 'ONDA', 'UkSATSE',
 'Avinor (Continental)','Avinor (Oceanic)','NAV Portugal (Santa Maria)',
 'UNKNOWN','MILITARY','AIRPORT','PIA','BHANSA', 'KFOR (HungaroControl)' )
 
@@ -264,6 +264,7 @@ FROM data  --PRUDEV.V_PRU_FAC_TDC_DD
 where 
 UNIT_PRU_TYPE = 'COUNTRY_FIR' and 
 (unit_code  in (select country_icao_code from V_PRU_REL_COUNTRY_ZONE where zone_id = 58) or unit_code in ('EG_CT', 'EG_OC', 'LEGC', 'LP_CT', 'LP_OC'))
+and unit_name not in ('Ukraine')
 and ENTRY_DATE >= '01-JAN-2013'
 order by 4,5
 "
