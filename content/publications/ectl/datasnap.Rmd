@@ -19,7 +19,7 @@ extrajs: [
 <div class="row align-items-start">
 
 <div class="col-sm-8"> 
-<h5>[Daily utilisation of aircraft by type - EUROCONTROL Data Snapshot #31][DS31]</h5>
+<h5>[The new regional market segment - EUROCONTROL Data Snapshot #31][DS31]</h5>
 <small><strong><p style="color:#808080">Published: 12 July 2022</p></strong></small>
 
 The 31. EUROCONTROL Data Snapshot focuses on aviation’s regional market segment. 
