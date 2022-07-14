@@ -5,8 +5,8 @@ slug: hungarocontrol
 
 HungaroControl, Hungary
 
-See the relevant [leaflet][leaf] from [ACE2015].
+See the relevant [leaflet][leaf] from the [ACE] Report.
 
-[leaf]: ../HungaroControl_Hungary_ACE_2015.pdf "ACE 2015 Benchmarking Report Factsheet: HungaroControl"
+[leaf]: /library/ace/ansp-factsheets/HungaroControl.pdf "ACE Benchmarking Report Factsheet: HungaroControl"
 
-[ACE2015]: http://www.eurocontrol.int/publications/atm-cost-effectiveness-ace-2015-benchmarking-report-2016-2020-outlook "ACE 2015 Benchmarking Report"
+[ACE]: https://www.eurocontrol.int/sites/default/files/2022-06/eurocontrol-ace-2020-benchmarking-report.pdf "ACE 2020 Benchmarking Report"

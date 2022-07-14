@@ -13,27 +13,24 @@ library(here)
 tdy <- today()
 yyyy <- tdy %>% year()
 
-year <- ifelse(tdy %>% month() >= 7, yyyy - 2, yyyy - 3)
+year <- ifelse(tdy %>% month() >= 6, yyyy - 2, yyyy - 3)
 
 ace_factsheet <- str_glue(
-  "G:/HQ/dgof-pru/Data/Application/Ace/ACE\ Factsheet/{year}/Database/ACE_{year}_factsheet.mdb",
+  "G:/HQ/dgof-pru/Data/Application/Ace/ACE_Database/ACE.mdb",
+  # here::here("ACE_{year}_factsheet.mdb"),
   year = year)
 
-con <- odbcConnectAccess2007(ace_factsheet)
+DRIVERINFO <- "Driver={Microsoft Access Driver (*.mdb, *.accdb)};"
+MDBPATH <- ace_factsheet
+PATH <- paste0(DRIVERINFO, "DBQ=", MDBPATH)
+
+con <- odbcDriverConnect(PATH)
 
 cat("before fetching Tbl_ACE_Admin")
-sqlFetch(con, "Tbl_ACE_Admin", as.is = FALSE, stringsAsFactors = FALSE) %>%
-  as_tibble() %>%
-  write_rds(file = here("data-config", "tbl_admin.rds"))
-
-sqlFetch(con,"Tbl_Main", as.is = FALSE, stringsAsFactors = FALSE) %>%
-  as_tibble() %>%
-  write_rds(here("data-config", "tbl_main.rds"))
-
+# sqlTables(con)
 sqlFetch(con,"ANSP_Q_FACT_FACTSHEET", as.is = FALSE, stringsAsFactors = FALSE) %>%
   as_tibble() %>%
   write_rds(here("data-config", "ansp_q_facts.rds"))
-
 
 
 odbcClose(con)

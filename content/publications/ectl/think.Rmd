@@ -5,7 +5,7 @@ tags:  Think Paper
 ---
 
 ## 2022
-* [EUROCONTROL Think Paper #17 (30 June 2022) - Why aviation urgently needs to improve its use of radio spectrum][TP17]
+* [EUROCONTROL Think Paper #17 (30 Jun 2022) - Why aviation urgently needs to improve its use of radio spectrum][TP17]
 * [EUROCONTROL Think Paper #16 (12 May 2022) - Reducing aviation emissions by 55% by 2030][TP16]
 * [EUROCONTROL Think Paper #15 (01 Jan 2022) - Charting the European Aviation recovery: 2021 COVID-19 impacts and 2022 outlook][TP15]
 
@@ -26,8 +26,8 @@ tags:  Think Paper
 * [EUROCONTROL Think Paper #5 (25 Oct 2019) - Effects on the network of extra standby aircraft and Boeing 737 MAX grounding][TP5]
 * [EUROCONTROL Think Paper #4 (10 Sep 2019) - The aviation network - Decarbonisation issues][TP4]
 * [EUROCONTROL Think Paper #3 (28 Aug 2019) - Cybersecurity in aviation][TP3]
-* [EUROCONTROL Think Paper #2 (18 July 2019) - Air traffic flow management (ATFM) regulations: a power for good][TP2]
-* [EUROCONTROL Think Paper #1 (21 June 2019) - Fuel tankering in European skies: economic benefits and environmental impact][TP1]
+* [EUROCONTROL Think Paper #2 (18 Jul 2019) - Air traffic flow management (ATFM) regulations: a power for good][TP2]
+* [EUROCONTROL Think Paper #1 (21 Jun 2019) - Fuel tankering in European skies: economic benefits and environmental impact][TP1]
 
 
 

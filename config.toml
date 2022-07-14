@@ -556,7 +556,12 @@ ignoreFiles = [
     url = "/efficiency"
     identifier= "overview"
     weight = 10
- [[menu.efficiency]]
+#[[menu.efficiency]]
+#    name = "CO2 emissions"
+#    url = "/efficiency/emissions"
+#    identifier= "emissions"
+#    weight = 20
+[[menu.efficiency]]
     name = "Horizontal flight efficiency"
     url = "/efficiency/hfe"
     identifier= "hfe"
