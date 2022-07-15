@@ -48,7 +48,7 @@ The results are shown in the dashboard below and also available for download in 
 </div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">
-<iframe class="resp-iframe" src="https://app.powerbi.com/reportEmbed?reportId=f3b42233-1a6d-4fa7-b608-d1713a82f158&autoAuth=true&ctid=76f33c20-5979-4408-adf7-8b3c4be95e52&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWQtcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
+<iframe class="resp-iframe" src="https://app.powerbi.com/view?r=eyJrIjoiZGFmM2M3OWMtMTcyZi00YTBkLTlmMzYtNGU0MGU2Y2RmYTQ5IiwidCI6IjI3MzBkYjlkLTc4NTEtNDY0Yi04ZWEzLWY0MWVhNWE1OTE1NCJ9&pageName=ReportSection" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
 </div>
 
 <div class="row align-items-start">
