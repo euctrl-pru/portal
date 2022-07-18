@@ -148,6 +148,13 @@ ignoreFiles = [
     weight = 21
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>CO<sub>2</sub> emissions</span>"
+      url = "/efficiency/emissions/"
+      identifier = "key-environment-emissions"
+      parent = "aiu"
+      weight = 22
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Horizontal Flight Efficiency</span>"
       url = "/efficiency/hfe/"
       identifier = "key-environment-hfe"
@@ -556,11 +563,12 @@ ignoreFiles = [
     url = "/efficiency"
     identifier= "overview"
     weight = 10
-#[[menu.efficiency]]
-#    name = "CO2 emissions"
-#    url = "/efficiency/emissions"
-#    identifier= "emissions"
-#    weight = 20
+[[menu.efficiency]]
+    name = "CO2 emissions"
+    emissions"
+    url = "/efficiency/emissions"
+    identifier= "emissions"
+    weight = 20
 [[menu.efficiency]]
     name = "Horizontal flight efficiency"
     url = "/efficiency/hfe"

@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Emissions"
 output: html_document
 ---
 
@@ -31,7 +31,6 @@ library(plotly)
     background-color:#e0e0e0;
     text-decoration: none;
 }
-
 
 ```
 
@@ -730,9 +729,9 @@ Intro.
 <div class="row align-items-start">
 
 <div class="col-md-4" >
-
+<br><br>
 <div class="row align-items-start">
-<div class="col-12" style="background-color: #F2F5D3; border-radius: 4px;">
+<div class="col-12" style="border: solid 1px #D9D9D9; border-radius: 4px;">
 <div class="row align-items-start" style="margin-top:10px;">
 <div class="col-5" >
 <p style="font-weight:bold; color:#2E75B6; font-size:18px;  ">Month: `r last_month` </p>
@@ -806,11 +805,31 @@ Intro.
 
 <div class="col-md-8">
 
-<div id="indexes">
+<ul class="nav nav-pills">
+  <li class="active m-1"><a id="defaultTab2" data-toggle="pill" href="#co2dep">Option 1</a></li>
+  <li class="m-1"><a data-toggle="pill" href="#deponly">Option 2</a></li>
+  <li class="m-1"><a data-toggle="pill" href="#indexes">Option 3</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="co2dep" class="tab-pane fade in active">
+```{r echo=FALSE, out.width='100%'}
+co2_nw_plot
+```
+</div>
+
+<div id="deponly" class="tab-pane fade">
+```{r echo=FALSE, out.width='100%'}
+co2_nw_plot2
+```
+</div>
+
+<div id="indexes" class="tab-pane fade">
 ```{r echo=FALSE, out.width='100%'}
 co2_nw_plot3
 ```
 </div>
+</div><!-- closes tabcontent -->
 </div><!-- closes col -->
 
 </div><!-- closes row -->
@@ -857,6 +876,8 @@ For more information visit the EUROCONTROL page on [Aviation Sustainability](htt
 
 <script type="text/javascript">
 window.onload = function() {
+  var element = document.getElementById("defaultTab2");
+  element.click();
   var element = document.getElementById("defaultTab");
   element.click();
 }
