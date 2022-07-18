@@ -683,7 +683,7 @@ co2_lolli_plot_y2d
 </div>
 
 <div class="card"><a href="https://www.eurocontrol.int/publication/objective-skygreen-2022-2030" target="_blank">
-  <img class="card-img-top" src="/images/eff/skygreen2.png" alt="Objective Skygreen">
+  <img class="card-img-top" src="/images/eff/skygreen.png" alt="Objective Skygreen">
   <div class="card-body"><h5 class="card-title">Objective Skygreen</h5><p class="card-text">Read the Objective Skygreen report! <i class='fas fa-xs fa-external-link-alt'></i></p></a>
   </div>
 </div>
