@@ -153,7 +153,7 @@ ignoreFiles = [
       identifier = "key-environment-emissions"
       parent = "aiu"
       weight = 22
-    [[menu.main]]
+     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Horizontal Flight Efficiency</span>"
       url = "/efficiency/hfe/"
@@ -557,7 +557,6 @@ ignoreFiles = [
     url = "/capacity/tot_dly"
     identifier= "tot_dly"
     weight = 40
-
 [[menu.efficiency]]
     name = "Efficiency Overview"
     url = "/efficiency"
@@ -565,10 +564,9 @@ ignoreFiles = [
     weight = 10
 [[menu.efficiency]]
     name = "CO2 emissions"
-    emissions"
     url = "/efficiency/emissions"
     identifier= "emissions"
-    weight = 20
+    weight = 15
 [[menu.efficiency]]
     name = "Horizontal flight efficiency"
     url = "/efficiency/hfe"
