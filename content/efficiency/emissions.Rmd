@@ -544,7 +544,7 @@ dif_co2_dep_y2d_2019 <- paste0(if_else(dif_co2_dep_y2d_2019>=0,'+', ''),format(d
 
 ```
 
-This page provides an overview of the [CO<sub>2</sub> emissions](/reference/dataset/emissions/) in the EUROCONTROL area and their evolution since 2019. It also presents their variation with respect to 2019 broken down at State level. The data is supplied by the [EUROCONTROL Aviation Sustainability Unit](https://www.eurocontrol.int/aviation-sustainability){target="_blank"}.  
+This page provides an overview of the [CO<sub>2</sub> emissions](/reference/dataset/emissions/) in the EUROCONTROL area and their evolution since 2019. It also presents their variation with respect to 2019 broken down at State level. The data is supplied by the [EUROCONTROL Aviation Sustainability Unit](https://www.eurocontrol.int/aviation-sustainability){target="_blank"} and can be downloaded in our [download section](/data/).  
 
 #### Network (CRCO area)
 <div class="container mt-3" style="padding:0px">
