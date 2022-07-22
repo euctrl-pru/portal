@@ -218,7 +218,10 @@ co2_data_plot_state <- co2_data_raw %>%
   mutate(CO2_DEP = ifelse(TF!=0,CO2_QTY_TONNES/TF,0))%>%
   mutate(CO2_DEP_2019 = ifelse(TF!=0, CO2_QTY_TONNES/TF *(MOM_GROWTH_TF+1)/(MOM_GROWTH_CO2+1), 0))%>%
   mutate(MOM_GROWTH_CO2_DEP = ifelse(CO2_DEP_2019!=0, CO2_DEP/CO2_DEP_2019-1, 0))%>%
-  mutate(INDEX = row_number())%>%
+  mutate(STATE_NAME =gsub("Norway\\*", 'Norway<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Jan Mayen and Slavbard">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
+  mutate(STATE_NAME =gsub("Denmark\\*", 'Denmark<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Faroe Islands">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
+  mutate(STATE_NAME =gsub("Portugal\\*", 'Portugal<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Azores and Madeira">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
+  mutate(STATE_NAME =gsub("United Kingdom\\*", 'United Kingdom<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Jersey, Guernsey and Isle of Man">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
   select(STATE_NAME,MOM_GROWTH_CO2)
 
 ```
@@ -268,7 +271,7 @@ table_states_month <- reactable(
       headerStyle = list(background = "#e0e0e0", "font-size" = "12px")
   ),
   columns = list(
-    STATE_NAME = colDef(name = "Country", minWidth = 20),
+    STATE_NAME = colDef(name = "Country", minWidth = 20,html = TRUE),
     MOM_GROWTH_CO2 = colDef(
       name = paste0("Variation (%) vs 2019"),
       defaultSortOrder = "desc",
@@ -296,7 +299,10 @@ co2_data_plot_state_y2d <- co2_data_raw %>%
   mutate(STATE_NAME = gsub("Of", "of",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("And", "and",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("Turkey", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
-  mutate(INDEX = row_number())%>%
+  mutate(STATE_NAME =gsub("Norway\\*", 'Norway<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Jan Mayen and Slavbard">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
+  mutate(STATE_NAME =gsub("Denmark\\*", 'Denmark<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Faroe Islands">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
+  mutate(STATE_NAME =gsub("Portugal\\*", 'Portugal<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Azores and Madeira">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
+  mutate(STATE_NAME =gsub("United Kingdom\\*", 'United Kingdom<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Jersey, Guernsey and Isle of Man">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
   select(STATE_NAME,YTD_GROWTH_CO2)
 
 ```
@@ -319,7 +325,7 @@ table_states_y2d <- reactable(
       headerStyle = list(background = "#e0e0e0", "font-size" = "12px")
   ),
   columns = list(
-    STATE_NAME = colDef(name = "Country", minWidth = 20),
+    STATE_NAME = colDef(name = "Country", minWidth = 20, html = TRUE),
     YTD_GROWTH_CO2 = colDef(
       name = "Variation (%) vs 2019",
       defaultSortOrder = "desc",
