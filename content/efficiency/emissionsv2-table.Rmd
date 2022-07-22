@@ -15,6 +15,8 @@ library(readxl)
 library(lubridate)
 library(zoo)
 library(plotly)
+library(reactable)
+library(htmltools)
 ```
 
 ```{css, echo=FALSE}
@@ -204,6 +206,7 @@ co2_nw_plot3 <- co2_data_plot_nw %>%
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 #data month state
 last_date <- max(co2_data_raw$FLIGHT_MONTH, na.rm=TRUE)
+last_month <- format(last_date,'%B')
 
 co2_data_plot_state <- co2_data_raw %>%
   filter(FLIGHT_MONTH ==last_date)%>%
@@ -215,11 +218,8 @@ co2_data_plot_state <- co2_data_raw %>%
   mutate(CO2_DEP = ifelse(TF!=0,CO2_QTY_TONNES/TF,0))%>%
   mutate(CO2_DEP_2019 = ifelse(TF!=0, CO2_QTY_TONNES/TF *(MOM_GROWTH_TF+1)/(MOM_GROWTH_CO2+1), 0))%>%
   mutate(MOM_GROWTH_CO2_DEP = ifelse(CO2_DEP_2019!=0, CO2_DEP/CO2_DEP_2019-1, 0))%>%
-  mutate(LOLLI = MOM_GROWTH_CO2)%>%
-  mutate(LOLLI2 = 0)%>%
-  # mutate(LOLLI = ifelse(abs(MOM_GROWTH_CO2)>=abs(MOM_GROWTH_CO2_DEP), MOM_GROWTH_CO2, MOM_GROWTH_CO2_DEP))%>%
-  # mutate(LOLLI2 = ifelse(sign(MOM_GROWTH_CO2)!=sign(MOM_GROWTH_CO2_DEP), ifelse(abs(MOM_GROWTH_CO2)>=abs(MOM_GROWTH_CO2_DEP),MOM_GROWTH_CO2_DEP,MOM_GROWTH_CO2), 0))%>%
-  mutate(INDEX = row_number())
+  mutate(INDEX = row_number())%>%
+  select(STATE_NAME,MOM_GROWTH_CO2)
 
 ```
 
@@ -227,97 +227,61 @@ co2_data_plot_state <- co2_data_raw %>%
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #plot month state
 
-line <- list(
-  type = "line",
-  line = list(color = "#d2d2d2",  width=0.5),
-  xref = "x",
-  yref = "y",
-  layer="below"
-)
+# Render a bar chart with positive and negative values
+# https://glin.github.io/reactable/articles/cookbook/cookbook.html#bar-charts
+bar_chart_pos_neg <- function(label, value, max_value = 1, height = "1rem",
+                              pos_fill = "#E3DE00", neg_fill = "#718AF0") {
+  neg_chart <- div(style = list(flex = "1 1 0"))
+  pos_chart <- div(style = list(flex = "1 1 0"))
+  width <- paste0(abs(value / max_value) * 100, "%")
 
-lines <- list()
-for (i in co2_data_plot_state$INDEX) {
-  line[["x0"]] <- i-1
-  line[["x1"]] <- i-1
-  line[["y0"]] <- nth(co2_data_plot_state$LOLLI, i)
-  line[["y1"]] <- nth(co2_data_plot_state$LOLLI2, i)
-  lines <- c(lines, list(line))
+  if (value < 0) {
+    bar <- div(style = list(marginLeft = "0.5rem", background = neg_fill, width = width, height = height))
+    chart <- div(
+      style = list(display = "flex", alignItems = "center", justifyContent = "flex-end"),
+      label,
+      bar
+    )
+    neg_chart <- tagAppendChild(neg_chart, chart)
+  } else {
+    bar <- div(style = list(marginRight = "0.5rem", background = pos_fill, width = width, height = height))
+    chart <- div(style = list(display = "flex", alignItems = "center"), bar, label)
+    pos_chart <- tagAppendChild(pos_chart, chart)
+  }
+
+  div(style = list(display = "flex"), neg_chart, pos_chart)
 }
 
+
 # build plot total
-co2_lolli_plot <- co2_data_plot_state %>%
-  plot_ly(
-    # width = 500, 
-    height = 420,
-    x = ~ STATE_NAME,
-    y = ~ MOM_GROWTH_CO2,
-    yaxis = "y1",
-    type = 'scatter', mode = 'markers',  
-    text = ~ paste0(if_else(MOM_GROWTH_CO2>=0,'+','-'),format(round(abs(MOM_GROWTH_CO2)*100,1),nsmall=1),'%'),
-    marker = list(color = '#ffc000', size = 8),
-    name = paste0('CO','<sub>2</sub>',' variation (% vs 2019)'),
-    hovertemplate = paste('<b>CO','<sub>2</sub>','</b>: <br>%{text}',
-                          "<extra></extra>", # this is to remove the shadow
-                          sep = ""),
-    showlegend = T
-  )%>%
-  # add_text(
-  #   text=~ paste0(if_else(MOM_GROWTH_CO2>=0,'+','-'),format(round(abs(MOM_GROWTH_CO2)*100,1),nsmall=1),'%'), 
-  #          textposition="top center",
-  #         showlegend = F)%>%
-  layout(
-    shapes = lines,
-    # bargap = 0.95,
-    autosize = T,
-    font = list(family = "Helvetica"),
-    xaxis = list(
-      title = "",
-      showticklabels = TRUE,
-      # fixedrange = TRUE,
-      # autotick = T,
-      tickangle=-40,
-      # tickfont = list(size = 1),
-      # range = c(~min(FLIGHT_DATE),~max(FLIGHT_DATE)),
-      fixedrange = TRUE, # disables zoom
-      # type = 'multicategory', 
-      showgrid = F
-    ),
-    yaxis = list(
-      title = paste0('Variation (%) vs 2019 - ', format(last_date,'%B')),
-      titlefont   = list(size = 12),
-      fixedrange = TRUE,
-      # rangemode='nonnegative', #forces the zeros of the two vertical axis to overlap
-      # hoverformat = ",.0%",
-      barmode = 'group',
-    # range = c(0,ceiling(max(nw_data_plot$ROLL_WK_AVG_DLY)/10000)*10000),
-      # tick0 = 1,
-      ticksuffix = "",
-      tickformat=",.0%",
-      zeroline = T, showline = F, showgrid = T
-    ),
-    yaxis2 = list (
-      overlaying = "y",
-      # rangemode='nonnegative',
-      side = "right",
-      title = paste0('<br><br>','CO','<sub>2</sub>',' emissions (tonnes) per departure'),
-      titlefont = list(size = 13, color='white'),
-      ticksuffix = "",
-      # hoverformat = "f",
-      automargin = T,
-      # range = list(0,~max(ROLL_WK_AVG_DLY_PER_FLT)+1),
-      showgrid = F
-    ),
-    # bargap = 0,
-    hovermode = "x unified",
-    margin = list(t=0, r=50),
-    legend = list(orientation = 'h', xanchor = "left", x = 0.0, y = -0.05)
-  )%>%
-    config(
-      responsive = TRUE,
-      displaylogo = FALSE,
-      # modeBarButtons = list(list("toImage"),
-      displayModeBar= FALSE
-      )
+table_states_month <- reactable(
+  co2_data_plot_state,
+  bordered = FALSE,
+  # defaultPageSize = 43,
+  pagination = FALSE, height = 585,
+  defaultSorted = list(STATE_NAME = "asc"),
+  striped = TRUE,
+  compact = TRUE,
+  highlight = TRUE,
+  defaultColDef = colDef(
+      style=list("font-size" = "12px", "white-space"= "wrap"),
+      headerStyle = list(background = "#e0e0e0", "font-size" = "12px")
+  ),
+  columns = list(
+    STATE_NAME = colDef(name = "Country", minWidth = 20),
+    MOM_GROWTH_CO2 = colDef(
+      name = paste0("Variation (%) vs 2019"),
+      defaultSortOrder = "desc",
+      cell = function(value) {
+        # label <- paste0(round(value * 100), "%")
+        label <-paste0(if_else(value>=0,'+','-'),format(round(abs(value)*100,1),nsmall=1),'%')
+        bar_chart_pos_neg(label, value)
+      },
+      align = "center",
+      minWidth = 30
+    )
+  )
+)
 
 ```
 
@@ -332,108 +296,43 @@ co2_data_plot_state_y2d <- co2_data_raw %>%
   mutate(STATE_NAME = gsub("Of", "of",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("And", "and",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("Turkey", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
-  # mutate(CO2_DEP = ifelse(TF!=0,CO2_QTY_TONNES/TF,0))%>%
-  # mutate(CO2_DEP_2019 = ifelse(TF!=0, CO2_QTY_TONNES/TF *(MOM_GROWTH_TF+1)/(MOM_GROWTH_CO2+1), 0))%>%
-  # mutate(MOM_GROWTH_CO2_DEP = ifelse(CO2_DEP_2019!=0, CO2_DEP/CO2_DEP_2019-1, 0))%>%
-  mutate(LOLLI = YTD_GROWTH_CO2)%>%
-  mutate(LOLLI2 = 0)%>%
-  # mutate(LOLLI = ifelse(abs(MOM_GROWTH_CO2)>=abs(MOM_GROWTH_CO2_DEP), MOM_GROWTH_CO2, MOM_GROWTH_CO2_DEP))%>%
-  # mutate(LOLLI2 = ifelse(sign(MOM_GROWTH_CO2)!=sign(MOM_GROWTH_CO2_DEP), ifelse(abs(MOM_GROWTH_CO2)>=abs(MOM_GROWTH_CO2_DEP),MOM_GROWTH_CO2_DEP,MOM_GROWTH_CO2), 0))%>%
-  mutate(INDEX = row_number())
+  mutate(INDEX = row_number())%>%
+  select(STATE_NAME,YTD_GROWTH_CO2)
 
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #plot y2d state
 
-line <- list(
-  type = "line",
-  line = list(color = "#d2d2d2",  width=0.5),
-  xref = "x",
-  yref = "y",
-  layer="below"
-)
-
-lines <- list()
-for (i in co2_data_plot_state_y2d$INDEX) {
-  line[["x0"]] <- i-1
-  line[["x1"]] <- i-1
-  line[["y0"]] <- nth(co2_data_plot_state_y2d$LOLLI, i)
-  line[["y1"]] <- nth(co2_data_plot_state_y2d$LOLLI2, i)
-  lines <- c(lines, list(line))
-}
-
 # build plot total
-co2_lolli_plot_y2d <- co2_data_plot_state_y2d %>%
-  plot_ly(
-    # width = 500, 
-    height = 420,
-    x = ~ STATE_NAME,
-    y = ~ YTD_GROWTH_CO2,
-    yaxis = "y1",
-    type = 'scatter', mode = 'markers',  
-    text = ~ paste0(if_else(YTD_GROWTH_CO2>=0,'+','-'),format(round(abs(YTD_GROWTH_CO2)*100,1),nsmall=1),'%'),
-    marker = list(color = '#E6AF00', size = 8),
-    name = paste0('CO','<sub>2</sub>',' variation (% vs 2019)'),
-    hovertemplate = paste('<b>CO','<sub>2</sub>','</b>: <br>%{text}',
-                          "<extra></extra>", # this is to remove the shadow
-                          sep = ""),
-    # hoverinfo = "none",
-    showlegend = T
-  )%>%
-  layout(
-    shapes = lines,
-    # bargap = 0.95,
-    autosize = T,
-    font = list(family = "Helvetica"),
-    xaxis = list(
-      title = "",
-      showticklabels = TRUE,
-      # fixedrange = TRUE,
-      # autotick = T,
-      tickangle=-40,
-      # tickfont = list(size = 1),
-      # range = c(~min(FLIGHT_DATE),~max(FLIGHT_DATE)),
-      fixedrange = TRUE, # disables zoom
-      # type = 'multicategory', 
-      showgrid = F
-    ),
-    yaxis = list(
-      title = paste0('Variation (%) vs 2019 - Year to date'),
-      titlefont   = list(size = 12),
-      fixedrange = TRUE,
-      # rangemode='nonnegative', #forces the zeros of the two vertical axis to overlap
-      # hoverformat = ",.0%",
-      barmode = 'group',
-    # range = c(0,ceiling(max(nw_data_plot$ROLL_WK_AVG_DLY)/10000)*10000),
-      # tick0 = 1,
-      ticksuffix = "",
-      tickformat=",.0%",
-      zeroline = T, showline = F, showgrid = T
-    ),
-    yaxis2 = list (
-      overlaying = "y",
-      # rangemode='nonnegative',
-      side = "right",
-      title = paste0('<br><br>','CO','<sub>2</sub>',' emissions (tonnes) per departure'),
-      titlefont = list(size = 13, color='white'),
-      ticksuffix = "",
-      # hoverformat = "f",
-      automargin = T,
-      # range = list(0,~max(ROLL_WK_AVG_DLY_PER_FLT)+1),
-      showgrid = F
-    ),
-    # bargap = 0,
-    hovermode = "x unified",
-    margin = list(t=0, r=50),
-    legend = list(orientation = 'h', xanchor = "left", x = 0.0, y = -0.05)
-  )%>%
-    config(
-      responsive = TRUE,
-      displaylogo = FALSE,
-      # modeBarButtons = list(list("toImage"),
-      displayModeBar= FALSE
-      )
+table_states_y2d <- reactable(
+  co2_data_plot_state_y2d,
+  bordered = FALSE,
+  # defaultPageSize = 43,
+  pagination = FALSE, height = 585,
+  defaultSorted = list(STATE_NAME = "asc"),
+  striped = TRUE,
+  compact = TRUE,
+  highlight = TRUE,
+  defaultColDef = colDef(
+      style=list("font-size" = "12px", "white-space"= "wrap"),
+      headerStyle = list(background = "#e0e0e0", "font-size" = "12px")
+  ),
+  columns = list(
+    STATE_NAME = colDef(name = "Country", minWidth = 20),
+    YTD_GROWTH_CO2 = colDef(
+      name = "Variation (%) vs 2019",
+      defaultSortOrder = "desc",
+      cell = function(value) {
+        # label <- paste0(round(value * 100), "%")
+        label <-paste0(if_else(value>=0,'+','-'),format(round(abs(value)*100,1),nsmall=1),'%')
+        bar_chart_pos_neg(label, value)
+      },
+      align = "center",
+      minWidth = 30
+    )
+  )
+)
 
 ```
 
@@ -645,27 +544,45 @@ co2_nw_plot3
 <ul class="nav nav-pills">
   <li class="active m-1"><a id="defaultTab" data-toggle="pill" href="#month">`r last_month`</a></li>
   <li class="m-1"><a data-toggle="pill" href="#y2d">Year to date</a></li>
-  <li class="m-1"><a data-toggle="pill" href="#map">Map (empty)</a></li>
 </ul>
-<br>
 
 <div class="tab-content">
 <div id="month" class="container tab-pane fade in active">
 
-```{r echo=FALSE, out.width='100%'}
-co2_lolli_plot
-```
+<div class="container" style="padding:0px">
+<div class="row align-items-start ">
 
-</div>
+<div class="col-lg-3 pl-0 mt-1">
+```{r echo=FALSE, out.width='100%'}
+table_states_month
+```
+</div><!-- closes col -->
+<div class="col-lg-9 pl-0 mt-1" >
+<img src="../CO2growth_MaytoMay2022vs19.png" alt="CO2 growth month to month vs 2019">
+</div><!-- closes col -->
+
+</div><!-- closes row -->
+</div><!-- closes container -->
+</div><!-- closes id#month -->
 
 <div class="tab-pane fade" id="y2d">
+<div class="container" style="padding:0px">
+<div class="row align-items-start ml-1">
+
+<div class="col-lg-3 pl-0 mt-1">
 ```{r echo=FALSE, out.width='100%'}
-co2_lolli_plot_y2d
+table_states_y2d
 ```
-</div>
+</div><!-- closes col -->
+<div class="col-lg-9 pl-0 mt-1" >
+<img src="../CO2growth_JantoMay2022vs2019.png" alt="CO2 growth month to month vs 2019">
+</div><!-- closes col -->
+
+</div><!-- closes row -->
+</div><!-- closes container -->
+</div><!-- closes id#y2d -->
 </div><!-- closes tabcontent -->
 
-<br>
 
 ### More on aviation sustainability 
 
