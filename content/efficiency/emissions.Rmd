@@ -645,7 +645,7 @@ co2_nw_plot3
 <ul class="nav nav-pills">
   <li class="active m-1"><a id="defaultTab" data-toggle="pill" href="#month">`r last_month`</a></li>
   <li class="m-1"><a data-toggle="pill" href="#y2d">Year to date</a></li>
-  <li class="m-1"><a data-toggle="pill" href="#map">Map (empty)</a></li>
+  <!-- <li class="m-1"><a data-toggle="pill" href="#map">Map (empty)</a></li> -->
 </ul>
 <br>
 
