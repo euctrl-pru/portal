@@ -33,7 +33,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [COxlsx]: /download/xls/CO2_emissions_by_state.xlsx "CO2 (Excel)"
 [COcsv]:  /404/ "CO2 (CSV)"
 [COmeta]: /reference/dataset/emissions/ "CO2 (Meta)"
-[ENV]: https://www.eurocontrol.int/environment "EUROCONTROL Aviation Sustainability Unit"
+[ENV]: https://www.eurocontrol.int/aviation-sustainability "EUROCONTROL Aviation Sustainability Unit"
 
 ## <img src="/images/prcq-operations-enroute.png" width="50" height="50" alt="Operations En-route"> Operations En-route
 
