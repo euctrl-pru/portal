@@ -27,8 +27,9 @@ title: Efficiency and environment
 <div class="container">
 <div class="row align-items-start">
 <div class="col-sm-9">
-The ANS related impact on the environment is closely linked to operational performance (fuel efficiency) which is largely driven by inefficiencies in the flight trajectory and associated fuel burn (and emissions). The current best estimate for 2019 is that ANS can influence approximately 6% (11.6 Mt) of the total gate-to-gate fuel burn (“benefit pool”).
-The overview below shows a consolidated view of the main components. For more detailed analysis, please consult also the respective sections on this page:
+The ATM-related impact on climate is closely linked to operational performance (fuel efficiency) which is largely driven by inefficiencies in the flight trajectory and associated fuel burn (and emissions). For every tonne of fuel reduced, an equivalent amount of 3.15t of CO<sub>2</sub> is avoided. Information on CO<sub>2</sub> emissions from aviation in Europe is available on the [sustainability dashboard](/efficiency/emissions/), powered by the [EUROCONTROL Aviation Sustainability Unit](https://www.eurocontrol.int/aviation-sustainability){target="_blank"}.
+
+For more information on operational efficiency, please consult also the respective sections on this page:
 
 * [Horizontal en-route flight efficiency](/efficiency/hfe/)
 * [Vertical flight efficiency](/efficiency/vfe/)
@@ -39,8 +40,10 @@ The underlying data of the results shown in the dashboard below are available fo
 </div>
 <div class="col-sm-3">
 <div class="card border-0">
-  <img class="card-img-top" src="/images/eff/eff_over.jpg" alt="Flight efficiency and the environment">
-</div></div></div></div>
+  <img class="card-img-top" src="/images/eff/eff_over.png" alt="Flight efficiency and the environment">
+</div></div>
+
+</div></div>
 <small>Please note that the analysis may take a few moments to load. The dashboard is best viewed in Chrome or Firefox.</small>
 <div class="resp-container">
 <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/baa5b1cd-03f6-4789-9669-34fd57dbcf61/page/fg9v" frameborder="0" style="border:0" allowfullscreen></iframe>
