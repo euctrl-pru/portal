@@ -115,7 +115,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </iframe>
 </div>
 </div><!-- closes col md-3-->
-
+  
 <div class="col-sm-9">
 <div style=" margin-top: 0px; height: 450px;">
 <iframe id="delay-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-pun-nw-evo.html" frameborder="0" style="border:0;" >
