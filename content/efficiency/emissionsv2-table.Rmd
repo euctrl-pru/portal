@@ -564,7 +564,7 @@ table_states_month
 ```
 </div><!-- closes col -->
 <div class="col-lg-9 pl-0 mt-1" >
-<img src="../CO2growth_MaytoMay2022vs19.png" alt="CO2 growth month to month vs 2019">
+<img src="../CO2growth_JuntoJun2022vs19.png" alt="CO2 growth month to month vs 2019">
 </div><!-- closes col -->
 
 </div><!-- closes row -->
@@ -581,7 +581,7 @@ table_states_y2d
 ```
 </div><!-- closes col -->
 <div class="col-lg-9 pl-0 mt-1" >
-<img src="../CO2growth_JantoMay2022vs2019.png" alt="CO2 growth month to month vs 2019">
+<img src="../CO2growth_JantoJun2022vs2019.png" alt="CO2 growth month to month vs 2019">
 </div><!-- closes col -->
 
 </div><!-- closes row -->
