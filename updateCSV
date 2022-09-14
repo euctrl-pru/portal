@@ -111,9 +111,16 @@ echo "[WEF, TIL) = [${year_beg}, ${TIL})"
     Rscript R/export_hfe.R;
     echo "Exporting HFE ... done"
 
-#    Rscript R/generate_ert_flt_percent_chage.R ${TIL};
-#    Rscript R/generate_monthly_ert_dly_fab_fir.R;
+    echo "Exporting ERT flight % change ... "
+    Rscript R/generate_ert_flt_percent_change.R ${TIL};
+    echo "Exporting ERT flight % change ... done"
 
-#    Rscript R/export_ansp_composition.R ${TIL};
+    echo "Exporting ERT delay at (FIR) FAB level ... "
+    Rscript R/generate_monthly_ert_dly_fab_fir.R;
+    echo "Exporting ERT delay at (FIR) FAB level ... done"
+
+    echo "Exporting ANSP composition ... "
+    Rscript R/export_ansp_composition.R ${TIL};
+    echo "Exporting ANSP composition ... done"
 
 )
