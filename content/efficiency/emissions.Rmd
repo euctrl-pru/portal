@@ -12,9 +12,13 @@ library(dplyr)
 library(stringr)
 library(here)
 library(readxl)
+library(DBI)
+library(ROracle)
 library(lubridate)
 library(zoo)
 library(plotly)
+library(reactable)
+library(htmltools)
 ```
 
 ```{css, echo=FALSE}
