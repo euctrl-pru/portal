@@ -42,23 +42,47 @@ library(htmltools)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 
-base_dir <- ""
+# base_dir <- ""
 # base_dir <- here("static","download","xls")
 
-co2_data_raw <-  read_xlsx(
-  path  = fs::path_abs(
-    str_glue("CO2_emissions_for_portal.xlsx"),
-    start = base_dir),
-  sheet = "All Data",
-  range = cell_limits(c(1, 1), c(NA, NA))) %>%
-  mutate(across(.cols = where(is.instant), ~ as.Date(.x)))%>%
-  filter(is.na(YEAR)==FALSE)%>%
-  as_tibble()
+# co2_data_raw_old <-  read_xlsx(
+#   path  = fs::path_abs(
+#     str_glue("CO2_emissions_for_portal.xlsx"),
+#     start = base_dir),
+#   sheet = "All Data",
+#   range = cell_limits(c(1, 1), c(NA, NA))) %>%
+#   mutate(across(.cols = where(is.instant), ~ as.Date(.x)))%>%
+#   filter(is.na(YEAR)==FALSE)%>%
+#   as_tibble()
+
+export_query <- function(schema, query) {
+  USR <- Sys.getenv(paste0(schema, "_USR"))
+  PWD <- Sys.getenv(paste0(schema, "_PWD"))
+  DBN <- Sys.getenv(paste0(schema, "_DBNAME"))
+  withr::local_envvar(c("TZ" = "UTC", "ORA_SDTZ" = "UTC"))
+  withr::local_namespace("ROracle")
+  con <- withr::local_db_connection(
+    DBI::dbConnect(DBI::dbDriver("Oracle"),
+                   USR, PWD, dbname = DBN,
+                   timezone = "UTC"))
+  con %>%
+    dbSendQuery(query) %>%
+    fetch(n = -1)
+}
+
+query <- str_glue("
+    SELECT *
+      FROM TABLE (emma_pub.api_aiu_stats.MM_AIU_STATE_DEP ())
+      where year >= 2019 and STATE_NAME not in ('LIECHTENSTEIN')
+    ORDER BY 2, 3, 4
+   ")
+
+
+co2_data_raw <- export_query("PRU_DEV", query = query)%>%
+  mutate(across(.cols = where(is.instant), ~ as.Date(.x)))
 
 
 co2_data_plot_nw <- co2_data_raw %>%
-  # filter(FLIGHT_MONTH =='2022-04-01')%>%
-  # filter(STATE_NAME != 'KOSOVO' & STATE_NAME != 'MONACO')%>%
   select(FLIGHT_MONTH, CO2_QTY_TONNES, TF, YEAR, MONTH)%>%
   group_by(FLIGHT_MONTH)%>%
   summarise(TTF = sum(TF), TCO2 = sum(CO2_QTY_TONNES))%>%
@@ -208,8 +232,13 @@ co2_nw_plot3 <- co2_data_plot_nw %>%
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 #data month state
 last_date <- max(co2_data_raw$FLIGHT_MONTH, na.rm=TRUE)
+last_month <- format(last_date,'%B')
+last_year <- max(co2_data_raw$YEAR)
 
 co2_data_plot_state <- co2_data_raw %>%
+  arrange(STATE_NAME,YEAR,MONTH)%>%
+  mutate(MOM_GROWTH_CO2 = if_else(YEAR == last_year, CO2_QTY_TONNES/lag(CO2_QTY_TONNES, 12*(last_year-2019))-1,NULL),
+         MOM_GROWTH_TF = if_else(YEAR == last_year, TF/lag(TF, 12*(last_year-2019))-1,NULL))%>%
   filter(FLIGHT_MONTH ==last_date)%>%
   select(STATE_NAME, CO2_QTY_TONNES, TF, MOM_GROWTH_CO2, MOM_GROWTH_TF)%>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
@@ -330,6 +359,13 @@ co2_lolli_plot <- co2_data_plot_state %>%
 #data y2d  state
 
 co2_data_plot_state_y2d <- co2_data_raw %>%
+  arrange(STATE_NAME,YEAR,MONTH)%>%
+  group_by(STATE_NAME,YEAR)%>%
+  mutate(YTD_CO2_QTY_TONNES = cumsum(CO2_QTY_TONNES),
+         YTD_TF = cumsum(TF))%>%
+  ungroup()%>%
+  mutate(YTD_GROWTH_CO2 = if_else(YEAR == last_year, YTD_CO2_QTY_TONNES/lag(YTD_CO2_QTY_TONNES, 12*(last_year-2019))-1,NULL),
+         YTD_GROWTH_TF = if_else(YEAR == last_year, YTD_TF/lag(YTD_TF, 12*(last_year-2019))-1,NULL))%>%
   filter(FLIGHT_MONTH ==last_date)%>%
   select(STATE_NAME, YTD_CO2_QTY_TONNES, YTD_TF, YTD_GROWTH_CO2, YTD_GROWTH_TF)%>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
