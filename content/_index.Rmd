@@ -161,16 +161,16 @@ For feedback or questions please contact us at:
 Read the Performance Review Commission's final report on European ATM performance in 2021</p></small></div></div></div>
 -->
 
-<div class="carousel-item active"><div class="card  border-0"><a href="/data/#img-srcimagesprcq-operations-airportpng-width50-height50-altoperations-at-airports-operations-at-airports"><img class="card-img-top" src="/images/landing/prc_pi_5.png" alt=""><div class="card-body"><h5 class="card-title">New: PRC Performance Insight</h5></a><small><p class="card-text">Can open data help improving performance? Read the new PRC performance insight.</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/performance-insight-5-open-performance-data"><img class="card-img-top" src="/images/landing/prc_pi_5.png" alt=""><div class="card-body"><h5 class="card-title">New: PRC Performance Insight 5</h5></a><small><p class="card-text">Can open data help improving performance? Read the new PRC performance insight to learn more.</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/news/call-candidates-performance-review-commission-prc" target="_blank" ><img class="card-img-top" src="/images/landing/prc_call.png" alt=""><div class="card-body"><h5 class="card-title">Call for new PRC candidates</h5></a><small><p class="card-text">
-Applications for membership of the Performance Review Commission (PRC) now open</p></small></div></div></div>
+Applications for the PRC's next term of office (Aug. 2023-Jul. 2025) are open until 18 Nov. 2022.</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="https://symposium.opensky-network.org/" target="_blank" ><img class="card-img-top" src="/images/landing/osy.png" alt=""><div class="card-body"><h5 class="card-title">OpenSky Symposium</h5></a><small><p class="card-text">
-Find out how open data helps to improve performance in aviation</p></small></div></div></div>
+Learn from examples and discuss how open data can help improving performance in aviation.</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h5 class="card-title">Comprehensive assessments</h5></a><small><p class="card-text">
-Read our EUROCONTROL aviation briefings on the latest trends in the European network</p></small></div></div></div>
+Read our EUROCONTROL aviation briefings on the latest trends in the European network.</p></small></div></div></div>
 <!--
 <div class="carousel-item"><div class="card  border-0"><a href="/traffic/punctuality/"><img class="card-img-top" src="/images/landing/ectl_pct.png" alt=""><div class="card-body"><h5 class="card-title">Punctuality performance</h5></a><small><p class="card-text">Check out the latest punctuality situation in Europe, including a breakdown by airport and state!</p></small></div></div></div>
 -->
