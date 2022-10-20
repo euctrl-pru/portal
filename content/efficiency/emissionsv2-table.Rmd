@@ -45,15 +45,15 @@ library(htmltools)
 base_dir <- ""
 # base_dir <- here("static","download","xls")
 
-co2_data_raw_old <-  read_xlsx(
-  path  = fs::path_abs(
-    str_glue("CO2_emissions_for_portal.xlsx"),
-    start = base_dir),
-  sheet = "All Data",
-  range = cell_limits(c(1, 1), c(NA, NA))) %>%
-  mutate(across(.cols = where(is.instant), ~ as.Date(.x)))%>%
-  filter(is.na(YEAR)==FALSE)%>%
-  as_tibble()
+# co2_data_raw_old <-  read_xlsx(
+#   path  = fs::path_abs(
+#     str_glue("CO2_emissions_for_portal.xlsx"),
+#     start = base_dir),
+#   sheet = "All Data",
+#   range = cell_limits(c(1, 1), c(NA, NA))) %>%
+#   mutate(across(.cols = where(is.instant), ~ as.Date(.x)))%>%
+#   filter(is.na(YEAR)==FALSE)%>%
+#   as_tibble()
 
 export_query <- function(schema, query) {
   USR <- Sys.getenv(paste0(schema, "_USR"))
