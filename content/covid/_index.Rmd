@@ -133,7 +133,7 @@ Complementary to the [EUROCONTROL web page][ectlweb], the goal of this page is t
 </div>
 </div>
 
-<div class="card"><a href="/covid/covid_vfe/">
+<div class="card"><a href="/efficiency/vfe/">
 <img class="card-img-top" src="/images/covid/cdo_icon.jpg" alt="Link to CCO/CDO page">
 <div class="card-body"><small><h5 class="card-title">CCO/CDO</h5><p class="card-text">More environmental friendly approaches due to COVID-19?</p></small></a>
 </div>
