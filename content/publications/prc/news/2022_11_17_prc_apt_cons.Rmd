@@ -21,7 +21,7 @@ The [additional taxi-out time](/definition/additional-taxi-out-time/) and the [a
 
 However, the currently used methodologies are often perceived to be complex and difficult to reproduce and several stakeholders have suggested a revision of the existing methodologies. 
 
-To address this stakeholder feedback and to actively involve them in the process, the [Performance Review Commission](/about/prc/) created a **Working Group on Additional Times** in September 2021 (*More information on the work of the group is available in the download section below*).
+To address this stakeholder feedback and to actively involve them in the process, the [Performance Review Commission](/about/prc/) created a **Working Group on Additional Times** in September 2021 (*More information on the [work of the group](2022_11_Working Group Additional Times.pdf) is available in the download section below*).
 </div>
 <div class="col-sm-4">
 <div class="card border-0">
@@ -36,7 +36,7 @@ The objective was to develop a new approach for the measurement of inefficiencie
 * simplify and automate where possible.
 
 The new approaches, as developed in the working group, are now available for public consultation in the download section below to get feedback from all interested stakeholders.
-The respective files contain a description of the methodology as well as a data file with calculated results. Complementary, there is a document available which addresses frequently asked questions (FAQ) which are relevant for all three methodologies.   
+The respective files contain a description of the methodology as well as a data file with calculated results. Complementary, there is a document available which addresses [frequently asked questions (FAQ)](/library/2022_11_Additional Time Methodology_FAQ.pdf) which are relevant for all three methodologies.   
 
 We look forward to receiving any feedback you might have before **12/12/2022**. 
 
