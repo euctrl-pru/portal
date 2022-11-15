@@ -244,7 +244,7 @@ co2_data_plot_state <- co2_data_raw %>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
   mutate(STATE_NAME = gsub("Of", "of",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("And", "and",STATE_NAME, ignore.case = FALSE))%>%
-  mutate(STATE_NAME = gsub("TüRkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
+  mutate(STATE_NAME = gsub("Turkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
   # mutate(CO2_DEP = ifelse(TF!=0,CO2_QTY_TONNES/TF,0))%>%
   # mutate(CO2_DEP_2019 = ifelse(TF!=0, CO2_QTY_TONNES/TF *(MOM_GROWTH_TF+1)/(MOM_GROWTH_CO2+1), 0))%>%
   # mutate(MOM_GROWTH_CO2_DEP = ifelse(CO2_DEP_2019!=0, CO2_DEP/CO2_DEP_2019-1, 0))%>%
@@ -336,7 +336,7 @@ co2_data_plot_state_y2d <- co2_data_raw %>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
   mutate(STATE_NAME = gsub("Of", "of",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("And", "and",STATE_NAME, ignore.case = FALSE))%>%
-  mutate(STATE_NAME = gsub("TüRkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
+  mutate(STATE_NAME = gsub("Turkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME =gsub("Norway\\*", 'Norway<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Jan Mayen and Slavbard">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
   mutate(STATE_NAME =gsub("Denmark\\*", 'Denmark<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Faroe Islands">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
   mutate(STATE_NAME =gsub("Portugal\\*", 'Portugal<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Azores and Madeira">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
