@@ -26,6 +26,21 @@ blogdown::shortcode(
   style="width: 18rem;", 
   class="mb-2"
   )
+
+
+blogdown::shortcode(
+  "bootstrap-card-alt",
+  img="x-cover-bra-eur-2019.png",
+  link="bra-eur/",
+  title="Comparison of Operational Air Navigation System Performance in Brazil and Europe",
+  text="NEW TEXT", 
+  alt="Comparison of Operational Air Navigation System Performance in Brazil and Europe 2022", 
+  command="Resize", 
+  options="300x", 
+  style="width: 18rem;", 
+  class="mb-2"
+  )
+
 ```
 
 </div>
