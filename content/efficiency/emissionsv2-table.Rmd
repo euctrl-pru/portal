@@ -244,7 +244,7 @@ co2_data_plot_state <- co2_data_raw %>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
   mutate(STATE_NAME = gsub("Of", "of",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("And", "and",STATE_NAME, ignore.case = FALSE))%>%
-  mutate(STATE_NAME = gsub("TüRkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
+  mutate(STATE_NAME = gsub("Turkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
   # mutate(CO2_DEP = ifelse(TF!=0,CO2_QTY_TONNES/TF,0))%>%
   # mutate(CO2_DEP_2019 = ifelse(TF!=0, CO2_QTY_TONNES/TF *(MOM_GROWTH_TF+1)/(MOM_GROWTH_CO2+1), 0))%>%
   # mutate(MOM_GROWTH_CO2_DEP = ifelse(CO2_DEP_2019!=0, CO2_DEP/CO2_DEP_2019-1, 0))%>%
@@ -292,7 +292,7 @@ table_states_month <- reactable(
   co2_data_plot_state,
   bordered = FALSE,
   # defaultPageSize = 43,
-  pagination = FALSE, height = 585,
+  pagination = FALSE, height = 670,
   defaultSorted = list(STATE_NAME = "asc"),
   striped = TRUE,
   compact = TRUE,
@@ -308,7 +308,7 @@ table_states_month <- reactable(
       defaultSortOrder = "desc",
       cell = function(value) {
         # label <- paste0(round(value * 100), "%")
-        label <-paste0(if_else(value>=0,'+','-'),format(round(abs(value)*100,1),nsmall=1),'%')
+        label <-paste0(if_else(value>=0,'+','-'),format(round(abs(value)*100,0),nsmall=0),'%')
         bar_chart_pos_neg(label, value)
       },
       align = "center",
@@ -336,7 +336,7 @@ co2_data_plot_state_y2d <- co2_data_raw %>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
   mutate(STATE_NAME = gsub("Of", "of",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME = gsub("And", "and",STATE_NAME, ignore.case = FALSE))%>%
-  mutate(STATE_NAME = gsub("TüRkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
+  mutate(STATE_NAME = gsub("Turkiye", "Türkiye",STATE_NAME, ignore.case = FALSE))%>%
   mutate(STATE_NAME =gsub("Norway\\*", 'Norway<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Jan Mayen and Slavbard">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
   mutate(STATE_NAME =gsub("Denmark\\*", 'Denmark<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Faroe Islands">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
   mutate(STATE_NAME =gsub("Portugal\\*", 'Portugal<span><a href="#" data-toggle="tooltip" data-placement="right" title="Includes Azores and Madeira">*</a></span>', STATE_NAME, ignore.case = TRUE))%>%
@@ -354,7 +354,7 @@ table_states_y2d <- reactable(
   co2_data_plot_state_y2d,
   bordered = FALSE,
   # defaultPageSize = 43,
-  pagination = FALSE, height = 585,
+  pagination = FALSE, height = 670,
   defaultSorted = list(STATE_NAME = "asc"),
   striped = TRUE,
   compact = TRUE,
@@ -602,8 +602,7 @@ co2_nw_plot3
 table_states_month
 ```
 </div><!-- closes col -->
-<div class="col-lg-9 pl-0 mt-1" >
-<img src="../CO2growth_JuntoJun2022vs19.png" alt="CO2 growth month to month vs 2019">
+<div class="col-lg-9 pl-0 mt-1" id="observablehq-chart-7039140a">
 </div><!-- closes col -->
 
 </div><!-- closes row -->
@@ -620,14 +619,14 @@ table_states_y2d
 ```
 </div><!-- closes col -->
 <div class="col-lg-9 pl-0 mt-1" >
-<img src="../CO2growth_JantoJun2022vs2019.png" alt="CO2 growth month to month vs 2019">
+<!-- <iframe width="100%" height="787" frameborder="0" -->
+  <!-- src="https://observablehq.com/embed/4006b04cdbd19868?cells=chart"></iframe> -->
 </div><!-- closes col -->
 
 </div><!-- closes row -->
 </div><!-- closes container -->
 </div><!-- closes id#y2d -->
 </div><!-- closes tabcontent -->
-
 
 ### More on aviation sustainability 
 
@@ -662,4 +661,13 @@ window.onload = function() {
   var element = document.getElementById("defaultTab");
   element.click();
 }
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@espinielli/co2-emissions-variation-per-state.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-7039140a"));
+});
 </script>
