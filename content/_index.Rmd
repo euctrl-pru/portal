@@ -161,9 +161,9 @@ For feedback or questions please contact us at:
 Read the Performance Review Commission's final report on European ATM performance in 2021</p></small></div></div></div>
 -->
 
-<div class="carousel-item active"><div class="card  border-0"><a href="/publications/prc/news/2022_11_17_prc_apt_cons/" target="_blank"><img class="card-img-top" src="/images/landing/apt_asma.png" alt=""><div class="card-body"><h5 class="card-title">Call for consultation</h5></a><small><p class="card-text">Provide your feedback on the new methodologies to measure inefficiencies at airports</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="/publications/prc/news/2022_11_17_prc_apt_cons/"><img class="card-img-top" src="/images/landing/apt_asma.png" alt=""><div class="card-body"><h5 class="card-title">Call for consultation</h5></a><small><p class="card-text">Provide your feedback on the new methodologies to measure inefficiencies at airports</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="https://ansperformance.eu/global/brazil/" target="_blank" ><img class="card-img-top" src="/images/landing/bra_eur2.png" alt=""><div class="card-body"><h5 class="card-title">Brazil/Europe comparison</h5></a><small><p class="card-text">
+<div class="carousel-item"><div class="card  border-0"><a href="https://ansperformance.eu/global/brazil/"><img class="card-img-top" src="/images/landing/bra_eur2.png" alt=""><div class="card-body"><h5 class="card-title">Brazil/Europe comparison</h5></a><small><p class="card-text">
 Read the latest comparison report - now including fuel inefficiency estimates!</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h5 class="card-title">Comprehensive assessments</h5></a><small><p class="card-text">
