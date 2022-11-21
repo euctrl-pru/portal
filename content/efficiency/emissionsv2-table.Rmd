@@ -292,7 +292,7 @@ table_states_month <- reactable(
   co2_data_plot_state,
   bordered = FALSE,
   # defaultPageSize = 43,
-  pagination = FALSE, height = 670,
+  pagination = FALSE, height = 560,
   defaultSorted = list(STATE_NAME = "asc"),
   striped = TRUE,
   compact = TRUE,
