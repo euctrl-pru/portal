@@ -161,23 +161,17 @@ For feedback or questions please contact us at:
 Read the Performance Review Commission's final report on European ATM performance in 2021</p></small></div></div></div>
 -->
 
-<div class="carousel-item active"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/performance-insight-5-open-performance-data" target="_blank"><img class="card-img-top" src="/images/landing/prc_pi_5.png" alt=""><div class="card-body"><h5 class="card-title">New: PRC Performance Insight 5</h5></a><small><p class="card-text">Can open data help improving performance? Read the new PRC performance insight to learn more.</p></small></div></div></div>
+<div class="carousel-item active"><div class="card  border-0"><a href="/publications/prc/news/2022_11_17_prc_apt_cons/"><img class="card-img-top" src="/images/landing/apt_asma.png" alt=""><div class="card-body"><h5 class="card-title">Call for consultation</h5></a><small><p class="card-text">Provide your feedback on the new methodologies to measure inefficiencies at airports</p></small></div></div></div>
 
-<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/press-release/war-ukraine-and-economic-fallout-delaying-recovery-air-traffic-until-after-2024" target="_blank" ><img class="card-img-top" src="/images/landing/ectl_fcst.png" alt=""><div class="card-body"><h5 class="card-title">Forecast Update 2022-2028</h5></a><small><p class="card-text">
-Check out the updated EUROCONTROL forecast up to 2028 - just published!</p></small></div></div></div>
-
-<div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/news/call-candidates-performance-review-commission-prc" target="_blank" ><img class="card-img-top" src="/images/landing/prc_call.png" alt=""><div class="card-body"><h5 class="card-title">Call for new PRC candidates</h5></a><small><p class="card-text">
-Applications for the PRC's next term of office (Aug. 2023-Jul. 2025) are open until 18 Nov. 2022.</p></small></div></div></div>
-
-<div class="carousel-item"><div class="card  border-0"><a href="https://symposium.opensky-network.org/" target="_blank" ><img class="card-img-top" src="/images/landing/osy.png" alt=""><div class="card-body"><h5 class="card-title">OpenSky Symposium</h5></a><small><p class="card-text">
-Learn from examples and discuss how open data can help improving performance in aviation.</p></small></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="https://ansperformance.eu/global/brazil/"><img class="card-img-top" src="/images/landing/bra_eur2.png" alt=""><div class="card-body"><h5 class="card-title">Brazil/Europe comparison</h5></a><small><p class="card-text">
+Read the latest comparison report - now including fuel inefficiency estimates!</p></small></div></div></div>
 
 <div class="carousel-item"><div class="card  border-0"><a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-aviation-assessment" target="_blank" ><img class="card-img-top" src="/images/landing/eca.png" alt=""><div class="card-body"><h5 class="card-title">Comprehensive assessments</h5></a><small><p class="card-text">
 Read our EUROCONTROL aviation briefings on the latest trends in the European network.</p></small></div></div></div>
 <!--
 <div class="carousel-item"><div class="card  border-0"><a href="/traffic/punctuality/"><img class="card-img-top" src="/images/landing/ectl_pct.png" alt=""><div class="card-body"><h5 class="card-title">Punctuality performance</h5></a><small><p class="card-text">Check out the latest punctuality situation in Europe, including a breakdown by airport and state!</p></small></div></div></div>
 -->
-<div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><p class="card-text">September 2022 data available now</p></div></div></div>
+<div class="carousel-item"><div class="card  border-0"><a href="/data/"><img class="card-img-top"  src="/images/landing/data_icon.jpg" alt="Data update"><div class="card-body"><h5 class="card-title">Performance data update</h5></a><p class="card-text">October 2022 data available now</p></div></div></div>
 
 </div>
 
