@@ -217,7 +217,14 @@ ignoreFiles = [
       identifier = "key-economics-financial"
       parent = "aiu"
       weight = 37
-
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>Standard Inputs</span>"
+      url = "/economics/standard-inputs-overview/"
+      identifier = "key-economics-standard"
+      parent = "aiu"
+      weight = 38
+      
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-user-friends'></i>"
@@ -594,7 +601,7 @@ ignoreFiles = [
     identifier= "overview"
     weight = 10
  [[menu.economics]]
-    name = "ATM Cost Efficiency Benchmark (ACE)"
+    name = "ATM Cost Efficiency (ACE)"
     url = "/economics/ace-overview/"
     identifier= "ace"
     weight = 20
@@ -613,6 +620,11 @@ ignoreFiles = [
     url = "/economics/finance/"
     identifier= "finance"
     weight = 50
+[[menu.economics]]
+    name = "Standard Inputs"
+    url = "/economics/standard-inputs-overview/"
+    identifier= "standard"
+    weight = 60
 
 
 [[menu.publications]]
