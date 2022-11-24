@@ -35,4 +35,4 @@ For feedback or questions please contact [Aviation Intelligence support](mailto:
 
 
 
-[ectl_sti]: https://www.eurocontrol.int/economics/standard-inputs.html "Standard Inputs"
+[ectl_sti]: https://deploy-preview-4--standard-inputs.netlify.app/ "Standard Inputs"
