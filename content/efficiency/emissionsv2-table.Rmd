@@ -292,7 +292,7 @@ table_states_month <- reactable(
   co2_data_plot_state,
   bordered = FALSE,
   # defaultPageSize = 43,
-  pagination = FALSE, height = 670,
+  pagination = FALSE, height = 530,
   defaultSorted = list(STATE_NAME = "asc"),
   striped = TRUE,
   compact = TRUE,
@@ -602,7 +602,7 @@ co2_nw_plot3
 table_states_month
 ```
 </div><!-- closes col -->
-<div class="col-lg-9 pl-0 mt-1" id="observablehq-chart-7039140a">
+<div class="col-lg-9 pl-0 mt-1" id="observablehq-map-8a75b38b">
 </div><!-- closes col -->
 
 </div><!-- closes row -->
@@ -627,6 +627,7 @@ table_states_y2d
 </div><!-- closes container -->
 </div><!-- closes id#y2d -->
 </div><!-- closes tabcontent -->
+<br>
 
 ### More on aviation sustainability 
 
@@ -666,8 +667,8 @@ window.onload = function() {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@espinielli/co2-emissions-variation-per-state.js?v=3";
+import define from "https://api.observablehq.com/d/3af25f014ff035e1@254.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-7039140a"));
+  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-8a75b38b"));
 });
 </script>
