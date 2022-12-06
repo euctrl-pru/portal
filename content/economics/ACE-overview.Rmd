@@ -88,7 +88,7 @@ The ACE interactive dashboard allows you to access the latest available data and
 </div><!-- closes container  -->
 
 <div class="container">
-#### ACE 2020 Highlights
+#### ACE High Level Summary Report 2021 Highlights
 Given the unprecedented drop in traffic, all the ACE indicators are massively impacted in 2020. This report therefore puts a special emphasis on the observed changes between 2019 and 2020 and the mitigation measures implemented by ANSPs. It also introduces new financial indicators in order to monitor the impact of the COVID-19 pandemic on ANSPs financial situation.
 
 <div class="row">
@@ -169,8 +169,6 @@ plot_ACE
 <a href="library/eurocontrol-ace-2020-benchmarking-report.pdf" data-toggle="tooltip" title="Download pdf version" download><i class="fas fa-download"></i></a>
 </span>
 </div>
-
-<!-- <a href="/library/ace/ace-handbook-june-2022-edition.pdf" data-toggle="tooltip" title="Download pdf version" target="_blank" download><i class="fas fa-download"></i></a> -->
 
   1. Introduction
 
