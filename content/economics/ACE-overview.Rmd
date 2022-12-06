@@ -160,36 +160,38 @@ plot_ACE
 
 <div class="col-sm-10">
 <div style="background-color: #F2F2F2;" >
-[**Executive summary**](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=EXECUTIVE SUMMARY){target="_blank"}
+**Executive summary**
 </div>
 
 <div style="background-color: #F2F2F2; "  >
-[**Main report**](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf){target="_blank"}
+**Main report**
 <span class="float-right">
-<a href="https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf" data-toggle="tooltip" title="Download pdf version" target="_blank" download><i class="fas fa-download"></i></a>
+<a href="library/eurocontrol-ace-2020-benchmarking-report.pdf" data-toggle="tooltip" title="Download pdf version" download><i class="fas fa-download"></i></a>
 </span>
 </div>
 
-  1. [Introduction](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=1 Introduction){target="_blank"}
+<!-- <a href="/library/ace/ace-handbook-june-2022-edition.pdf" data-toggle="tooltip" title="Download pdf version" target="_blank" download><i class="fas fa-download"></i></a> -->
+
+  1. Introduction
 
 <details open>
 <summary>**Main Chapters:**</summary>
-  2. [Pan-European cost-effectiveness performance in 2020](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=2 PAN-EUROPEAN COST-EFFECTIVENESS PERFORMANCE in 2020){target="_blank"}
-  3. [Trend analysis and COVID-19 impacts on cost-effectiveness](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=3 Trend Analysis and COVID-19 Impacts on Cost-Effectiveness){target="_blank"}
-  4. [Impact of the COVID-19 pandemic on ANSPs financial situation](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=4 Impact of the COVID-19 pandemic on ANSPs financial situation){target="_blank"}
-  5. [Forward-looking cost-effectiveness (2021-2024)](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=5 Forward-looking cost-effectiveness (2021-2024)){target="_blank"}
-  6. [Summary of ANSPs individual cost-effectiveness performance](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=6 Summary of ANSPs individual cost-effectiveness performance){target="_blank"}
+  2. Pan-European cost-effectiveness performance in 2020
+  3. Trend analysis and COVID-19 impacts on cost-effectiveness
+  4. Impact of the COVID-19 pandemic on ANSPs financial situation
+  5. Forward-looking cost-effectiveness (2021-2024)
+  6. Summary of ANSPs individual cost-effectiveness performance
 </details>
 
 <details>
 <summary>**Annexes**</summary>
-  * [ANNEX 1 – Status of ANSPs 2020 Annual Reports](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Annex 1 – Status of ANSPs 2020 Annual Reports){target="_blank"}
-  * [ANNEX 2 – Performance indicators used for the comparison of ANSPs](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Annex 2 – Performance indicators used for the comparison of ANSPs){target="_blank"}
-  * [ANNEX 3 – Performance ratios](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Annex 3 – Performance ratios){target="_blank"}
-  * [ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS) data](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Annex 4 – Exchange rates, inflation rates and Purchasing Power Parities (PPPs) data){target="_blank"}
-  * [ANNEX 5 – Key data](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Annex 5 – Key data){target="_blank"}
-  * [ANNEX 6 – Performance indicators at FAB level](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Annex 6 – Performance indicators at FAB LEVEL){target="_blank"}
-  * [Glossary](https://www.eurocontrol.int/sites/default/files/2022-07/eurocontrol-ace-2020-benchmarking-report.pdf#nameddest=Glossary){target="_blank"}
+  * ANNEX 1 – Status of ANSPs 2020 Annual Reports
+  * ANNEX 2 – Performance indicators used for the comparison of ANSPs
+  * ANNEX 3 – Performance ratios
+  * ANNEX 4 – Exchange rates, inflation rates and purchasing power parities (PPPS) data
+  * ANNEX 5 – Key data
+  * ANNEX 6 – Performance indicators at FAB level
+  * Glossary
 </details>
 
 </div>
