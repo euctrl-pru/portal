@@ -56,7 +56,7 @@ date: '2020-05-15'
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/publication/taxi-times-summer-2021" target="_blank">
+<div class="card"><a href="https://www.eurocontrol.int/publication/taxi-times-summer-2022" target="_blank">
   <img class="card-img-top" src="/images/apt/ectl_tx_stand.jpeg" alt="Taxi-time planning values">
   <div class="card-body"><h5 class="card-title">Taxi-time planning values</h5></a><p class="card-text">Taxi time planning values, by IATA season for airline schedulers <i class='fas fa-xs fa-external-link-alt'></i></p>
   </div>

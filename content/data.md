@@ -115,7 +115,7 @@ attn_i: <i class="fa pru fa-exclamation-triangle"></i>
 [TX-OUTcsv]:  /404/ "TX-OUT (CSV)"
 [TX-OUTmeta]: /reference/dataset/taxi-out-additional-time/ "TX-OUT (Meta)"
 
-[TX-Stdxlsx]: /download/xls/Taxi_times_Planning_Data_S14_W21.xlsx "TX-Std (Excel)"
+[TX-Stdxlsx]: /download/xls/Taxi_times_Planning_Data_S14_S22.xlsx "TX-Std (Excel)"
 [TX-Stdcsv]:  /404/ "TX-Std (CSV)"
 [TX-Stdmeta]: /reference/dataset/planning-taxi-times/ "TX-Std (Meta)"
 [coda]: /capacity/tot_dly/ "Coda"
