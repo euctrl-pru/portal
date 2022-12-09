@@ -622,7 +622,7 @@ ignoreFiles = [
     weight = 50
 [[menu.economics]]
     name = "Standard Inputs"
-    url = "/economics/standard-inputs-overview/"
+    url = "/economics/cba/standard-inputs/"
     identifier= "standard"
     weight = 60
 
