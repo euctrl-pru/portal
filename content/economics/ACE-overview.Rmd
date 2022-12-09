@@ -91,7 +91,7 @@ The ACE interactive dashboard allows you to access the latest available data and
 #### High-level summary report on preliminary ACE data (December 2022 edition)
 A new ACE cycle has started in July 2022, and a first summary report based on preliminary data (not fully validated) is now available.
 
-In addition to high-level information on the Pan-European system revenues, costs and staff data, this report presents ANSPs ranking on several performance indicators including costs-effectiveness and ATCO-hour productivity. Specific financial indicators are also used to monitor potential cash and liquidity issues experienced by ANSPs because of the COVID-19 pandemic. Finally, the report provides an initial examination of ANSPs capital expenditures in 2020 and 2021 and how these changed compared to their pre-crisis levels. You can access the report [here](https://deploy-preview-5--ace-hlsr.netlify.app/){target="_blank"}.
+In addition to high-level information on the Pan-European system revenues, costs and staff data, this report presents ANSPs ranking on several performance indicators including costs-effectiveness and ATCO-hour productivity. Specific financial indicators are also used to monitor potential cash and liquidity issues experienced by ANSPs because of the COVID-19 pandemic. Finally, the report provides an examination of ANSPs capital expenditures in 2020 and 2021 and how these changed compared to their pre-crisis levels. You can access the report [here](https://deploy-preview-5--ace-hlsr.netlify.app/){target="_blank"}.
 
 <div class="row">
 <div class="col-md-6" >
