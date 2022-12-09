@@ -141,9 +141,9 @@ plot_ACE
 
 * Cost containment measures were implemented, and **ATM/CNS provision costs fell by - €408M**, mainly through reduced staff costs (-€221M) and lower non-staff operating costs (-€102M). When considering the savings already achieved in 2020, **the cumulative decrease since 2019 is -8.8% (-€765M)**. 
 
-* •	Many ANSPs contracted new loans to respond to liquidity issues. Short and long-term **borrowings reached reaching €5 900M in 2021, which is three times higher than in 2019**.
+* Many ANSPs contracted new loans to respond to liquidity issues. Short and long-term **borrowings reached reaching €5 900M in 2021, which is three times higher than in 2019**.
 
-* •	After a drop of some -27% in 2020, **capital expenditures rose by +5.8% in 2021**. The situation at individual ANSP level is contrasted, and some ANSPs invested significantly more in 2020 and 2021 than in the preceding decade. More details will be provided in the forthcoming ACE report.
+* After a drop of some -27% in 2020, **capital expenditures rose by +5.8% in 2021**. The situation at individual ANSP level is contrasted, and some ANSPs invested significantly more in 2020 and 2021 than in the preceding decade. More details will be provided in the forthcoming ACE report.
 
 </div>
 

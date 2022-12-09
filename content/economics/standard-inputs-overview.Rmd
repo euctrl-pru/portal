@@ -21,7 +21,9 @@ The standard inputs have been compiled from EUROCONTROL data and intelligence, f
 They are average values and may not be appropriate in all circumstances. The document also gives details of the sources of information, and discusses the applicability and use of the values.
 
 #### What's new in this edition
-[Explain what's new in this version and how the update process is going to be in the future] 
+This edition of Standard Inputs is the first time that the document in published online in a web page format with the view to facilitate its continuous updates and dynamism.
+
+In the current version only a selection of values have been updated with latest data (i.e. Air traffic delay, Air traffic statistics and forecasts, Average number of passengers and Number of IFR flights), while the remaining ones can still be accessed in the previous editions. On top of this, two new values have been added: Transit time and Shadow cost of carbon
 
 Click [here][ectl_sti] to go the the latest Standard Inputs document, or visit the [EUROCONTROL library](https://www.eurocontrol.int/publication/eurocontrol-standard-inputs-economic-analyses){target="_blank"} to consult previous editions.
 
