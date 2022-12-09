@@ -91,7 +91,7 @@ The ACE interactive dashboard allows you to access the latest available data and
 #### High-level summary report on preliminary ACE data (December 2022 edition)
 A new ACE cycle has started in July 2022, and a first summary report based on preliminary data (not fully validated) is now available.
 
-In addition to high-level information on the Pan-European system revenues, costs and staff data, this report presents ANSPs ranking on several performance indicators including costs-effectiveness and ATCO-hour productivity. Specific financial indicators are also used to monitor potential cash and liquidity issues experienced by ANSPs because of the COVID-19 pandemic. Finally, the report provides an examination of ANSPs capital expenditures in 2020 and 2021 and how these changed compared to their pre-crisis levels. You can access the report [here](https://deploy-preview-5--ace-hlsr.netlify.app/){target="_blank"}.
+In addition to high-level information on the Pan-European system revenues, costs and staff data, this report presents ANSPs ranking on several performance indicators including costs-effectiveness and ATCO-hour productivity. Specific financial indicators are also used to monitor potential cash and liquidity issues experienced by ANSPs because of the COVID-19 pandemic. Finally, the report provides an analysis of ANSPs capital expenditures in 2020 and 2021 and how these changed compared to their pre-crisis levels. You can access the report [here](https://ansperformance.eu/economics/ace/ace-hlsr/){target="_blank"}.
 
 <div class="row">
 <div class="col-md-6" >
@@ -137,13 +137,13 @@ plot_ACE
 
 <br>
 <div class="container" >
-*	ANSPs gate-to-gate **revenues rose by +20.8%** in 2021 but remained -44.3% lower than 2019.
+*	ANSPs gate-to-gate **revenues rose by +20.8%** in 2021, however they remained -44.3% lower than in 2019.
 
-* Cost containment measures were implemented, and **ATM/CNS provision costs fell by - €408M**, mainly through reduced staff costs (-€221M) and lower non-staff operating costs (-€102M). When considering the savings already achieved in 2020, **the cumulative decrease since 2019 is -8.8% (-€765M)**. 
+*	Cost containment measures were implemented, and **ATM/CNS provision costs fell by -€409M**, mainly through reduced staff costs (-€222M) and lower non-staff operating costs (-€103M). When considering the savings already achieved in 2020, **the cumulative decrease in ATM/CNS provision costs since 2019 is -8.8% (-€765M)**.
 
-* Many ANSPs contracted new loans to respond to liquidity issues. Short and long-term **borrowings reached reaching €5 900M in 2021, which is three times higher than in 2019**.
+*	Many ANSPs contracted new loans to respond to liquidity issues. Short and long-term **borrowings reached €5.9 billion in 2021, which is three times higher than in 2019**. 
 
-* After a drop of some -27% in 2020, **capital expenditures rose by +5.8% in 2021**. The situation at individual ANSP level is contrasted, and some ANSPs invested significantly more in 2020 and 2021 than in the preceding decade. More details will be provided in the forthcoming ACE report.
+*	After a drop of some -27.2% in 2020, **capital expenditures rose by +5.8%** in 2021. The situation at individual ANSP level is contrasted, and some ANSPs invested significantly more in 2020 and 2021 than in the preceding decade (on average per annum). More details will be provided in the forthcoming ACE report.
 
 </div>
 
