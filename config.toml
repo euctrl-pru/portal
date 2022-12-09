@@ -220,7 +220,7 @@ ignoreFiles = [
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Standard Inputs</span>"
-      url = "/economics/standard-inputs-overview/"
+      url = "/economics/cba/standard-inputs-overview/"
       identifier = "key-economics-standard"
       parent = "aiu"
       weight = 38
