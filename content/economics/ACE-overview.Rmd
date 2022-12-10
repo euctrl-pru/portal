@@ -252,7 +252,7 @@ Access information on ANSP institutional arrangements, corporate governance stru
 </div>
 
 <div class="card" ><a href="/economics/ace/ace-hlsr/" target="_blank">
-  <img class="card-img-top" src="/images/prc/ace-prelim-results-2020.png" alt="Preliminary results">
+  <img class="card-img-top" src="/images/eco/ace-hlsr2021.png" alt="Preliminary results">
   <div class="card-body"><h5 class="card-title">Preliminary results (Dec. 2021 edition)</h5></a><p class="card-text"></p>
   </div>
 </div>
