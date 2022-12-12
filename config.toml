@@ -219,9 +219,9 @@ ignoreFiles = [
       weight = 37
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Standard Inputs</span>"
-      url = "/economics/cba/standard-inputs-overview/"
-      identifier = "key-economics-standard"
+      name = " <span style='font-weight: normal'>CBA</span>"
+      url = "/economics/cba/"
+      identifier = "key-economics-cba"
       parent = "aiu"
       weight = 38
       
@@ -621,9 +621,9 @@ ignoreFiles = [
     identifier= "finance"
     weight = 50
 [[menu.economics]]
-    name = "Standard Inputs"
-    url = "/economics/cba/standard-inputs/"
-    identifier= "standard"
+    name = "CBA"
+    url = "/economics/cba/"
+    identifier= "cba"
     weight = 60
 
 
