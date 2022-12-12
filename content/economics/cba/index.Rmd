@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Standard Inputs for economic analysis
+title: Standard Inputs for Cost-Benefit Analysis
 keywords: economics, cost-benfit, analysis
 ---
 <style type="text/css">
@@ -30,7 +30,7 @@ Click [here][ectl_sti] to go the the latest Standard Inputs document, or visit t
 For feedback or questions please contact [Aviation Intelligence support](mailto:aviation.intelligence@eurocontrol.int).
 </div>
 <div class="col-sm-3">
-<div class="card bg-light text-center border-0"><a href="/economics/standard-inputs/">
+<div class="card bg-light text-center border-0"><a href="/economics/cba/">
   <img class="card-img-top" src="/images/eco/stand-inputs.png" alt="Standard Inputs">
   <div class="card-body"><p class="card-text">Planning to do a cot-benefit analysis? Standard Inputs now available in electronic form!</p></div></a>
 </div></div></div></div>
