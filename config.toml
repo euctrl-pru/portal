@@ -60,7 +60,8 @@ ignoreFiles = [
 
  [[menu.main]]
 #   pre = "<i class='far fa-star fa-spin fa-fw'></i>"
-    name = "AIU Home"
+    pre = "<i class='fas fa-home'></i>"
+    name = " AIU Home"
     identifier= "aiu"
     url = "/#/"
     weight = 5
