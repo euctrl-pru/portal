@@ -60,8 +60,8 @@ ignoreFiles = [
 
  [[menu.main]]
 #   pre = "<i class='far fa-star fa-spin fa-fw'></i>"
-    pre = "<i class='fas fa-home'></i>"
-    name = " AIU Home"
+#   pre = "<i class='fas fa-home'></i>"
+    name = "AIU Home"
     identifier= "aiu"
     url = "/#/"
     weight = 5
@@ -181,7 +181,6 @@ ignoreFiles = [
       identifier = "key-economics-cba"
       parent = "aiu"
       weight = 38
-      
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-user-friends'></i>"
@@ -218,7 +217,6 @@ ignoreFiles = [
       identifier = "key-stakeholder-state"
       parent = "aiu"
       weight = 47
-
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-book'></i>"
@@ -243,27 +241,27 @@ ignoreFiles = [
     identifier = "key-support"
     parent = "aiu"
     weight = 51
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Definitions</span>"
-      url = "/definition/"
-      identifier = "key-support-definitions"
-      parent = "aiu"
-      weight = 52
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Methodology</span>"
-      url = "/methodology/"
-      identifier = "key-support-methodology"
-      parent = "aiu"
-      weight = 53
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Acronyms</span>"
-      url = "/acronym/"
-      identifier = "key-support-acronyms"
-      parent = "aiu"
-      weight = 54
+  #  [[menu.main]]
+  #    pre = "&nbsp;&nbsp;&nbsp;"
+  #    name = " <span style='font-weight: normal'>Definitions</span>"
+  #    url = "/definition/"
+  #    identifier = "key-support-definitions"
+  #    parent = "aiu"
+  #    weight = 52
+  #  [[menu.main]]
+  #    pre = "&nbsp;&nbsp;&nbsp;"
+  #    name = " <span style='font-weight: normal'>Methodology</span>"
+  #    url = "/methodology/"
+  #    identifier = "key-support-methodology"
+  #    parent = "aiu"
+  #    weight = 53
+  #  [[menu.main]]
+  #    pre = "&nbsp;&nbsp;&nbsp;"
+  #    name = " <span style='font-weight: normal'>Acronyms</span>"
+  #    url = "/acronym/"
+  #    identifier = "key-support-acronyms"
+  #    parent = "aiu"
+  #    weight = 54
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-external-link-alt'></i>"
@@ -329,25 +327,25 @@ ignoreFiles = [
     url = "/traffic/"
     identifier = "traffic"
     parent = "dashboard"
-    weight = 3
+    weight = 1
   [[menu.main]]
     name = "Capacity & delays"
     url = "/capacity/"
     identifier = "capacity"
     parent = "dashboard"
-    weight = 4
+    weight = 2
   [[menu.main]]
     name = "Efficiency & environment"
     url = "/efficiency/"
     identifier = "efficiency"
     parent = "dashboard"
-    weight = 5
+    weight = 3
   [[menu.main]]
     name = "Economics"
     url = "/economics/"
     identifier = "economics"
     parent = "dashboard"
-    weight = 6
+    weight = 4
 
   [[menu.main]]
     name = "Views"
@@ -416,31 +414,25 @@ ignoreFiles = [
     parent = "reference"
     weight = 3
   [[menu.main]]
-    name = "Standard Values"
-    post = " <i class='fas fa-xs fa-thumbtack'></i>"
-    url = "/bibliography/"
-    parent = "reference"
-    weight = 4
-  [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
     parent = "reference"
-    weight = 5
+    weight = 4
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
     parent = "reference"
-    weight = 6
+    weight = 5
   [[menu.main]]
     name = "divider2"
     parent = "reference"
-    weight = 7
+    weight = 6
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
     parent = "reference"
-    weight = 8
+    weight = 7
 
   [[menu.main]]
     name = "SES"
