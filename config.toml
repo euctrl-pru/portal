@@ -59,8 +59,9 @@ ignoreFiles = [
 [menu]
 
  [[menu.main]]
-    pre = "<i class='far fa-star fa-spin fa-fw'></i>"
-    name = "Aviation Intelligence"
+#   pre = "<i class='far fa-star fa-spin fa-fw'></i>"
+    pre = "<i class='fas fa-home'></i>"
+    name = " AIU Home"
     identifier= "aiu"
     url = "/#/"
     weight = 5
@@ -74,50 +75,6 @@ ignoreFiles = [
     weight = 1
   #----------------------
   [[menu.main]]
-    name = "&nbsp;Balanced Scorecard"
-    pre = "<i class='fas fa-th'></i>"
-    url = "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
-    identifier = "key-bsc"
-    parent = "aiu"
-    weight = 3
-  #----------------------
-  [[menu.main]]
-    name = "<b>&nbsp;COVID-19 crisis</b>"
-    pre = "<i class='fas fa-biohazard'></i>"
-    url = "/covid/"
-    identifier = "key-covid"
-    parent = "aiu"
-    weight = 5
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>State and Airline response to Covid-19</span>"
-      url = "https://www.eurocontrol.int/covid19#response-to-covid-19"
-      identifier = "key-covid-state"
-      parent = "aiu"
-      weight = 7
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = "  <span style='font-weight: normal'>Grounded Aircraft</span>"
-      url = "/covid/acft_ground/"
-      identifier = "key-covid-ground"
-      parent = "aiu"
-      weight = 9
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = "  <span style='font-weight: normal'>Impact on ANSPs financial situation</span>"
-      url = "/economics/finance/"
-      identifier = "key-covid-ert"
-      parent = "aiu"
-      weight = 11
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Impact on vertical flight efficiency (CCO/CDO)</span>"
-      url = "/covid/covid_vfe/"
-      identifier = "key-covid-vfe"
-      parent = "aiu"
-      weight = 13
-  #----------------------
-  [[menu.main]]
     pre = "<i class='fas fa-plane-departure'></i>"
     name = "&nbsp;Traffic"
     url = "/traffic/"
@@ -125,8 +82,8 @@ ignoreFiles = [
     parent = "aiu"
     weight = 15
     [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;<i class='far fa-star fa-spin fa-fw'></i>"
-      name = " <span style='font-weight: normal'>Daily Traffic Variation & Restart</span><i class='far fa-star fa-spin fa-fw'></i>"
+  #   pre = "&nbsp;&nbsp;&nbsp;<i class='far fa-star fa-spin fa-fw'></i>"
+      name = "&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Daily Traffic Dashboard</span></i>"
       url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
       identifier = "key-traffic-daily-traffic"
       parent = "aiu"
@@ -270,7 +227,14 @@ ignoreFiles = [
     identifier = "key-publications"
     parent = "aiu"
     weight = 49
-
+  #----------------------
+  [[menu.main]]
+    pre = "<i class='fas fa-database'></i>"
+    name = "&nbsp;Data"
+    url = "/data/"
+    identifier = "key-data"
+    parent = "aiu"
+    weight = 50
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-hands-helping'></i>"
@@ -281,32 +245,25 @@ ignoreFiles = [
     weight = 51
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Data Download</span>"
-      url = "/data/"
-      identifier = "key-support-data"
-      parent = "aiu"
-      weight = 53
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Studies</span>"
-      url = "/study/"
-      identifier = "key-support-studies"
-      parent = "aiu"
-      weight = 55
-    [[menu.main]]
-      pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Definitions</span>"
       url = "/definition/"
       identifier = "key-support-definitions"
       parent = "aiu"
-      weight = 57
+      weight = 52
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
       name = " <span style='font-weight: normal'>Methodology</span>"
       url = "/methodology/"
       identifier = "key-support-methodology"
       parent = "aiu"
-      weight = 59
+      weight = 53
+    [[menu.main]]
+      pre = "&nbsp;&nbsp;&nbsp;"
+      name = " <span style='font-weight: normal'>Acronyms</span>"
+      url = "/acronym/"
+      identifier = "key-support-acronyms"
+      parent = "aiu"
+      weight = 54
   #----------------------
   [[menu.main]]
     pre = "<i class='fas fa-external-link-alt'></i>"
@@ -329,7 +286,6 @@ ignoreFiles = [
       identifier = "key-external-ganp"
       parent = "aiu"
       weight = 65
-
 
 
  [[menu.main]]
@@ -368,17 +324,6 @@ ignoreFiles = [
     pre = ""
     url = "/dashboard/"
     weight = 15
-  [[menu.main]]
-    name = " COVID-19 crisis"
-    pre = "<i class='fas fa-biohazard'></i>"
-    url = "/covid/"
-    identifier = "covid"
-    parent = "dashboard"
-    weight = 1
-  [[menu.main]]
-    name = "divider"
-    parent = "dashboard"
-    weight = 2
   [[menu.main]]
     name = "Traffic"
     url = "/traffic/"
@@ -443,10 +388,17 @@ ignoreFiles = [
     weight = 30
 
   [[menu.main]]
+    name = "Data"
+    pre = ""
+    url = "/data/"
+    identifier = "data" 
+    weight = 40
+
+  [[menu.main]]
     name = "Reference"
     url = "/reference/"
     identifier = "reference"
-    weight = 40
+    weight = 50
    [[menu.main]]
     name = "Data downloads"
     url = "/data/"
@@ -464,31 +416,37 @@ ignoreFiles = [
     parent = "reference"
     weight = 3
   [[menu.main]]
+    name = "Standard Values"
+    post = " <i class='fas fa-xs fa-thumbtack'></i>"
+    url = "/bibliography/"
+    parent = "reference"
+    weight = 4
+  [[menu.main]]
     name = "Acronyms"
     url = "/acronym/"
     parent = "reference"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "Bibliography"
     url = "/bibliography/"
     parent = "reference"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "divider2"
     parent = "reference"
-    weight = 6
+    weight = 7
   [[menu.main]]
     name = "ICAO GANP"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
     url = "https://www4.icao.int/ganpportal/"
     parent = "reference"
-    weight = 7
+    weight = 8
 
   [[menu.main]]
     name = "SES"
     identifier= "ses"
     url = " "
-    weight = 50
+    weight = 60
   [[menu.main]]
     name = "Single European Sky (SES) Portal"
     post = " <i class='fas fa-xs fa-external-link-alt'></i>"
@@ -496,32 +454,6 @@ ignoreFiles = [
     identifier = "ses-link"
     parent = "ses"
     weight = 1
-
-[[menu.covid]]
-    name = "COVID Overview"
-    url = "/covid/"
-    identifier= "cov_overview"
-    weight = 10
- [[menu.covid]]
-    name = "Traffic impact"
-    url = "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
-    identifier= "cov_traffic"
-    weight = 20
-[[menu.covid]]
-    name = "Grounded aircraft"
-    url = "/covid/acft_ground"
-    identifier= "cov_parking"
-    weight = 30
-[[menu.covid]]
-    name = "ANSPs financial situation"
-    url = "/economics/finance"
-    identifier= "cov_revenues"
-    weight = 40
-[[menu.covid]]
-    name = "Vertical flight efficiency"
-    url = "/covid/covid_vfe"
-    identifier= "cov_vfe"
-    weight = 50
 
 [[menu.traffic]]
     name = "Traffic Overview"
