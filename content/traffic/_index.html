@@ -127,7 +127,7 @@ vs 2019
 <p id="dif_day_prev_year" class="Scorecard2">
 </p>
 <p class="Scorecard_subt">
-vs 2021
+vs prev. year
 </p>
 </div>
 </div>
@@ -163,7 +163,7 @@ vs 2019
 <p id="dif_week_prev_year" class="Scorecard2">
 </p>
 <p class="Scorecard_subt">
-vs 2021
+vs prev. year
 </p>
 </div>
 </div>
@@ -195,7 +195,7 @@ vs 2019
 <p id="dif_y2d_prev_year" class="Scorecard2">
 </p>
 <p class="Scorecard_subt">
-vs 2021
+vs prev. year
 </p>
 </div>
 </div>
@@ -318,8 +318,7 @@ Country Pairs
    var last_day = new Date(data.LAST_DATA_DAY);
    var last_day_text = last_day.toString();
        last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11, 15);
- 
- 
+
  //calculate 1st day of rolling week and string
   var first_week_day = new Date();
       first_week_day = first_week_day.setDate(last_day.getDate()-6);
