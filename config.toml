@@ -176,7 +176,7 @@ ignoreFiles = [
       weight = 37
     [[menu.main]]
       pre = "&nbsp;&nbsp;&nbsp;"
-      name = " <span style='font-weight: normal'>Cost benefit analysis</span>"
+      name = " <span style='font-weight: normal'>CBA</span>"
       url = "/economics/cba/"
       identifier = "key-economics-cba"
       parent = "aiu"
