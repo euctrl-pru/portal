@@ -37,4 +37,4 @@ For feedback or questions please contact [Aviation Intelligence support](mailto:
 
 
 
-[ectl_sti]: <cba/standard-inputs> "Standard Inputs"
+[ectl_sti]: <standard-inputs/> "Standard Inputs"
