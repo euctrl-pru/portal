@@ -126,7 +126,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div>
 <div class="col-3">
   <p id="dif_day_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
+  <p class="Scorecard_subt">vs prev. year</p>
 </div>
 </div><!-- closes day row -->
 <!-- week -->
@@ -148,7 +148,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div>
 <div class="col-3">
   <p id="dif_week_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
+  <p class="Scorecard_subt">vs prev. year</p>
 </div>
 </div><!-- closes week row -->
 <!-- y2d-->
@@ -168,7 +168,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div>
 <div class="col-3">
   <p id="dif_y2d_prev_year" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2021</p>
+  <p class="Scorecard_subt">vs prev. year</p>
 </div>
 </div><!-- closes y2d row -->
 
@@ -268,8 +268,7 @@ Only the top 40 in terms of flights are shown in the tables (latest day, rolling
    var last_day = new Date(data.LAST_DATA_DAY);
    var last_day_text = last_day.toString();
        last_day_text = last_day_text.substring(8, 11) + last_day_text.substring(4, 8) + last_day_text.substring(11, 15);
- 
- 
+
  //calculate 1st day of rolling week and string
   var first_week_day = new Date();
       first_week_day = first_week_day.setDate(last_day.getDate()-6);

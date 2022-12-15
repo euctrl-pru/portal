@@ -7,7 +7,7 @@ title: Turnaround
 <p>Turnaround shows the time elapsed between an aircraft blocking in and
 blocking off for the next flight from the same parking stand on the same day.
 The sample is treated to consider only ground times with the following characteristics</p>
-<div id="one" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="one" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
@@ -47,6 +47,11 @@ The sample is treated to consider only ground times with the following character
   border-right-style: none;
   border-right-width: 1px;
   border-right-color: #D3D3D3;
+}
+
+#one .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 #one .gt_title {
@@ -169,6 +174,7 @@ The sample is treated to consider only ground times with the following character
   border-right-width: 1px;
   border-right-color: #D3D3D3;
   vertical-align: middle;
+  text-align: left;
 }
 
 #one .gt_empty_group_heading {
@@ -392,22 +398,24 @@ The sample is treated to consider only ground times with the following character
   vertical-align: 0;
 }
 
-#one .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+#one .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#one .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+#one .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#one .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+#one .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#one .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#one .gt_indent_5 {
+  text-indent: 25px;
 }
 
 #one .gt_table {
@@ -418,44 +426,44 @@ The sample is treated to consider only ground times with the following character
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1">Seats</th>
-      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id=""></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="Seats">Seats</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="WTC">
         <span class="gt_column_spanner">WTC</span>
       </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1">Cutoff time<sup class="gt_footnote_marks">1</sup></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id="Cutoff time&lt;sup class=&quot;gt_footnote_marks&quot;&gt;1&lt;/sup&gt;">Cutoff time<sup class="gt_footnote_marks">1</sup></th>
     </tr>
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">M</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">H</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">J</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="M">M</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="H">H</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="J">J</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_left">B</td>
-<td class="gt_row gt_right">31-80</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left"></td>
-<td class="gt_row gt_left"></td>
-<td class="gt_row gt_left">90 minutes</td></tr>
-    <tr><td class="gt_row gt_left">C</td>
-<td class="gt_row gt_right">81-180</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left"></td>
-<td class="gt_row gt_left">120 minutes</td></tr>
-    <tr><td class="gt_row gt_left">D</td>
-<td class="gt_row gt_right">181-220</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left"></td>
-<td class="gt_row gt_left">150 minutes</td></tr>
-    <tr><td class="gt_row gt_left">E</td>
-<td class="gt_row gt_right">&gt; 220</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left">x</td>
-<td class="gt_row gt_left">180 minutes</td></tr>
+    <tr><td headers="category" class="gt_row gt_left">B</td>
+<td headers="seat_capacity" class="gt_row gt_right">31-80</td>
+<td headers="wtc_m" class="gt_row gt_left">x</td>
+<td headers="wtc_h" class="gt_row gt_left"></td>
+<td headers="wtc_j" class="gt_row gt_left"></td>
+<td headers="cutoff_time" class="gt_row gt_left">90 minutes</td></tr>
+    <tr><td headers="category" class="gt_row gt_left">C</td>
+<td headers="seat_capacity" class="gt_row gt_right">81-180</td>
+<td headers="wtc_m" class="gt_row gt_left">x</td>
+<td headers="wtc_h" class="gt_row gt_left">x</td>
+<td headers="wtc_j" class="gt_row gt_left"></td>
+<td headers="cutoff_time" class="gt_row gt_left">120 minutes</td></tr>
+    <tr><td headers="category" class="gt_row gt_left">D</td>
+<td headers="seat_capacity" class="gt_row gt_right">181-220</td>
+<td headers="wtc_m" class="gt_row gt_left">x</td>
+<td headers="wtc_h" class="gt_row gt_left">x</td>
+<td headers="wtc_j" class="gt_row gt_left"></td>
+<td headers="cutoff_time" class="gt_row gt_left">150 minutes</td></tr>
+    <tr><td headers="category" class="gt_row gt_left">E</td>
+<td headers="seat_capacity" class="gt_row gt_right">&gt; 220</td>
+<td headers="wtc_m" class="gt_row gt_left">x</td>
+<td headers="wtc_h" class="gt_row gt_left">x</td>
+<td headers="wtc_j" class="gt_row gt_left">x</td>
+<td headers="cutoff_time" class="gt_row gt_left">180 minutes</td></tr>
   </tbody>
   
   <tfoot class="gt_footnotes">

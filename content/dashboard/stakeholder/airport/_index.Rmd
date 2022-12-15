@@ -13,20 +13,20 @@ date: '2020-05-15'
 </div>
 
 <div class="card"><a href="https://www.eurocontrol.int/Economics/DailyTrafficVariation-Airports.html">
-  <img class="card-img-top" src="/images/apt/aiu_apt_daily1.jpg" alt="Daily traffic @ airports">
+  <img class="card-img-top" src="/images/apt/aiu_apt_daily.jpg" alt="Daily traffic @ airports">
   <div class="card-body"><h5 class="card-title">Daily traffic @ airports</h5></a><p class="card-text">Monitor the daily traffic variation @ major European airports since the start of the COVID-19 crisis</p>
-  </div>
-</div>
-
-<div class="card"><a href="/covid/acft_ground/">
-  <img class="card-img-top" src="/images/apt/ectl_aircraft3.jpg" alt="Level of grounded aircraft at airports">
-  <div class="card-body"><h5 class="card-title">Grounded aircraft @ airports</h5></a><p class="card-text">See how many aircraft are presently grounded at airports as a result of COVID-19</p>
   </div>
 </div>
 
 <div class="card"><a href="/capacity/atfm_apt/">
   <img class="card-img-top" src="/images/apt/ectl_3.jpg" alt="ATFM arrival delays @ airports">
   <div class="card-body"><h5 class="card-title">ATFM delays @ airports</h5></a><p class="card-text">Analyse the airport ATFM arrival delays @ airports</p>
+  </div>
+</div>
+
+<div class="card"><a href="/efficiency/vfe/">
+  <img class="card-img-top" src="/images/apt/cdo_icon.jpg" alt="Vertical flight efficiency @ airports">
+  <div class="card-body"><h5 class="card-title">CCO/CDO @ airports</h5></a><p class="card-text">Explore the vertical flight efficiency during climb (CCO) and descent (CDO)</p>
   </div>
 </div>
 
@@ -37,12 +37,6 @@ date: '2020-05-15'
 <div class="container">
 <div class="row">
 <div class="card-deck">
-
-<div class="card"><a href="/efficiency/vfe/">
-  <img class="card-img-top" src="/images/apt/cdo_icon.jpg" alt="Vertical flight efficiency @ airports">
-  <div class="card-body"><h5 class="card-title">CCO/CDO @ airports</h5></a><p class="card-text">Explore the vertical flight efficiency during climb (CCO) and descent (CDO)</p>
-  </div>
-</div>
 
 <div class="card"><a href="/efficiency/asma/">
   <img class="card-img-top" src="/images/apt/apt_asma.jpg" alt="ASMA additional time @ airports">
@@ -56,7 +50,13 @@ date: '2020-05-15'
   </div>
 </div>
 
-<div class="card"><a href="https://www.eurocontrol.int/publication/taxi-times-summer-2021" target="_blank">
+<div class="card"><a href="/covid/acft_ground/">
+  <img class="card-img-top" src="/images/apt/ectl_aircraft1.jpg" alt="Level of grounded aircraft at airports">
+  <div class="card-body"><h5 class="card-title">Grounded aircraft @ airports</h5></a><p class="card-text">See how many aircraft are presently grounded at airports as a result of COVID-19</p>
+  </div>
+</div>
+
+<div class="card"><a href="https://www.eurocontrol.int/publication/taxi-times-summer-2022" target="_blank">
   <img class="card-img-top" src="/images/apt/ectl_tx_stand.jpeg" alt="Taxi-time planning values">
   <div class="card-body"><h5 class="card-title">Taxi-time planning values</h5></a><p class="card-text">Taxi time planning values, by IATA season for airline schedulers <i class='fas fa-xs fa-external-link-alt'></i></p>
   </div>
