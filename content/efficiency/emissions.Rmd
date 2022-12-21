@@ -602,7 +602,7 @@ co2_nw_plot3
 table_states_month
 ```
 </div><!-- closes col -->
-<div class="col-lg-9 pl-0 mt-1" id="observablehq-co2map-10fff34e"></div>
+<div class="col-lg-9 pl-0 mt-1" id="observablehq-co2map-10fff34e">
 </div><!-- closes col -->
 
 </div><!-- closes row -->
