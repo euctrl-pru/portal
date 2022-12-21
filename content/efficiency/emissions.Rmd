@@ -602,7 +602,7 @@ co2_nw_plot3
 table_states_month
 ```
 </div><!-- closes col -->
-<div class="col-lg-9 pl-0 mt-1" id="observablehq-co2map-120d2f14">
+<div class="col-lg-9 pl-0 mt-1" id="observablehq-co2map-10fff34e"></div>
 </div><!-- closes col -->
 
 </div><!-- closes row -->
@@ -663,13 +663,15 @@ window.onload = function() {
 </script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@espinielli/co2-emissions-variation-per-state@2403.js?v=3";
+import define from "https://api.observablehq.com/@espinielli/co2-emissions-variation-per-state.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "co2map") return new Inspector(document.querySelector("#observablehq-co2map-120d2f14"));
+  if (name === "co2map") return new Inspector(document.querySelector("#observablehq-co2map-10fff34e"));
 });
 </script>
+
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
