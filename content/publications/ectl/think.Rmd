@@ -1,10 +1,12 @@
 ---
-title: EUROCONTROL Think Papers
+title: EUROCONTROL Think/Analysis Papers
 date: '2021-03-01'
 tags:  Think Paper
 ---
 
 ## 2022
+* [EUROCONTROL Analysis Paper #1 (31 Dec 2022) - 2022 – The year European aviation bounced back, despite war & Omicron/COVID][AP1]
+* [EUROCONTROL Think Paper #19 (19 Dec 2022) - ATC Mobility and Capacity Shortfalls][TP19]
 * [EUROCONTROL Think Paper #18 (06 Sep 2022) - One size fits all - A common unit rate for Europe?][TP18]
 * [EUROCONTROL Think Paper #17 (30 Jun 2022) - Why aviation urgently needs to improve its use of radio spectrum][TP17]
 * [EUROCONTROL Think Paper #16 (12 May 2022) - Reducing aviation emissions by 55% by 2030][TP16]
@@ -50,3 +52,5 @@ tags:  Think Paper
 [TP16]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-16-reducing-aviation-emissions-55-by-2030 "EUROCONTROL Think Paper #16 - Reducing aviation emissions by 55% by 2030"
 [TP17]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-17-why-aviation-urgently-needs-improve-its-use-radio-spectrum "EUROCONTROL Think Paper #17 - Why aviation urgently needs to improve its use of radio spectrum"
 [TP18]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-18-one-size-fits-all-common-unit-rate-europe "EUROCONTROL Think Paper #18 - One size fits all - A common unit rate for Europe?"
+[TP19]: https://www.eurocontrol.int/publication/eurocontrol-think-paper-19-atc-mobility-and-capacity-shortfalls "EUROCONTROL Think Paper #19 - ATC Mobility and Capacity Shortfalls"
+[AP1]: https://www.eurocontrol.int/publication/eurocontrol-analysis-paper-2022-year-european-aviation-bounced-back "EUROCONTROL Analysis Paper #1 - 2022 – The year European aviation bounced back, despite war & Omicron/COVID"
