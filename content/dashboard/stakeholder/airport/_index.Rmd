@@ -51,8 +51,8 @@ date: '2020-05-15'
 </div>
 
 <div class="card"><a href="/covid/acft_ground/">
-  <img class="card-img-top" src="/images/apt/ectl_aircraft1.jpg" alt="Level of grounded aircraft at airports">
-  <div class="card-body"><h5 class="card-title">Grounded aircraft @ airports</h5></a><p class="card-text">See how many aircraft are presently grounded at airports as a result of COVID-19</p>
+  <img class="card-img-top" src="/images/apt/ectl_aircraft1.jpg" alt="Parked aircraft at European airports">
+  <div class="card-body"><h5 class="card-title">Active and inactive aircraft @ airports</h5></a><p class="card-text">See how many aircraft are parked across European airports.</p>
   </div>
 </div>
 

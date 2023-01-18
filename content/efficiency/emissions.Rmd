@@ -370,7 +370,7 @@ table_states_y2d <- reactable(
       defaultSortOrder = "desc",
       cell = function(value) {
         # label <- paste0(round(value * 100), "%")
-        label <-paste0(if_else(value>=0,'+','-'),format(round(abs(value)*100,1),nsmall=1),'%')
+        label <-paste0(if_else(value>=0,'+','-'),format(round(abs(value)*100,0),nsmall=0),'%')
         bar_chart_pos_neg(label, value)
       },
       align = "center",

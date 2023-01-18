@@ -12,6 +12,24 @@ extrajs: [
 <div class="modal-dialog"><div class="modal-content"><div class="modal-body">
 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><img src="" class="imagepreview"  style="width: 300%;"></div></div></div></div>
 
+## 2023
+
+<!-- #38 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Path to recovery for intra-European and intercontinental flights - EUROCONTROL Data Snapshot #38][DS38]</h5>
+<small><strong><p style="color:#808080">Published: 18 January 2023</p></strong></small>
+The 38. EUROCONTROL Data Snapshot looks at the path to recovery for intra-European and intercontinental flights.<br><br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-38-path-recovery-intra-european-and-intercontinental-flights" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4"><br>
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds38.png" alt="Path to recovery for intra-European and intercontinental flights"></div>
+</div>
+</div></div>
+
 ## 2022
 
 <!-- #37 -->
@@ -729,3 +747,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS35]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-35-moving-towards-higher-levels-transparency-measuring "Moving towards higher levels of transparency for measuring performance with Open Data"
 [DS36]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-36-road-recovery-covid-19 "On the road to recovery from COVID-19"
 [DS37]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-37-aviation-connectivity-across-europe "Aviation connectivity across Europe"
+[DS38]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-38-path-recovery-intra-european-and-intercontinental-flights "Path to recovery for intra-European and intercontinental flights"
