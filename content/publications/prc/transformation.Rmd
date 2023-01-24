@@ -52,15 +52,11 @@ The transformation of Europe’s ANS will reduce constraints on airspace users, 
 friendly operations. These achievements will be measured across the spectrum of air navigation service provision, concepts, and enablers.
 
 The **EUROCONTROL PRC Transformation Support Strategy** and its **action plan**  will be regularly refined in consultation with key stakeholders. Prioritising change initiatives will ensure continual progression. The implementation will provide evidence of the achieved performance benefits, highlight the key enablers for deploying the change initiatives, as well as identify any potential blocking points.
-
-[{{% dwnld_i %}} Download the PRC information paper][prc_tss_flyer] 
-
 </div>
 <div class="col-sm-2">
 <div class="row justify-content-center">
-<div class="card border-0">
-<img class="card-img-top" src="/images/prc/prc_tss_flyer.png" alt="PRC Transformation Support Strategy"></a>
-[{{% dwnld_i %}} Download the PRC information paper][prc_tss_flyer] 
+<div class="card border-0"><a href="/library/prc_transformation_support_strategy_flyer.pdf" data-toggle="tooltip" title="Download pdf version" target="_blank" class="btn btn-secondary" role="button"><img class="card-img-top" src="/images/prc/prc_tss_flyer.png" alt="PRC Transformation Support Strategy">Download the PRC information paper <i class="fas fa-download"></i></a>
 </div></div></div>
+[{{% dwnld_i %}} Download the PRC information paper][prc_tss_flyer] 
 
 [prc_tss_flyer]: /library/prc_transformation_support_strategy_flyer.pdf "PRC Transformation Support Strategy"

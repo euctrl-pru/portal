@@ -27,10 +27,7 @@ The PRC has previously proposed a strengthening of the ATFCM process, by develop
 
 The PRC tested two new additional codes aimed at improving transparency. The results of the trial with ANSPs are documented in the [technical note][tn_prc_dly_code].  
 
-| Document download                                                                                 |
-|---------------------------------------------------------------------------------------------------|
-| [{{% dwnld_i %}}][tn_prc_dly_code]   Technical Note - PRC trial with ANSPs to improve transparency in ATFCM operations                              | 
-
+<a href="/library/prc_tn_ANSP_trials_add_dly_codes.pdf" data-toggle="tooltip" title="Download pdf version" target="_blank" class="btn btn-info" role="button"> Technical Note <br>  PRC trial with ANSPs to improve transparency in ATFCM operations <br> {{% dwnld_i %}} Download </a>
 
 #### Notice
 *The PRC has made every effort to ensure that the information and analysis contained in this document are as accurate and 
