@@ -42,7 +42,6 @@ library(htmltools)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 
-
 base_dir <- ""
 # base_dir <- here("static","download","xls")
 
