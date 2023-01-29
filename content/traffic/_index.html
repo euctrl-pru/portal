@@ -73,6 +73,11 @@ dwnld_i: <i class="fa pru fa-download"></i>
     color: #161b21;
     text-align: left;
   }
+  
+   #maincontainer {
+    padding-left: 0px;
+    padding-right: 0px
+ }
 }
 
   </style>
@@ -91,7 +96,7 @@ dwnld_i: <i class="fa pru fa-download"></i>
 <!-- Network Traffic section -->
 <div id="eurocontrol-area-network-view" class="section level4">
 <h4>EUROCONTROL area (Network view)</h4>
-<div class="container">
+<div id="maincontainer" class="container">
 <!-- Daily traffic graphs and scorecards -->
 <div class="row align-items-start">
 <div class="col-md-6">
@@ -202,7 +207,7 @@ vs prev. year
 <!-- closes y2d row -->
 </div>
 <!-- closes col md-6-->
-<div class="col-md-6 text-center">
+<div class="col-md-6 text-center" style=" padding-left: 0px">
 <p class="h6 mb-0">
 Evolution of daily flights in the EUROCONTROL area
 </p>
