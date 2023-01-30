@@ -25,7 +25,7 @@ library(plotly)
       border: 0;
    }  
   
-@media screen and (min-width:960px) {
+@media screen and (min-width:992px) {
 
   .resp-container {
       position: relative;
@@ -55,9 +55,13 @@ library(plotly)
     text-align: left;
   }
   
+   #graphcontainer {
+    height: 400px;
+  }
+  
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:992px) {
 
   .Scorecard {
     margin: 0px;
@@ -85,9 +89,17 @@ library(plotly)
   }
   
    #maincontainer {
-    padding-left: 0px;
-    padding-right: 0px
- }
+    padding-left: 5px;
+    padding-right: 5px
+  }
+  
+  #graphtitle {
+    font-size: 14px;
+  }
+  
+  #graphcontainer {
+    height: 350px;
+  }
 }
 
   </style>
@@ -180,9 +192,9 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div><!-- closes col md-6-->
 
 <div class="col-md-6 text-center" style=" padding-left: 0px">
-<p class="h6 mb-0">Evolution of daily flights in the EUROCONTROL area</p>
+<p id="graphtitle" class="h6 mb-0">Evolution of daily flights in the EUROCONTROL area</p>
 <p style="font-size: 0.8rem">(7-day average)</p>
-<div style=" height: 400px;" >
+<div id="graphcontainer" style=" height: 350px;" >
 <iframe id="traffic-plot" class="resp-iframe" src="https://www.eurocontrol.int/Economics/Oscar/plot-traffic-lp_new.html" frameborder="0" style="border:0; margin-top: 38px;" >
 </iframe>
 <!-- <iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/4efb3da2-6cd8-4778-ab2b-0fd0cbe71db2/page/tvomC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
@@ -190,6 +202,7 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div><!-- closes col -->
 </div><!-- closes row -->
 </div><!-- closes container -->
+<br>
 <a href="https://www.eurocontrol.int/Economics/Download/Network_Traffic.xlsx" class="btn btn-info" role="button" target="_blank">{{% dwnld_i %}} Download network flight data</a>
 
 <!-- Stakeholders section -->
