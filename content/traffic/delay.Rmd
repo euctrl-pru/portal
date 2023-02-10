@@ -123,13 +123,13 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
   <p id="dif_day_prev_week" class="Scorecard2" ></p>
   <p class="Scorecard_subt">vs prev. week</p>
 </div>
-<div class="col-3" >
-  <p id="dif_day_2019" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
 <div class="col-3">
   <p id="dif_day_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs prev. year</p>
+</div>
+<div class="col-3" >
+  <p id="dif_day_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
 </div>
 </div><!-- closes row -->
 
@@ -146,13 +146,13 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
   <p id="dif_week_prev_week" class="Scorecard2" ></p>
   <p class="Scorecard_subt">vs prev. week</p>
 </div>
-<div class="col-3" >
-  <p id="dif_week_2019" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
 <div class="col-3">
   <p id="dif_week_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs prev. year</p>
+</div>
+<div class="col-3" >
+  <p id="dif_week_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
 </div>
 </div><!-- closes row -->
 
@@ -167,13 +167,13 @@ This page provides an overview of the traffic, [ATFM delay](/definition/atfm-del
 </div>
 <div class="col-3">
 </div>
-<div class="col-3" >
-  <p id="dif_y2d_2019" class="Scorecard2"></p>
-  <p class="Scorecard_subt">vs 2019</p>
-</div>
 <div class="col-3">
   <p id="dif_y2d_prev_year" class="Scorecard2"></p>
   <p class="Scorecard_subt">vs prev. year</p>
+</div>
+<div class="col-3" >
+  <p id="dif_y2d_2019" class="Scorecard2"></p>
+  <p class="Scorecard_subt">vs 2019</p>
 </div>
 </div><!-- closes row -->
 
