@@ -90,6 +90,9 @@ co2_data_plot_nw <- co2_data_raw %>%
   arrange(FLIGHT_MONTH)%>%
   mutate(TTF_IDX=TTF/first(TTF)*100, CO2_IDX=TCO2/first(TCO2)*100)
 
+co2_data_plot_nw_ld <- co2_data_plot_nw %>% 
+  mutate(FLIGHT_MONTH = ceiling_date(as_date(FLIGHT_MONTH), unit='month')-1)
+
 ```
 
 
@@ -146,10 +149,19 @@ a4 <- list(
   showarrow = FALSE
 )
 
+a5 <- list(
+  x = '2023-02-15',
+  y = 1,
+  text = paste("2023"),
+  xref = "x",
+  yref = "paper",
+  showarrow = FALSE
+)
+
 # Network plot option 3
 
 # build plot nw co2
-co2_nw_plot3 <- co2_data_plot_nw %>%
+co2_nw_plot3 <- co2_data_plot_nw_ld %>%
   plot_ly(
     # width = 500, 
     height = 350,
@@ -176,8 +188,8 @@ co2_nw_plot3 <- co2_data_plot_nw %>%
     line = list(color = '#2990ea', width = 1) 
     ) %>%
   layout(
-    shapes = list(vline(as.Date('2022-01-01')), vline(as.Date('2021-01-01')),vline(as.Date('2020-01-01'))),
-    annotations = list(a1, a2, a3, a4),
+    shapes = list(vline(as.Date('2023-01-01')) ,vline(as.Date('2022-01-01')), vline(as.Date('2021-01-01')),vline(as.Date('2020-01-01'))),
+    annotations = list(a1, a2, a3, a4, a5),
      autosize = T,
     font = list(family = "Helvetica"),
     xaxis = list(
@@ -506,7 +518,7 @@ This page provides an overview of the [CO<sub>2</sub> emissions](/reference/data
 <p style="font-weight:bold; color:#2E75B6; font-size:18px;  ">Month: `r last_month` </p>
 </div>
 <div class="col-4" >
-<p style=" font-size:15px; margin-top:15px">vs 2021</p>
+<p style=" font-size:15px; margin-top:15px">vs 2022</p>
 </div>
 <div class="col-3" >
 <p style="font-size:15px; margin-top:15px">vs 2019</p>
