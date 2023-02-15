@@ -14,6 +14,23 @@ extrajs: [
 
 ## 2023
 
+<!-- #39 -->
+<div class="container alert alert-secondary">
+<div class="row align-items-start">
+
+<div class="col-sm-8"> 
+<h5>[Ransomware groups targeting aviation's supply chains - EUROCONTROL Data Snapshot #39][DS39]</h5>
+<small><strong><p style="color:#808080">Published: 07 February 2023</p></strong></small>
+The 39. EUROCONTROL Data Snapshot looks at ransomware groups targeting aviation's supply chain.<br><br>
+<a class="btn btn-primary btn-sm" href="https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-39-ransomware-groups-targeting-aviations-supply-chain" target="_blank" role="button">Learn more...</a>
+</div>
+
+<div class="col-sm-4"><br>
+<div class="card border-0"><a href="#" class="pop"><img class="card-img-top" src="/images/ds/ds39.png" alt="Ransomware groups targeting aviation's supply chains"></div>
+</div>
+</div></div>
+
+
 <!-- #38 -->
 <div class="container alert alert-secondary">
 <div class="row align-items-start">
@@ -748,3 +765,4 @@ In normal times the published airline schedules are a pretty good indicator of h
 [DS36]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-36-road-recovery-covid-19 "On the road to recovery from COVID-19"
 [DS37]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-37-aviation-connectivity-across-europe "Aviation connectivity across Europe"
 [DS38]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-38-path-recovery-intra-european-and-intercontinental-flights "Path to recovery for intra-European and intercontinental flights"
+[DS39]:  https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-39-ransomware-groups-targeting-aviations-supply-chain "Ransomware groups targeting aviation's supply chain"
