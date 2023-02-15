@@ -1,6 +1,6 @@
 ---
 title: "Global benchmarking"
-type: "bibliography"
+type: bibliography
 ---
 
 EUROCONTROL PRU is engaged in a series of international comparison projects. 
@@ -13,10 +13,10 @@ EUROCONTROL PRU is engaged in a series of international comparison projects.
 
 *	A further benchmarking activity has been launched with Brazil (DECEA) and revolves around assessing the operational ANS performance at airports and en-route airspace capacity. The publication of the initial comparison report is foreseen during the first half of 2021.
 
-<div class="col-sm-6">
-<div class="container">
-<div class="row">
-<div class="card-deck">
+::: {class="col-sm-6"}
+:::: {class="container"}
+::::: {class="row"}
+:::::: {class="card-deck"}
 
 ```{r echo=FALSE}
 blogdown::shortcode(
@@ -60,8 +60,7 @@ blogdown::shortcode(
   )
 ```
 
-
-</div>
-</div>
-</div>
-
+::::::
+:::::
+::::
+:::
