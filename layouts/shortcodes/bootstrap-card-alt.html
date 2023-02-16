@@ -20,9 +20,11 @@
     {{ if .Get "link"}}</a>{{ end }}
   {{ if or (.Get "title") (.Get "text") }}
     <div class="card-body">
-    {{ with (.Get "title") }}
-      <h5 class="card-title">{{ . | markdownify }}</h5>
-    {{ end }}
+    {{ with .Get "link"}}<a href="{{.}}">{{ end }}
+      {{ with (.Get "title") }}
+        <h5 class="card-title">{{ . | markdownify }}</h5>
+      {{ end }}
+    {{ if .Get "link"}}</a>{{ end }}
     {{ with (.Get "text") }}
       <p class="card-text">{{ . | markdownify }}</p>
     {{ end }}

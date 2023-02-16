@@ -128,3 +128,9 @@ command = "hugo --gc --minify"
   to = "https://aiu-airport-dashboard.netlify.app/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/covid/acft_ground/"
+  to = "/dashboard/stakeholder/airport/acft_ground/"
+  status = 200
+  force = true
