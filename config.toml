@@ -397,11 +397,11 @@ ignoreFiles = [
     url = "/reference/"
     identifier = "reference"
     weight = 50
-   [[menu.main]]
-    name = "Data downloads"
-    url = "/data/"
-    parent = "reference"
-    weight = 1  
+  # [[menu.main]]
+  #  name = "Data downloads"
+  #  url = "/data/"
+  #  parent = "reference"
+  #  weight = 1  
   [[menu.main]]
     name = "Definitions"
     url = "/definition/"
