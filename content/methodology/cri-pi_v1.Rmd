@@ -244,7 +244,7 @@ For more detailed information on the updated methodology, please see the [PRC Te
 Script calculating the CRI using the explained methodology and sample data are available for testing purposes [here]
 [crizip].
 
-[crizip]: /download/other/CRI-External.zip
+[crizip]: https://www.eurocontrol.int/performance/data/download/other/CRI-External.zip
 
 
 Please feel free to use sample data provided to get familiar with the methodology.

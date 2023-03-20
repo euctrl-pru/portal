@@ -81,7 +81,6 @@ query <- str_glue("
 co2_data_raw <- export_query("PRU_DEV", query = query)%>%
   mutate(across(.cols = where(is.instant), ~ as.Date(.x)))
 
-
 co2_data_plot_nw <- co2_data_raw %>%
   select(FLIGHT_MONTH, CO2_QTY_TONNES, TF, YEAR, MONTH)%>%
   group_by(FLIGHT_MONTH)%>%
@@ -89,6 +88,15 @@ co2_data_plot_nw <- co2_data_raw %>%
   mutate(YEAR = as.numeric(format(FLIGHT_MONTH,'%Y')), MONTH = as.numeric(format(FLIGHT_MONTH,'%m')))%>%
   arrange(FLIGHT_MONTH)%>%
   mutate(TTF_IDX=TTF/first(TTF)*100, CO2_IDX=TCO2/first(TCO2)*100)
+
+#check last month number of flights
+check_flights <- co2_data_plot_nw %>% 
+  filter (YEAR == max(YEAR)) %>% filter(MONTH == max(MONTH)) %>%  select(TTF) %>% pull()
+
+if (check_flights < 1000) {
+  co2_data_raw <-  co2_data_raw %>% filter (FLIGHT_MONTH < max(FLIGHT_MONTH))
+  co2_data_plot_nw <- co2_data_plot_nw %>% filter (FLIGHT_MONTH < max(FLIGHT_MONTH))
+}
 
 co2_data_plot_nw_ld <- co2_data_plot_nw %>% 
   mutate(FLIGHT_MONTH = ceiling_date(as_date(FLIGHT_MONTH), unit='month')-1)
@@ -249,8 +257,8 @@ last_year <- max(co2_data_raw$YEAR)
 
 co2_data_plot_state <- co2_data_raw %>%
   arrange(STATE_NAME,YEAR,MONTH)%>%
-  mutate(MOM_GROWTH_CO2 = if_else(YEAR == last_year, CO2_QTY_TONNES/lag(CO2_QTY_TONNES, 12*(last_year-2019))-1,NULL),
-         MOM_GROWTH_TF = if_else(YEAR == last_year, TF/lag(TF, 12*(last_year-2019))-1,NULL))%>%
+  mutate(MOM_GROWTH_CO2 = if_else(YEAR == last_year, CO2_QTY_TONNES/lag(CO2_QTY_TONNES, 12*(last_year-2019))-1,NA),
+         MOM_GROWTH_TF = if_else(YEAR == last_year, TF/lag(TF, 12*(last_year-2019))-1,NA))%>%
   filter(FLIGHT_MONTH ==last_date)%>%
   select(STATE_NAME, CO2_QTY_TONNES, TF, MOM_GROWTH_CO2, MOM_GROWTH_TF)%>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%
@@ -341,8 +349,8 @@ co2_data_plot_state_y2d <- co2_data_raw %>%
   mutate(YTD_CO2_QTY_TONNES = cumsum(CO2_QTY_TONNES),
          YTD_TF = cumsum(TF))%>%
   ungroup()%>%
-  mutate(YTD_GROWTH_CO2 = if_else(YEAR == last_year, YTD_CO2_QTY_TONNES/lag(YTD_CO2_QTY_TONNES, 12*(last_year-2019))-1,NULL),
-         YTD_GROWTH_TF = if_else(YEAR == last_year, YTD_TF/lag(YTD_TF, 12*(last_year-2019))-1,NULL))%>%
+  mutate(YTD_GROWTH_CO2 = if_else(YEAR == last_year, YTD_CO2_QTY_TONNES/lag(YTD_CO2_QTY_TONNES, 12*(last_year-2019))-1, NA),
+         YTD_GROWTH_TF = if_else(YEAR == last_year, YTD_TF/lag(YTD_TF, 12*(last_year-2019))-1, NA))%>%
   filter(FLIGHT_MONTH ==last_date)%>%
   select(STATE_NAME, YTD_CO2_QTY_TONNES, YTD_TF, YTD_GROWTH_CO2, YTD_GROWTH_TF)%>%
   mutate(STATE_NAME = gsub("(?<=\\b)([a-z])", "\\U\\1", tolower(STATE_NAME), perl=TRUE)) %>%

@@ -23,7 +23,7 @@ library(here)
 library(dplyr)
 library(glue)
 
-dc <- read_csv(here("static", "download", "other", "iata_delay_codes.csv"))
+dc <- read_csv("https://www.eurocontrol.int/performance/data/download/other/iata_delay_codes.csv")
 
 dc %>% 
   mutate(ii = if_else(!is.na(cd), glue("{id} ({cd})"), glue("{id} (  )"))) %>% 
